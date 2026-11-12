@@ -1,7 +1,7 @@
 {
-  "schema_version": "0.22",
-  "captured_at_kst": "2026-11-06T11:21:31+09:00",
-  "scope": "CHATGPT_20261105_ARCHIVE_PROJECT_TOPIC_CLASSIFICATION_GUI_V02",
+  "schema_version": "0.23",
+  "captured_at_kst": "2026-11-06T18:14:37+09:00",
+  "scope": "OFFICIAL_CHATGPT_PROJECT_ID_V03_RECONCILIATION_164_LINKED_7_IDS",
   "registry_mode": "local-only security classification and search metadata",
   "existing_index_baseline": {
     "sqlite_integrity": "ok",
@@ -1933,6 +1933,142 @@
       "original_file_unchanged": true,
       "provenance_status": "DIRECT_CHATGPT_OFFICIAL_EXPORT_GROUPING_GENERATION",
       "registry_added_in": "v0.22"
+    },
+    {
+      "asset_id": "ASSET-120-CHATGPT-V03-ID-BUILDER",
+      "title": "원본 conversation_template_id 실제 프로젝트 대조 생성기",
+      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_OFFICIAL_CHATGPT_EXPORT_20261105_v01/build_chatgpt_project_id_v03.py",
+      "bytes": 8743,
+      "sha256": "01c2ebb6779fd7c748bc2a4182dc3f0379af03e65d88b645e986571e0405e348",
+      "mtime_utc": "2026-11-06T09:09:10.094881+00:00",
+      "source_system": "CHATGPT_OFFICIAL_EXPORT_REAL_PROJECT_IDS_V03",
+      "source_chat_number": "120-1",
+      "observation": "Real project membership from official conversation_template_id 164/327. Current live project names partially pending.",
+      "execution_validation": "BROWSER_ALL327_REAL_PROJECT119_DETAIL120_PASS_LIVE_PROJECT_NAME_NOT_ALL_VERIFIED",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "REFERENCED_ONLY_PRIVATE_GUI_LOCAL",
+      "original_file_unchanged": true,
+      "provenance_status": "DIRECT_EXPORT_FIELD_AND_PRIOR_PROJECT_URL_CROSSCHECK",
+      "registry_added_in": "v0.23"
+    },
+    {
+      "asset_id": "ASSET-120-CHATGPT-V03-ID-PROJECT-LEDGER",
+      "title": "327개 채팅 실제 프로젝트 ID·보관상태·v0.2 비교 대조표",
+      "observed_original_path": "/Users/yongho/ROUTABL-ChatGPT-Archive/2026-11-05/12_GUI_PROJECT_IDS_V03/project-id-ledger.json",
+      "bytes": 154600,
+      "sha256": "9bb05d557b4b0cd663f6719060b365b436ab8d8fb8903088e485a25320facc70",
+      "mtime_utc": "2026-11-06T09:09:21.328837+00:00",
+      "source_system": "CHATGPT_OFFICIAL_EXPORT_REAL_PROJECT_IDS_V03",
+      "source_chat_number": "120-1",
+      "observation": "Real project membership from official conversation_template_id 164/327. Current live project names partially pending.",
+      "execution_validation": "BROWSER_ALL327_REAL_PROJECT119_DETAIL120_PASS_LIVE_PROJECT_NAME_NOT_ALL_VERIFIED",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "REFERENCED_ONLY_PRIVATE_GUI_LOCAL",
+      "original_file_unchanged": true,
+      "provenance_status": "DIRECT_EXPORT_FIELD_AND_PRIOR_PROJECT_URL_CROSSCHECK",
+      "registry_added_in": "v0.23"
+    },
+    {
+      "asset_id": "ASSET-120-CHATGPT-V03-ID-PROJECT-DATA",
+      "title": "v0.3 브라우저 프로젝트 ID 연결 자료",
+      "observed_original_path": "/Users/yongho/ROUTABL-ChatGPT-Archive/2026-11-05/12_GUI_PROJECT_IDS_V03/project-id-data.js",
+      "bytes": 130360,
+      "sha256": "ffc624ace9724603390596602169f15eda8a617f78b518fa87bf8fbd2d4ae177",
+      "mtime_utc": "2026-11-06T09:09:21.332721+00:00",
+      "source_system": "CHATGPT_OFFICIAL_EXPORT_REAL_PROJECT_IDS_V03",
+      "source_chat_number": "120-1",
+      "observation": "Real project membership from official conversation_template_id 164/327. Current live project names partially pending.",
+      "execution_validation": "BROWSER_ALL327_REAL_PROJECT119_DETAIL120_PASS_LIVE_PROJECT_NAME_NOT_ALL_VERIFIED",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "REFERENCED_ONLY_PRIVATE_GUI_LOCAL",
+      "original_file_unchanged": true,
+      "provenance_status": "DIRECT_EXPORT_FIELD_AND_PRIOR_PROJECT_URL_CROSSCHECK",
+      "registry_added_in": "v0.23"
+    },
+    {
+      "asset_id": "ASSET-120-CHATGPT-V03-ID-GUI-ENTRY",
+      "title": "v0.3 프로젝트 ID 기준 GUI 시작 화면",
+      "observed_original_path": "/Users/yongho/ROUTABL-ChatGPT-Archive/2026-11-05/12_GUI_PROJECT_IDS_V03/index.html",
+      "bytes": 5435,
+      "sha256": "cf22c54ba15ac591da42b50b00aba854a44956ffbdc28acd311f992a4729b707",
+      "mtime_utc": "2026-11-06T09:11:36.570774+00:00",
+      "source_system": "CHATGPT_OFFICIAL_EXPORT_REAL_PROJECT_IDS_V03",
+      "source_chat_number": "120-1",
+      "observation": "Real project membership from official conversation_template_id 164/327. Current live project names partially pending.",
+      "execution_validation": "BROWSER_ALL327_REAL_PROJECT119_DETAIL120_PASS_LIVE_PROJECT_NAME_NOT_ALL_VERIFIED",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "REFERENCED_ONLY_PRIVATE_GUI_LOCAL",
+      "original_file_unchanged": true,
+      "provenance_status": "DIRECT_EXPORT_FIELD_AND_PRIOR_PROJECT_URL_CROSSCHECK",
+      "registry_added_in": "v0.23"
+    },
+    {
+      "asset_id": "ASSET-120-CHATGPT-V03-ID-GUI-SCRIPT",
+      "title": "v0.3 프로젝트별 검색·프로젝트명 확인 기록 웹 코드",
+      "observed_original_path": "/Users/yongho/ROUTABL-ChatGPT-Archive/2026-11-05/12_GUI_PROJECT_IDS_V03/app.js",
+      "bytes": 9550,
+      "sha256": "e3b9d358f903f7180fac3cdaa0e9d255d8f5a7531d8687e20a2fbd0d68849d19",
+      "mtime_utc": "2026-11-06T09:11:02.238707+00:00",
+      "source_system": "CHATGPT_OFFICIAL_EXPORT_REAL_PROJECT_IDS_V03",
+      "source_chat_number": "120-1",
+      "observation": "Real project membership from official conversation_template_id 164/327. Current live project names partially pending.",
+      "execution_validation": "BROWSER_ALL327_REAL_PROJECT119_DETAIL120_PASS_LIVE_PROJECT_NAME_NOT_ALL_VERIFIED",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "REFERENCED_ONLY_PRIVATE_GUI_LOCAL",
+      "original_file_unchanged": true,
+      "provenance_status": "DIRECT_EXPORT_FIELD_AND_PRIOR_PROJECT_URL_CROSSCHECK",
+      "registry_added_in": "v0.23"
+    },
+    {
+      "asset_id": "ASSET-120-CHATGPT-V03-ID-GUI-STYLE",
+      "title": "v0.3 프로젝트 확인 근거 구분 디자인 CSS",
+      "observed_original_path": "/Users/yongho/ROUTABL-ChatGPT-Archive/2026-11-05/12_GUI_PROJECT_IDS_V03/v03-style.css",
+      "bytes": 3940,
+      "sha256": "d4b6b88dee5ffc2ed041f8a07ffeb1e9582cdd5e4e54b8a10451c74a59d8ed5d",
+      "mtime_utc": "2026-11-06T09:12:03.919525+00:00",
+      "source_system": "CHATGPT_OFFICIAL_EXPORT_REAL_PROJECT_IDS_V03",
+      "source_chat_number": "120-1",
+      "observation": "Real project membership from official conversation_template_id 164/327. Current live project names partially pending.",
+      "execution_validation": "BROWSER_ALL327_REAL_PROJECT119_DETAIL120_PASS_LIVE_PROJECT_NAME_NOT_ALL_VERIFIED",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "REFERENCED_ONLY_PRIVATE_GUI_LOCAL",
+      "original_file_unchanged": true,
+      "provenance_status": "DIRECT_EXPORT_FIELD_AND_PRIOR_PROJECT_URL_CROSSCHECK",
+      "registry_added_in": "v0.23"
+    },
+    {
+      "asset_id": "ASSET-120-CHATGPT-V03-ID-V03-EXTRACTION-RECEIPT",
+      "title": "v0.3 원본 ID 추출 및 v0.2 분류 차이 검증 영수증",
+      "observed_original_path": "/Users/yongho/ROUTABL-ChatGPT-Archive/2026-11-05/20_AUDIT/v03_project_id_from_official_export_20261106.json",
+      "bytes": 2110,
+      "sha256": "1a27150529ff93d1168802e9d669a0974fd87a096cf5f85f577a82f4f5292b08",
+      "mtime_utc": "2026-11-06T09:09:24.356713+00:00",
+      "source_system": "CHATGPT_OFFICIAL_EXPORT_REAL_PROJECT_IDS_V03",
+      "source_chat_number": "120-1",
+      "observation": "Real project membership from official conversation_template_id 164/327. Current live project names partially pending.",
+      "execution_validation": "BROWSER_ALL327_REAL_PROJECT119_DETAIL120_PASS_LIVE_PROJECT_NAME_NOT_ALL_VERIFIED",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "REFERENCED_ONLY_PRIVATE_GUI_LOCAL",
+      "original_file_unchanged": true,
+      "provenance_status": "DIRECT_EXPORT_FIELD_AND_PRIOR_PROJECT_URL_CROSSCHECK",
+      "registry_added_in": "v0.23"
+    },
+    {
+      "asset_id": "ASSET-120-CHATGPT-V03-ID-V03-ACCEPTANCE",
+      "title": "v0.3 실제 프로젝트 ID 복원·대조 및 브라우저 수용검사 보고서",
+      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_OFFICIAL_CHATGPT_EXPORT_20261105_v01/CHATGPT_V03_REAL_PROJECT_ID_COMPARISON_20261106_v0.1.md",
+      "bytes": 6089,
+      "sha256": "b580a42160c0bec5e7c9f3f06e32d47e6a0b15cb2acdb749c111d2a4d0b75b5f",
+      "mtime_utc": "2026-11-06T09:13:52.342062+00:00",
+      "source_system": "CHATGPT_OFFICIAL_EXPORT_REAL_PROJECT_IDS_V03",
+      "source_chat_number": "120-1",
+      "observation": "Real project membership from official conversation_template_id 164/327. Current live project names partially pending.",
+      "execution_validation": "BROWSER_ALL327_REAL_PROJECT119_DETAIL120_PASS_LIVE_PROJECT_NAME_NOT_ALL_VERIFIED",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "REFERENCED_ONLY_PRIVATE_GUI_LOCAL",
+      "original_file_unchanged": true,
+      "provenance_status": "DIRECT_EXPORT_FIELD_AND_PRIOR_PROJECT_URL_CROSSCHECK",
+      "registry_added_in": "v0.23"
     }
   ],
   "unresolved": [
@@ -2130,7 +2266,7 @@
       "issue": "Actual Android app UI display not field-tested; original failed chat tool trace not archived."
     }
   ],
-  "supersedes": "asset_manifest_v0.21.json (immutable previous preserved)",
+  "supersedes": "asset_manifest_v0.22.json (immutable previous preserved)",
   "library_crosswalk": [
     {
       "asset_id": "TA-CASE-20261102-01",
@@ -3022,6 +3158,54 @@
       "grade": "P3",
       "policy": "private_local_FileVault_no_plaintext_remote_storage",
       "classification_scope": "LOCAL_CHATGPT_EXPORT_GUI_PROJECT_INFERENCE"
+    },
+    {
+      "asset_id": "ASSET-120-CHATGPT-V03-ID-BUILDER",
+      "grade": "P3",
+      "policy": "private_local_FileVault_no_plaintext_remote_storage",
+      "classification_scope": "CHATGPT_EXPORT_PROJECT_ID_RECONCILIATION"
+    },
+    {
+      "asset_id": "ASSET-120-CHATGPT-V03-ID-PROJECT-LEDGER",
+      "grade": "P3",
+      "policy": "private_local_FileVault_no_plaintext_remote_storage",
+      "classification_scope": "CHATGPT_EXPORT_PROJECT_ID_RECONCILIATION"
+    },
+    {
+      "asset_id": "ASSET-120-CHATGPT-V03-ID-PROJECT-DATA",
+      "grade": "P3",
+      "policy": "private_local_FileVault_no_plaintext_remote_storage",
+      "classification_scope": "CHATGPT_EXPORT_PROJECT_ID_RECONCILIATION"
+    },
+    {
+      "asset_id": "ASSET-120-CHATGPT-V03-ID-GUI-ENTRY",
+      "grade": "P3",
+      "policy": "private_local_FileVault_no_plaintext_remote_storage",
+      "classification_scope": "CHATGPT_EXPORT_PROJECT_ID_RECONCILIATION"
+    },
+    {
+      "asset_id": "ASSET-120-CHATGPT-V03-ID-GUI-SCRIPT",
+      "grade": "P3",
+      "policy": "private_local_FileVault_no_plaintext_remote_storage",
+      "classification_scope": "CHATGPT_EXPORT_PROJECT_ID_RECONCILIATION"
+    },
+    {
+      "asset_id": "ASSET-120-CHATGPT-V03-ID-GUI-STYLE",
+      "grade": "P3",
+      "policy": "private_local_FileVault_no_plaintext_remote_storage",
+      "classification_scope": "CHATGPT_EXPORT_PROJECT_ID_RECONCILIATION"
+    },
+    {
+      "asset_id": "ASSET-120-CHATGPT-V03-ID-V03-EXTRACTION-RECEIPT",
+      "grade": "P3",
+      "policy": "private_local_FileVault_no_plaintext_remote_storage",
+      "classification_scope": "CHATGPT_EXPORT_PROJECT_ID_RECONCILIATION"
+    },
+    {
+      "asset_id": "ASSET-120-CHATGPT-V03-ID-V03-ACCEPTANCE",
+      "grade": "P3",
+      "policy": "private_local_FileVault_no_plaintext_remote_storage",
+      "classification_scope": "CHATGPT_EXPORT_PROJECT_ID_RECONCILIATION"
     }
   ],
   "search_v1_3": {
@@ -3464,6 +3648,11 @@
       "id": "B-16",
       "source": "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_OFFICIAL_CHATGPT_EXPORT_20261105_v01/CHATGPT_ARCHIVE_PROJECT_GROUPS_GUI_V02_ACCEPTANCE_20261106_v0.1.md",
       "status": "OPEN_USER_GUI_REVIEW_AND_PROJECT_MEMBERSHIP_CONFIRMATION"
+    },
+    {
+      "id": "B-17",
+      "source": "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_OFFICIAL_CHATGPT_EXPORT_20261105_v01/CHATGPT_V03_REAL_PROJECT_ID_COMPARISON_20261106_v0.1.md",
+      "status": "OPEN_REAL_ACCOUNT_LIVE_NAME_VERIFICATION_5_PROJECTS_AND_USER_GUI_ACCEPTANCE"
     }
   ],
   "addressbook_registration_reuse_v016": {
@@ -3620,6 +3809,39 @@
       "ASSET-120-CHATGPT-GUI-GROUP-V02-GROUP-APP",
       "ASSET-120-CHATGPT-GUI-GROUP-V02-GROUP-STYLE",
       "ASSET-120-CHATGPT-GUI-GROUP-V02-GROUP-AUDIT"
+    ]
+  },
+  "chatgpt_export_real_project_ids_v023": {
+    "export_date": "2026-11-05",
+    "total_chats": 327,
+    "with_actual_project_id": 164,
+    "project_id_missing": 163,
+    "unique_project_ids": 7,
+    "historical_project_names_url_confirmed": 2,
+    "other_project_names_live_check_needed": 5,
+    "routabl_project_id": "g-p-6a92532988c881918be08fc0ad4dbaed",
+    "routabl_project_chats": 119,
+    "routabl_v02_title_inference_match": 76,
+    "routabl_v02_wrong_or_review": 43,
+    "archived_with_project_id": 20,
+    "data_key": "conversation_template_id",
+    "live_account_project_names_read": "NO_UNAVAILABLE_BROWSER_CONTEXT",
+    "v03_gui": "/Users/yongho/ROUTABL-ChatGPT-Archive/2026-11-05/12_GUI_PROJECT_IDS_V03/index.html",
+    "verified_source_ledger": "/Users/yongho/ROUTABL-ChatGPT-Archive/2026-11-05/12_GUI_PROJECT_IDS_V03/project-id-ledger.json",
+    "prior_v02_gui_preserved": true,
+    "original_zip_unchanged": true,
+    "browser_smoke": "ALL_327_PASS_ROUTABL_ID_119_PASS_ARCHIVED_CHAT_SEARCH_PASS_120_DETAIL_PASS",
+    "user_visual_review": "PENDING",
+    "previous_manifest_sha256": "f4895969dce0855cecc2b2bd575758d134322ec6911b7743fec4a53f2e8918a0",
+    "asset_ids": [
+      "ASSET-120-CHATGPT-V03-ID-BUILDER",
+      "ASSET-120-CHATGPT-V03-ID-PROJECT-LEDGER",
+      "ASSET-120-CHATGPT-V03-ID-PROJECT-DATA",
+      "ASSET-120-CHATGPT-V03-ID-GUI-ENTRY",
+      "ASSET-120-CHATGPT-V03-ID-GUI-SCRIPT",
+      "ASSET-120-CHATGPT-V03-ID-GUI-STYLE",
+      "ASSET-120-CHATGPT-V03-ID-V03-EXTRACTION-RECEIPT",
+      "ASSET-120-CHATGPT-V03-ID-V03-ACCEPTANCE"
     ]
   }
 }
