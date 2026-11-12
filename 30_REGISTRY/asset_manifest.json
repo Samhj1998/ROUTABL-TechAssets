@@ -1,6 +1,6 @@
 {
-  "schema_version": "0.31",
-  "captured_at_kst": "2026-11-12T01:48:32+09:00",
+  "schema_version": "0.32",
+  "captured_at_kst": "2026-11-12T09:39:59+09:00",
   "scope": "TI01_3TIER_IMPORTANCE_RECOVERY_GOVERNANCE_ABOVE_VI01",
   "registry_mode": "local-only security classification and search metadata",
   "existing_index_baseline": {
@@ -3059,6 +3059,120 @@
       "registry_added_in": "v0.31",
       "supersedes_asset_id": "CUSTOMER-DONG-NORMALIZE-TOOL",
       "git_commit": "07fcfa0"
+    },
+    {
+      "asset_id": "ASSET-SEARCH-V18-ENGINE",
+      "title": "검색 v1.8 찾기→발췌 엔진 (색인기+서비스 한 파일, 1~2KB 조각 FTS5, 비밀값 차단, 자동 재시작)",
+      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/80_RUNTIME/ASSET_SEARCH_V1_8/routabl_search_v1_8.py",
+      "bytes": 39616,
+      "sha256": "3263b3598b2d4ff6bc0d045b3ec7a14017f51fe391d5b28efe60c14ccfb5f1ba",
+      "mtime_utc": "2026-11-12T00:04:21.015210+00:00",
+      "source_system": "CLAUDE_SESSION_20261112_ASSET_SEARCH_V17_V18",
+      "source_chat_number": "ASSET-SEARCH-V18",
+      "execution_validation": "MAC_VERIFIED_20261112_FIND_CHUNK_LINES_REFRESH_SELF_RESTART_AND_REBOOT_AUTOSTART",
+      "write_or_execution_approval_class": "B",
+      "copy_in_managed_repository": "NO_REFERENCED_ONLY",
+      "original_file_unchanged": true,
+      "provenance_status": "DIRECT_FILE_BYTES_SHA256_VERIFIED_AUTHORED_IN_THIS_SESSION",
+      "parent_asset_ids": [
+        "ASSET-SEARCH-V17-SERVICE"
+      ],
+      "registry_added_in": "v0.32"
+    },
+    {
+      "asset_id": "ASSET-SEARCH-V18-GUIDE",
+      "title": "검색 v1.8 사용 안내 (AI용 find/chunk/lines API, 보안, 시험 결과)",
+      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/00_GUIDE/ASSET_SEARCH_V1_8_QUICKSTART_20261112.md",
+      "bytes": 4713,
+      "sha256": "b500ebcc11ee216f57efbbde7dc98eb421fdea58f27092ab9de65507b357990d",
+      "mtime_utc": "2026-11-12T00:05:19.159293+00:00",
+      "source_system": "CLAUDE_SESSION_20261112_ASSET_SEARCH_V17_V18",
+      "source_chat_number": "ASSET-SEARCH-V18",
+      "execution_validation": "DOCUMENT",
+      "write_or_execution_approval_class": "B",
+      "copy_in_managed_repository": "NO_REFERENCED_ONLY",
+      "original_file_unchanged": true,
+      "provenance_status": "DIRECT_FILE_BYTES_SHA256_VERIFIED_AUTHORED_IN_THIS_SESSION",
+      "parent_asset_ids": [
+        "ASSET-SEARCH-V17-SERVICE"
+      ],
+      "registry_added_in": "v0.32"
+    },
+    {
+      "asset_id": "ASSET-SEARCH-V18-LAUNCHER",
+      "title": "검색 v1.8 실행기 (LaunchAgent com.routabl.assetsearch.v18 등록)",
+      "observed_original_path": "/Users/yongho/Applications/라우터블 기술자산 검색 v1.8.app/Contents/MacOS/RoutablSearch18",
+      "bytes": 2158,
+      "sha256": "69a8cf4636de239afd884fd85b91800564bbbe5660d2e607bc0f3f0eedf93fb2",
+      "mtime_utc": "2026-11-11T23:59:22.166816+00:00",
+      "source_system": "CLAUDE_SESSION_20261112_ASSET_SEARCH_V17_V18",
+      "source_chat_number": "ASSET-SEARCH-V18",
+      "execution_validation": "MAC_VERIFIED_20261112_LAUNCHAGENT_WRITTEN_AND_REBOOT_AUTOSTART",
+      "write_or_execution_approval_class": "B",
+      "copy_in_managed_repository": "NO_REFERENCED_ONLY",
+      "original_file_unchanged": true,
+      "provenance_status": "DIRECT_FILE_BYTES_SHA256_VERIFIED_AUTHORED_IN_THIS_SESSION",
+      "parent_asset_ids": [
+        "ASSET-SEARCH-V17-SERVICE"
+      ],
+      "registry_added_in": "v0.32"
+    },
+    {
+      "asset_id": "ASSET-SEARCH-V17-SERVICE",
+      "title": "검색 v1.7 서비스 (고객등록앱 검색, 재등록 SHA 일치 우선, /api/registry)",
+      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/40_WORKING/SEARCH_V1_7_20261112/v1_7/routabl_search_v1_7_service.py",
+      "bytes": 28969,
+      "sha256": "03a893c157ec194b74e80475828857114f7e78f9324875cc1058b0abf34dfe28",
+      "mtime_utc": "2026-11-11T17:02:41.068197+00:00",
+      "source_system": "CLAUDE_SESSION_20261112_ASSET_SEARCH_V17_V18",
+      "source_chat_number": "ASSET-SEARCH-V18",
+      "execution_validation": "MAC_VERIFIED_20261112_REFRESH_3915_REGISTRY_STALE_0__REBOOT_AUTOSTART_NOT_VERIFIED",
+      "write_or_execution_approval_class": "B",
+      "copy_in_managed_repository": "NO_REFERENCED_ONLY",
+      "original_file_unchanged": true,
+      "provenance_status": "DIRECT_FILE_BYTES_SHA256_VERIFIED_AUTHORED_IN_THIS_SESSION",
+      "parent_asset_ids": [
+        "ASSET-SEARCH-V15-GUIDE"
+      ],
+      "registry_added_in": "v0.32"
+    },
+    {
+      "asset_id": "ASSET-SEARCH-V17-SCANNER",
+      "title": "검색 v1.7 스캐너 (PROJECTS에 고객등록앱 추가)",
+      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/40_WORKING/SEARCH_V1_7_20261112/v1_7/routabl_assetsearch_v1_7_scanner.py",
+      "bytes": 13427,
+      "sha256": "d9c363842f1d7e77059bea759455a6bcfeecd06d6a2752a691708d427e8e7992",
+      "mtime_utc": "2026-11-11T17:02:11.566383+00:00",
+      "source_system": "CLAUDE_SESSION_20261112_ASSET_SEARCH_V17_V18",
+      "source_chat_number": "ASSET-SEARCH-V18",
+      "execution_validation": "MAC_VERIFIED_20261112_REFRESH",
+      "write_or_execution_approval_class": "B",
+      "copy_in_managed_repository": "NO_REFERENCED_ONLY",
+      "original_file_unchanged": true,
+      "provenance_status": "DIRECT_FILE_BYTES_SHA256_VERIFIED_AUTHORED_IN_THIS_SESSION",
+      "parent_asset_ids": [
+        "ASSET-SEARCH-V15-GUIDE"
+      ],
+      "registry_added_in": "v0.32"
+    },
+    {
+      "asset_id": "ASSET-SEARCH-V17-GUIDE",
+      "title": "검색 v1.7 사용 안내",
+      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/00_GUIDE/ASSET_SEARCH_V1_7_QUICKSTART_20261112.md",
+      "bytes": 4359,
+      "sha256": "a57b4a972310e63d24f022827612ffc7af9c5da46b8e306a4dc32fcd4ff23622",
+      "mtime_utc": "2026-11-11T17:08:43.130166+00:00",
+      "source_system": "CLAUDE_SESSION_20261112_ASSET_SEARCH_V17_V18",
+      "source_chat_number": "ASSET-SEARCH-V18",
+      "execution_validation": "DOCUMENT",
+      "write_or_execution_approval_class": "B",
+      "copy_in_managed_repository": "NO_REFERENCED_ONLY",
+      "original_file_unchanged": true,
+      "provenance_status": "DIRECT_FILE_BYTES_SHA256_VERIFIED_AUTHORED_IN_THIS_SESSION",
+      "parent_asset_ids": [
+        "ASSET-SEARCH-V15-GUIDE"
+      ],
+      "registry_added_in": "v0.32"
     }
   ],
   "unresolved": [
@@ -3256,7 +3370,7 @@
       "issue": "Actual Android app UI display not field-tested; original failed chat tool trace not archived."
     }
   ],
-  "supersedes": "asset_manifest_v0.30.json (unchanged historical version)",
+  "supersedes": "asset_manifest_v0.31.json (unchanged historical version)",
   "library_crosswalk": [
     {
       "asset_id": "TA-CASE-20261102-01",
@@ -5113,9 +5227,9 @@
     "asset_id": "ASSET-120-GOVERNANCE-TI01-3TIER-ORIGINAL-PROTECTION-20261106"
   },
   "previous_registry": {
-    "path": "asset_manifest_v0.30.json",
-    "bytes": 255304,
-    "sha256": "77565ce15e4a8627000aaf007cdf022091a71233262a609055f519ce02296f3d"
+    "path": "asset_manifest_v0.31.json",
+    "bytes": 274163,
+    "sha256": "56b4ad0730ea377796e7632de7faa41c6b175098cd09272e319fde460b9edd6e"
   },
   "analytics_app_v028": {
     "status": "IMPLEMENTED_ANALYSIS-APP-FUTURE_AS_INDEPENDENT_READ_ONLY_APP",
@@ -5280,6 +5394,57 @@
       "Firebase",
       "app code",
       "~/Library ROUTABL-AssetSearch DB"
+    ]
+  },
+  "asset_search_v18_v032": {
+    "status": "MAC_VERIFIED_PRIMARY_SEARCH_FOR_AI",
+    "purpose": "10GB 원본에서 필요한 1~2KB 조각만 찾아 전달 (토큰·크레딧 최소화) — 사용자 목표 2026-11-12",
+    "url": "http://127.0.0.1:8772/",
+    "ai_usage": "GET /api/help → /api/find?q= → /api/chunk?id= (파일 전체 읽지 않기)",
+    "runtime": "/Users/yongho/ROUTABL-TechAssets/80_RUNTIME/ASSET_SEARCH_V1_8 (~/Library 밖, Claude 원격 갱신 가능, 코드 변경 시 자동 재시작)",
+    "index": {
+      "docs": 3044,
+      "chunks": 32434,
+      "sources": [
+        "StudioProjects 전체",
+        "TechAssets 00_GUIDE·30_REGISTRY(최신)·40_WORKING·60_AUDIT·70_EXPORTS·백서 PDF",
+        "ChatGPT 공식 내보내기 대화 327개"
+      ],
+      "dup_files_collapsed": 1004,
+      "secret_files_excluded": 9
+    },
+    "benchmark_10q": {
+      "v18_top5": "8/10 + 1 대체 정답",
+      "v17_top5": "3/10",
+      "bytes_to_answer": {
+        "v18_avg": "~2.9KB",
+        "v17_avg_found_only": "~12.5KB"
+      }
+    },
+    "security": "키·토큰·비밀번호·개인키 가림(파일 전체 먼저), 비밀 파일 제외. 전화·이메일은 가리지 않음(사용자 결정)",
+    "mac_checks_20261112": [
+      "LaunchAgent 등록",
+      "찾기·발췌·줄보기",
+      "원격 코드 갱신 → 자동 재시작",
+      "Mac Python 새로 고침",
+      "macOS 27.2.1 재부팅 후 자동 시작"
+    ],
+    "known_limits": [
+      "단어 일치 방식 (예: \"업체명 호수\" 놓침)",
+      "Mac에 pdftotext 없음 → Mac 새로 고침은 새 PDF 미포함"
+    ],
+    "v17_reboot_autostart": "NOT_VERIFIED",
+    "decisions_20261112": [
+      "저장 용량은 문제 아님 — 경량·빠른 검색·토큰 절약이 목표",
+      "~/Library 보호 위치 대신 80_RUNTIME 사용",
+      "삭제·git 전환은 보류 (검색·발췌 우선)"
+    ],
+    "untouched": [
+      "asset_manifest_v0.31.json",
+      "asset_120_lookup_v0.17.sqlite",
+      "v1.6·v1.7 실행 파일",
+      "Firebase",
+      "앱 코드"
     ]
   }
 }
