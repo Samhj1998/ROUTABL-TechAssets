@@ -35,6 +35,13 @@
   - 교훈: 제외 규칙은 경로가 아니라 이름 패턴(**/)으로. 폴더 이동 전 git check-ignore로 확인
   - 검색 v1.8 새로 고침: 옮겨진 458개 재색인, 문서 수 동일(3,046)
 
+- 2026-11-12 15:5x 백업 점검 (읽기만, 변경 없음):
+  - 자동 백업 경로(매일 04:30): 백업 앱 v0.4.2 → 00_GUIDE/ROUTABL_BackupHeadlessSupervisor_v0_2.py → 승인 파일이 SHA로 고정한 MacToNasOneShot_v0_1·NAS_ContentAwareBackup_v0_2·HeadlessDailyGate_v0_3 → SelectiveSecureBackup_v2_1(로컬 SSD AES)·SelectiveNasCopy_v2_1(NAS)
+  - SelectiveSecureBackup_v2_1 실패 조건 2개가 현재 충족: ① 옛 프로젝트 4개 폴더 없음(2026-11-11 정리) → PROJECT_MISSING_OR_SYMLINK ② 등록부 자산 5개 SHA 변경 → VERIFIED_REGISTRY_SOURCE_CHANGED
+  - 결론: 자동 백업은 2026-11-11 이후 실패 중일 가능성이 높음 (로그는 ~/Library라 원격 확인 불가)
+  - 주의: 00_GUIDE의 위 스크립트 6개는 이동·수정 금지 (경로·SHA 고정)
+  - P3b·P4 보류 사유: 옮길 대상에 백업이 요구하는 등록 자산이 포함됨 → 백업 수리 후 진행
+
 ## 다음 행동
 - 등록부 갱신 방법(앞으로): asset_manifest.json 수정 → 커밋 → 이름표 registry-v0.N. v0.N 사본은 만들지 않음
 - 남은 호환 사본 v0.32 제거 조건: 백업 스크립트가 asset_manifest.json을 읽도록 수정·검증 (백업 영향이라 별도 승인)
