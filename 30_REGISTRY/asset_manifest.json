@@ -1,7 +1,7 @@
 {
-  "schema_version": "0.19",
-  "captured_at_kst": "2026-11-05T22:07:27+09:00",
-  "scope": "120_OFFICIAL_CHATGPT_EXPORT_ENCRYPTED_SSD_NAS_RESTORED__KEY_ESCROW_OPEN",
+  "schema_version": "0.20",
+  "captured_at_kst": "2026-11-06T07:35:16+09:00",
+  "scope": "CHATGPT_OFFICIAL_EXPORT_AES256_V2_PASSWORD_NEWLINE_FIX_SSD_NAS_RESTORED__FINDER_GUI_PENDING",
   "registry_mode": "local-only security classification and search metadata",
   "existing_index_baseline": {
     "sqlite_integrity": "ok",
@@ -1576,6 +1576,57 @@
       "provenance_status": "HASHED_SOURCE_AND_SUCCESS_RECEIPT_DIRECT_OBSERVATION",
       "registry_added_in": "v0.19",
       "evidence_catalog_path": "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_OFFICIAL_CHATGPT_EXPORT_20261105_v01/AES256_FULL_EXPORT_BACKUP_AND_RESTORE_20261105_v0.1.json"
+    },
+    {
+      "asset_id": "ASSET-120-EXPORT-AES256-V2-PROGRAM-20261106",
+      "title": "수동 백업 프로그램 v2 — hdiutil NUL 종결 암호 입력",
+      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_OFFICIAL_CHATGPT_EXPORT_20261105_v01/private_export_aes256_offsite_v02.py",
+      "bytes": 12109,
+      "sha256": "f7f26687e0124d1771a45389ef9fb227ee8442e0b547036dcfd6b6395e6a977b",
+      "mtime_utc": "2026-11-05T22:30:07.890398+00:00",
+      "source_system": "VERIFIED_LOCAL_AES256_V2_BACKUP_AUDIT",
+      "source_chat_number": "120-1",
+      "observation": "2026-11-06 v2 password newline fix; original v1 and original ZIP preserved; no password contents in registry",
+      "execution_validation": "ONE_SHOT_EXECUTED_NO_SCHEDULE_CHANGE",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "YES_NONSECRET_CODE_AND_EVIDENCE_ONLY",
+      "original_file_unchanged": true,
+      "provenance_status": "DIRECT_MAC_STUDIO_RUN_AND_INDEPENDENT_READONLY_RESTORE",
+      "registry_added_in": "v0.20"
+    },
+    {
+      "asset_id": "ASSET-120-EXPORT-AES256-V2-RECEIPT-20261106",
+      "title": "AES-256 v2 SSD/NAS 독립 복원 성공 영수증",
+      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_OFFICIAL_CHATGPT_EXPORT_20261105_v01/AES256_FULL_EXPORT_BACKUP_AND_RESTORE_20261106_v0.2.json",
+      "bytes": 2120,
+      "sha256": "d154a8d7568ad2092e86ea9b8c6650b797335d96c0c0cbdb0f2c168e4edeff9b",
+      "mtime_utc": "2026-11-05T22:32:19.273894+00:00",
+      "source_system": "VERIFIED_LOCAL_AES256_V2_BACKUP_AUDIT",
+      "source_chat_number": "120-1",
+      "observation": "2026-11-06 v2 password newline fix; original v1 and original ZIP preserved; no password contents in registry",
+      "execution_validation": "SUCCESS_TWO_INDEPENDENT_READONLY_RESTORES",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "YES_NONSECRET_CODE_AND_EVIDENCE_ONLY",
+      "original_file_unchanged": true,
+      "provenance_status": "DIRECT_MAC_STUDIO_RUN_AND_INDEPENDENT_READONLY_RESTORE",
+      "registry_added_in": "v0.20"
+    },
+    {
+      "asset_id": "ASSET-120-EXPORT-AES256-V2-ACCEPTANCE-20261106",
+      "title": "AES-256 v2 줄바꿈 암호 결함 수정 및 검증 보고서",
+      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_OFFICIAL_CHATGPT_EXPORT_20261105_v01/AES256_V2_PASSWORD_NEWLINE_FIX_AND_RESTORE_20261106_v0.1.md",
+      "bytes": 4916,
+      "sha256": "6481af85056201b264e02a431c9ebe5b2ce32424647bcd6e73943b37843f8fad",
+      "mtime_utc": "2026-11-05T22:34:38.751017+00:00",
+      "source_system": "VERIFIED_LOCAL_AES256_V2_BACKUP_AUDIT",
+      "source_chat_number": "120-1",
+      "observation": "2026-11-06 v2 password newline fix; original v1 and original ZIP preserved; no password contents in registry",
+      "execution_validation": "BACKUP_AND_READONLY_RESTORE_PASS_FINDER_GUI_PENDING",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "YES_NONSECRET_CODE_AND_EVIDENCE_ONLY",
+      "original_file_unchanged": true,
+      "provenance_status": "DIRECT_MAC_STUDIO_RUN_AND_INDEPENDENT_READONLY_RESTORE",
+      "registry_added_in": "v0.20"
     }
   ],
   "unresolved": [
@@ -1773,7 +1824,7 @@
       "issue": "Actual Android app UI display not field-tested; original failed chat tool trace not archived."
     }
   ],
-  "supersedes": "asset_manifest_v0.18.json (immutable prior retained)",
+  "supersedes": "asset_manifest_v0.19.json (immutable previous preserved)",
   "library_crosswalk": [
     {
       "asset_id": "TA-CASE-20261102-01",
@@ -2539,6 +2590,24 @@
       "grade": "P3",
       "policy": "private_local_and_aes_nas",
       "classification_scope": "DERIVED_PRIVATE_BACKUP_EVIDENCE"
+    },
+    {
+      "asset_id": "ASSET-120-EXPORT-AES256-V2-PROGRAM-20261106",
+      "grade": "P3",
+      "policy": "private_local_and_aes_nas",
+      "classification_scope": "AES256_V2_NONSECRET_SOURCE_AND_AUDIT"
+    },
+    {
+      "asset_id": "ASSET-120-EXPORT-AES256-V2-RECEIPT-20261106",
+      "grade": "P3",
+      "policy": "private_local_and_aes_nas",
+      "classification_scope": "AES256_V2_NONSECRET_SOURCE_AND_AUDIT"
+    },
+    {
+      "asset_id": "ASSET-120-EXPORT-AES256-V2-ACCEPTANCE-20261106",
+      "grade": "P3",
+      "policy": "private_local_and_aes_nas",
+      "classification_scope": "AES256_V2_NONSECRET_SOURCE_AND_AUDIT"
     }
   ],
   "search_v1_3": {
@@ -2966,6 +3035,11 @@
       "id": "B-13",
       "source": "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_OFFICIAL_CHATGPT_EXPORT_20261105_v01/AES256_OFFSITE_BACKUP_RESTORE_ACCEPTANCE_v0.1.md",
       "status": "OPEN_KEY_ESCROW_INDEPENDENT_DISASTER_RECOVERY_TEST"
+    },
+    {
+      "id": "B-14",
+      "source": "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_OFFICIAL_CHATGPT_EXPORT_20261105_v01/AES256_V2_PASSWORD_NEWLINE_FIX_AND_RESTORE_20261106_v0.1.md",
+      "status": "OPEN_FINDER_V2_DIRECT_GUI_AND_DIFFERENT_MAC_RECOVERY_TEST"
     }
   ],
   "addressbook_registration_reuse_v016": {
@@ -3035,5 +3109,27 @@
     "original_zip_changed": false,
     "receipt_path": "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_OFFICIAL_CHATGPT_EXPORT_20261105_v01/AES256_FULL_EXPORT_BACKUP_AND_RESTORE_20261105_v0.1.json",
     "registered_metadata_only": true
+  },
+  "chatgpt_20261106_aes256_v2": {
+    "fix": "HDIUTIL_STDINPASS_RAW_KEYCHAIN_PASSWORD_PLUS_NULL_TERMINATOR_NO_NEWLINE",
+    "source_unchanged": "2026-11-05 full export ZIP; original v1 image intact",
+    "new_ciphertext_bytes": 1602354688,
+    "new_ciphertext_sha256": "a8ddc65acc2382aab9ec0cc792ffc5b20c847a337ce58dd8eca2d856698bd5f4",
+    "ssd_path": "/Volumes/SSD2TB/ROUTABL-PrivateEncrypted-Archives/ChatGPT-Export-20261105-v2/ChatGPT-Account-Export-20261105_AES256_v2.sparseimage",
+    "nas_path": "/Volumes/Dev_Assets/ROUTABL-PrivateEncrypted-Archives/ChatGPT-Export-20261105-v2/ChatGPT-Account-Export-20261105_AES256_v2.sparseimage",
+    "ssd_readonly_restore": "SUCCESS_ZIP_SHA_AND_CRC",
+    "nas_independent_readonly_restore": "SUCCESS_ZIP_SHA_AND_CRC",
+    "mac_finder_manual_gui_test": "PENDING_USER_TEST",
+    "other_mac_disaster_recovery": "PENDING",
+    "existing_keychain_password_changed": false,
+    "v1_backup_changed": false,
+    "existing_0430_launchagent_changed": false,
+    "receipt": "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_OFFICIAL_CHATGPT_EXPORT_20261105_v01/AES256_FULL_EXPORT_BACKUP_AND_RESTORE_20261106_v0.2.json",
+    "new_metadata_asset_ids": [
+      "ASSET-120-EXPORT-AES256-V2-PROGRAM-20261106",
+      "ASSET-120-EXPORT-AES256-V2-RECEIPT-20261106",
+      "ASSET-120-EXPORT-AES256-V2-ACCEPTANCE-20261106"
+    ],
+    "prior_manifest_sha256": "f8c6837c4d2a238c5d5ebe66df1c3ee5c9ba77d3dda3e2aa59222684b4d3e49b"
   }
 }
