@@ -1,6 +1,6 @@
 {
- "schema_version": "0.28",
- "captured_at_kst": "2026-11-11T07:49:42+09:00",
+ "schema_version": "0.29",
+ "captured_at_kst": "2026-11-11T14:38:14+09:00",
  "scope": "TI01_3TIER_IMPORTANCE_RECOVERY_GOVERNANCE_ABOVE_VI01",
  "registry_mode": "local-only security classification and search metadata",
  "existing_index_baseline": {
@@ -2690,6 +2690,65 @@
     "ANALYSIS-APP-FUTURE"
    ],
    "registry_added_in": "v0.28"
+  },
+  {
+   "asset_id": "ASSET-120-GOVERNANCE-DW01-DUAL-AI-BUILD-WORKFLOW-20261111",
+   "title": "DW-01 두 AI 분업 개발·검증 방식 (Claude 수정·진단 / ChatGPT+Desktop Commander Mac 빌드·푸시 / 커밋 전 검증 게이트)",
+   "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/00_GUIDE/ROUTABL_DUAL_AI_BUILD_WORKFLOW_DW01_v1.0_20261111.md",
+   "bytes": 5116,
+   "sha256": "ad688f9dac48e922f3365bad4d3784e08a050815ea55febe34c88dc02f234222",
+   "mtime_utc": "2026-11-11T05:37:46.822579+00:00",
+   "source_system": "CLAUDE_SESSION_20261111_DW01",
+   "source_chat_number": "200",
+   "execution_validation": "OFFICIAL_WORKFLOW_PRINCIPLE_REGISTERED_SHA_VERIFIED_FIRST_APPLIED_20261111_B960472",
+   "write_or_execution_approval_class": "B",
+   "copy_in_managed_repository": "NEW_VERSIONED_POLICY_IN_00_GUIDE",
+   "original_file_unchanged": true,
+   "provenance_status": "DIRECT_FILE_BYTES_SHA256_VERIFIED_AUTHORED_IN_THIS_SESSION",
+   "parent_asset_ids": [
+    "ASSET-120-GOVERNANCE-VI01-VERSION-INDEPENDENCE-20261106",
+    "ASSET-120-GOVERNANCE-TI01-3TIER-ORIGINAL-PROTECTION-20261106"
+   ],
+   "registry_added_in": "v0.29"
+  },
+  {
+   "asset_id": "ANALYTICS-APP-01-SHARED-HASH-GUARD",
+   "title": "분석앱 공통코드 해시 빌드 검사 verifySharedHash (shared/가 SHARED_SOURCE.md와 다르면 빌드 실패)",
+   "observed_original_path": "/Users/yongho/StudioProjects/ROUTABL-Analytics-Android/app/build.gradle.kts",
+   "bytes": 5833,
+   "sha256": "4009aa7fe2d47d6d8afd1d059ed28a295d7af68ebbb4995212ddac2b098b8fc9",
+   "mtime_utc": "2026-11-11T05:21:44.891432+00:00",
+   "source_system": "CLAUDE_SESSION_20261111_DW01",
+   "source_chat_number": "200",
+   "execution_validation": "MAC_GRADLE_BUILD_PASS__NEGATIVE_TEST_PASS__PUSHED_B960472",
+   "write_or_execution_approval_class": "B",
+   "copy_in_managed_repository": "NO_REFERENCED_ONLY",
+   "original_file_unchanged": true,
+   "provenance_status": "DIRECT_FILE_BYTES_SHA256_VERIFIED_AUTHORED_IN_THIS_SESSION",
+   "parent_asset_ids": [
+    "ANALYTICS-APP-01-SHARED-SOURCE",
+    "ANALYTICS-APP-01-READONLY-BUILD-GUARD"
+   ],
+   "registry_added_in": "v0.29"
+  },
+  {
+   "asset_id": "ANALYTICS-APP-01-HANDOFF-20261111",
+   "title": "분석앱 인계 기록 2026-11-11 (결정·공통코드·Firebase 읽기·크레딧 소모 구간·미완료·불일치)",
+   "observed_original_path": "/Users/yongho/StudioProjects/ROUTABL-Analytics-Android/docs/HANDOFF_20261111.md",
+   "bytes": 10322,
+   "sha256": "8039bd3396e44ec846b411c06fed9ebc63fba20b487e89b73c4c68dfa5ad9181",
+   "mtime_utc": "2026-11-11T04:29:46.422538+00:00",
+   "source_system": "CLAUDE_SESSION_20261111_DW01",
+   "source_chat_number": "200",
+   "execution_validation": "DOCUMENT_COMMITTED_B6D8914_PUSHED",
+   "write_or_execution_approval_class": "B",
+   "copy_in_managed_repository": "NO_REFERENCED_ONLY",
+   "original_file_unchanged": true,
+   "provenance_status": "DIRECT_FILE_BYTES_SHA256_VERIFIED_AUTHORED_IN_THIS_SESSION",
+   "parent_asset_ids": [
+    "ANALYTICS-APP-01-README"
+   ],
+   "registry_added_in": "v0.29"
   }
  ],
  "unresolved": [
@@ -2887,7 +2946,7 @@
    "issue": "Actual Android app UI display not field-tested; original failed chat tool trace not archived."
   }
  ],
- "supersedes": "asset_manifest_v0.27.json (unchanged historical version)",
+ "supersedes": "asset_manifest_v0.28.json (unchanged historical version)",
  "library_crosswalk": [
   {
    "asset_id": "TA-CASE-20261102-01",
@@ -3953,6 +4012,24 @@
    "grade": "P3",
    "policy": "governance_document_no_auth_secrets_or_customer_raw_records",
    "classification_scope": "GENERAL_TECHNICAL_ASSET_PRIORITIZATION_AND_RECOVERY_GOVERNANCE"
+  },
+  {
+   "asset_id": "ASSET-120-GOVERNANCE-DW01-DUAL-AI-BUILD-WORKFLOW-20261111",
+   "grade": "P3",
+   "policy": "local_sanitized_text",
+   "classification_scope": "inventory_use_only_not_data_publish_approval"
+  },
+  {
+   "asset_id": "ANALYTICS-APP-01-SHARED-HASH-GUARD",
+   "grade": "P3",
+   "policy": "local_sanitized_text",
+   "classification_scope": "inventory_use_only_not_data_publish_approval"
+  },
+  {
+   "asset_id": "ANALYTICS-APP-01-HANDOFF-20261111",
+   "grade": "P3",
+   "policy": "local_sanitized_text",
+   "classification_scope": "inventory_use_only_not_data_publish_approval"
   }
  ],
  "search_v1_3": {
@@ -4726,9 +4803,9 @@
   "asset_id": "ASSET-120-GOVERNANCE-TI01-3TIER-ORIGINAL-PROTECTION-20261106"
  },
  "previous_registry": {
-  "path": "asset_manifest_v0.27.json",
-  "bytes": 229946,
-  "sha256": "afe17adb54103952c0e84d296ded42a478fca49f25bd53f1f87dc0c73e1ce244"
+  "path": "asset_manifest_v0.28.json",
+  "bytes": 234461,
+  "sha256": "21460c0642fc8ad5e6597cc08946203eed012d80d4677516e92be8715fbc6cae"
  },
  "analytics_app_v028": {
   "status": "IMPLEMENTED_ANALYSIS-APP-FUTURE_AS_INDEPENDENT_READ_ONLY_APP",
@@ -4768,5 +4845,49 @@
   ],
   "audit_record": "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/200_ANALYTICS_APP_20261111_v01/ANALYTICS_APP_ASSET_REGISTRATION_20261111_v1.0.md",
   "incident_20261111": "First sqlite v0.14 build directly on the connected folder failed (disk I/O error, file locking on mounted share) and left a 0-byte asset_120_lookup_v0.14.sqlite and its -journal. With user-granted delete permission only those two failed files were removed; v0.14 was rebuilt in a local work folder from a copy of v0.13 and copied in (integrity_check ok, 175 rows). v0.13 byte-identical before/after."
+ },
+ "dual_ai_workflow_v029": {
+  "status": "OFFICIALLY_REGISTERED_WORKFLOW_PRINCIPLE",
+  "governance_id": "DW-01",
+  "canonical_document": "/Users/yongho/ROUTABL-TechAssets/00_GUIDE/ROUTABL_DUAL_AI_BUILD_WORKFLOW_DW01_v1.0_20261111.md",
+  "hierarchy": "BELOW_TI-01_AND_VI-01",
+  "roles": {
+   "claude": "edit_analyze_diagnose_write_prompts_verify_record",
+   "chatgpt_desktop_commander": "mac_native_gradle_test_negative_test_commit_push",
+   "user": "relay_approve_device_check"
+  },
+  "commit_gate": [
+   "build_guards_pass",
+   "unit_tests_pass",
+   "debug_build_pass",
+   "negative_test_detected",
+   "worktree_restored"
+  ],
+  "standing_prohibition": "NO_DELETE_NO_PRODUCTION_FIREBASE_WRITE_WITHOUT_PRIOR_APPROVAL",
+  "first_application": {
+   "repo": "/Users/yongho/StudioProjects/ROUTABL-Analytics-Android",
+   "commits": [
+    "b6d8914",
+    "ab621fe",
+    "b960472"
+   ],
+   "origin_main": "b960472",
+   "first_run": "FAILED_SCRIPT_COMPILE_java.security_UNRESOLVED_NOT_COMMITTED",
+   "fix": "import java.security.MessageDigest",
+   "second_run": "ALL_PASS_NEGATIVE_TEST_DETECTED"
+  },
+  "shared_equality_20261111": "DRIVER_b9c40c2 = SENIOR = ANALYTICS (17 files)",
+  "note_existing_entry": "ANALYTICS-APP-01-READONLY-BUILD-GUARD (v0.28) records pre-change bytes of app/build.gradle.kts; the same file now also holds verifySharedHash, current sha256 4009aa7fe2d47d6d8afd1d059ed28a295d7af68ebbb4995212ddac2b098b8fc9 (5833 bytes). Old entry kept unchanged as history.",
+  "warning": "DISPATCH-One-Android-Latest worktree is 1.0.18 (4e588e3, 2026-10-13); only origin/main is b9c40c2. Read via git show origin/main:",
+  "untouched": [
+   "asset_manifest_v0.28.json",
+   "asset_120_lookup_v0.14.sqlite",
+   "97-1 sealed archive",
+   "NAS backups",
+   "~/Library ROUTABL-AssetSearch DB",
+   "Firebase",
+   "driver app code"
+  ],
+  "audit_record": "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/200_ANALYTICS_APP_20261111_v01/DW01_WORKFLOW_REGISTRATION_20261111_v1.0.md"
  }
 }
