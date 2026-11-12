@@ -1,7 +1,7 @@
 {
-  "schema_version": "0.25",
-  "captured_at_kst": "2026-11-06T20:54:32+09:00",
-  "scope": "CHATGPT_V04_GRID_LAYOUT_CSS_DEPENDENCY_REMOVAL_1925_ASSETS_COW",
+  "schema_version": "0.26",
+  "captured_at_kst": "2026-11-06T21:15:51+09:00",
+  "scope": "ROUTABL_ORGANIZATION_WIDE_VERSION_INDEPENDENCE_POLICY_VI01",
   "registry_mode": "local-only security classification and search metadata",
   "existing_index_baseline": {
     "sqlite_integrity": "ok",
@@ -2392,6 +2392,23 @@
       "original_file_unchanged": true,
       "provenance_status": "LOCAL_GUI_REPAIR_READONLY_OLD_VERSION_WITH_APFS_COW_MEDIA",
       "registry_added_in": "v0.25"
+    },
+    {
+      "asset_id": "ASSET-120-GOVERNANCE-VI01-VERSION-INDEPENDENCE-20261106",
+      "title": "라우터블 기술자산 운영 원칙 VI-01 — 버전별 완전 독립성과 공통 원본 분리",
+      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/00_GUIDE/ROUTABL_VERSION_INDEPENDENCE_PRINCIPLE_v1.0_20261106.md",
+      "bytes": 10389,
+      "sha256": "86c79cd8cc11aac2aed2054c9f92ad445050ce5cfb6f17f17b355f75b4c4eb54",
+      "mtime_utc": "2026-11-06T12:14:59.491712+00:00",
+      "source_system": "USER_STATED_DEVELOPMENT_AND_RESTORATION_GOVERNANCE",
+      "source_chat_number": "120-1",
+      "observation": "User-confirmed 2026-11-06 governance: versions independent of earlier version folders; common original allowed under data contracts; archive v04 CSS/symlink regression provenance; 7 release QA gates.",
+      "execution_validation": "POLICY_DOCUMENT_REGISTERED_AND_SHA_VERIFIED_NOT_APPLIED_RETROACTIVELY_TO_APP_CODE",
+      "write_or_execution_approval_class": "B",
+      "copy_in_managed_repository": "ORIGINAL_NEW_POLICY_STORED_IN_00_GUIDE",
+      "original_file_unchanged": true,
+      "provenance_status": "DIRECT_USER_DESIGN_PRINCIPLE_AND_VERIFIED_V04_CASE",
+      "registry_added_in": "v0.26"
     }
   ],
   "unresolved": [
@@ -2589,7 +2606,7 @@
       "issue": "Actual Android app UI display not field-tested; original failed chat tool trace not archived."
     }
   ],
-  "supersedes": "asset_manifest_v0.24.json (immutable previous preserved)",
+  "supersedes": "asset_manifest_v0.25.json (previous immutable and preserved)",
   "library_crosswalk": [
     {
       "asset_id": "TA-CASE-20261102-01",
@@ -3643,6 +3660,12 @@
       "grade": "P3",
       "policy": "private_local_FileVault_no_plaintext_remote_storage",
       "classification_scope": "OFFLINE_GUI_LAYOUT_DEPENDENCY_REPAIR_AND_MEDIA_MANIFEST"
+    },
+    {
+      "asset_id": "ASSET-120-GOVERNANCE-VI01-VERSION-INDEPENDENCE-20261106",
+      "grade": "P3",
+      "policy": "safe_general_development_governance",
+      "classification_scope": "VERSION_INDEPENDENCE_RELEASE_GATES_PUBLIC_TECHNICAL_PRINCIPLES"
     }
   ],
   "search_v1_3": {
@@ -4359,5 +4382,36 @@
       "ASSET-120-CHATGPT-V04-REPAIR-ASSET-MANIFEST",
       "ASSET-120-CHATGPT-V04-REPAIR-ACCEPTANCE-REPORT"
     ]
+  },
+  "version_independence_policy_v026": {
+    "status": "OFFICIALLY_REGISTERED_AS_DEVELOPMENT_POLICY",
+    "governance_id": "VI-01",
+    "canonical_document": "/Users/yongho/ROUTABL-TechAssets/00_GUIDE/ROUTABL_VERSION_INDEPENDENCE_PRINCIPLE_v1.0_20261106.md",
+    "document_sha256": "86c79cd8cc11aac2aed2054c9f92ad445050ce5cfb6f17f17b355f75b4c4eb54",
+    "source_user_instruction_date_kst": "2026-11-06",
+    "policy_summary": "Versions standalone under common data source, no required previous-version execution resources; preserve original and rollback; 7 mandatory validation gates.",
+    "applies_to": [
+      "ROUTABL_STANDARD_DRIVER_APP",
+      "ROUTABL_SENIOR_DRIVER_APP",
+      "ROUTABL_CUSTOMER_APP",
+      "ROUTABL_CONTROL_WEB",
+      "ROUTABL_TECH_ASSET_SEARCH_AND_ARCHIVE_VIEWERS",
+      "FUTURE_DERIVED_VERSIONS"
+    ],
+    "app_code_changed": false,
+    "firebase_data_or_rules_changed": false,
+    "gui_v04_changed_in_this_registration": false,
+    "release_quality_gates": [
+      "VI-01",
+      "VI-02",
+      "VI-03",
+      "VI-04",
+      "VI-05",
+      "VI-06",
+      "VI-07"
+    ],
+    "basis_case": "2026-11-06 v0.4 missing v03-style.css and original v01 assets symlink",
+    "previous_registry_sha256": "c0daf1cb5714fff8a5d9dcd2bc24867098d01875e29b5eb69013780b2e7c8216",
+    "asset_id": "ASSET-120-GOVERNANCE-VI01-VERSION-INDEPENDENCE-20261106"
   }
 }
