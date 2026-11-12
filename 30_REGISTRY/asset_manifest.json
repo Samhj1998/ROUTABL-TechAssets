@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.4",
-  "captured_at_kst": "2026-11-03T10:40:56+09:00",
-  "scope": "SELECTED_BASELINE_PLUS_TWO_VERIFIED_MAC_GITHUB_CROSSWALKS",
-  "registry_mode": "metadata-only; no code execution; no secret material copied",
+  "schema_version": "0.5",
+  "captured_at_kst": "2026-11-03T19:09:04+09:00",
+  "scope": "APPROVED_MAC_8_PROJECTS_PRIVATE_SEARCH_AND_PROVENANCE",
+  "registry_mode": "local-only security classification and search metadata",
   "existing_index_baseline": {
     "sqlite_integrity": "ok",
     "docs": 2270,
@@ -183,6 +183,54 @@
       "write_or_execution_approval_class": "C",
       "copy_in_managed_repository": "NO",
       "original_file_unchanged": true
+    },
+    {
+      "asset_id": "ASSET-SEARCH-01-V13-ENGINE",
+      "title": "AssetSearch v1.3 safe Mac code/metadata indexer",
+      "observed_original_path": "/Users/yongho/Library/Application Support/ROUTABL-AssetSearch/routabl_assetsearch_v1_3.py",
+      "bytes": 10104,
+      "sha256": "9faeb3e8711f3f2c1dcd0c63e4848fd9cabd87ae8ea4e15d89f23d5ce2fb5de3",
+      "observation": "NEW_V1_3_LOCAL_ARTIFACT_NOT_REMOTE_REPLICATED",
+      "execution_validation": "LOCAL_SEARCH_SYNTAX_AND_HTTP_TEST_VERIFIED",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "NO",
+      "original_file_unchanged": true
+    },
+    {
+      "asset_id": "ASSET-SEARCH-01-V13-DB",
+      "title": "AssetSearch v1.3 separate SQLite index",
+      "observed_original_path": "/Users/yongho/Library/Application Support/ROUTABL-AssetSearch/assets_v1_3.sqlite",
+      "bytes": 86417408,
+      "sha256": "c5a800f36aaaeddd1b5aad086403df115fa8f99fb8f616271421e89dff71cba4",
+      "observation": "NEW_V1_3_LOCAL_ARTIFACT_NOT_REMOTE_REPLICATED",
+      "execution_validation": "SQLITE_QUICK_CHECK_OK",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "NO",
+      "original_file_unchanged": true
+    },
+    {
+      "asset_id": "ASSET-SEARCH-01-V13-WEB",
+      "title": "AssetSearch v1.3 private localhost UI",
+      "observed_original_path": "/Users/yongho/Library/Application Support/ROUTABL-AssetSearch/routabl_web_v1_3.py",
+      "bytes": 4919,
+      "sha256": "3697244a4ed035a35f10c972e12e9bf163ebe25fb1b61047b207ae9df6a004c8",
+      "observation": "NEW_V1_3_LOCAL_ARTIFACT_NOT_REMOTE_REPLICATED",
+      "execution_validation": "LOCAL_SEARCH_SYNTAX_AND_HTTP_TEST_VERIFIED",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "NO",
+      "original_file_unchanged": true
+    },
+    {
+      "asset_id": "ASSET-SECURITY-POLICY-01",
+      "title": "Technical asset access and search classification policy v0.1",
+      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/00_GUIDE/ASSET_SECURITY_AND_SEARCH_POLICY_v0.1.md",
+      "bytes": 4223,
+      "sha256": "703140ed59a76bbf8306fcbcff89dbeda84f050bcd300ffef39b6d61fcabc4fc",
+      "observation": "NEW_V1_3_LOCAL_ARTIFACT_NOT_REMOTE_REPLICATED",
+      "execution_validation": "DOCUMENT_ONLY",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "NO",
+      "original_file_unchanged": true
     }
   ],
   "unresolved": [
@@ -218,9 +266,21 @@
     {
       "asset_id": "ASSET-AUTOMATION-PAUSED",
       "issue": "Mac/NAS/Drive scheduled backup LaunchAgents intentionally disabled after Terminal launch storm; not validated unattended"
+    },
+    {
+      "asset_id": "ASSET-SEARCH-01-V13",
+      "issue": "Content scanning is best-effort and new root scanning is limited to 8 project directories; routine incremental refresh not built."
+    },
+    {
+      "asset_id": "ASSET-SECURITY-POLICY-01",
+      "issue": "Older v1.1/v1.2 NAS indexed text was not fully re-audited for sensitive content."
+    },
+    {
+      "asset_id": "ASSET-BACKUP-SCOPE-01",
+      "issue": "The v1.3 DB resides outside currently encrypted backup source; no new scheduled backup enabled."
     }
   ],
-  "supersedes": "asset_manifest_v0.3.json (unchanged, preserved)",
+  "supersedes": "asset_manifest_v0.4.json (preserved unchanged)",
   "library_crosswalk": [
     {
       "asset_id": "TA-CASE-20261102-01",
@@ -307,5 +367,170 @@
     "no_repository_push": true,
     "no_backup_agent_reactivation": true,
     "no_unredacted_source_copy": true
+  },
+  "security_classification": [
+    {
+      "asset_id": "TA-CASE-20261102-01",
+      "grade": "P2",
+      "policy": "metadata_only",
+      "classification_scope": "inventory_use_only_not_data_publish_approval"
+    },
+    {
+      "asset_id": "INTEGRATION-F1",
+      "grade": "P3",
+      "policy": "sanitized_local_text_allowed",
+      "classification_scope": "inventory_use_only_not_data_publish_approval"
+    },
+    {
+      "asset_id": "ASSET-SEARCH-01-ENGINE",
+      "grade": "P3",
+      "policy": "sanitized_local_text_allowed",
+      "classification_scope": "inventory_use_only_not_data_publish_approval"
+    },
+    {
+      "asset_id": "ASSET-SEARCH-01-WEB",
+      "grade": "P3",
+      "policy": "sanitized_local_text_allowed",
+      "classification_scope": "inventory_use_only_not_data_publish_approval"
+    },
+    {
+      "asset_id": "ASSET-SEARCH-01-DB",
+      "grade": "P2",
+      "policy": "metadata_only",
+      "classification_scope": "inventory_use_only_not_data_publish_approval"
+    },
+    {
+      "asset_id": "ASSET-SEARCH-01-SOURCE-ZIP",
+      "grade": "P2",
+      "policy": "metadata_only",
+      "classification_scope": "inventory_use_only_not_data_publish_approval"
+    },
+    {
+      "asset_id": "NAS-README-20261024",
+      "grade": "P3",
+      "policy": "sanitized_local_text_allowed",
+      "classification_scope": "inventory_use_only_not_data_publish_approval"
+    },
+    {
+      "asset_id": "ROUTABL-97-1-V4.1-ZIP",
+      "grade": "P2",
+      "policy": "metadata_only",
+      "classification_scope": "inventory_use_only_not_data_publish_approval"
+    },
+    {
+      "asset_id": "ROUTABL-97-1-V4.1-PDF",
+      "grade": "P2",
+      "policy": "metadata_only",
+      "classification_scope": "inventory_use_only_not_data_publish_approval"
+    },
+    {
+      "asset_id": "ROUTABL-97-1-V4.1-NAS-RECEIPT",
+      "grade": "P2",
+      "policy": "metadata_only",
+      "classification_scope": "inventory_use_only_not_data_publish_approval"
+    },
+    {
+      "asset_id": "ASSET-SEARCH-01-V12-ENGINE",
+      "grade": "P3",
+      "policy": "sanitized_local_text_allowed",
+      "classification_scope": "inventory_use_only_not_data_publish_approval"
+    },
+    {
+      "asset_id": "ASSET-SEARCH-01-V12-DB",
+      "grade": "P2",
+      "policy": "metadata_only",
+      "classification_scope": "inventory_use_only_not_data_publish_approval"
+    },
+    {
+      "asset_id": "ASSET-SEARCH-01-V12-WEB",
+      "grade": "P3",
+      "policy": "sanitized_local_text_allowed",
+      "classification_scope": "inventory_use_only_not_data_publish_approval"
+    },
+    {
+      "asset_id": "ASSET-SEARCH-01-V13-ENGINE",
+      "grade": "P3",
+      "policy": "sanitized_local_text_allowed",
+      "classification_scope": "inventory_use_only_not_data_publish_approval"
+    },
+    {
+      "asset_id": "ASSET-SEARCH-01-V13-DB",
+      "grade": "P2",
+      "policy": "metadata_only",
+      "classification_scope": "inventory_use_only_not_data_publish_approval"
+    },
+    {
+      "asset_id": "ASSET-SEARCH-01-V13-WEB",
+      "grade": "P3",
+      "policy": "sanitized_local_text_allowed",
+      "classification_scope": "inventory_use_only_not_data_publish_approval"
+    },
+    {
+      "asset_id": "ASSET-SECURITY-POLICY-01",
+      "grade": "P3",
+      "policy": "sanitized_local_text_allowed",
+      "classification_scope": "inventory_use_only_not_data_publish_approval"
+    }
+  ],
+  "search_v1_3": {
+    "baseline_version": "v1.2",
+    "baseline_count": 2272,
+    "new_mac_indexed_count": 3247,
+    "all_search_rows": 5519,
+    "new_mac_sanitized_text_count": 1998,
+    "new_mac_metadata_only_count": 1249,
+    "new_mac_sensitive_path_rejected_count": 95,
+    "new_index_path": "/Users/yongho/Library/Application Support/ROUTABL-AssetSearch/assets_v1_3.sqlite",
+    "projects": [
+      {
+        "project": "DISPATCH-One-Android",
+        "indexed_files": 545
+      },
+      {
+        "project": "ROUTABL-Senior-Driver",
+        "indexed_files": 549
+      },
+      {
+        "project": "ROUTIVEL-Customer-Android",
+        "indexed_files": 352
+      },
+      {
+        "project": "DailyInspection-Android",
+        "indexed_files": 127
+      },
+      {
+        "project": "ROUTIVEL-Firebase-Migration",
+        "indexed_files": 165
+      },
+      {
+        "project": "ROUTABL-Control-Public-20261020",
+        "indexed_files": 526
+      },
+      {
+        "project": "ROUTABL-Integration-Audit-20261019",
+        "indexed_files": 478
+      },
+      {
+        "project": "ROUTABL-Dispatch-Search-20261019",
+        "indexed_files": 505
+      }
+    ],
+    "local_web_script": "/Users/yongho/Library/Application Support/ROUTABL-AssetSearch/routabl_web_v1_3.py",
+    "local_web_port_for_manual_use": 8767,
+    "auto_refresh_configured": false,
+    "web_server_persistently_running": false,
+    "exclusion_limit": "regexes and path rules cannot prove all secrets absent",
+    "previous_nas_index_preserved": true,
+    "all_data_local": true,
+    "source_read_only": true,
+    "new_search_db_backup_policy": "NOT_YET_INCLUDED_IN_ENCRYPTED_BACKUP"
+  },
+  "security_policy_path": "/Users/yongho/ROUTABL-TechAssets/00_GUIDE/ASSET_SECURITY_AND_SEARCH_POLICY_v0.1.md",
+  "security_guards": {
+    "P0": "EXCLUDE_CREDENTIALS_AND_PRIVATE_KEYS",
+    "P1": "HIGH_SENSITIVITY_NO_UNREDACTED_TEXT",
+    "P2": "LOCAL_METADATA_ONLY",
+    "P3": "LOCAL_SANITIZED_TEXT_SEARCH",
+    "approval": "FIRESTORE_WRITE_OR_DESTRUCTIVE_OR_PUBLISH_REQUIRES_SCOPE_AND_RECOVERY_REVIEW"
   }
 }
