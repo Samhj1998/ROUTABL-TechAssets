@@ -1,7 +1,7 @@
 {
-  "schema_version": "0.13",
-  "captured_at_kst": "2026-11-04T00:01:11+09:00",
-  "scope": "VERIFIED_MAC_AES_TO_NAS_CAS_AND_IMMUTABLE_BACKUP_RECEIPTS",
+  "schema_version": "0.14",
+  "captured_at_kst": "2026-11-04T02:15:29+09:00",
+  "scope": "MAC_TO_NAS_AUTOMATION_FAIL_CLOSED_V03_STATUS_PINNED_GUI_NOT_YET_ARMED",
   "registry_mode": "local-only security classification and search metadata",
   "existing_index_baseline": {
     "sqlite_integrity": "ok",
@@ -923,6 +923,102 @@
       "write_or_execution_approval_class": "C",
       "copy_in_managed_repository": "NO",
       "original_file_unchanged": true
+    },
+    {
+      "asset_id": "ASSET-HEADLESS-SUPERVISOR-V02",
+      "title": "Fail-closed approval-before-NAS supervisor v0.2",
+      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/00_GUIDE/ROUTABL_BackupHeadlessSupervisor_v0_2.py",
+      "bytes": 10789,
+      "sha256": "49a1533b22a166715bd606c3c151f89d24752c653c5c119f5107267af640f878",
+      "observation": "NEW_FAIL_CLOSED_MAC_BACKGROUND_AUTOMATION_TEST_ARTIFACT",
+      "execution_validation": "MANUAL_APP_AND_LOCAL_GUARDS_PASS__LAUNCHD_BACKGROUND_NO_AUTH_UNVERIFIED",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "NO",
+      "original_file_unchanged": true
+    },
+    {
+      "asset_id": "ASSET-HEADLESS-AGENT-SWIFT-V03",
+      "title": "Native Swift timed one-shot background agent source",
+      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/40_WORKING/HEADLESS_NATIVE_V0_3/ROUTABLBackupAgent.swift",
+      "bytes": 7474,
+      "sha256": "0a898a7aa2942d1227e20949f40ff92393e8d141dcf1ef4f15e43f81bd6cc6ab",
+      "observation": "NEW_FAIL_CLOSED_MAC_BACKGROUND_AUTOMATION_TEST_ARTIFACT",
+      "execution_validation": "MANUAL_APP_AND_LOCAL_GUARDS_PASS__LAUNCHD_BACKGROUND_NO_AUTH_UNVERIFIED",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "NO",
+      "original_file_unchanged": true
+    },
+    {
+      "asset_id": "ASSET-HEADLESS-MANAGER-SWIFT-V03",
+      "title": "Native macOS user authorization and registration UI source",
+      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/40_WORKING/HEADLESS_NATIVE_V0_3/ROUTABLBackupManager.swift",
+      "bytes": 7741,
+      "sha256": "ea2560adce751487b2b92dcde555102d7d3e4e5eecb1050a4c03b542f5f6af26",
+      "observation": "NEW_FAIL_CLOSED_MAC_BACKGROUND_AUTOMATION_TEST_ARTIFACT",
+      "execution_validation": "MANUAL_APP_AND_LOCAL_GUARDS_PASS__LAUNCHD_BACKGROUND_NO_AUTH_UNVERIFIED",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "NO",
+      "original_file_unchanged": true
+    },
+    {
+      "asset_id": "ASSET-HEADLESS-MANAGER-APP-ZIP-V03",
+      "title": "Ad-hoc signed v0.3 Mac app portable archive",
+      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/70_EXPORTS/ROUTABL_BackupSafeManager_v0.3_20261104.zip",
+      "bytes": 44352,
+      "sha256": "bcec8e87a8fafdefd4f88070bac26d42bd23b08118e1719f5f85b913d44cfb1a",
+      "observation": "NEW_FAIL_CLOSED_MAC_BACKGROUND_AUTOMATION_TEST_ARTIFACT",
+      "execution_validation": "MANUAL_APP_AND_LOCAL_GUARDS_PASS__LAUNCHD_BACKGROUND_NO_AUTH_UNVERIFIED",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "NO",
+      "original_file_unchanged": true
+    },
+    {
+      "asset_id": "ASSET-HEADLESS-APPROVAL-GATE-V01",
+      "title": "Human-only interactive explicit backup enable gate",
+      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/00_GUIDE/ROUTABL_BackupApprovalGate_v0_1.py",
+      "bytes": 5040,
+      "sha256": "9c303d84cea4a9c6a2dd7fca85cfb94b3899cc766fd4f2213ad14b51388b5108",
+      "observation": "NEW_FAIL_CLOSED_MAC_BACKGROUND_AUTOMATION_TEST_ARTIFACT",
+      "execution_validation": "MANUAL_APP_AND_LOCAL_GUARDS_PASS__LAUNCHD_BACKGROUND_NO_AUTH_UNVERIFIED",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "NO",
+      "original_file_unchanged": true
+    },
+    {
+      "asset_id": "ASSET-HEADLESS-HEALTH-READONLY-V01",
+      "title": "Local SSD and NAS linked-receipt health diagnostics",
+      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/00_GUIDE/ROUTABL_BackupHealthReadOnly_v0_1.py",
+      "bytes": 4529,
+      "sha256": "7cec781d4efbd8f1abddc659ced51bf4f316f769554b3649b5cb42cc8c37d14e",
+      "observation": "NEW_FAIL_CLOSED_MAC_BACKGROUND_AUTOMATION_TEST_ARTIFACT",
+      "execution_validation": "MANUAL_APP_AND_LOCAL_GUARDS_PASS__LAUNCHD_BACKGROUND_NO_AUTH_UNVERIFIED",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "NO",
+      "original_file_unchanged": true
+    },
+    {
+      "asset_id": "ASSET-HEADLESS-GUARD-TESTS-V01",
+      "title": "Isolated no-backup guard branch unit test fixture",
+      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/40_WORKING/HEADLESS_NATIVE_V0_2/ROUTABLHeadlessGuardTests_v0_1.py",
+      "bytes": 4622,
+      "sha256": "3815beb36a6e00075460fbe687d62051a0e6ab7c954695d8e9196effc25385b6",
+      "observation": "NEW_FAIL_CLOSED_MAC_BACKGROUND_AUTOMATION_TEST_ARTIFACT",
+      "execution_validation": "MANUAL_APP_AND_LOCAL_GUARDS_PASS__LAUNCHD_BACKGROUND_NO_AUTH_UNVERIFIED",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "NO",
+      "original_file_unchanged": true
+    },
+    {
+      "asset_id": "ASSET-HEADLESS-AUDIT-20261104",
+      "title": "Headless v0.3 privacy/SMB hang and safety audit",
+      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_MAC_NAS_HEADLESS_V03_FAILCLOSED_AND_TCC_GATE_20261104.md",
+      "bytes": 7527,
+      "sha256": "632596f703c873cdcfd652817c01b4600c79321e1bfc740a01f5362304932c8c",
+      "observation": "NEW_FAIL_CLOSED_MAC_BACKGROUND_AUTOMATION_TEST_ARTIFACT",
+      "execution_validation": "MANUAL_APP_AND_LOCAL_GUARDS_PASS__LAUNCHD_BACKGROUND_NO_AUTH_UNVERIFIED",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "NO",
+      "original_file_unchanged": true
     }
   ],
   "unresolved": [
@@ -1098,9 +1194,21 @@
     {
       "asset_id": "ASSET-NAS-CAS-RESTORE-QA",
       "issue": "Decrypted internal full restore via Keychain not performed; only encrypted image rebuilt and matched."
+    },
+    {
+      "asset_id": "ASSET-HEADLESS-AGENT-SWIFT-V03",
+      "issue": "No real v0.3 launchd TCC approval/timeout completion test. User permission required; do not enable automatic backup."
+    },
+    {
+      "asset_id": "ASSET-HEADLESS-MANAGER-APP-ZIP-V03",
+      "issue": "Current app is ad-hoc signed; stable Developer ID signing for upgrades is not available."
+    },
+    {
+      "asset_id": "ASSET-HEADLESS-APPROVAL-GATE-V01",
+      "issue": "Interactive actual backup enablement must await successful background probe and explicit owner action."
     }
   ],
-  "supersedes": "asset_manifest_v0.12.json (retained unchanged)",
+  "supersedes": "asset_manifest_v0.13.json (preserved unchanged)",
   "library_crosswalk": [
     {
       "asset_id": "TA-CASE-20261102-01",
@@ -1626,6 +1734,54 @@
       "grade": "P3",
       "policy": "local_only_private_audit",
       "classification_scope": "backup infrastructure"
+    },
+    {
+      "asset_id": "ASSET-HEADLESS-SUPERVISOR-V02",
+      "grade": "P3",
+      "policy": "private_local_and_aes_nas",
+      "classification_scope": "headless Mac backup infrastructure"
+    },
+    {
+      "asset_id": "ASSET-HEADLESS-AGENT-SWIFT-V03",
+      "grade": "P3",
+      "policy": "private_local_and_aes_nas",
+      "classification_scope": "headless Mac backup infrastructure"
+    },
+    {
+      "asset_id": "ASSET-HEADLESS-MANAGER-SWIFT-V03",
+      "grade": "P3",
+      "policy": "private_local_and_aes_nas",
+      "classification_scope": "headless Mac backup infrastructure"
+    },
+    {
+      "asset_id": "ASSET-HEADLESS-MANAGER-APP-ZIP-V03",
+      "grade": "P2",
+      "policy": "private_local_and_aes_nas",
+      "classification_scope": "headless Mac backup infrastructure"
+    },
+    {
+      "asset_id": "ASSET-HEADLESS-APPROVAL-GATE-V01",
+      "grade": "P3",
+      "policy": "private_local_and_aes_nas",
+      "classification_scope": "headless Mac backup infrastructure"
+    },
+    {
+      "asset_id": "ASSET-HEADLESS-HEALTH-READONLY-V01",
+      "grade": "P3",
+      "policy": "private_local_and_aes_nas",
+      "classification_scope": "headless Mac backup infrastructure"
+    },
+    {
+      "asset_id": "ASSET-HEADLESS-GUARD-TESTS-V01",
+      "grade": "P3",
+      "policy": "private_local_and_aes_nas",
+      "classification_scope": "headless Mac backup infrastructure"
+    },
+    {
+      "asset_id": "ASSET-HEADLESS-AUDIT-20261104",
+      "grade": "P3",
+      "policy": "private_local_and_aes_nas",
+      "classification_scope": "headless Mac backup infrastructure"
     }
   ],
   "search_v1_3": {
@@ -1895,5 +2051,17 @@
     "launchd_agents": "DISABLED",
     "native_app_manual_access_13_phases": "PASS",
     "next_one_shot_backup": "PENDING"
+  },
+  "headless_v03_status": {
+    "existing_v02_agent": "DISABLED_AFTER_HUNG_NAS_TCC_ACCESS",
+    "v03_bundle_id": "com.routabl.assetbackup.manager.safe",
+    "v03_agent_id": "com.routabl.assetbackup.native.safe",
+    "v03_launchagent_registered": false,
+    "background_operational_approval_file_present": false,
+    "developer_id_certificate_available": false,
+    "initial_network_tcc_approval": "PENDING_USER",
+    "drive_upload": "EXCLUDED_MANAGED_BY_SYNOLOGY_WEEKLY_CLOUD_SYNC",
+    "previous_restore_verified": 3308,
+    "planned_manual_snapshot": "PENDING_REGISTERED_V014_BACKUP"
   }
 }
