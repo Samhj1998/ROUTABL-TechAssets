@@ -1,7 +1,7 @@
 {
-  "schema_version": "0.26",
-  "captured_at_kst": "2026-11-06T21:15:51+09:00",
-  "scope": "ROUTABL_ORGANIZATION_WIDE_VERSION_INDEPENDENCE_POLICY_VI01",
+  "schema_version": "0.27",
+  "captured_at_kst": "2026-11-06T21:43:50+09:00",
+  "scope": "TI01_3TIER_IMPORTANCE_RECOVERY_GOVERNANCE_ABOVE_VI01",
   "registry_mode": "local-only security classification and search metadata",
   "existing_index_baseline": {
     "sqlite_integrity": "ok",
@@ -2409,6 +2409,23 @@
       "original_file_unchanged": true,
       "provenance_status": "DIRECT_USER_DESIGN_PRINCIPLE_AND_VERIFIED_V04_CASE",
       "registry_added_in": "v0.26"
+    },
+    {
+      "asset_id": "ASSET-120-GOVERNANCE-TI01-3TIER-ORIGINAL-PROTECTION-20261106",
+      "title": "라우터블 TI-01 3-Tier 핵심 원본 보호·손실 영향·복구 우선순위",
+      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/00_GUIDE/ROUTABL_3TIER_ASSET_PROTECTION_AND_RESTORATION_PRINCIPLE_TI01_v1.0_20261106.md",
+      "bytes": 10233,
+      "sha256": "21833f37c1c0e686743dca77a341577db9b2f0e97d93a8773a25fc8955711132",
+      "mtime_utc": "2026-11-06T12:43:11.608194+00:00",
+      "source_system": "USER_FIRSTHAND_REVENUE_RECOVERY_RISK_AND_TRAVEL_TIER_METHOD",
+      "source_chat_number": "120-1",
+      "observation": "User 2026-11-06 narrative: October Yeongwoo/Sewon supply 3161000 KRW; manual billing possible if Firestore originals remain; Brazil travel passport/laptop/clothes 1st/2nd/3rd tier analogy; separate protection/recovery priority over VI-01. Revenue not externally reconciled.",
+      "execution_validation": "OFFICIAL_GOVERNANCE_PRINCIPLE_REGISTERED_SHA_VERIFIED_NOT_IMPLEMENTED_OR_TESTED_AGAINST_REAL_FIRESTORE",
+      "write_or_execution_approval_class": "B",
+      "copy_in_managed_repository": "NEW_VERSIONED_POLICY_IN_00_GUIDE",
+      "original_file_unchanged": true,
+      "provenance_status": "USER_EXPLICIT_LIVED_EXPERIENCE_AND_USER_CONFIRMED_POLICY",
+      "registry_added_in": "v0.27"
     }
   ],
   "unresolved": [
@@ -2606,7 +2623,7 @@
       "issue": "Actual Android app UI display not field-tested; original failed chat tool trace not archived."
     }
   ],
-  "supersedes": "asset_manifest_v0.25.json (previous immutable and preserved)",
+  "supersedes": "asset_manifest_v0.26.json (unchanged historical version)",
   "library_crosswalk": [
     {
       "asset_id": "TA-CASE-20261102-01",
@@ -3666,6 +3683,12 @@
       "grade": "P3",
       "policy": "safe_general_development_governance",
       "classification_scope": "VERSION_INDEPENDENCE_RELEASE_GATES_PUBLIC_TECHNICAL_PRINCIPLES"
+    },
+    {
+      "asset_id": "ASSET-120-GOVERNANCE-TI01-3TIER-ORIGINAL-PROTECTION-20261106",
+      "grade": "P3",
+      "policy": "governance_document_no_auth_secrets_or_customer_raw_records",
+      "classification_scope": "GENERAL_TECHNICAL_ASSET_PRIORITIZATION_AND_RECOVERY_GOVERNANCE"
     }
   ],
   "search_v1_3": {
@@ -4413,5 +4436,29 @@
     "basis_case": "2026-11-06 v0.4 missing v03-style.css and original v01 assets symlink",
     "previous_registry_sha256": "c0daf1cb5714fff8a5d9dcd2bc24867098d01875e29b5eb69013780b2e7c8216",
     "asset_id": "ASSET-120-GOVERNANCE-VI01-VERSION-INDEPENDENCE-20261106"
+  },
+  "three_tier_asset_protection_and_recovery_v027": {
+    "status": "OFFICIALLY_REGISTERED_GOVERNANCE_PRINCIPLE",
+    "governance_id": "TI-01",
+    "hierarchy": "ABOVE_VI-01_VERSION_INDEPENDENCE_PRINCIPLE",
+    "canonical_document": "/Users/yongho/ROUTABL-TechAssets/00_GUIDE/ROUTABL_3TIER_ASSET_PROTECTION_AND_RESTORATION_PRINCIPLE_TI01_v1.0_20261106.md",
+    "sha256": "21833f37c1c0e686743dca77a341577db9b2f0e97d93a8773a25fc8955711132",
+    "origin": "2026-11-06 user explanation (not current accounting verification)",
+    "examples": [
+      "BRAZIL_TRAVEL_FIRST_PASSPORT_CARD_WALLET_SECOND_LAPTOP_THIRD_CLOTHES_FOOD",
+      "ROUTABL_OCT_2026_YEONGWOO_SEWON_3161000_SUPPLY_REVENUE",
+      "DISPATCH_FIRESTORE_ORIGINAL_MORE_CRITICAL_THAN_MONTHLY_SETTLEMENT_UI"
+    ],
+    "tiers": [
+      "FIRST_CRITICAL_ORIGINALS",
+      "SECOND_RESTORABLE_OPERATIONAL_TOOLS",
+      "THIRD_EASY_REGENERABLE"
+    ],
+    "preserve_origin_and_business_evidence_first": true,
+    "separate_data_importance_from_privacy_grade": true,
+    "no_bulk_automatic_reclassification_of_older_assets": true,
+    "not_directly_modifying_firestore_app_or_backup_jobs": true,
+    "previous_registry_sha256": "aec9ed1a2b255f66a8cdbe32961e99a46f42861fa4c244eedf9132cbc4b5643d",
+    "asset_id": "ASSET-120-GOVERNANCE-TI01-3TIER-ORIGINAL-PROTECTION-20261106"
   }
 }
