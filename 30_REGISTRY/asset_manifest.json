@@ -1,6 +1,6 @@
 {
-  "schema_version": "0.33",
-  "captured_at_kst": "2026-11-12T15:18:29+09:00",
+  "schema_version": "0.34",
+  "captured_at_kst": "2026-11-12T23:18:05+09:00",
   "scope": "TI01_3TIER_IMPORTANCE_RECOVERY_GOVERNANCE_ABOVE_VI01",
   "registry_mode": "local-only security classification and search metadata",
   "existing_index_baseline": {
@@ -271,7 +271,7 @@
     {
       "asset_id": "ASSET-SEARCH-V14-LAUNCHER-SRC",
       "title": "Native Swift launcher source",
-      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/40_WORKING/search/ASSET-SEARCH-V1_4/RoutablSearchLauncher.swift",
+      "observed_original_path": "git:asset-search-v1.4:40_WORKING/search/ASSET_SEARCH/RoutablSearchLauncher.swift",
       "bytes": 3476,
       "sha256": "3b47027f0647adaf24c1b7c3ed6980123aa99609d0009d459f6bb3c9de4e678b",
       "observation": "NEW_LOCAL_V1_4_ARTIFACT_WITHOUT_SOURCE_REWRITE",
@@ -280,8 +280,10 @@
       "copy_in_managed_repository": "NO",
       "original_file_unchanged": true,
       "previous_paths": [
-        "/Users/yongho/ROUTABL-TechAssets/40_WORKING/ASSET-SEARCH-V1_4/RoutablSearchLauncher.swift"
-      ]
+        "/Users/yongho/ROUTABL-TechAssets/40_WORKING/ASSET-SEARCH-V1_4/RoutablSearchLauncher.swift",
+        "/Users/yongho/ROUTABL-TechAssets/40_WORKING/search/ASSET-SEARCH-V1_4/RoutablSearchLauncher.swift"
+      ],
+      "git_ref": "asset-search-v1.4:40_WORKING/search/ASSET_SEARCH/RoutablSearchLauncher.swift"
     },
     {
       "asset_id": "ASSET-SEARCH-V14-APP",
@@ -358,7 +360,7 @@
     {
       "asset_id": "ASSET-SEARCH-V15-LAUNCHER-SRC",
       "title": "Native Swift launcher source v1.5",
-      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/40_WORKING/search/ASSET-SEARCH-V1_5/RoutablSearchLauncher_v1_5.swift",
+      "observed_original_path": "git:asset-search-v1.5:40_WORKING/search/ASSET_SEARCH/RoutablSearchLauncher_v1_5.swift",
       "bytes": 3476,
       "sha256": "cbd1f6af2fb89f29cdec72a914e00532629ac5e6d724f942d28832652c4dd265",
       "observation": "NEW_SEPARATE_V1_5_SEARCH_ARTIFACT_NOT_PRODUCTION_SOURCE",
@@ -367,8 +369,10 @@
       "copy_in_managed_repository": "NO",
       "original_file_unchanged": true,
       "previous_paths": [
-        "/Users/yongho/ROUTABL-TechAssets/40_WORKING/ASSET-SEARCH-V1_5/RoutablSearchLauncher_v1_5.swift"
-      ]
+        "/Users/yongho/ROUTABL-TechAssets/40_WORKING/ASSET-SEARCH-V1_5/RoutablSearchLauncher_v1_5.swift",
+        "/Users/yongho/ROUTABL-TechAssets/40_WORKING/search/ASSET-SEARCH-V1_5/RoutablSearchLauncher_v1_5.swift"
+      ],
+      "git_ref": "asset-search-v1.5:40_WORKING/search/ASSET_SEARCH/RoutablSearchLauncher_v1_5.swift"
     },
     {
       "asset_id": "ASSET-SEARCH-V15-APP",
@@ -445,7 +449,7 @@
     {
       "asset_id": "ASSET-BACKUP-HEADLESS-LOCAL-DRAFT",
       "title": "Headless direct-Python local launchd plist, not installed",
-      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/40_WORKING/backup/BACKUP_HEADLESS_V0_1/proposed_launchagents/com.routabl.assetbackup.headless.local.plist",
+      "observed_original_path": "git:backup-headless-v0.1:40_WORKING/backup/BACKUP_HEADLESS/proposed_launchagents/com.routabl.assetbackup.headless.local.plist",
       "bytes": 1107,
       "sha256": "8e505d7d5279f4a39fca8807428d4d2a63496180f16543f8574e1a9b59da1736",
       "observation": "NEW_LOCAL_TECHNICAL_ASSET_NO_PRODUCTION_SOURCE_CHANGE",
@@ -454,13 +458,15 @@
       "copy_in_managed_repository": "NO",
       "original_file_unchanged": true,
       "previous_paths": [
-        "/Users/yongho/ROUTABL-TechAssets/40_WORKING/BACKUP_HEADLESS_V0_1/proposed_launchagents/com.routabl.assetbackup.headless.local.plist"
-      ]
+        "/Users/yongho/ROUTABL-TechAssets/40_WORKING/BACKUP_HEADLESS_V0_1/proposed_launchagents/com.routabl.assetbackup.headless.local.plist",
+        "/Users/yongho/ROUTABL-TechAssets/40_WORKING/backup/BACKUP_HEADLESS_V0_1/proposed_launchagents/com.routabl.assetbackup.headless.local.plist"
+      ],
+      "git_ref": "backup-headless-v0.1:40_WORKING/backup/BACKUP_HEADLESS/proposed_launchagents/com.routabl.assetbackup.headless.local.plist"
     },
     {
       "asset_id": "ASSET-BACKUP-HEADLESS-NAS-DRAFT",
       "title": "Headless direct-Python NAS launchd plist, not installed",
-      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/40_WORKING/backup/BACKUP_HEADLESS_V0_1/proposed_launchagents/com.routabl.assetbackup.headless.nas.plist",
+      "observed_original_path": "git:backup-headless-v0.1:40_WORKING/backup/BACKUP_HEADLESS/proposed_launchagents/com.routabl.assetbackup.headless.nas.plist",
       "bytes": 1100,
       "sha256": "ffecb609b3b0c68ca6bb088eddfbf226be445d2ff32c4fb04da9cfd37df2f0fe",
       "observation": "NEW_LOCAL_TECHNICAL_ASSET_NO_PRODUCTION_SOURCE_CHANGE",
@@ -469,8 +475,10 @@
       "copy_in_managed_repository": "NO",
       "original_file_unchanged": true,
       "previous_paths": [
-        "/Users/yongho/ROUTABL-TechAssets/40_WORKING/BACKUP_HEADLESS_V0_1/proposed_launchagents/com.routabl.assetbackup.headless.nas.plist"
-      ]
+        "/Users/yongho/ROUTABL-TechAssets/40_WORKING/BACKUP_HEADLESS_V0_1/proposed_launchagents/com.routabl.assetbackup.headless.nas.plist",
+        "/Users/yongho/ROUTABL-TechAssets/40_WORKING/backup/BACKUP_HEADLESS_V0_1/proposed_launchagents/com.routabl.assetbackup.headless.nas.plist"
+      ],
+      "git_ref": "backup-headless-v0.1:40_WORKING/backup/BACKUP_HEADLESS/proposed_launchagents/com.routabl.assetbackup.headless.nas.plist"
     },
     {
       "asset_id": "ASSET-BACKUP-SCOPE-MATRIX-V01",
@@ -591,7 +599,7 @@
     {
       "asset_id": "ASSET-BACKUP-LOCAL-AGENT-DRAFT-V02",
       "title": "New local v2 Python headless candidate plist NOT INSTALLED",
-      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/40_WORKING/backup/BACKUP_HEADLESS_V0_2/proposed_launchagents/com.routabl.assetbackup.v2.headless.local.plist",
+      "observed_original_path": "git:backup-headless-v0.2:40_WORKING/backup/BACKUP_HEADLESS/proposed_launchagents/com.routabl.assetbackup.v2.headless.local.plist",
       "bytes": 1166,
       "sha256": "e2ac55d38f8ce94a9677b3c25938dd9dfb0d341aadb209ba48c18818d7bf0970",
       "observation": "NEW_ASSET_CREATED_AFTER_ENCRYPTED_V08_SNAPSHOT",
@@ -600,13 +608,15 @@
       "copy_in_managed_repository": "NO",
       "original_file_unchanged": true,
       "previous_paths": [
-        "/Users/yongho/ROUTABL-TechAssets/40_WORKING/BACKUP_HEADLESS_V0_2/proposed_launchagents/com.routabl.assetbackup.v2.headless.local.plist"
-      ]
+        "/Users/yongho/ROUTABL-TechAssets/40_WORKING/BACKUP_HEADLESS_V0_2/proposed_launchagents/com.routabl.assetbackup.v2.headless.local.plist",
+        "/Users/yongho/ROUTABL-TechAssets/40_WORKING/backup/BACKUP_HEADLESS_V0_2/proposed_launchagents/com.routabl.assetbackup.v2.headless.local.plist"
+      ],
+      "git_ref": "backup-headless-v0.2:40_WORKING/backup/BACKUP_HEADLESS/proposed_launchagents/com.routabl.assetbackup.v2.headless.local.plist"
     },
     {
       "asset_id": "ASSET-BACKUP-NAS-AGENT-DRAFT-V02",
       "title": "New NAS v2 Python headless candidate plist NOT INSTALLED",
-      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/40_WORKING/backup/BACKUP_HEADLESS_V0_2/proposed_launchagents/com.routabl.assetbackup.v2.headless.nas.plist",
+      "observed_original_path": "git:backup-headless-v0.2:40_WORKING/backup/BACKUP_HEADLESS/proposed_launchagents/com.routabl.assetbackup.v2.headless.nas.plist",
       "bytes": 1158,
       "sha256": "5c5d39b6de089fbc41f15d9807d76497870ed63d771b4307802b4509a3936f98",
       "observation": "NEW_ASSET_CREATED_AFTER_ENCRYPTED_V08_SNAPSHOT",
@@ -615,8 +625,10 @@
       "copy_in_managed_repository": "NO",
       "original_file_unchanged": true,
       "previous_paths": [
-        "/Users/yongho/ROUTABL-TechAssets/40_WORKING/BACKUP_HEADLESS_V0_2/proposed_launchagents/com.routabl.assetbackup.v2.headless.nas.plist"
-      ]
+        "/Users/yongho/ROUTABL-TechAssets/40_WORKING/BACKUP_HEADLESS_V0_2/proposed_launchagents/com.routabl.assetbackup.v2.headless.nas.plist",
+        "/Users/yongho/ROUTABL-TechAssets/40_WORKING/backup/BACKUP_HEADLESS_V0_2/proposed_launchagents/com.routabl.assetbackup.v2.headless.nas.plist"
+      ],
+      "git_ref": "backup-headless-v0.2:40_WORKING/backup/BACKUP_HEADLESS/proposed_launchagents/com.routabl.assetbackup.v2.headless.nas.plist"
     },
     {
       "asset_id": "ASSET-BACKUP-V20-FINAL-QA",
@@ -713,7 +725,7 @@
     {
       "asset_id": "ASSET-BACKUP-V21-AGENT-LOCAL-DRAFT",
       "title": "New v2.1 launchd candidate local - not installed",
-      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/40_WORKING/backup/BACKUP_HEADLESS_V0_3/proposed_launchagents/com.routabl.assetbackup.v21.headless.local.plist",
+      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/40_WORKING/backup/BACKUP_HEADLESS/proposed_launchagents/com.routabl.assetbackup.v21.headless.local.plist",
       "bytes": 1151,
       "sha256": "2bc264058e7c97ec37832a278f205b6ede5035348466c2a2302771e377653972",
       "observation": "NEW_V21_ASSET_CREATED_OR_UPDATED_AFTER_V09_SNAPSHOT",
@@ -722,13 +734,15 @@
       "copy_in_managed_repository": "NO",
       "original_file_unchanged": true,
       "previous_paths": [
-        "/Users/yongho/ROUTABL-TechAssets/40_WORKING/BACKUP_HEADLESS_V0_3/proposed_launchagents/com.routabl.assetbackup.v21.headless.local.plist"
-      ]
+        "/Users/yongho/ROUTABL-TechAssets/40_WORKING/BACKUP_HEADLESS_V0_3/proposed_launchagents/com.routabl.assetbackup.v21.headless.local.plist",
+        "/Users/yongho/ROUTABL-TechAssets/40_WORKING/backup/BACKUP_HEADLESS_V0_3/proposed_launchagents/com.routabl.assetbackup.v21.headless.local.plist"
+      ],
+      "git_ref": "backup-headless-v0.3:40_WORKING/backup/BACKUP_HEADLESS/proposed_launchagents/com.routabl.assetbackup.v21.headless.local.plist"
     },
     {
       "asset_id": "ASSET-BACKUP-V21-AGENT-NAS-DRAFT",
       "title": "New v2.1 launchd candidate nas - not installed",
-      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/40_WORKING/backup/BACKUP_HEADLESS_V0_3/proposed_launchagents/com.routabl.assetbackup.v21.headless.nas.plist",
+      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/40_WORKING/backup/BACKUP_HEADLESS/proposed_launchagents/com.routabl.assetbackup.v21.headless.nas.plist",
       "bytes": 1143,
       "sha256": "10de29273bc0a1d7521225b96091788c770edcab39fa3bb255712a0de53d80fb",
       "observation": "NEW_V21_ASSET_CREATED_OR_UPDATED_AFTER_V09_SNAPSHOT",
@@ -737,8 +751,10 @@
       "copy_in_managed_repository": "NO",
       "original_file_unchanged": true,
       "previous_paths": [
-        "/Users/yongho/ROUTABL-TechAssets/40_WORKING/BACKUP_HEADLESS_V0_3/proposed_launchagents/com.routabl.assetbackup.v21.headless.nas.plist"
-      ]
+        "/Users/yongho/ROUTABL-TechAssets/40_WORKING/BACKUP_HEADLESS_V0_3/proposed_launchagents/com.routabl.assetbackup.v21.headless.nas.plist",
+        "/Users/yongho/ROUTABL-TechAssets/40_WORKING/backup/BACKUP_HEADLESS_V0_3/proposed_launchagents/com.routabl.assetbackup.v21.headless.nas.plist"
+      ],
+      "git_ref": "backup-headless-v0.3:40_WORKING/backup/BACKUP_HEADLESS/proposed_launchagents/com.routabl.assetbackup.v21.headless.nas.plist"
     },
     {
       "asset_id": "ASSET-BACKUP-V21-LAUNCHD-PERMISSION-EVIDENCE",
@@ -891,7 +907,7 @@
     {
       "asset_id": "ASSET-NATIVE-ACCESS-PROBE-SWIFT",
       "title": "Native Swift phase-separated read-only permission probe source",
-      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/40_WORKING/backup/HEADLESS_NATIVE_V0_1/RoutablNativeAccessProbe.swift",
+      "observed_original_path": "git:headless-native-v0.1:40_WORKING/backup/HEADLESS_NATIVE/RoutablNativeAccessProbe.swift",
       "bytes": 4546,
       "sha256": "c0a80f0d6e594aa70925e9a13d4b19d80b0e84543bd427d5c99e6c35676a41cb",
       "observation": "ADDED_AFTER_V012_VERIFIED_BACKUP",
@@ -900,13 +916,15 @@
       "copy_in_managed_repository": "NO",
       "original_file_unchanged": true,
       "previous_paths": [
-        "/Users/yongho/ROUTABL-TechAssets/40_WORKING/HEADLESS_NATIVE_V0_1/RoutablNativeAccessProbe.swift"
-      ]
+        "/Users/yongho/ROUTABL-TechAssets/40_WORKING/HEADLESS_NATIVE_V0_1/RoutablNativeAccessProbe.swift",
+        "/Users/yongho/ROUTABL-TechAssets/40_WORKING/backup/HEADLESS_NATIVE_V0_1/RoutablNativeAccessProbe.swift"
+      ],
+      "git_ref": "headless-native-v0.1:40_WORKING/backup/HEADLESS_NATIVE/RoutablNativeAccessProbe.swift"
     },
     {
       "asset_id": "ASSET-NATIVE-BACKUP-DIAGNOSTIC-SWIFT",
       "title": "Native Mac GUI diagnostics application source",
-      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/40_WORKING/backup/HEADLESS_NATIVE_V0_1/RoutablBackupDiagnosticApp.swift",
+      "observed_original_path": "git:headless-native-v0.1:40_WORKING/backup/HEADLESS_NATIVE/RoutablBackupDiagnosticApp.swift",
       "bytes": 5004,
       "sha256": "ebe9bf145c65d229cbad3445225a3275530d9354ebf3798aef6d635e06ec4f2c",
       "observation": "ADDED_AFTER_V012_VERIFIED_BACKUP",
@@ -915,8 +933,10 @@
       "copy_in_managed_repository": "NO",
       "original_file_unchanged": true,
       "previous_paths": [
-        "/Users/yongho/ROUTABL-TechAssets/40_WORKING/HEADLESS_NATIVE_V0_1/RoutablBackupDiagnosticApp.swift"
-      ]
+        "/Users/yongho/ROUTABL-TechAssets/40_WORKING/HEADLESS_NATIVE_V0_1/RoutablBackupDiagnosticApp.swift",
+        "/Users/yongho/ROUTABL-TechAssets/40_WORKING/backup/HEADLESS_NATIVE_V0_1/RoutablBackupDiagnosticApp.swift"
+      ],
+      "git_ref": "headless-native-v0.1:40_WORKING/backup/HEADLESS_NATIVE/RoutablBackupDiagnosticApp.swift"
     },
     {
       "asset_id": "ASSET-NATIVE-BACKUP-DIAGNOSTIC-ZIP",
@@ -969,7 +989,7 @@
     {
       "asset_id": "ASSET-HEADLESS-AGENT-SWIFT-V03",
       "title": "Native Swift timed one-shot background agent source",
-      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/40_WORKING/backup/HEADLESS_NATIVE_V0_3/ROUTABLBackupAgent.swift",
+      "observed_original_path": "git:headless-native-v0.3:40_WORKING/backup/HEADLESS_NATIVE/ROUTABLBackupAgent.swift",
       "bytes": 7474,
       "sha256": "0a898a7aa2942d1227e20949f40ff92393e8d141dcf1ef4f15e43f81bd6cc6ab",
       "observation": "NEW_FAIL_CLOSED_MAC_BACKGROUND_AUTOMATION_TEST_ARTIFACT",
@@ -978,13 +998,15 @@
       "copy_in_managed_repository": "NO",
       "original_file_unchanged": true,
       "previous_paths": [
-        "/Users/yongho/ROUTABL-TechAssets/40_WORKING/HEADLESS_NATIVE_V0_3/ROUTABLBackupAgent.swift"
-      ]
+        "/Users/yongho/ROUTABL-TechAssets/40_WORKING/HEADLESS_NATIVE_V0_3/ROUTABLBackupAgent.swift",
+        "/Users/yongho/ROUTABL-TechAssets/40_WORKING/backup/HEADLESS_NATIVE_V0_3/ROUTABLBackupAgent.swift"
+      ],
+      "git_ref": "headless-native-v0.3:40_WORKING/backup/HEADLESS_NATIVE/ROUTABLBackupAgent.swift"
     },
     {
       "asset_id": "ASSET-HEADLESS-MANAGER-SWIFT-V03",
       "title": "Native macOS user authorization and registration UI source",
-      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/40_WORKING/backup/HEADLESS_NATIVE_V0_3/ROUTABLBackupManager.swift",
+      "observed_original_path": "git:headless-native-v0.3:40_WORKING/backup/HEADLESS_NATIVE/ROUTABLBackupManager.swift",
       "bytes": 7741,
       "sha256": "ea2560adce751487b2b92dcde555102d7d3e4e5eecb1050a4c03b542f5f6af26",
       "observation": "NEW_FAIL_CLOSED_MAC_BACKGROUND_AUTOMATION_TEST_ARTIFACT",
@@ -993,8 +1015,10 @@
       "copy_in_managed_repository": "NO",
       "original_file_unchanged": true,
       "previous_paths": [
-        "/Users/yongho/ROUTABL-TechAssets/40_WORKING/HEADLESS_NATIVE_V0_3/ROUTABLBackupManager.swift"
-      ]
+        "/Users/yongho/ROUTABL-TechAssets/40_WORKING/HEADLESS_NATIVE_V0_3/ROUTABLBackupManager.swift",
+        "/Users/yongho/ROUTABL-TechAssets/40_WORKING/backup/HEADLESS_NATIVE_V0_3/ROUTABLBackupManager.swift"
+      ],
+      "git_ref": "headless-native-v0.3:40_WORKING/backup/HEADLESS_NATIVE/ROUTABLBackupManager.swift"
     },
     {
       "asset_id": "ASSET-HEADLESS-MANAGER-APP-ZIP-V03",
@@ -1035,7 +1059,7 @@
     {
       "asset_id": "ASSET-HEADLESS-GUARD-TESTS-V01",
       "title": "Isolated no-backup guard branch unit test fixture",
-      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/40_WORKING/backup/HEADLESS_NATIVE_V0_2/ROUTABLHeadlessGuardTests_v0_1.py",
+      "observed_original_path": "git:headless-native-v0.2:40_WORKING/backup/HEADLESS_NATIVE/ROUTABLHeadlessGuardTests_v0_1.py",
       "bytes": 4622,
       "sha256": "3815beb36a6e00075460fbe687d62051a0e6ab7c954695d8e9196effc25385b6",
       "observation": "NEW_FAIL_CLOSED_MAC_BACKGROUND_AUTOMATION_TEST_ARTIFACT",
@@ -1044,8 +1068,10 @@
       "copy_in_managed_repository": "NO",
       "original_file_unchanged": true,
       "previous_paths": [
-        "/Users/yongho/ROUTABL-TechAssets/40_WORKING/HEADLESS_NATIVE_V0_2/ROUTABLHeadlessGuardTests_v0_1.py"
-      ]
+        "/Users/yongho/ROUTABL-TechAssets/40_WORKING/HEADLESS_NATIVE_V0_2/ROUTABLHeadlessGuardTests_v0_1.py",
+        "/Users/yongho/ROUTABL-TechAssets/40_WORKING/backup/HEADLESS_NATIVE_V0_2/ROUTABLHeadlessGuardTests_v0_1.py"
+      ],
+      "git_ref": "headless-native-v0.2:40_WORKING/backup/HEADLESS_NATIVE/ROUTABLHeadlessGuardTests_v0_1.py"
     },
     {
       "asset_id": "ASSET-HEADLESS-AUDIT-20261104",
@@ -1314,7 +1340,7 @@
     {
       "asset_id": "ASSET-120-SOURCE-V042-AGENT",
       "title": "v0.4.2 Swift 무인 백업 에이전트",
-      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/40_WORKING/backup/HEADLESS_NATIVE_V0_4_2/ROUTABLBackupAgent.swift",
+      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/40_WORKING/backup/HEADLESS_NATIVE/ROUTABLBackupAgent.swift",
       "bytes": 9095,
       "sha256": "d997975f7d26d0975b68b4a1a98b4b471b15177784d109c85c98898201e6c24e",
       "mtime_utc": "2026-11-03T17:47:12.764368+00:00",
@@ -1329,13 +1355,15 @@
       "registry_added_in": "v0.15",
       "evidence_catalog_path": "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_INTEGRATION_20261104_v01/EVIDENCE_CATALOG_v0.1.json",
       "previous_paths": [
-        "/Users/yongho/ROUTABL-TechAssets/40_WORKING/HEADLESS_NATIVE_V0_4_2/ROUTABLBackupAgent.swift"
-      ]
+        "/Users/yongho/ROUTABL-TechAssets/40_WORKING/HEADLESS_NATIVE_V0_4_2/ROUTABLBackupAgent.swift",
+        "/Users/yongho/ROUTABL-TechAssets/40_WORKING/backup/HEADLESS_NATIVE_V0_4_2/ROUTABLBackupAgent.swift"
+      ],
+      "git_ref": "headless-native-v0.4.2:40_WORKING/backup/HEADLESS_NATIVE/ROUTABLBackupAgent.swift"
     },
     {
       "asset_id": "ASSET-120-SOURCE-V042-MANAGER",
       "title": "v0.4.2 macOS 권한·안전관리 AppKit GUI",
-      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/40_WORKING/backup/HEADLESS_NATIVE_V0_4_2/ROUTABLBackupManager.swift",
+      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/40_WORKING/backup/HEADLESS_NATIVE/ROUTABLBackupManager.swift",
       "bytes": 11107,
       "sha256": "e58d4451abc0e4aaea78f4474b02de8956288f969d39e8a598c24a30d958117c",
       "mtime_utc": "2026-11-03T17:47:12.765206+00:00",
@@ -1350,13 +1378,15 @@
       "registry_added_in": "v0.15",
       "evidence_catalog_path": "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_INTEGRATION_20261104_v01/EVIDENCE_CATALOG_v0.1.json",
       "previous_paths": [
-        "/Users/yongho/ROUTABL-TechAssets/40_WORKING/HEADLESS_NATIVE_V0_4_2/ROUTABLBackupManager.swift"
-      ]
+        "/Users/yongho/ROUTABL-TechAssets/40_WORKING/HEADLESS_NATIVE_V0_4_2/ROUTABLBackupManager.swift",
+        "/Users/yongho/ROUTABL-TechAssets/40_WORKING/backup/HEADLESS_NATIVE_V0_4_2/ROUTABLBackupManager.swift"
+      ],
+      "git_ref": "headless-native-v0.4.2:40_WORKING/backup/HEADLESS_NATIVE/ROUTABLBackupManager.swift"
     },
     {
       "asset_id": "ASSET-120-SOURCE-V04-TCCPROBE",
       "title": "Swift 볼륨 접근 읽기 전용 진단 보조 프로그램",
-      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/40_WORKING/backup/HEADLESS_NATIVE_V0_4/ROUTABLVolumePermissionProbe.swift",
+      "observed_original_path": "git:headless-native-v0.4:40_WORKING/backup/HEADLESS_NATIVE/ROUTABLVolumePermissionProbe.swift",
       "bytes": 2621,
       "sha256": "351162dcc99a4933e8fd142038b12876bf30987578110e7ce160dec3d104720c",
       "mtime_utc": "2026-11-03T17:35:50.858264+00:00",
@@ -1371,8 +1401,10 @@
       "registry_added_in": "v0.15",
       "evidence_catalog_path": "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_INTEGRATION_20261104_v01/EVIDENCE_CATALOG_v0.1.json",
       "previous_paths": [
-        "/Users/yongho/ROUTABL-TechAssets/40_WORKING/HEADLESS_NATIVE_V0_4/ROUTABLVolumePermissionProbe.swift"
-      ]
+        "/Users/yongho/ROUTABL-TechAssets/40_WORKING/HEADLESS_NATIVE_V0_4/ROUTABLVolumePermissionProbe.swift",
+        "/Users/yongho/ROUTABL-TechAssets/40_WORKING/backup/HEADLESS_NATIVE_V0_4/ROUTABLVolumePermissionProbe.swift"
+      ],
+      "git_ref": "headless-native-v0.4:40_WORKING/backup/HEADLESS_NATIVE/ROUTABLVolumePermissionProbe.swift"
     },
     {
       "asset_id": "ASSET-120-NAS-CAS-CURRENT-MANIFEST",
@@ -3171,7 +3203,7 @@
     {
       "asset_id": "ASSET-SEARCH-V17-SERVICE",
       "title": "검색 v1.7 서비스 (고객등록앱 검색, 재등록 SHA 일치 우선, /api/registry)",
-      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/40_WORKING/search/SEARCH_V1_7_20261112/v1_7/routabl_search_v1_7_service.py",
+      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/40_WORKING/search/ASSET_SEARCH/v1_7/routabl_search_v1_7_service.py",
       "bytes": 28969,
       "sha256": "03a893c157ec194b74e80475828857114f7e78f9324875cc1058b0abf34dfe28",
       "mtime_utc": "2026-11-11T17:02:41.068197+00:00",
@@ -3187,13 +3219,15 @@
       ],
       "registry_added_in": "v0.32",
       "previous_paths": [
-        "/Users/yongho/ROUTABL-TechAssets/40_WORKING/SEARCH_V1_7_20261112/v1_7/routabl_search_v1_7_service.py"
-      ]
+        "/Users/yongho/ROUTABL-TechAssets/40_WORKING/SEARCH_V1_7_20261112/v1_7/routabl_search_v1_7_service.py",
+        "/Users/yongho/ROUTABL-TechAssets/40_WORKING/search/SEARCH_V1_7_20261112/v1_7/routabl_search_v1_7_service.py"
+      ],
+      "git_ref": "asset-search-v1.7:40_WORKING/search/ASSET_SEARCH/v1_7/routabl_search_v1_7_service.py"
     },
     {
       "asset_id": "ASSET-SEARCH-V17-SCANNER",
       "title": "검색 v1.7 스캐너 (PROJECTS에 고객등록앱 추가)",
-      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/40_WORKING/search/SEARCH_V1_7_20261112/v1_7/routabl_assetsearch_v1_7_scanner.py",
+      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/40_WORKING/search/ASSET_SEARCH/v1_7/routabl_assetsearch_v1_7_scanner.py",
       "bytes": 13427,
       "sha256": "d9c363842f1d7e77059bea759455a6bcfeecd06d6a2752a691708d427e8e7992",
       "mtime_utc": "2026-11-11T17:02:11.566383+00:00",
@@ -3209,8 +3243,10 @@
       ],
       "registry_added_in": "v0.32",
       "previous_paths": [
-        "/Users/yongho/ROUTABL-TechAssets/40_WORKING/SEARCH_V1_7_20261112/v1_7/routabl_assetsearch_v1_7_scanner.py"
-      ]
+        "/Users/yongho/ROUTABL-TechAssets/40_WORKING/SEARCH_V1_7_20261112/v1_7/routabl_assetsearch_v1_7_scanner.py",
+        "/Users/yongho/ROUTABL-TechAssets/40_WORKING/search/SEARCH_V1_7_20261112/v1_7/routabl_assetsearch_v1_7_scanner.py"
+      ],
+      "git_ref": "asset-search-v1.7:40_WORKING/search/ASSET_SEARCH/v1_7/routabl_assetsearch_v1_7_scanner.py"
     },
     {
       "asset_id": "ASSET-SEARCH-V17-GUIDE",
@@ -3427,7 +3463,7 @@
       "issue": "Actual Android app UI display not field-tested; original failed chat tool trace not archived."
     }
   ],
-  "supersedes": "registry-v0.32 (git 이름표)",
+  "supersedes": "registry-v0.33 (git 이름표)",
   "library_crosswalk": [
     {
       "asset_id": "TA-CASE-20261102-01",
@@ -5519,5 +5555,13 @@
       "missing": 25
     },
     "note": "옮긴 자산은 previous_paths에 옛 경로 보존. 버전 폴더(V0_1·V0_2…)의 git 이력 통합은 다음 단계"
+  },
+  "folder_reorg_p3b_v034": {
+    "action": "버전 폴더 13개 → 3개 폴더 + git 이름표 (backup-headless-v0.1~0.3, headless-native-v0.1~0.4.2, asset-search-v1.4~1.7). 88개 파일 SHA 검증 후 옛 폴더 삭제",
+    "registry": {
+      "now_in_latest_folder": 6,
+      "only_in_git_history": 12
+    },
+    "how_to_read_old": "observed_original_path가 git:으로 시작하면 git show <이름표>:<경로>"
   }
 }
