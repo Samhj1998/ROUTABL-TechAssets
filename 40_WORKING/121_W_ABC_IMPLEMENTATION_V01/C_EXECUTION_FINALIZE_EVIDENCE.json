@@ -1,0 +1,221 @@
+{
+  "auth": "Claude Pro account and approved account matched",
+  "empty_mcp_sha": "e93fc8db2b1bd77107fe6c758bca9545fa864cf7cce8ab93a7b2b93a1d566a7b",
+  "env_absent": 40,
+  "events": [
+    {
+      "path": "output/SHA256SUMS",
+      "tool": "Read"
+    },
+    {
+      "path": "output/CHANGE_MANIFEST.md",
+      "tool": "Read"
+    },
+    {
+      "path": "output",
+      "tool": "Read"
+    },
+    {
+      "path": "output/runs/run_20261108T042608Z.json",
+      "tool": "Read"
+    },
+    {
+      "path": "output/runs/run_20261108T043152Z.json",
+      "tool": "Read"
+    },
+    {
+      "path": "output/runs/run_20261108T042637Z.json",
+      "tool": "Read"
+    },
+    {
+      "path": "output/runs/run_20261108T042737Z.json",
+      "tool": "Read"
+    },
+    {
+      "path": "output/runs/run_20261108T042828Z.json",
+      "tool": "Read"
+    },
+    {
+      "path": "output/runs/run_20261108T042953Z.json",
+      "tool": "Read"
+    },
+    {
+      "path": "output/runs/run_20261108T043034Z.json",
+      "tool": "Read"
+    },
+    {
+      "path": "output/runs/run_20261108T043152Z.json",
+      "tool": "Read"
+    },
+    {
+      "path": "output/runs/run_20261108T043152Z.json",
+      "tool": "Read"
+    },
+    {
+      "path": "output/runs/run_20261108T043152Z.json",
+      "tool": "Read"
+    },
+    {
+      "path": "output/runs/run_20261108T042608Z.json",
+      "tool": "Read"
+    },
+    {
+      "path": "output/runs/run_20261108T042953Z.json",
+      "tool": "Read"
+    },
+    {
+      "path": "output/runs/run_20261108T042737Z.json",
+      "tool": "Read"
+    },
+    {
+      "path": "src/asset_search_fts.py",
+      "tool": "Read"
+    },
+    {
+      "path": "tests/run_dev_tests.py",
+      "tool": "Read"
+    },
+    {
+      "path": "tests/run_dev_tests.py",
+      "tool": "Read"
+    },
+    {
+      "path": "output/runs/run_20261108T042737Z.json",
+      "tool": "Read"
+    },
+    {
+      "path": "output/runs/run_20261108T042637Z.json",
+      "tool": "Read"
+    },
+    {
+      "path": "output/IMPLEMENTATION_REPORT.md",
+      "tool": "Write"
+    },
+    {
+      "path": "output/DEV_TEST_REPORT.md",
+      "tool": "Write"
+    },
+    {
+      "path": "output/CHANGE_MANIFEST.md",
+      "tool": "Write"
+    },
+    {
+      "approved_exact_command": true,
+      "tool": "Bash"
+    },
+    {
+      "path": "output/SHA256SUMS",
+      "tool": "Edit"
+    }
+  ],
+  "finished_kst": "2026-11-08T13:38:12+09:00",
+  "init": {
+    "mcp_count": 0,
+    "model": "claude-opus-5-5",
+    "permission_mode": "dontAsk",
+    "tools": [
+      "Bash",
+      "Edit",
+      "Read",
+      "Write"
+    ]
+  },
+  "managed_local_settings_present": false,
+  "policy_sha": "1a2d91d5239fd92410ac1ea0a6793661b83c53fa4a15e36360945be5e097b869",
+  "prompt_sha": "e22dd54c0a9047c5d5e72f282d98bcc75ba8f28dfa9d854c672ebbd4899402c0",
+  "result": {
+    "duration_ms": 285113,
+    "error_categories": [],
+    "is_error": false,
+    "num_turns": 27,
+    "subtype": "success"
+  },
+  "returncode": 0,
+  "shell_command": "/usr/bin/shasum -a 256 output/IMPLEMENTATION_REPORT.md output/DEV_TEST_REPORT.md output/CHANGE_MANIFEST.md",
+  "started_kst": "2026-11-08T13:33:24+09:00",
+  "stderr_categories": [],
+  "tool_result_status": [
+    {
+      "is_error": false
+    },
+    {
+      "is_error": true
+    },
+    {
+      "is_error": true
+    },
+    {
+      "is_error": false
+    },
+    {
+      "is_error": false
+    },
+    {
+      "is_error": false
+    },
+    {
+      "is_error": false
+    },
+    {
+      "is_error": false
+    },
+    {
+      "is_error": false
+    },
+    {
+      "is_error": false
+    },
+    {
+      "is_error": false
+    },
+    {
+      "is_error": false
+    },
+    {
+      "is_error": false
+    },
+    {
+      "is_error": false
+    },
+    {
+      "is_error": false
+    },
+    {
+      "is_error": false
+    },
+    {
+      "is_error": false
+    },
+    {
+      "is_error": false
+    },
+    {
+      "is_error": false
+    },
+    {
+      "is_error": false
+    },
+    {
+      "is_error": false
+    },
+    {
+      "is_error": false
+    },
+    {
+      "is_error": false
+    },
+    {
+      "is_error": false
+    },
+    {
+      "is_error": false
+    },
+    {
+      "is_error": false
+    }
+  ],
+  "tools": [],
+  "usage_credits": "prior disabled screenshot evidence; fresh web billing not checked",
+  "usage_credits_evidence_sha": "94987e0c9aea31e255c06d93dd47432700e0c598620d865c296468f86d89960a",
+  "version": "2.1.309"
+}

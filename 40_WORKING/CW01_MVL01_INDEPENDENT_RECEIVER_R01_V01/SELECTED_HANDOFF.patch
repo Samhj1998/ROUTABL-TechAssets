@@ -1,0 +1,162 @@
+--- a/mvl.py
++++ b/mvl.py
+@@ -3,9 +3,13 @@
+ import json
+ import re
+ import sqlite3
++from contextlib import closing
+ from pathlib import Path
+ 
+-from mvl_provenance import REPO, ROOT, LATEST_NAME, LATEST_SHA, load_registry, make_ref, read_evidence
++from mvl_provenance import (
++    REPO, ROOT, LATEST_NAME, LATEST_SHA, SHA, load_registry, make_ref,
++    overlay_ref_allowed, read_evidence, verify_source,
++)
+ import routabl_search_v1_5_service as engine
+ 
+ DB = ROOT / "assets_v1_5.sqlite"
+@@ -16,6 +20,8 @@
+     ("ROUTABL", "nas"), ("no-result-mvl01-20261108", "all"),
+ )
+ FEEDBACK_ID = "MVL01-FEEDBACK"
++USER_ASSET_ID = re.compile(r"MVL-USER-[A-Z0-9][A-Z0-9-]{0,54}")
++USER_VERSION = re.compile(r"[0-9]+(?:\.[0-9]+){0,2}")
+ FEEDBACK_FILE = ROOT / "FEEDBACK_CANDIDATE.md"
+ REFERENCES = json.loads((ROOT / "REFERENCES.json").read_bytes())
+ 
+@@ -24,10 +30,11 @@
+     return engine.query(term, page=page, scope=scope)
+ 
+ 
+-def connection():
+-    if not DB.is_file() or DB.is_symlink():
++def connection(*, read_only=False):
++    if DB.is_symlink() or not DB.is_file():
+         raise ValueError("ISOLATED_DATABASE_MISSING")
+-    db = sqlite3.connect(DB.as_uri() + "?mode=rw", uri=True)
++    mode = "ro" if read_only else "rw"
++    db = sqlite3.connect(DB.as_uri() + "?mode=" + mode, uri=True)
+     db.execute("PRAGMA temp_store=MEMORY")
+     return db
+ 
+@@ -79,14 +86,14 @@
+ 
+ 
+ def local_ref(asset_id, version, path):
+-    if not re.fullmatch(r"[0-9]+(?:\.[0-9]+){0,2}", version):
++    if not USER_VERSION.fullmatch(version):
+         raise ValueError("INVALID_VERSION")
+     sha, size, _ = read_evidence(path)
+     return make_ref(asset_id, version, path, sha, size, "ISOLATED_CANDIDATE")
+ 
+ 
+ def register(asset_id, version, name):
+-    if not re.fullmatch(r"MVL-USER-[A-Z0-9][A-Z0-9-]{0,54}", asset_id):
++    if not USER_ASSET_ID.fullmatch(asset_id):
+         raise ValueError("INVALID_USER_ASSET_ID")
+     if not re.fullmatch(r"incoming/[A-Za-z0-9][A-Za-z0-9_.-]{0,100}\.(?:md|txt)", name):
+         raise ValueError("INCOMING_PATH_REQUIRED")
+@@ -106,29 +113,77 @@
+     return found[0]
+ 
+ 
+-def package(phase):
++def selected_ref(db, asset_id):
++    """Resolve one explicit ID without search ranking or SHA-based grouping."""
++    index_path = "MVL/" + asset_id
++    rows = db.execute(
++        "SELECT s.reference_json, d.sha, d.sz, d.carrier "
++        "FROM mvl_sources AS s LEFT JOIN docs AS d ON d.path = s.index_path "
++        "WHERE s.index_path = ?", (index_path,)
++    ).fetchmany(2)
++    if not rows:
++        raise ValueError("SELECTED_ASSET_NOT_REGISTERED: " + asset_id)
++    if len(rows) != 1:
++        raise ValueError("DUPLICATE_SELECTED_ASSET_ID: " + asset_id)
++    raw, indexed_sha, indexed_size, carrier = rows[0]
++    stored = json.loads(raw)
++    if (not isinstance(stored, dict) or stored.get("asset_id") != asset_id
++            or stored.get("registration") != "ISOLATED_CANDIDATE"):
++        raise ValueError("INVALID_SELECTED_REGISTRATION: " + asset_id)
++
++    version = stored.get("source_version")
++    path = stored.get("source_path")
++    sha = stored.get("expected_sha256")
++    size = stored.get("expected_size_bytes")
++    if (not isinstance(version, str) or not USER_VERSION.fullmatch(version)
++            or not isinstance(path, str) or path != str(Path(path))
++            or not isinstance(sha, str) or not SHA.fullmatch(sha)
++            or type(size) is not int or size < 0):
++        raise ValueError("INVALID_SELECTED_METADATA: " + asset_id)
++    ref = make_ref(asset_id, version, path, sha, size, "ISOLATED_CANDIDATE")
++    if not overlay_ref_allowed(ref, {}):
++        raise ValueError("SELECTED_SOURCE_PATH_NOT_ALLOWED: " + asset_id)
++    if carrier != "MVL_ISOLATED" or (indexed_sha, indexed_size) != (sha, size):
++        raise ValueError("SELECTED_INDEX_MISMATCH: " + asset_id)
++    verified = verify_source(ref, indexed_sha)
++    if verified["status"] != "LOCAL_HASH_MATCH":
++        raise ValueError(f"SELECTED_SOURCE_NOT_VERIFIED: {asset_id}: {verified['status']}")
++    return verified
++
++
++def package(phase, asset_ids=()):
+     ids = [item["id"] for item in REFERENCES]
+     if phase == "final":
+         ids.append(FEEDBACK_ID)
++    selected = []
++    if asset_ids:
++        if len(set(asset_ids)) != len(asset_ids) or set(ids).intersection(asset_ids):
++            raise ValueError("DUPLICATE_SELECTED_ASSET_ID")
++        if any(not USER_ASSET_ID.fullmatch(asset_id) for asset_id in asset_ids):
++            raise ValueError("INVALID_USER_ASSET_ID")
++        with closing(connection(read_only=True)) as db:
++            db.execute("BEGIN")
++            selected = [selected_ref(db, asset_id) for asset_id in asset_ids]
+     return {"task": "MVL-01 격리 검색 v1.5 최신 대장 연결 및 원본 검증 인계", "phase": phase,
+             "registry": {"version": "0.27", "name": LATEST_NAME, "sha256": LATEST_SHA},
+-            "verification_actor": "120-2-W Mac Studio 격리 CLI",
++            "verification_actor": ("MVL-01 Mac Studio 격리 CLI" if selected else "120-2-W Mac Studio 격리 CLI"),
+             "source_verification_method": "격리 색인 기대 해시 대조 및 Mac Studio 파일 전체 바이트 SHA-256",
+-            "independent_receiver": "NOT_TESTED", "references": [lookup(i) for i in ids]}
+-
+-
+-def render_handoff(phase):
+-    data = package(phase)
++            "independent_receiver": "NOT_TESTED", "references": [lookup(i) for i in ids] + selected}
++
++
++def render_handoff(phase, asset_ids=()):
++    data = package(phase, asset_ids)
+     lines = [
+         "# Digitopia MVL-01 독립 AI 개발 인계", "",
+         "목표는 기존 v1.5 검색을 재사용해 최신 대장 연결과 검증 가능한 결과 환류를 완성하는 것이다.",
+-        "이 자료는 120-2-W의 로컬 검증 기록이다. 수신자가 수행한 검증은 따로 기록한다.", "",
++        ("고정 참조와 명시적으로 선택한 격리 후보의 로컬 파일을 인계 생성 시점에 검증했다."
++         if asset_ids else "이 자료는 120-2-W의 로컬 검증 기록이다. 수신자가 수행한 검증은 따로 기록한다."), "",
+         "## 확인된 동작과 재사용", "",
+         "- 운영 v1.5는 출처 연결에 v0.6을 고정 참조한다. v0.6과 v0.27의 출처 연결 두 건은 동일하다.",
+         "- v1.5 검색 SQL·별칭·순위·SHA 기준 중복 묶음을 재사용한다. v1.4에서 DB 검사 기능을 재사용한다.",
+         "- CW-01의 자산 ID·경로·SHA-256 인계 방식과 AF-01의 접근 우선 방향을 적용한다.",
+         "- v0.27의 번호·해시·스키마·ID를 확인한다. 검색 색인 기대값과 원본 직접 해시를 구별한다.", "",
+-        "## 검색에서 다시 찾은 기술자산", "",
++        ("## 인계에 포함된 기술자산" if asset_ids else "## 검색에서 다시 찾은 기술자산"), "",
+         "| ID | 출처 경로 | 판본 | 기대 SHA-256 | 실측 SHA-256 | 검증 상태 | 등록 구분 |",
+         "| --- | --- | --- | --- | --- | --- | --- |",
+     ]
+@@ -163,13 +218,15 @@
+     r.add_argument("path")
+     h = subs.add_parser("handoff")
+     h.add_argument("phase", choices=("initial", "final"))
++    h.add_argument("--asset-id", action="append", default=[],
++                   help="Include a registered MVL-USER asset by exact ID (repeatable)")
+     subs.add_parser("check")
+     subs.add_parser("seed")
+     subs.add_parser("feedback")
+     args = parser.parse_args()
+     try:
+         if args.command == "handoff":
+-            print(render_handoff(args.phase), end="")
++            print(render_handoff(args.phase, args.asset_id), end="")
+             return
+         if args.command == "search":
+             result = search(args.term, args.scope, args.page)

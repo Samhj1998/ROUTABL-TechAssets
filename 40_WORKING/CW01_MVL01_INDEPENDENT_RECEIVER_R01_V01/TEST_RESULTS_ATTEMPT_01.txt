@@ -1,0 +1,405 @@
+test_duplicate_index_id_rejected (test_selected_handoff.SelectedHandoffTest) ... ERROR
+test_duplicate_requested_id_rejected (test_selected_handoff.SelectedHandoffTest) ... ERROR
+test_file_symlink_rejected_even_with_matching_content (test_selected_handoff.SelectedHandoffTest) ... ERROR
+test_index_mismatch_rejected (test_selected_handoff.SelectedHandoffTest) ... ERROR
+test_index_only_row_is_not_a_registration (test_selected_handoff.SelectedHandoffTest) ... ERROR
+test_invalid_id_rejected (test_selected_handoff.SelectedHandoffTest) ... ERROR
+test_invalid_version_rejected (test_selected_handoff.SelectedHandoffTest) ... ERROR
+test_missing_file_rejected (test_selected_handoff.SelectedHandoffTest) ... ERROR
+test_missing_index_row_rejected (test_selected_handoff.SelectedHandoffTest) ... ERROR
+test_no_body_and_no_unapproved_metadata (test_selected_handoff.SelectedHandoffTest) ... ERROR
+test_non_candidate_rejected (test_selected_handoff.SelectedHandoffTest) ... ERROR
+test_outside_and_traversal_rejected_before_read (test_selected_handoff.SelectedHandoffTest) ... ERROR
+test_parent_symlink_rejected_even_with_matching_content (test_selected_handoff.SelectedHandoffTest) ... ERROR
+test_read_only_selected_db (test_selected_handoff.SelectedHandoffTest) ... ERROR
+test_registration_id_binding (test_selected_handoff.SelectedHandoffTest) ... ERROR
+test_same_sha_different_ids_selected_exactly_in_request_order (test_selected_handoff.SelectedHandoffTest) ... ERROR
+test_selected_metadata_and_cli (test_selected_handoff.SelectedHandoffTest) ... ERROR
+test_tampered_same_size_rejected (test_selected_handoff.SelectedHandoffTest) ... ERROR
+test_unchanged_default_handoff_and_search_against_pinned_original (test_selected_handoff.SelectedHandoffTest) ... ERROR
+test_unknown_id_rejected_with_no_output (test_selected_handoff.SelectedHandoffTest) ... ERROR
+
+======================================================================
+ERROR: test_duplicate_index_id_rejected (test_selected_handoff.SelectedHandoffTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_MVL01_INDEPENDENT_RECEIVER_R01_V01/test_selected_handoff.py", line 61, in setUp
+    self.mvl = importlib.import_module("mvl")
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_MVL01_INDEPENDENT_RECEIVER_R01_V01/test-fixture-hhx1uy8g/mvl.py", line 13, in <module>
+  File "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_MVL01_INDEPENDENT_RECEIVER_R01_V01/test-fixture-hhx1uy8g/routabl_search_v1_5_service.py", line 63, in <module>
+  File "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_MVL01_INDEPENDENT_RECEIVER_R01_V01/test-fixture-hhx1uy8g/mvl_provenance.py", line 84, in resolve_crosswalk
+KeyError: 'provenance_crosswalk'
+
+======================================================================
+ERROR: test_duplicate_requested_id_rejected (test_selected_handoff.SelectedHandoffTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_MVL01_INDEPENDENT_RECEIVER_R01_V01/test_selected_handoff.py", line 61, in setUp
+    self.mvl = importlib.import_module("mvl")
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_MVL01_INDEPENDENT_RECEIVER_R01_V01/test-fixture-nrt7fl8z/mvl.py", line 13, in <module>
+  File "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_MVL01_INDEPENDENT_RECEIVER_R01_V01/test-fixture-nrt7fl8z/routabl_search_v1_5_service.py", line 63, in <module>
+  File "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_MVL01_INDEPENDENT_RECEIVER_R01_V01/test-fixture-nrt7fl8z/mvl_provenance.py", line 84, in resolve_crosswalk
+KeyError: 'provenance_crosswalk'
+
+======================================================================
+ERROR: test_file_symlink_rejected_even_with_matching_content (test_selected_handoff.SelectedHandoffTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_MVL01_INDEPENDENT_RECEIVER_R01_V01/test_selected_handoff.py", line 61, in setUp
+    self.mvl = importlib.import_module("mvl")
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_MVL01_INDEPENDENT_RECEIVER_R01_V01/test-fixture-qr6j2rz6/mvl.py", line 13, in <module>
+  File "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_MVL01_INDEPENDENT_RECEIVER_R01_V01/test-fixture-qr6j2rz6/routabl_search_v1_5_service.py", line 63, in <module>
+  File "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_MVL01_INDEPENDENT_RECEIVER_R01_V01/test-fixture-qr6j2rz6/mvl_provenance.py", line 84, in resolve_crosswalk
+KeyError: 'provenance_crosswalk'
+
+======================================================================
+ERROR: test_index_mismatch_rejected (test_selected_handoff.SelectedHandoffTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_MVL01_INDEPENDENT_RECEIVER_R01_V01/test_selected_handoff.py", line 61, in setUp
+    self.mvl = importlib.import_module("mvl")
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_MVL01_INDEPENDENT_RECEIVER_R01_V01/test-fixture-ouhlwqfr/mvl.py", line 13, in <module>
+  File "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_MVL01_INDEPENDENT_RECEIVER_R01_V01/test-fixture-ouhlwqfr/routabl_search_v1_5_service.py", line 63, in <module>
+  File "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_MVL01_INDEPENDENT_RECEIVER_R01_V01/test-fixture-ouhlwqfr/mvl_provenance.py", line 84, in resolve_crosswalk
+KeyError: 'provenance_crosswalk'
+
+======================================================================
+ERROR: test_index_only_row_is_not_a_registration (test_selected_handoff.SelectedHandoffTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_MVL01_INDEPENDENT_RECEIVER_R01_V01/test_selected_handoff.py", line 61, in setUp
+    self.mvl = importlib.import_module("mvl")
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_MVL01_INDEPENDENT_RECEIVER_R01_V01/test-fixture-stpozx25/mvl.py", line 13, in <module>
+  File "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_MVL01_INDEPENDENT_RECEIVER_R01_V01/test-fixture-stpozx25/routabl_search_v1_5_service.py", line 63, in <module>
+  File "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_MVL01_INDEPENDENT_RECEIVER_R01_V01/test-fixture-stpozx25/mvl_provenance.py", line 84, in resolve_crosswalk
+KeyError: 'provenance_crosswalk'
+
+======================================================================
+ERROR: test_invalid_id_rejected (test_selected_handoff.SelectedHandoffTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_MVL01_INDEPENDENT_RECEIVER_R01_V01/test_selected_handoff.py", line 61, in setUp
+    self.mvl = importlib.import_module("mvl")
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_MVL01_INDEPENDENT_RECEIVER_R01_V01/test-fixture-05wbe6qr/mvl.py", line 13, in <module>
+  File "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_MVL01_INDEPENDENT_RECEIVER_R01_V01/test-fixture-05wbe6qr/routabl_search_v1_5_service.py", line 63, in <module>
+  File "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_MVL01_INDEPENDENT_RECEIVER_R01_V01/test-fixture-05wbe6qr/mvl_provenance.py", line 84, in resolve_crosswalk
+KeyError: 'provenance_crosswalk'
+
+======================================================================
+ERROR: test_invalid_version_rejected (test_selected_handoff.SelectedHandoffTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_MVL01_INDEPENDENT_RECEIVER_R01_V01/test_selected_handoff.py", line 61, in setUp
+    self.mvl = importlib.import_module("mvl")
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_MVL01_INDEPENDENT_RECEIVER_R01_V01/test-fixture-v_dd0w0b/mvl.py", line 13, in <module>
+  File "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_MVL01_INDEPENDENT_RECEIVER_R01_V01/test-fixture-v_dd0w0b/routabl_search_v1_5_service.py", line 63, in <module>
+  File "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_MVL01_INDEPENDENT_RECEIVER_R01_V01/test-fixture-v_dd0w0b/mvl_provenance.py", line 84, in resolve_crosswalk
+KeyError: 'provenance_crosswalk'
+
+======================================================================
+ERROR: test_missing_file_rejected (test_selected_handoff.SelectedHandoffTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_MVL01_INDEPENDENT_RECEIVER_R01_V01/test_selected_handoff.py", line 61, in setUp
+    self.mvl = importlib.import_module("mvl")
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_MVL01_INDEPENDENT_RECEIVER_R01_V01/test-fixture-2slxeis6/mvl.py", line 13, in <module>
+  File "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_MVL01_INDEPENDENT_RECEIVER_R01_V01/test-fixture-2slxeis6/routabl_search_v1_5_service.py", line 63, in <module>
+  File "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_MVL01_INDEPENDENT_RECEIVER_R01_V01/test-fixture-2slxeis6/mvl_provenance.py", line 84, in resolve_crosswalk
+KeyError: 'provenance_crosswalk'
+
+======================================================================
+ERROR: test_missing_index_row_rejected (test_selected_handoff.SelectedHandoffTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_MVL01_INDEPENDENT_RECEIVER_R01_V01/test_selected_handoff.py", line 61, in setUp
+    self.mvl = importlib.import_module("mvl")
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_MVL01_INDEPENDENT_RECEIVER_R01_V01/test-fixture-2jlqedk0/mvl.py", line 13, in <module>
+  File "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_MVL01_INDEPENDENT_RECEIVER_R01_V01/test-fixture-2jlqedk0/routabl_search_v1_5_service.py", line 63, in <module>
+  File "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_MVL01_INDEPENDENT_RECEIVER_R01_V01/test-fixture-2jlqedk0/mvl_provenance.py", line 84, in resolve_crosswalk
+KeyError: 'provenance_crosswalk'
+
+======================================================================
+ERROR: test_no_body_and_no_unapproved_metadata (test_selected_handoff.SelectedHandoffTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_MVL01_INDEPENDENT_RECEIVER_R01_V01/test_selected_handoff.py", line 61, in setUp
+    self.mvl = importlib.import_module("mvl")
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_MVL01_INDEPENDENT_RECEIVER_R01_V01/test-fixture-cz3_lhod/mvl.py", line 13, in <module>
+  File "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_MVL01_INDEPENDENT_RECEIVER_R01_V01/test-fixture-cz3_lhod/routabl_search_v1_5_service.py", line 63, in <module>
+  File "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_MVL01_INDEPENDENT_RECEIVER_R01_V01/test-fixture-cz3_lhod/mvl_provenance.py", line 84, in resolve_crosswalk
+KeyError: 'provenance_crosswalk'
+
+======================================================================
+ERROR: test_non_candidate_rejected (test_selected_handoff.SelectedHandoffTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_MVL01_INDEPENDENT_RECEIVER_R01_V01/test_selected_handoff.py", line 61, in setUp
+    self.mvl = importlib.import_module("mvl")
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_MVL01_INDEPENDENT_RECEIVER_R01_V01/test-fixture-klui2wk2/mvl.py", line 13, in <module>
+  File "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_MVL01_INDEPENDENT_RECEIVER_R01_V01/test-fixture-klui2wk2/routabl_search_v1_5_service.py", line 63, in <module>
+  File "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_MVL01_INDEPENDENT_RECEIVER_R01_V01/test-fixture-klui2wk2/mvl_provenance.py", line 84, in resolve_crosswalk
+KeyError: 'provenance_crosswalk'
+
+======================================================================
+ERROR: test_outside_and_traversal_rejected_before_read (test_selected_handoff.SelectedHandoffTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_MVL01_INDEPENDENT_RECEIVER_R01_V01/test_selected_handoff.py", line 61, in setUp
+    self.mvl = importlib.import_module("mvl")
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_MVL01_INDEPENDENT_RECEIVER_R01_V01/test-fixture-mgect1n4/mvl.py", line 13, in <module>
+  File "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_MVL01_INDEPENDENT_RECEIVER_R01_V01/test-fixture-mgect1n4/routabl_search_v1_5_service.py", line 63, in <module>
+  File "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_MVL01_INDEPENDENT_RECEIVER_R01_V01/test-fixture-mgect1n4/mvl_provenance.py", line 84, in resolve_crosswalk
+KeyError: 'provenance_crosswalk'
+
+======================================================================
+ERROR: test_parent_symlink_rejected_even_with_matching_content (test_selected_handoff.SelectedHandoffTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_MVL01_INDEPENDENT_RECEIVER_R01_V01/test_selected_handoff.py", line 61, in setUp
+    self.mvl = importlib.import_module("mvl")
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_MVL01_INDEPENDENT_RECEIVER_R01_V01/test-fixture-ha0s_fdx/mvl.py", line 13, in <module>
+  File "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_MVL01_INDEPENDENT_RECEIVER_R01_V01/test-fixture-ha0s_fdx/routabl_search_v1_5_service.py", line 63, in <module>
+  File "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_MVL01_INDEPENDENT_RECEIVER_R01_V01/test-fixture-ha0s_fdx/mvl_provenance.py", line 84, in resolve_crosswalk
+KeyError: 'provenance_crosswalk'
+
+======================================================================
+ERROR: test_read_only_selected_db (test_selected_handoff.SelectedHandoffTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_MVL01_INDEPENDENT_RECEIVER_R01_V01/test_selected_handoff.py", line 61, in setUp
+    self.mvl = importlib.import_module("mvl")
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_MVL01_INDEPENDENT_RECEIVER_R01_V01/test-fixture-j2ojwhz_/mvl.py", line 13, in <module>
+  File "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_MVL01_INDEPENDENT_RECEIVER_R01_V01/test-fixture-j2ojwhz_/routabl_search_v1_5_service.py", line 63, in <module>
+  File "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_MVL01_INDEPENDENT_RECEIVER_R01_V01/test-fixture-j2ojwhz_/mvl_provenance.py", line 84, in resolve_crosswalk
+KeyError: 'provenance_crosswalk'
+
+======================================================================
+ERROR: test_registration_id_binding (test_selected_handoff.SelectedHandoffTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_MVL01_INDEPENDENT_RECEIVER_R01_V01/test_selected_handoff.py", line 61, in setUp
+    self.mvl = importlib.import_module("mvl")
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_MVL01_INDEPENDENT_RECEIVER_R01_V01/test-fixture-hks114i7/mvl.py", line 13, in <module>
+  File "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_MVL01_INDEPENDENT_RECEIVER_R01_V01/test-fixture-hks114i7/routabl_search_v1_5_service.py", line 63, in <module>
+  File "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_MVL01_INDEPENDENT_RECEIVER_R01_V01/test-fixture-hks114i7/mvl_provenance.py", line 84, in resolve_crosswalk
+KeyError: 'provenance_crosswalk'
+
+======================================================================
+ERROR: test_same_sha_different_ids_selected_exactly_in_request_order (test_selected_handoff.SelectedHandoffTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_MVL01_INDEPENDENT_RECEIVER_R01_V01/test_selected_handoff.py", line 61, in setUp
+    self.mvl = importlib.import_module("mvl")
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_MVL01_INDEPENDENT_RECEIVER_R01_V01/test-fixture-jfn1cl9o/mvl.py", line 13, in <module>
+  File "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_MVL01_INDEPENDENT_RECEIVER_R01_V01/test-fixture-jfn1cl9o/routabl_search_v1_5_service.py", line 63, in <module>
+  File "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_MVL01_INDEPENDENT_RECEIVER_R01_V01/test-fixture-jfn1cl9o/mvl_provenance.py", line 84, in resolve_crosswalk
+KeyError: 'provenance_crosswalk'
+
+======================================================================
+ERROR: test_selected_metadata_and_cli (test_selected_handoff.SelectedHandoffTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_MVL01_INDEPENDENT_RECEIVER_R01_V01/test_selected_handoff.py", line 61, in setUp
+    self.mvl = importlib.import_module("mvl")
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_MVL01_INDEPENDENT_RECEIVER_R01_V01/test-fixture-1j0u6k01/mvl.py", line 13, in <module>
+  File "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_MVL01_INDEPENDENT_RECEIVER_R01_V01/test-fixture-1j0u6k01/routabl_search_v1_5_service.py", line 63, in <module>
+  File "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_MVL01_INDEPENDENT_RECEIVER_R01_V01/test-fixture-1j0u6k01/mvl_provenance.py", line 84, in resolve_crosswalk
+KeyError: 'provenance_crosswalk'
+
+======================================================================
+ERROR: test_tampered_same_size_rejected (test_selected_handoff.SelectedHandoffTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_MVL01_INDEPENDENT_RECEIVER_R01_V01/test_selected_handoff.py", line 61, in setUp
+    self.mvl = importlib.import_module("mvl")
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_MVL01_INDEPENDENT_RECEIVER_R01_V01/test-fixture-tjnd22ni/mvl.py", line 13, in <module>
+  File "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_MVL01_INDEPENDENT_RECEIVER_R01_V01/test-fixture-tjnd22ni/routabl_search_v1_5_service.py", line 63, in <module>
+  File "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_MVL01_INDEPENDENT_RECEIVER_R01_V01/test-fixture-tjnd22ni/mvl_provenance.py", line 84, in resolve_crosswalk
+KeyError: 'provenance_crosswalk'
+
+======================================================================
+ERROR: test_unchanged_default_handoff_and_search_against_pinned_original (test_selected_handoff.SelectedHandoffTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_MVL01_INDEPENDENT_RECEIVER_R01_V01/test_selected_handoff.py", line 61, in setUp
+    self.mvl = importlib.import_module("mvl")
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_MVL01_INDEPENDENT_RECEIVER_R01_V01/test-fixture-dn7xixlm/mvl.py", line 13, in <module>
+  File "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_MVL01_INDEPENDENT_RECEIVER_R01_V01/test-fixture-dn7xixlm/routabl_search_v1_5_service.py", line 63, in <module>
+  File "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_MVL01_INDEPENDENT_RECEIVER_R01_V01/test-fixture-dn7xixlm/mvl_provenance.py", line 84, in resolve_crosswalk
+KeyError: 'provenance_crosswalk'
+
+======================================================================
+ERROR: test_unknown_id_rejected_with_no_output (test_selected_handoff.SelectedHandoffTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_MVL01_INDEPENDENT_RECEIVER_R01_V01/test_selected_handoff.py", line 61, in setUp
+    self.mvl = importlib.import_module("mvl")
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_MVL01_INDEPENDENT_RECEIVER_R01_V01/test-fixture-4f0cqhzf/mvl.py", line 13, in <module>
+  File "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_MVL01_INDEPENDENT_RECEIVER_R01_V01/test-fixture-4f0cqhzf/routabl_search_v1_5_service.py", line 63, in <module>
+  File "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_MVL01_INDEPENDENT_RECEIVER_R01_V01/test-fixture-4f0cqhzf/mvl_provenance.py", line 84, in resolve_crosswalk
+KeyError: 'provenance_crosswalk'
+
+----------------------------------------------------------------------
+Ran 20 tests in 4.413s
+
+FAILED (errors=20)

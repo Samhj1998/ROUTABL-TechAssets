@@ -1,0 +1,123 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "schema": {
+      "const": "b6.1"
+    },
+    "scope": {
+      "const": "ISOLATED_FIXTURE"
+    },
+    "status": {
+      "enum": [
+        "CANDIDATE_NEW_EVIDENCE",
+        "CANDIDATE_SAME_DAY_RECHECK",
+        "SKIPPED_LOCK_HELD",
+        "BLOCKED_POLICY",
+        "BLOCKED_MULTIPLE_ENTRYPOINTS",
+        "BLOCKED_SIGNATURE",
+        "BLOCKED_PROGRAM_PIN",
+        "BLOCKED_PROGRAM_PIN_CHANGED",
+        "BLOCKED_PREFLIGHT",
+        "BLOCKED_LOCK_REPLACED",
+        "BLOCKED_WRITE_CAPABILITY",
+        "BLOCKED_ENGINE_UNAPPROVED",
+        "FAILED_RESULT_PUBLICATION",
+        "BLOCKED_RESIDUAL",
+        "FAILED_CHILD",
+        "EVIDENCE_INVALID",
+        "NO_NEW_BACKUP_EVIDENCE",
+        "LOCAL_ORIGINAL_MISSING",
+        "STALE_REGISTRY_BACKUP",
+        "SELECTION_CHANGED",
+        "SELECTION_OR_REGISTRY_CHANGED_DURING_RUN",
+        "REUSE_NOT_PREEXISTING",
+        "CAS_COMPONENTS_NOT_VERIFIED"
+      ]
+    },
+    "exit_code": {
+      "enum": [
+        0,
+        10,
+        20,
+        30
+      ]
+    },
+    "actual_backup_success": {
+      "const": false
+    },
+    "production_deployment": {
+      "const": false
+    },
+    "details": {
+      "type": "object"
+    }
+  },
+  "required": [
+    "schema",
+    "scope",
+    "status",
+    "exit_code",
+    "actual_backup_success",
+    "production_deployment",
+    "details"
+  ],
+  "additionalProperties": false,
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "status": {
+            "const": "CANDIDATE_NEW_EVIDENCE"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "exit_code": {
+            "const": 0
+          }
+        }
+      },
+      "else": {
+        "if": {
+          "properties": {
+            "status": {
+              "const": "CANDIDATE_SAME_DAY_RECHECK"
+            }
+          }
+        },
+        "then": {
+          "properties": {
+            "exit_code": {
+              "const": 10
+            }
+          }
+        },
+        "else": {
+          "if": {
+            "properties": {
+              "status": {
+                "const": "SKIPPED_LOCK_HELD"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "exit_code": {
+                "const": 20
+              }
+            }
+          },
+          "else": {
+            "properties": {
+              "exit_code": {
+                "const": 30
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
+}

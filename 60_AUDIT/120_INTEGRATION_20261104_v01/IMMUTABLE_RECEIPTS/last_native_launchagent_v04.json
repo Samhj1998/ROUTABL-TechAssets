@@ -1,0 +1,12 @@
+{
+  "at" : "2026-11-03T23:46:24Z",
+  "backupAttempted" : true,
+  "childExitCode" : 0,
+  "elapsedSeconds" : 370.6,
+  "kind" : "ROUTABL_NATIVE_LAUNCHAGENT_V04",
+  "launchAgentRegistrationChanged" : false,
+  "networkVolumeAccessAttempted" : true,
+  "permissionsModified" : false,
+  "phase" : "postbackup",
+  "state" : "BACKUP_VERIFIED_RECEIPT_CURRENT"
+}

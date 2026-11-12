@@ -1,0 +1,39 @@
+{
+  "kind": "ROUTABL_120_V015_POSTBACKUP_RECEIPT_ARCHIVE",
+  "recorded_at_kst": "2026-11-04T09:42:32+09:00",
+  "snapshot": "ASSET_V21_20261104_093408_KST_35618",
+  "registry_version": "v0.15",
+  "registry_sha256": "cc84d033c02ee215ce8a1cf0f7635f3c541295a34bfa0f1f1da6175121fdeda2",
+  "asset_count": 99,
+  "snapshot_file_count": 3344,
+  "nas_verified_at_kst": "2026-11-04T09:41:24+09:00",
+  "receipt_copies": [
+    {
+      "name": "last_manual_mac_nas_cas_v01.json",
+      "sha256": "39ec16cfef84aba4859acc1936c7655d574f6aa0f643a0ccf69e08e43d35d07d",
+      "bytes": 812
+    },
+    {
+      "name": "last_native_backup_supervisor_v02.json",
+      "sha256": "7ac99f9ab8d19c3f3a42defff30530309b952b196e04c16ecf66a0cc513636f3",
+      "bytes": 536
+    },
+    {
+      "name": "last_native_launchagent_v04.json",
+      "sha256": "8e206a356fdfa76b970887a34c06a6433568dc228faa0def0d95ac3da3f3e690",
+      "bytes": 350
+    },
+    {
+      "name": "last_selective_v21_result.json",
+      "sha256": "ff60cb26cee9ecb7c6dfa20ecd4a30b96ef6defc0e2c1e3e23bed88b93b2085b",
+      "bytes": 689
+    }
+  ],
+  "all_copies_exact_byte_match_at_capture": true,
+  "all_15_final_checks_passed": true,
+  "same_day_0430_schedule_test": "PENDING_2026_11_05",
+  "full_chat_transcript": "NOT_OBTAINED",
+  "post_snapshot_evidence_files_in_snapshot": false,
+  "existing_registry_modified": false,
+  "existing_operational_logs_modified": false
+}

@@ -1,0 +1,90 @@
+{
+  "fixed_at_kst": "2026-11-08T13:18:20+09:00",
+  "status": "supplemental cases fixed after C launch, before any formal comparison",
+  "not_in_mixed_50": true,
+  "original_cohort_sha": "a5aa8fac99eaddf410a89fa7a7b0a05bdd9c9e298473557b1dd01efe9ec43efc",
+  "cases": [
+    {
+      "id": "PERF-DENSE-1X",
+      "term": "무관자료",
+      "tags": [
+        "dense",
+        "fts_eligible_3plus"
+      ],
+      "fixture": "existing 1x unchanged",
+      "a_unmodified_1x_docs_hits": 1200,
+      "scope": "all"
+    },
+    {
+      "id": "PERF-SHORT-1X",
+      "term": "수정",
+      "tags": [
+        "short_original_or_alias",
+        "fallback_expected"
+      ],
+      "fixture": "existing 1x unchanged",
+      "a_unmodified_1x_docs_hits": 3,
+      "scope": "all"
+    },
+    {
+      "id": "PERF-ALIAS-SHORT-1X",
+      "term": "fixed-test-alias",
+      "extra_aliases": {
+        "fixed-test-alias": [
+          "수정"
+        ]
+      },
+      "tags": [
+        "short_original_or_alias",
+        "fallback_expected"
+      ],
+      "fixture": "existing 1x plus test alias only",
+      "a_unmodified_1x_docs_hits": 3,
+      "scope": "all"
+    },
+    {
+      "id": "PERF-NUL-1X",
+      "term": "수정\u0000색인",
+      "tags": [
+        "fallback_expected",
+        "nul"
+      ],
+      "fixture": "existing 1x unchanged",
+      "a_unmodified_1x_docs_hits": 0,
+      "scope": "all"
+    },
+    {
+      "id": "FAULT-FT-MISSING",
+      "term": "SIM-001",
+      "tags": [
+        "fallback_expected",
+        "fault_injected"
+      ],
+      "fixture": "writable test clone only; delete from ft the rowid corresponding to 00_SYNTHETIC/SIM-001.md and commit",
+      "a_unmodified_1x_docs_hits": 3,
+      "scope": "all"
+    },
+    {
+      "id": "FAULT-FT-DDL",
+      "term": "SIM-001",
+      "tags": [
+        "fallback_expected",
+        "fault_injected"
+      ],
+      "fixture": "writable test clone only; replace ft in that clone with detail=none and repopulate path+title,tags,content",
+      "a_unmodified_1x_docs_hits": 3,
+      "scope": "all"
+    },
+    {
+      "id": "FAULT-MATCH",
+      "term": "SIM-001",
+      "tags": [
+        "fallback_expected",
+        "fault_injected"
+      ],
+      "fixture": "intercept only first MATCH to raise sqlite3.OperationalError while allowing A SQL on same generation",
+      "a_unmodified_1x_docs_hits": 3,
+      "scope": "all"
+    }
+  ]
+}

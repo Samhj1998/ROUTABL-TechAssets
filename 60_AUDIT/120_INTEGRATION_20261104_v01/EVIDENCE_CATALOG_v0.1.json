@@ -1,0 +1,222 @@
+{
+  "kind": "ROUTABL_120_EVIDENCE_CATALOG_V01",
+  "created_at_kst": "2026-11-04T09:29:23+09:00",
+  "source_chat": "120. 라우터블 기술자산 통합관리체계 — 검색·보존·복원·AI 재사용·보안 자동화",
+  "full_chat_export_obtained": false,
+  "chat_content_claim": "PARTIAL_CONTEXT_NOT_VERBATIM_FULL_EXPORT",
+  "baseline_registry": "asset_manifest_v0.14.json",
+  "baseline_registry_sha256": "f2e7d88d16b6b2aa98d8cc53ed6cbf099f8b19bc4c7cbce072b1ee62ffd7233d",
+  "baseline_verified_assets": 81,
+  "mutable_receipts_captured": [
+    {
+      "original_path": "/Users/yongho/Library/Logs/ROUTABL-AssetBackup/last_native_launchagent_v04.json",
+      "archived_path": "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_INTEGRATION_20261104_v01/IMMUTABLE_RECEIPTS/last_native_launchagent_v04.json",
+      "sha256": "1d698c9df635c772ca2ed8630672408dc40e74781943888a3755b09d95860887",
+      "bytes": 350,
+      "immutable_observation_copy": true,
+      "source_is_mutable": true,
+      "content_verified_equal_at_capture": true
+    },
+    {
+      "original_path": "/Users/yongho/Library/Logs/ROUTABL-AssetBackup/last_native_backup_supervisor_v02.json",
+      "archived_path": "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_INTEGRATION_20261104_v01/IMMUTABLE_RECEIPTS/last_native_backup_supervisor_v02.json",
+      "sha256": "d2e1349c56ef6980e934dfadd9c9ca2bb7d5c70657bc015ccb88a7586697b302",
+      "bytes": 536,
+      "immutable_observation_copy": true,
+      "source_is_mutable": true,
+      "content_verified_equal_at_capture": true
+    },
+    {
+      "original_path": "/Users/yongho/Library/Logs/ROUTABL-AssetBackup/last_selective_v21_result.json",
+      "archived_path": "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_INTEGRATION_20261104_v01/IMMUTABLE_RECEIPTS/last_selective_v21_result.json",
+      "sha256": "97a399013ac5c98803f983621e95cd79fad1b6465a640aabf18107a3f4e3d7be",
+      "bytes": 689,
+      "immutable_observation_copy": true,
+      "source_is_mutable": true,
+      "content_verified_equal_at_capture": true
+    },
+    {
+      "original_path": "/Users/yongho/Library/Logs/ROUTABL-AssetBackup/last_manual_mac_nas_cas_v01.json",
+      "archived_path": "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_INTEGRATION_20261104_v01/IMMUTABLE_RECEIPTS/last_manual_mac_nas_cas_v01.json",
+      "sha256": "4ef2ce4ea4e3e9f24fc122af001cc45a8d95b2db4aee63f3dee79cbeeae716e5",
+      "bytes": 812,
+      "immutable_observation_copy": true,
+      "source_is_mutable": true,
+      "content_verified_equal_at_capture": true
+    },
+    {
+      "original_path": "/Users/yongho/Library/Logs/ROUTABL-AssetBackup/last_nas_cas_restore_qa_result.json",
+      "archived_path": "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_INTEGRATION_20261104_v01/IMMUTABLE_RECEIPTS/last_nas_cas_restore_qa_result.json",
+      "sha256": "20de97efe2f30ed757715467ff2439228ac950602c91998a355d05019eaf80a1",
+      "bytes": 682,
+      "immutable_observation_copy": true,
+      "source_is_mutable": true,
+      "content_verified_equal_at_capture": true
+    }
+  ],
+  "source_evidence": [
+    {
+      "relative_or_absolute_path": "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_HEADLESS_V03_FINAL_JOINT_HANDOFF_POSTBACKUP_20261104.md",
+      "source_role": "HISTORICAL_120_AUDIT_DOCUMENT",
+      "bytes": 6276,
+      "sha256": "b51b916677849a492a135b5e9379b70caa6d345f1c4473366662ad3084ad3c0e",
+      "validation": "FILE_HASH_VERIFIED_NOT_CURRENT_STATUS"
+    },
+    {
+      "relative_or_absolute_path": "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_JOINT_GUI_AND_NAS_RESTORE_GATE_20261104.md",
+      "source_role": "HISTORICAL_120_AUDIT_DOCUMENT",
+      "bytes": 4670,
+      "sha256": "229327a51760cd0907477bcfd7b7213069bcf1af9ced6016902e24c3ac00cabb",
+      "validation": "FILE_HASH_VERIFIED_NOT_CURRENT_STATUS"
+    },
+    {
+      "relative_or_absolute_path": "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_MAC_NAS_CAS_CONSOLIDATED_PREBACKUP_QA_20261103.md",
+      "source_role": "HISTORICAL_120_AUDIT_DOCUMENT",
+      "bytes": 5529,
+      "sha256": "1250249614e7a64d6f5f3f1868210b2317fc046294e220f6ea41c09c5c42beb2",
+      "validation": "FILE_HASH_VERIFIED_NOT_CURRENT_STATUS"
+    },
+    {
+      "relative_or_absolute_path": "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_MAC_NAS_FINAL_ACCEPTANCE_AND_JOINT_ACTIONS_20261104.md",
+      "source_role": "HISTORICAL_120_AUDIT_DOCUMENT",
+      "bytes": 7470,
+      "sha256": "112826b38c77a7f0cfe8349e672c2e61fe9077f7c1b2eff7ac2a5c3a249fd0f3",
+      "validation": "FILE_HASH_VERIFIED_NOT_CURRENT_STATUS"
+    },
+    {
+      "relative_or_absolute_path": "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_MAC_NAS_HEADLESS_V03_FAILCLOSED_AND_TCC_GATE_20261104.md",
+      "source_role": "HISTORICAL_120_AUDIT_DOCUMENT",
+      "bytes": 7527,
+      "sha256": "632596f703c873cdcfd652817c01b4600c79321e1bfc740a01f5362304932c8c",
+      "validation": "FILE_HASH_VERIFIED_NOT_CURRENT_STATUS"
+    },
+    {
+      "relative_or_absolute_path": "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_TCC_BACKGROUND_APPROVAL_AND_SMB_HANG_20261104.md",
+      "source_role": "HISTORICAL_120_AUDIT_DOCUMENT",
+      "bytes": 3749,
+      "sha256": "a3d8c0d0a66937a62e11dc722f1685e046acf4f11780178fb508664f93f93437",
+      "validation": "FILE_HASH_VERIFIED_NOT_CURRENT_STATUS"
+    },
+    {
+      "relative_or_absolute_path": "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_V042_DIAGNOSTIC_BACKGROUND_TCC_RESULT_20261104.md",
+      "source_role": "HISTORICAL_120_AUDIT_DOCUMENT",
+      "bytes": 7026,
+      "sha256": "a2a7538e6ee6362f5a41fb009d83d08016439d8efa98ef77b53852ec508e5940",
+      "validation": "FILE_HASH_VERIFIED_NOT_CURRENT_STATUS"
+    },
+    {
+      "relative_or_absolute_path": "/Users/yongho/ROUTABL-TechAssets/00_GUIDE/ROUTABL_BackupHeadlessSupervisor_v0_2.py",
+      "source_role": "CURRENT_OPERATION_SOURCE_OR_CAS_MANIFEST",
+      "bytes": 10789,
+      "sha256": "49a1533b22a166715bd606c3c151f89d24752c653c5c119f5107267af640f878",
+      "validation": "SHA256_FILE_VERIFIED"
+    },
+    {
+      "relative_or_absolute_path": "/Users/yongho/ROUTABL-TechAssets/00_GUIDE/ROUTABL_MacToNasOneShot_v0_1.py",
+      "source_role": "CURRENT_OPERATION_SOURCE_OR_CAS_MANIFEST",
+      "bytes": 6321,
+      "sha256": "2283dcd37881494d84a0c05f4a04c778543fe8084d882ec7b0567c48d3615552",
+      "validation": "SHA256_FILE_VERIFIED"
+    },
+    {
+      "relative_or_absolute_path": "/Users/yongho/ROUTABL-TechAssets/00_GUIDE/ROUTABL_HeadlessDailyGate_v0_3.py",
+      "source_role": "CURRENT_OPERATION_SOURCE_OR_CAS_MANIFEST",
+      "bytes": 6756,
+      "sha256": "4992b2213bf2598c55a6ab68dd5bf35c501258d47e1e4780765c2a67343a3ce5",
+      "validation": "SHA256_FILE_VERIFIED"
+    },
+    {
+      "relative_or_absolute_path": "/Users/yongho/ROUTABL-TechAssets/00_GUIDE/ROUTABL_NAS_ContentAwareBackup_v0_2.py",
+      "source_role": "CURRENT_OPERATION_SOURCE_OR_CAS_MANIFEST",
+      "bytes": 16900,
+      "sha256": "fa370842507ae0afb1e11ede46d1a0f72ab4736c60329c8aa18f94c797794631",
+      "validation": "SHA256_FILE_VERIFIED"
+    },
+    {
+      "relative_or_absolute_path": "/Users/yongho/ROUTABL-TechAssets/40_WORKING/HEADLESS_NATIVE_V0_4_2/ROUTABLBackupAgent.swift",
+      "source_role": "CURRENT_OPERATION_SOURCE_OR_CAS_MANIFEST",
+      "bytes": 9095,
+      "sha256": "d997975f7d26d0975b68b4a1a98b4b471b15177784d109c85c98898201e6c24e",
+      "validation": "SHA256_FILE_VERIFIED"
+    },
+    {
+      "relative_or_absolute_path": "/Users/yongho/ROUTABL-TechAssets/40_WORKING/HEADLESS_NATIVE_V0_4_2/ROUTABLBackupManager.swift",
+      "source_role": "CURRENT_OPERATION_SOURCE_OR_CAS_MANIFEST",
+      "bytes": 11107,
+      "sha256": "e58d4451abc0e4aaea78f4474b02de8956288f969d39e8a598c24a30d958117c",
+      "validation": "SHA256_FILE_VERIFIED"
+    },
+    {
+      "relative_or_absolute_path": "/Users/yongho/ROUTABL-TechAssets/40_WORKING/HEADLESS_NATIVE_V0_4/ROUTABLVolumePermissionProbe.swift",
+      "source_role": "CURRENT_OPERATION_SOURCE_OR_CAS_MANIFEST",
+      "bytes": 2621,
+      "sha256": "351162dcc99a4933e8fd142038b12876bf30987578110e7ce160dec3d104720c",
+      "validation": "SHA256_FILE_VERIFIED"
+    },
+    {
+      "relative_or_absolute_path": "/Volumes/Dev_Assets/ROUTABL-TechAssets-Backup/snapshots/ROUTABL-Ciphertext-CAS-v0_1/manifests/CAS_ASSET_V21_20261104_084130_KST_34561.json",
+      "source_role": "CURRENT_OPERATION_SOURCE_OR_CAS_MANIFEST",
+      "bytes": 104896,
+      "sha256": "a215bdb55450346d72de22e2b88b75b7258650beeaed2b556cbffca119aa89c5",
+      "validation": "SHA256_FILE_VERIFIED"
+    }
+  ],
+  "auth_scope": "MAC_SSD_AES256_TO_NAS_CAS_ONLY",
+  "policy_metadata": {
+    "enabled": true,
+    "file_mode": "0600",
+    "write_user_uid": 501,
+    "schedule_hour_kst": 4,
+    "schedule_minute_kst": 30,
+    "drive_upload": false,
+    "pruning": false
+  },
+  "current_operation": {
+    "native_state": "BACKUP_VERIFIED_RECEIPT_CURRENT",
+    "supervisor_state": "SUCCESS_VERIFIED",
+    "snapshot": "ASSET_V21_20261104_084130_KST_34561",
+    "files": 3328,
+    "source_bytes": 519889613,
+    "nas_state": "SUCCESS_LOCAL_TO_NAS_ENCRYPTED_CAS",
+    "nas_components": 395,
+    "nas_new_ciphertext_bytes": 573710336,
+    "nas_reused_ciphertext_components": 325,
+    "current_actual_0430_run": "NOT_YET_VERIFIED",
+    "latest_nas_full_decrypted_recovery": "NOT_VERIFIED"
+  },
+  "unresolved_ids": [
+    "B-01",
+    "B-02",
+    "B-03",
+    "B-04",
+    "B-05",
+    "B-06",
+    "B-07",
+    "B-08",
+    "B-09",
+    "B-10"
+  ],
+  "authored_files": [
+    {
+      "relative_or_absolute_path": "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_INTEGRATION_20261104_v01/PROVENANCE_ORIGINAL_ACCESS_v0.1.md",
+      "source_role": "AUTHORED_SYNTHESIS_NOT_CHAT_ORIGINAL",
+      "bytes": 2707,
+      "sha256": "26efa8f74e97cfc845bef0617f9588e031f8a705baf307278fad629e7d8657ae",
+      "validation": "WRITTEN_AND_SHA256_VERIFIED"
+    },
+    {
+      "relative_or_absolute_path": "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_INTEGRATION_20261104_v01/120_TECH_ASSET_CONSOLIDATED_v0.1.md",
+      "source_role": "AUTHORED_SYNTHESIS_NOT_CHAT_ORIGINAL",
+      "bytes": 5170,
+      "sha256": "1f40178cdee4add574bb66455e1d6eb11dd69d317c6dfbdf336517b5b53dbf1f",
+      "validation": "WRITTEN_AND_SHA256_VERIFIED"
+    },
+    {
+      "relative_or_absolute_path": "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_INTEGRATION_20261104_v01/OPEN_ISSUES_FOR_OWNER_v0.1.md",
+      "source_role": "AUTHORED_SYNTHESIS_NOT_CHAT_ORIGINAL",
+      "bytes": 2808,
+      "sha256": "78af6161723b8d46370f0971c0142ccb19a25afb8443808572ec0114a92164f4",
+      "validation": "WRITTEN_AND_SHA256_VERIFIED"
+    }
+  ]
+}

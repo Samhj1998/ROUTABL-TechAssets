@@ -1,0 +1,113 @@
+{
+  "gate": "B1",
+  "transfer_performed": false,
+  "candidates": [
+    {
+      "file": "HANDOFF_MANUAL.md",
+      "sha256": "bf8a093caf412b45f8400efda3b9a0bb6fea26b7af0b0378b3f648ea60eed688",
+      "source": "B1 derived summary",
+      "sensitivity": "INTERNAL_REVIEW_REQUIRED",
+      "delivery_approval": "PENDING_HUMAN_APPROVAL",
+      "intended_stage": "T0_ONE_VARIANT_ONLY",
+      "human_review": [
+        "Check for customer names, addresses and hidden credentials",
+        "Approve exact content hash, recipient environment and chosen variant"
+      ]
+    },
+    {
+      "file": "HANDOFF_GENERATED.md",
+      "sha256": "bf8a093caf412b45f8400efda3b9a0bb6fea26b7af0b0378b3f648ea60eed688",
+      "source": "B1 derived summary",
+      "sensitivity": "INTERNAL_REVIEW_REQUIRED",
+      "delivery_approval": "PENDING_HUMAN_APPROVAL",
+      "intended_stage": "T0_ONE_VARIANT_ONLY",
+      "human_review": [
+        "Check for customer names, addresses and hidden credentials",
+        "Approve exact content hash, recipient environment and chosen variant"
+      ]
+    },
+    {
+      "asset_id": "CW-01",
+      "path": "00_GUIDE/DIGITOPIA_CHAT_WORK_PROTOCOL_v1.0.md",
+      "sha256": "7b48c1deb08ab1c8904541f7c9acedbf2406e51f510fbccf0d7ae17609d585d1",
+      "source": "Mac Studio original",
+      "sensitivity": "INTERNAL_UNREVIEWED_ORIGINAL",
+      "delivery_approval": "HOLD_ORIGINAL_NO_TRANSFER",
+      "intended_stage": "T2_READ_ONLY_IF_SEPARATELY_APPROVED",
+      "human_review": [
+        "Approve exact access scope and audience",
+        "Avoid sharing entire file; if byte access is unavailable mark NOT_VERIFIED"
+      ]
+    },
+    {
+      "asset_id": "STEP2-AUDIT",
+      "path": "60_AUDIT/120-2-W_CW01_STEP2_VERIFICATION_v1.0.md",
+      "sha256": "ab56b5518120d93a300549757eb6f8c854989b339622367b73907d320a25e56d",
+      "source": "Mac Studio original",
+      "sensitivity": "INTERNAL_UNREVIEWED_ORIGINAL",
+      "delivery_approval": "HOLD_ORIGINAL_NO_TRANSFER",
+      "intended_stage": "T2_READ_ONLY_IF_SEPARATELY_APPROVED",
+      "human_review": [
+        "Approve exact access scope and audience",
+        "Avoid sharing entire file; if byte access is unavailable mark NOT_VERIFIED"
+      ]
+    },
+    {
+      "asset_id": "STEP3-RETEST",
+      "path": "40_WORKING/CW01_HANDOFF_POC_V01/VERIFICATION_RETEST.md",
+      "sha256": "e1fb4a7504d08cd234621c020439e57578145e5277d66d1a842f2a46bc759bbf",
+      "source": "Mac Studio original",
+      "sensitivity": "INTERNAL_UNREVIEWED_ORIGINAL",
+      "delivery_approval": "HOLD_ORIGINAL_NO_TRANSFER",
+      "intended_stage": "T2_READ_ONLY_IF_SEPARATELY_APPROVED",
+      "human_review": [
+        "Approve exact access scope and audience",
+        "Avoid sharing entire file; if byte access is unavailable mark NOT_VERIFIED"
+      ]
+    },
+    {
+      "asset_id": "MANIFEST-V0.27",
+      "path": "30_REGISTRY/asset_manifest_v0.27.json",
+      "sha256": "afe17adb54103952c0e84d296ded42a478fca49f25bd53f1f87dc0c73e1ce244",
+      "source": "Mac Studio original",
+      "sensitivity": "INTERNAL_UNREVIEWED_ORIGINAL",
+      "delivery_approval": "HOLD_ORIGINAL_NO_TRANSFER",
+      "intended_stage": "T2_READ_ONLY_IF_SEPARATELY_APPROVED",
+      "human_review": [
+        "Approve exact access scope and audience",
+        "Avoid sharing entire file; if byte access is unavailable mark NOT_VERIFIED"
+      ]
+    }
+  ],
+  "exclusions": [
+    {
+      "file": "ANSWER_KEY.json",
+      "delivery_approval": "DO_NOT_SEND"
+    },
+    {
+      "file": "MEASUREMENT.json",
+      "delivery_approval": "DO_NOT_SEND"
+    },
+    {
+      "file": "BASELINE.json",
+      "delivery_approval": "DO_NOT_SEND"
+    },
+    {
+      "file": "HANDOFF_SOURCE.json",
+      "delivery_approval": "DO_NOT_SEND"
+    },
+    {
+      "file": "render_handoff.py",
+      "delivery_approval": "DO_NOT_SEND"
+    },
+    {
+      "file": "INPUT_LEDGER.json",
+      "delivery_approval": "DO_NOT_SEND"
+    },
+    {
+      "file": "VERIFICATION.md",
+      "delivery_approval": "DO_NOT_SEND"
+    }
+  ],
+  "check_policy": "T0: one approved Markdown only. T2: separately approve read-only evidence access. Never substitute quoted checksums for byte checks."
+}

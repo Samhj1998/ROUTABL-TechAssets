@@ -1,0 +1,31 @@
+# 큰 원본·실행 데이터는 git 밖 (SHA로만 참조)
+20_ORIGINALS/
+80_RUNTIME/
+_to_delete/
+**/_to_delete/
+*.sqlite
+*.sqlite-*
+*.sqlite.*
+*.sparseimage
+*.sparsebundle/
+*.dmg
+*.zip
+*.pdf
+# 비밀값 파일
+*.jks
+*.keystore
+*.p12
+*.pfx
+*.pem
+*.key
+.env*
+*service-account*.json
+*credential*.json
+*client_secret*.json
+# 생성물
+__pycache__/
+*.pyc
+.DS_Store
+# 고객 데이터 덤프·비공개 시험 데이터 (지식 아님, 원래 위치에 그대로 둠)
+40_WORKING/CUSTOMER_DONG_*/plan*.json
+**/private/

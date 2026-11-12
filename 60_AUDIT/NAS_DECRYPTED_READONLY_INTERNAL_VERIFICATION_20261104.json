@@ -1,0 +1,15 @@
+{
+  "status": "PASS_NAS_DECRYPTED_READONLY_FULL_INTERNAL_SHA",
+  "checked_at_kst": "2026-11-04T01:20:30+09:00",
+  "source": "NAS_CAS_268_BANDS_RECONSTRUCTED_AES_IMAGE",
+  "reconstruction_source": "/Volumes/SSD2TB/ROUTABL-TechAssets-Backup/RestoreVerificationV2/USER_READONLY_MOUNT_ASSET_V21_20261104_000342_KST_26699/ROUTABL-SecureBackup.sparsebundle",
+  "snapshot": "ASSET_V21_20261104_000342_KST_26699",
+  "local_receipt_sha256": "33c7ecd271617f127ffdedcd08ddd22be712b8f5db6bd4962875ada76794f698",
+  "files_verified_sha256": 3308,
+  "plaintext_bytes_read_without_export": 519472970,
+  "image_readonly_mount_confirmed": true,
+  "inner_receipt_sha256_confirmed": true,
+  "credential_read_or_saved": false,
+  "encrypted_image_mounted_by_verifier": false,
+  "user_responsible_for_manual_detach": true
+}

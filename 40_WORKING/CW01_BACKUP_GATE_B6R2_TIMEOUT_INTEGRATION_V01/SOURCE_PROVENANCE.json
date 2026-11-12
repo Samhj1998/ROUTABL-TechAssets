@@ -1,0 +1,51 @@
+{
+  "lifecycle": {
+    "changes": [
+      [
+        "WORKER = ROOT/\"timeout_fixture.py\"",
+        "WORKER = ROOT/\"r2_worker.py\""
+      ],
+      [
+        "PIN_NAMES = (\"timeout_supervisor.py\",\"timeout_fixture.py\")",
+        "PIN_NAMES = (\"r2_lifecycle.py\",\"r2_worker.py\",\"r2_supervisor.py\",\"r2_oneshot.py\",\"b4_evidence.py\",\"b6_evidence.py\",\"backup_runner_candidate.py\",\"ROUTABL_BackupEvidenceNormalizer_v0_1.py\")"
+      ],
+      [
+        "SCENARIOS = {\"normal\",\"slow\",\"hang\",\"resistant\",\"noncooperative\",\"escape\",\"empty_success\"}",
+        "SCENARIOS = {\"gate\",\"nas\"}"
+      ],
+      [
+        "def _run(path,scenario,approval,*,work_timeout=",
+        "def _run(path,scenario,approval,*,case,work_timeout="
+      ],
+      [
+        "str(WORKER),scenario,run_id]",
+        "str(WORKER),scenario,run_id,case]"
+      ],
+      [
+        "        if current_lock:\n            atom(path/(\"result-\"+run_id+\".json\"),report)",
+        "        if status in (\"FIXTURE_COMPLETED\",\"FIXTURE_COMPLETED_DELAYED\"):\n            report[\"fixture_payload\"]={key:done[0][key] for key in (\"rows\",\"wire_exit\")}\n        if current_lock:\n            atom(path/(\"result-\"+run_id+\".json\"),report)"
+      ]
+    ],
+    "derived_sha256": "5b516464b5c4eac5f300eead3717e31e066b71991baec4ef405437e53f17595a",
+    "original": "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_BACKUP_GATE_B6R1_TIMEOUT_REMEDIATION_V01/timeout_supervisor.py",
+    "source_sha256": "dc101cc3ea12eae8cbc0764364841907eaacfd26142279e0144eb79174a81f3a"
+  },
+  "reused": {
+    "ROUTABL_BackupEvidenceNormalizer_v0_1.py": {
+      "original": "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_BACKUP_GATE_B5_PREDEPLOY_V01/ROUTABL_BackupEvidenceNormalizer_v0_1.py",
+      "sha256": "3fb5482c3da20aac42dcb4a638e78262d5b8a0eda3cc4625f96b827a3046dd51"
+    },
+    "b4_evidence.py": {
+      "original": "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_BACKUP_GATE_B4_INTEGRATION_V01/ROUTABL_BackupEvidenceAdapter_v0_1.py",
+      "sha256": "c0ba66a5c2f3781e006db5ddec4b34629c739d9774a823274b2b492c44b7cb1e"
+    },
+    "b6_evidence.py": {
+      "original": "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_BACKUP_GATE_B6_RELEASE_READINESS_V01/ROUTABL_BackupEvidenceAdapter_v0_1.py",
+      "sha256": "8ad3e95a9dba518b44384145354468b5339f452128780385bd138f1ee0c083af"
+    },
+    "backup_runner_candidate.py": {
+      "original": "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_BACKUP_GATE_B4_INTEGRATION_V01/backup_runner_candidate.py",
+      "sha256": "ced384e9890a30f504a1babd5d9cc9e2b4733b127d41d763446498c273dbcd92"
+    }
+  }
+}

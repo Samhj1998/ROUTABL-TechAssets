@@ -1,0 +1,83 @@
+{
+  "b4_pinned_source": {
+    "ROUTABL_BackupEvidenceAdapter_v0_1.py": "c0ba66a5c2f3781e006db5ddec4b34629c739d9774a823274b2b492c44b7cb1e",
+    "ROUTABL_BackupHeadlessSupervisor_v0_3.py": "1935218efc6b2522c2d43991e3e0e6fd8c76108185318ee2b7afff0855f9db1d",
+    "ROUTABL_MacToNasOneShot_v0_2.py": "ece6b0085ffb0d7a36e84c6d4262cb0c799cb74034618df3ab8e05dfff10d219",
+    "backup_runner_candidate.py": "ced384e9890a30f504a1babd5d9cc9e2b4733b127d41d763446498c273dbcd92"
+  },
+  "b5_candidate": {
+    "ROUTABL_BackupEvidenceNormalizer_v0_1.py": "3fb5482c3da20aac42dcb4a638e78262d5b8a0eda3cc4625f96b827a3046dd51"
+  },
+  "deployment_enabled": false,
+  "final_v043_designated_requirement": null,
+  "final_v043_signed_sha256": null,
+  "final_v043_team_id": null,
+  "installed_existing_agents": {
+    "라우터블 백업 권한·안전관리 v0.4.2.app": {
+      "binary_mode": "0o700",
+      "binary_uid": 501,
+      "bundle_mode": "0o700",
+      "bundle_uid": 501,
+      "details": [
+        "Identifier=ROUTABLBackupAgent-555549442c31417f08e5361f95a797e587dce85f",
+        "Signature=adhoc",
+        "TeamIdentifier=not set"
+      ],
+      "sha256": "53b22eabeb73e776697af2baa72702a864e4bc0b80c1137429fb10c8d192e577",
+      "strict_exit": 0
+    },
+    "라우터블 백업 자동실행 준비 v0.2.app": {
+      "binary_mode": "0o700",
+      "binary_uid": 501,
+      "bundle_mode": "0o700",
+      "bundle_uid": 501,
+      "details": [
+        "Identifier=ROUTABLBackupAgent-55554944912c631b30e03c93a2db688433bb9502",
+        "Signature=adhoc",
+        "TeamIdentifier=not set"
+      ],
+      "sha256": "2decbf7bd13b5e6916fbb54eaebaa606c869b021749d318efd9fe1ee47fa20f2",
+      "strict_exit": 0
+    }
+  },
+  "legacy_programs": {
+    "ROUTABL_BackupHeadlessSupervisor_v0_1.py": "c2417c49daa17b99db9aae9ebbd74a67e81e0931ffd4ca264e5304d25e74c970",
+    "ROUTABL_BackupHeadlessSupervisor_v0_2.py": "49a1533b22a166715bd606c3c151f89d24752c653c5c119f5107267af640f878",
+    "ROUTABL_HeadlessDailyGate_v0_3.py": "4992b2213bf2598c55a6ab68dd5bf35c501258d47e1e4780765c2a67343a3ce5",
+    "ROUTABL_MacToNasOneShot_v0_1.py": "2283dcd37881494d84a0c05f4a04c778543fe8084d882ec7b0567c48d3615552",
+    "ROUTABL_NASReplication_v1_0.py": "fe8d43f1185b9299aee826fef26c7d5ac2b98c2c51320ac6ac0cf536f11a1f7e",
+    "ROUTABL_NAS_ContentAwareBackup_v0_2.py": "fa370842507ae0afb1e11ede46d1a0f72ab4736c60329c8aa18f94c797794631",
+    "ROUTABL_ScheduledBackup_v1_0.py": "ae4c7bae2197aa06e889edfa505f2b273a023887917b0ca8e32b8616d9cd1f3e",
+    "ROUTABL_SecureBackup_v1_0.py": "aa34e72e736f12079fb963b718c07a0de68c3e63053a4a0c53e537ce72028201",
+    "ROUTABL_SelectiveNasCopy_v2_1.py": "bbdbff4e6a917f01cb9c563691134cd363459944c3dfd1360abe85b96352bdfb",
+    "ROUTABL_SelectiveSecureBackup_v2_1.py": "f365dfec0b0053f5c124a7440e5fe0bdcf8ccef0b74b639a8b3473288b42186c",
+    "RUN_ROUTABL_LocalScheduledBackup.command": "a917c342069bc6946a9dd210c568a656d2be85d0eeac43a6031d09b44cd2fecc",
+    "RUN_ROUTABL_NASScheduledBackup.command": "db18cb3ecb4f38bcd89ba7bec6e7cd65d186acbf07fbc2058f586e065fff7928",
+    "RUN_ROUTABL_SecureBackup.command": "e805f658139aa7f6baba44b71562869dd1864ca6aa34efd837b7e8a74001fbb5"
+  },
+  "operating_platform": {
+    "observed_executable_sha256": {
+      "/Library/Developer/CommandLineTools/usr/bin/python3": "de598544fe9820c083bc3e8dbbf0f658dbcfe08f71c3280e3bdb96c694179b19",
+      "/bin/launchctl": "c09fb522287bee5483d281ccd145fda129cd5eba940e5716cc4a2f25c18299e3",
+      "/usr/bin/codesign": "f9e0b219e5f934869f9647a2203bfd6bd00a819ad1bf9e617e9e6c14a4bef983",
+      "/usr/bin/hdiutil": "726137735d3cc07985520204bc7ae135c988ec9f3c52eb39bcb1c5b299cfe55c",
+      "/usr/bin/python3": "ed6f5284033aa2aae6a58427c25ba3ab119947b40365627b24e5d51a4b70a1cd",
+      "/usr/sbin/diskutil": "ff405d21781cde02f92cc6e0b5c33ef0880f5af4c46d673a5c73adb53c3252e7"
+    },
+    "os_build": "26B123",
+    "python_base_prefix": "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9",
+    "python_version": "3.9.6"
+  },
+  "operating_release_pending": [
+    "approved Team ID and designated requirement",
+    "signed v043 native agent",
+    "signed v043 manager and bundle verification",
+    "v043 Info.plist and LaunchAgent plist",
+    "approved production supervisor / OneShot / evidence reader bytes",
+    "approved exact transitive production import and platform allowlist",
+    "protected production path and execution identity",
+    "approval_v043.json policy and pins",
+    "authorized legacy route constraints and effective storage permissions"
+  ],
+  "scope": "B5_PREDEPLOY_NO_EXECUTION"
+}

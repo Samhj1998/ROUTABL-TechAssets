@@ -1,0 +1,38 @@
+{
+  "source_zip_sha256": "06efc5c5c787d59b7d1bd62566974563416b29792bb17ac318335475884c5553",
+  "source_member": "conversations-003.json",
+  "source_conversation_id": "6ae898f1-a73c-83ec-ba41-3decfb9617d5",
+  "title": "120. 라우터블 기술자산 통합관리체계 — 검색·보존·복원·AI 재사용·보안 자동화",
+  "conversation_created_unix": 1793628402.310204,
+  "conversation_updated_unix": 1793747474.062991,
+  "is_archived": false,
+  "mapping_nodes": 731,
+  "linear_chain_nodes": 731,
+  "counts": {
+    "empty": 1,
+    "user/text": 66,
+    "user_readable_messages": 74,
+    "user_characters": 9653,
+    "assistant/text": 166,
+    "assistant_readable_messages": 166,
+    "assistant_characters": 182795,
+    "assistant/thoughts": 420,
+    "assistant/reasoning_recap": 70,
+    "user/multimodal_text": 8,
+    "nontext_parts_referenced": 12
+  },
+  "original_record": {
+    "path": "/Users/yongho/ROUTABL-TechAssets/20_ORIGINALS/ChatGPT-Account-Exports/2026-11-05/10_CHAT_120/120_ORIGINAL_CONVERSATION_RECORD.json",
+    "bytes": 1335331,
+    "sha256": "9ca232fb569d7bf265ef858e8a846ee0b02eccebdeee2a4912e1861b2ce128a1"
+  },
+  "readable_markdown": {
+    "path": "/Users/yongho/ROUTABL-TechAssets/20_ORIGINALS/ChatGPT-Account-Exports/2026-11-05/10_CHAT_120/120_READABLE_CHAT_USER_ASSISTANT.md",
+    "bytes": 371825,
+    "sha256": "ad985341ec4f1afc3e54e5047d25efca1e5fbe3ef3b0ac32a49c72c018962faf"
+  },
+  "private_archive": "P3_LOCAL_ENCRYPTED_BACKUP_ONLY",
+  "full_export_zip_untouched": true,
+  "PDF_comparison": "PENDING",
+  "library_completeness": "PENDING"
+}

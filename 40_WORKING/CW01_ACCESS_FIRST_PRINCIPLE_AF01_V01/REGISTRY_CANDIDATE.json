@@ -1,0 +1,28 @@
+{
+  "schema": "digitopia_asset_registration_candidate_v0.1",
+  "status": "DRAFT_NOT_PUBLISHED",
+  "asset_id_proposed": "ASSET-120-AF01-ACCESS-FIRST-V1.0",
+  "name": "Digitopia Access First / Critical Security Only",
+  "title_ko": "Digitopia 최상위 지식 활용 원칙 AF-01 — 접근성·즉시성 최우선",
+  "version": "v1.0",
+  "authored_kst": "2026-11-08",
+  "asset_type": "ARCHITECTURE_GOVERNANCE_PRINCIPLE",
+  "governance_priority": "CORE_ARCHITECTURE_PRINCIPLE",
+  "importance_tier": "UNASSESSED_SEPARATE_FROM_DISCLOSURE",
+  "disclosure_default": "INTERNAL_OPEN_NON_SENSITIVE",
+  "purpose": "상시 등록·증분 색인·즉시 검색·다기기 활용을 일일 백업과 분리하고 크리티컬한 비밀·개인정보·파괴적 변경만 보호",
+  "file": "DIGITOPIA_ACCESS_FIRST_PRINCIPLE_AF01_v1.0_20261108.md",
+  "sha256": "13eadac676aed2e97c0486edbed67c9db85a1d693545de80db209830614805d5",
+  "related_principles": [
+    "00_GUIDE/ROUTABL_3TIER_ASSET_PROTECTION_AND_RESTORATION_PRINCIPLE_TI01_v1.0_20261106.md",
+    "00_GUIDE/ROUTABL_VERSION_INDEPENDENCE_PRINCIPLE_v1.0_20261106.md",
+    "00_GUIDE/ASSET_SECURITY_AND_SEARCH_POLICY_v0.1.md"
+  ],
+  "publishing_constraints": {
+    "official_registration": "BLOCKED_UNTIL_SEPARATE_GATE",
+    "step_5c": "BLOCKED",
+    "existing_originals_modified": false,
+    "operational_configs_modified": false,
+    "implementation": "NOT_TESTED"
+  }
+}

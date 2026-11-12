@@ -1,0 +1,225 @@
+{
+  "artifact_count": 52,
+  "artifacts": {
+    "output/CHANGE_MANIFEST.md": {
+      "bytes": 5162,
+      "sha256": "9182b1b1fdb043a5efa3e20861e7b1519a7ce58258338bed0f14d166187f6fe4"
+    },
+    "output/DEV_TEST_REPORT.md": {
+      "bytes": 12295,
+      "sha256": "39c1143f78ec2a951ebd41c6185678badb54ac7c86bcc838bd27d7d59361ffee"
+    },
+    "output/IMPLEMENTATION_REPORT.md": {
+      "bytes": 14171,
+      "sha256": "8431ec8183698b6d2581c8aa53b7fc0e05f4c55c8dfdc4818f0ebc4877207760"
+    },
+    "output/SHA256SUMS": {
+      "bytes": 1189,
+      "sha256": "aa3d4118bbe6ad85ee627230af3d39635bc9a7397995fedfcfc85a0565c9b16e"
+    },
+    "output/runs/run_20261108T042608Z.json": {
+      "bytes": 158388,
+      "sha256": "e2fa80f6a63e0edc3efdddf2873907e9bcbae4e84cf966546fbd03124f30c3b1"
+    },
+    "output/runs/run_20261108T042637Z.json": {
+      "bytes": 158390,
+      "sha256": "05e3ee5cd80ce75e7ff8ce2412cd684e9ed581339a51395c14b2a4833d161132"
+    },
+    "output/runs/run_20261108T042737Z.json": {
+      "bytes": 159006,
+      "sha256": "3eaeaae869db344e38983e0edac5d061bcf550896e24e2a9097e682c43b85c05"
+    },
+    "output/runs/run_20261108T042828Z.json": {
+      "bytes": 135005,
+      "sha256": "59021966beec5900adc8c666911d7676510a2eb23029deafd97c630bee07fead"
+    },
+    "output/runs/run_20261108T042953Z.json": {
+      "bytes": 146118,
+      "sha256": "50a51c4eb76ed81d7b2458b0ef00700b07c164a307038a9490e10bc55692e699"
+    },
+    "output/runs/run_20261108T043034Z.json": {
+      "bytes": 145842,
+      "sha256": "f73aab2feff4322fd696e610db948032111b44cd6b314d77871a23f981a92179"
+    },
+    "output/runs/run_20261108T043152Z.json": {
+      "bytes": 148910,
+      "sha256": "1e6ff145397f9e7a8075cffc5ae2b4f63e6f167e84810b4e3e7b52ccc0314408"
+    },
+    "src/asset_search_fts.py": {
+      "bytes": 21957,
+      "sha256": "0a33cd62f47d530813ba23e30eb0616945469a42ffba105714b02a827b576a3b"
+    },
+    "tests/_work/corrupt_docs.sqlite": {
+      "bytes": 3325952,
+      "sha256": "baee6d96c90259a5255771e3a9f60ee5cd866f98928c578145c5e91a43ae159c"
+    },
+    "tests/_work/corrupt_ft_content.sqlite": {
+      "bytes": 3325952,
+      "sha256": "3078fe7a9146582df8075aadf049fa31e897bc79ac66df39c31e33ba76f2e8b7"
+    },
+    "tests/_work/corrupt_ft_data.sqlite": {
+      "bytes": 3325952,
+      "sha256": "3bedf69655c0321900b9c0f1705776d9922e71947cb4f6e2ed79eaf7f8e36458"
+    },
+    "tests/_work/d01.sqlite": {
+      "bytes": 3325952,
+      "sha256": "30792f153efc6e7319da44ba52f1bfcd7ab141551b00221dcbf50ce1fee45da4"
+    },
+    "tests/_work/inspect.sqlite": {
+      "bytes": 3325952,
+      "sha256": "d1b5045dd3a7669a076fe790bb038c4461e27a0062c16f0492afc2e78bd6b158"
+    },
+    "tests/_work/p01.sqlite": {
+      "bytes": 3325952,
+      "sha256": "d1b5045dd3a7669a076fe790bb038c4461e27a0062c16f0492afc2e78bd6b158"
+    },
+    "tests/_work/p02.sqlite": {
+      "bytes": 3325952,
+      "sha256": "d1b5045dd3a7669a076fe790bb038c4461e27a0062c16f0492afc2e78bd6b158"
+    },
+    "tests/_work/p03.sqlite": {
+      "bytes": 3325952,
+      "sha256": "d1b5045dd3a7669a076fe790bb038c4461e27a0062c16f0492afc2e78bd6b158"
+    },
+    "tests/_work/probe.sqlite": {
+      "bytes": 3325952,
+      "sha256": "d1b5045dd3a7669a076fe790bb038c4461e27a0062c16f0492afc2e78bd6b158"
+    },
+    "tests/_work/probe2.sqlite": {
+      "bytes": 3325952,
+      "sha256": "d1b5045dd3a7669a076fe790bb038c4461e27a0062c16f0492afc2e78bd6b158"
+    },
+    "tests/_work/probe3.sqlite": {
+      "bytes": 3325952,
+      "sha256": "0d773ed0d4aea9a9b03a0585840444dbbf98b71176c83c0aece97e35dce0018d"
+    },
+    "tests/_work/t01.sqlite": {
+      "bytes": 3325952,
+      "sha256": "d1b5045dd3a7669a076fe790bb038c4461e27a0062c16f0492afc2e78bd6b158"
+    },
+    "tests/_work/t02.sqlite": {
+      "bytes": 3325952,
+      "sha256": "d1b5045dd3a7669a076fe790bb038c4461e27a0062c16f0492afc2e78bd6b158"
+    },
+    "tests/_work/t03.sqlite": {
+      "bytes": 3325952,
+      "sha256": "d1b5045dd3a7669a076fe790bb038c4461e27a0062c16f0492afc2e78bd6b158"
+    },
+    "tests/_work/t04.sqlite": {
+      "bytes": 3325952,
+      "sha256": "d1b5045dd3a7669a076fe790bb038c4461e27a0062c16f0492afc2e78bd6b158"
+    },
+    "tests/_work/t05.sqlite": {
+      "bytes": 3325952,
+      "sha256": "5bc0d5cba0111d3803c949f5772da3d201d89086ef4c299dd9c2081fa3145efb"
+    },
+    "tests/_work/t06.sqlite": {
+      "bytes": 3325952,
+      "sha256": "cba9b138ab8663f06a5c37fbe6068e7e4a394e3b51989a0ce998c42c0e5c61de"
+    },
+    "tests/_work/t07.sqlite": {
+      "bytes": 3325952,
+      "sha256": "528fa6654d214a600683bb11b7e83ba66977843e5cbb5f3379cc91264fd04fd8"
+    },
+    "tests/_work/t08.sqlite": {
+      "bytes": 4571136,
+      "sha256": "5f22ae4cacd6f632576a91e64b293390fece9051d0c5af43dfbeeff1523fbea2"
+    },
+    "tests/_work/t08_qrels.sqlite": {
+      "bytes": 3325952,
+      "sha256": "d1b5045dd3a7669a076fe790bb038c4461e27a0062c16f0492afc2e78bd6b158"
+    },
+    "tests/_work/t09_docs_changed_without_ft.sqlite": {
+      "bytes": 3325952,
+      "sha256": "3909829c45e66949856b02300b16afbec9511c3646eb7b334025c6a939074abb"
+    },
+    "tests/_work/t09_docs_row_without_ft.sqlite": {
+      "bytes": 3325952,
+      "sha256": "b455a8c7c0fa92f2e63621438adfdb9a1382d9f8d9746f4f43eaae05982f7912"
+    },
+    "tests/_work/t09_external_content_ft.sqlite": {
+      "bytes": 3325952,
+      "sha256": "a61c91fa310bfa7f242f61511c83fc9877c8f7bcd9ed4c6155b947deadf74f86"
+    },
+    "tests/_work/t09_ft_changed_without_docs.sqlite": {
+      "bytes": 3325952,
+      "sha256": "a5fe2396706ed1746f3ee5b238a88ec7933ed180cb7943cc82b4c39bc48fbe91"
+    },
+    "tests/_work/t09_ft_data_corrupted.sqlite": {
+      "bytes": 3325952,
+      "sha256": "3bedf69655c0321900b9c0f1705776d9922e71947cb4f6e2ed79eaf7f8e36458"
+    },
+    "tests/_work/t09_ft_dropped.sqlite": {
+      "bytes": 3325952,
+      "sha256": "f5f6ccd97b0c2ca6c76a3f22a4e8c21c8ca40a41dbc1d8e472ca6d5d7aab44cf"
+    },
+    "tests/_work/t09_ft_row_missing.sqlite": {
+      "bytes": 3325952,
+      "sha256": "6d2a3c27388e275f231c28ceaf989ff03c29a9cffb28671e85183bcd94417e34"
+    },
+    "tests/_work/t09_match_error_injected.sqlite": {
+      "bytes": 3325952,
+      "sha256": "d1b5045dd3a7669a076fe790bb038c4461e27a0062c16f0492afc2e78bd6b158"
+    },
+    "tests/_work/t09_rowid_linkage_shifted.sqlite": {
+      "bytes": 5656576,
+      "sha256": "fc959096b03be2ed5f9fe12715f01cab6abd0e4fa2f31804243d39d5a0fb605c"
+    },
+    "tests/_work/t09_tokenizer_case_sensitive.sqlite": {
+      "bytes": 3325952,
+      "sha256": "4aef973077d7f282d6cb9f708bc66d4ec8fd2e0a6710cd692167d5e7beafee2a"
+    },
+    "tests/_work/t09_tokenizer_unicode61.sqlite": {
+      "bytes": 3325952,
+      "sha256": "a0c8deea8fa5ee98e2b12956a0751b9e5d25629f9aa34f3ee6b6e626280a560a"
+    },
+    "tests/_work/t09_vacuum.sqlite": {
+      "bytes": 3100672,
+      "sha256": "ee963665920ca6f200181755062b9e1399d76bb98aba46a41077f488a0b0d53b"
+    },
+    "tests/_work/t10.sqlite": {
+      "bytes": 3325952,
+      "sha256": "46095511b8268c7f2d4fb57cf8bc7e9ac64a2ba925b690fde739ad4197ba9399"
+    },
+    "tests/_work/t11_wal.sqlite": {
+      "bytes": 3325952,
+      "sha256": "c00f64e48d5d0ae1395d757431b09dc5451a5e84503e5229c34a19cb6e99ad47"
+    },
+    "tests/_work/t11_wal.sqlite-shm": {
+      "bytes": 32768,
+      "sha256": "c967ca1f077f25cb025b98b4dc013f8a6a6ce77dfd97870631eadff2133ea46e"
+    },
+    "tests/_work/t11_wal.sqlite-wal": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "tests/_work/t11_wal_iso.sqlite": {
+      "bytes": 3325952,
+      "sha256": "fe2d03dca833e0e16719a26bf2a911fec3332e484fc9baf143dc7d2e440d7156"
+    },
+    "tests/_work/t11_wal_iso.sqlite-shm": {
+      "bytes": 32768,
+      "sha256": "3281d2616f160d41f5e5ad4369ffbff1cd8c56e353b1f9f3cca2e0b34ec420c9"
+    },
+    "tests/_work/t11_wal_iso.sqlite-wal": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "tests/run_dev_tests.py": {
+      "bytes": 47140,
+      "sha256": "8fa8f69d7263ec09852fb0dc2c02a9ee84f12f9b00b05fa77fdffc830139337e"
+    }
+  },
+  "candidate_manifest": "PASS",
+  "candidate_manifest_entries": 12,
+  "candidate_manifest_errors": [],
+  "common_prompt_sha": "e22dd54c0a9047c5d5e72f282d98bcc75ba8f28dfa9d854c672ebbd4899402c0",
+  "frozen": true,
+  "frozen_kst": "2026-11-08T13:38:44+09:00",
+  "has_source": true,
+  "has_test_source": true,
+  "missing_deliverables": [],
+  "root": "/Users/yongho/121_CLAUDE_ISOLATED_V01/implementation",
+  "unsigned_code": [],
+  "unsigned_required": []
+}

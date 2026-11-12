@@ -1,0 +1,44 @@
+{
+  "status": "PASS",
+  "registered": "REGISTERED",
+  "register": {
+    "command": "/usr/bin/python3 -E -s -B scope_runner.py mvl.py register MVL-USER-R01-SELECTED-HANDOFF 1.0 incoming/R01_SELECTED_HANDOFF_FEEDBACK.md",
+    "exit_code": 0,
+    "stdout_bytes": 13,
+    "stderr": []
+  },
+  "search": {
+    "command": "/usr/bin/python3 -E -s -B scope_runner.py mvl.py search MVL-USER-R01-SELECTED-HANDOFF",
+    "exit_code": 0,
+    "stdout_bytes": 1579,
+    "stderr": []
+  },
+  "origin": {
+    "asset_id": "MVL-USER-R01-SELECTED-HANDOFF",
+    "expected_sha256": "d27779d4c17db58fedcb8e16ab9b52eea637b3e80cd53baddf41206eccda5242",
+    "expected_size_bytes": 3012,
+    "registration": "ISOLATED_CANDIDATE",
+    "registry_sha256": null,
+    "registry_version": null,
+    "source_path": "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_MVL01_FIRST_IGNITION_CLOSEOUT_R01_V01/incoming/R01_SELECTED_HANDOFF_FEEDBACK.md",
+    "source_version": "1.0",
+    "observed_sha256": "d27779d4c17db58fedcb8e16ab9b52eea637b3e80cd53baddf41206eccda5242",
+    "status": "LOCAL_HASH_MATCH",
+    "observed_size_bytes": 3012
+  },
+  "direct_sha256": "d27779d4c17db58fedcb8e16ab9b52eea637b3e80cd53baddf41206eccda5242",
+  "direct_size": 3012,
+  "indexed_body_empty": true,
+  "existing_rows_sha256": {
+    "docs": "65556c2392cf40f2f45d19e77c55fe836fcb66773371bc483c5663c70a16a402",
+    "manual": "ff43d179f96c04ed4a6a511046b12bf4cc3e72d9a6744a2665a2ab999020de8b",
+    "mvl_sources": "da0419b9ea5331b921f406266b982fbd4a7b34cc02ffad59fd8c975e48a80f22"
+  },
+  "database_sha256": "dc72ddd7561b5a882dfb49f2865098bde435dc1c04352c6cd3dbbd699368d0bf",
+  "integrity_check": "ok",
+  "counts": {
+    "docs": 5528,
+    "manual": 3,
+    "mvl_sources": 9
+  }
+}

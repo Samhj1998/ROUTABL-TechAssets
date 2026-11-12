@@ -1,0 +1,13 @@
+{
+  "read": [
+    "/Users/yongho/ROUTABL-TechAssets/00_GUIDE/DIGITOPIA_CHAT_WORK_PROTOCOL_v1.0.md",
+    "/Users/yongho/ROUTABL-TechAssets/30_REGISTRY/asset_manifest_v0.27.json",
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_ACCESS_FIRST_PRINCIPLE_AF01_V01/DIGITOPIA_ACCESS_FIRST_PRINCIPLE_AF01_v1.0_20261108.md",
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_HANDOFF_COLDSTART_V01/HANDOFF_MANUAL.md",
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_HANDOFF_POC_V01/VERIFICATION_RETEST.md",
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_MINIMUM_VIABLE_LOOP_MVL01_V01/FEEDBACK_CANDIDATE.md",
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_MVL01_FIRST_IGNITION_RETURN_R01_V01/incoming/R01_SELECTED_HANDOFF_FEEDBACK.md",
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_STEP5_FEEDBACK_V01/HANDOFF_OUTPUT_CONTRACT_v0.1.md"
+  ],
+  "explicitly_denied": "/Users/yongho/Library/Application Support/ROUTABL-AssetSearch/routabl_search_v1_5_service.py"
+}

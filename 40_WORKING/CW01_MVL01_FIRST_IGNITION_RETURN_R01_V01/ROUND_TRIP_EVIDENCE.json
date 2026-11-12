@@ -1,0 +1,105 @@
+{
+  "status": "NOT_TESTED",
+  "candidate_registration": {
+    "status": "PASS",
+    "result": "REGISTERED",
+    "run": {
+      "command": "/usr/bin/python3 -E -s -B scope_runner.py mvl.py register MVL-USER-R01-SELECTED-HANDOFF 1.0 incoming/R01_SELECTED_HANDOFF_FEEDBACK.md",
+      "exit_code": 0,
+      "stdout_bytes": 13,
+      "stderr": []
+    },
+    "asset_id": "MVL-USER-R01-SELECTED-HANDOFF",
+    "version": "1.0",
+    "registration": "ISOLATED_CANDIDATE",
+    "relative_path": "incoming/R01_SELECTED_HANDOFF_FEEDBACK.md",
+    "source_path": "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_MVL01_FIRST_IGNITION_RETURN_R01_V01/incoming/R01_SELECTED_HANDOFF_FEEDBACK.md",
+    "direct_bytes": 3012,
+    "direct_sha256": "d27779d4c17db58fedcb8e16ab9b52eea637b3e80cd53baddf41206eccda5242",
+    "registered_expected_sha256": "d27779d4c17db58fedcb8e16ab9b52eea637b3e80cd53baddf41206eccda5242",
+    "index_content_empty": true
+  },
+  "exact_id_search": {
+    "status": "PASS",
+    "run": {
+      "command": "/usr/bin/python3 -E -s -B scope_runner.py mvl.py search MVL-USER-R01-SELECTED-HANDOFF",
+      "exit_code": 0,
+      "stdout_bytes": 1577,
+      "stderr": []
+    },
+    "origin": {
+      "asset_id": "MVL-USER-R01-SELECTED-HANDOFF",
+      "expected_sha256": "d27779d4c17db58fedcb8e16ab9b52eea637b3e80cd53baddf41206eccda5242",
+      "expected_size_bytes": 3012,
+      "registration": "ISOLATED_CANDIDATE",
+      "registry_sha256": null,
+      "registry_version": null,
+      "source_path": "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_MVL01_FIRST_IGNITION_RETURN_R01_V01/incoming/R01_SELECTED_HANDOFF_FEEDBACK.md",
+      "source_version": "1.0",
+      "observed_sha256": "d27779d4c17db58fedcb8e16ab9b52eea637b3e80cd53baddf41206eccda5242",
+      "status": "LOCAL_HASH_MATCH",
+      "observed_size_bytes": 3012
+    }
+  },
+  "selected_ref_on_real_db": {
+    "status": "PASS",
+    "command": "/usr/bin/python3 -E -s -B -c 'import scope_runner, json, mvl, sys; from contextlib import closing\nwith closing(mvl.connection(read_only=True)) as db:\n db.execute(\"BEGIN\"); print(json.dumps(mvl.selected_ref(db,sys.argv[1])))' MVL-USER-R01-SELECTED-HANDOFF",
+    "exit_code": 0,
+    "origin": {
+      "asset_id": "MVL-USER-R01-SELECTED-HANDOFF",
+      "source_version": "1.0",
+      "source_path": "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_MVL01_FIRST_IGNITION_RETURN_R01_V01/incoming/R01_SELECTED_HANDOFF_FEEDBACK.md",
+      "expected_sha256": "d27779d4c17db58fedcb8e16ab9b52eea637b3e80cd53baddf41206eccda5242",
+      "expected_size_bytes": 3012,
+      "registration": "ISOLATED_CANDIDATE",
+      "registry_version": null,
+      "registry_sha256": null,
+      "observed_sha256": "d27779d4c17db58fedcb8e16ab9b52eea637b3e80cd53baddf41206eccda5242",
+      "status": "LOCAL_HASH_MATCH",
+      "observed_size_bytes": 3012
+    },
+    "note": "Selected-asset resolver only; no full package emitted."
+  },
+  "handoff": {
+    "status": "NOT_TESTED",
+    "default": {
+      "command": "/usr/bin/python3 -E -s -B scope_runner.py mvl.py handoff final",
+      "exit_code": 1,
+      "stdout_bytes": 0,
+      "stderr": [
+        "SCOPE_DENIED /Users/yongho/Library/Application Support/ROUTABL-AssetSearch/routabl_search_v1_5_service.py",
+        "MVL-01: REQUIRED_SOURCE_NOT_VERIFIED: ASSET-SEARCH-V15-SERVICE"
+      ]
+    },
+    "selected": {
+      "command": "/usr/bin/python3 -E -s -B scope_runner.py mvl.py handoff final --asset-id MVL-USER-R01-SELECTED-HANDOFF",
+      "exit_code": 1,
+      "stdout_bytes": 0,
+      "stderr": [
+        "SCOPE_DENIED /Users/yongho/Library/Application Support/ROUTABL-AssetSearch/routabl_search_v1_5_service.py",
+        "MVL-01: REQUIRED_SOURCE_NOT_VERIFIED: ASSET-SEARCH-V15-SERVICE"
+      ]
+    },
+    "successful_default_exclusion": null,
+    "successful_selected_inclusion": null,
+    "selected_handoff_emitted_sha256": null,
+    "blocking_id": "ASSET-SEARCH-V15-SERVICE",
+    "inherited_feedback_binding": {
+      "asset_id": "MVL01-FEEDBACK",
+      "indexed_source_path": "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_MINIMUM_VIABLE_LOOP_MVL01_V01/FEEDBACK_CANDIDATE.md",
+      "required_by_new_ROOT": "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_MVL01_FIRST_IGNITION_RETURN_R01_V01/FEEDBACK_CANDIDATE.md",
+      "source_path_matches": false
+    }
+  },
+  "db": {
+    "before_register": "755e7695eb3e4e4073906940999665b21248cb1dc1fbf6847c2b8bc84e310eda",
+    "after_register": "f374e82cbfd2c989b80c029d668d542ea6223db20db1245a0df91bdd7e0bc8de",
+    "after_search_and_handoff": "f374e82cbfd2c989b80c029d668d542ea6223db20db1245a0df91bdd7e0bc8de",
+    "post_register_quick_check": "ok",
+    "counts": {
+      "docs": 5528,
+      "manual": 3,
+      "mvl_sources": 9
+    }
+  }
+}

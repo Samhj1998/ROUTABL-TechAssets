@@ -1,0 +1,360 @@
+{
+  "cases": [
+    {
+      "actual": "PARTIAL",
+      "case": "raw_receipt_and_selection_recompute",
+      "details": {
+        "actual_backup_verified": false,
+        "cas_completed": true,
+        "cas_components": 2,
+        "cas_created_at": "2026-11-07T04:36:00+09:00",
+        "cas_manifest_sha256": "d8f628d980e5a1dc7817f65a90b3cd35153ae9677d3458486a0c7f2fea5ce57a",
+        "cas_manifest_structure": "VERIFIED",
+        "cas_referenced_bytes": 33,
+        "chain": "METADATA_LINKED",
+        "current_cas_component_sha256": "NOT_PERFORMED",
+        "current_registry_match": true,
+        "current_selection_match": null,
+        "historical_oneshot": "SUCCESS_CLAIM_BOUND_TO_METADATA",
+        "latest_registry": "asset_manifest_v0.27.json",
+        "latest_registry_sha256": "a8198524f58e72b56283ab71ebddada22840f108b46ef7165bb3fca9919c5558",
+        "local_created_at": "2026-11-07T04:34:00+09:00",
+        "local_lock_and_integrity": "HISTORICAL_STATUS_REPORT_ONLY",
+        "local_receipt_bytes_verified": true,
+        "local_receipt_sha256_reported": "7790f4afabe743bfa129b4c55e0ca2f22dee2743559348a349ea7c9a9b0b0d30",
+        "observed_at": "2026-11-07T04:41:00+09:00",
+        "reported_registry": "asset_manifest_v0.27.json",
+        "reported_registry_sha256": "a8198524f58e72b56283ab71ebddada22840f108b46ef7165bb3fca9919c5558",
+        "reported_selected_bytes": 32,
+        "reported_selected_files": 2,
+        "reported_selection_sha256": "7d1625a89a59a7310ade898ba53031a367bdfdc7d40a086ec7ff7563cc316617",
+        "same_day_kst": true,
+        "scope": "RECEIPT_METADATA_ONLY",
+        "selection_recomputed_from_receipt": true,
+        "snapshot_id": "ASSET_V21_20261107_043146_KST_123",
+        "status": "PARTIAL"
+      },
+      "expected": "PARTIAL",
+      "verdict": "PASS"
+    },
+    {
+      "actual": true,
+      "case": "raw_hash_and_selection_are_distinct_from_media_verification",
+      "details": null,
+      "expected": true,
+      "verdict": "PASS"
+    },
+    {
+      "actual": "PARTIAL",
+      "case": "offline_local_receipt",
+      "details": {
+        "actual_backup_verified": false,
+        "cas_completed": true,
+        "cas_components": 2,
+        "cas_created_at": "2026-11-07T04:36:00+09:00",
+        "cas_manifest_sha256": "d8f628d980e5a1dc7817f65a90b3cd35153ae9677d3458486a0c7f2fea5ce57a",
+        "cas_manifest_structure": "VERIFIED",
+        "cas_referenced_bytes": 33,
+        "chain": "METADATA_LINKED",
+        "current_cas_component_sha256": "NOT_PERFORMED",
+        "current_registry_match": true,
+        "current_selection_match": null,
+        "historical_oneshot": "SUCCESS_CLAIM_BOUND_TO_METADATA",
+        "latest_registry": "asset_manifest_v0.27.json",
+        "latest_registry_sha256": "a8198524f58e72b56283ab71ebddada22840f108b46ef7165bb3fca9919c5558",
+        "local_created_at": "2026-11-07T04:34:00+09:00",
+        "local_lock_and_integrity": "HISTORICAL_STATUS_REPORT_ONLY",
+        "local_receipt_bytes_verified": false,
+        "local_receipt_sha256_reported": "7790f4afabe743bfa129b4c55e0ca2f22dee2743559348a349ea7c9a9b0b0d30",
+        "observed_at": "2026-11-07T04:41:00+09:00",
+        "reported_registry": "asset_manifest_v0.27.json",
+        "reported_registry_sha256": "a8198524f58e72b56283ab71ebddada22840f108b46ef7165bb3fca9919c5558",
+        "reported_selected_bytes": 32,
+        "reported_selected_files": 2,
+        "reported_selection_sha256": "7d1625a89a59a7310ade898ba53031a367bdfdc7d40a086ec7ff7563cc316617",
+        "same_day_kst": true,
+        "scope": "RECEIPT_METADATA_ONLY",
+        "selection_recomputed_from_receipt": false,
+        "snapshot_id": "ASSET_V21_20261107_043146_KST_123",
+        "status": "PARTIAL"
+      },
+      "expected": "PARTIAL",
+      "verdict": "PASS"
+    },
+    {
+      "actual": false,
+      "case": "missing_receipt_fail_closed",
+      "details": null,
+      "expected": false,
+      "verdict": "PASS"
+    },
+    {
+      "actual": "PARTIAL",
+      "case": "newer_registry_and_yesterday",
+      "details": {
+        "actual_backup_verified": false,
+        "cas_completed": true,
+        "cas_components": 2,
+        "cas_created_at": "2026-11-07T04:36:00+09:00",
+        "cas_manifest_sha256": "d8f628d980e5a1dc7817f65a90b3cd35153ae9677d3458486a0c7f2fea5ce57a",
+        "cas_manifest_structure": "VERIFIED",
+        "cas_referenced_bytes": 33,
+        "chain": "METADATA_LINKED",
+        "current_cas_component_sha256": "NOT_PERFORMED",
+        "current_registry_match": false,
+        "current_selection_match": null,
+        "historical_oneshot": "SUCCESS_CLAIM_BOUND_TO_METADATA",
+        "latest_registry": "asset_manifest_v0.28.json",
+        "latest_registry_sha256": "1871d953530dd322ad0064b3df5878d040af678e76ee8f1693b87812a9582096",
+        "local_created_at": "2026-11-07T04:34:00+09:00",
+        "local_lock_and_integrity": "HISTORICAL_STATUS_REPORT_ONLY",
+        "local_receipt_bytes_verified": false,
+        "local_receipt_sha256_reported": "7790f4afabe743bfa129b4c55e0ca2f22dee2743559348a349ea7c9a9b0b0d30",
+        "observed_at": "2026-11-08T04:41:00+09:00",
+        "reported_registry": "asset_manifest_v0.27.json",
+        "reported_registry_sha256": "a8198524f58e72b56283ab71ebddada22840f108b46ef7165bb3fca9919c5558",
+        "reported_selected_bytes": 32,
+        "reported_selected_files": 2,
+        "reported_selection_sha256": "7d1625a89a59a7310ade898ba53031a367bdfdc7d40a086ec7ff7563cc316617",
+        "same_day_kst": false,
+        "scope": "RECEIPT_METADATA_ONLY",
+        "selection_recomputed_from_receipt": false,
+        "snapshot_id": "ASSET_V21_20261107_043146_KST_123",
+        "status": "PARTIAL"
+      },
+      "expected": "PARTIAL",
+      "verdict": "PASS"
+    },
+    {
+      "actual": [
+        false,
+        false
+      ],
+      "case": "stale_flags",
+      "details": null,
+      "expected": [
+        false,
+        false
+      ],
+      "verdict": "PASS"
+    },
+    {
+      "actual": "PARTIAL",
+      "case": "different_current_selection",
+      "details": {
+        "actual_backup_verified": false,
+        "cas_completed": true,
+        "cas_components": 2,
+        "cas_created_at": "2026-11-07T04:36:00+09:00",
+        "cas_manifest_sha256": "d8f628d980e5a1dc7817f65a90b3cd35153ae9677d3458486a0c7f2fea5ce57a",
+        "cas_manifest_structure": "VERIFIED",
+        "cas_referenced_bytes": 33,
+        "chain": "METADATA_LINKED",
+        "current_cas_component_sha256": "NOT_PERFORMED",
+        "current_registry_match": true,
+        "current_selection_match": false,
+        "historical_oneshot": "SUCCESS_CLAIM_BOUND_TO_METADATA",
+        "latest_registry": "asset_manifest_v0.27.json",
+        "latest_registry_sha256": "a8198524f58e72b56283ab71ebddada22840f108b46ef7165bb3fca9919c5558",
+        "local_created_at": "2026-11-07T04:34:00+09:00",
+        "local_lock_and_integrity": "HISTORICAL_STATUS_REPORT_ONLY",
+        "local_receipt_bytes_verified": false,
+        "local_receipt_sha256_reported": "7790f4afabe743bfa129b4c55e0ca2f22dee2743559348a349ea7c9a9b0b0d30",
+        "observed_at": "2026-11-07T04:41:00+09:00",
+        "reported_registry": "asset_manifest_v0.27.json",
+        "reported_registry_sha256": "a8198524f58e72b56283ab71ebddada22840f108b46ef7165bb3fca9919c5558",
+        "reported_selected_bytes": 32,
+        "reported_selected_files": 2,
+        "reported_selection_sha256": "7d1625a89a59a7310ade898ba53031a367bdfdc7d40a086ec7ff7563cc316617",
+        "same_day_kst": true,
+        "scope": "RECEIPT_METADATA_ONLY",
+        "selection_recomputed_from_receipt": false,
+        "snapshot_id": "ASSET_V21_20261107_043146_KST_123",
+        "status": "PARTIAL"
+      },
+      "expected": "PARTIAL",
+      "verdict": "PASS"
+    },
+    {
+      "actual": false,
+      "case": "current_selection_mismatch",
+      "details": null,
+      "expected": false,
+      "verdict": "PASS"
+    },
+    {
+      "actual": "LOCAL_RECEIPT_HASH_MISMATCH",
+      "case": "local_sha_mismatch",
+      "details": {
+        "actual_backup_verified": false,
+        "reason": "LOCAL_RECEIPT_HASH_MISMATCH",
+        "scope": "RECEIPT_METADATA_ONLY",
+        "status": "FAIL"
+      },
+      "expected": "LOCAL_RECEIPT_HASH_MISMATCH",
+      "verdict": "PASS"
+    },
+    {
+      "actual": "LOCAL_SELECTION_RECOMPUTE_MISMATCH",
+      "case": "tampered_rows_with_fresh_receipt_hash",
+      "details": {
+        "actual_backup_verified": false,
+        "reason": "LOCAL_SELECTION_RECOMPUTE_MISMATCH",
+        "scope": "RECEIPT_METADATA_ONLY",
+        "status": "FAIL"
+      },
+      "expected": "LOCAL_SELECTION_RECOMPUTE_MISMATCH",
+      "verdict": "PASS"
+    },
+    {
+      "actual": "CAS_LINEAGE_MISMATCH",
+      "case": "cas_wrong_lineage",
+      "details": {
+        "actual_backup_verified": false,
+        "reason": "CAS_LINEAGE_MISMATCH",
+        "scope": "RECEIPT_METADATA_ONLY",
+        "status": "FAIL"
+      },
+      "expected": "CAS_LINEAGE_MISMATCH",
+      "verdict": "PASS"
+    },
+    {
+      "actual": "CAS_NOT_COMPLETE",
+      "case": "cas_incomplete",
+      "details": {
+        "actual_backup_verified": false,
+        "reason": "CAS_NOT_COMPLETE",
+        "scope": "RECEIPT_METADATA_ONLY",
+        "status": "FAIL"
+      },
+      "expected": "CAS_NOT_COMPLETE",
+      "verdict": "PASS"
+    },
+    {
+      "actual": "CAS_TOTALS_MISMATCH",
+      "case": "cas_wrong_totals",
+      "details": {
+        "actual_backup_verified": false,
+        "reason": "CAS_TOTALS_MISMATCH",
+        "scope": "RECEIPT_METADATA_ONLY",
+        "status": "FAIL"
+      },
+      "expected": "CAS_TOTALS_MISMATCH",
+      "verdict": "PASS"
+    },
+    {
+      "actual": "ROW_INTEGRITY",
+      "case": "cas_duplicate_path",
+      "details": {
+        "actual_backup_verified": false,
+        "reason": "ROW_INTEGRITY",
+        "scope": "RECEIPT_METADATA_ONLY",
+        "status": "FAIL"
+      },
+      "expected": "ROW_INTEGRITY",
+      "verdict": "PASS"
+    },
+    {
+      "actual": "UNSAFE_RELATIVE_PATH",
+      "case": "cas_traversal",
+      "details": {
+        "actual_backup_verified": false,
+        "reason": "UNSAFE_RELATIVE_PATH",
+        "scope": "RECEIPT_METADATA_ONLY",
+        "status": "FAIL"
+      },
+      "expected": "UNSAFE_RELATIVE_PATH",
+      "verdict": "PASS"
+    },
+    {
+      "actual": "CAS_ANCHOR_NAME",
+      "case": "cas_anchor_outside_root",
+      "details": {
+        "actual_backup_verified": false,
+        "reason": "CAS_ANCHOR_NAME",
+        "scope": "RECEIPT_METADATA_ONLY",
+        "status": "FAIL"
+      },
+      "expected": "CAS_ANCHOR_NAME",
+      "verdict": "PASS"
+    },
+    {
+      "actual": "LOCAL_STATUS_INCOMPLETE",
+      "case": "lock_status_false",
+      "details": {
+        "actual_backup_verified": false,
+        "reason": "LOCAL_STATUS_INCOMPLETE",
+        "scope": "RECEIPT_METADATA_ONLY",
+        "status": "FAIL"
+      },
+      "expected": "LOCAL_STATUS_INCOMPLETE",
+      "verdict": "PASS"
+    },
+    {
+      "actual": "ONESHOT_LINK_MISMATCH",
+      "case": "bad_cas_manifest_name",
+      "details": {
+        "actual_backup_verified": false,
+        "reason": "ONESHOT_LINK_MISMATCH",
+        "scope": "RECEIPT_METADATA_ONLY",
+        "status": "FAIL"
+      },
+      "expected": "ONESHOT_LINK_MISMATCH",
+      "verdict": "PASS"
+    },
+    {
+      "actual": "INVALID_CHRONOLOGY",
+      "case": "future_cas",
+      "details": {
+        "actual_backup_verified": false,
+        "reason": "INVALID_CHRONOLOGY",
+        "scope": "RECEIPT_METADATA_ONLY",
+        "status": "FAIL"
+      },
+      "expected": "INVALID_CHRONOLOGY",
+      "verdict": "PASS"
+    },
+    {
+      "actual": "DUPLICATE_JSON_KEY",
+      "case": "duplicate_json_key",
+      "details": null,
+      "expected": "DUPLICATE_JSON_KEY",
+      "verdict": "PASS"
+    },
+    {
+      "actual": true,
+      "case": "lock_inode_replacement",
+      "details": {
+        "lstat_vs_original_fd_detected": true,
+        "separate_inodes_both_locked": true
+      },
+      "expected": true,
+      "verdict": "PASS"
+    },
+    {
+      "actual": true,
+      "case": "approval_pin_replacement",
+      "details": {
+        "fresh_open_detected_change": true,
+        "held_descriptor_same_bytes": true
+      },
+      "expected": true,
+      "verdict": "PASS"
+    },
+    {
+      "actual": true,
+      "case": "detached_process_group_escape",
+      "details": {
+        "escaped_descendant_answered_after_signal": true,
+        "escaped_descendant_closed_probe_channel_on_exit": true,
+        "original_group_leader_terminated": true
+      },
+      "expected": true,
+      "verdict": "PASS"
+    }
+  ],
+  "exit": 0,
+  "passed": 23,
+  "scope": "ISOLATED_FIXTURES",
+  "total": 23
+}

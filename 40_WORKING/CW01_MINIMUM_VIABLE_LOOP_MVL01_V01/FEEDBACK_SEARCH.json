@@ -1,0 +1,49 @@
+{
+  "term": "MVL01-FEEDBACK",
+  "terms": [
+    "MVL01-FEEDBACK"
+  ],
+  "scope": "all",
+  "page": 1,
+  "page_size": 12,
+  "pages": 1,
+  "match_count": 1,
+  "group_count": 1,
+  "manual": [],
+  "results": [
+    {
+      "title": "MVL-01 환류 검색 v1.5 최신 대장 및 검증 인계",
+      "path": "MVL/MVL01-FEEDBACK",
+      "status": "LOCAL_METADATA_INDEX",
+      "score": 156,
+      "kind": "asset",
+      "label": "격리 색인 기술자산",
+      "sha256": "04402d26ebc08985acd63a49bba77064deb315c02b994197165adef8d8d861b3",
+      "size_bytes": 2187,
+      "locations": [
+        {
+          "path": "MVL/MVL01-FEEDBACK",
+          "category": "asset",
+          "label": "격리 색인 기술자산",
+          "status": "LOCAL_METADATA_INDEX"
+        }
+      ],
+      "duplicate_count": 1,
+      "provenance": null,
+      "can_reveal": false,
+      "origin": {
+        "asset_id": "MVL01-FEEDBACK",
+        "expected_sha256": "04402d26ebc08985acd63a49bba77064deb315c02b994197165adef8d8d861b3",
+        "expected_size_bytes": 2187,
+        "registration": "ISOLATED_CANDIDATE",
+        "registry_sha256": null,
+        "registry_version": null,
+        "source_path": "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_MINIMUM_VIABLE_LOOP_MVL01_V01/FEEDBACK_CANDIDATE.md",
+        "source_version": "0.1",
+        "observed_sha256": "04402d26ebc08985acd63a49bba77064deb315c02b994197165adef8d8d861b3",
+        "status": "LOCAL_HASH_MATCH",
+        "observed_size_bytes": 2187
+      }
+    }
+  ]
+}

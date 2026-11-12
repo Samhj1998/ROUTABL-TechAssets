@@ -1,0 +1,38 @@
+{
+  "asset_id": "DIGITOPIA-RF01-V1.0",
+  "title": "Digitopia 기술자산 검색·복원·재활용 최상위 설계 철학",
+  "version": "1.0",
+  "created_kst": "2026-11-08",
+  "classification": "top_level_design_principle",
+  "approval_basis": "121 Chat 사용자 명시 요청: 최상위 설계 철학으로 등록하고, 철학에 맞게 다음 진행",
+  "status": [
+    "FILE_HASH_VERIFIED",
+    "POLICY_DOCUMENT_REGISTERED"
+  ],
+  "original_document_path": "/Users/yongho/ROUTABL-TechAssets/00_GUIDE/DIGITOPIA_RETRIEVAL_FIRST_PRINCIPLE_RF01_v1.0_20261108.md",
+  "original_document_sha256": "0990d33a9ce793756547188f9b12498fcd65d6a15898b52636b99b3bdff9ced3",
+  "original_document_bytes": 8548,
+  "tags": [
+    "RF-01",
+    "Digitopia",
+    "최상위 설계 철학",
+    "기술자산",
+    "빠른 검색",
+    "복원",
+    "재활용",
+    "원본 보존",
+    "사본 편집",
+    "읽기 최적화",
+    "태그",
+    "초성",
+    "역색인",
+    "AI 토큰 절약",
+    "후보 5~6개",
+    "외부 검색 폴백"
+  ],
+  "supersession": "향후 신규 검색·활용 설계에서 RF-01 목적 우선; 기존 운영 코드·정책·증거의 즉시 변경은 승인되지 않음",
+  "operating_source_changes": "NONE",
+  "existing_registry_manifest_changes": "NONE",
+  "live_search_indexing": "NOT_TESTED",
+  "next_work": "121-D-W 격리 연구: 1만 파일에서 상위 5~6개 선정/부분 추출/토큰 비용 측정"
+}

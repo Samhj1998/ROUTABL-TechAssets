@@ -1,0 +1,213 @@
+{
+  "status": {
+    "fixed_handoff": "NOT_TESTED",
+    "search_regression": "PASS"
+  },
+  "actual_db_before": "755e7695eb3e4e4073906940999665b21248cb1dc1fbf6847c2b8bc84e310eda",
+  "search": [
+    {
+      "term": "고객등록",
+      "scope": "all",
+      "status": "PASS",
+      "baseline_exit": 0,
+      "candidate_exit": 0,
+      "full_runtime_json_equal": true,
+      "historical_rank_group_and_count_equal": true,
+      "match_group_manual_counts": [
+        89,
+        57,
+        1
+      ],
+      "out_of_scope_source_reads_denied": [
+        "SCOPE_DENIED /Users/yongho/StudioProjects/ROUTIVEL-Firebase-Migration/tools/firebase-migration/cloud_access.py"
+      ]
+    },
+    {
+      "term": "취소상태",
+      "scope": "all",
+      "status": "PASS",
+      "baseline_exit": 0,
+      "candidate_exit": 0,
+      "full_runtime_json_equal": true,
+      "historical_rank_group_and_count_equal": true,
+      "match_group_manual_counts": [
+        121,
+        47,
+        2
+      ],
+      "out_of_scope_source_reads_denied": [
+        "SCOPE_DENIED /Users/yongho/StudioProjects/DISPATCH-One-Android/app/src/main/java/com/routivel/driver/TransportStatusPolicy.kt"
+      ]
+    },
+    {
+      "term": "월간정산",
+      "scope": "all",
+      "status": "PASS",
+      "baseline_exit": 0,
+      "candidate_exit": 0,
+      "full_runtime_json_equal": true,
+      "historical_rank_group_and_count_equal": true,
+      "match_group_manual_counts": [
+        87,
+        31,
+        0
+      ],
+      "out_of_scope_source_reads_denied": []
+    },
+    {
+      "term": "기사앱",
+      "scope": "main",
+      "status": "PASS",
+      "baseline_exit": 0,
+      "candidate_exit": 0,
+      "full_runtime_json_equal": true,
+      "historical_rank_group_and_count_equal": true,
+      "match_group_manual_counts": [
+        574,
+        542,
+        1
+      ],
+      "out_of_scope_source_reads_denied": [
+        "SCOPE_DENIED /Users/yongho/StudioProjects/DISPATCH-One-Android/app/src/main/java/com/routivel/driver/TransportStatusPolicy.kt"
+      ]
+    },
+    {
+      "term": "TransportStatusPolicy.kt",
+      "scope": "main",
+      "status": "PASS",
+      "baseline_exit": 0,
+      "candidate_exit": 0,
+      "full_runtime_json_equal": true,
+      "historical_rank_group_and_count_equal": true,
+      "match_group_manual_counts": [
+        3,
+        1,
+        1
+      ],
+      "out_of_scope_source_reads_denied": [
+        "SCOPE_DENIED /Users/yongho/StudioProjects/DISPATCH-One-Android/app/src/main/java/com/routivel/driver/TransportStatusPolicy.kt"
+      ]
+    },
+    {
+      "term": "cloud_access.py",
+      "scope": "main",
+      "status": "PASS",
+      "baseline_exit": 0,
+      "candidate_exit": 0,
+      "full_runtime_json_equal": true,
+      "historical_rank_group_and_count_equal": true,
+      "match_group_manual_counts": [
+        4,
+        1,
+        1
+      ],
+      "out_of_scope_source_reads_denied": [
+        "SCOPE_DENIED /Users/yongho/StudioProjects/ROUTIVEL-Firebase-Migration/tools/firebase-migration/cloud_access.py"
+      ]
+    },
+    {
+      "term": "DailyInspection",
+      "scope": "variants",
+      "status": "PASS",
+      "baseline_exit": 0,
+      "candidate_exit": 0,
+      "full_runtime_json_equal": true,
+      "historical_rank_group_and_count_equal": true,
+      "match_group_manual_counts": [
+        0,
+        0,
+        0
+      ],
+      "out_of_scope_source_reads_denied": []
+    },
+    {
+      "term": "ROUTABL",
+      "scope": "nas",
+      "status": "PASS",
+      "baseline_exit": 0,
+      "candidate_exit": 0,
+      "full_runtime_json_equal": true,
+      "historical_rank_group_and_count_equal": true,
+      "match_group_manual_counts": [
+        1776,
+        1422,
+        1
+      ],
+      "out_of_scope_source_reads_denied": []
+    },
+    {
+      "term": "no-result-mvl01-20261108",
+      "scope": "all",
+      "status": "PASS",
+      "baseline_exit": 0,
+      "candidate_exit": 0,
+      "full_runtime_json_equal": true,
+      "historical_rank_group_and_count_equal": true,
+      "match_group_manual_counts": [
+        0,
+        0,
+        0
+      ],
+      "out_of_scope_source_reads_denied": []
+    }
+  ],
+  "handoff": [
+    {
+      "phase": "initial",
+      "baseline": {
+        "command": "/usr/bin/python3 -E -s -B scope_runner.py mvl_original.py handoff initial",
+        "exit_code": 1,
+        "stdout_bytes": 0,
+        "stderr": [
+          "SCOPE_DENIED /Users/yongho/Library/Application Support/ROUTABL-AssetSearch/routabl_search_v1_5_service.py",
+          "MVL-01: REQUIRED_SOURCE_NOT_VERIFIED: ASSET-SEARCH-V15-SERVICE"
+        ]
+      },
+      "candidate": {
+        "command": "/usr/bin/python3 -E -s -B scope_runner.py mvl.py handoff initial",
+        "exit_code": 1,
+        "stdout_bytes": 0,
+        "stderr": [
+          "SCOPE_DENIED /Users/yongho/Library/Application Support/ROUTABL-AssetSearch/routabl_search_v1_5_service.py",
+          "MVL-01: REQUIRED_SOURCE_NOT_VERIFIED: ASSET-SEARCH-V15-SERVICE"
+        ]
+      },
+      "stdout_identical": true,
+      "status": "NOT_TESTED",
+      "blocking_id": "ASSET-SEARCH-V15-SERVICE"
+    },
+    {
+      "phase": "final",
+      "baseline": {
+        "command": "/usr/bin/python3 -E -s -B scope_runner.py mvl_original.py handoff final",
+        "exit_code": 1,
+        "stdout_bytes": 0,
+        "stderr": [
+          "SCOPE_DENIED /Users/yongho/Library/Application Support/ROUTABL-AssetSearch/routabl_search_v1_5_service.py",
+          "MVL-01: REQUIRED_SOURCE_NOT_VERIFIED: ASSET-SEARCH-V15-SERVICE"
+        ]
+      },
+      "candidate": {
+        "command": "/usr/bin/python3 -E -s -B scope_runner.py mvl.py handoff final",
+        "exit_code": 1,
+        "stdout_bytes": 0,
+        "stderr": [
+          "SCOPE_DENIED /Users/yongho/Library/Application Support/ROUTABL-AssetSearch/routabl_search_v1_5_service.py",
+          "MVL-01: REQUIRED_SOURCE_NOT_VERIFIED: ASSET-SEARCH-V15-SERVICE"
+        ]
+      },
+      "stdout_identical": true,
+      "status": "NOT_TESTED",
+      "blocking_id": "ASSET-SEARCH-V15-SERVICE"
+    }
+  ],
+  "search_scope_note": "Nine historical searches compared under an identical source allowlist. A denied source cannot be credited as freshly verified.",
+  "fixed_handoff_scope_note": "The first fixed reference is explicitly out of scope; both codes fail closed. Inherited final feedback points to the original MVL-01 folder and fails the new ROOT binding independently.",
+  "inherited_feedback_binding": {
+    "asset_id": "MVL01-FEEDBACK",
+    "indexed_source_path": "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_MINIMUM_VIABLE_LOOP_MVL01_V01/FEEDBACK_CANDIDATE.md",
+    "required_by_new_ROOT": "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_MVL01_FIRST_IGNITION_RETURN_R01_V01/FEEDBACK_CANDIDATE.md",
+    "source_path_matches": false
+  },
+  "actual_db_after_comparison": "755e7695eb3e4e4073906940999665b21248cb1dc1fbf6847c2b8bc84e310eda"
+}

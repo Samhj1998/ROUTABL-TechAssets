@@ -1,0 +1,4792 @@
+{
+  "metadata": {
+    "/Users/yongho/ROUTABL-TechAssets/00_GUIDE": [
+      16832,
+      20745055,
+      501,
+      20
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/10_INBOX": [
+      16832,
+      20745059,
+      501,
+      20
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/20_ORIGINALS": [
+      16832,
+      20745062,
+      501,
+      20
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/30_REGISTRY": [
+      16832,
+      20745067,
+      501,
+      20
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING": [
+      16832,
+      20745071,
+      501,
+      20
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/50_VERIFIED": [
+      16832,
+      20745074,
+      501,
+      20
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/60_AUDIT": [
+      16832,
+      20745077,
+      501,
+      20
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/70_EXPORTS": [
+      16832,
+      20745080,
+      501,
+      20
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/.DS_Store": [
+      33188,
+      20998466,
+      501,
+      20,
+      8196,
+      1793721185964064565,
+      1793721185964064565
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/00_GUIDE/ASSET_SEARCH_V1_4_QUICKSTART_20261103.md": [
+      33152,
+      20981263,
+      501,
+      20,
+      3372,
+      1793702236459345552,
+      1793702300480404145
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/00_GUIDE/ASSET_SEARCH_V1_5_QUICKSTART_20261103.md": [
+      33152,
+      20983818,
+      501,
+      20,
+      4045,
+      1793703797703465783,
+      1793703797703465783
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/00_GUIDE/ASSET_SECURITY_AND_SEARCH_POLICY_v0.1.md": [
+      33152,
+      20979998,
+      501,
+      20,
+      4223,
+      1793700432844827027,
+      1793700546406810715
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/00_GUIDE/DIGITOPIA_CHAT_WORK_PROTOCOL_v1.0.md": [
+      33152,
+      21315514,
+      501,
+      20,
+      5126,
+      1793977331848186161,
+      1793977331850052837
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/00_GUIDE/ENCRYPTED_BACKUP_DESIGN_v0.1.md": [
+      33152,
+      20745966,
+      501,
+      20,
+      1999,
+      1793633277494592556,
+      1793633277494592556
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/00_GUIDE/HEADLESS_BACKUP_RESTART_GATE_v0.1.md": [
+      33152,
+      20986096,
+      501,
+      20,
+      2019,
+      1793704986705886280,
+      1793704986706142198
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/00_GUIDE/HEADLESS_MACOS_SERVICE_RESTART_PLAN_v0.1.md": [
+      33152,
+      20993197,
+      501,
+      20,
+      3179,
+      1793715289284836510,
+      1793715289284836510
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/00_GUIDE/README_v0.1.md": [
+      33152,
+      20745688,
+      501,
+      20,
+      2471,
+      1793632857518136715,
+      1793632857518136715
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/00_GUIDE/ROUTABL_3TIER_ASSET_PROTECTION_AND_RESTORATION_PRINCIPLE_TI01_v1.0_20261106.md": [
+      33152,
+      21308445,
+      501,
+      20,
+      10233,
+      1793968991608193597,
+      1793968991608193597
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/00_GUIDE/ROUTABL_BackupApprovalGate_v0_1.py": [
+      33152,
+      21006730,
+      501,
+      20,
+      5040,
+      1793725993723292361,
+      1793725993723292361
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/00_GUIDE/ROUTABL_BackupHeadlessSupervisor_v0_1.py": [
+      33152,
+      21002976,
+      501,
+      20,
+      9096,
+      1793723296753014172,
+      1793723296753014172
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/00_GUIDE/ROUTABL_BackupHeadlessSupervisor_v0_2.py": [
+      33152,
+      21006074,
+      501,
+      20,
+      10789,
+      1793725642871357162,
+      1793725642871357162
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/00_GUIDE/ROUTABL_BackupHealthReadOnly_v0_1.py": [
+      33152,
+      21003788,
+      501,
+      20,
+      4529,
+      1793723878209339691,
+      1793723878209339691
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/00_GUIDE/ROUTABL_DriveUpload_v1_0.py": [
+      33216,
+      20950394,
+      501,
+      20,
+      6537,
+      1793660141971877756,
+      1793660141971877756
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/00_GUIDE/ROUTABL_DriveUpload_v1_1.py": [
+      33216,
+      20950548,
+      501,
+      20,
+      7111,
+      1793660468681697456,
+      1793660468681697456
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/00_GUIDE/ROUTABL_DriveUpload_v1_2.py": [
+      33216,
+      20953088,
+      501,
+      20,
+      7460,
+      1793661338055510018,
+      1793661338055770894
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/00_GUIDE/ROUTABL_HeadlessAccessDiagnostics_v0_1.py": [
+      33152,
+      20993025,
+      501,
+      20,
+      10136,
+      1793715042024675107,
+      1793715042024675107
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/00_GUIDE/ROUTABL_HeadlessBackupPreflight_v0_1.py": [
+      33152,
+      20985683,
+      501,
+      20,
+      9282,
+      1793705020948794402,
+      1793705020948794402
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/00_GUIDE/ROUTABL_HeadlessDailyGate_v0_2.py": [
+      33152,
+      20987643,
+      501,
+      20,
+      4776,
+      1793706486123695467,
+      1793706486123695467
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/00_GUIDE/ROUTABL_HeadlessDailyGate_v0_3.py": [
+      33152,
+      20988984,
+      501,
+      20,
+      6756,
+      1793709407747870543,
+      1793709407747870543
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/00_GUIDE/ROUTABL_MacToNasOneShot_v0_1.py": [
+      33152,
+      20996203,
+      501,
+      20,
+      6321,
+      1793717725843992081,
+      1793717725843992081
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/00_GUIDE/ROUTABL_NASReplication_v1_0.py": [
+      33216,
+      20762334,
+      501,
+      20,
+      7188,
+      1793657958134270037,
+      1793657972408263967
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/00_GUIDE/ROUTABL_NAS_CAS_EncryptedImageRestoreQA_v0_1.py": [
+      33152,
+      20995365,
+      501,
+      20,
+      6200,
+      1793717055095680094,
+      1793717055095680094
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/00_GUIDE/ROUTABL_NAS_ContentAwareBackup_v0_1.py": [
+      33152,
+      20991555,
+      501,
+      20,
+      16633,
+      1793713438390223586,
+      1793713438390223586
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/00_GUIDE/ROUTABL_NAS_ContentAwareBackup_v0_2.py": [
+      33152,
+      20994076,
+      501,
+      20,
+      16900,
+      1793716026675671855,
+      1793716026675963189
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/00_GUIDE/ROUTABL_NAS_UserMountedReadonlyVerify_v0_1.py": [
+      33152,
+      21000530,
+      501,
+      20,
+      5299,
+      1793721612281427528,
+      1793721612281427528
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/00_GUIDE/ROUTABL_ScheduledBackup_v1_0.py": [
+      33216,
+      20761438,
+      501,
+      20,
+      4785,
+      1793657127324981184,
+      1793657139672835461
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/00_GUIDE/ROUTABL_SecureBackup_v1_0.py": [
+      33216,
+      20747201,
+      501,
+      20,
+      5261,
+      1793634780884853775,
+      1793634799750438234
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/00_GUIDE/ROUTABL_SelectiveNasCopy_v2_0.py": [
+      33152,
+      20987305,
+      501,
+      20,
+      7883,
+      1793706339060343327,
+      1793706339060343327
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/00_GUIDE/ROUTABL_SelectiveNasCopy_v2_1.py": [
+      33216,
+      20988970,
+      501,
+      20,
+      8542,
+      1793710094042402059,
+      1793710094042402059
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/00_GUIDE/ROUTABL_SelectiveSecureBackup_v2_0.py": [
+      33152,
+      20987160,
+      501,
+      20,
+      18168,
+      1793706123553076685,
+      1793706123553076685
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/00_GUIDE/ROUTABL_SelectiveSecureBackup_v2_1.py": [
+      33216,
+      20988954,
+      501,
+      20,
+      19514,
+      1793709295815582440,
+      1793709295815944109
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/00_GUIDE/ROUTABL_VERSION_INDEPENDENCE_PRINCIPLE_v1.0_20261106.md": [
+      33152,
+      21307084,
+      501,
+      20,
+      10389,
+      1793967299491711606,
+      1793967299491711606
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/00_GUIDE/RUN_ROUTABL_DriveUpload_v1_2.command": [
+      33216,
+      20953089,
+      501,
+      20,
+      128,
+      1793661356559252528,
+      1793661396409406204
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/00_GUIDE/RUN_ROUTABL_LocalScheduledBackup.command": [
+      33216,
+      20953915,
+      501,
+      20,
+      132,
+      1793661466073135650,
+      1793661509267970882
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/00_GUIDE/RUN_ROUTABL_NASScheduledBackup.command": [
+      33216,
+      20953922,
+      501,
+      20,
+      131,
+      1793661468860603395,
+      1793661509311962753
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/00_GUIDE/RUN_ROUTABL_SecureBackup.command": [
+      33216,
+      20747208,
+      501,
+      20,
+      285,
+      1793634787500995116,
+      1793634799750368901
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/00_GUIDE/SEARCH_V1_2_DESIGN_v0.1.md": [
+      33152,
+      20745963,
+      501,
+      20,
+      2824,
+      1793633274893422743,
+      1793633274893422743
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/00_GUIDE/SETUP_ROUTABL_SecureBackup.command": [
+      33216,
+      20746364,
+      501,
+      20,
+      2247,
+      1793634440076739461,
+      1793634475829591232
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/00_GUIDE/STATUS_20261103_v0.2.md": [
+      33152,
+      20745863,
+      501,
+      20,
+      1724,
+      1793633061541391120,
+      1793633061541391120
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/00_GUIDE/STATUS_20261103_v0.3.md": [
+      33152,
+      20745928,
+      501,
+      20,
+      1514,
+      1793633199454276303,
+      1793633199454276303
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/00_GUIDE/STATUS_20261103_v0.4.md": [
+      33152,
+      20745969,
+      501,
+      20,
+      1166,
+      1793633280110170774,
+      1793633280110170774
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/00_GUIDE/STATUS_20261103_v0.5.md": [
+      33152,
+      20747250,
+      501,
+      20,
+      1382,
+      1793634866204663145,
+      1793634866204663145
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/00_GUIDE/STATUS_20261103_v0.6.md": [
+      33152,
+      20761831,
+      501,
+      20,
+      1375,
+      1793657288612673101,
+      1793657288612673101
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/00_GUIDE/STATUS_20261103_v0.7.md": [
+      33152,
+      20762557,
+      501,
+      20,
+      1092,
+      1793658190025306451,
+      1793658190025306451
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/00_GUIDE/com.routabl.assetbackup.daily.plist": [
+      33152,
+      20761547,
+      501,
+      20,
+      1097,
+      1793661479326236405,
+      1793661479326236405
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/00_GUIDE/com.routabl.assetbackup.drive.daily.plist": [
+      33152,
+      20950450,
+      501,
+      20,
+      1199,
+      1793661373356683869,
+      1793661373356683869
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/00_GUIDE/com.routabl.assetbackup.nas.daily.plist": [
+      33152,
+      20762357,
+      501,
+      20,
+      1106,
+      1793661485075740540,
+      1793661485075740540
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/20_ORIGINALS/ChatGPT-Account-Exports": [
+      16832,
+      21157642,
+      501,
+      20
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/20_ORIGINALS/ChatGPT-Library": [
+      16832,
+      20745083,
+      501,
+      20
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/20_ORIGINALS/GitHub-Snapshots": [
+      16832,
+      20745093,
+      501,
+      20
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/20_ORIGINALS/GoogleDrive-Imported": [
+      16832,
+      20745097,
+      501,
+      20
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/20_ORIGINALS/Mac-Legacy": [
+      16832,
+      20745087,
+      501,
+      20
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/20_ORIGINALS/NAS-Imported": [
+      16832,
+      20745090,
+      501,
+      20
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/20_ORIGINALS/.DS_Store": [
+      33188,
+      20998465,
+      501,
+      20,
+      8196,
+      1793721185961331343,
+      1793721185961331343
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/20_ORIGINALS/ChatGPT-Account-Exports/2026-11-05": [
+      16832,
+      21157643,
+      501,
+      20
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/20_ORIGINALS/ChatGPT-Account-Exports/2026-11-05/00_ORIGINAL": [
+      16832,
+      21157644,
+      501,
+      20
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/20_ORIGINALS/ChatGPT-Account-Exports/2026-11-05/10_CHAT_120": [
+      16832,
+      21159872,
+      501,
+      20
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/20_ORIGINALS/ChatGPT-Account-Exports/2026-11-05/30_ENCRYPTED_LOCAL": [
+      16832,
+      21161516,
+      501,
+      20
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/20_ORIGINALS/ChatGPT-Account-Exports/2026-11-05/40_ENCRYPTED_V2_LOCAL": [
+      16832,
+      21211394,
+      501,
+      20
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/20_ORIGINALS/ChatGPT-Account-Exports/2026-11-05/.DS_Store": [
+      33188,
+      21159690,
+      501,
+      20,
+      8196,
+      1793881781835128284,
+      1793881781835128284
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/20_ORIGINALS/ChatGPT-Account-Exports/2026-11-05/00_ORIGINAL/baf409011133e16d57eab39aec045f1394676d50a269d023b6008db51848fd63-2026-11-05-03-30-27-86cdce8a39af493493da6b91bf952559.zip": [
+      33152,
+      21157645,
+      501,
+      20,
+      1589174843,
+      1793878938652392792,
+      1793878948622308964
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/20_ORIGINALS/ChatGPT-Account-Exports/2026-11-05/10_CHAT_120/120_ORIGINAL_CONVERSATION_RECORD.json": [
+      33152,
+      21159874,
+      501,
+      20,
+      1335331,
+      1793882070164210208,
+      1793882070165073212
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/20_ORIGINALS/ChatGPT-Account-Exports/2026-11-05/10_CHAT_120/120_READABLE_CHAT_USER_ASSISTANT.md": [
+      33152,
+      21159875,
+      501,
+      20,
+      371825,
+      1793882070177641066,
+      1793882070178117443
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/20_ORIGINALS/ChatGPT-Account-Exports/2026-11-05/30_ENCRYPTED_LOCAL/ChatGPT-Account-Export-20261105_AES256.sparseimage": [
+      33152,
+      21161519,
+      501,
+      20,
+      1602354688,
+      1793883761794790365,
+      1793883761794790365
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/20_ORIGINALS/ChatGPT-Account-Exports/2026-11-05/30_ENCRYPTED_LOCAL/NAS_INDEPENDENT_RECOVERY_ChatGPT-Account-Export-20261105_AES256.sparseimage": [
+      33152,
+      21162912,
+      501,
+      20,
+      1602354688,
+      1793883836748439949,
+      1793883839017739429
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/20_ORIGINALS/ChatGPT-Account-Exports/2026-11-05/40_ENCRYPTED_V2_LOCAL/ChatGPT-Account-Export-20261105_AES256_v2.sparseimage": [
+      33152,
+      21211397,
+      501,
+      20,
+      1602354688,
+      1793917854187909137,
+      1793917854187909137
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/20_ORIGINALS/ChatGPT-Account-Exports/2026-11-05/40_ENCRYPTED_V2_LOCAL/NAS_INDEPENDENT_RECOVERY_ChatGPT-Account-Export-20261105_AES256_v2.sparseimage": [
+      33152,
+      21211451,
+      501,
+      20,
+      1602354688,
+      1793917924548808813,
+      1793917926853431691
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/20_ORIGINALS/NAS-Imported/ROUTABL-97-1-V4.1": [
+      16832,
+      20745889,
+      501,
+      20
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/20_ORIGINALS/NAS-Imported/ROUTABL-97-1-V4.1/01_라우터블개발백서_최종내부기준판_v4.1.pdf": [
+      33152,
+      20745892,
+      501,
+      20,
+      4907472,
+      1793633127771619649,
+      1793633127773513075
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/20_ORIGINALS/NAS-Imported/ROUTABL-97-1-V4.1/LOCAL_IMPORT_RECEIPT_v0.1.json": [
+      33152,
+      20745893,
+      501,
+      20,
+      1386,
+      1793633127844012552,
+      1793633127844357179
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/20_ORIGINALS/NAS-Imported/ROUTABL-97-1-V4.1/NAS_BACKUP_RECEIPT_v4.1.json": [
+      33152,
+      20745890,
+      501,
+      20,
+      850,
+      1793633127723192241,
+      1793633127724099287
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/20_ORIGINALS/NAS-Imported/ROUTABL-97-1-V4.1/ROUTABL_97-1_v4.1_FINAL.zip": [
+      33152,
+      20745891,
+      501,
+      20,
+      3320156,
+      1793633127733575959,
+      1793633127735251884
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/30_REGISTRY/SCHEMA_v0.1.md": [
+      33152,
+      20745691,
+      501,
+      20,
+      2256,
+      1793632859980693294,
+      1793632859980693294
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/30_REGISTRY/asset_120_lookup_v0.1.sqlite": [
+      33152,
+      21040282,
+      501,
+      20,
+      81920,
+      1793752239617756457,
+      1793752239620681514
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/30_REGISTRY/asset_120_lookup_v0.10.sqlite": [
+      33152,
+      21300196,
+      501,
+      20,
+      114688,
+      1793964515222023329,
+      1793964515223805672
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/30_REGISTRY/asset_120_lookup_v0.11.sqlite": [
+      33152,
+      21305667,
+      501,
+      20,
+      122880,
+      1793966091365612350,
+      1793966091368101988
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/30_REGISTRY/asset_120_lookup_v0.12.sqlite": [
+      33152,
+      21307180,
+      501,
+      20,
+      122880,
+      1793967379683957444,
+      1793967379685727828
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/30_REGISTRY/asset_120_lookup_v0.13.sqlite": [
+      33152,
+      21308527,
+      501,
+      20,
+      122880,
+      1793969050594092740,
+      1793969050595470954
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/30_REGISTRY/asset_120_lookup_v0.2.sqlite": [
+      33152,
+      21150946,
+      501,
+      20,
+      81920,
+      1793868524090077415,
+      1793868524092193758
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/30_REGISTRY/asset_120_lookup_v0.3.sqlite": [
+      33152,
+      21160829,
+      501,
+      20,
+      86016,
+      1793882849249478353,
+      1793882849251473279
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/30_REGISTRY/asset_120_lookup_v0.4.sqlite": [
+      33152,
+      21160914,
+      501,
+      20,
+      86016,
+      1793883043809850851,
+      1793883043811217399
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/30_REGISTRY/asset_120_lookup_v0.5.sqlite": [
+      33152,
+      21163636,
+      501,
+      20,
+      94208,
+      1793884069426916242,
+      1793884069429353588
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/30_REGISTRY/asset_120_lookup_v0.6.sqlite": [
+      33152,
+      21212029,
+      501,
+      20,
+      94208,
+      1793918132692745729,
+      1793918132694857781
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/30_REGISTRY/asset_120_lookup_v0.7.sqlite": [
+      33152,
+      21250962,
+      501,
+      20,
+      98304,
+      1793920832956937319,
+      1793920832957891033
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/30_REGISTRY/asset_120_lookup_v0.8.sqlite": [
+      33152,
+      21269899,
+      501,
+      20,
+      102400,
+      1793931707693854993,
+      1793931707695093916
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/30_REGISTRY/asset_120_lookup_v0.9.sqlite": [
+      33152,
+      21290841,
+      501,
+      20,
+      106496,
+      1793956495329584505,
+      1793956495332358852
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/30_REGISTRY/asset_backup_scope_v0.1.json": [
+      33152,
+      20986094,
+      501,
+      20,
+      6326,
+      1793704986704059854,
+      1793704986704438689
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/30_REGISTRY/asset_manifest_v0.1.json": [
+      33152,
+      20745666,
+      501,
+      20,
+      5396,
+      1793632808828649005,
+      1793632808828930215
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/30_REGISTRY/asset_manifest_v0.10.json": [
+      33152,
+      20989497,
+      501,
+      20,
+      69038,
+      1793710231511396984,
+      1793710231511826486
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/30_REGISTRY/asset_manifest_v0.11.json": [
+      33152,
+      20992056,
+      501,
+      20,
+      73235,
+      1793713730274845073,
+      1793713730275286867
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/30_REGISTRY/asset_manifest_v0.12.json": [
+      33152,
+      20993386,
+      501,
+      20,
+      77265,
+      1793715336162091778,
+      1793715336162710448
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/30_REGISTRY/asset_manifest_v0.13.json": [
+      33152,
+      20996378,
+      501,
+      20,
+      88388,
+      1793718074446867895,
+      1793718074447267313
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/30_REGISTRY/asset_manifest_v0.14.json": [
+      33152,
+      21006993,
+      501,
+      20,
+      96561,
+      1793726130385220760,
+      1793726130385391094
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/30_REGISTRY/asset_manifest_v0.15.json": [
+      33152,
+      21040281,
+      501,
+      20,
+      126024,
+      1793752239591224533,
+      1793752239591717119
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/30_REGISTRY/asset_manifest_v0.16.json": [
+      33152,
+      21150936,
+      501,
+      20,
+      131211,
+      1793868505787156020,
+      1793868505787156020
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/30_REGISTRY/asset_manifest_v0.17.json": [
+      33152,
+      21160796,
+      501,
+      20,
+      140528,
+      1793882830201566870,
+      1793882830201566870
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/30_REGISTRY/asset_manifest_v0.18.json": [
+      33152,
+      21160904,
+      501,
+      20,
+      142136,
+      1793883028539516633,
+      1793883028539516633
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/30_REGISTRY/asset_manifest_v0.19.json": [
+      33152,
+      21163615,
+      501,
+      20,
+      147811,
+      1793884047628805349,
+      1793884047628805349
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/30_REGISTRY/asset_manifest_v0.2.json": [
+      33152,
+      20745847,
+      501,
+      20,
+      7857,
+      1793633021982895141,
+      1793633021983144392
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/30_REGISTRY/asset_manifest_v0.20.json": [
+      33152,
+      21211585,
+      501,
+      20,
+      153441,
+      1793918116956730465,
+      1793918116956730465
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/30_REGISTRY/asset_manifest_v0.21.json": [
+      33152,
+      21250873,
+      501,
+      20,
+      168245,
+      1793920812658320476,
+      1793920812658320476
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/30_REGISTRY/asset_manifest_v0.22.json": [
+      33152,
+      21269877,
+      501,
+      20,
+      181077,
+      1793931691717722950,
+      1793931691717722950
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/30_REGISTRY/asset_manifest_v0.23.json": [
+      33152,
+      21290805,
+      501,
+      20,
+      193557,
+      1793956478001002222,
+      1793956478001002222
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/30_REGISTRY/asset_manifest_v0.24.json": [
+      33152,
+      21300147,
+      501,
+      20,
+      212643,
+      1793964494973288549,
+      1793964494973288549
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/30_REGISTRY/asset_manifest_v0.25.json": [
+      33152,
+      21305634,
+      501,
+      20,
+      224118,
+      1793966072143535835,
+      1793966072143535835
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/30_REGISTRY/asset_manifest_v0.26.json": [
+      33152,
+      21307162,
+      501,
+      20,
+      226986,
+      1793967351431039757,
+      1793967351431039757
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/30_REGISTRY/asset_manifest_v0.27.json": [
+      33152,
+      21308483,
+      501,
+      20,
+      229946,
+      1793969030808825642,
+      1793969030808825642
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/30_REGISTRY/asset_manifest_v0.3.json": [
+      33152,
+      20745919,
+      501,
+      20,
+      9753,
+      1793633169654465561,
+      1793633169654779479
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/30_REGISTRY/asset_manifest_v0.4.json": [
+      33152,
+      20964961,
+      501,
+      20,
+      15817,
+      1793670056950747504,
+      1793670056951259798
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/30_REGISTRY/asset_manifest_v0.5.json": [
+      33152,
+      20980275,
+      501,
+      20,
+      24214,
+      1793700546406182003,
+      1793700546406661214
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/30_REGISTRY/asset_manifest_v0.6.json": [
+      33152,
+      20981504,
+      501,
+      20,
+      31971,
+      1793702300479762434,
+      1793702300480247936
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/30_REGISTRY/asset_manifest_v0.7.json": [
+      33152,
+      20983961,
+      501,
+      20,
+      41766,
+      1793703908257882717,
+      1793703908258451970
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/30_REGISTRY/asset_manifest_v0.8.json": [
+      33152,
+      20986120,
+      501,
+      20,
+      49365,
+      1793705082498664041,
+      1793705082499054126
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/30_REGISTRY/asset_manifest_v0.9.json": [
+      33152,
+      20987785,
+      501,
+      20,
+      58091,
+      1793706689505361372,
+      1793706689505821374
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/ASSET-SEARCH-V1_4": [
+      16832,
+      20980957,
+      501,
+      20
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/ASSET-SEARCH-V1_5": [
+      16832,
+      20983206,
+      501,
+      20
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/BACKUP_HEADLESS_V0_1": [
+      16832,
+      20985704,
+      501,
+      20
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/BACKUP_HEADLESS_V0_2": [
+      16832,
+      20987662,
+      501,
+      20
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/BACKUP_HEADLESS_V0_3": [
+      16832,
+      20989130,
+      501,
+      20
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_ACCESS_FIRST_PRINCIPLE_AF01_V01": [
+      16832,
+      21423167,
+      501,
+      20
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_BACKUP_GATE_B3_CANDIDATE_V01": [
+      16832,
+      21385057,
+      501,
+      20
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_BACKUP_GATE_B4_INTEGRATION_V01": [
+      16832,
+      21395926,
+      501,
+      20
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_BACKUP_GATE_B5_PREDEPLOY_V01": [
+      16832,
+      21398688,
+      501,
+      20
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_BACKUP_GATE_B6R1_TIMEOUT_REMEDIATION_V01": [
+      16832,
+      21420939,
+      501,
+      20
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_BACKUP_GATE_B6R2_TIMEOUT_INTEGRATION_V01": [
+      16832,
+      21425250,
+      501,
+      20
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_BACKUP_GATE_B6_RELEASE_READINESS_V01": [
+      16832,
+      21401920,
+      501,
+      20
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_HANDOFF_COLDSTART_R01": [
+      16832,
+      21331127,
+      501,
+      20
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_HANDOFF_COLDSTART_V01": [
+      16832,
+      21318184,
+      501,
+      20
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_HANDOFF_POC_V01": [
+      16832,
+      21316060,
+      501,
+      20
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_STEP5B_REMEDIATION_V01": [
+      16832,
+      21348873,
+      501,
+      20
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_STEP5_FEEDBACK_V01": [
+      16832,
+      21347874,
+      501,
+      20
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/HEADLESS_NATIVE_V0_1": [
+      16832,
+      20995656,
+      501,
+      20
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/HEADLESS_NATIVE_V0_2": [
+      16832,
+      21002937,
+      501,
+      20
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/HEADLESS_NATIVE_V0_3": [
+      16832,
+      21006101,
+      501,
+      20
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/HEADLESS_NATIVE_V0_4": [
+      16832,
+      21008001,
+      501,
+      20
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/HEADLESS_NATIVE_V0_4_1": [
+      16832,
+      21008658,
+      501,
+      20
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/HEADLESS_NATIVE_V0_4_2": [
+      16832,
+      21009270,
+      501,
+      20
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/NAS_INDEPENDENT_RESTORE_20261103_071431_KST": [
+      16832,
+      20762164,
+      501,
+      20
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/RESTORE_TEST_20261103_v1": [
+      16832,
+      20747105,
+      501,
+      20
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/.DS_Store": [
+      33188,
+      20998467,
+      501,
+      20,
+      10244,
+      1793721185964947860,
+      1793721185964947860
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/TEST_LAUNCHD_TERMINAL_ACCESS_20261103.command": [
+      33216,
+      20952434,
+      501,
+      20,
+      133,
+      1793661181945498764,
+      1793661605322903804
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/TEST_LAUNCHD_TERMINAL_ACCESS_20261103.py": [
+      33152,
+      20952111,
+      501,
+      20,
+      1006,
+      1793661061395019653,
+      1793661061395019653
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/TEST_LAUNCHD_TERMINAL_ACCESS_20261103_v2.command": [
+      33216,
+      20952642,
+      501,
+      20,
+      136,
+      1793661258883584857,
+      1793661551811112794
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/TEST_LAUNCHD_TERMINAL_ACCESS_20261103_v2.py": [
+      33152,
+      20952641,
+      501,
+      20,
+      1009,
+      1793661258883223856,
+      1793661258883223856
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/TEST_LAUNCHD_TERMINAL_ACCESS_RESULT.json": [
+      33152,
+      20952379,
+      501,
+      20,
+      101,
+      1793661158424281356,
+      1793661158424378814
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/TEST_LAUNCHD_TERMINAL_ACCESS_RESULT_v2.json": [
+      33152,
+      20952678,
+      501,
+      20,
+      101,
+      1793661269397445634,
+      1793661269397514135
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/VERIFY_NAS_RESTORED_IMAGE_20261103.py": [
+      33152,
+      20950045,
+      501,
+      20,
+      1768,
+      1793659900715411192,
+      1793659900715411192
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/ASSET-SEARCH-V1_4/launcherbuild": [
+      16832,
+      20980985,
+      501,
+      20
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/ASSET-SEARCH-V1_4/RoutablSearchLauncher.swift": [
+      33152,
+      20980972,
+      501,
+      20,
+      3476,
+      1793702090914793941,
+      1793702090914793941
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/ASSET-SEARCH-V1_4/launcherbuild/라우터블 기술자산 검색.app": [
+      16832,
+      20980986,
+      501,
+      20
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/ASSET-SEARCH-V1_4/launcherbuild/라우터블 기술자산 검색.app/Contents": [
+      16832,
+      20980987,
+      501,
+      20
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/ASSET-SEARCH-V1_4/launcherbuild/라우터블 기술자산 검색.app/Contents/MacOS": [
+      16832,
+      20980988,
+      501,
+      20
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/ASSET-SEARCH-V1_4/launcherbuild/라우터블 기술자산 검색.app/Contents/_CodeSignature": [
+      16832,
+      20981034,
+      501,
+      20
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/ASSET-SEARCH-V1_4/launcherbuild/라우터블 기술자산 검색.app/Contents/Info.plist": [
+      33152,
+      20980989,
+      501,
+      20,
+      784,
+      1793702003006097581,
+      1793702003006097581
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/ASSET-SEARCH-V1_4/launcherbuild/라우터블 기술자산 검색.app/Contents/MacOS/RoutablSearch": [
+      33216,
+      20981211,
+      501,
+      20,
+      59200,
+      1793702122864401939,
+      1793702122864401939
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/ASSET-SEARCH-V1_4/launcherbuild/라우터블 기술자산 검색.app/Contents/_CodeSignature/CodeResources": [
+      33152,
+      20981035,
+      501,
+      20,
+      2200,
+      1793702008571365946,
+      1793702008571365946
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/ASSET-SEARCH-V1_5/build": [
+      16832,
+      20983208,
+      501,
+      20
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/ASSET-SEARCH-V1_5/RoutablSearchLauncher_v1_5.swift": [
+      33152,
+      20983207,
+      501,
+      20,
+      3476,
+      1793703672182083567,
+      1793703672182083567
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/ASSET-SEARCH-V1_5/build/라우터블 기술자산 검색 v1.5.app": [
+      16832,
+      20983209,
+      501,
+      20
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/ASSET-SEARCH-V1_5/build/라우터블 기술자산 검색 v1.5.app/Contents": [
+      16832,
+      20983210,
+      501,
+      20
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/ASSET-SEARCH-V1_5/build/라우터블 기술자산 검색 v1.5.app/Contents/MacOS": [
+      16832,
+      20983211,
+      501,
+      20
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/ASSET-SEARCH-V1_5/build/라우터블 기술자산 검색 v1.5.app/Contents/_CodeSignature": [
+      16832,
+      20983249,
+      501,
+      20
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/ASSET-SEARCH-V1_5/build/라우터블 기술자산 검색 v1.5.app/Contents/Info.plist": [
+      33152,
+      20983212,
+      501,
+      20,
+      797,
+      1793703672184199912,
+      1793703672184199912
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/ASSET-SEARCH-V1_5/build/라우터블 기술자산 검색 v1.5.app/Contents/MacOS/RoutablSearch": [
+      33216,
+      20983251,
+      501,
+      20,
+      59008,
+      1793703675338380195,
+      1793703675338665738
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/ASSET-SEARCH-V1_5/build/라우터블 기술자산 검색 v1.5.app/Contents/_CodeSignature/CodeResources": [
+      33152,
+      20983250,
+      501,
+      20,
+      2200,
+      1793703675335591347,
+      1793703675335591347
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/BACKUP_HEADLESS_V0_1/proposed_launchagents": [
+      16832,
+      20985705,
+      501,
+      20
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/BACKUP_HEADLESS_V0_1/proposed_launchagents/com.routabl.assetbackup.headless.local.plist": [
+      33152,
+      20985706,
+      501,
+      20,
+      1107,
+      1793704718924393097,
+      1793704718924548890
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/BACKUP_HEADLESS_V0_1/proposed_launchagents/com.routabl.assetbackup.headless.nas.plist": [
+      33152,
+      20985707,
+      501,
+      20,
+      1100,
+      1793704718924832933,
+      1793704718924890308
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/BACKUP_HEADLESS_V0_2/proposed_launchagents": [
+      16832,
+      20987663,
+      501,
+      20
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/BACKUP_HEADLESS_V0_2/proposed_launchagents/com.routabl.assetbackup.v2.headless.local.plist": [
+      33152,
+      20987664,
+      501,
+      20,
+      1166,
+      1793706508546951356,
+      1793706508547301358
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/BACKUP_HEADLESS_V0_2/proposed_launchagents/com.routabl.assetbackup.v2.headless.nas.plist": [
+      33152,
+      20987665,
+      501,
+      20,
+      1158,
+      1793706508548667656,
+      1793706508548929532
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/BACKUP_HEADLESS_V0_3/proposed_launchagents": [
+      16832,
+      20989131,
+      501,
+      20
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/BACKUP_HEADLESS_V0_3/proposed_launchagents/com.routabl.assetbackup.v21.headless.local.plist": [
+      33152,
+      20989132,
+      501,
+      20,
+      1151,
+      1793709606285972859,
+      1793709606286215193
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/BACKUP_HEADLESS_V0_3/proposed_launchagents/com.routabl.assetbackup.v21.headless.nas.plist": [
+      33152,
+      20989133,
+      501,
+      20,
+      1143,
+      1793709606286861238,
+      1793709606286962280
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_ACCESS_FIRST_PRINCIPLE_AF01_V01/DIGITOPIA_ACCESS_FIRST_PRINCIPLE_AF01_v1.0_20261108.md": [
+      33152,
+      21423203,
+      501,
+      20,
+      10152,
+      1794071919983303448,
+      1794071919983303448
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_ACCESS_FIRST_PRINCIPLE_AF01_V01/REGISTRY_CANDIDATE.json": [
+      33152,
+      21423336,
+      501,
+      20,
+      1412,
+      1794071972036950996,
+      1794071972036950996
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_ACCESS_FIRST_PRINCIPLE_AF01_V01/VERIFICATION.md": [
+      33152,
+      21423369,
+      501,
+      20,
+      1740,
+      1794072023034154626,
+      1794072023034154626
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_BACKUP_GATE_B3_CANDIDATE_V01/ACCEPTANCE_CRITERIA.md": [
+      33152,
+      21385063,
+      501,
+      20,
+      1992,
+      1794031487337325345,
+      1794031487337325345
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_BACKUP_GATE_B3_CANDIDATE_V01/APPROVAL_PIN_IMPACT.md": [
+      33152,
+      21385061,
+      501,
+      20,
+      2463,
+      1794031487336770342,
+      1794031487336770342
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_BACKUP_GATE_B3_CANDIDATE_V01/DEFECT_AND_DESIGN.md": [
+      33152,
+      21385060,
+      501,
+      20,
+      4275,
+      1794031487336438132,
+      1794031487336438132
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_BACKUP_GATE_B3_CANDIDATE_V01/SINGLE_SCHEDULE_CUTOVER.md": [
+      33152,
+      21385062,
+      501,
+      20,
+      1759,
+      1794031487337008010,
+      1794031487337008010
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_BACKUP_GATE_B3_CANDIDATE_V01/TEST_RESULTS.json": [
+      33152,
+      21385068,
+      501,
+      20,
+      67650,
+      1794031487901056494,
+      1794031487901056494
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_BACKUP_GATE_B3_CANDIDATE_V01/VERIFICATION.md": [
+      33152,
+      21385069,
+      501,
+      20,
+      9227,
+      1794031487991617432,
+      1794031487991617432
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_BACKUP_GATE_B3_CANDIDATE_V01/backup_runner_candidate.py": [
+      33152,
+      21385058,
+      501,
+      20,
+      6681,
+      1794031487329840059,
+      1794031487329840059
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_BACKUP_GATE_B3_CANDIDATE_V01/backup_supervisor_candidate.py": [
+      33152,
+      21385059,
+      501,
+      20,
+      4323,
+      1794031487334296830,
+      1794031487334296830
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_BACKUP_GATE_B3_CANDIDATE_V01/test_backup_gate_b3.py": [
+      33152,
+      21385064,
+      501,
+      20,
+      10797,
+      1794031487337615221,
+      1794031487337615221
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_BACKUP_GATE_B4_INTEGRATION_V01/APPROVAL_PROPOSAL.schema.json": [
+      33152,
+      21395933,
+      501,
+      20,
+      2743,
+      1794039065543969272,
+      1794039065543969272
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_BACKUP_GATE_B4_INTEGRATION_V01/B3_REGRESSION.json": [
+      33152,
+      21395941,
+      501,
+      20,
+      67643,
+      1794039066034887187,
+      1794039066034887187
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_BACKUP_GATE_B4_INTEGRATION_V01/B4_INTEGRATION.json": [
+      33152,
+      21396510,
+      501,
+      20,
+      56787,
+      1794039179316366235,
+      1794039179316366235
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_BACKUP_GATE_B4_INTEGRATION_V01/B4_INTEGRATION_ATTEMPT_01.json": [
+      33152,
+      21395958,
+      501,
+      20,
+      1813,
+      1794039067631345186,
+      1794039101567825519
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_BACKUP_GATE_B4_INTEGRATION_V01/B4_INTEGRATION_ATTEMPT_02.json": [
+      33152,
+      21396194,
+      501,
+      20,
+      38069,
+      1794039115529961366,
+      1794039148880558759
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_BACKUP_GATE_B4_INTEGRATION_V01/ENGINE_COMPATIBILITY.md": [
+      33152,
+      21395934,
+      501,
+      20,
+      3172,
+      1794039065544561400,
+      1794039065544561400
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_BACKUP_GATE_B4_INTEGRATION_V01/NATIVE_V043_CUTOVER.md": [
+      33152,
+      21395935,
+      501,
+      20,
+      2436,
+      1794039065545531863,
+      1794039065545531863
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_BACKUP_GATE_B4_INTEGRATION_V01/PRE_DEPLOYMENT_ACCEPTANCE.md": [
+      33152,
+      21395936,
+      501,
+      20,
+      1348,
+      1794039065546430493,
+      1794039065546430493
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_BACKUP_GATE_B4_INTEGRATION_V01/PROTECTED_SCOPE.json": [
+      33152,
+      21396511,
+      501,
+      20,
+      16737,
+      1794039179503998231,
+      1794039179503998231
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_BACKUP_GATE_B4_INTEGRATION_V01/ROUTABL_BackupEvidenceAdapter_v0_1.py": [
+      33152,
+      21395927,
+      501,
+      20,
+      6786,
+      1794039065539146456,
+      1794039065539146456
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_BACKUP_GATE_B4_INTEGRATION_V01/ROUTABL_BackupHeadlessSupervisor_v0_3.py": [
+      33152,
+      21395929,
+      501,
+      20,
+      5689,
+      1794039065541172757,
+      1794039065541172757
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_BACKUP_GATE_B4_INTEGRATION_V01/ROUTABL_MacToNasOneShot_v0_2.py": [
+      33152,
+      21395928,
+      501,
+      20,
+      3446,
+      1794039065540198628,
+      1794039065540198628
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_BACKUP_GATE_B4_INTEGRATION_V01/STATUS_EVIDENCE.schema.json": [
+      33152,
+      21395932,
+      501,
+      20,
+      15457,
+      1794039065543392810,
+      1794039065543392810
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_BACKUP_GATE_B4_INTEGRATION_V01/VERIFICATION.md": [
+      33152,
+      21396512,
+      501,
+      20,
+      3407,
+      1794039179512574025,
+      1794039179512574025
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_BACKUP_GATE_B4_INTEGRATION_V01/backup_runner_candidate.py": [
+      33152,
+      21395938,
+      501,
+      20,
+      6681,
+      1794039065548059751,
+      1794039065548059751
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_BACKUP_GATE_B4_INTEGRATION_V01/backup_supervisor_candidate.py": [
+      33152,
+      21395939,
+      501,
+      20,
+      4323,
+      1794039065549256924,
+      1794039065549256924
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_BACKUP_GATE_B4_INTEGRATION_V01/fixture_approval.json": [
+      33152,
+      21396263,
+      501,
+      20,
+      739,
+      1794039149536124262,
+      1794039149536124262
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_BACKUP_GATE_B4_INTEGRATION_V01/fixture_approval_bad.json": [
+      33152,
+      21396264,
+      501,
+      20,
+      739,
+      1794039149536596056,
+      1794039149536596056
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_BACKUP_GATE_B4_INTEGRATION_V01/fixture_boundary.py": [
+      33152,
+      21395930,
+      501,
+      20,
+      1938,
+      1794039148881492556,
+      1794039148881492556
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_BACKUP_GATE_B4_INTEGRATION_V01/fixture_worker.py": [
+      33152,
+      21395931,
+      501,
+      20,
+      4125,
+      1794039065542684182,
+      1794039065542684182
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_BACKUP_GATE_B4_INTEGRATION_V01/test_backup_gate_b3.py": [
+      33152,
+      21395940,
+      501,
+      20,
+      10797,
+      1794039065550941807,
+      1794039065550941807
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_BACKUP_GATE_B4_INTEGRATION_V01/test_backup_gate_b4.py": [
+      33152,
+      21395937,
+      501,
+      20,
+      8572,
+      1794039065547163371,
+      1794039065547163371
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_BACKUP_GATE_B5_PREDEPLOY_V01/B5_TEST_RESULTS.json": [
+      33152,
+      21398701,
+      501,
+      20,
+      12624,
+      1794041921845717164,
+      1794041921845717164
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_BACKUP_GATE_B5_PREDEPLOY_V01/DEPENDENCY_PINS.json": [
+      33152,
+      21398702,
+      501,
+      20,
+      4581,
+      1794041921933436486,
+      1794041921933436486
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_BACKUP_GATE_B5_PREDEPLOY_V01/ENGINE_REUSE_DECISION.md": [
+      33152,
+      21398692,
+      501,
+      20,
+      1583,
+      1794041921261700935,
+      1794041921261700935
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_BACKUP_GATE_B5_PREDEPLOY_V01/LOCK_BYPASS_AND_OS.md": [
+      33152,
+      21398691,
+      501,
+      20,
+      3882,
+      1794041921260987181,
+      1794041921260987181
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_BACKUP_GATE_B5_PREDEPLOY_V01/OBSERVED_METADATA.json": [
+      33152,
+      21398695,
+      501,
+      20,
+      9131,
+      1794041921303575398,
+      1794041921303575398
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_BACKUP_GATE_B5_PREDEPLOY_V01/PROTECTED_SCOPE.json": [
+      33152,
+      21398703,
+      501,
+      20,
+      32726,
+      1794041922115111788,
+      1794041922115111788
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_BACKUP_GATE_B5_PREDEPLOY_V01/RECEIPT_NORMALIZATION.md": [
+      33152,
+      21398690,
+      501,
+      20,
+      3302,
+      1794041921260148885,
+      1794041921260148885
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_BACKUP_GATE_B5_PREDEPLOY_V01/ROUTABL_BackupEvidenceNormalizer_v0_1.py": [
+      33152,
+      21398689,
+      501,
+      20,
+      9693,
+      1794041921259206255,
+      1794041921259206255
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_BACKUP_GATE_B5_PREDEPLOY_V01/V043_RELEASE_AND_ACCEPTANCE.md": [
+      33152,
+      21398693,
+      501,
+      20,
+      4743,
+      1794041921262525272,
+      1794041921262525272
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_BACKUP_GATE_B5_PREDEPLOY_V01/VERIFICATION.md": [
+      33152,
+      21398704,
+      501,
+      20,
+      1916,
+      1794041922117895594,
+      1794041922117895594
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_BACKUP_GATE_B5_PREDEPLOY_V01/test_backup_gate_b5.py": [
+      33152,
+      21398694,
+      501,
+      20,
+      10209,
+      1794041921263328901,
+      1794041921263328901
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_BACKUP_GATE_B6R1_TIMEOUT_REMEDIATION_V01/B4_REGRESSION.json": [
+      33152,
+      21421423,
+      501,
+      20,
+      53096,
+      1794069843310638076,
+      1794069843310638076
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_BACKUP_GATE_B6R1_TIMEOUT_REMEDIATION_V01/B5_REGRESSION.json": [
+      33152,
+      21421442,
+      501,
+      20,
+      12624,
+      1794069843908632498,
+      1794069843908632498
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_BACKUP_GATE_B6R1_TIMEOUT_REMEDIATION_V01/B6_REGRESSION.json": [
+      33152,
+      21421486,
+      501,
+      20,
+      33640,
+      1794069845057106123,
+      1794069845057106123
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_BACKUP_GATE_B6R1_TIMEOUT_REMEDIATION_V01/CAUSE_DIAGNOSIS.md": [
+      33152,
+      21421837,
+      501,
+      20,
+      2147,
+      1794069927657044008,
+      1794069927657449468
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_BACKUP_GATE_B6R1_TIMEOUT_REMEDIATION_V01/CLEANUP_AND_ADMISSION_CONTRACT.md": [
+      33152,
+      21421838,
+      501,
+      20,
+      3590,
+      1794069927658442348,
+      1794069927658801099
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_BACKUP_GATE_B6R1_TIMEOUT_REMEDIATION_V01/LEGACY_DIAGNOSTIC.json": [
+      33152,
+      21420989,
+      501,
+      20,
+      3666,
+      1794069802243334185,
+      1794069802243334185
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_BACKUP_GATE_B6R1_TIMEOUT_REMEDIATION_V01/LEGACY_TIMING_DIAGNOSTIC.json": [
+      33152,
+      21421758,
+      501,
+      20,
+      6678,
+      1794069916327182887,
+      1794069916327182887
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_BACKUP_GATE_B6R1_TIMEOUT_REMEDIATION_V01/PROTECTED_SCOPE.json": [
+      33152,
+      21421839,
+      501,
+      20,
+      40767,
+      1794069927660593899,
+      1794069927660995485
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_BACKUP_GATE_B6R1_TIMEOUT_REMEDIATION_V01/R1_INTEGRATION.json": [
+      33152,
+      21421836,
+      501,
+      20,
+      16398,
+      1794069927427278199,
+      1794069927427278199
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_BACKUP_GATE_B6R1_TIMEOUT_REMEDIATION_V01/R1_INTEGRATION_ATTEMPT_01.json": [
+      33152,
+      21421065,
+      501,
+      20,
+      14162,
+      1794069814623562146,
+      1794069912128713791
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_BACKUP_GATE_B6R1_TIMEOUT_REMEDIATION_V01/VERIFICATION.md": [
+      33152,
+      21421840,
+      501,
+      20,
+      2182,
+      1794069927669780108,
+      1794069927670411153
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_BACKUP_GATE_B6R1_TIMEOUT_REMEDIATION_V01/legacy_diagnostic.py": [
+      33152,
+      21421712,
+      501,
+      20,
+      5271,
+      1794069912153765407,
+      1794069912154376868
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_BACKUP_GATE_B6R1_TIMEOUT_REMEDIATION_V01/test_timeout_supervisor.py": [
+      33152,
+      21421711,
+      501,
+      20,
+      7798,
+      1794069912149780514,
+      1794069912150394016
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_BACKUP_GATE_B6R1_TIMEOUT_REMEDIATION_V01/timeout_fixture.py": [
+      33152,
+      21421710,
+      501,
+      20,
+      1347,
+      1794069912143266942,
+      1794069912143882361
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_BACKUP_GATE_B6R1_TIMEOUT_REMEDIATION_V01/timeout_supervisor.py": [
+      33152,
+      21421709,
+      501,
+      20,
+      13169,
+      1794069912139238382,
+      1794069912141260433
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_BACKUP_GATE_B6R2_TIMEOUT_INTEGRATION_V01/B4_REGRESSION.json": [
+      33152,
+      21426213,
+      501,
+      20,
+      53096,
+      1794072963953214525,
+      1794072963953214525
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_BACKUP_GATE_B6R2_TIMEOUT_INTEGRATION_V01/B5_REGRESSION.json": [
+      33152,
+      21426222,
+      501,
+      20,
+      12624,
+      1794072964586872218,
+      1794072964586872218
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_BACKUP_GATE_B6R2_TIMEOUT_INTEGRATION_V01/B6_REGRESSION.json": [
+      33152,
+      21426268,
+      501,
+      20,
+      33640,
+      1794072965902515169,
+      1794072965902515169
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_BACKUP_GATE_B6R2_TIMEOUT_INTEGRATION_V01/INTEGRATION_CONTRACT.md": [
+      33152,
+      21425256,
+      501,
+      20,
+      2252,
+      1794072898037660069,
+      1794072898037660069
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_BACKUP_GATE_B6R2_TIMEOUT_INTEGRATION_V01/PROTECTED_SCOPE.json": [
+      33152,
+      21426363,
+      501,
+      20,
+      46310,
+      1794072979899781220,
+      1794072979899781220
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_BACKUP_GATE_B6R2_TIMEOUT_INTEGRATION_V01/R1_REGRESSION.json": [
+      33152,
+      21426361,
+      501,
+      20,
+      16397,
+      1794072979694163507,
+      1794072979694163507
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_BACKUP_GATE_B6R2_TIMEOUT_INTEGRATION_V01/R1_REGRESSION_RETRY.json": [
+      33152,
+      21426527,
+      501,
+      20,
+      16555,
+      1794073038430442669,
+      1794073038430442669
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_BACKUP_GATE_B6R2_TIMEOUT_INTEGRATION_V01/R2_INTEGRATION.json": [
+      33152,
+      21425928,
+      501,
+      20,
+      82464,
+      1794072933606525374,
+      1794072933606525374
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_BACKUP_GATE_B6R2_TIMEOUT_INTEGRATION_V01/ROUTABL_BackupEvidenceNormalizer_v0_1.py": [
+      33152,
+      21425260,
+      501,
+      20,
+      9693,
+      1794072898041338090,
+      1794072898041338090
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_BACKUP_GATE_B6R2_TIMEOUT_INTEGRATION_V01/SOURCE_PROVENANCE.json": [
+      33152,
+      21425262,
+      501,
+      20,
+      2631,
+      1794072898046619829,
+      1794072898046619829
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_BACKUP_GATE_B6R2_TIMEOUT_INTEGRATION_V01/VERIFICATION.md": [
+      33152,
+      21426528,
+      501,
+      20,
+      2680,
+      1794073038432963767,
+      1794073038433608396
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_BACKUP_GATE_B6R2_TIMEOUT_INTEGRATION_V01/b4_evidence.py": [
+      33152,
+      21425257,
+      501,
+      20,
+      6786,
+      1794072898038854534,
+      1794072898038854534
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_BACKUP_GATE_B6R2_TIMEOUT_INTEGRATION_V01/b6_evidence.py": [
+      33152,
+      21425258,
+      501,
+      20,
+      4724,
+      1794072898040165417,
+      1794072898040165417
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_BACKUP_GATE_B6R2_TIMEOUT_INTEGRATION_V01/backup_runner_candidate.py": [
+      33152,
+      21425259,
+      501,
+      20,
+      6681,
+      1794072898040808337,
+      1794072898040808337
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_BACKUP_GATE_B6R2_TIMEOUT_INTEGRATION_V01/r2_lifecycle.py": [
+      33152,
+      21425261,
+      501,
+      20,
+      13399,
+      1794072898045871616,
+      1794072898045871616
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_BACKUP_GATE_B6R2_TIMEOUT_INTEGRATION_V01/r2_oneshot.py": [
+      33152,
+      21425253,
+      501,
+      20,
+      4074,
+      1794072898031080114,
+      1794072898031080114
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_BACKUP_GATE_B6R2_TIMEOUT_INTEGRATION_V01/r2_supervisor.py": [
+      33152,
+      21425254,
+      501,
+      20,
+      7366,
+      1794072898033294627,
+      1794072898033294627
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_BACKUP_GATE_B6R2_TIMEOUT_INTEGRATION_V01/r2_worker.py": [
+      33152,
+      21425252,
+      501,
+      20,
+      5835,
+      1794072898029515605,
+      1794072898029515605
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_BACKUP_GATE_B6R2_TIMEOUT_INTEGRATION_V01/test_r2.py": [
+      33152,
+      21425255,
+      501,
+      20,
+      11252,
+      1794072898037142316,
+      1794072898037142316
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_BACKUP_GATE_B6_RELEASE_READINESS_V01/_regression": [
+      16832,
+      21401930,
+      501,
+      20
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_BACKUP_GATE_B6_RELEASE_READINESS_V01/B4_LOCK_OWNER_DIAGNOSTIC.json": [
+      33152,
+      21402672,
+      501,
+      20,
+      7637,
+      1794046770271195773,
+      1794046770271195773
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_BACKUP_GATE_B6_RELEASE_READINESS_V01/B4_REGRESSION.json": [
+      33152,
+      21402210,
+      501,
+      20,
+      53096,
+      1794046618902331274,
+      1794046618902331274
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_BACKUP_GATE_B6_RELEASE_READINESS_V01/B4_REGRESSION_RETRY.json": [
+      33152,
+      21402557,
+      501,
+      20,
+      53328,
+      1794046705743514513,
+      1794046705743514513
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_BACKUP_GATE_B6_RELEASE_READINESS_V01/B5_REGRESSION.json": [
+      33152,
+      21402216,
+      501,
+      20,
+      12624,
+      1794046619535231922,
+      1794046619535231922
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_BACKUP_GATE_B6_RELEASE_READINESS_V01/B6_INTEGRATION.json": [
+      33152,
+      21402250,
+      501,
+      20,
+      33640,
+      1794046620803786648,
+      1794046620803786648
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_BACKUP_GATE_B6_RELEASE_READINESS_V01/ENVIRONMENT_READONLY.json": [
+      33152,
+      21402251,
+      501,
+      20,
+      1185,
+      1794046620922353563,
+      1794046620922353563
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_BACKUP_GATE_B6_RELEASE_READINESS_V01/PROTECTED_SCOPE.json": [
+      33152,
+      21402254,
+      501,
+      20,
+      33037,
+      1794046621223971836,
+      1794046621223971836
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_BACKUP_GATE_B6_RELEASE_READINESS_V01/RELEASE_AND_EVIDENCE_CONTRACT.md": [
+      33152,
+      21401927,
+      501,
+      20,
+      5520,
+      1794046590157458853,
+      1794046590157458853
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_BACKUP_GATE_B6_RELEASE_READINESS_V01/RELEASE_PINS.json": [
+      33152,
+      21402252,
+      501,
+      20,
+      3303,
+      1794046620974558070,
+      1794046620974558070
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_BACKUP_GATE_B6_RELEASE_READINESS_V01/ROUTABL_BackupEvidenceAdapter_v0_1.py": [
+      33152,
+      21401921,
+      501,
+      20,
+      4724,
+      1794046590148576309,
+      1794046590148576309
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_BACKUP_GATE_B6_RELEASE_READINESS_V01/ROUTABL_BackupEvidenceNormalizer_v0_1.py": [
+      33152,
+      21401929,
+      501,
+      20,
+      9693,
+      1794046590165379309,
+      1794046590165379309
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_BACKUP_GATE_B6_RELEASE_READINESS_V01/ROUTABL_BackupHeadlessSupervisor_v0_3.py": [
+      33152,
+      21401923,
+      501,
+      20,
+      5723,
+      1794046590154025794,
+      1794046590154025794
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_BACKUP_GATE_B6_RELEASE_READINESS_V01/ROUTABL_MacToNasOneShot_v0_2.py": [
+      33152,
+      21401922,
+      501,
+      20,
+      874,
+      1794046590150049817,
+      1794046590150049817
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_BACKUP_GATE_B6_RELEASE_READINESS_V01/STATUS_EVIDENCE.schema.json": [
+      33152,
+      21401925,
+      501,
+      20,
+      2552,
+      1794046590155493468,
+      1794046590155493468
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_BACKUP_GATE_B6_RELEASE_READINESS_V01/VERIFICATION.md": [
+      33152,
+      21402673,
+      501,
+      20,
+      3258,
+      1794046770272144861,
+      1794046770272506988
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_BACKUP_GATE_B6_RELEASE_READINESS_V01/WRITE_CAPABILITY_DESIGN.md": [
+      33152,
+      21401926,
+      501,
+      20,
+      2868,
+      1794046590156198638,
+      1794046590156198638
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_BACKUP_GATE_B6_RELEASE_READINESS_V01/approval_v043.schema.json": [
+      33152,
+      21401924,
+      501,
+      20,
+      2374,
+      1794046590154783756,
+      1794046590154783756
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_BACKUP_GATE_B6_RELEASE_READINESS_V01/test_backup_gate_b6.py": [
+      33152,
+      21401928,
+      501,
+      20,
+      10243,
+      1794046590164339345,
+      1794046590164339345
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_BACKUP_GATE_B6_RELEASE_READINESS_V01/_regression/b5": [
+      16832,
+      21401931,
+      501,
+      20
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_BACKUP_GATE_B6_RELEASE_READINESS_V01/_regression/b5/ROUTABL_BackupEvidenceNormalizer_v0_1.py": [
+      33152,
+      21401932,
+      501,
+      20,
+      9693,
+      1794046590167695653,
+      1794046590167779695
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_BACKUP_GATE_B6_RELEASE_READINESS_V01/_regression/b5/test_backup_gate_b5.py": [
+      33152,
+      21401933,
+      501,
+      20,
+      10209,
+      1794046590170307291,
+      1794046590170436292
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_HANDOFF_COLDSTART_R01/AB_DIFF.md": [
+      33152,
+      21331134,
+      501,
+      20,
+      850,
+      1793992806278120873,
+      1793992806278120873
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_HANDOFF_COLDSTART_R01/HANDOFF_TEST_B.md": [
+      33152,
+      21331128,
+      501,
+      20,
+      3978,
+      1793992806274327394,
+      1793992806274327394
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_HANDOFF_COLDSTART_R01/HANDOFF_TEST_B.sha256": [
+      33152,
+      21331129,
+      501,
+      20,
+      84,
+      1793992806275067648,
+      1793992806275067648
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_HANDOFF_COLDSTART_R01/RECEIVER_ENVIRONMENT.json": [
+      33152,
+      21331131,
+      501,
+      20,
+      1316,
+      1793992806276427114,
+      1793992806276427114
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_HANDOFF_COLDSTART_R01/RESPONSE_AND_SCORING.json": [
+      33152,
+      21331133,
+      501,
+      20,
+      2808,
+      1793992806277691829,
+      1793992806277691829
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_HANDOFF_COLDSTART_R01/TEST_A_INPUT.json": [
+      33152,
+      21331130,
+      501,
+      20,
+      542,
+      1793992806275788735,
+      1793992806275788735
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_HANDOFF_COLDSTART_R01/TIMING.json": [
+      33152,
+      21331132,
+      501,
+      20,
+      582,
+      1793992806277193785,
+      1793992806277193785
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_HANDOFF_COLDSTART_R01/VERIFICATION.md": [
+      33152,
+      21331143,
+      501,
+      20,
+      1555,
+      1793992818899768353,
+      1793992818899768353
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_HANDOFF_COLDSTART_V01/ANSWER_KEY.json": [
+      33152,
+      21318188,
+      501,
+      20,
+      3429,
+      1793981084974976014,
+      1793981084974976014
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_HANDOFF_COLDSTART_V01/BASELINE.json": [
+      33152,
+      21318185,
+      501,
+      20,
+      2199,
+      1793981084973274171,
+      1793981084973274171
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_HANDOFF_COLDSTART_V01/HANDOFF_GENERATED.md": [
+      33152,
+      21318191,
+      501,
+      20,
+      3679,
+      1793981085304573849,
+      1793981085304573849
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_HANDOFF_COLDSTART_V01/HANDOFF_MANUAL.md": [
+      33152,
+      21318186,
+      501,
+      20,
+      3679,
+      1793981084973920216,
+      1793981084973920216
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_HANDOFF_COLDSTART_V01/HANDOFF_SOURCE.json": [
+      33152,
+      21318187,
+      501,
+      20,
+      4160,
+      1793981084974495303,
+      1793981084974495303
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_HANDOFF_COLDSTART_V01/INPUT_LEDGER.json": [
+      33152,
+      21318192,
+      501,
+      20,
+      4157,
+      1793981085319946012,
+      1793981085319946012
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_HANDOFF_COLDSTART_V01/MEASUREMENT.json": [
+      33152,
+      21318189,
+      501,
+      20,
+      1960,
+      1793981084975600434,
+      1793981084975600434
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_HANDOFF_COLDSTART_V01/VERIFICATION.md": [
+      33152,
+      21318200,
+      501,
+      20,
+      2619,
+      1793981099040098374,
+      1793981099040098374
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_HANDOFF_COLDSTART_V01/render_handoff.py": [
+      33152,
+      21318190,
+      501,
+      20,
+      821,
+      1793981084976114811,
+      1793981084976114811
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_HANDOFF_POC_V01/README.md": [
+      33152,
+      21316066,
+      501,
+      20,
+      1249,
+      1793978232599460431,
+      1793978232599460431
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_HANDOFF_POC_V01/VERIFICATION.md": [
+      33152,
+      21316089,
+      501,
+      20,
+      4375,
+      1793978245296435663,
+      1793978245296435663
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_HANDOFF_POC_V01/VERIFICATION_RETEST.md": [
+      33152,
+      21316135,
+      501,
+      20,
+      3444,
+      1793978295475254712,
+      1793978295475254712
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_HANDOFF_POC_V01/chat_to_work.json": [
+      33152,
+      21316062,
+      501,
+      20,
+      2572,
+      1793978232597915215,
+      1793978232597915215
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_HANDOFF_POC_V01/chat_to_work.md": [
+      33152,
+      21316067,
+      501,
+      20,
+      3253,
+      1793978232734325657,
+      1793978232734325657
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_HANDOFF_POC_V01/handoff.py": [
+      33152,
+      21316064,
+      501,
+      20,
+      7726,
+      1793978232598723177,
+      1793978232598723177
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_HANDOFF_POC_V01/schema.json": [
+      33152,
+      21316061,
+      501,
+      20,
+      5496,
+      1793978232597490004,
+      1793978232597490004
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_HANDOFF_POC_V01/verify_poc.py": [
+      33152,
+      21316116,
+      501,
+      20,
+      5485,
+      1793978281187978039,
+      1793978281188517458
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_HANDOFF_POC_V01/work_to_chat.json": [
+      33152,
+      21316063,
+      501,
+      20,
+      2698,
+      1793978232598252217,
+      1793978232598252217
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_HANDOFF_POC_V01/work_to_chat.md": [
+      33152,
+      21316068,
+      501,
+      20,
+      3400,
+      1793978232734816243,
+      1793978232734816243
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_STEP5B_REMEDIATION_V01/ACCESS_POLICY_v0.2.md": [
+      33152,
+      21348875,
+      501,
+      20,
+      2823,
+      1794005052574143826,
+      1794005052574143826
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_STEP5B_REMEDIATION_V01/EVIDENCE_PROVENANCE_ADDENDUM.md": [
+      33152,
+      21348876,
+      501,
+      20,
+      2373,
+      1794005052574790704,
+      1794005052574790704
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_STEP5B_REMEDIATION_V01/HANDOFF_OUTPUT_CONTRACT_v0.2.md": [
+      33152,
+      21348874,
+      501,
+      20,
+      2535,
+      1794005052573420739,
+      1794005052573420739
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_STEP5B_REMEDIATION_V01/STEP5C_PROMOTION_PLAN.md": [
+      33152,
+      21348877,
+      501,
+      20,
+      3004,
+      1794005052575388874,
+      1794005052575388874
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_STEP5B_REMEDIATION_V01/VERIFICATION.md": [
+      33152,
+      21348884,
+      501,
+      20,
+      2209,
+      1794005066197591816,
+      1794005066197591816
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_STEP5_FEEDBACK_V01/ACCESS_POLICY_v0.1.md": [
+      33152,
+      21347879,
+      501,
+      20,
+      1320,
+      1794003811365355742,
+      1794003811365355742
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_STEP5_FEEDBACK_V01/EVIDENCE_LEDGER.json": [
+      33152,
+      21347876,
+      501,
+      20,
+      7322,
+      1794003811364010734,
+      1794003811364010734
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_STEP5_FEEDBACK_V01/HANDOFF_OUTPUT_CONTRACT_v0.1.md": [
+      33152,
+      21347878,
+      501,
+      20,
+      1108,
+      1794003811364944448,
+      1794003811364944448
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_STEP5_FEEDBACK_V01/OPEN_ISSUES.md": [
+      33152,
+      21347880,
+      501,
+      20,
+      1044,
+      1794003811365806494,
+      1794003811365806494
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_STEP5_FEEDBACK_V01/STEP4B_CLOSEOUT.md": [
+      33152,
+      21347875,
+      501,
+      20,
+      1656,
+      1794003811363368106,
+      1794003811363368106
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_STEP5_FEEDBACK_V01/T2_EVIDENCE.md": [
+      33152,
+      21347877,
+      501,
+      20,
+      3695,
+      1794003811364492070,
+      1794003811364492070
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_STEP5_FEEDBACK_V01/VERIFICATION.md": [
+      33152,
+      21347886,
+      501,
+      20,
+      2000,
+      1794003825019968469,
+      1794003825019968469
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/HEADLESS_NATIVE_V0_1/라우터블 기술자산 백업 진단 v0.1.app": [
+      16832,
+      20995858,
+      501,
+      20
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/HEADLESS_NATIVE_V0_1/RoutablBackupDiagnosticApp.swift": [
+      33152,
+      20995850,
+      501,
+      20,
+      5004,
+      1793717511550819813,
+      1793717511550819813
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/HEADLESS_NATIVE_V0_1/RoutablNativeAccessProbe": [
+      33216,
+      20995812,
+      501,
+      20,
+      199288,
+      1793717386618599730,
+      1793717386618599730
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/HEADLESS_NATIVE_V0_1/RoutablNativeAccessProbe.swift": [
+      33152,
+      20995695,
+      501,
+      20,
+      4546,
+      1793717366554080574,
+      1793717366554080574
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/HEADLESS_NATIVE_V0_1/라우터블 기술자산 백업 진단 v0.1.app/Contents": [
+      16832,
+      20995859,
+      501,
+      20
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/HEADLESS_NATIVE_V0_1/라우터블 기술자산 백업 진단 v0.1.app/Contents/MacOS": [
+      16832,
+      20995860,
+      501,
+      20
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/HEADLESS_NATIVE_V0_1/라우터블 기술자산 백업 진단 v0.1.app/Contents/_CodeSignature": [
+      16832,
+      20995961,
+      501,
+      20
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/HEADLESS_NATIVE_V0_1/라우터블 기술자산 백업 진단 v0.1.app/Contents/Info.plist": [
+      33152,
+      20995861,
+      501,
+      20,
+      779,
+      1793717482711733495,
+      1793717482711733495
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/HEADLESS_NATIVE_V0_1/라우터블 기술자산 백업 진단 v0.1.app/Contents/MacOS/RoutablBackupDiagnosticApp": [
+      33216,
+      20995963,
+      501,
+      20,
+      83904,
+      1793717544940931676,
+      1793717544941393428
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/HEADLESS_NATIVE_V0_1/라우터블 기술자산 백업 진단 v0.1.app/Contents/MacOS/RoutablNativeAccessProbe": [
+      33216,
+      20995960,
+      501,
+      20,
+      135168,
+      1793717544930690165,
+      1793717544931125917
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/HEADLESS_NATIVE_V0_1/라우터블 기술자산 백업 진단 v0.1.app/Contents/_CodeSignature/CodeResources": [
+      33152,
+      20995962,
+      501,
+      20,
+      2442,
+      1793717544936002401,
+      1793717544936002401
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/HEADLESS_NATIVE_V0_2/라우터블 백업 자동실행 준비 v0.2.app": [
+      16832,
+      21003029,
+      501,
+      20
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/HEADLESS_NATIVE_V0_2/ROUTABLBackupAgent.swift": [
+      33152,
+      21002990,
+      501,
+      20,
+      4422,
+      1793723430600826657,
+      1793723430600826657
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/HEADLESS_NATIVE_V0_2/ROUTABLBackupManager.swift": [
+      33152,
+      21003011,
+      501,
+      20,
+      7405,
+      1793723451349010020,
+      1793723451349010020
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/HEADLESS_NATIVE_V0_2/ROUTABLHeadlessGuardTests_v0_1.py": [
+      33152,
+      21003169,
+      501,
+      20,
+      4622,
+      1793723578393324742,
+      1793723578393324742
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/HEADLESS_NATIVE_V0_2/라우터블 백업 자동실행 준비 v0.2.app/Contents": [
+      16832,
+      21003030,
+      501,
+      20
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/HEADLESS_NATIVE_V0_2/라우터블 백업 자동실행 준비 v0.2.app/Contents/Library": [
+      16832,
+      21003032,
+      501,
+      20
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/HEADLESS_NATIVE_V0_2/라우터블 백업 자동실행 준비 v0.2.app/Contents/MacOS": [
+      16832,
+      21003031,
+      501,
+      20
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/HEADLESS_NATIVE_V0_2/라우터블 백업 자동실행 준비 v0.2.app/Contents/_CodeSignature": [
+      16832,
+      21003118,
+      501,
+      20
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/HEADLESS_NATIVE_V0_2/라우터블 백업 자동실행 준비 v0.2.app/Contents/Info.plist": [
+      33152,
+      21003034,
+      501,
+      20,
+      760,
+      1793723430603923758,
+      1793723430603923758
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/HEADLESS_NATIVE_V0_2/라우터블 백업 자동실행 준비 v0.2.app/Contents/Library/LaunchAgents": [
+      16832,
+      21003033,
+      501,
+      20
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/HEADLESS_NATIVE_V0_2/라우터블 백업 자동실행 준비 v0.2.app/Contents/Library/LaunchAgents/com.routabl.assetbackup.native.v02.plist": [
+      33152,
+      21003035,
+      501,
+      20,
+      643,
+      1793723430604785430,
+      1793723430604785430
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/HEADLESS_NATIVE_V0_2/라우터블 백업 자동실행 준비 v0.2.app/Contents/MacOS/ROUTABLBackupAgent": [
+      33216,
+      21003117,
+      501,
+      20,
+      112480,
+      1793723478751049738,
+      1793723478751343240
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/HEADLESS_NATIVE_V0_2/라우터블 백업 자동실행 준비 v0.2.app/Contents/MacOS/ROUTABLBackupManager": [
+      33216,
+      21003120,
+      501,
+      20,
+      83728,
+      1793723478757153314,
+      1793723478757470524
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/HEADLESS_NATIVE_V0_2/라우터블 백업 자동실행 준비 v0.2.app/Contents/_CodeSignature/CodeResources": [
+      33152,
+      21003119,
+      501,
+      20,
+      2619,
+      1793723478754414423,
+      1793723478754414423
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/HEADLESS_NATIVE_V0_3/라우터블 백업 권한·안전관리 v0.3.app": [
+      16832,
+      21006445,
+      501,
+      20
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/HEADLESS_NATIVE_V0_3/ROUTABLBackupAgent": [
+      33216,
+      21006296,
+      501,
+      20,
+      105184,
+      1793725698351643785,
+      1793725698351643785
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/HEADLESS_NATIVE_V0_3/ROUTABLBackupAgent.swift": [
+      33152,
+      21006123,
+      501,
+      20,
+      7474,
+      1793725693306333093,
+      1793725693306333093
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/HEADLESS_NATIVE_V0_3/ROUTABLBackupManager": [
+      33216,
+      21006393,
+      501,
+      20,
+      84440,
+      1793725775768251216,
+      1793725775768251216
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/HEADLESS_NATIVE_V0_3/ROUTABLBackupManager.swift": [
+      33152,
+      21006388,
+      501,
+      20,
+      7741,
+      1793725773365416456,
+      1793725773365416456
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/HEADLESS_NATIVE_V0_3/라우터블 백업 권한·안전관리 v0.3.app/Contents": [
+      16832,
+      21006446,
+      501,
+      20
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/HEADLESS_NATIVE_V0_3/라우터블 백업 권한·안전관리 v0.3.app/Contents/Library": [
+      16832,
+      21006447,
+      501,
+      20
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/HEADLESS_NATIVE_V0_3/라우터블 백업 권한·안전관리 v0.3.app/Contents/MacOS": [
+      16832,
+      21006449,
+      501,
+      20
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/HEADLESS_NATIVE_V0_3/라우터블 백업 권한·안전관리 v0.3.app/Contents/_CodeSignature": [
+      16832,
+      21006455,
+      501,
+      20
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/HEADLESS_NATIVE_V0_3/라우터블 백업 권한·안전관리 v0.3.app/Contents/Info.plist": [
+      33152,
+      21006450,
+      501,
+      20,
+      1205,
+      1793725811765684704,
+      1793725811765684704
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/HEADLESS_NATIVE_V0_3/라우터블 백업 권한·안전관리 v0.3.app/Contents/Library/LaunchAgents": [
+      16832,
+      21006448,
+      501,
+      20
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/HEADLESS_NATIVE_V0_3/라우터블 백업 권한·안전관리 v0.3.app/Contents/Library/LaunchAgents/com.routabl.assetbackup.native.safe.plist": [
+      33152,
+      21006451,
+      501,
+      20,
+      632,
+      1793725811766430417,
+      1793725811766430417
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/HEADLESS_NATIVE_V0_3/라우터블 백업 권한·안전관리 v0.3.app/Contents/MacOS/ROUTABLBackupAgent": [
+      33216,
+      21006454,
+      501,
+      20,
+      104736,
+      1793725811850607752,
+      1793725811850963087
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/HEADLESS_NATIVE_V0_3/라우터블 백업 권한·안전관리 v0.3.app/Contents/MacOS/ROUTABLBackupManager": [
+      33216,
+      21006457,
+      501,
+      20,
+      84112,
+      1793725811856581040,
+      1793725811856892459
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/HEADLESS_NATIVE_V0_3/라우터블 백업 권한·안전관리 v0.3.app/Contents/_CodeSignature/CodeResources": [
+      33152,
+      21006456,
+      501,
+      20,
+      2620,
+      1793725811854251942,
+      1793725811854251942
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/HEADLESS_NATIVE_V0_4/라우터블 백업 권한·안전관리 v0.4.app": [
+      16832,
+      21008078,
+      501,
+      20
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/HEADLESS_NATIVE_V0_4/ROUTABLBackupAgent": [
+      33216,
+      21008033,
+      501,
+      20,
+      105632,
+      1793727385853434610,
+      1793727385853434610
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/HEADLESS_NATIVE_V0_4/ROUTABLBackupAgent.swift": [
+      33152,
+      21008022,
+      501,
+      20,
+      8979,
+      1793727379528198905,
+      1793727379528198905
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/HEADLESS_NATIVE_V0_4/ROUTABLBackupManager": [
+      33216,
+      21008062,
+      501,
+      20,
+      111384,
+      1793727429654257051,
+      1793727429654257051
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/HEADLESS_NATIVE_V0_4/ROUTABLBackupManager.swift": [
+      33152,
+      21008055,
+      501,
+      20,
+      11105,
+      1793727426239569218,
+      1793727426239569218
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/HEADLESS_NATIVE_V0_4/ROUTABLVolumePermissionProbe": [
+      33216,
+      21008027,
+      501,
+      20,
+      110288,
+      1793727382354211439,
+      1793727382354211439
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/HEADLESS_NATIVE_V0_4/ROUTABLVolumePermissionProbe.swift": [
+      33152,
+      21008005,
+      501,
+      20,
+      2621,
+      1793727350858263758,
+      1793727350858263758
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/HEADLESS_NATIVE_V0_4/라우터블 백업 권한·안전관리 v0.4.app/Contents": [
+      16832,
+      21008079,
+      501,
+      20
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/HEADLESS_NATIVE_V0_4/라우터블 백업 권한·안전관리 v0.4.app/Contents/Library": [
+      16832,
+      21008081,
+      501,
+      20
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/HEADLESS_NATIVE_V0_4/라우터블 백업 권한·안전관리 v0.4.app/Contents/MacOS": [
+      16832,
+      21008080,
+      501,
+      20
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/HEADLESS_NATIVE_V0_4/라우터블 백업 권한·안전관리 v0.4.app/Contents/_CodeSignature": [
+      16832,
+      21008090,
+      501,
+      20
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/HEADLESS_NATIVE_V0_4/라우터블 백업 권한·안전관리 v0.4.app/Contents/Info.plist": [
+      33152,
+      21008083,
+      501,
+      20,
+      1210,
+      1793727465564626602,
+      1793727465564626602
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/HEADLESS_NATIVE_V0_4/라우터블 백업 권한·안전관리 v0.4.app/Contents/Library/LaunchAgents": [
+      16832,
+      21008082,
+      501,
+      20
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/HEADLESS_NATIVE_V0_4/라우터블 백업 권한·안전관리 v0.4.app/Contents/Library/LaunchAgents/com.routabl.assetbackup.native.safe.plist": [
+      33152,
+      21008084,
+      501,
+      20,
+      632,
+      1793727465565883151,
+      1793727465565883151
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/HEADLESS_NATIVE_V0_4/라우터블 백업 권한·안전관리 v0.4.app/Contents/MacOS/ROUTABLBackupAgent": [
+      33216,
+      21008089,
+      501,
+      20,
+      105184,
+      1793727465647324844,
+      1793727465647687346
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/HEADLESS_NATIVE_V0_4/라우터블 백업 권한·안전관리 v0.4.app/Contents/MacOS/ROUTABLBackupManager": [
+      33216,
+      21008092,
+      501,
+      20,
+      110896,
+      1793727465653590468,
+      1793727465653871136
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/HEADLESS_NATIVE_V0_4/라우터블 백업 권한·안전관리 v0.4.app/Contents/MacOS/ROUTABLVolumePermissionProbe": [
+      33216,
+      21008088,
+      501,
+      20,
+      109792,
+      1793727465647324719,
+      1793727465647819639
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/HEADLESS_NATIVE_V0_4/라우터블 백업 권한·안전관리 v0.4.app/Contents/_CodeSignature/CodeResources": [
+      33152,
+      21008091,
+      501,
+      20,
+      2858,
+      1793727465651622330,
+      1793727465651622330
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/HEADLESS_NATIVE_V0_4_1/라우터블 백업 권한·안전관리 v0.4.1.app": [
+      16832,
+      21008662,
+      501,
+      20
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/HEADLESS_NATIVE_V0_4_1/ROUTABLBackupAgent": [
+      33216,
+      21008660,
+      501,
+      20,
+      105632,
+      1793727385853434610,
+      1793727771854744344
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/HEADLESS_NATIVE_V0_4_1/ROUTABLBackupManager.swift": [
+      33152,
+      21008659,
+      501,
+      20,
+      11107,
+      1793727771853554382,
+      1793727771853554382
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/HEADLESS_NATIVE_V0_4_1/ROUTABLVolumePermissionProbe": [
+      33216,
+      21008661,
+      501,
+      20,
+      110288,
+      1793727382354211439,
+      1793727771855638390
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/HEADLESS_NATIVE_V0_4_1/라우터블 백업 권한·안전관리 v0.4.1.app/Contents": [
+      16832,
+      21008663,
+      501,
+      20
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/HEADLESS_NATIVE_V0_4_1/라우터블 백업 권한·안전관리 v0.4.1.app/Contents/Library": [
+      16832,
+      21008665,
+      501,
+      20
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/HEADLESS_NATIVE_V0_4_1/라우터블 백업 권한·안전관리 v0.4.1.app/Contents/MacOS": [
+      16832,
+      21008664,
+      501,
+      20
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/HEADLESS_NATIVE_V0_4_1/라우터블 백업 권한·안전관리 v0.4.1.app/Contents/_CodeSignature": [
+      16832,
+      21008707,
+      501,
+      20
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/HEADLESS_NATIVE_V0_4_1/라우터블 백업 권한·안전관리 v0.4.1.app/Contents/Info.plist": [
+      33152,
+      21008667,
+      501,
+      20,
+      1215,
+      1793727771857787898,
+      1793727771857787898
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/HEADLESS_NATIVE_V0_4_1/라우터블 백업 권한·안전관리 v0.4.1.app/Contents/Library/LaunchAgents": [
+      16832,
+      21008666,
+      501,
+      20
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/HEADLESS_NATIVE_V0_4_1/라우터블 백업 권한·안전관리 v0.4.1.app/Contents/Library/LaunchAgents/com.routabl.assetbackup.native.v041.plist": [
+      33152,
+      21008668,
+      501,
+      20,
+      632,
+      1793727771858640693,
+      1793727771858640693
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/HEADLESS_NATIVE_V0_4_1/라우터블 백업 권한·안전관리 v0.4.1.app/Contents/MacOS/ROUTABLBackupAgent": [
+      33216,
+      21008706,
+      501,
+      20,
+      105184,
+      1793727775155398322,
+      1793727775155703739
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/HEADLESS_NATIVE_V0_4_1/라우터블 백업 권한·안전관리 v0.4.1.app/Contents/MacOS/ROUTABLBackupManager": [
+      33216,
+      21008709,
+      501,
+      20,
+      110896,
+      1793727775161779722,
+      1793727775162066265
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/HEADLESS_NATIVE_V0_4_1/라우터블 백업 권한·안전관리 v0.4.1.app/Contents/MacOS/ROUTABLVolumePermissionProbe": [
+      33216,
+      21008705,
+      501,
+      20,
+      109792,
+      1793727775155399780,
+      1793727775155780323
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/HEADLESS_NATIVE_V0_4_1/라우터블 백업 권한·안전관리 v0.4.1.app/Contents/_CodeSignature/CodeResources": [
+      33152,
+      21008708,
+      501,
+      20,
+      2858,
+      1793727775159696922,
+      1793727775159696922
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/HEADLESS_NATIVE_V0_4_2/라우터블 백업 권한·안전관리 v0.4.2.app": [
+      16832,
+      21009274,
+      501,
+      20
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/HEADLESS_NATIVE_V0_4_2/ROUTABLBackupAgent.swift": [
+      33152,
+      21009271,
+      501,
+      20,
+      9095,
+      1793728032764367622,
+      1793728032764367622
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/HEADLESS_NATIVE_V0_4_2/ROUTABLBackupManager.swift": [
+      33152,
+      21009272,
+      501,
+      20,
+      11107,
+      1793728032765205709,
+      1793728032765205709
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/HEADLESS_NATIVE_V0_4_2/ROUTABLVolumePermissionProbe": [
+      33216,
+      21009273,
+      501,
+      20,
+      110288,
+      1793727382354211439,
+      1793728032766902800
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/HEADLESS_NATIVE_V0_4_2/라우터블 백업 권한·안전관리 v0.4.2.app/Contents": [
+      16832,
+      21009275,
+      501,
+      20
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/HEADLESS_NATIVE_V0_4_2/라우터블 백업 권한·안전관리 v0.4.2.app/Contents/Library": [
+      16832,
+      21009277,
+      501,
+      20
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/HEADLESS_NATIVE_V0_4_2/라우터블 백업 권한·안전관리 v0.4.2.app/Contents/MacOS": [
+      16832,
+      21009276,
+      501,
+      20
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/HEADLESS_NATIVE_V0_4_2/라우터블 백업 권한·안전관리 v0.4.2.app/Contents/_CodeSignature": [
+      16832,
+      21009358,
+      501,
+      20
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/HEADLESS_NATIVE_V0_4_2/라우터블 백업 권한·안전관리 v0.4.2.app/Contents/Info.plist": [
+      33152,
+      21009279,
+      501,
+      20,
+      1215,
+      1793728032768860767,
+      1793728032768860767
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/HEADLESS_NATIVE_V0_4_2/라우터블 백업 권한·안전관리 v0.4.2.app/Contents/Library/LaunchAgents": [
+      16832,
+      21009278,
+      501,
+      20
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/HEADLESS_NATIVE_V0_4_2/라우터블 백업 권한·안전관리 v0.4.2.app/Contents/Library/LaunchAgents/com.routabl.assetbackup.native.v042.plist": [
+      33152,
+      21009280,
+      501,
+      20,
+      632,
+      1793728032769798688,
+      1793728032769798688
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/HEADLESS_NATIVE_V0_4_2/라우터블 백업 권한·안전관리 v0.4.2.app/Contents/MacOS/ROUTABLBackupAgent": [
+      33216,
+      21009357,
+      501,
+      20,
+      105520,
+      1793728059595495908,
+      1793728059595823909
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/HEADLESS_NATIVE_V0_4_2/라우터블 백업 권한·안전관리 v0.4.2.app/Contents/MacOS/ROUTABLBackupManager": [
+      33216,
+      21009360,
+      501,
+      20,
+      110896,
+      1793728059601749436,
+      1793728059602035312
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/HEADLESS_NATIVE_V0_4_2/라우터블 백업 권한·안전관리 v0.4.2.app/Contents/MacOS/ROUTABLVolumePermissionProbe": [
+      33216,
+      21009356,
+      501,
+      20,
+      109792,
+      1793728059595494408,
+      1793728059595914785
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/HEADLESS_NATIVE_V0_4_2/라우터블 백업 권한·안전관리 v0.4.2.app/Contents/_CodeSignature/CodeResources": [
+      33152,
+      21009359,
+      501,
+      20,
+      2858,
+      1793728059599764677,
+      1793728059599764677
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/NAS_INDEPENDENT_RESTORE_20261103_071431_KST/ROUTABL-SecureBackup.sparsebundle": [
+      16832,
+      20762165,
+      501,
+      20
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/NAS_INDEPENDENT_RESTORE_20261103_071431_KST/RESTORE_COPY_CHECK.json": [
+      33152,
+      20762184,
+      501,
+      20,
+      497,
+      1793657720390512313,
+      1793657720390873398
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/NAS_INDEPENDENT_RESTORE_20261103_071431_KST/ROUTABL-SecureBackup.sparsebundle/bands": [
+      16832,
+      20762168,
+      501,
+      20
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/NAS_INDEPENDENT_RESTORE_20261103_071431_KST/ROUTABL-SecureBackup.sparsebundle/mapped": [
+      16832,
+      20762180,
+      501,
+      20
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/NAS_INDEPENDENT_RESTORE_20261103_071431_KST/ROUTABL-SecureBackup.sparsebundle/Info.bckup": [
+      33152,
+      20762166,
+      501,
+      20,
+      570,
+      1793657718965481200,
+      1793657718966726748
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/NAS_INDEPENDENT_RESTORE_20261103_071431_KST/ROUTABL-SecureBackup.sparsebundle/Info.plist": [
+      33152,
+      20762167,
+      501,
+      20,
+      570,
+      1793657718969218053,
+      1793657718970426226
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/NAS_INDEPENDENT_RESTORE_20261103_071431_KST/ROUTABL-SecureBackup.sparsebundle/lock": [
+      33152,
+      20762179,
+      501,
+      20,
+      0,
+      1793657719148681632,
+      1793657719149937305
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/NAS_INDEPENDENT_RESTORE_20261103_071431_KST/ROUTABL-SecureBackup.sparsebundle/token": [
+      33152,
+      20762183,
+      501,
+      20,
+      122368,
+      1793657719159620440,
+      1793657719160791779
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/NAS_INDEPENDENT_RESTORE_20261103_071431_KST/ROUTABL-SecureBackup.sparsebundle/bands/0": [
+      33152,
+      20762169,
+      501,
+      20,
+      3264512,
+      1793657718975826630,
+      1793657718977248762
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/NAS_INDEPENDENT_RESTORE_20261103_071431_KST/ROUTABL-SecureBackup.sparsebundle/bands/19": [
+      33152,
+      20762170,
+      501,
+      20,
+      2117632,
+      1793657718985520098,
+      1793657718986878522
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/NAS_INDEPENDENT_RESTORE_20261103_071431_KST/ROUTABL-SecureBackup.sparsebundle/bands/1f": [
+      33152,
+      20762171,
+      501,
+      20,
+      8388608,
+      1793657718997404828,
+      1793657718999547047
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/NAS_INDEPENDENT_RESTORE_20261103_071431_KST/ROUTABL-SecureBackup.sparsebundle/bands/20": [
+      33152,
+      20762172,
+      501,
+      20,
+      8388608,
+      1793657719019690030,
+      1793657719021879833
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/NAS_INDEPENDENT_RESTORE_20261103_071431_KST/ROUTABL-SecureBackup.sparsebundle/bands/21": [
+      33152,
+      20762173,
+      501,
+      20,
+      8388608,
+      1793657719042503234,
+      1793657719044672787
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/NAS_INDEPENDENT_RESTORE_20261103_071431_KST/ROUTABL-SecureBackup.sparsebundle/bands/22": [
+      33152,
+      20762174,
+      501,
+      20,
+      8388608,
+      1793657719066130693,
+      1793657719068296829
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/NAS_INDEPENDENT_RESTORE_20261103_071431_KST/ROUTABL-SecureBackup.sparsebundle/bands/23": [
+      33152,
+      20762175,
+      501,
+      20,
+      8388608,
+      1793657719088665479,
+      1793657719090823491
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/NAS_INDEPENDENT_RESTORE_20261103_071431_KST/ROUTABL-SecureBackup.sparsebundle/bands/24": [
+      33152,
+      20762176,
+      501,
+      20,
+      3121152,
+      1793657719108005582,
+      1793657719109701133
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/NAS_INDEPENDENT_RESTORE_20261103_071431_KST/ROUTABL-SecureBackup.sparsebundle/bands/63": [
+      33152,
+      20762177,
+      501,
+      20,
+      2273280,
+      1793657719118024635,
+      1793657719119847853
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/NAS_INDEPENDENT_RESTORE_20261103_071431_KST/ROUTABL-SecureBackup.sparsebundle/bands/9ff": [
+      33152,
+      20762178,
+      501,
+      20,
+      8388608,
+      1793657719131077705,
+      1793657719133524051
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/NAS_INDEPENDENT_RESTORE_20261103_071431_KST/ROUTABL-SecureBackup.sparsebundle/mapped/63": [
+      33152,
+      20762181,
+      501,
+      20,
+      256,
+      1793657719152671153,
+      1793657719153925743
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/NAS_INDEPENDENT_RESTORE_20261103_071431_KST/ROUTABL-SecureBackup.sparsebundle/mapped/9ff": [
+      33152,
+      20762182,
+      501,
+      20,
+      256,
+      1793657719156281214,
+      1793657719157353261
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/RESTORE_TEST_20261103_v1/01_라우터블개발백서_최종내부기준판_v4.1.pdf": [
+      33152,
+      20747107,
+      501,
+      20,
+      4907472,
+      1793634627538338499,
+      1793634627539580296
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/RESTORE_TEST_20261103_v1/asset_manifest_v0.3.json": [
+      33152,
+      20747106,
+      501,
+      20,
+      9753,
+      1793634627526606111,
+      1793634627527004404
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_ADDRESSBOOK_REUSE_20261105_v01": [
+      16832,
+      21150645,
+      501,
+      20
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_INTEGRATION_20261104_v01": [
+      16832,
+      21040091,
+      501,
+      20
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_OFFICIAL_CHATGPT_EXPORT_20261105_v01": [
+      16832,
+      21157760,
+      501,
+      20
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/IMMUTABLE_RECEIPTS_20261103": [
+      16832,
+      20996372,
+      501,
+      20
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/.DS_Store": [
+      33188,
+      21073244,
+      501,
+      20,
+      10244,
+      1793789259395590722,
+      1793789259395590722
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120-2-W_CW01_STEP2_VERIFICATION_v1.0.md": [
+      33152,
+      21315517,
+      501,
+      20,
+      2172,
+      1793977331855667949,
+      1793977331857486458
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_HEADLESS_V03_FINAL_JOINT_HANDOFF_POSTBACKUP_20261104.md": [
+      33152,
+      21007606,
+      501,
+      20,
+      6276,
+      1793726867578427032,
+      1793726867578427032
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_JOINT_GUI_AND_NAS_RESTORE_GATE_20261104.md": [
+      33152,
+      21000972,
+      501,
+      20,
+      4670,
+      1793721792452571250,
+      1793721792452571250
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_MAC_NAS_CAS_CONSOLIDATED_PREBACKUP_QA_20261103.md": [
+      33152,
+      20996235,
+      501,
+      20,
+      5529,
+      1793717853937556843,
+      1793717853937556843
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_MAC_NAS_FINAL_ACCEPTANCE_AND_JOINT_ACTIONS_20261104.md": [
+      33152,
+      20997095,
+      501,
+      20,
+      7470,
+      1793718728288586568,
+      1793718728288586568
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_MAC_NAS_HEADLESS_V03_FAILCLOSED_AND_TCC_GATE_20261104.md": [
+      33152,
+      21006760,
+      501,
+      20,
+      7527,
+      1793726093104348238,
+      1793726093104348238
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_TCC_BACKGROUND_APPROVAL_AND_SMB_HANG_20261104.md": [
+      33152,
+      21005948,
+      501,
+      20,
+      3749,
+      1793725082098804313,
+      1793725082098804313
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_V042_DIAGNOSTIC_BACKGROUND_TCC_RESULT_20261104.md": [
+      33152,
+      21010061,
+      501,
+      20,
+      7026,
+      1793728570515610654,
+      1793728570515610654
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/ASSET_POLICY_AND_SEARCH_V1_3_20261103_v1.0.md": [
+      33152,
+      20980276,
+      501,
+      20,
+      2796,
+      1793700546407492801,
+      1793700546407762428
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/ASSET_SEARCH_V1_2_AND_CROSSWALK_20261103_v1.0.md": [
+      33152,
+      20964962,
+      501,
+      20,
+      3275,
+      1793670056954872192,
+      1793670056955066735
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/ASSET_SEARCH_V1_4_FINDER_LAUNCH_AND_REFRESH_20261103.md": [
+      33152,
+      20981505,
+      501,
+      20,
+      2395,
+      1793702300481163857,
+      1793702300481448400
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/ASSET_SEARCH_V1_4_REAL_USE_QUALITY_QA_20261103_v1.0.json": [
+      33152,
+      20982500,
+      501,
+      20,
+      3311,
+      1793702932200157826,
+      1793702932200258201
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/ASSET_SEARCH_V1_4_REAL_USE_QUALITY_QA_20261103_v1.0.md": [
+      33152,
+      20982499,
+      501,
+      20,
+      5003,
+      1793702932199780032,
+      1793702932200223576
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/ASSET_SEARCH_V1_5_RELEVANCE_AND_FINDER_QA_20261103_v1.0.json": [
+      33152,
+      20983857,
+      501,
+      20,
+      2672,
+      1793703859751327501,
+      1793703859751487460
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/ASSET_SEARCH_V1_5_RELEVANCE_AND_FINDER_QA_20261103_v1.0.md": [
+      33152,
+      20983856,
+      501,
+      20,
+      3288,
+      1793703859750539289,
+      1793703859751440543
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/ASSET_SEARCH_V1_5_USER_FIELD_VERIFICATION_20261103.md": [
+      33152,
+      20986119,
+      501,
+      20,
+      1219,
+      1793705082489693372,
+      1793705082489916498
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/ASSET_V21_BATCH_COMPLETION_AND_GATES_20261103.md": [
+      33152,
+      20989479,
+      501,
+      20,
+      6223,
+      1793710170808438393,
+      1793710170808438393
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/ASSET_V2_LOCAL_NAS_ENCRYPTED_BACKUP_AND_RESTORE_QA_20261103.md": [
+      33152,
+      20987775,
+      501,
+      20,
+      5352,
+      1793706638413846164,
+      1793706638413846164
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/ASSET_V2_RESTORE_AUTOMATION_GATES_20261103_v1.0.md": [
+      33152,
+      20988810,
+      501,
+      20,
+      3351,
+      1793708813114341458,
+      1793708813114341458
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/AUTO_BACKUP_TERMINAL_STORM_SAFETY_PAUSE_20261103_v1.0.md": [
+      33152,
+      20955611,
+      501,
+      20,
+      2992,
+      1793662342959162928,
+      1793662342959162928
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/BASELINE_AUDIT_20261103_v0.1.md": [
+      33152,
+      20745694,
+      501,
+      20,
+      3056,
+      1793632862872197473,
+      1793632862872197473
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/DAILY_AUTO_BACKUP_SETUP_20261103_v1.0.md": [
+      33152,
+      20761828,
+      501,
+      20,
+      2960,
+      1793657286051931368,
+      1793657286051931368
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/DRIVE_DESKTOP_SETUP_20261103_v1.0.md": [
+      33152,
+      20894066,
+      501,
+      20,
+      2830,
+      1793659242590521471,
+      1793659242590521471
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/DRIVE_FILEPROVIDER_AND_LAUNCHD_FIX_20261103_v1.0.md": [
+      33152,
+      20954679,
+      501,
+      20,
+      4837,
+      1793661602451191917,
+      1793661602451191917
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/DRIVE_REMOTE_RESTORE_AND_AUTOUPLOAD_20261103_v1.0.md": [
+      33152,
+      20951341,
+      501,
+      20,
+      4343,
+      1793660575876408283,
+      1793660575876408283
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/HEADLESS_ACCESS_DIAGNOSTIC_V01_AND_APP_SERVICE_GATE_20261103.md": [
+      33152,
+      20993095,
+      501,
+      20,
+      6221,
+      1793715224055248708,
+      1793715224055248708
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/HEADLESS_BACKUP_PREFLIGHT_AND_COVERAGE_20261103_v1.0.md": [
+      33152,
+      20986095,
+      501,
+      20,
+      4026,
+      1793704986705107401,
+      1793704986705388361
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/LOCAL_IMPORT_AND_SECURITY_20261103_v0.1.md": [
+      33152,
+      20745922,
+      501,
+      20,
+      1693,
+      1793633197099917888,
+      1793633197099917888
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/NAS_DECRYPTED_READONLY_INTERNAL_VERIFICATION_20261104.json": [
+      33152,
+      21002600,
+      501,
+      20,
+      801,
+      1793722830433317827,
+      1793722830433467162
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/NAS_INCREMENTAL_CAS_V01_BASELINE_AND_HEADLESS_DIAGNOSIS_20261103.md": [
+      33152,
+      20992029,
+      501,
+      20,
+      5267,
+      1793713680473664250,
+      1793713680473664250
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/NAS_V2_FULL_IMAGE_RESTORE_SSD_QA_20261103.md": [
+      33152,
+      20987829,
+      501,
+      20,
+      2168,
+      1793706801585541479,
+      1793706801585541479
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/REMOTE_BACKUP_NAS_DRIVE_20261103_v1.0.md": [
+      33152,
+      20762548,
+      501,
+      20,
+      4231,
+      1793658184628531690,
+      1793658184628531690
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/SEALED_ARCHIVE_97-1_v4.1_20261103_v0.1.md": [
+      33152,
+      20745852,
+      501,
+      20,
+      1582,
+      1793633042160796161,
+      1793633042160796161
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/SECURE_BACKUP_IMPLEMENTED_20261103_v1.0.md": [
+      33152,
+      20747247,
+      501,
+      20,
+      3298,
+      1793634863180629264,
+      1793634863180629264
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/SECURE_BACKUP_SETUP_20261103_PENDING_v0.1.md": [
+      33152,
+      20746770,
+      501,
+      20,
+      1895,
+      1793634510902086941,
+      1793634510902086941
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/STORAGE_ENCRYPTION_ADDENDUM_20261103_v0.1.md": [
+      33152,
+      20745983,
+      501,
+      20,
+      1165,
+      1793633320805607677,
+      1793633320805607677
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_ADDRESSBOOK_REUSE_20261105_v01/ADDRESSBOOK_EVIDENCE_AND_ACCEPTANCE_v0.1.json": [
+      33152,
+      21150915,
+      501,
+      20,
+      1848,
+      1793868446869935394,
+      1793868446869935394
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_ADDRESSBOOK_REUSE_20261105_v01/ADDRESSBOOK_FAILURE_AND_RECOVERY_CASE_v0.1.md": [
+      33152,
+      21150864,
+      501,
+      20,
+      4143,
+      1793868401536705585,
+      1793868401536705585
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_ADDRESSBOOK_REUSE_20261105_v01/ADDRESSBOOK_REGISTRATION_RUNBOOK_v0.1.md": [
+      33152,
+      21150899,
+      501,
+      20,
+      4334,
+      1793868430593447292,
+      1793868430593447292
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_INTEGRATION_20261104_v01/IMMUTABLE_RECEIPTS": [
+      16832,
+      21040092,
+      501,
+      20
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_INTEGRATION_20261104_v01/POSTBACKUP_V015_RECEIPTS_20261104": [
+      16832,
+      21041130,
+      501,
+      20
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_INTEGRATION_20261104_v01/120_TECH_ASSET_CONSOLIDATED_v0.1.md": [
+      33152,
+      21040099,
+      501,
+      20,
+      5170,
+      1793752164103149466,
+      1793752164103437342
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_INTEGRATION_20261104_v01/EVIDENCE_CATALOG_v0.1.json": [
+      33152,
+      21040101,
+      501,
+      20,
+      10555,
+      1793752164106275482,
+      1793752164106510483
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_INTEGRATION_20261104_v01/OPEN_ISSUES_FOR_OWNER_v0.1.md": [
+      33152,
+      21040100,
+      501,
+      20,
+      2808,
+      1793752164103925595,
+      1793752164104130846
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_INTEGRATION_20261104_v01/POSTBACKUP_V015_FINAL_STATUS_v0.1.md": [
+      33152,
+      21041116,
+      501,
+      20,
+      2147,
+      1793753039923230892,
+      1793753039923230892
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_INTEGRATION_20261104_v01/POSTBACKUP_V015_RECEIPT_ARCHIVE_v0.1.json": [
+      33152,
+      21041188,
+      501,
+      20,
+      1407,
+      1793753170464806853,
+      1793753170464806853
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_INTEGRATION_20261104_v01/PROVENANCE_ORIGINAL_ACCESS_v0.1.md": [
+      33152,
+      21040098,
+      501,
+      20,
+      2707,
+      1793752164102245336,
+      1793752164102540296
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_INTEGRATION_20261104_v01/REGISTER_ACCEPTANCE_v0.1.json": [
+      33152,
+      21040307,
+      501,
+      20,
+      1317,
+      1793752241668068568,
+      1793752241668422279
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_INTEGRATION_20261104_v01/IMMUTABLE_RECEIPTS/last_manual_mac_nas_cas_v01.json": [
+      33152,
+      21040096,
+      501,
+      20,
+      812,
+      1793752164007663154,
+      1793752164007753363
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_INTEGRATION_20261104_v01/IMMUTABLE_RECEIPTS/last_nas_cas_restore_qa_result.json": [
+      33152,
+      21040097,
+      501,
+      20,
+      682,
+      1793752164008436324,
+      1793752164008529866
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_INTEGRATION_20261104_v01/IMMUTABLE_RECEIPTS/last_native_backup_supervisor_v02.json": [
+      33152,
+      21040094,
+      501,
+      20,
+      536,
+      1793752164006168980,
+      1793752164006275855
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_INTEGRATION_20261104_v01/IMMUTABLE_RECEIPTS/last_native_launchagent_v04.json": [
+      33152,
+      21040093,
+      501,
+      20,
+      350,
+      1793752164005113891,
+      1793752164005356726
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_INTEGRATION_20261104_v01/IMMUTABLE_RECEIPTS/last_selective_v21_result.json": [
+      33152,
+      21040095,
+      501,
+      20,
+      689,
+      1793752164006926108,
+      1793752164007020817
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_INTEGRATION_20261104_v01/POSTBACKUP_V015_RECEIPTS_20261104/last_manual_mac_nas_cas_v01.json": [
+      33152,
+      21041158,
+      501,
+      20,
+      812,
+      1793753115388843016,
+      1793753115388843016
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_INTEGRATION_20261104_v01/POSTBACKUP_V015_RECEIPTS_20261104/last_native_backup_supervisor_v02.json": [
+      33152,
+      21041141,
+      501,
+      20,
+      536,
+      1793753088260766119,
+      1793753088260766119
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_INTEGRATION_20261104_v01/POSTBACKUP_V015_RECEIPTS_20261104/last_native_launchagent_v04.json": [
+      33152,
+      21041138,
+      501,
+      20,
+      350,
+      1793753136637279553,
+      1793753136637279553
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_INTEGRATION_20261104_v01/POSTBACKUP_V015_RECEIPTS_20261104/last_selective_v21_result.json": [
+      33152,
+      21041144,
+      501,
+      20,
+      689,
+      1793753140941910773,
+      1793753140941910773
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_OFFICIAL_CHATGPT_EXPORT_20261105_v01/120_EXTRACTION_VERIFICATION_v0.1.json": [
+      33152,
+      21159876,
+      501,
+      20,
+      1576,
+      1793882070179161573,
+      1793882070179290949
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_OFFICIAL_CHATGPT_EXPORT_20261105_v01/120_PDF_VS_OFFICIAL_EXPORT_COMPARISON_v0.1.md": [
+      33152,
+      21160112,
+      501,
+      20,
+      2762,
+      1793882213185058263,
+      1793882213185058263
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_OFFICIAL_CHATGPT_EXPORT_20261105_v01/AES256_FULL_EXPORT_BACKUP_AND_RESTORE_20261105_v0.1.json": [
+      33152,
+      21163178,
+      501,
+      20,
+      2034,
+      1793883851945947976,
+      1793883851946146727
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_OFFICIAL_CHATGPT_EXPORT_20261105_v01/AES256_FULL_EXPORT_BACKUP_AND_RESTORE_20261106_v0.2.json": [
+      33152,
+      21211492,
+      501,
+      20,
+      2120,
+      1793917939273894303,
+      1793917939274159680
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_OFFICIAL_CHATGPT_EXPORT_20261105_v01/AES256_OFFSITE_BACKUP_RESTORE_ACCEPTANCE_v0.1.md": [
+      33152,
+      21163597,
+      501,
+      20,
+      4445,
+      1793884003194567624,
+      1793884003194567624
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_OFFICIAL_CHATGPT_EXPORT_20261105_v01/AES256_V2_PASSWORD_NEWLINE_FIX_AND_RESTORE_20261106_v0.1.md": [
+      33152,
+      21211568,
+      501,
+      20,
+      4916,
+      1793918078751016899,
+      1793918078751016899
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_OFFICIAL_CHATGPT_EXPORT_20261105_v01/CHATGPT_ARCHIVE_PROJECT_GROUPS_GUI_V02_ACCEPTANCE_20261106_v0.1.md": [
+      33152,
+      21269839,
+      501,
+      20,
+      4395,
+      1793931656978342447,
+      1793931656978342447
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_OFFICIAL_CHATGPT_EXPORT_20261105_v01/CHATGPT_EXPORT_GUI_READABLE_ARCHIVE_ACCEPTANCE_20261106_v0.1.md": [
+      33152,
+      21250644,
+      501,
+      20,
+      4976,
+      1793920731103199267,
+      1793920731103199267
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_OFFICIAL_CHATGPT_EXPORT_20261105_v01/CHATGPT_GUI_V04_MARKDOWN_AND_RESTORE_20261106_v0.1.md": [
+      33152,
+      21299968,
+      501,
+      20,
+      5463,
+      1793964431765398253,
+      1793964431765398253
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_OFFICIAL_CHATGPT_EXPORT_20261105_v01/CHATGPT_V03_REAL_PROJECT_ID_COMPARISON_20261106_v0.1.md": [
+      33152,
+      21290729,
+      501,
+      20,
+      6089,
+      1793956432342062351,
+      1793956432342062351
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_OFFICIAL_CHATGPT_EXPORT_20261105_v01/GUI_V04_MISSING_CSS_AND_INDEPENDENCE_FIX_20261106_v0.1.md": [
+      33152,
+      21305610,
+      501,
+      20,
+      5674,
+      1793966016348164682,
+      1793966016348164682
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_OFFICIAL_CHATGPT_EXPORT_20261105_v01/LARGE_EXPORT_ENCRYPTED_BACKUP_GATE_v0.1.md": [
+      33152,
+      21160505,
+      501,
+      20,
+      2667,
+      1793882730179932000,
+      1793882730179932000
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_OFFICIAL_CHATGPT_EXPORT_20261105_v01/LIBRARY_AND_ATTACHMENTS_CROSSWALK_v0.1.md": [
+      33152,
+      21160425,
+      501,
+      20,
+      3013,
+      1793882612237607780,
+      1793882612237607780
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_OFFICIAL_CHATGPT_EXPORT_20261105_v01/LIBRARY_CONTENT_CROSSWALK_ADDENDUM_v0.2.md": [
+      33152,
+      21160886,
+      501,
+      20,
+      2208,
+      1793883001371048089,
+      1793883001371048089
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_OFFICIAL_CHATGPT_EXPORT_20261105_v01/OFFICIAL_EXPORT_INTEGRITY_RECEIPT_v0.1.json": [
+      33152,
+      21157761,
+      501,
+      20,
+      1983,
+      1793879087352597897,
+      1793879087353387692
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_OFFICIAL_CHATGPT_EXPORT_20261105_v01/ORIGINAL_ARCHIVE_AND_FOLLOWUP_v0.1.md": [
+      33152,
+      21157762,
+      501,
+      20,
+      1724,
+      1793879087353219108,
+      1793879087353411276
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_OFFICIAL_CHATGPT_EXPORT_20261105_v01/browser_acceptance_chatgpt_v04.js": [
+      33152,
+      21298070,
+      501,
+      20,
+      6033,
+      1793964288792164222,
+      1793964288792164222
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_OFFICIAL_CHATGPT_EXPORT_20261105_v01/build_chatgpt_offline_gui_v01.py": [
+      33152,
+      21244025,
+      501,
+      20,
+      14727,
+      1793920432285369001,
+      1793920432285369001
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_OFFICIAL_CHATGPT_EXPORT_20261105_v01/build_chatgpt_project_groups_v02.py": [
+      33152,
+      21262407,
+      501,
+      20,
+      7590,
+      1793931250024348065,
+      1793931250024348065
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_OFFICIAL_CHATGPT_EXPORT_20261105_v01/build_chatgpt_project_id_v03.py": [
+      33152,
+      21283378,
+      501,
+      20,
+      8743,
+      1793956150094881271,
+      1793956150094881271
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_OFFICIAL_CHATGPT_EXPORT_20261105_v01/build_chatgpt_v04_markdown_restore_overlay_20261106.py": [
+      33152,
+      21296308,
+      501,
+      20,
+      13679,
+      1793964357456765242,
+      1793964357456765242
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_OFFICIAL_CHATGPT_EXPORT_20261105_v01/chatgpt_export_safe_extract_20261106_v0.1.py": [
+      33152,
+      21240162,
+      501,
+      20,
+      3801,
+      1793920006515169288,
+      1793920006515169288
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_OFFICIAL_CHATGPT_EXPORT_20261105_v01/extract_120_official.py": [
+      33152,
+      21159858,
+      501,
+      20,
+      5166,
+      1793882058759249019,
+      1793882058759249019
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_OFFICIAL_CHATGPT_EXPORT_20261105_v01/fix_v04_independent_css_assets_20261106_v0.1.py": [
+      33152,
+      21301878,
+      501,
+      20,
+      6493,
+      1793965776804022026,
+      1793965776804022026
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_OFFICIAL_CHATGPT_EXPORT_20261105_v01/private_export_aes256_offsite_v01.py": [
+      33152,
+      21161483,
+      501,
+      20,
+      12026,
+      1793883720174636174,
+      1793883720174636174
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_OFFICIAL_CHATGPT_EXPORT_20261105_v01/private_export_aes256_offsite_v02.py": [
+      33152,
+      21211337,
+      501,
+      20,
+      12109,
+      1793917807890397962,
+      1793917807890397962
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_OFFICIAL_CHATGPT_EXPORT_20261105_v01/render_chatgpt_markdown_v04.js": [
+      33152,
+      21296940,
+      501,
+      20,
+      5338,
+      1793964126362957562,
+      1793964126362957562
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_OFFICIAL_CHATGPT_EXPORT_20261105_v01/test_v04_independent_layout_20261106.js": [
+      33152,
+      21303861,
+      501,
+      20,
+      6052,
+      1793965867832957990,
+      1793965867832957990
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/IMMUTABLE_RECEIPTS_20261103/ASSET-BACKUP-LOCAL-RECEIPT-V20__95d92363d6e3__last_selective_v2_result.json": [
+      33152,
+      20996373,
+      501,
+      20,
+      460,
+      1793718073435711159,
+      1793718073435952660
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/IMMUTABLE_RECEIPTS_20261103/ASSET-BACKUP-NAS-RECEIPT-V20__2f89829f483f__last_selective_nas_v2_result.json": [
+      33152,
+      20996374,
+      501,
+      20,
+      441,
+      1793718073437193292,
+      1793718073437393168
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/IMMUTABLE_RECEIPTS_20261103/ASSET-BACKUP-V21-LAUNCHD-PERMISSION-EVIDENCE__26e7c709296d__v21.launchd.oneoff.stderr.log": [
+      33152,
+      20996377,
+      501,
+      20,
+      366,
+      1793718073451558907,
+      1793718073451814659
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/IMMUTABLE_RECEIPTS_20261103/ASSET-BACKUP-V21-LOCAL-STATUS__2715df925158__last_selective_v21_result.json": [
+      33152,
+      20996375,
+      501,
+      20,
+      689,
+      1793718073440379933,
+      1793718073440554309
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/IMMUTABLE_RECEIPTS_20261103/ASSET-BACKUP-V21-NAS-STATUS__a0cacf4c15c6__last_selective_nas_v21_result.json": [
+      33152,
+      20996376,
+      501,
+      20,
+      781,
+      1793718073441663315,
+      1793718073441845441
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/70_EXPORTS/AI_ASSET_DISCOVERY_v0.1.md": [
+      33152,
+      20745700,
+      501,
+      20,
+      2000,
+      1793632864980587994,
+      1793632864980587994
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/70_EXPORTS/AI_ASSET_DISCOVERY_v0.2.md": [
+      33152,
+      20745857,
+      501,
+      20,
+      2452,
+      1793633045041451244,
+      1793633045041451244
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/70_EXPORTS/AI_ASSET_DISCOVERY_v0.3.md": [
+      33152,
+      20745931,
+      501,
+      20,
+      1886,
+      1793633202120307481,
+      1793633202120307481
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/70_EXPORTS/DRIVE_UPLOAD_HANDOFF_20261103_v1.0.md": [
+      33152,
+      20762552,
+      501,
+      20,
+      1663,
+      1793658187355303054,
+      1793658187355303054
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/70_EXPORTS/ROUTABL_BackupSafeManager_v0.3_20261104.zip": [
+      33152,
+      21006554,
+      501,
+      20,
+      44352,
+      1793725837732784862,
+      1793725837732784862
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/70_EXPORTS/ROUTABL_BackupSafeManager_v0.4.2_20261104.zip": [
+      33152,
+      21009400,
+      501,
+      20,
+      70861,
+      1793728093571861374,
+      1793728093571861374
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/70_EXPORTS/ROUTABL_BackupSafeManager_v0.4_20261104.zip": [
+      33152,
+      21008208,
+      501,
+      20,
+      70672,
+      1793727557763012573,
+      1793727557763012573
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/70_EXPORTS/ROUTABL_Backup_Diagnostic_v0.1_20261103.zip": [
+      33152,
+      20996218,
+      501,
+      20,
+      45066,
+      1793717779705766292,
+      1793717779705766292
+    ],
+    "/Users/yongho/ROUTABL-TechAssets/70_EXPORTS/ROUTABL_Native_Backup_Manager_v0.2_20261104.zip": [
+      33152,
+      21003271,
+      501,
+      20,
+      42088,
+      1793723621741099429,
+      1793723621741099429
+    ],
+    "/Users/yongho/Library/Application Support/ROUTABL-AssetSearch/ROUTABL_AssetSearch_v1.1_SOURCE.zip": [
+      33152,
+      20732142,
+      501,
+      20,
+      7527,
+      1793623647271182914,
+      1793623647271182914
+    ],
+    "/Users/yongho/Library/Application Support/ROUTABL-AssetSearch/assets.sqlite": [
+      33152,
+      20731630,
+      501,
+      20,
+      25313280,
+      1793623527311015897,
+      1793623527332649549
+    ],
+    "/Users/yongho/Library/Application Support/ROUTABL-AssetSearch/assets_v1_2.sqlite": [
+      33152,
+      20964832,
+      501,
+      20,
+      25313280,
+      1793669789393753782,
+      1793669790039452518
+    ],
+    "/Users/yongho/Library/Application Support/ROUTABL-AssetSearch/assets_v1_3.sqlite": [
+      33152,
+      20979859,
+      501,
+      20,
+      86417408,
+      1793700245642998758,
+      1793700245705739632
+    ],
+    "/Users/yongho/Library/Application Support/ROUTABL-AssetSearch/assets_v1_4.previous.sqlite": [
+      33152,
+      20980939,
+      501,
+      20,
+      86417408,
+      1793701910648046619,
+      1793701912720123610
+    ],
+    "/Users/yongho/Library/Application Support/ROUTABL-AssetSearch/assets_v1_4.sqlite": [
+      33152,
+      20980929,
+      501,
+      20,
+      86417408,
+      1793701907780335311,
+      1793701912720565195
+    ],
+    "/Users/yongho/Library/Application Support/ROUTABL-AssetSearch/assets_v1_5.previous.sqlite": [
+      33152,
+      21000366,
+      501,
+      20,
+      86417408,
+      1793721454323621149,
+      1793721454681977161
+    ],
+    "/Users/yongho/Library/Application Support/ROUTABL-AssetSearch/assets_v1_5.sqlite": [
+      33152,
+      21000361,
+      501,
+      20,
+      86417408,
+      1793721453856564770,
+      1793721454683203750
+    ],
+    "/Users/yongho/Library/Application Support/ROUTABL-AssetSearch/nas_backup_v41.py": [
+      33152,
+      20741368,
+      501,
+      20,
+      1743,
+      1793630381821139714,
+      1793630381821139714
+    ],
+    "/Users/yongho/Library/Application Support/ROUTABL-AssetSearch/routabl_assetsearch_v1_1.py": [
+      33152,
+      20731607,
+      501,
+      20,
+      10598,
+      1793623349905866174,
+      1793623349905866174
+    ],
+    "/Users/yongho/Library/Application Support/ROUTABL-AssetSearch/routabl_assetsearch_v1_2.py": [
+      33152,
+      20964736,
+      501,
+      20,
+      4797,
+      1793669933318445386,
+      1793669933318445386
+    ],
+    "/Users/yongho/Library/Application Support/ROUTABL-AssetSearch/routabl_assetsearch_v1_3.py": [
+      33216,
+      20979846,
+      501,
+      20,
+      10104,
+      1793700376603357538,
+      1793700376603690540
+    ],
+    "/Users/yongho/Library/Application Support/ROUTABL-AssetSearch/routabl_search_v1_4_service.py": [
+      33152,
+      20980882,
+      501,
+      20,
+      14922,
+      1793702054847466300,
+      1793702054847466300
+    ],
+    "/Users/yongho/Library/Application Support/ROUTABL-AssetSearch/routabl_search_v1_5_service.py": [
+      33152,
+      20982647,
+      501,
+      20,
+      22823,
+      1793703605496692240,
+      1793703605496692240
+    ],
+    "/Users/yongho/Library/Application Support/ROUTABL-AssetSearch/routabl_web_v1_1.py": [
+      33152,
+      20732094,
+      501,
+      20,
+      4801,
+      1793623475543812888,
+      1793623475543812888
+    ],
+    "/Users/yongho/Library/Application Support/ROUTABL-AssetSearch/routabl_web_v1_2.py": [
+      33216,
+      20964870,
+      501,
+      20,
+      4876,
+      1793669857273404190,
+      1793669857273741275
+    ],
+    "/Users/yongho/Library/Application Support/ROUTABL-AssetSearch/routabl_web_v1_3.py": [
+      33216,
+      20979889,
+      501,
+      20,
+      4919,
+      1793700319493448608,
+      1793700319493767317
+    ],
+    "/Users/yongho/Library/Application Support/ROUTABL-AssetSearch/search_v1_4_server.lock": [
+      33152,
+      20980919,
+      501,
+      20,
+      0,
+      1793701871528631641,
+      1793701871528631641
+    ],
+    "/Users/yongho/Library/Application Support/ROUTABL-AssetSearch/search_v1_5_server.lock": [
+      33152,
+      20982675,
+      501,
+      20,
+      0,
+      1793703302650022547,
+      1793703302650022547
+    ]
+  },
+  "sha256": {
+    "/Users/yongho/Library/Application Support/ROUTABL-AssetSearch/ROUTABL_AssetSearch_v1.1_SOURCE.zip": "b71205236922dde4b49cac3f055f8d8353e969f4efdedcfc5d78d2a3cd27627e",
+    "/Users/yongho/Library/Application Support/ROUTABL-AssetSearch/assets.sqlite": "cdda70b4853f527e34f470014a4c1849b00ff7bc15b4988826b1234dc4677446",
+    "/Users/yongho/Library/Application Support/ROUTABL-AssetSearch/assets_v1_2.sqlite": "60d6885d3475cf72e758bf80122fab0d7a7068f6f98f236fa299431cd1b391b7",
+    "/Users/yongho/Library/Application Support/ROUTABL-AssetSearch/assets_v1_3.sqlite": "c5a800f36aaaeddd1b5aad086403df115fa8f99fb8f616271421e89dff71cba4",
+    "/Users/yongho/Library/Application Support/ROUTABL-AssetSearch/assets_v1_4.previous.sqlite": "c7fc620620e87f885b506f72c14fcd68644a381dae58d8c1acf5b976e1359f22",
+    "/Users/yongho/Library/Application Support/ROUTABL-AssetSearch/assets_v1_4.sqlite": "c5a800f36aaaeddd1b5aad086403df115fa8f99fb8f616271421e89dff71cba4",
+    "/Users/yongho/Library/Application Support/ROUTABL-AssetSearch/assets_v1_5.previous.sqlite": "c7fc620620e87f885b506f72c14fcd68644a381dae58d8c1acf5b976e1359f22",
+    "/Users/yongho/Library/Application Support/ROUTABL-AssetSearch/assets_v1_5.sqlite": "c5a800f36aaaeddd1b5aad086403df115fa8f99fb8f616271421e89dff71cba4",
+    "/Users/yongho/Library/Application Support/ROUTABL-AssetSearch/nas_backup_v41.py": "02248a7551066ab4aa31f29aabac57c0b01413604bee42c95941a53d1176f062",
+    "/Users/yongho/Library/Application Support/ROUTABL-AssetSearch/routabl_assetsearch_v1_1.py": "bdea926cabe2157bdec2f8d0c69173e1a50dfa35ec5cae40563f16711588cc83",
+    "/Users/yongho/Library/Application Support/ROUTABL-AssetSearch/routabl_assetsearch_v1_2.py": "c853606aec8acec53400fefee6e8399da492df1e162428412a9d2a8ef555e332",
+    "/Users/yongho/Library/Application Support/ROUTABL-AssetSearch/routabl_assetsearch_v1_3.py": "9faeb3e8711f3f2c1dcd0c63e4848fd9cabd87ae8ea4e15d89f23d5ce2fb5de3",
+    "/Users/yongho/Library/Application Support/ROUTABL-AssetSearch/routabl_search_v1_4_service.py": "972bc93b820c8b7446931ec2a4403d6be7846c21f787d3328b38dd264e17a068",
+    "/Users/yongho/Library/Application Support/ROUTABL-AssetSearch/routabl_search_v1_5_service.py": "55b8747b145463c62366deba13904e3136893b8a611bb4ae94bbc2d7a642347d",
+    "/Users/yongho/Library/Application Support/ROUTABL-AssetSearch/routabl_web_v1_1.py": "7bd3d71d247c25b45b6e38c89e6ab508ed65e9196c744d92afde6e6771efafd3",
+    "/Users/yongho/Library/Application Support/ROUTABL-AssetSearch/routabl_web_v1_2.py": "8594ca4d0908874b79fe37d2270b1e4bef3b7d7ef63f670d6e63c770f8b8d5fe",
+    "/Users/yongho/Library/Application Support/ROUTABL-AssetSearch/routabl_web_v1_3.py": "3697244a4ed035a35f10c972e12e9bf163ebe25fb1b61047b207ae9df6a004c8",
+    "/Users/yongho/Library/Application Support/ROUTABL-AssetSearch/search_v1_4_server.lock": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/Users/yongho/Library/Application Support/ROUTABL-AssetSearch/search_v1_5_server.lock": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/Users/yongho/ROUTABL-TechAssets/00_GUIDE/DIGITOPIA_CHAT_WORK_PROTOCOL_v1.0.md": "7b48c1deb08ab1c8904541f7c9acedbf2406e51f510fbccf0d7ae17609d585d1",
+    "/Users/yongho/ROUTABL-TechAssets/30_REGISTRY/asset_manifest_v0.1.json": "d9fd437b6773db8d1494be6906f06a9b7b8c39e75d8d69a019e8f600f3929215",
+    "/Users/yongho/ROUTABL-TechAssets/30_REGISTRY/asset_manifest_v0.10.json": "39510a6c57d40b6a3b148aedba08e185417fa41b4f9001facb11f783657a415f",
+    "/Users/yongho/ROUTABL-TechAssets/30_REGISTRY/asset_manifest_v0.11.json": "64b4fa4fe79fd06880b7d12edd5e842ba9856718a82737b4abb715c91f53601c",
+    "/Users/yongho/ROUTABL-TechAssets/30_REGISTRY/asset_manifest_v0.12.json": "8cd3c14f6883d92689af60129162d1775270a942348ddfaefe3a1b4079138d5d",
+    "/Users/yongho/ROUTABL-TechAssets/30_REGISTRY/asset_manifest_v0.13.json": "7e31a60be05b8528292433bd44cdad10d02ecae7e3f79056b437fdef9800929d",
+    "/Users/yongho/ROUTABL-TechAssets/30_REGISTRY/asset_manifest_v0.14.json": "f2e7d88d16b6b2aa98d8cc53ed6cbf099f8b19bc4c7cbce072b1ee62ffd7233d",
+    "/Users/yongho/ROUTABL-TechAssets/30_REGISTRY/asset_manifest_v0.15.json": "cc84d033c02ee215ce8a1cf0f7635f3c541295a34bfa0f1f1da6175121fdeda2",
+    "/Users/yongho/ROUTABL-TechAssets/30_REGISTRY/asset_manifest_v0.16.json": "7b47fc552ce2edd3a44f0a7f93b52deb8309dfc89229c80a9c7592ddbc8ba96b",
+    "/Users/yongho/ROUTABL-TechAssets/30_REGISTRY/asset_manifest_v0.17.json": "5681f2b4f74928655caeb77f23a214ebc4584ce6c422dfa82fe491bc04bb7f0b",
+    "/Users/yongho/ROUTABL-TechAssets/30_REGISTRY/asset_manifest_v0.18.json": "f1a01ce4e84b515ea6bbb2b6b37308f2c13f9cfa94f62c23895a45cd00923b06",
+    "/Users/yongho/ROUTABL-TechAssets/30_REGISTRY/asset_manifest_v0.19.json": "f8c6837c4d2a238c5d5ebe66df1c3ee5c9ba77d3dda3e2aa59222684b4d3e49b",
+    "/Users/yongho/ROUTABL-TechAssets/30_REGISTRY/asset_manifest_v0.2.json": "686fe79e01e3f3224ed0c2c996648eb6208644bb32ec3826983d09257719402c",
+    "/Users/yongho/ROUTABL-TechAssets/30_REGISTRY/asset_manifest_v0.20.json": "f99281b98c0fca31e2ccd4d5f6a77d89791d5bfae6f4a2f6caf96a1eafbd7b4d",
+    "/Users/yongho/ROUTABL-TechAssets/30_REGISTRY/asset_manifest_v0.21.json": "5daf11b02fa0e1ab4f6bfadcb1970b5e623503ef6e9cbab2e08fa015a1a853da",
+    "/Users/yongho/ROUTABL-TechAssets/30_REGISTRY/asset_manifest_v0.22.json": "f4895969dce0855cecc2b2bd575758d134322ec6911b7743fec4a53f2e8918a0",
+    "/Users/yongho/ROUTABL-TechAssets/30_REGISTRY/asset_manifest_v0.23.json": "d1c3437f32e66f6c42076b2c9d328714007aabe1bf611f24c15639dfa8c3e49d",
+    "/Users/yongho/ROUTABL-TechAssets/30_REGISTRY/asset_manifest_v0.24.json": "48f54ebb88666c5891163e283fb3b3548e4760cd9c20e13dfdeff0a141f283c1",
+    "/Users/yongho/ROUTABL-TechAssets/30_REGISTRY/asset_manifest_v0.25.json": "c0daf1cb5714fff8a5d9dcd2bc24867098d01875e29b5eb69013780b2e7c8216",
+    "/Users/yongho/ROUTABL-TechAssets/30_REGISTRY/asset_manifest_v0.26.json": "aec9ed1a2b255f66a8cdbe32961e99a46f42861fa4c244eedf9132cbc4b5643d",
+    "/Users/yongho/ROUTABL-TechAssets/30_REGISTRY/asset_manifest_v0.27.json": "afe17adb54103952c0e84d296ded42a478fca49f25bd53f1f87dc0c73e1ce244",
+    "/Users/yongho/ROUTABL-TechAssets/30_REGISTRY/asset_manifest_v0.3.json": "e94ecbfa40b3af2b3713ae2507c0dff61ef7bc0282b43e267e8c657c30585822",
+    "/Users/yongho/ROUTABL-TechAssets/30_REGISTRY/asset_manifest_v0.4.json": "80cbd27733c22699bef9e35eb46e871a094a7c6b7cb54cdd448c820e2533bf4f",
+    "/Users/yongho/ROUTABL-TechAssets/30_REGISTRY/asset_manifest_v0.5.json": "d0dd2700bc072ef2db55bccecfd428f62360bbc3ec4bbdb40b07a402b60c4d12",
+    "/Users/yongho/ROUTABL-TechAssets/30_REGISTRY/asset_manifest_v0.6.json": "5efa3cd63a8c780e27ff7c474b7029b968d56bcbbe7299bb74adeaf0020d0a54",
+    "/Users/yongho/ROUTABL-TechAssets/30_REGISTRY/asset_manifest_v0.7.json": "5d124567508150c384e69b9110648da4c3f6fbebb7aad8a396e6e760e28386cb",
+    "/Users/yongho/ROUTABL-TechAssets/30_REGISTRY/asset_manifest_v0.8.json": "f888b3f01aa000bc5f622f31ffd9e4a10090c12c44eea94e6063ce036f96c0c1",
+    "/Users/yongho/ROUTABL-TechAssets/30_REGISTRY/asset_manifest_v0.9.json": "88008d8cd7f0deb44e9708fc004abf42998b2ee52e55470d48e72f2579699636",
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/ASSET-SEARCH-V1_4/RoutablSearchLauncher.swift": "3b47027f0647adaf24c1b7c3ed6980123aa99609d0009d459f6bb3c9de4e678b",
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/ASSET-SEARCH-V1_4/launcherbuild/라우터블 기술자산 검색.app/Contents/Info.plist": "b3cfe8d5cc8ac3fd81ed19ff36c02e41bdda07334a6f2a8e1c034b8cdc1608a5",
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/ASSET-SEARCH-V1_4/launcherbuild/라우터블 기술자산 검색.app/Contents/MacOS/RoutablSearch": "3e776d86923a056c2c518c2b623416f9ada1a6ee06990194ddd36a420dbf24ea",
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/ASSET-SEARCH-V1_4/launcherbuild/라우터블 기술자산 검색.app/Contents/_CodeSignature/CodeResources": "6686de10a28a2fe11b36cbb86dcbacc827cfc4ea116b4dabf1845e5aee629e9b",
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/ASSET-SEARCH-V1_5/RoutablSearchLauncher_v1_5.swift": "cbd1f6af2fb89f29cdec72a914e00532629ac5e6d724f942d28832652c4dd265",
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/ASSET-SEARCH-V1_5/build/라우터블 기술자산 검색 v1.5.app/Contents/Info.plist": "af0720a08fdd140ae5d3c57a36da6fa2e5a8f5d7ad8364096e9b82752599144c",
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/ASSET-SEARCH-V1_5/build/라우터블 기술자산 검색 v1.5.app/Contents/MacOS/RoutablSearch": "2aa90e85badb558c970fa394c2aeee46d37eee440e10544f701750095e6760ce",
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/ASSET-SEARCH-V1_5/build/라우터블 기술자산 검색 v1.5.app/Contents/_CodeSignature/CodeResources": "6686de10a28a2fe11b36cbb86dcbacc827cfc4ea116b4dabf1845e5aee629e9b",
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_ACCESS_FIRST_PRINCIPLE_AF01_V01/DIGITOPIA_ACCESS_FIRST_PRINCIPLE_AF01_v1.0_20261108.md": "13eadac676aed2e97c0486edbed67c9db85a1d693545de80db209830614805d5",
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_HANDOFF_COLDSTART_V01/ANSWER_KEY.json": "07676e9809315563837f71164e92400e60bfa8432fae44e80a8b261810793f8e",
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_HANDOFF_COLDSTART_V01/BASELINE.json": "6f9a52a29376400f8c80b0c172fe037b802856b66f52b87c8fcca2a820984947",
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_HANDOFF_COLDSTART_V01/HANDOFF_GENERATED.md": "bf8a093caf412b45f8400efda3b9a0bb6fea26b7af0b0378b3f648ea60eed688",
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_HANDOFF_COLDSTART_V01/HANDOFF_MANUAL.md": "bf8a093caf412b45f8400efda3b9a0bb6fea26b7af0b0378b3f648ea60eed688",
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_HANDOFF_COLDSTART_V01/HANDOFF_SOURCE.json": "1381362edc0fa26863a6186b2b3f1b6d73ace7a6136be1c293025633197fae41",
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_HANDOFF_COLDSTART_V01/INPUT_LEDGER.json": "4d9c131b807dcc40534d70d2b0dc2f66c3a742b04b3f98c0845d63ccc5ef6f9d",
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_HANDOFF_COLDSTART_V01/MEASUREMENT.json": "87524912d042730a4a426472132152d89000dcc50c1093924064fc83b0209f72",
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_HANDOFF_COLDSTART_V01/VERIFICATION.md": "c09653dabdf8aa7d3923ac6d8b70590e41eb187be63ce5cf6c6bb015ac2a9413",
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_HANDOFF_COLDSTART_V01/render_handoff.py": "57d1f60169fdecf30b4764c57ebbbe25ec6c7995641a0fd5562b7acabd709131",
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_HANDOFF_POC_V01/README.md": "6bfd6da70b9bddc5c81e012a4a085bd654475a015c63e6932a76a11321fd4937",
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_HANDOFF_POC_V01/VERIFICATION.md": "ab0327da31617d3eaf38b3981d56aae885a9d5b027b46c0b2d2089fcbadec819",
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_HANDOFF_POC_V01/VERIFICATION_RETEST.md": "e1fb4a7504d08cd234621c020439e57578145e5277d66d1a842f2a46bc759bbf",
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_HANDOFF_POC_V01/chat_to_work.json": "3fecfbe830df7789b64f6b7d765ba7f96bedbba5cbb6a31f1f4fec3ef3b3d551",
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_HANDOFF_POC_V01/chat_to_work.md": "a15ccb82974e511eb131752413c0cc192528ee0248e71953bf7a0f7ea02fbdca",
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_HANDOFF_POC_V01/handoff.py": "054226f8b8d9febf62e448ac4654ae6ad9509900bfc54447816ac7a5193fa292",
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_HANDOFF_POC_V01/schema.json": "37e85af63b965853d0977476cb9af09423a04ad79c2a2c146640740deacdcf43",
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_HANDOFF_POC_V01/verify_poc.py": "b08f9192874aa5301a32769587acc7cb27ef86ad92461b5b0ad94861949dfbf1",
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_HANDOFF_POC_V01/work_to_chat.json": "2380edff116df3c98e23d68a76469968aaac451f3d83886fa7647017c18af159",
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_HANDOFF_POC_V01/work_to_chat.md": "8768e30bf2f8e260ee37458f0811ac388601f5ac4e3ad5439429f6af9fecf909",
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_STEP5_FEEDBACK_V01/ACCESS_POLICY_v0.1.md": "4d8c013aea7dd320aea8cc6660aaabc01c5109aec6e9ae1462d9bfbdd306fbc3",
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_STEP5_FEEDBACK_V01/EVIDENCE_LEDGER.json": "f72492a155455dffbb2ca3ac67b5de7845de28440002cd4622008443ef8455e2",
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_STEP5_FEEDBACK_V01/HANDOFF_OUTPUT_CONTRACT_v0.1.md": "c5735b796213cb93f718167ed5a2b4006b6a1816991a6d7eb71520053666e455",
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_STEP5_FEEDBACK_V01/OPEN_ISSUES.md": "51323e6653cdfac05c5ed928eb3ed72b05da09f95ae93302cd3a91aa361c27d2",
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_STEP5_FEEDBACK_V01/STEP4B_CLOSEOUT.md": "6067f3086a0bf402fe748033ce35c483b1ab323b080e5dd2638cb23d28aef37e",
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_STEP5_FEEDBACK_V01/T2_EVIDENCE.md": "ccf80195519741ce1385009c36843aa70472f61d969ce06a491fc1f59080d9dc",
+    "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_STEP5_FEEDBACK_V01/VERIFICATION.md": "77208edece47f48aefc840d6a30c1c70f2cc1f3ec87fccb42955951c5de0cd04"
+  }
+}

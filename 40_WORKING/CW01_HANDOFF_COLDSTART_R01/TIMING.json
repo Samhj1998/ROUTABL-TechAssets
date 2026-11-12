@@ -1,0 +1,28 @@
+{
+  "audience": "OPERATOR_ONLY",
+  "status": "NOT_MEASURED",
+  "clock": {
+    "timezone": "Asia/Seoul",
+    "observer": null,
+    "source": null
+  },
+  "definition": {
+    "T0": "First message sent",
+    "T1": "First response fully completed",
+    "elapsed_seconds": "T1 minus T0 using the same observed clock; if either missing, NOT_MEASURED"
+  },
+  "conditions": {
+    "A": {
+      "T0": null,
+      "T1": null,
+      "elapsed_seconds": null,
+      "notes": null
+    },
+    "B": {
+      "T0": null,
+      "T1": null,
+      "elapsed_seconds": null,
+      "notes": null
+    }
+  }
+}

@@ -1,0 +1,25 @@
+test_duplicate_index_id_rejected (test_selected_handoff.SelectedHandoffTest) ... ok
+test_duplicate_requested_id_rejected (test_selected_handoff.SelectedHandoffTest) ... ok
+test_file_symlink_rejected_even_with_matching_content (test_selected_handoff.SelectedHandoffTest) ... ok
+test_index_mismatch_rejected (test_selected_handoff.SelectedHandoffTest) ... ok
+test_index_only_row_is_not_a_registration (test_selected_handoff.SelectedHandoffTest) ... ok
+test_invalid_id_rejected (test_selected_handoff.SelectedHandoffTest) ... ok
+test_invalid_version_rejected (test_selected_handoff.SelectedHandoffTest) ... ok
+test_missing_file_rejected (test_selected_handoff.SelectedHandoffTest) ... ok
+test_missing_index_row_rejected (test_selected_handoff.SelectedHandoffTest) ... ok
+test_no_body_and_no_unapproved_metadata (test_selected_handoff.SelectedHandoffTest) ... ok
+test_non_candidate_rejected (test_selected_handoff.SelectedHandoffTest) ... ok
+test_outside_and_traversal_rejected_before_read (test_selected_handoff.SelectedHandoffTest) ... ok
+test_parent_symlink_rejected_even_with_matching_content (test_selected_handoff.SelectedHandoffTest) ... ok
+test_read_only_selected_db (test_selected_handoff.SelectedHandoffTest) ... ok
+test_registration_id_binding (test_selected_handoff.SelectedHandoffTest) ... ok
+test_same_sha_different_ids_selected_exactly_in_request_order (test_selected_handoff.SelectedHandoffTest) ... ok
+test_selected_metadata_and_cli (test_selected_handoff.SelectedHandoffTest) ... ok
+test_tampered_same_size_rejected (test_selected_handoff.SelectedHandoffTest) ... ok
+test_unchanged_default_handoff_and_search_against_pinned_original (test_selected_handoff.SelectedHandoffTest) ... ok
+test_unknown_id_rejected_with_no_output (test_selected_handoff.SelectedHandoffTest) ... ok
+
+----------------------------------------------------------------------
+Ran 20 tests in 4.176s
+
+OK

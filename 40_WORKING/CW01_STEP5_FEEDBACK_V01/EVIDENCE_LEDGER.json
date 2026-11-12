@@ -1,0 +1,157 @@
+{
+  "schema_version": "0.1",
+  "status": "STEP5A_CANDIDATE",
+  "root": "/Users/yongho/ROUTABL-TechAssets",
+  "scope": "Referenced paths resolve from the repository root. Conversation anchors name the supplied evidence without asserting an external permalink.",
+  "verified_from": [
+    "Step 3 최종 감사 파일 및 PASS 항목 수",
+    "T2-E 현재 120-2-W 도구 결과",
+    "T2-R 사용자 반환 출력과 보고서 대조"
+  ],
+  "unverified": [
+    "T2-R 외부 서비스 원본 로그 및 수신 세션 소속 독립 확인",
+    "T0/T1 시각 및 실제 제출 본문 동일성",
+    "완전한 초기 맥락 격리 및 기술적 쓰기 차단",
+    "Claude 재현 및 전체 저장소·백업 복원"
+  ],
+  "trials": [
+    {
+      "id": "STEP3",
+      "result": "21/21 PASS",
+      "source": "40_WORKING/CW01_HANDOFF_POC_V01/VERIFICATION_RETEST.md",
+      "executor": "120-2-W",
+      "time_kst": "2026-11-07T00:18:15+09:00",
+      "tool": "verify_poc.py; Python",
+      "device": "MacStudioui-MacStudio.local",
+      "limits": "격리 실증. 최초 14번 실패는 40_WORKING/CW01_HANDOFF_POC_V01/VERIFICATION.md에 보존."
+    },
+    {
+      "id": "STEP4-A",
+      "result": "사실 10/10, 증거 4/4",
+      "source": "120-2-W / CW04-PILOT-01 Work 보고 및 해당 원격 도구 출력",
+      "executor": "120-2-W 기존 맥락 수신자",
+      "time_kst": "2026-11-07T00:29:15+09:00 ~ 2026-11-07T00:29:27+09:00",
+      "tool": "Desktop Commander Remote; shasum",
+      "device": "MacStudioui-MacStudio.local",
+      "limits": "12초는 증거 확인 구간. 맥락 복원 시간 NOT_MEASURED."
+    },
+    {
+      "id": "T1-FIRST",
+      "result": "맥락 7/10, 경로 4/4, 경로·기대 해시 쌍 0/4",
+      "source": "120-2-W / Gate B2 T0→T1 사용자가 붙인 첫 답변 및 평가",
+      "executor": "별도 ChatGPT 수신 AI; 채점 120-2-W",
+      "time_kst": null,
+      "tool": null,
+      "device": null,
+      "limits": "T0·T1 NOT_MEASURED. 해시 값 누락 원인 미확정."
+    },
+    {
+      "id": "T1-R1-A",
+      "result": "맥락 10/10, 경로 4/4, 경로·기대 해시 쌍 4/4",
+      "source": "120-2-W / Gate B2-R1 시험 A 사용자 제출 최초 답변 및 평가",
+      "executor": "별도 ChatGPT 수신 AI; 채점 120-2-W",
+      "time_kst": null,
+      "tool": null,
+      "device": null,
+      "limits": "실제 모델·세션 설정·순서·제출 원문 동일성 미확인. 도구 미사용은 자체 보고. T0·T1 NOT_MEASURED."
+    },
+    {
+      "id": "T1-R1-B",
+      "result": "맥락 10/10, 경로 4/4, 경로·기대 해시 쌍 4/4",
+      "source": "120-2-W / Gate B2-R1 시험 B 사용자 제출 최초 답변 및 평가",
+      "executor": "별도 ChatGPT 수신 AI; 채점 120-2-W",
+      "time_kst": null,
+      "tool": null,
+      "device": null,
+      "limits": "실제 모델·세션 설정·순서·제출 원문 동일성 미확인. 도구 미사용은 자체 보고. T0·T1 NOT_MEASURED."
+    },
+    {
+      "id": "T2-E",
+      "result": "4/4 DIRECT_HASH_VERIFIED",
+      "executor": "기존 120-2-W 평가자",
+      "start_kst": "2026-11-07T04:53:56+09:00",
+      "end_kst": "2026-11-07T04:53:57+09:00",
+      "tool": "Desktop Commander Remote; /usr/bin/shasum -a 256",
+      "device": "MacStudioui-MacStudio.local",
+      "device_id": "c377300b-a710-43a6-8169-f17e87175403",
+      "remote_pid": 76533,
+      "source": "120-2-W / T2-E 직접 도구 결과",
+      "evidence_copy": "T2_EVIDENCE.md / T2-E",
+      "hashes": [
+        {
+          "asset_id": "CW-01",
+          "path": "00_GUIDE/DIGITOPIA_CHAT_WORK_PROTOCOL_v1.0.md",
+          "expected_sha256": "7b48c1deb08ab1c8904541f7c9acedbf2406e51f510fbccf0d7ae17609d585d1",
+          "observed_sha256": "7b48c1deb08ab1c8904541f7c9acedbf2406e51f510fbccf0d7ae17609d585d1",
+          "status": "DIRECT_HASH_VERIFIED"
+        },
+        {
+          "asset_id": "STEP2-AUDIT",
+          "path": "60_AUDIT/120-2-W_CW01_STEP2_VERIFICATION_v1.0.md",
+          "expected_sha256": "ab56b5518120d93a300549757eb6f8c854989b339622367b73907d320a25e56d",
+          "observed_sha256": "ab56b5518120d93a300549757eb6f8c854989b339622367b73907d320a25e56d",
+          "status": "DIRECT_HASH_VERIFIED"
+        },
+        {
+          "asset_id": "STEP3-RETEST",
+          "path": "40_WORKING/CW01_HANDOFF_POC_V01/VERIFICATION_RETEST.md",
+          "expected_sha256": "e1fb4a7504d08cd234621c020439e57578145e5277d66d1a842f2a46bc759bbf",
+          "observed_sha256": "e1fb4a7504d08cd234621c020439e57578145e5277d66d1a842f2a46bc759bbf",
+          "status": "DIRECT_HASH_VERIFIED"
+        },
+        {
+          "asset_id": "MANIFEST-V0.27",
+          "path": "30_REGISTRY/asset_manifest_v0.27.json",
+          "expected_sha256": "afe17adb54103952c0e84d296ded42a478fca49f25bd53f1f87dc0c73e1ce244",
+          "observed_sha256": "afe17adb54103952c0e84d296ded42a478fca49f25bd53f1f87dc0c73e1ce244",
+          "status": "DIRECT_HASH_VERIFIED"
+        }
+      ],
+      "limits": "지정 파일의 직접 검증. 백업·저장소 전체 검증 범위 밖."
+    },
+    {
+      "id": "T2-R",
+      "result": "4/4 DIRECT_HASH_VERIFIED",
+      "executor": "별도 ChatGPT Work 수신자(보고 기준); 120-2-W 대조",
+      "start_kst": "2026-11-07T05:26:31+09:00",
+      "end_kst": "2026-11-07T05:26:31+09:00",
+      "tool": "Desktop Commander Remote; /usr/bin/shasum -a 256",
+      "device": "MacStudioui-MacStudio.local",
+      "device_id": "c377300b-a710-43a6-8169-f17e87175403",
+      "remote_pid": 76786,
+      "source": "120-2-W / 사용자 수동 반환 T2-R 보고와 도구 출력",
+      "evidence_copy": "T2_EVIDENCE.md / T2-R",
+      "hashes": [
+        {
+          "asset_id": "CW-01",
+          "path": "00_GUIDE/DIGITOPIA_CHAT_WORK_PROTOCOL_v1.0.md",
+          "expected_sha256": "7b48c1deb08ab1c8904541f7c9acedbf2406e51f510fbccf0d7ae17609d585d1",
+          "observed_sha256": "7b48c1deb08ab1c8904541f7c9acedbf2406e51f510fbccf0d7ae17609d585d1",
+          "status": "DIRECT_HASH_VERIFIED"
+        },
+        {
+          "asset_id": "STEP2-AUDIT",
+          "path": "60_AUDIT/120-2-W_CW01_STEP2_VERIFICATION_v1.0.md",
+          "expected_sha256": "ab56b5518120d93a300549757eb6f8c854989b339622367b73907d320a25e56d",
+          "observed_sha256": "ab56b5518120d93a300549757eb6f8c854989b339622367b73907d320a25e56d",
+          "status": "DIRECT_HASH_VERIFIED"
+        },
+        {
+          "asset_id": "STEP3-RETEST",
+          "path": "40_WORKING/CW01_HANDOFF_POC_V01/VERIFICATION_RETEST.md",
+          "expected_sha256": "e1fb4a7504d08cd234621c020439e57578145e5277d66d1a842f2a46bc759bbf",
+          "observed_sha256": "e1fb4a7504d08cd234621c020439e57578145e5277d66d1a842f2a46bc759bbf",
+          "status": "DIRECT_HASH_VERIFIED"
+        },
+        {
+          "asset_id": "MANIFEST-V0.27",
+          "path": "30_REGISTRY/asset_manifest_v0.27.json",
+          "expected_sha256": "afe17adb54103952c0e84d296ded42a478fca49f25bd53f1f87dc0c73e1ce244",
+          "observed_sha256": "afe17adb54103952c0e84d296ded42a478fca49f25bd53f1f87dc0c73e1ce244",
+          "status": "DIRECT_HASH_VERIFIED"
+        }
+      ],
+      "limits": "개인화·이전 맥락 정보 제공 보고. CONTEXT_ISOLATION_UNVERIFIED. 기술적 쓰기 차단 미검증. 원격 도구 원본 서비스 로그 별도 입수 없음."
+    }
+  ]
+}

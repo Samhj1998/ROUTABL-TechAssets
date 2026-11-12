@@ -1,0 +1,40 @@
+{
+  "attached_backup_mountpoint_exists": false,
+  "device": "MacStudioui-MacStudio.local",
+  "directory_metadata_is_not_authoritative_for_smb_acl": true,
+  "keychain_values_read": false,
+  "latest_registry": {
+    "name": "asset_manifest_v0.27.json",
+    "sha256": "afe17adb54103952c0e84d296ded42a478fca49f25bd53f1f87dc0c73e1ce244"
+  },
+  "media_write_attempted": false,
+  "mode_owner": {
+    "/Volumes/Dev_Assets": {
+      "effective_access_hint": true,
+      "mode": "0o700",
+      "uid": 501
+    },
+    "/Volumes/Dev_Assets/ROUTABL-TechAssets-Backup/snapshots": {
+      "effective_access_hint": true,
+      "mode": "0o700",
+      "uid": 501
+    },
+    "/Volumes/SSD2TB/ROUTABL-TechAssets-Backup/ROUTABL-SecureBackup.sparsebundle": {
+      "effective_access_hint": true,
+      "mode": "0o700",
+      "uid": 501
+    }
+  },
+  "operational_bypass_status": "BYPASS_NOT_BLOCKED",
+  "prior_evidence_from_b5": {
+    "latest_protection": "NOT_VERIFIED",
+    "registry": "asset_manifest_v0.19.json",
+    "snapshot_id": "ASSET_V21_20261106_043146_KST_59950"
+  },
+  "run_uid": 501,
+  "tcc_database_opened": false,
+  "volume_filesystems": {
+    "Dev_Assets": "smbfs",
+    "SSD2TB": "apfs"
+  }
+}

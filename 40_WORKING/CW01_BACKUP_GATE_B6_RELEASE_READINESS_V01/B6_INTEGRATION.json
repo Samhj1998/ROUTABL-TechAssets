@@ -1,0 +1,907 @@
+{
+  "cases": [
+    {
+      "actual": "CANDIDATE_NEW_EVIDENCE",
+      "case": "fresh_fixture_verified",
+      "details": {
+        "actual_backup_success": false,
+        "details": {
+          "child": {
+            "descendants_remaining": false,
+            "exit_code": 0,
+            "image_residual": false,
+            "outcome": "CREATED",
+            "performed_work": true
+          },
+          "evidence": {
+            "actual_backup_verified": false,
+            "cas_completed": true,
+            "cas_components": 2,
+            "cas_created_at": "2026-11-07T04:36:00+09:00",
+            "cas_manifest_sha256": "22aec8769c2ed30cb03c6fe7369e0247119092f9a2082527609f5b609f9d4d84",
+            "cas_manifest_structure": "VERIFIED",
+            "cas_referenced_bytes": 31,
+            "chain": "METADATA_LINKED",
+            "current_cas_component_sha256": "NOT_PERFORMED",
+            "current_registry_match": true,
+            "current_selection_match": true,
+            "fixture_component_verification": {
+              "all_component_bytes_verified_in_fixture": true,
+              "manifest_sha256": "22aec8769c2ed30cb03c6fe7369e0247119092f9a2082527609f5b609f9d4d84",
+              "verified_bytes": 31,
+              "verified_count": 2
+            },
+            "historical_oneshot": "SUCCESS_CLAIM_BOUND_TO_METADATA",
+            "latest_registry": "asset_manifest_v0.27.json",
+            "latest_registry_sha256": "a8198524f58e72b56283ab71ebddada22840f108b46ef7165bb3fca9919c5558",
+            "local_created_at": "2026-11-07T04:34:00+09:00",
+            "local_lock_and_integrity": "HISTORICAL_STATUS_REPORT_ONLY",
+            "local_receipt_bytes_verified": true,
+            "local_receipt_sha256_reported": "160d0d6c29cdefb2a11600924319d105b171f27cae3a7c2a44fa54de662444fc",
+            "observed_at": "2026-11-07T04:43:00+09:00",
+            "reported_registry": "asset_manifest_v0.27.json",
+            "reported_registry_sha256": "a8198524f58e72b56283ab71ebddada22840f108b46ef7165bb3fca9919c5558",
+            "reported_selected_bytes": 32,
+            "reported_selected_files": 2,
+            "reported_selection_sha256": "4876995514ace0273d1c616ef7f932800c8c34793ed4c73399ae4a3525409d5a",
+            "same_day_kst": true,
+            "scope": "RECEIPT_METADATA_ONLY",
+            "selection_recomputed_from_receipt": true,
+            "snapshot_id": "ASSET_V21_20261107_043146_KST_123",
+            "status": "PARTIAL"
+          }
+        },
+        "exit_code": 0,
+        "production_deployment": false,
+        "schema": "b6.1",
+        "scope": "ISOLATED_FIXTURE",
+        "status": "CANDIDATE_NEW_EVIDENCE"
+      },
+      "expected": "CANDIDATE_NEW_EVIDENCE",
+      "verdict": "PASS"
+    },
+    {
+      "actual": true,
+      "case": "atomic_result_readback",
+      "details": null,
+      "expected": true,
+      "verdict": "PASS"
+    },
+    {
+      "actual": "CANDIDATE_SAME_DAY_RECHECK",
+      "case": "same_day_preexisting_recheck",
+      "details": {
+        "actual_backup_success": false,
+        "details": {
+          "child": {
+            "descendants_remaining": false,
+            "exit_code": 0,
+            "image_residual": false,
+            "outcome": "REUSED",
+            "performed_work": false
+          },
+          "evidence": {
+            "actual_backup_verified": false,
+            "cas_completed": true,
+            "cas_components": 2,
+            "cas_created_at": "2026-11-07T04:36:00+09:00",
+            "cas_manifest_sha256": "22aec8769c2ed30cb03c6fe7369e0247119092f9a2082527609f5b609f9d4d84",
+            "cas_manifest_structure": "VERIFIED",
+            "cas_referenced_bytes": 31,
+            "chain": "METADATA_LINKED",
+            "current_cas_component_sha256": "NOT_PERFORMED",
+            "current_registry_match": true,
+            "current_selection_match": true,
+            "fixture_component_verification": {
+              "all_component_bytes_verified_in_fixture": true,
+              "manifest_sha256": "22aec8769c2ed30cb03c6fe7369e0247119092f9a2082527609f5b609f9d4d84",
+              "verified_bytes": 31,
+              "verified_count": 2
+            },
+            "historical_oneshot": "SUCCESS_CLAIM_BOUND_TO_METADATA",
+            "latest_registry": "asset_manifest_v0.27.json",
+            "latest_registry_sha256": "a8198524f58e72b56283ab71ebddada22840f108b46ef7165bb3fca9919c5558",
+            "local_created_at": "2026-11-07T04:34:00+09:00",
+            "local_lock_and_integrity": "HISTORICAL_STATUS_REPORT_ONLY",
+            "local_receipt_bytes_verified": true,
+            "local_receipt_sha256_reported": "160d0d6c29cdefb2a11600924319d105b171f27cae3a7c2a44fa54de662444fc",
+            "observed_at": "2026-11-07T04:43:00+09:00",
+            "reported_registry": "asset_manifest_v0.27.json",
+            "reported_registry_sha256": "a8198524f58e72b56283ab71ebddada22840f108b46ef7165bb3fca9919c5558",
+            "reported_selected_bytes": 32,
+            "reported_selected_files": 2,
+            "reported_selection_sha256": "4876995514ace0273d1c616ef7f932800c8c34793ed4c73399ae4a3525409d5a",
+            "same_day_kst": true,
+            "scope": "RECEIPT_METADATA_ONLY",
+            "selection_recomputed_from_receipt": true,
+            "snapshot_id": "ASSET_V21_20261107_043146_KST_123",
+            "status": "PARTIAL"
+          }
+        },
+        "exit_code": 10,
+        "production_deployment": false,
+        "schema": "b6.1",
+        "scope": "ISOLATED_FIXTURE",
+        "status": "CANDIDATE_SAME_DAY_RECHECK"
+      },
+      "expected": "CANDIDATE_SAME_DAY_RECHECK",
+      "verdict": "PASS"
+    },
+    {
+      "actual": "REUSE_NOT_PREEXISTING",
+      "case": "unbound_reuse",
+      "details": {
+        "actual_backup_success": false,
+        "details": {
+          "child": {
+            "descendants_remaining": false,
+            "exit_code": 0,
+            "image_residual": false,
+            "outcome": "REUSED",
+            "performed_work": false
+          },
+          "evidence": {
+            "actual_backup_verified": false,
+            "cas_completed": true,
+            "cas_components": 2,
+            "cas_created_at": "2026-11-07T04:36:00+09:00",
+            "cas_manifest_sha256": "22aec8769c2ed30cb03c6fe7369e0247119092f9a2082527609f5b609f9d4d84",
+            "cas_manifest_structure": "VERIFIED",
+            "cas_referenced_bytes": 31,
+            "chain": "METADATA_LINKED",
+            "current_cas_component_sha256": "NOT_PERFORMED",
+            "current_registry_match": true,
+            "current_selection_match": true,
+            "historical_oneshot": "SUCCESS_CLAIM_BOUND_TO_METADATA",
+            "latest_registry": "asset_manifest_v0.27.json",
+            "latest_registry_sha256": "a8198524f58e72b56283ab71ebddada22840f108b46ef7165bb3fca9919c5558",
+            "local_created_at": "2026-11-07T04:34:00+09:00",
+            "local_lock_and_integrity": "HISTORICAL_STATUS_REPORT_ONLY",
+            "local_receipt_bytes_verified": true,
+            "local_receipt_sha256_reported": "160d0d6c29cdefb2a11600924319d105b171f27cae3a7c2a44fa54de662444fc",
+            "observed_at": "2026-11-07T04:43:00+09:00",
+            "reported_registry": "asset_manifest_v0.27.json",
+            "reported_registry_sha256": "a8198524f58e72b56283ab71ebddada22840f108b46ef7165bb3fca9919c5558",
+            "reported_selected_bytes": 32,
+            "reported_selected_files": 2,
+            "reported_selection_sha256": "4876995514ace0273d1c616ef7f932800c8c34793ed4c73399ae4a3525409d5a",
+            "same_day_kst": true,
+            "scope": "RECEIPT_METADATA_ONLY",
+            "selection_recomputed_from_receipt": true,
+            "snapshot_id": "ASSET_V21_20261107_043146_KST_123",
+            "status": "PARTIAL"
+          }
+        },
+        "exit_code": 30,
+        "production_deployment": false,
+        "schema": "b6.1",
+        "scope": "ISOLATED_FIXTURE",
+        "status": "REUSE_NOT_PREEXISTING"
+      },
+      "expected": "REUSE_NOT_PREEXISTING",
+      "verdict": "PASS"
+    },
+    {
+      "actual": "SKIPPED_LOCK_HELD",
+      "case": "child_lock_skip",
+      "details": {
+        "actual_backup_success": false,
+        "details": {
+          "child": {
+            "descendants_remaining": false,
+            "exit_code": 0,
+            "image_residual": false,
+            "outcome": "LOCK_HELD",
+            "performed_work": false
+          },
+          "evidence": {}
+        },
+        "exit_code": 20,
+        "production_deployment": false,
+        "schema": "b6.1",
+        "scope": "ISOLATED_FIXTURE",
+        "status": "SKIPPED_LOCK_HELD"
+      },
+      "expected": "SKIPPED_LOCK_HELD",
+      "verdict": "PASS"
+    },
+    {
+      "actual": "NO_NEW_BACKUP_EVIDENCE",
+      "case": "zero_exit_without_work",
+      "details": {
+        "actual_backup_success": false,
+        "details": {
+          "child": {
+            "descendants_remaining": false,
+            "exit_code": 0,
+            "image_residual": false,
+            "outcome": "READY",
+            "performed_work": false
+          },
+          "evidence": {}
+        },
+        "exit_code": 30,
+        "production_deployment": false,
+        "schema": "b6.1",
+        "scope": "ISOLATED_FIXTURE",
+        "status": "NO_NEW_BACKUP_EVIDENCE"
+      },
+      "expected": "NO_NEW_BACKUP_EVIDENCE",
+      "verdict": "PASS"
+    },
+    {
+      "actual": "BLOCKED_MULTIPLE_ENTRYPOINTS",
+      "case": "duplicate_agent_registration",
+      "details": {
+        "actual_backup_success": false,
+        "details": {},
+        "exit_code": 30,
+        "production_deployment": false,
+        "schema": "b6.1",
+        "scope": "ISOLATED_FIXTURE",
+        "status": "BLOCKED_MULTIPLE_ENTRYPOINTS"
+      },
+      "expected": "BLOCKED_MULTIPLE_ENTRYPOINTS",
+      "verdict": "PASS"
+    },
+    {
+      "actual": "SKIPPED_LOCK_HELD",
+      "case": "same_lock_contention",
+      "details": {
+        "actual_backup_success": false,
+        "details": {},
+        "exit_code": 20,
+        "production_deployment": false,
+        "schema": "b6.1",
+        "scope": "ISOLATED_FIXTURE",
+        "status": "SKIPPED_LOCK_HELD"
+      },
+      "expected": "SKIPPED_LOCK_HELD",
+      "verdict": "PASS"
+    },
+    {
+      "actual": true,
+      "case": "contender_does_not_replace_result",
+      "details": null,
+      "expected": true,
+      "verdict": "PASS"
+    },
+    {
+      "actual": "BYPASS_NOT_BLOCKED",
+      "case": "same_uid_path_still_writable",
+      "details": null,
+      "expected": "BYPASS_NOT_BLOCKED",
+      "verdict": "PASS"
+    },
+    {
+      "actual": "BLOCKED_WRITE_CAPABILITY",
+      "case": "modeled_dedicated_write_denied",
+      "details": {
+        "actual_backup_success": false,
+        "details": {},
+        "exit_code": 30,
+        "production_deployment": false,
+        "schema": "b6.1",
+        "scope": "ISOLATED_FIXTURE",
+        "status": "BLOCKED_WRITE_CAPABILITY"
+      },
+      "expected": "BLOCKED_WRITE_CAPABILITY",
+      "verdict": "PASS"
+    },
+    {
+      "actual": "BLOCKED_PROGRAM_PIN",
+      "case": "program_pin_mismatch",
+      "details": {
+        "actual_backup_success": false,
+        "details": {},
+        "exit_code": 30,
+        "production_deployment": false,
+        "schema": "b6.1",
+        "scope": "ISOLATED_FIXTURE",
+        "status": "BLOCKED_PROGRAM_PIN"
+      },
+      "expected": "BLOCKED_PROGRAM_PIN",
+      "verdict": "PASS"
+    },
+    {
+      "actual": "BLOCKED_SIGNATURE",
+      "case": "signature_team_mismatch",
+      "details": {
+        "actual_backup_success": false,
+        "details": {},
+        "exit_code": 30,
+        "production_deployment": false,
+        "schema": "b6.1",
+        "scope": "ISOLATED_FIXTURE",
+        "status": "BLOCKED_SIGNATURE"
+      },
+      "expected": "BLOCKED_SIGNATURE",
+      "verdict": "PASS"
+    },
+    {
+      "actual": "BLOCKED_POLICY",
+      "case": "approval_activation_rejected",
+      "details": {
+        "actual_backup_success": false,
+        "details": {},
+        "exit_code": 30,
+        "production_deployment": false,
+        "schema": "b6.1",
+        "scope": "ISOLATED_FIXTURE",
+        "status": "BLOCKED_POLICY"
+      },
+      "expected": "BLOCKED_POLICY",
+      "verdict": "PASS"
+    },
+    {
+      "actual": "BLOCKED_ENGINE_UNAPPROVED",
+      "case": "production_engine_is_not_callable",
+      "details": {
+        "actual_backup_success": false,
+        "details": {},
+        "exit_code": 30,
+        "production_deployment": false,
+        "schema": "b6.1",
+        "scope": "ISOLATED_FIXTURE",
+        "status": "BLOCKED_ENGINE_UNAPPROVED"
+      },
+      "expected": "BLOCKED_ENGINE_UNAPPROVED",
+      "verdict": "PASS"
+    },
+    {
+      "actual": "STALE_REGISTRY_BACKUP",
+      "case": "old_v019_metadata_cannot_be_current",
+      "details": {
+        "actual_backup_success": false,
+        "details": {
+          "child": {
+            "descendants_remaining": false,
+            "exit_code": 0,
+            "image_residual": false,
+            "outcome": "CREATED",
+            "performed_work": true
+          },
+          "evidence": {
+            "actual_backup_verified": false,
+            "cas_completed": true,
+            "cas_components": 2,
+            "cas_created_at": "2026-11-07T04:36:00+09:00",
+            "cas_manifest_sha256": "0b2bd6a6f2e82a892555c716555602b1abd078e1996ca531aba3ec9a76f420da",
+            "cas_manifest_structure": "VERIFIED",
+            "cas_referenced_bytes": 31,
+            "chain": "METADATA_LINKED",
+            "current_cas_component_sha256": "NOT_PERFORMED",
+            "current_registry_match": false,
+            "current_selection_match": true,
+            "historical_oneshot": "SUCCESS_CLAIM_BOUND_TO_METADATA",
+            "latest_registry": "asset_manifest_v0.27.json",
+            "latest_registry_sha256": "a8198524f58e72b56283ab71ebddada22840f108b46ef7165bb3fca9919c5558",
+            "local_created_at": "2026-11-07T04:34:00+09:00",
+            "local_lock_and_integrity": "HISTORICAL_STATUS_REPORT_ONLY",
+            "local_receipt_bytes_verified": true,
+            "local_receipt_sha256_reported": "f881cdb6c24e9ad03175c290ed53f784b5cd93c0ab03c71ae0d8c06ee6dca401",
+            "observed_at": "2026-11-07T04:43:00+09:00",
+            "reported_registry": "asset_manifest_v0.19.json",
+            "reported_registry_sha256": "a8198524f58e72b56283ab71ebddada22840f108b46ef7165bb3fca9919c5558",
+            "reported_selected_bytes": 32,
+            "reported_selected_files": 2,
+            "reported_selection_sha256": "4876995514ace0273d1c616ef7f932800c8c34793ed4c73399ae4a3525409d5a",
+            "same_day_kst": true,
+            "scope": "RECEIPT_METADATA_ONLY",
+            "selection_recomputed_from_receipt": true,
+            "snapshot_id": "ASSET_V21_20261107_043146_KST_123",
+            "status": "PARTIAL"
+          }
+        },
+        "exit_code": 30,
+        "production_deployment": false,
+        "schema": "b6.1",
+        "scope": "ISOLATED_FIXTURE",
+        "status": "STALE_REGISTRY_BACKUP"
+      },
+      "expected": "STALE_REGISTRY_BACKUP",
+      "verdict": "PASS"
+    },
+    {
+      "actual": "SELECTION_CHANGED",
+      "case": "independent_selection_differs",
+      "details": {
+        "actual_backup_success": false,
+        "details": {
+          "child": {
+            "descendants_remaining": false,
+            "exit_code": 0,
+            "image_residual": false,
+            "outcome": "CREATED",
+            "performed_work": true
+          },
+          "evidence": {
+            "actual_backup_verified": false,
+            "cas_completed": true,
+            "cas_components": 2,
+            "cas_created_at": "2026-11-07T04:36:00+09:00",
+            "cas_manifest_sha256": "22aec8769c2ed30cb03c6fe7369e0247119092f9a2082527609f5b609f9d4d84",
+            "cas_manifest_structure": "VERIFIED",
+            "cas_referenced_bytes": 31,
+            "chain": "METADATA_LINKED",
+            "current_cas_component_sha256": "NOT_PERFORMED",
+            "current_registry_match": true,
+            "current_selection_match": false,
+            "historical_oneshot": "SUCCESS_CLAIM_BOUND_TO_METADATA",
+            "latest_registry": "asset_manifest_v0.27.json",
+            "latest_registry_sha256": "a8198524f58e72b56283ab71ebddada22840f108b46ef7165bb3fca9919c5558",
+            "local_created_at": "2026-11-07T04:34:00+09:00",
+            "local_lock_and_integrity": "HISTORICAL_STATUS_REPORT_ONLY",
+            "local_receipt_bytes_verified": true,
+            "local_receipt_sha256_reported": "160d0d6c29cdefb2a11600924319d105b171f27cae3a7c2a44fa54de662444fc",
+            "observed_at": "2026-11-07T04:43:00+09:00",
+            "reported_registry": "asset_manifest_v0.27.json",
+            "reported_registry_sha256": "a8198524f58e72b56283ab71ebddada22840f108b46ef7165bb3fca9919c5558",
+            "reported_selected_bytes": 32,
+            "reported_selected_files": 2,
+            "reported_selection_sha256": "4876995514ace0273d1c616ef7f932800c8c34793ed4c73399ae4a3525409d5a",
+            "same_day_kst": true,
+            "scope": "RECEIPT_METADATA_ONLY",
+            "selection_recomputed_from_receipt": true,
+            "snapshot_id": "ASSET_V21_20261107_043146_KST_123",
+            "status": "PARTIAL"
+          }
+        },
+        "exit_code": 30,
+        "production_deployment": false,
+        "schema": "b6.1",
+        "scope": "ISOLATED_FIXTURE",
+        "status": "SELECTION_CHANGED"
+      },
+      "expected": "SELECTION_CHANGED",
+      "verdict": "PASS"
+    },
+    {
+      "actual": "SELECTION_OR_REGISTRY_CHANGED_DURING_RUN",
+      "case": "selection_mutates_mid_run",
+      "details": {
+        "actual_backup_success": false,
+        "details": {
+          "child": {
+            "descendants_remaining": false,
+            "exit_code": 0,
+            "image_residual": false,
+            "outcome": "CREATED",
+            "performed_work": true
+          },
+          "evidence": {
+            "actual_backup_verified": false,
+            "cas_completed": true,
+            "cas_components": 2,
+            "cas_created_at": "2026-11-07T04:36:00+09:00",
+            "cas_manifest_sha256": "22aec8769c2ed30cb03c6fe7369e0247119092f9a2082527609f5b609f9d4d84",
+            "cas_manifest_structure": "VERIFIED",
+            "cas_referenced_bytes": 31,
+            "chain": "METADATA_LINKED",
+            "current_cas_component_sha256": "NOT_PERFORMED",
+            "current_registry_match": true,
+            "current_selection_match": true,
+            "historical_oneshot": "SUCCESS_CLAIM_BOUND_TO_METADATA",
+            "latest_registry": "asset_manifest_v0.27.json",
+            "latest_registry_sha256": "a8198524f58e72b56283ab71ebddada22840f108b46ef7165bb3fca9919c5558",
+            "local_created_at": "2026-11-07T04:34:00+09:00",
+            "local_lock_and_integrity": "HISTORICAL_STATUS_REPORT_ONLY",
+            "local_receipt_bytes_verified": true,
+            "local_receipt_sha256_reported": "160d0d6c29cdefb2a11600924319d105b171f27cae3a7c2a44fa54de662444fc",
+            "observed_at": "2026-11-07T04:43:00+09:00",
+            "reported_registry": "asset_manifest_v0.27.json",
+            "reported_registry_sha256": "a8198524f58e72b56283ab71ebddada22840f108b46ef7165bb3fca9919c5558",
+            "reported_selected_bytes": 32,
+            "reported_selected_files": 2,
+            "reported_selection_sha256": "4876995514ace0273d1c616ef7f932800c8c34793ed4c73399ae4a3525409d5a",
+            "same_day_kst": true,
+            "scope": "RECEIPT_METADATA_ONLY",
+            "selection_recomputed_from_receipt": true,
+            "snapshot_id": "ASSET_V21_20261107_043146_KST_123",
+            "status": "PARTIAL"
+          }
+        },
+        "exit_code": 30,
+        "production_deployment": false,
+        "schema": "b6.1",
+        "scope": "ISOLATED_FIXTURE",
+        "status": "SELECTION_OR_REGISTRY_CHANGED_DURING_RUN"
+      },
+      "expected": "SELECTION_OR_REGISTRY_CHANGED_DURING_RUN",
+      "verdict": "PASS"
+    },
+    {
+      "actual": "SELECTION_OR_REGISTRY_CHANGED_DURING_RUN",
+      "case": "registry_mutates_mid_run",
+      "details": {
+        "actual_backup_success": false,
+        "details": {
+          "child": {
+            "descendants_remaining": false,
+            "exit_code": 0,
+            "image_residual": false,
+            "outcome": "CREATED",
+            "performed_work": true
+          },
+          "evidence": {
+            "actual_backup_verified": false,
+            "cas_completed": true,
+            "cas_components": 2,
+            "cas_created_at": "2026-11-07T04:36:00+09:00",
+            "cas_manifest_sha256": "22aec8769c2ed30cb03c6fe7369e0247119092f9a2082527609f5b609f9d4d84",
+            "cas_manifest_structure": "VERIFIED",
+            "cas_referenced_bytes": 31,
+            "chain": "METADATA_LINKED",
+            "current_cas_component_sha256": "NOT_PERFORMED",
+            "current_registry_match": true,
+            "current_selection_match": true,
+            "historical_oneshot": "SUCCESS_CLAIM_BOUND_TO_METADATA",
+            "latest_registry": "asset_manifest_v0.27.json",
+            "latest_registry_sha256": "a8198524f58e72b56283ab71ebddada22840f108b46ef7165bb3fca9919c5558",
+            "local_created_at": "2026-11-07T04:34:00+09:00",
+            "local_lock_and_integrity": "HISTORICAL_STATUS_REPORT_ONLY",
+            "local_receipt_bytes_verified": true,
+            "local_receipt_sha256_reported": "160d0d6c29cdefb2a11600924319d105b171f27cae3a7c2a44fa54de662444fc",
+            "observed_at": "2026-11-07T04:43:00+09:00",
+            "reported_registry": "asset_manifest_v0.27.json",
+            "reported_registry_sha256": "a8198524f58e72b56283ab71ebddada22840f108b46ef7165bb3fca9919c5558",
+            "reported_selected_bytes": 32,
+            "reported_selected_files": 2,
+            "reported_selection_sha256": "4876995514ace0273d1c616ef7f932800c8c34793ed4c73399ae4a3525409d5a",
+            "same_day_kst": true,
+            "scope": "RECEIPT_METADATA_ONLY",
+            "selection_recomputed_from_receipt": true,
+            "snapshot_id": "ASSET_V21_20261107_043146_KST_123",
+            "status": "PARTIAL"
+          }
+        },
+        "exit_code": 30,
+        "production_deployment": false,
+        "schema": "b6.1",
+        "scope": "ISOLATED_FIXTURE",
+        "status": "SELECTION_OR_REGISTRY_CHANGED_DURING_RUN"
+      },
+      "expected": "SELECTION_OR_REGISTRY_CHANGED_DURING_RUN",
+      "verdict": "PASS"
+    },
+    {
+      "actual": "LOCAL_ORIGINAL_MISSING",
+      "case": "missing_local_original",
+      "details": {
+        "actual_backup_success": false,
+        "details": {
+          "child": {
+            "descendants_remaining": false,
+            "exit_code": 0,
+            "image_residual": false,
+            "outcome": "CREATED",
+            "performed_work": true
+          },
+          "evidence": {}
+        },
+        "exit_code": 30,
+        "production_deployment": false,
+        "schema": "b6.1",
+        "scope": "ISOLATED_FIXTURE",
+        "status": "LOCAL_ORIGINAL_MISSING"
+      },
+      "expected": "LOCAL_ORIGINAL_MISSING",
+      "verdict": "PASS"
+    },
+    {
+      "actual": "CAS_COMPONENTS_NOT_VERIFIED",
+      "case": "cas_verifier_missing",
+      "details": {
+        "actual_backup_success": false,
+        "details": {
+          "child": {
+            "descendants_remaining": false,
+            "exit_code": 0,
+            "image_residual": false,
+            "outcome": "CREATED",
+            "performed_work": true
+          },
+          "evidence": {
+            "actual_backup_verified": false,
+            "cas_completed": true,
+            "cas_components": 2,
+            "cas_created_at": "2026-11-07T04:36:00+09:00",
+            "cas_manifest_sha256": "22aec8769c2ed30cb03c6fe7369e0247119092f9a2082527609f5b609f9d4d84",
+            "cas_manifest_structure": "VERIFIED",
+            "cas_referenced_bytes": 31,
+            "chain": "METADATA_LINKED",
+            "current_cas_component_sha256": "NOT_PERFORMED",
+            "current_registry_match": true,
+            "current_selection_match": true,
+            "historical_oneshot": "SUCCESS_CLAIM_BOUND_TO_METADATA",
+            "latest_registry": "asset_manifest_v0.27.json",
+            "latest_registry_sha256": "a8198524f58e72b56283ab71ebddada22840f108b46ef7165bb3fca9919c5558",
+            "local_created_at": "2026-11-07T04:34:00+09:00",
+            "local_lock_and_integrity": "HISTORICAL_STATUS_REPORT_ONLY",
+            "local_receipt_bytes_verified": true,
+            "local_receipt_sha256_reported": "160d0d6c29cdefb2a11600924319d105b171f27cae3a7c2a44fa54de662444fc",
+            "observed_at": "2026-11-07T04:43:00+09:00",
+            "reported_registry": "asset_manifest_v0.27.json",
+            "reported_registry_sha256": "a8198524f58e72b56283ab71ebddada22840f108b46ef7165bb3fca9919c5558",
+            "reported_selected_bytes": 32,
+            "reported_selected_files": 2,
+            "reported_selection_sha256": "4876995514ace0273d1c616ef7f932800c8c34793ed4c73399ae4a3525409d5a",
+            "same_day_kst": true,
+            "scope": "RECEIPT_METADATA_ONLY",
+            "selection_recomputed_from_receipt": true,
+            "snapshot_id": "ASSET_V21_20261107_043146_KST_123",
+            "status": "PARTIAL"
+          }
+        },
+        "exit_code": 30,
+        "production_deployment": false,
+        "schema": "b6.1",
+        "scope": "ISOLATED_FIXTURE",
+        "status": "CAS_COMPONENTS_NOT_VERIFIED"
+      },
+      "expected": "CAS_COMPONENTS_NOT_VERIFIED",
+      "verdict": "PASS"
+    },
+    {
+      "actual": "CAS_COMPONENTS_NOT_VERIFIED",
+      "case": "cas_component_wrong_bytes",
+      "details": {
+        "actual_backup_success": false,
+        "details": {
+          "child": {
+            "descendants_remaining": false,
+            "exit_code": 0,
+            "image_residual": false,
+            "outcome": "CREATED",
+            "performed_work": true
+          },
+          "evidence": {
+            "actual_backup_verified": false,
+            "cas_completed": true,
+            "cas_components": 2,
+            "cas_created_at": "2026-11-07T04:36:00+09:00",
+            "cas_manifest_sha256": "22aec8769c2ed30cb03c6fe7369e0247119092f9a2082527609f5b609f9d4d84",
+            "cas_manifest_structure": "VERIFIED",
+            "cas_referenced_bytes": 31,
+            "chain": "METADATA_LINKED",
+            "current_cas_component_sha256": "NOT_PERFORMED",
+            "current_registry_match": true,
+            "current_selection_match": true,
+            "historical_oneshot": "SUCCESS_CLAIM_BOUND_TO_METADATA",
+            "latest_registry": "asset_manifest_v0.27.json",
+            "latest_registry_sha256": "a8198524f58e72b56283ab71ebddada22840f108b46ef7165bb3fca9919c5558",
+            "local_created_at": "2026-11-07T04:34:00+09:00",
+            "local_lock_and_integrity": "HISTORICAL_STATUS_REPORT_ONLY",
+            "local_receipt_bytes_verified": true,
+            "local_receipt_sha256_reported": "160d0d6c29cdefb2a11600924319d105b171f27cae3a7c2a44fa54de662444fc",
+            "observed_at": "2026-11-07T04:43:00+09:00",
+            "reported_registry": "asset_manifest_v0.27.json",
+            "reported_registry_sha256": "a8198524f58e72b56283ab71ebddada22840f108b46ef7165bb3fca9919c5558",
+            "reported_selected_bytes": 32,
+            "reported_selected_files": 2,
+            "reported_selection_sha256": "4876995514ace0273d1c616ef7f932800c8c34793ed4c73399ae4a3525409d5a",
+            "same_day_kst": true,
+            "scope": "RECEIPT_METADATA_ONLY",
+            "selection_recomputed_from_receipt": true,
+            "snapshot_id": "ASSET_V21_20261107_043146_KST_123",
+            "status": "PARTIAL"
+          }
+        },
+        "exit_code": 30,
+        "production_deployment": false,
+        "schema": "b6.1",
+        "scope": "ISOLATED_FIXTURE",
+        "status": "CAS_COMPONENTS_NOT_VERIFIED"
+      },
+      "expected": "CAS_COMPONENTS_NOT_VERIFIED",
+      "verdict": "PASS"
+    },
+    {
+      "actual": "EVIDENCE_INVALID",
+      "case": "nas_lineage_mismatch",
+      "details": {
+        "actual_backup_success": false,
+        "details": {
+          "child": {
+            "descendants_remaining": false,
+            "exit_code": 0,
+            "image_residual": false,
+            "outcome": "CREATED",
+            "performed_work": true
+          },
+          "evidence": {
+            "actual_backup_verified": false,
+            "reason": "CAS_LINEAGE_MISMATCH",
+            "scope": "RECEIPT_METADATA_ONLY",
+            "status": "FAIL"
+          }
+        },
+        "exit_code": 30,
+        "production_deployment": false,
+        "schema": "b6.1",
+        "scope": "ISOLATED_FIXTURE",
+        "status": "EVIDENCE_INVALID"
+      },
+      "expected": "EVIDENCE_INVALID",
+      "verdict": "PASS"
+    },
+    {
+      "actual": "FAILED_CHILD",
+      "case": "child_timeout",
+      "details": {
+        "actual_backup_success": false,
+        "details": {
+          "reason": "FIXTURE_TIMEOUT"
+        },
+        "exit_code": 30,
+        "production_deployment": false,
+        "schema": "b6.1",
+        "scope": "ISOLATED_FIXTURE",
+        "status": "FAILED_CHILD"
+      },
+      "expected": "FAILED_CHILD",
+      "verdict": "PASS"
+    },
+    {
+      "actual": "FAILED_CHILD",
+      "case": "child_nonzero",
+      "details": {
+        "actual_backup_success": false,
+        "details": {
+          "child": {
+            "descendants_remaining": false,
+            "exit_code": 9,
+            "image_residual": false,
+            "outcome": "CREATED",
+            "performed_work": true
+          },
+          "evidence": {}
+        },
+        "exit_code": 30,
+        "production_deployment": false,
+        "schema": "b6.1",
+        "scope": "ISOLATED_FIXTURE",
+        "status": "FAILED_CHILD"
+      },
+      "expected": "FAILED_CHILD",
+      "verdict": "PASS"
+    },
+    {
+      "actual": "FAILED_CHILD",
+      "case": "escaped_child_report",
+      "details": {
+        "actual_backup_success": false,
+        "details": {
+          "child": {
+            "descendants_remaining": false,
+            "exit_code": 0,
+            "image_residual": false,
+            "outcome": "ESCAPED",
+            "performed_work": true
+          },
+          "evidence": {}
+        },
+        "exit_code": 30,
+        "production_deployment": false,
+        "schema": "b6.1",
+        "scope": "ISOLATED_FIXTURE",
+        "status": "FAILED_CHILD"
+      },
+      "expected": "FAILED_CHILD",
+      "verdict": "PASS"
+    },
+    {
+      "actual": "BLOCKED_RESIDUAL",
+      "case": "descendant_still_running",
+      "details": {
+        "actual_backup_success": false,
+        "details": {
+          "child": {
+            "descendants_remaining": true,
+            "exit_code": 0,
+            "image_residual": false,
+            "outcome": "CREATED",
+            "performed_work": true
+          },
+          "evidence": {}
+        },
+        "exit_code": 30,
+        "production_deployment": false,
+        "schema": "b6.1",
+        "scope": "ISOLATED_FIXTURE",
+        "status": "BLOCKED_RESIDUAL"
+      },
+      "expected": "BLOCKED_RESIDUAL",
+      "verdict": "PASS"
+    },
+    {
+      "actual": "BLOCKED_RESIDUAL",
+      "case": "mounted_image_remains",
+      "details": {
+        "actual_backup_success": false,
+        "details": {
+          "child": {
+            "descendants_remaining": false,
+            "exit_code": 0,
+            "image_residual": true,
+            "outcome": "CREATED",
+            "performed_work": true
+          },
+          "evidence": {}
+        },
+        "exit_code": 30,
+        "production_deployment": false,
+        "schema": "b6.1",
+        "scope": "ISOLATED_FIXTURE",
+        "status": "BLOCKED_RESIDUAL"
+      },
+      "expected": "BLOCKED_RESIDUAL",
+      "verdict": "PASS"
+    },
+    {
+      "actual": true,
+      "case": "os_post_pin_code_replacement",
+      "details": {
+        "fresh_open_detected_change": true,
+        "held_descriptor_same_bytes": true
+      },
+      "expected": true,
+      "verdict": "PASS"
+    },
+    {
+      "actual": true,
+      "case": "os_lock_inode_replacement",
+      "details": {
+        "lstat_vs_original_fd_detected": true,
+        "separate_inodes_both_locked": true
+      },
+      "expected": true,
+      "verdict": "PASS"
+    },
+    {
+      "actual": "BLOCKED_PROGRAM_PIN_CHANGED",
+      "case": "supervisor_detects_post_run_pin_change",
+      "details": {
+        "actual_backup_success": false,
+        "details": {},
+        "exit_code": 30,
+        "production_deployment": false,
+        "schema": "b6.1",
+        "scope": "ISOLATED_FIXTURE",
+        "status": "BLOCKED_PROGRAM_PIN_CHANGED"
+      },
+      "expected": "BLOCKED_PROGRAM_PIN_CHANGED",
+      "verdict": "PASS"
+    },
+    {
+      "actual": "BLOCKED_LOCK_REPLACED",
+      "case": "supervisor_detects_lock_identity_replacement",
+      "details": {
+        "actual_backup_success": false,
+        "details": {},
+        "exit_code": 30,
+        "production_deployment": false,
+        "schema": "b6.1",
+        "scope": "ISOLATED_FIXTURE",
+        "status": "BLOCKED_LOCK_REPLACED"
+      },
+      "expected": "BLOCKED_LOCK_REPLACED",
+      "verdict": "PASS"
+    },
+    {
+      "actual": true,
+      "case": "os_detached_process_escape_and_cleanup",
+      "details": {
+        "escaped_descendant_answered_after_signal": true,
+        "escaped_descendant_closed_probe_channel_on_exit": true,
+        "original_group_leader_terminated": true
+      },
+      "expected": true,
+      "verdict": "PASS"
+    }
+  ],
+  "exit": 0,
+  "passed": 33,
+  "scope": "ISOLATED_FIXTURE",
+  "total": 33
+}

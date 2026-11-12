@@ -1,0 +1,15 @@
+{
+  "version": "0.2",
+  "date_kst": "2026-11-04T08:46:24+09:00",
+  "state": "SUCCESS_VERIFIED",
+  "phase": "postflight",
+  "actual_backup_success": true,
+  "google_drive_transfer": false,
+  "automatic_retry": false,
+  "configured_jobs_modified": false,
+  "protected_existing_backup": true,
+  "local_snapshot": "ASSET_V21_20261104_084130_KST_34561",
+  "manifest_sha256": "f2e7d88d16b6b2aa98d8cc53ed6cbf099f8b19bc4c7cbce072b1ee62ffd7233d",
+  "nas_cas_manifest": "CAS_ASSET_V21_20261104_084130_KST_34561.json",
+  "backed_up_files": 3328
+}

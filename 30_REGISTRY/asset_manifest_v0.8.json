@@ -1,0 +1,1091 @@
+{
+  "schema_version": "0.8",
+  "captured_at_kst": "2026-11-03T20:24:42+09:00",
+  "scope": "ASSETSEARCH_V15_USER_FIELD_QA_AND_ENCRYPTED_BACKUP_HEADLESS_PREFLIGHT",
+  "registry_mode": "local-only security classification and search metadata",
+  "existing_index_baseline": {
+    "sqlite_integrity": "ok",
+    "docs": 2270,
+    "physical": 1024,
+    "zip_member_names": 1246,
+    "text_searchable": 223,
+    "cloud_access_in_docs": 0
+  },
+  "asset_files": [
+    {
+      "asset_id": "TA-CASE-20261102-01",
+      "title": "Firebase addressbook historical success script",
+      "observed_original_path": "/Users/yongho/StudioProjects/ROUTIVEL-Firebase-Migration/tools/firebase-migration/cloud_access.py",
+      "bytes": 3995,
+      "sha256": "de08b060d03a6b6c9f155cf89673f2285a67502cf664442b1a9bc835529a54e5",
+      "mtime_utc": "2026-10-04T08:15:40.031877+00:00",
+      "observation": "historical_success_claim;current_file_hash_verified",
+      "execution_validation": "NOT_TESTED_IN_THIS_AUDIT",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "NO",
+      "original_file_unchanged": true
+    },
+    {
+      "asset_id": "INTEGRATION-F1",
+      "title": "Driver app status policy source",
+      "observed_original_path": "/Users/yongho/StudioProjects/DISPATCH-One-Android/app/src/main/java/com/routivel/driver/TransportStatusPolicy.kt",
+      "bytes": 3864,
+      "sha256": "5494734c4599b051c545523ed9142c52919c21d5d04bdd4f8dc3436dd41d8e03",
+      "mtime_utc": "2026-10-13T03:35:50.976605+00:00",
+      "observation": "historical_static_review;current_file_hash_verified",
+      "execution_validation": "NOT_TESTED_IN_THIS_AUDIT",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "NO",
+      "original_file_unchanged": true
+    },
+    {
+      "asset_id": "ASSET-SEARCH-01-ENGINE",
+      "title": "ASSET-SEARCH-01 v1.1 index engine",
+      "observed_original_path": "/Users/yongho/Library/Application Support/ROUTABL-AssetSearch/routabl_assetsearch_v1_1.py",
+      "bytes": 10598,
+      "sha256": "bdea926cabe2157bdec2f8d0c69173e1a50dfa35ec5cae40563f16711588cc83",
+      "mtime_utc": "2026-11-02T12:42:29.905866+00:00",
+      "observation": "source_file_hash_verified",
+      "execution_validation": "NOT_TESTED_IN_THIS_AUDIT",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "NO",
+      "original_file_unchanged": true
+    },
+    {
+      "asset_id": "ASSET-SEARCH-01-WEB",
+      "title": "ASSET-SEARCH-01 v1.1 local UI",
+      "observed_original_path": "/Users/yongho/Library/Application Support/ROUTABL-AssetSearch/routabl_web_v1_1.py",
+      "bytes": 4801,
+      "sha256": "7bd3d71d247c25b45b6e38c89e6ab508ed65e9196c744d92afde6e6771efafd3",
+      "mtime_utc": "2026-11-02T12:44:35.543813+00:00",
+      "observation": "source_file_hash_verified",
+      "execution_validation": "NOT_TESTED_IN_THIS_AUDIT",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "NO",
+      "original_file_unchanged": true
+    },
+    {
+      "asset_id": "ASSET-SEARCH-01-DB",
+      "title": "ASSET-SEARCH-01 v1.1 SQLite baseline",
+      "observed_original_path": "/Users/yongho/Library/Application Support/ROUTABL-AssetSearch/assets.sqlite",
+      "bytes": 25313280,
+      "sha256": "cdda70b4853f527e34f470014a4c1849b00ff7bc15b4988826b1234dc4677446",
+      "mtime_utc": "2026-11-02T12:45:27.311016+00:00",
+      "observation": "sqlite_integrity_ok;file_hash_verified",
+      "execution_validation": "NOT_TESTED_IN_THIS_AUDIT",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "NO",
+      "original_file_unchanged": true
+    },
+    {
+      "asset_id": "ASSET-SEARCH-01-SOURCE-ZIP",
+      "title": "ASSET-SEARCH-01 v1.1 source package",
+      "observed_original_path": "/Users/yongho/Library/Application Support/ROUTABL-AssetSearch/ROUTABL_AssetSearch_v1.1_SOURCE.zip",
+      "bytes": 7527,
+      "sha256": "b71205236922dde4b49cac3f055f8d8353e969f4efdedcfc5d78d2a3cd27627e",
+      "mtime_utc": "2026-11-02T12:47:27.271183+00:00",
+      "observation": "zip_file_hash_verified;archive_member_validation_not_done",
+      "execution_validation": "NOT_TESTED_IN_THIS_AUDIT",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "NO",
+      "original_file_unchanged": true
+    },
+    {
+      "asset_id": "NAS-README-20261024",
+      "title": "NAS Routabl archive readme",
+      "observed_original_path": "/Volumes/Dev_Assets/Routabl/README_START_HERE.md",
+      "bytes": 2067,
+      "sha256": "de8c99fabca86d1ace52a64349bc6b950b5811e6270ce46507f13ee27f85888f",
+      "mtime_utc": "2026-10-23T23:41:47.071834+00:00",
+      "observation": "readme_file_hash_verified;historical_nas_contents_not_revalidated",
+      "execution_validation": "NOT_TESTED_IN_THIS_AUDIT",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "NO",
+      "original_file_unchanged": true
+    },
+    {
+      "asset_id": "ROUTABL-97-1-V4.1-ZIP",
+      "title": "97-1 internal whitepaper v4.1 ZIP",
+      "observed_original_path": "/Volumes/Dev_Assets/Routabl/97-1_최종내부기준판_v4.1_20261102/ROUTABL_97-1_v4.1_FINAL.zip",
+      "bytes": 3320156,
+      "sha256": "4f56d30d346c075347f890aca0e91b3c58a00672b0d85edb37a73cc1d84dea89",
+      "observation": "NAS_RECEIPT_FILE_SHA256_MATCH",
+      "execution_validation": "NOT_APPLICABLE",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "YES_SHA256_VERIFIED",
+      "original_file_unchanged": true,
+      "sealed": true,
+      "archive_crc_test": "PASS",
+      "archive_members": 19,
+      "managed_local_copy_path": "/Users/yongho/ROUTABL-TechAssets/20_ORIGINALS/NAS-Imported/ROUTABL-97-1-V4.1/ROUTABL_97-1_v4.1_FINAL.zip",
+      "copy_validation": "FILE_HASH_MATCH_NAS_SOURCE;NOT_OFFLINE_RESTORE_TEST"
+    },
+    {
+      "asset_id": "ROUTABL-97-1-V4.1-PDF",
+      "title": "97-1 internal whitepaper v4.1 PDF",
+      "observed_original_path": "/Volumes/Dev_Assets/Routabl/97-1_최종내부기준판_v4.1_20261102/01_라우터블개발백서_최종내부기준판_v4.1.pdf",
+      "bytes": 4907472,
+      "sha256": "c10eec1954129bfdaacb18a5239a7d193723658d12336723f09096f98d04f799",
+      "observation": "NAS_RECEIPT_FILE_SHA256_MATCH",
+      "execution_validation": "NOT_APPLICABLE",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "YES_SHA256_VERIFIED",
+      "original_file_unchanged": true,
+      "sealed": true,
+      "managed_local_copy_path": "/Users/yongho/ROUTABL-TechAssets/20_ORIGINALS/NAS-Imported/ROUTABL-97-1-V4.1/01_라우터블개발백서_최종내부기준판_v4.1.pdf",
+      "copy_validation": "FILE_HASH_MATCH_NAS_SOURCE;NOT_OFFLINE_RESTORE_TEST"
+    },
+    {
+      "asset_id": "ROUTABL-97-1-V4.1-NAS-RECEIPT",
+      "title": "97-1 NAS seal receipt",
+      "observed_original_path": "/Volumes/Dev_Assets/Routabl/97-1_최종내부기준판_v4.1_20261102/NAS_BACKUP_RECEIPT_v4.1.json",
+      "managed_local_copy_path": "/Users/yongho/ROUTABL-TechAssets/20_ORIGINALS/NAS-Imported/ROUTABL-97-1-V4.1/NAS_BACKUP_RECEIPT_v4.1.json",
+      "sha256": "f11fbec5ec3af2b611bfceb6255771cdfb2290481738ef841500e45ff3a3b79f",
+      "bytes": 850,
+      "observation": "NAS_SOURCE_TO_MAC_COPIED_AND_HASH_VERIFIED",
+      "execution_validation": "NOT_APPLICABLE",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "YES_SHA256_VERIFIED",
+      "original_file_unchanged": true
+    },
+    {
+      "asset_id": "ASSET-SEARCH-01-V12-ENGINE",
+      "title": "AssetSearch v1.2 metadata-only engine",
+      "observed_original_path": "/Users/yongho/Library/Application Support/ROUTABL-AssetSearch/routabl_assetsearch_v1_2.py",
+      "bytes": 4797,
+      "sha256": "c853606aec8acec53400fefee6e8399da492df1e162428412a9d2a8ef555e332",
+      "observation": "NEW_METADATA_ONLY_INDEX_OR_UI",
+      "execution_validation": "SYNTAX_AND_QUERY_TESTED",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "NO",
+      "original_file_unchanged": true
+    },
+    {
+      "asset_id": "ASSET-SEARCH-01-V12-DB",
+      "title": "AssetSearch v1.2 separate SQLite index",
+      "observed_original_path": "/Users/yongho/Library/Application Support/ROUTABL-AssetSearch/assets_v1_2.sqlite",
+      "bytes": 25313280,
+      "sha256": "60d6885d3475cf72e758bf80122fab0d7a7068f6f98f236fa299431cd1b391b7",
+      "observation": "NEW_METADATA_ONLY_INDEX_OR_UI",
+      "execution_validation": "SQLITE_INTEGRITY_AND_SEARCH_VERIFIED",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "NO",
+      "original_file_unchanged": true
+    },
+    {
+      "asset_id": "ASSET-SEARCH-01-V12-WEB",
+      "title": "AssetSearch v1.2 local web UI",
+      "observed_original_path": "/Users/yongho/Library/Application Support/ROUTABL-AssetSearch/routabl_web_v1_2.py",
+      "bytes": 4876,
+      "sha256": "8594ca4d0908874b79fe37d2270b1e4bef3b7d7ef63f670d6e63c770f8b8d5fe",
+      "observation": "NEW_METADATA_ONLY_INDEX_OR_UI",
+      "execution_validation": "SYNTAX_AND_QUERY_TESTED",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "NO",
+      "original_file_unchanged": true
+    },
+    {
+      "asset_id": "ASSET-SEARCH-01-V13-ENGINE",
+      "title": "AssetSearch v1.3 safe Mac code/metadata indexer",
+      "observed_original_path": "/Users/yongho/Library/Application Support/ROUTABL-AssetSearch/routabl_assetsearch_v1_3.py",
+      "bytes": 10104,
+      "sha256": "9faeb3e8711f3f2c1dcd0c63e4848fd9cabd87ae8ea4e15d89f23d5ce2fb5de3",
+      "observation": "NEW_V1_3_LOCAL_ARTIFACT_NOT_REMOTE_REPLICATED",
+      "execution_validation": "LOCAL_SEARCH_SYNTAX_AND_HTTP_TEST_VERIFIED",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "NO",
+      "original_file_unchanged": true
+    },
+    {
+      "asset_id": "ASSET-SEARCH-01-V13-DB",
+      "title": "AssetSearch v1.3 separate SQLite index",
+      "observed_original_path": "/Users/yongho/Library/Application Support/ROUTABL-AssetSearch/assets_v1_3.sqlite",
+      "bytes": 86417408,
+      "sha256": "c5a800f36aaaeddd1b5aad086403df115fa8f99fb8f616271421e89dff71cba4",
+      "observation": "NEW_V1_3_LOCAL_ARTIFACT_NOT_REMOTE_REPLICATED",
+      "execution_validation": "SQLITE_QUICK_CHECK_OK",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "NO",
+      "original_file_unchanged": true
+    },
+    {
+      "asset_id": "ASSET-SEARCH-01-V13-WEB",
+      "title": "AssetSearch v1.3 private localhost UI",
+      "observed_original_path": "/Users/yongho/Library/Application Support/ROUTABL-AssetSearch/routabl_web_v1_3.py",
+      "bytes": 4919,
+      "sha256": "3697244a4ed035a35f10c972e12e9bf163ebe25fb1b61047b207ae9df6a004c8",
+      "observation": "NEW_V1_3_LOCAL_ARTIFACT_NOT_REMOTE_REPLICATED",
+      "execution_validation": "LOCAL_SEARCH_SYNTAX_AND_HTTP_TEST_VERIFIED",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "NO",
+      "original_file_unchanged": true
+    },
+    {
+      "asset_id": "ASSET-SECURITY-POLICY-01",
+      "title": "Technical asset access and search classification policy v0.1",
+      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/00_GUIDE/ASSET_SECURITY_AND_SEARCH_POLICY_v0.1.md",
+      "bytes": 4223,
+      "sha256": "703140ed59a76bbf8306fcbcff89dbeda84f050bcd300ffef39b6d61fcabc4fc",
+      "observation": "NEW_V1_3_LOCAL_ARTIFACT_NOT_REMOTE_REPLICATED",
+      "execution_validation": "DOCUMENT_ONLY",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "NO",
+      "original_file_unchanged": true
+    },
+    {
+      "asset_id": "ASSET-SEARCH-V14-SERVICE",
+      "title": "Local search v1.4 service with refresh and single server lock",
+      "observed_original_path": "/Users/yongho/Library/Application Support/ROUTABL-AssetSearch/routabl_search_v1_4_service.py",
+      "bytes": 14922,
+      "sha256": "972bc93b820c8b7446931ec2a4403d6be7846c21f787d3328b38dd264e17a068",
+      "observation": "NEW_LOCAL_V1_4_ARTIFACT_WITHOUT_SOURCE_REWRITE",
+      "execution_validation": "PY_COMPILE_HTTP_SECURITY_REFRESH_IDLE_PASS",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "NO",
+      "original_file_unchanged": true
+    },
+    {
+      "asset_id": "ASSET-SEARCH-V14-ACTIVE",
+      "title": "v1.4 active SQLite catalog",
+      "observed_original_path": "/Users/yongho/Library/Application Support/ROUTABL-AssetSearch/assets_v1_4.sqlite",
+      "bytes": 86417408,
+      "sha256": "c5a800f36aaaeddd1b5aad086403df115fa8f99fb8f616271421e89dff71cba4",
+      "observation": "NEW_LOCAL_V1_4_ARTIFACT_WITHOUT_SOURCE_REWRITE",
+      "execution_validation": "SQLITE_QUICK_CHECK_OK",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "NO",
+      "original_file_unchanged": true
+    },
+    {
+      "asset_id": "ASSET-SEARCH-V14-ROLLBACK",
+      "title": "v1.4 prior generation recovery SQLite catalog",
+      "observed_original_path": "/Users/yongho/Library/Application Support/ROUTABL-AssetSearch/assets_v1_4.previous.sqlite",
+      "bytes": 86417408,
+      "sha256": "c7fc620620e87f885b506f72c14fcd68644a381dae58d8c1acf5b976e1359f22",
+      "observation": "NEW_LOCAL_V1_4_ARTIFACT_WITHOUT_SOURCE_REWRITE",
+      "execution_validation": "SQLITE_QUICK_CHECK_OK",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "NO",
+      "original_file_unchanged": true
+    },
+    {
+      "asset_id": "ASSET-SEARCH-V14-LAUNCHER-SRC",
+      "title": "Native Swift launcher source",
+      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/40_WORKING/ASSET-SEARCH-V1_4/RoutablSearchLauncher.swift",
+      "bytes": 3476,
+      "sha256": "3b47027f0647adaf24c1b7c3ed6980123aa99609d0009d459f6bb3c9de4e678b",
+      "observation": "NEW_LOCAL_V1_4_ARTIFACT_WITHOUT_SOURCE_REWRITE",
+      "execution_validation": "SWIFT_COMPILATION_PASS",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "NO",
+      "original_file_unchanged": true
+    },
+    {
+      "asset_id": "ASSET-SEARCH-V14-APP",
+      "title": "Mac app native launcher executable",
+      "observed_original_path": "/Users/yongho/Applications/라우터블 기술자산 검색.app/Contents/MacOS/RoutablSearch",
+      "bytes": 59008,
+      "sha256": "9fdd8822cc8e516292f0001c831bb3049e6fa6d97396258268939a96c4bfb0a0",
+      "observation": "NEW_LOCAL_V1_4_ARTIFACT_WITHOUT_SOURCE_REWRITE",
+      "execution_validation": "APP_LAUNCHSERVICES_AND_ADHOC_CODESIGN_PASS",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "NO",
+      "original_file_unchanged": true
+    },
+    {
+      "asset_id": "ASSET-SEARCH-V14-APP-PLIST",
+      "title": "Mac app bundle identity and display name",
+      "observed_original_path": "/Users/yongho/Applications/라우터블 기술자산 검색.app/Contents/Info.plist",
+      "bytes": 784,
+      "sha256": "b3cfe8d5cc8ac3fd81ed19ff36c02e41bdda07334a6f2a8e1c034b8cdc1608a5",
+      "observation": "NEW_LOCAL_V1_4_ARTIFACT_WITHOUT_SOURCE_REWRITE",
+      "execution_validation": "PLUTIL_LINT_PASS",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "NO",
+      "original_file_unchanged": true
+    },
+    {
+      "asset_id": "ASSET-SEARCH-V14-GUIDE",
+      "title": "Finder search app operating instructions",
+      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/00_GUIDE/ASSET_SEARCH_V1_4_QUICKSTART_20261103.md",
+      "bytes": 3372,
+      "sha256": "57e71cdb87c07361d5fb7ea135eee4666d74075cdd6ec70f6d1b637c724340cd",
+      "observation": "NEW_LOCAL_V1_4_ARTIFACT_WITHOUT_SOURCE_REWRITE",
+      "execution_validation": "USER_GUIDE_CREATED",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "NO",
+      "original_file_unchanged": true
+    },
+    {
+      "asset_id": "ASSET-SEARCH-V15-SERVICE",
+      "title": "AssetSearch v1.5 ranking, local UI and provenance service",
+      "observed_original_path": "/Users/yongho/Library/Application Support/ROUTABL-AssetSearch/routabl_search_v1_5_service.py",
+      "bytes": 22823,
+      "sha256": "55b8747b145463c62366deba13904e3136893b8a611bb4ae94bbc2d7a642347d",
+      "observation": "NEW_SEPARATE_V1_5_SEARCH_ARTIFACT_NOT_PRODUCTION_SOURCE",
+      "execution_validation": "HTTP_SEARCH_RANKING_REFRESH_CSRF_AND_IDLE_TEST_PASS",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "NO",
+      "original_file_unchanged": true
+    },
+    {
+      "asset_id": "ASSET-SEARCH-V15-DB",
+      "title": "AssetSearch v1.5 independent active index",
+      "observed_original_path": "/Users/yongho/Library/Application Support/ROUTABL-AssetSearch/assets_v1_5.sqlite",
+      "bytes": 86417408,
+      "sha256": "c5a800f36aaaeddd1b5aad086403df115fa8f99fb8f616271421e89dff71cba4",
+      "observation": "NEW_SEPARATE_V1_5_SEARCH_ARTIFACT_NOT_PRODUCTION_SOURCE",
+      "execution_validation": "SQLITE_QUICK_CHECK_OK",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "NO",
+      "original_file_unchanged": true
+    },
+    {
+      "asset_id": "ASSET-SEARCH-V15-ROLLBACK",
+      "title": "AssetSearch v1.5 previous search index",
+      "observed_original_path": "/Users/yongho/Library/Application Support/ROUTABL-AssetSearch/assets_v1_5.previous.sqlite",
+      "bytes": 86417408,
+      "sha256": "c7fc620620e87f885b506f72c14fcd68644a381dae58d8c1acf5b976e1359f22",
+      "observation": "NEW_SEPARATE_V1_5_SEARCH_ARTIFACT_NOT_PRODUCTION_SOURCE",
+      "execution_validation": "SQLITE_QUICK_CHECK_OK",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "NO",
+      "original_file_unchanged": true
+    },
+    {
+      "asset_id": "ASSET-SEARCH-V15-LAUNCHER-SRC",
+      "title": "Native Swift launcher source v1.5",
+      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/40_WORKING/ASSET-SEARCH-V1_5/RoutablSearchLauncher_v1_5.swift",
+      "bytes": 3476,
+      "sha256": "cbd1f6af2fb89f29cdec72a914e00532629ac5e6d724f942d28832652c4dd265",
+      "observation": "NEW_SEPARATE_V1_5_SEARCH_ARTIFACT_NOT_PRODUCTION_SOURCE",
+      "execution_validation": "SWIFT_COMPILE_AND_SELF_TEST_PASS",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "NO",
+      "original_file_unchanged": true
+    },
+    {
+      "asset_id": "ASSET-SEARCH-V15-APP",
+      "title": "Native Mac launcher executable v1.5",
+      "observed_original_path": "/Users/yongho/Applications/라우터블 기술자산 검색 v1.5.app/Contents/MacOS/RoutablSearch",
+      "bytes": 59008,
+      "sha256": "2aa90e85badb558c970fa394c2aeee46d37eee440e10544f701750095e6760ce",
+      "observation": "NEW_SEPARATE_V1_5_SEARCH_ARTIFACT_NOT_PRODUCTION_SOURCE",
+      "execution_validation": "LAUNCHSERVICES_AND_CODESIGN_VERIFIED",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "NO",
+      "original_file_unchanged": true
+    },
+    {
+      "asset_id": "ASSET-SEARCH-V15-PLIST",
+      "title": "Mac app identity and Finder launch metadata v1.5",
+      "observed_original_path": "/Users/yongho/Applications/라우터블 기술자산 검색 v1.5.app/Contents/Info.plist",
+      "bytes": 797,
+      "sha256": "af0720a08fdd140ae5d3c57a36da6fa2e5a8f5d7ad8364096e9b82752599144c",
+      "observation": "NEW_SEPARATE_V1_5_SEARCH_ARTIFACT_NOT_PRODUCTION_SOURCE",
+      "execution_validation": "PLUTIL_LINT_AND_SIGNATURE_VERIFIED",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "NO",
+      "original_file_unchanged": true
+    },
+    {
+      "asset_id": "ASSET-SEARCH-V15-GUIDE",
+      "title": "v1.5 Finder user instructions",
+      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/00_GUIDE/ASSET_SEARCH_V1_5_QUICKSTART_20261103.md",
+      "bytes": 4045,
+      "sha256": "6ba415e94a27b5a18a93e565b5738000788c54cc9d251ed67661e53af3540d45",
+      "observation": "NEW_SEPARATE_V1_5_SEARCH_ARTIFACT_NOT_PRODUCTION_SOURCE",
+      "execution_validation": "INSTRUCTIONS_CREATED",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "NO",
+      "original_file_unchanged": true
+    },
+    {
+      "asset_id": "ASSET-SEARCH-V15-QA",
+      "title": "v1.5 real-use ranking and safety report",
+      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/ASSET_SEARCH_V1_5_RELEVANCE_AND_FINDER_QA_20261103_v1.0.md",
+      "bytes": 3288,
+      "sha256": "6d4bfccad42dcd5656259392b709ed65e9f192aa303ea4728ad89343b398c028",
+      "observation": "NEW_SEPARATE_V1_5_SEARCH_ARTIFACT_NOT_PRODUCTION_SOURCE",
+      "execution_validation": "REPRODUCIBLE_QA_RECORDED",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "NO",
+      "original_file_unchanged": true
+    },
+    {
+      "asset_id": "ASSET-SEARCH-V15-QA-JSON",
+      "title": "v1.5 machine-readable test outcomes",
+      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/ASSET_SEARCH_V1_5_RELEVANCE_AND_FINDER_QA_20261103_v1.0.json",
+      "bytes": 2672,
+      "sha256": "4054bd963dfce4d6fe91d91c27c519453f09d4c98e6bf0ea579e51ce8e63ae9f",
+      "observation": "NEW_SEPARATE_V1_5_SEARCH_ARTIFACT_NOT_PRODUCTION_SOURCE",
+      "execution_validation": "REPRODUCIBLE_QA_RECORDED",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "NO",
+      "original_file_unchanged": true
+    },
+    {
+      "asset_id": "ASSET-BACKUP-PREFLIGHT-V01",
+      "title": "Headless backup read-only preflight and synthetic subprocess test",
+      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/00_GUIDE/ROUTABL_HeadlessBackupPreflight_v0_1.py",
+      "bytes": 9282,
+      "sha256": "5939783e5ba09e2101ea5e53315e972cdebd9a7530e00739a89eee5e5478f2cd",
+      "observation": "NEW_LOCAL_TECHNICAL_ASSET_NO_PRODUCTION_SOURCE_CHANGE",
+      "execution_validation": "SYNTHETIC_TEST_PASS_LIVE_RESTART_HELD",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "NO",
+      "original_file_unchanged": true
+    },
+    {
+      "asset_id": "ASSET-BACKUP-HEADLESS-LOCAL-DRAFT",
+      "title": "Headless direct-Python local launchd plist, not installed",
+      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/40_WORKING/BACKUP_HEADLESS_V0_1/proposed_launchagents/com.routabl.assetbackup.headless.local.plist",
+      "bytes": 1107,
+      "sha256": "8e505d7d5279f4a39fca8807428d4d2a63496180f16543f8574e1a9b59da1736",
+      "observation": "NEW_LOCAL_TECHNICAL_ASSET_NO_PRODUCTION_SOURCE_CHANGE",
+      "execution_validation": "PLIST_VALIDATED_NOT_INSTALLED",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "NO",
+      "original_file_unchanged": true
+    },
+    {
+      "asset_id": "ASSET-BACKUP-HEADLESS-NAS-DRAFT",
+      "title": "Headless direct-Python NAS launchd plist, not installed",
+      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/40_WORKING/BACKUP_HEADLESS_V0_1/proposed_launchagents/com.routabl.assetbackup.headless.nas.plist",
+      "bytes": 1100,
+      "sha256": "ffecb609b3b0c68ca6bb088eddfbf226be445d2ff32c4fb04da9cfd37df2f0fe",
+      "observation": "NEW_LOCAL_TECHNICAL_ASSET_NO_PRODUCTION_SOURCE_CHANGE",
+      "execution_validation": "PLIST_VALIDATED_NOT_INSTALLED",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "NO",
+      "original_file_unchanged": true
+    },
+    {
+      "asset_id": "ASSET-BACKUP-SCOPE-MATRIX-V01",
+      "title": "Current backup inclusion rules vs 33 asset records",
+      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/30_REGISTRY/asset_backup_scope_v0.1.json",
+      "bytes": 6326,
+      "sha256": "1344a5ef69ea1bd64009a3c30f59b5d473ba64d8bc305a7d9039d1836bbb89f1",
+      "observation": "NEW_LOCAL_TECHNICAL_ASSET_NO_PRODUCTION_SOURCE_CHANGE",
+      "execution_validation": "STATIC_COVERAGE_AUDIT_5_OF_33",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "NO",
+      "original_file_unchanged": true
+    },
+    {
+      "asset_id": "ASSET-BACKUP-HEADLESS-QA-V01",
+      "title": "Headless restart safety audit and hold reasons",
+      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/HEADLESS_BACKUP_PREFLIGHT_AND_COVERAGE_20261103_v1.0.md",
+      "bytes": 4026,
+      "sha256": "62e44ec935ddb886426ddac325b42e325a552c640a34dba6a962461b2e093ec3",
+      "observation": "NEW_LOCAL_TECHNICAL_ASSET_NO_PRODUCTION_SOURCE_CHANGE",
+      "execution_validation": "READ_ONLY_AND_SYNTHETIC_TESTS",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "NO",
+      "original_file_unchanged": true
+    },
+    {
+      "asset_id": "ASSET-BACKUP-RESTART-GUIDE-V01",
+      "title": "User guidance for safe headless backup restart gates",
+      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/00_GUIDE/HEADLESS_BACKUP_RESTART_GATE_v0.1.md",
+      "bytes": 2019,
+      "sha256": "c3766b24c3db29daf51fadf018bbf70a3c2a9e1d69b28a0dc1a99180c91e1b2b",
+      "observation": "NEW_LOCAL_TECHNICAL_ASSET_NO_PRODUCTION_SOURCE_CHANGE",
+      "execution_validation": "DOCUMENTED_NO_REAL_EXECUTION",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "NO",
+      "original_file_unchanged": true
+    },
+    {
+      "asset_id": "ASSET-SEARCH-V15-USER-FINDER-QA",
+      "title": "User-supplied Safari/Finder verification observations",
+      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/ASSET_SEARCH_V1_5_USER_FIELD_VERIFICATION_20261103.md",
+      "bytes": 1219,
+      "sha256": "089c4824b717e5dc3fb02cd1509223e5024027edba942a5ce767e47f8f83f5c9",
+      "observation": "NEW_LOCAL_TECHNICAL_ASSET_NO_PRODUCTION_SOURCE_CHANGE",
+      "execution_validation": "USER_CONFIRMED_FINDER_AND_SEARCH_NOT_REFRESH",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "NO",
+      "original_file_unchanged": true
+    }
+  ],
+  "unresolved": [
+    {
+      "asset_id": "ASSET-SEARCH-01",
+      "issue": "NAS index excludes local StudioProjects and its cloud_access.py",
+      "v0_4_update": "v1.2 opt-in Mac sources 2 indexed; all remaining StudioProjects still excluded"
+    },
+    {
+      "asset_id": "TA-CASE-20261102-01",
+      "issue": "historical success exists, current Firebase run not validated"
+    },
+    {
+      "asset_id": "INTEGRATION-E04",
+      "issue": "Library identity located; physical copy and hash still not verified"
+    },
+    {
+      "asset_id": "ROUTABL-97-1-V4.1",
+      "issue": "NAS integrity checked, no independent restoration of sealed archive performed"
+    },
+    {
+      "asset_id": "ASSET-SECURITY-01",
+      "issue": "External SSD2TB unencrypted; full content backup requires encryption plan and explicit approval"
+    },
+    {
+      "asset_id": "ASSET-SEARCH-01-V12",
+      "issue": "All additional StudioProjects remain unindexed by design; require scoped policy and approval"
+    },
+    {
+      "asset_id": "ASSET-BACKUP-SCOPE-01",
+      "issue": "Source code under StudioProjects and v1.2 engine under Library/Application Support are not part of current encrypted backup source scope"
+    },
+    {
+      "asset_id": "ASSET-AUTOMATION-PAUSED",
+      "issue": "Mac/NAS/Drive scheduled backup LaunchAgents intentionally disabled after Terminal launch storm; not validated unattended"
+    },
+    {
+      "asset_id": "ASSET-SEARCH-01-V13",
+      "issue": "Content scanning is best-effort and new root scanning is limited to 8 project directories; routine incremental refresh not built."
+    },
+    {
+      "asset_id": "ASSET-SECURITY-POLICY-01",
+      "issue": "Older v1.1/v1.2 NAS indexed text was not fully re-audited for sensitive content."
+    },
+    {
+      "asset_id": "ASSET-BACKUP-SCOPE-01",
+      "issue": "The v1.3 DB resides outside currently encrypted backup source; no new scheduled backup enabled."
+    },
+    {
+      "asset_id": "ASSET-SEARCH-V14",
+      "issue": "Default browser open after real Finder double-click has not been visually confirmed by user; LaunchServices startup was verified in headless integration mode"
+    },
+    {
+      "asset_id": "ASSET-SEARCH-V14",
+      "issue": "Manual index refresh intentionally blocks if protected historical source hashes change; these require a separate rebaseline review"
+    },
+    {
+      "asset_id": "ASSET-SECURITY-POLICY-01",
+      "issue": "Pattern-based secret detection is best effort; should not be treated as a guarantee for exporting searchable code"
+    },
+    {
+      "asset_id": "ASSET-BACKUP-SCOPE-01",
+      "issue": "V1.4 service, app and SQLite DB are not independently verified inside existing paused encrypted backups"
+    },
+    {
+      "asset_id": "ASSET-SEARCH-V15",
+      "issue": "Finder double click browser, on-screen refresh and Finder file reveal require user interactive verification"
+    },
+    {
+      "asset_id": "ASSET-SEARCH-V15",
+      "issue": "Primary-source designation is based on approved project lists and two SHA-verified lineages; it is not proof of latest deployed APK"
+    },
+    {
+      "asset_id": "ASSET-SEARCH-V15",
+      "issue": "Aliases are scoped heuristic; search coverage limited by v1.3 indexed source folders; sensitive text exclusion is best-effort"
+    },
+    {
+      "asset_id": "ASSET-SEARCH-V15",
+      "issue": "v1.5 native launcher and private SQLite index were not verified in paused NAS/Drive backups"
+    },
+    {
+      "asset_id": "ASSET-BACKUP-HEADLESS-QA-V01",
+      "issue": "33 manifest assets, only 5 eligible under previous encrypted backup filters. Coverage expansion must be designed and tested"
+    },
+    {
+      "asset_id": "ASSET-BACKUP-PREFLIGHT-V01",
+      "issue": "Do not install new agent candidates or enable old three until actual TCC/Keychain and isolated restore tests pass"
+    },
+    {
+      "asset_id": "ASSET-SEARCH-V15-USER-FINDER-QA",
+      "issue": "Actual on-screen manual refresh button remains unconfirmed"
+    }
+  ],
+  "supersedes": "asset_manifest_v0.7.json (unchanged)",
+  "library_crosswalk": [
+    {
+      "asset_id": "TA-CASE-20261102-01",
+      "library_filename": "ROUTABL_Firebase_Address_Registration_Case_Study_20261102.pdf",
+      "library_file_id": "libfile_aae40558a6ec819189990681d3e6f4b2",
+      "evidence": "LIBRARY_SEARCH_FOUND;BYTES_NOT_COMPARED_TO_LOCAL"
+    },
+    {
+      "asset_id": "INTEGRATION-E04",
+      "library_filename": "ROUTABL-integration-audit-20261019.html",
+      "library_file_id": "libfile_1348cf4cf49c8191af70ae0162dffe99",
+      "evidence": "LIBRARY_SEARCH_FOUND;LOCAL_COPY_NOT_VERIFIED"
+    },
+    {
+      "asset_id": "ROUTABL-97-1-V4.1-PDF",
+      "library_filename": "01_라우터블개발백서_최종내부기준판_v4.1.pdf",
+      "library_file_id": "libfile_72a4f0a4043c819192d8967951f680a1",
+      "evidence": "LIBRARY_SEARCH_FOUND;NAS_AND_LIBRARY_BYTES_NOT_COMPARED"
+    }
+  ],
+  "local_copy_receipt": "/Users/yongho/ROUTABL-TechAssets/20_ORIGINALS/NAS-Imported/ROUTABL-97-1-V4.1/LOCAL_IMPORT_RECEIPT_v0.1.json",
+  "storage_security": {
+    "ssd2tb_encrypted": false,
+    "evidence": "macOS diskutil info /Volumes/SSD2TB Encrypted: No, FileVault: No",
+    "policy": "metadata-only backup permitted; do not replicate raw whitepaper/secret-bearing sources before encryption plan"
+  },
+  "v0_4_lineage": {
+    "baseline_asset_count": 10,
+    "baseline_file_sha256_matches": 10,
+    "existing_nas_db_path": "/Users/yongho/Library/Application Support/ROUTABL-AssetSearch/assets.sqlite",
+    "existing_nas_db_rows": 2270,
+    "new_v1_2_db_path": "/Users/yongho/Library/Application Support/ROUTABL-AssetSearch/assets_v1_2.sqlite",
+    "new_v1_2_total_rows": 2272,
+    "new_mac_source_metadata_rows": 2,
+    "index_security": "allowlist of two validated sources; empty content; filename/path/bytes/sha only"
+  },
+  "provenance_crosswalk": [
+    {
+      "asset_id": "TA-CASE-20261102-01",
+      "mac_original_path": "/Users/yongho/StudioProjects/ROUTIVEL-Firebase-Migration/tools/firebase-migration/cloud_access.py",
+      "mac_sha256": "de08b060d03a6b6c9f155cf89673f2285a67502cf664442b1a9bc835529a54e5",
+      "mac_bytes": 3995,
+      "mac_original_unchanged": true,
+      "source_execution_test": "NOT_PERFORMED",
+      "search_index_v1_2_path": "MAC::StudioProjects/ROUTIVEL-Firebase-Migration/tools/firebase-migration/cloud_access.py",
+      "search_index_security": "METADATA_ONLY_NO_SOURCE_TEXT",
+      "github_repository": "Samhj1998/DISPATCH-One-Android",
+      "github_branch_checked": "main",
+      "github_file_path": "tools/firebase-migration/cloud_access.py",
+      "github_blob_sha1_equal_local": "28d29626d2adf4e2df81cf889b32693d710dcc60",
+      "github_remote_file_verified": "YES_REMOTE_GITHUB_FETCH_AND_LOCAL_GIT_BLOB_MATCH",
+      "local_file_last_commit": "e0b271684228551c8abc560ba57cb2615579f431",
+      "nas_independent_copy_path": null,
+      "nas_status": "NO_LOOSE_STANDALONE_FILE_FOUND_IN_SCANNED_NAS_ARCHIVE",
+      "aes256_scheduled_backup_scope": "ONLY_/Users/yongho/ROUTABL-TechAssets;_source_file_outside_scope",
+      "source_not_copied_into_registry": true,
+      "validation": "FILE_HASH_VERIFIED_NOT_OPERATION_VERIFIED"
+    },
+    {
+      "asset_id": "INTEGRATION-F1",
+      "mac_original_path": "/Users/yongho/StudioProjects/DISPATCH-One-Android/app/src/main/java/com/routivel/driver/TransportStatusPolicy.kt",
+      "mac_sha256": "5494734c4599b051c545523ed9142c52919c21d5d04bdd4f8dc3436dd41d8e03",
+      "mac_bytes": 3864,
+      "mac_original_unchanged": true,
+      "source_execution_test": "NOT_PERFORMED",
+      "search_index_v1_2_path": "MAC::StudioProjects/DISPATCH-One-Android/app/src/main/java/com/routivel/driver/TransportStatusPolicy.kt",
+      "search_index_security": "METADATA_ONLY_NO_SOURCE_TEXT",
+      "github_repository": "Samhj1998/DISPATCH-One-Android",
+      "github_branch_checked": "main",
+      "github_file_path": "app/src/main/java/com/routivel/driver/TransportStatusPolicy.kt",
+      "github_blob_sha1_equal_local": "c3b8c51e1968955619b4a822ad604fdc04b76648",
+      "github_remote_file_verified": "YES_REMOTE_GITHUB_FETCH_AND_LOCAL_GIT_BLOB_MATCH",
+      "local_file_last_commit": "597d6be33b2932bcbd4ec0a9096ddc840334f473",
+      "nas_independent_copy_path": "/Volumes/Dev_Assets/Routabl/ROUTABL_Whitepaper_Archive_20261101/03_TECH_ASSETS/Source_Evidence/DISPATCH-One-Android/app/src/main/java/com/routivel/driver/TransportStatusPolicy.kt",
+      "nas_status": "DIRECT_SOURCE_SHA256_MATCH",
+      "aes256_scheduled_backup_scope": "ONLY_/Users/yongho/ROUTABL-TechAssets;_source_file_outside_scope",
+      "source_not_copied_into_registry": true,
+      "validation": "FILE_HASH_VERIFIED_NOT_OPERATION_VERIFIED"
+    }
+  ],
+  "approval_boundaries": {
+    "no_firebase_operation": true,
+    "no_production_app_code_change": true,
+    "no_repository_push": true,
+    "no_backup_agent_reactivation": true,
+    "no_unredacted_source_copy": true
+  },
+  "security_classification": [
+    {
+      "asset_id": "TA-CASE-20261102-01",
+      "grade": "P2",
+      "policy": "metadata_only",
+      "classification_scope": "inventory_use_only_not_data_publish_approval"
+    },
+    {
+      "asset_id": "INTEGRATION-F1",
+      "grade": "P3",
+      "policy": "sanitized_local_text_allowed",
+      "classification_scope": "inventory_use_only_not_data_publish_approval"
+    },
+    {
+      "asset_id": "ASSET-SEARCH-01-ENGINE",
+      "grade": "P3",
+      "policy": "sanitized_local_text_allowed",
+      "classification_scope": "inventory_use_only_not_data_publish_approval"
+    },
+    {
+      "asset_id": "ASSET-SEARCH-01-WEB",
+      "grade": "P3",
+      "policy": "sanitized_local_text_allowed",
+      "classification_scope": "inventory_use_only_not_data_publish_approval"
+    },
+    {
+      "asset_id": "ASSET-SEARCH-01-DB",
+      "grade": "P2",
+      "policy": "metadata_only",
+      "classification_scope": "inventory_use_only_not_data_publish_approval"
+    },
+    {
+      "asset_id": "ASSET-SEARCH-01-SOURCE-ZIP",
+      "grade": "P2",
+      "policy": "metadata_only",
+      "classification_scope": "inventory_use_only_not_data_publish_approval"
+    },
+    {
+      "asset_id": "NAS-README-20261024",
+      "grade": "P3",
+      "policy": "sanitized_local_text_allowed",
+      "classification_scope": "inventory_use_only_not_data_publish_approval"
+    },
+    {
+      "asset_id": "ROUTABL-97-1-V4.1-ZIP",
+      "grade": "P2",
+      "policy": "metadata_only",
+      "classification_scope": "inventory_use_only_not_data_publish_approval"
+    },
+    {
+      "asset_id": "ROUTABL-97-1-V4.1-PDF",
+      "grade": "P2",
+      "policy": "metadata_only",
+      "classification_scope": "inventory_use_only_not_data_publish_approval"
+    },
+    {
+      "asset_id": "ROUTABL-97-1-V4.1-NAS-RECEIPT",
+      "grade": "P2",
+      "policy": "metadata_only",
+      "classification_scope": "inventory_use_only_not_data_publish_approval"
+    },
+    {
+      "asset_id": "ASSET-SEARCH-01-V12-ENGINE",
+      "grade": "P3",
+      "policy": "sanitized_local_text_allowed",
+      "classification_scope": "inventory_use_only_not_data_publish_approval"
+    },
+    {
+      "asset_id": "ASSET-SEARCH-01-V12-DB",
+      "grade": "P2",
+      "policy": "metadata_only",
+      "classification_scope": "inventory_use_only_not_data_publish_approval"
+    },
+    {
+      "asset_id": "ASSET-SEARCH-01-V12-WEB",
+      "grade": "P3",
+      "policy": "sanitized_local_text_allowed",
+      "classification_scope": "inventory_use_only_not_data_publish_approval"
+    },
+    {
+      "asset_id": "ASSET-SEARCH-01-V13-ENGINE",
+      "grade": "P3",
+      "policy": "sanitized_local_text_allowed",
+      "classification_scope": "inventory_use_only_not_data_publish_approval"
+    },
+    {
+      "asset_id": "ASSET-SEARCH-01-V13-DB",
+      "grade": "P2",
+      "policy": "metadata_only",
+      "classification_scope": "inventory_use_only_not_data_publish_approval"
+    },
+    {
+      "asset_id": "ASSET-SEARCH-01-V13-WEB",
+      "grade": "P3",
+      "policy": "sanitized_local_text_allowed",
+      "classification_scope": "inventory_use_only_not_data_publish_approval"
+    },
+    {
+      "asset_id": "ASSET-SECURITY-POLICY-01",
+      "grade": "P3",
+      "policy": "sanitized_local_text_allowed",
+      "classification_scope": "inventory_use_only_not_data_publish_approval"
+    },
+    {
+      "asset_id": "ASSET-SEARCH-V14-SERVICE",
+      "grade": "P3",
+      "policy": "local_use_only",
+      "classification_scope": "metadata/operational record only"
+    },
+    {
+      "asset_id": "ASSET-SEARCH-V14-ACTIVE",
+      "grade": "P2",
+      "policy": "local_use_only",
+      "classification_scope": "metadata/operational record only"
+    },
+    {
+      "asset_id": "ASSET-SEARCH-V14-ROLLBACK",
+      "grade": "P2",
+      "policy": "local_use_only",
+      "classification_scope": "metadata/operational record only"
+    },
+    {
+      "asset_id": "ASSET-SEARCH-V14-LAUNCHER-SRC",
+      "grade": "P3",
+      "policy": "local_use_only",
+      "classification_scope": "metadata/operational record only"
+    },
+    {
+      "asset_id": "ASSET-SEARCH-V14-APP",
+      "grade": "P2",
+      "policy": "local_use_only",
+      "classification_scope": "metadata/operational record only"
+    },
+    {
+      "asset_id": "ASSET-SEARCH-V14-APP-PLIST",
+      "grade": "P2",
+      "policy": "local_use_only",
+      "classification_scope": "metadata/operational record only"
+    },
+    {
+      "asset_id": "ASSET-SEARCH-V14-GUIDE",
+      "grade": "P3",
+      "policy": "local_use_only",
+      "classification_scope": "metadata/operational record only"
+    },
+    {
+      "asset_id": "ASSET-SEARCH-V15-SERVICE",
+      "grade": "P3",
+      "policy": "local_use_only",
+      "classification_scope": "local metadata and search evidence"
+    },
+    {
+      "asset_id": "ASSET-SEARCH-V15-DB",
+      "grade": "P2",
+      "policy": "local_use_only",
+      "classification_scope": "local metadata and search evidence"
+    },
+    {
+      "asset_id": "ASSET-SEARCH-V15-ROLLBACK",
+      "grade": "P2",
+      "policy": "local_use_only",
+      "classification_scope": "local metadata and search evidence"
+    },
+    {
+      "asset_id": "ASSET-SEARCH-V15-LAUNCHER-SRC",
+      "grade": "P3",
+      "policy": "local_use_only",
+      "classification_scope": "local metadata and search evidence"
+    },
+    {
+      "asset_id": "ASSET-SEARCH-V15-APP",
+      "grade": "P2",
+      "policy": "local_use_only",
+      "classification_scope": "local metadata and search evidence"
+    },
+    {
+      "asset_id": "ASSET-SEARCH-V15-PLIST",
+      "grade": "P2",
+      "policy": "local_use_only",
+      "classification_scope": "local metadata and search evidence"
+    },
+    {
+      "asset_id": "ASSET-SEARCH-V15-GUIDE",
+      "grade": "P3",
+      "policy": "local_use_only",
+      "classification_scope": "local metadata and search evidence"
+    },
+    {
+      "asset_id": "ASSET-SEARCH-V15-QA",
+      "grade": "P3",
+      "policy": "local_use_only",
+      "classification_scope": "local metadata and search evidence"
+    },
+    {
+      "asset_id": "ASSET-SEARCH-V15-QA-JSON",
+      "grade": "P2",
+      "policy": "local_use_only",
+      "classification_scope": "local metadata and search evidence"
+    },
+    {
+      "asset_id": "ASSET-BACKUP-PREFLIGHT-V01",
+      "grade": "P3",
+      "policy": "local_use_only",
+      "classification_scope": "new local audited asset"
+    },
+    {
+      "asset_id": "ASSET-BACKUP-HEADLESS-LOCAL-DRAFT",
+      "grade": "P2",
+      "policy": "local_use_only",
+      "classification_scope": "new local audited asset"
+    },
+    {
+      "asset_id": "ASSET-BACKUP-HEADLESS-NAS-DRAFT",
+      "grade": "P2",
+      "policy": "local_use_only",
+      "classification_scope": "new local audited asset"
+    },
+    {
+      "asset_id": "ASSET-BACKUP-SCOPE-MATRIX-V01",
+      "grade": "P2",
+      "policy": "local_use_only",
+      "classification_scope": "new local audited asset"
+    },
+    {
+      "asset_id": "ASSET-BACKUP-HEADLESS-QA-V01",
+      "grade": "P3",
+      "policy": "local_use_only",
+      "classification_scope": "new local audited asset"
+    },
+    {
+      "asset_id": "ASSET-BACKUP-RESTART-GUIDE-V01",
+      "grade": "P3",
+      "policy": "local_use_only",
+      "classification_scope": "new local audited asset"
+    },
+    {
+      "asset_id": "ASSET-SEARCH-V15-USER-FINDER-QA",
+      "grade": "P3",
+      "policy": "local_use_only",
+      "classification_scope": "new local audited asset"
+    }
+  ],
+  "search_v1_3": {
+    "baseline_version": "v1.2",
+    "baseline_count": 2272,
+    "new_mac_indexed_count": 3247,
+    "all_search_rows": 5519,
+    "new_mac_sanitized_text_count": 1998,
+    "new_mac_metadata_only_count": 1249,
+    "new_mac_sensitive_path_rejected_count": 95,
+    "new_index_path": "/Users/yongho/Library/Application Support/ROUTABL-AssetSearch/assets_v1_3.sqlite",
+    "projects": [
+      {
+        "project": "DISPATCH-One-Android",
+        "indexed_files": 545
+      },
+      {
+        "project": "ROUTABL-Senior-Driver",
+        "indexed_files": 549
+      },
+      {
+        "project": "ROUTIVEL-Customer-Android",
+        "indexed_files": 352
+      },
+      {
+        "project": "DailyInspection-Android",
+        "indexed_files": 127
+      },
+      {
+        "project": "ROUTIVEL-Firebase-Migration",
+        "indexed_files": 165
+      },
+      {
+        "project": "ROUTABL-Control-Public-20261020",
+        "indexed_files": 526
+      },
+      {
+        "project": "ROUTABL-Integration-Audit-20261019",
+        "indexed_files": 478
+      },
+      {
+        "project": "ROUTABL-Dispatch-Search-20261019",
+        "indexed_files": 505
+      }
+    ],
+    "local_web_script": "/Users/yongho/Library/Application Support/ROUTABL-AssetSearch/routabl_web_v1_3.py",
+    "local_web_port_for_manual_use": 8767,
+    "auto_refresh_configured": false,
+    "web_server_persistently_running": false,
+    "exclusion_limit": "regexes and path rules cannot prove all secrets absent",
+    "previous_nas_index_preserved": true,
+    "all_data_local": true,
+    "source_read_only": true,
+    "new_search_db_backup_policy": "NOT_YET_INCLUDED_IN_ENCRYPTED_BACKUP"
+  },
+  "security_policy_path": "/Users/yongho/ROUTABL-TechAssets/00_GUIDE/ASSET_SECURITY_AND_SEARCH_POLICY_v0.1.md",
+  "security_guards": {
+    "P0": "EXCLUDE_CREDENTIALS_AND_PRIVATE_KEYS",
+    "P1": "HIGH_SENSITIVITY_NO_UNREDACTED_TEXT",
+    "P2": "LOCAL_METADATA_ONLY",
+    "P3": "LOCAL_SANITIZED_TEXT_SEARCH",
+    "approval": "FIRESTORE_WRITE_OR_DESTRUCTIVE_OR_PUBLISH_REQUIRES_SCOPE_AND_RECOVERY_REVIEW"
+  },
+  "search_v1_4": {
+    "previous_version": "1.3",
+    "current_index_rows": 5519,
+    "previous_generation_rows": 5519,
+    "index_path": "/Users/yongho/Library/Application Support/ROUTABL-AssetSearch/assets_v1_4.sqlite",
+    "rollback_path": "/Users/yongho/Library/Application Support/ROUTABL-AssetSearch/assets_v1_4.previous.sqlite",
+    "application": "/Users/yongho/Applications/라우터블 기술자산 검색.app",
+    "application_bundle_id": "com.routabl.assetsearch.launcher",
+    "service_script": "/Users/yongho/Library/Application Support/ROUTABL-AssetSearch/routabl_search_v1_4_service.py",
+    "host": "127.0.0.1",
+    "port": 8768,
+    "auto_run": false,
+    "launchd_agent_created": false,
+    "login_item_created": false,
+    "idle_timeout_seconds": 2700,
+    "manual_refresh_button": true,
+    "single_instance_file_lock": true,
+    "csrf_control": "same-origin plus per-process random session token",
+    "refresh_rollback_policy": "atomic index replacement after validation; previous active copy kept",
+    "test_findermode": "LaunchServices --integration-test: server started without browser; final browser click awaits user observation",
+    "test_idle": "15-second shortened test auto-terminated cleanly",
+    "test_refresh": "previous 5519; new 5519; rollback 5519",
+    "db_is_not_primary_asset_backup": true
+  },
+  "audit_report_path": "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/ASSET_SEARCH_V1_4_FINDER_LAUNCH_AND_REFRESH_20261103.md",
+  "search_v1_5": {
+    "prior_stable_version": "v1.4",
+    "app": "/Users/yongho/Applications/라우터블 기술자산 검색 v1.5.app",
+    "service": "/Users/yongho/Library/Application Support/ROUTABL-AssetSearch/routabl_search_v1_5_service.py",
+    "url": "http://127.0.0.1:8769/",
+    "index_path": "/Users/yongho/Library/Application Support/ROUTABL-AssetSearch/assets_v1_5.sqlite",
+    "previous_index_path": "/Users/yongho/Library/Application Support/ROUTABL-AssetSearch/assets_v1_5.previous.sqlite",
+    "baseline_untouched": true,
+    "index_rows": 5519,
+    "previous_index_rows": 5519,
+    "user_visible_features": [
+      "2-character Korean queries",
+      "current primary source first",
+      "group same-SHA locations",
+      "validated GitHub/NAS provenance",
+      "12-result pagination",
+      "scope filtering",
+      "Korean-English aliases",
+      "Finder show-in-folder with allowlist",
+      "manual safe index refresh"
+    ],
+    "verified_query_cases": [
+      "정산",
+      "고객",
+      "TransportStatusPolicy",
+      "취소상태",
+      "시니어",
+      "초성검색",
+      "SEARCH-01",
+      "cloud_access.py"
+    ],
+    "duplicate_group_example": "INTEGRATION-F1 9 identical SHA locations",
+    "manual_refresh_test": "PASS_5519_BEFORE_AND_AFTER_WITH_ROLLBACK",
+    "manual_finder_button_test": "PENDING_USER_INTERACTIVE_TEST",
+    "native_launchservices_test": "PASS_BROWSER_OPEN_NOT_PERFORMED_IN_INTEGRATION",
+    "server_single_instance": "PASS",
+    "localhost_credentialed_post_protection": "PASS",
+    "idle_timeout_default_seconds": 2700,
+    "scheduled_backup_enabled": false,
+    "production_app_code_modified": false,
+    "authoritative_source_code_execution": "NOT_PERFORMED"
+  },
+  "search_v1_5_audit_report": "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/ASSET_SEARCH_V1_5_RELEVANCE_AND_FINDER_QA_20261103_v1.0.md",
+  "backup_headless_preflight": {
+    "real_execution": "NOT_PERFORMED",
+    "overall_gate": "HOLD_INCOMPLETE_ASSET_COVERAGE_AND_HEADLESS_TCC_NOT_VERIFIED",
+    "audit_existing_manifest": "asset_manifest_v0.7.json",
+    "audit_baseline_assets": 33,
+    "eligible_for_existing_backup_rule": 5,
+    "outside_existing_backup_scope": 28,
+    "new_draft_agents": 2,
+    "drafts_installed": false,
+    "old_three_launchagents_disabled": true,
+    "synthetic_headless_subprocess": "PASS",
+    "synthetic_duplicate_lock": "PASS",
+    "real_launchd_tcc": "NOT_TESTED",
+    "real_AES_image_mount_or_snapshot": "NOT_PERFORMED",
+    "real_restoration": "NOT_PERFORMED",
+    "google_drive_remote_integrity": "NOT_VERIFIED",
+    "newer_search_and_v0_7_backed_up": "NOT_VERIFIED",
+    "requirements_before_enable": [
+      "approve allowed source scope",
+      "prove encryption and Keychain headless access on one-off controlled job",
+      "read-only or isolated snapshot restore SHA verification",
+      "approve new schedule installation after no-GUI test"
+    ]
+  },
+  "search_v1_5_user_field": {
+    "search_first_canonical_TransportStatusPolicy": "PASS_USER_SCREENSHOT",
+    "finder_selected_TransportStatusPolicy.kt": "PASS_USER_SCREENSHOT",
+    "manual_refresh_button": "NOT_USER_VERIFIED"
+  }
+}

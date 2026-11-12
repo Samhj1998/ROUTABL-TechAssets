@@ -1,0 +1,53 @@
+{
+  "gate": "B1_PREPARATION",
+  "trial_id": null,
+  "environment": {
+    "receiver": null,
+    "provider": null,
+    "model": null,
+    "mode": null,
+    "session_type": null,
+    "session_reference": null,
+    "reviewer": null,
+    "package_variant": null,
+    "context_isolation": "CONTEXT_ISOLATION_UNVERIFIED",
+    "checks": [
+      {
+        "channel": "project_instructions",
+        "status": "NOT_CHECKED",
+        "check": "프로젝트 바깥 새 세션인지, 프로젝트 지침이 노출되는지 기록한다.",
+        "observation": null
+      },
+      {
+        "channel": "memory",
+        "status": "NOT_CHECKED",
+        "check": "세션에서 적용되는 개인화·메모리 설정과 접근 가능 여부를 확인한다. 확인되지 않은 내부 주입은 추정하지 않는다.",
+        "observation": null
+      },
+      {
+        "channel": "prior_chats",
+        "status": "NOT_CHECKED",
+        "check": "기존 채팅의 연속·분기 세션인지, 이전 대화·검색이 접근 가능한지 확인한다.",
+        "observation": null
+      },
+      {
+        "channel": "connected_tools",
+        "status": "NOT_CHECKED",
+        "check": "T1까지 연결 도구 접근·실행을 차단하고, T2에서 허용한 읽기 전용 도구 및 조회 내역만 기록한다.",
+        "observation": null
+      },
+      {
+        "channel": "attachments",
+        "status": "NOT_CHECKED",
+        "check": "T1에는 첨부 없이 승인된 인계문 한 종류만 제출한다. T2의 추가 자료는 이름·해시·전달 시각을 기록한다.",
+        "observation": null
+      }
+    ]
+  },
+  "protocol": [
+    "시험 전 사람이 신규 수신 환경·모델·격리 가능 여부를 기록한다.",
+    "조건별 비교는 서로 다른 신규 세션에서 한 종류씩 진행한다. 가능하면 같은 모델·설정·평가 기준을 유지하고 노출 순서와 편차를 기록한다.",
+    "정답표와 평가 양식은 운영자 보관. 수신자에게는 승인한 Markdown 한 종만 제출한다.",
+    "T1 답변을 고정한 뒤 승인된 자료만 T2에 공개한다. 파일 원본 접근 불가 시 NOT_VERIFIED로 기록한다."
+  ]
+}

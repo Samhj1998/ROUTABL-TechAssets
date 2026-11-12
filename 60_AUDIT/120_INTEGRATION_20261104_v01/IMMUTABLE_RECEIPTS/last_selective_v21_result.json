@@ -1,0 +1,15 @@
+{
+  "status": "SUCCESS",
+  "snapshot_name": "ASSET_V21_20261104_084130_KST_34561",
+  "manifest_name": "asset_manifest_v0.14.json",
+  "manifest_sha256": "f2e7d88d16b6b2aa98d8cc53ed6cbf099f8b19bc4c7cbce072b1ee62ffd7233d",
+  "selection_sha256": "980efcc57e190f645768673516c067d4823b632a0ec61c02095449a0e644c834",
+  "snapshot_path": "/Volumes/ROUTABL-Secure/snapshots/ASSET_V21_20261104_084130_KST_34561",
+  "file_count": 3328,
+  "source_bytes": 519889613,
+  "receipt_sha256": "46d242becacd6cf2b3e020d475be80eb1e5213a68dc75fd6d873146dc9bfbd06",
+  "isolated_restore_samples": 15,
+  "sha256_verified": true,
+  "created_at_kst": "2026-11-04T08:41:35.373325+09:00",
+  "locked_after_backup": true
+}

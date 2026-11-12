@@ -1,0 +1,225 @@
+{
+  "status": "PASS",
+  "closeout_pass": 9,
+  "cases": [
+    {
+      "term": "고객등록",
+      "scope": "all",
+      "status": "PASS",
+      "baseline": {
+        "command": "/usr/bin/python3 -E -s -B scope_runner.py mvl_original.py search '고객등록' --scope all",
+        "exit_code": 0,
+        "stdout_bytes": 16300,
+        "source_reads_denied": 1
+      },
+      "candidate": {
+        "command": "/usr/bin/python3 -E -s -B scope_runner.py mvl.py search '고객등록' --scope all",
+        "exit_code": 0,
+        "stdout_bytes": 16300,
+        "source_reads_denied": 1
+      },
+      "same_runtime_json": true,
+      "historical_rank_score_duplicates_and_counts_equal": true,
+      "match_group_manual_counts": [
+        89,
+        57,
+        1
+      ]
+    },
+    {
+      "term": "취소상태",
+      "scope": "all",
+      "status": "PASS",
+      "baseline": {
+        "command": "/usr/bin/python3 -E -s -B scope_runner.py mvl_original.py search '취소상태' --scope all",
+        "exit_code": 0,
+        "stdout_bytes": 21794,
+        "source_reads_denied": 1
+      },
+      "candidate": {
+        "command": "/usr/bin/python3 -E -s -B scope_runner.py mvl.py search '취소상태' --scope all",
+        "exit_code": 0,
+        "stdout_bytes": 21794,
+        "source_reads_denied": 1
+      },
+      "same_runtime_json": true,
+      "historical_rank_score_duplicates_and_counts_equal": true,
+      "match_group_manual_counts": [
+        121,
+        47,
+        2
+      ]
+    },
+    {
+      "term": "월간정산",
+      "scope": "all",
+      "status": "PASS",
+      "baseline": {
+        "command": "/usr/bin/python3 -E -s -B scope_runner.py mvl_original.py search '월간정산' --scope all",
+        "exit_code": 0,
+        "stdout_bytes": 17253,
+        "source_reads_denied": 0
+      },
+      "candidate": {
+        "command": "/usr/bin/python3 -E -s -B scope_runner.py mvl.py search '월간정산' --scope all",
+        "exit_code": 0,
+        "stdout_bytes": 17253,
+        "source_reads_denied": 0
+      },
+      "same_runtime_json": true,
+      "historical_rank_score_duplicates_and_counts_equal": true,
+      "match_group_manual_counts": [
+        87,
+        31,
+        0
+      ]
+    },
+    {
+      "term": "기사앱",
+      "scope": "main",
+      "status": "PASS",
+      "baseline": {
+        "command": "/usr/bin/python3 -E -s -B scope_runner.py mvl_original.py search '기사앱' --scope main",
+        "exit_code": 0,
+        "stdout_bytes": 13170,
+        "source_reads_denied": 1
+      },
+      "candidate": {
+        "command": "/usr/bin/python3 -E -s -B scope_runner.py mvl.py search '기사앱' --scope main",
+        "exit_code": 0,
+        "stdout_bytes": 13170,
+        "source_reads_denied": 1
+      },
+      "same_runtime_json": true,
+      "historical_rank_score_duplicates_and_counts_equal": true,
+      "match_group_manual_counts": [
+        574,
+        542,
+        1
+      ]
+    },
+    {
+      "term": "TransportStatusPolicy.kt",
+      "scope": "main",
+      "status": "PASS",
+      "baseline": {
+        "command": "/usr/bin/python3 -E -s -B scope_runner.py mvl_original.py search TransportStatusPolicy.kt --scope main",
+        "exit_code": 0,
+        "stdout_bytes": 3160,
+        "source_reads_denied": 1
+      },
+      "candidate": {
+        "command": "/usr/bin/python3 -E -s -B scope_runner.py mvl.py search TransportStatusPolicy.kt --scope main",
+        "exit_code": 0,
+        "stdout_bytes": 3160,
+        "source_reads_denied": 1
+      },
+      "same_runtime_json": true,
+      "historical_rank_score_duplicates_and_counts_equal": true,
+      "match_group_manual_counts": [
+        3,
+        1,
+        1
+      ]
+    },
+    {
+      "term": "cloud_access.py",
+      "scope": "main",
+      "status": "PASS",
+      "baseline": {
+        "command": "/usr/bin/python3 -E -s -B scope_runner.py mvl_original.py search cloud_access.py --scope main",
+        "exit_code": 0,
+        "stdout_bytes": 3154,
+        "source_reads_denied": 1
+      },
+      "candidate": {
+        "command": "/usr/bin/python3 -E -s -B scope_runner.py mvl.py search cloud_access.py --scope main",
+        "exit_code": 0,
+        "stdout_bytes": 3154,
+        "source_reads_denied": 1
+      },
+      "same_runtime_json": true,
+      "historical_rank_score_duplicates_and_counts_equal": true,
+      "match_group_manual_counts": [
+        4,
+        1,
+        1
+      ]
+    },
+    {
+      "term": "DailyInspection",
+      "scope": "variants",
+      "status": "PASS",
+      "baseline": {
+        "command": "/usr/bin/python3 -E -s -B scope_runner.py mvl_original.py search DailyInspection --scope variants",
+        "exit_code": 0,
+        "stdout_bytes": 214,
+        "source_reads_denied": 0
+      },
+      "candidate": {
+        "command": "/usr/bin/python3 -E -s -B scope_runner.py mvl.py search DailyInspection --scope variants",
+        "exit_code": 0,
+        "stdout_bytes": 214,
+        "source_reads_denied": 0
+      },
+      "same_runtime_json": true,
+      "historical_rank_score_duplicates_and_counts_equal": true,
+      "match_group_manual_counts": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "term": "ROUTABL",
+      "scope": "nas",
+      "status": "PASS",
+      "baseline": {
+        "command": "/usr/bin/python3 -E -s -B scope_runner.py mvl_original.py search ROUTABL --scope nas",
+        "exit_code": 0,
+        "stdout_bytes": 15474,
+        "source_reads_denied": 0
+      },
+      "candidate": {
+        "command": "/usr/bin/python3 -E -s -B scope_runner.py mvl.py search ROUTABL --scope nas",
+        "exit_code": 0,
+        "stdout_bytes": 15474,
+        "source_reads_denied": 0
+      },
+      "same_runtime_json": true,
+      "historical_rank_score_duplicates_and_counts_equal": true,
+      "match_group_manual_counts": [
+        1776,
+        1422,
+        1
+      ]
+    },
+    {
+      "term": "no-result-mvl01-20261108",
+      "scope": "all",
+      "status": "PASS",
+      "baseline": {
+        "command": "/usr/bin/python3 -E -s -B scope_runner.py mvl_original.py search no-result-mvl01-20261108 --scope all",
+        "exit_code": 0,
+        "stdout_bytes": 227,
+        "source_reads_denied": 0
+      },
+      "candidate": {
+        "command": "/usr/bin/python3 -E -s -B scope_runner.py mvl.py search no-result-mvl01-20261108 --scope all",
+        "exit_code": 0,
+        "stdout_bytes": 227,
+        "source_reads_denied": 0
+      },
+      "same_runtime_json": true,
+      "historical_rank_score_duplicates_and_counts_equal": true,
+      "match_group_manual_counts": [
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "prior_pass_record": 9,
+  "note": "Both codes share the scope limit. Project originals outside the seven fixed references were not opened.",
+  "database_sha256_before_after": "d01926fb55c5296d421be23c58f1b50ca8dd6efe53862be686ad03bf26f33913"
+}

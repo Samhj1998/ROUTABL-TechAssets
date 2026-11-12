@@ -1,0 +1,96 @@
+{
+  "scope": "ROUTABL 120 — AssetSearch v1.4 real-use search quality, read-only source inspection",
+  "observed_kst": "2026-11-03T19:48:52+09:00",
+  "database": "/Users/yongho/Library/Application Support/ROUTABL-AssetSearch/assets_v1_4.sqlite",
+  "rows": 5519,
+  "search_terms_tested_primary": 15,
+  "search_terms_tested_followup": 12,
+  "sample_query_latency_ms": "1–51, local observations only; not a formal benchmark",
+  "technical_assets_present": true,
+  "mac_source_metadata_rows": 3247,
+  "mac_source_metadata_unchanged": 3247,
+  "missing": 0,
+  "changed": 0,
+  "duplicate_sha256_groups": 805,
+  "case_results": [
+    {
+      "query": "cloud_access.py",
+      "engine_reported_matches": 7,
+      "original_top10": true,
+      "manual_case_found": true
+    },
+    {
+      "query": "초성검색",
+      "engine_reported_matches": 591,
+      "sql_matching_rows_for_literal": 1203,
+      "top_favors_historical_nas": true
+    },
+    {
+      "query": "취소상태",
+      "engine_reported_matches": 29,
+      "primary_f1_original_indexed": true,
+      "primary_f1_original_top10": false
+    },
+    {
+      "query": "TransportStatusPolicy",
+      "engine_reported_matches": 29,
+      "primary_f1_original_indexed": true,
+      "primary_f1_original_top10": false
+    },
+    {
+      "query": "정산",
+      "engine_reported_matches": 0,
+      "sql_matching_rows_for_literal": 310,
+      "bug": "len(term)<3 prevents query"
+    },
+    {
+      "query": "고객",
+      "engine_reported_matches": 0,
+      "sql_matching_rows_for_literal": 589,
+      "bug": "len(term)<3 prevents query"
+    },
+    {
+      "query": "SEARCH-01",
+      "engine_reported_matches": 500,
+      "sql_matching_rows_for_literal": 1215,
+      "bug": "per-term SQL LIMIT 500 truncation"
+    },
+    {
+      "query": "시니어",
+      "engine_reported_matches": 29,
+      "mac_matching_rows": 4,
+      "top10_mac": 0
+    },
+    {
+      "query": "Senior",
+      "sql_matching_rows_for_literal": 704,
+      "mac_matching_rows": 552
+    },
+    {
+      "query": "반품",
+      "engine_reported_matches": 0,
+      "note": "no indexed text occurrence; absent source vs excluded scope cannot be determined"
+    },
+    {
+      "query": "완료 취소",
+      "engine_reported_matches": 0,
+      "note": "no indexed literal occurrence; chat-only design may not be in current index"
+    }
+  ],
+  "disposition": "FUNCTIONAL_BUT_SEARCH_QUALITY_NEEDS_CORRECTION",
+  "severity": {
+    "P1": "2-character Korean search false negatives despite actual database records",
+    "P1_second": "Exact current source hidden by duplicate SHA and title ranking",
+    "P2": "500-row single-term cap and top10 no pagination",
+    "P2_second": "Synonyms between Korean and English project labels missing",
+    "P2_third": "no direct source open/path resolution or provenance related locations display"
+  },
+  "code_changed": false,
+  "firebase_changed": false,
+  "index_changed": false,
+  "new_artifacts": [
+    "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/ASSET_SEARCH_V1_4_REAL_USE_QUALITY_QA_20261103_v1.0.md",
+    "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/ASSET_SEARCH_V1_4_REAL_USE_QUALITY_QA_20261103_v1.0.json"
+  ],
+  "recommendation": "Design v1.5 ranking, short query support, duplicate location grouping, navigation and page; approval before code edits"
+}

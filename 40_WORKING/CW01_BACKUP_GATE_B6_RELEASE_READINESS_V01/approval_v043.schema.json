@@ -1,0 +1,117 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "B6 v043 approval draft, disabled",
+  "type": "object",
+  "properties": {
+    "schema": {
+      "const": "b6.1"
+    },
+    "scope": {
+      "const": "PROPOSED_INACTIVE"
+    },
+    "deployment_enabled": {
+      "const": false
+    },
+    "label": {
+      "const": "com.routabl.assetbackup.native.v043"
+    },
+    "schedule_kst": {
+      "const": "04:30"
+    },
+    "entries": {
+      "const": [
+        "scheduled",
+        "manual"
+      ]
+    },
+    "owner_uid": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "exclusive_write_enforcement": {
+      "enum": [
+        "DEDICATED_MEDIA_IDENTITY",
+        "EQUIVALENT_VERIFIED_SERVICE_BOUNDARY"
+      ]
+    },
+    "signed_agent": {
+      "type": "object",
+      "properties": {
+        "bundle_id": {
+          "type": "string"
+        },
+        "team_id": {
+          "type": "string",
+          "pattern": "^[A-Z0-9]{10}$"
+        },
+        "designated_requirement": {
+          "type": "string"
+        },
+        "binary_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        }
+      },
+      "required": [
+        "bundle_id",
+        "team_id",
+        "designated_requirement",
+        "binary_sha256"
+      ],
+      "additionalProperties": false
+    },
+    "release_root": {
+      "type": "string",
+      "pattern": "^/"
+    },
+    "python_executable": {
+      "type": "string",
+      "pattern": "^/"
+    },
+    "program_pins": {
+      "type": "object",
+      "minProperties": 4,
+      "additionalProperties": {
+        "type": "string",
+        "pattern": "^[0-9a-f]{64}$"
+      }
+    },
+    "platform_build": {
+      "type": "string"
+    },
+    "shared_lock_path": {
+      "type": "string",
+      "pattern": "^/"
+    },
+    "expires_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "allow_pruning": {
+      "const": false
+    },
+    "drive_upload": {
+      "const": false
+    }
+  },
+  "required": [
+    "schema",
+    "scope",
+    "deployment_enabled",
+    "label",
+    "schedule_kst",
+    "entries",
+    "owner_uid",
+    "exclusive_write_enforcement",
+    "signed_agent",
+    "release_root",
+    "python_executable",
+    "program_pins",
+    "platform_build",
+    "shared_lock_path",
+    "expires_at",
+    "allow_pruning",
+    "drive_upload"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,1 @@
+Tool PID 94053. Baseline and candidate handoff initial both exited 1, stdout 0 bytes, stderr MVL-01: OUTSIDE_APPROVED_SQLITE_SCOPE. Mac Python 3.9 audit event supplied bytes. Corrected only isolated runner decoding with os.fsdecode; pinned candidate and baseline code unchanged. No write to SQLite occurred.

@@ -1,0 +1,11 @@
+{
+  "status": "SUCCESS",
+  "day_kst": "2026-11-03",
+  "nas_snapshot": "/Volumes/Dev_Assets/ROUTABL-TechAssets-Backup/snapshots/NAS_MANUAL_ASSET_V2_20261103_204614_KST_23829",
+  "copied_ciphertext_file_count": 78,
+  "copied_ciphertext_bytes": 597836660,
+  "receipt_sha256": "bb26ef207ee2bbd077d3e5a16d0e3e79ff9fcb1e456ba9deb1a6d797a39e48c4",
+  "source_image_mounted": false,
+  "nas_sha256_verified": true,
+  "restored_ciphertext_samples": 8
+}

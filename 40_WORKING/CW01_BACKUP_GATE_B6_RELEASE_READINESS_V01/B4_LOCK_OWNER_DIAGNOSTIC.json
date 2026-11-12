@@ -1,0 +1,213 @@
+{
+  "contender": {
+    "actual_backup_success": true,
+    "backup_executed": true,
+    "entry": "manual",
+    "events": [
+      {
+        "at_kst": "2026-11-07T19:19:27.904841+09:00",
+        "code": "ACQUIRED",
+        "executed": false,
+        "exit_code": null,
+        "run_id": "596ffdba08244c3190678e82d9a0ee0b",
+        "stage": "lock"
+      },
+      {
+        "at_kst": "2026-11-07T19:19:27.982609+09:00",
+        "code": "PINS_VERIFIED",
+        "executed": false,
+        "exit_code": null,
+        "run_id": "596ffdba08244c3190678e82d9a0ee0b",
+        "stage": "preflight"
+      },
+      {
+        "at_kst": "2026-11-07T19:19:28.069784+09:00",
+        "code": "INVENTORY_READ",
+        "executed": null,
+        "exit_code": null,
+        "file_count": 1,
+        "manifest_name": "asset_manifest_v0.27.json",
+        "manifest_sha256": "7041ecbfb7cf3ce28b64a4d10d9a431e72361ed8734bf48bfa95634cd487da23",
+        "run_id": "596ffdba08244c3190678e82d9a0ee0b",
+        "selection_sha256": "38c655fc388cfdc6df9b74bc15fb38c9a167ca0f3b1527ce027aa51ec8991446",
+        "stage": "baseline",
+        "total_bytes": 22
+      },
+      {
+        "at_kst": "2026-11-07T19:19:28.927824+09:00",
+        "code": "CREATED",
+        "executed": true,
+        "exit_code": 0,
+        "file_count": 1,
+        "local_receipt_sha256": "10ddf1daab028826f6fc241a24fdb3c3062b46dfa95b323f451eea62dafcdd9f",
+        "manifest_name": "asset_manifest_v0.27.json",
+        "manifest_sha256": "7041ecbfb7cf3ce28b64a4d10d9a431e72361ed8734bf48bfa95634cd487da23",
+        "run_id": "596ffdba08244c3190678e82d9a0ee0b",
+        "selection_sha256": "38c655fc388cfdc6df9b74bc15fb38c9a167ca0f3b1527ce027aa51ec8991446",
+        "snapshot_id": "ASSET_V21_20261107_191928_KST_85715",
+        "stage": "local",
+        "total_bytes": 22
+      },
+      {
+        "at_kst": "2026-11-07T19:19:29.791993+09:00",
+        "cas_id": "CAS-ASSET_V21_20261107_191928_KST_85715",
+        "code": "REPLICATED",
+        "executed": true,
+        "exit_code": 0,
+        "local_receipt_sha256": "10ddf1daab028826f6fc241a24fdb3c3062b46dfa95b323f451eea62dafcdd9f",
+        "manifest_sha256": "7041ecbfb7cf3ce28b64a4d10d9a431e72361ed8734bf48bfa95634cd487da23",
+        "run_id": "596ffdba08244c3190678e82d9a0ee0b",
+        "selection_sha256": "38c655fc388cfdc6df9b74bc15fb38c9a167ca0f3b1527ce027aa51ec8991446",
+        "stage": "nas"
+      },
+      {
+        "at_kst": "2026-11-07T19:19:29.871342+09:00",
+        "code": "CHAIN_VERIFIED",
+        "executed": true,
+        "exit_code": 0,
+        "run_id": "596ffdba08244c3190678e82d9a0ee0b",
+        "stage": "final"
+      },
+      {
+        "at_kst": "2026-11-07T19:19:29.927932+09:00",
+        "code": "CHAIN_AND_INVENTORY_VERIFIED",
+        "executed": true,
+        "exit_code": 0,
+        "file_count": 1,
+        "local_receipt_sha256": "10ddf1daab028826f6fc241a24fdb3c3062b46dfa95b323f451eea62dafcdd9f",
+        "manifest_name": "asset_manifest_v0.27.json",
+        "manifest_sha256": "7041ecbfb7cf3ce28b64a4d10d9a431e72361ed8734bf48bfa95634cd487da23",
+        "run_id": "596ffdba08244c3190678e82d9a0ee0b",
+        "selection_sha256": "38c655fc388cfdc6df9b74bc15fb38c9a167ca0f3b1527ce027aa51ec8991446",
+        "snapshot_id": "ASSET_V21_20261107_191928_KST_85715",
+        "stage": "decision",
+        "total_bytes": 22
+      },
+      {
+        "at_kst": "2026-11-07T19:19:29.993459+09:00",
+        "code": "PINS_UNCHANGED",
+        "executed": false,
+        "exit_code": null,
+        "run_id": "596ffdba08244c3190678e82d9a0ee0b",
+        "stage": "postflight"
+      }
+    ],
+    "processes": [
+      {
+        "exit_code": 0,
+        "live_descendants": [],
+        "pid": 85715,
+        "stage": "gate",
+        "timed_out": false
+      },
+      {
+        "exit_code": 0,
+        "live_descendants": [],
+        "pid": 85717,
+        "stage": "nas",
+        "timed_out": false
+      }
+    ],
+    "reason": "VERIFIED",
+    "run_id": "596ffdba08244c3190678e82d9a0ee0b",
+    "schema_version": "0.1",
+    "scope": "ISOLATED_FIXTURE_ONLY",
+    "status": "NEW_BACKUP_VERIFIED",
+    "verified_chain": {
+      "local": {
+        "created_at": "2026-11-07T19:19:28.635054+09:00",
+        "inventory": {
+          "file_count": 1,
+          "manifest_name": "asset_manifest_v0.27.json",
+          "manifest_sha256": "7041ecbfb7cf3ce28b64a4d10d9a431e72361ed8734bf48bfa95634cd487da23",
+          "selection_sha256": "38c655fc388cfdc6df9b74bc15fb38c9a167ca0f3b1527ce027aa51ec8991446",
+          "total_bytes": 22
+        },
+        "locked": true,
+        "receipt_sha256": "10ddf1daab028826f6fc241a24fdb3c3062b46dfa95b323f451eea62dafcdd9f",
+        "sha_verified": true,
+        "snapshot_id": "ASSET_V21_20261107_191928_KST_85715"
+      },
+      "nas": {
+        "cas_id": "CAS-ASSET_V21_20261107_191928_KST_85715",
+        "completed": true,
+        "local_receipt_sha256": "10ddf1daab028826f6fc241a24fdb3c3062b46dfa95b323f451eea62dafcdd9f",
+        "manifest_sha256": "7041ecbfb7cf3ce28b64a4d10d9a431e72361ed8734bf48bfa95634cd487da23",
+        "selection_sha256": "38c655fc388cfdc6df9b74bc15fb38c9a167ca0f3b1527ce027aa51ec8991446",
+        "snapshot_id": "ASSET_V21_20261107_191928_KST_85715"
+      }
+    }
+  },
+  "contender_trace": [],
+  "exit": 0,
+  "outside_scope_unchanged": true,
+  "owner": {
+    "actual_backup_success": false,
+    "backup_executed": null,
+    "entry": "scheduled",
+    "events": [
+      {
+        "at_kst": "2026-11-07T19:19:25.082915+09:00",
+        "code": "ACQUIRED",
+        "executed": false,
+        "exit_code": null,
+        "run_id": "807490fa5e634744b47b705b1ce2a2f9",
+        "stage": "lock"
+      },
+      {
+        "at_kst": "2026-11-07T19:19:25.169643+09:00",
+        "code": "PINS_VERIFIED",
+        "executed": false,
+        "exit_code": null,
+        "run_id": "807490fa5e634744b47b705b1ce2a2f9",
+        "stage": "preflight"
+      },
+      {
+        "at_kst": "2026-11-07T19:19:25.255001+09:00",
+        "code": "INVENTORY_READ",
+        "executed": null,
+        "exit_code": null,
+        "file_count": 1,
+        "manifest_name": "asset_manifest_v0.27.json",
+        "manifest_sha256": "7041ecbfb7cf3ce28b64a4d10d9a431e72361ed8734bf48bfa95634cd487da23",
+        "run_id": "807490fa5e634744b47b705b1ce2a2f9",
+        "selection_sha256": "38c655fc388cfdc6df9b74bc15fb38c9a167ca0f3b1527ce027aa51ec8991446",
+        "stage": "baseline",
+        "total_bytes": 22
+      },
+      {
+        "at_kst": "2026-11-07T19:19:27.091307+09:00",
+        "code": "ADAPTER_ERROR",
+        "executed": null,
+        "exit_code": null,
+        "run_id": "807490fa5e634744b47b705b1ce2a2f9",
+        "stage": "local"
+      },
+      {
+        "at_kst": "2026-11-07T19:19:27.162183+09:00",
+        "code": "PINS_UNCHANGED",
+        "executed": false,
+        "exit_code": null,
+        "run_id": "807490fa5e634744b47b705b1ce2a2f9",
+        "stage": "postflight"
+      }
+    ],
+    "processes": [],
+    "reason": "ADAPTER_ERROR",
+    "run_id": "807490fa5e634744b47b705b1ce2a2f9",
+    "schema_version": "0.1",
+    "scope": "ISOLATED_FIXTURE_ONLY",
+    "status": "FAILED_SAFE",
+    "verified_chain": null
+  },
+  "owner_exit": 30,
+  "owner_trace": [
+    "B4_DIAG ROUTABL_MacToNasOneShot_v0_2.py child 62 TimeoutExpired",
+    "B4_DIAG ROUTABL_MacToNasOneShot_v0_2.py cleanup 27 PermissionError",
+    "B4_DIAG ROUTABL_MacToNasOneShot_v0_2.py child 64 PermissionError",
+    "B4_DIAG backup_runner_candidate.py stage 65 PermissionError",
+    "B4_DIAG backup_runner_candidate.py stage 71 Stop"
+  ],
+  "ready": true,
+  "scope": "Instrumented targeted fixture diagnostic; excluded from unchanged B4 regression count"
+}

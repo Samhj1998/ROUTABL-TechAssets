@@ -1,0 +1,189 @@
+{
+  "recorded_at_kst": "2026-11-03T20:23:06+09:00",
+  "source_manifest": "asset_manifest_v0.7.json",
+  "source_manifest_asset_count": 33,
+  "method": "STATIC_FILE_SELECTION_RULE_AUDIT_NOT_BACKUP_VERIFICATION",
+  "categories": {
+    "active_development_source_outside_scope": 2,
+    "search_program_or_db_outside_scope": 16,
+    "external_preservation_source_outside_scope": 4,
+    "eligible_within_existing_encrypted_snapshot_scope": 5,
+    "excluded_by_existing_include_or_filename_policy": 2,
+    "installed_mac_app_outside_scope": 4
+  },
+  "eligible_under_current_rules": 5,
+  "other_registered_assets": 28,
+  "previous_last_local_receipt_day": "2026-11-03",
+  "last_local_receipt_time_kst": "2026-11-03T07:05:52+09:00",
+  "new_v1_5_and_v0_7_backed_up": "NOT_VERIFIED",
+  "candidate_headless_local_nas_agent_installation": "NOT_INSTALLED",
+  "tcc_keychain_headless_job": "NOT_VERIFIED",
+  "drive_cloud_remote_integrity": "NOT_VERIFIED",
+  "records": [
+    {
+      "asset_id": "TA-CASE-20261102-01",
+      "coverage_class": "active_development_source_outside_scope",
+      "backup_recency_verified": false
+    },
+    {
+      "asset_id": "INTEGRATION-F1",
+      "coverage_class": "active_development_source_outside_scope",
+      "backup_recency_verified": false
+    },
+    {
+      "asset_id": "ASSET-SEARCH-01-ENGINE",
+      "coverage_class": "search_program_or_db_outside_scope",
+      "backup_recency_verified": false
+    },
+    {
+      "asset_id": "ASSET-SEARCH-01-WEB",
+      "coverage_class": "search_program_or_db_outside_scope",
+      "backup_recency_verified": false
+    },
+    {
+      "asset_id": "ASSET-SEARCH-01-DB",
+      "coverage_class": "search_program_or_db_outside_scope",
+      "backup_recency_verified": false
+    },
+    {
+      "asset_id": "ASSET-SEARCH-01-SOURCE-ZIP",
+      "coverage_class": "search_program_or_db_outside_scope",
+      "backup_recency_verified": false
+    },
+    {
+      "asset_id": "NAS-README-20261024",
+      "coverage_class": "external_preservation_source_outside_scope",
+      "backup_recency_verified": false
+    },
+    {
+      "asset_id": "ROUTABL-97-1-V4.1-ZIP",
+      "coverage_class": "external_preservation_source_outside_scope",
+      "backup_recency_verified": false
+    },
+    {
+      "asset_id": "ROUTABL-97-1-V4.1-PDF",
+      "coverage_class": "external_preservation_source_outside_scope",
+      "backup_recency_verified": false
+    },
+    {
+      "asset_id": "ROUTABL-97-1-V4.1-NAS-RECEIPT",
+      "coverage_class": "external_preservation_source_outside_scope",
+      "backup_recency_verified": false
+    },
+    {
+      "asset_id": "ASSET-SEARCH-01-V12-ENGINE",
+      "coverage_class": "search_program_or_db_outside_scope",
+      "backup_recency_verified": false
+    },
+    {
+      "asset_id": "ASSET-SEARCH-01-V12-DB",
+      "coverage_class": "search_program_or_db_outside_scope",
+      "backup_recency_verified": false
+    },
+    {
+      "asset_id": "ASSET-SEARCH-01-V12-WEB",
+      "coverage_class": "search_program_or_db_outside_scope",
+      "backup_recency_verified": false
+    },
+    {
+      "asset_id": "ASSET-SEARCH-01-V13-ENGINE",
+      "coverage_class": "search_program_or_db_outside_scope",
+      "backup_recency_verified": false
+    },
+    {
+      "asset_id": "ASSET-SEARCH-01-V13-DB",
+      "coverage_class": "search_program_or_db_outside_scope",
+      "backup_recency_verified": false
+    },
+    {
+      "asset_id": "ASSET-SEARCH-01-V13-WEB",
+      "coverage_class": "search_program_or_db_outside_scope",
+      "backup_recency_verified": false
+    },
+    {
+      "asset_id": "ASSET-SECURITY-POLICY-01",
+      "coverage_class": "eligible_within_existing_encrypted_snapshot_scope",
+      "backup_recency_verified": false
+    },
+    {
+      "asset_id": "ASSET-SEARCH-V14-SERVICE",
+      "coverage_class": "search_program_or_db_outside_scope",
+      "backup_recency_verified": false
+    },
+    {
+      "asset_id": "ASSET-SEARCH-V14-ACTIVE",
+      "coverage_class": "search_program_or_db_outside_scope",
+      "backup_recency_verified": false
+    },
+    {
+      "asset_id": "ASSET-SEARCH-V14-ROLLBACK",
+      "coverage_class": "search_program_or_db_outside_scope",
+      "backup_recency_verified": false
+    },
+    {
+      "asset_id": "ASSET-SEARCH-V14-LAUNCHER-SRC",
+      "coverage_class": "excluded_by_existing_include_or_filename_policy",
+      "backup_recency_verified": false
+    },
+    {
+      "asset_id": "ASSET-SEARCH-V14-APP",
+      "coverage_class": "installed_mac_app_outside_scope",
+      "backup_recency_verified": false
+    },
+    {
+      "asset_id": "ASSET-SEARCH-V14-APP-PLIST",
+      "coverage_class": "installed_mac_app_outside_scope",
+      "backup_recency_verified": false
+    },
+    {
+      "asset_id": "ASSET-SEARCH-V14-GUIDE",
+      "coverage_class": "eligible_within_existing_encrypted_snapshot_scope",
+      "backup_recency_verified": false
+    },
+    {
+      "asset_id": "ASSET-SEARCH-V15-SERVICE",
+      "coverage_class": "search_program_or_db_outside_scope",
+      "backup_recency_verified": false
+    },
+    {
+      "asset_id": "ASSET-SEARCH-V15-DB",
+      "coverage_class": "search_program_or_db_outside_scope",
+      "backup_recency_verified": false
+    },
+    {
+      "asset_id": "ASSET-SEARCH-V15-ROLLBACK",
+      "coverage_class": "search_program_or_db_outside_scope",
+      "backup_recency_verified": false
+    },
+    {
+      "asset_id": "ASSET-SEARCH-V15-LAUNCHER-SRC",
+      "coverage_class": "excluded_by_existing_include_or_filename_policy",
+      "backup_recency_verified": false
+    },
+    {
+      "asset_id": "ASSET-SEARCH-V15-APP",
+      "coverage_class": "installed_mac_app_outside_scope",
+      "backup_recency_verified": false
+    },
+    {
+      "asset_id": "ASSET-SEARCH-V15-PLIST",
+      "coverage_class": "installed_mac_app_outside_scope",
+      "backup_recency_verified": false
+    },
+    {
+      "asset_id": "ASSET-SEARCH-V15-GUIDE",
+      "coverage_class": "eligible_within_existing_encrypted_snapshot_scope",
+      "backup_recency_verified": false
+    },
+    {
+      "asset_id": "ASSET-SEARCH-V15-QA",
+      "coverage_class": "eligible_within_existing_encrypted_snapshot_scope",
+      "backup_recency_verified": false
+    },
+    {
+      "asset_id": "ASSET-SEARCH-V15-QA-JSON",
+      "coverage_class": "eligible_within_existing_encrypted_snapshot_scope",
+      "backup_recency_verified": false
+    }
+  ]
+}

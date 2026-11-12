@@ -1,0 +1,2510 @@
+{
+  "cases": [
+    {
+      "actual": "CANDIDATE_NEW_EVIDENCE",
+      "case": "new",
+      "detail": {
+        "actual_backup_success": false,
+        "events": [
+          {
+            "code": "INVENTORY_READ",
+            "executed": null,
+            "exit_code": null,
+            "phase": "baseline"
+          },
+          {
+            "code": "CREATED",
+            "executed": true,
+            "exit_code": 0,
+            "phase": "local"
+          },
+          {
+            "code": "REPLICATED",
+            "executed": true,
+            "exit_code": 0,
+            "phase": "nas"
+          },
+          {
+            "code": "CHAIN_VERIFIED",
+            "executed": true,
+            "exit_code": 0,
+            "phase": "final"
+          },
+          {
+            "code": "CHAIN_AND_INVENTORY_VERIFIED",
+            "executed": true,
+            "exit_code": 0,
+            "phase": "decision"
+          }
+        ],
+        "evidence": {
+          "actual_backup_verified": false,
+          "cas_completed": true,
+          "cas_components": 1,
+          "cas_created_at": "2026-11-08T02:35:00.281606+09:00",
+          "cas_manifest_sha256": "509e3dafc0df00d20a6e1d1f35e8355ddae804cbf41a504af5d6c88e099d5197",
+          "cas_manifest_structure": "VERIFIED",
+          "cas_referenced_bytes": 18,
+          "chain": "METADATA_LINKED",
+          "current_cas_component_sha256": "NOT_PERFORMED",
+          "current_registry_match": true,
+          "current_selection_match": true,
+          "fixture_component_verification": {
+            "all_component_bytes_verified_in_fixture": true,
+            "manifest_sha256": "509e3dafc0df00d20a6e1d1f35e8355ddae804cbf41a504af5d6c88e099d5197",
+            "verified_bytes": 18,
+            "verified_count": 1
+          },
+          "historical_oneshot": "SUCCESS_CLAIM_BOUND_TO_METADATA",
+          "latest_registry": "asset_manifest_v0.27.json",
+          "latest_registry_sha256": "8bb3f0f773576895907965f9065e21385806fafb6488b0b0205741495229b3f0",
+          "local_created_at": "2026-11-08T02:34:59.758292+09:00",
+          "local_lock_and_integrity": "HISTORICAL_STATUS_REPORT_ONLY",
+          "local_receipt_bytes_verified": true,
+          "local_receipt_sha256_reported": "7b0a15ee54451cdc5a7c8dbdf28d53ef3824fe017274b0ea65e0e2b576389f38",
+          "observed_at": "2026-11-08T02:35:00.430030+09:00",
+          "reported_registry": "asset_manifest_v0.27.json",
+          "reported_registry_sha256": "8bb3f0f773576895907965f9065e21385806fafb6488b0b0205741495229b3f0",
+          "reported_selected_bytes": 25,
+          "reported_selected_files": 1,
+          "reported_selection_sha256": "c2ddb3869945ccb9514b13ed813b3d43e8edb3b7836bee0f4d69917ce3f0dc12",
+          "same_day_kst": true,
+          "scope": "RECEIPT_METADATA_ONLY",
+          "selection_recomputed_from_receipt": true,
+          "snapshot_id": "ASSET_V21_20261108_023459_KST_90088",
+          "status": "PARTIAL"
+        },
+        "production_deployment": false,
+        "reason": "ISOLATED_EVIDENCE_CONTRACT",
+        "run_id": "9e9e47f2b3344cd79a18890ef112175c",
+        "scope": "ISOLATED_FIXTURE_ONLY",
+        "stages": [
+          {
+            "actual_backup_success": false,
+            "children": [
+              {
+                "event": "READY",
+                "observed_exit": 0,
+                "pgid": 90088,
+                "pid": 90088,
+                "sid": 90088,
+                "token": "d4ebf76c534c40b9b3e141b036875ec6",
+                "uid": 501
+              }
+            ],
+            "cleanup": null,
+            "cleanup_timeout": 0.85,
+            "cleanup_verified": true,
+            "exit_code": 0,
+            "fixture_payload": {
+              "rows": [
+                {
+                  "files": 1,
+                  "gate": "READY_FOR_LOCAL_ONCE",
+                  "job": "local",
+                  "manifest": "asset_manifest_v0.27.json",
+                  "manifest_sha256": "8bb3f0f773576895907965f9065e21385806fafb6488b0b0205741495229b3f0",
+                  "mode": "run",
+                  "no_work_executed": false,
+                  "selection_sha256": "c2ddb3869945ccb9514b13ed813b3d43e8edb3b7836bee0f4d69917ce3f0dc12"
+                },
+                {
+                  "job": "local",
+                  "manifest_sha256": "8bb3f0f773576895907965f9065e21385806fafb6488b0b0205741495229b3f0",
+                  "receipt_chain_verified": true,
+                  "result": "SUCCESS",
+                  "selection_sha256": "c2ddb3869945ccb9514b13ed813b3d43e8edb3b7836bee0f4d69917ce3f0dc12"
+                }
+              ],
+              "wire_exit": 0
+            },
+            "fixture_reported_active_seconds": 0.0066712500000000174,
+            "run_id": "d4ebf76c534c40b9b3e141b036875ec6",
+            "stage": "gate",
+            "startup_seconds": 0.5126,
+            "status": "FIXTURE_COMPLETED",
+            "stdout_eof": true,
+            "work_seconds": 0.0163,
+            "work_timeout": 1.1
+          },
+          {
+            "actual_backup_success": false,
+            "children": [
+              {
+                "event": "READY",
+                "observed_exit": 0,
+                "pgid": 90090,
+                "pid": 90090,
+                "sid": 90090,
+                "token": "8728c35a17c0411ea268bd6f0bc91d16",
+                "uid": 501
+              }
+            ],
+            "cleanup": null,
+            "cleanup_timeout": 0.85,
+            "cleanup_verified": true,
+            "exit_code": 0,
+            "fixture_payload": {
+              "rows": [
+                {
+                  "result": "INCREMENTAL_SNAPSHOT_VERIFIED"
+                }
+              ],
+              "wire_exit": 0
+            },
+            "fixture_reported_active_seconds": 0.004800083999999982,
+            "run_id": "8728c35a17c0411ea268bd6f0bc91d16",
+            "stage": "nas",
+            "startup_seconds": 0.47,
+            "status": "FIXTURE_COMPLETED",
+            "stdout_eof": true,
+            "work_seconds": 0.017,
+            "work_timeout": 1.1
+          }
+        ],
+        "status": "CANDIDATE_NEW_EVIDENCE"
+      },
+      "expected": "CANDIDATE_NEW_EVIDENCE",
+      "verdict": "PASS"
+    },
+    {
+      "actual": "SKIPPED_LOCK_HELD",
+      "case": "manual_vs_scheduled_same_lock",
+      "detail": {
+        "exit": 20,
+        "owner_ready": true,
+        "stages": []
+      },
+      "expected": "SKIPPED_LOCK_HELD",
+      "verdict": "PASS"
+    },
+    {
+      "actual": "CANDIDATE_NEW_EVIDENCE",
+      "case": "normal_owner_finishes_with_original_0_8s_hold",
+      "detail": {
+        "actual_backup_success": false,
+        "events": [
+          {
+            "code": "INVENTORY_READ",
+            "executed": null,
+            "exit_code": null,
+            "phase": "baseline"
+          },
+          {
+            "code": "CREATED",
+            "executed": true,
+            "exit_code": 0,
+            "phase": "local"
+          },
+          {
+            "code": "REPLICATED",
+            "executed": true,
+            "exit_code": 0,
+            "phase": "nas"
+          },
+          {
+            "code": "CHAIN_VERIFIED",
+            "executed": true,
+            "exit_code": 0,
+            "phase": "final"
+          },
+          {
+            "code": "CHAIN_AND_INVENTORY_VERIFIED",
+            "executed": true,
+            "exit_code": 0,
+            "phase": "decision"
+          }
+        ],
+        "evidence": {
+          "actual_backup_verified": false,
+          "cas_completed": true,
+          "cas_components": 1,
+          "cas_created_at": "2026-11-08T02:35:03.394836+09:00",
+          "cas_manifest_sha256": "5e098586e3c61bbcd80877a36acaff7c0858cddd3f4e1d72cf41789ff1f282a2",
+          "cas_manifest_structure": "VERIFIED",
+          "cas_referenced_bytes": 18,
+          "chain": "METADATA_LINKED",
+          "current_cas_component_sha256": "NOT_PERFORMED",
+          "current_registry_match": true,
+          "current_selection_match": true,
+          "fixture_component_verification": {
+            "all_component_bytes_verified_in_fixture": true,
+            "manifest_sha256": "5e098586e3c61bbcd80877a36acaff7c0858cddd3f4e1d72cf41789ff1f282a2",
+            "verified_bytes": 18,
+            "verified_count": 1
+          },
+          "historical_oneshot": "SUCCESS_CLAIM_BOUND_TO_METADATA",
+          "latest_registry": "asset_manifest_v0.27.json",
+          "latest_registry_sha256": "8bb3f0f773576895907965f9065e21385806fafb6488b0b0205741495229b3f0",
+          "local_created_at": "2026-11-08T02:35:02.777617+09:00",
+          "local_lock_and_integrity": "HISTORICAL_STATUS_REPORT_ONLY",
+          "local_receipt_bytes_verified": true,
+          "local_receipt_sha256_reported": "8120a486b0abe309a8eb23efef30e7dc7bbe2c0458eb6593baf57fc61b0a1543",
+          "observed_at": "2026-11-08T02:35:03.652589+09:00",
+          "reported_registry": "asset_manifest_v0.27.json",
+          "reported_registry_sha256": "8bb3f0f773576895907965f9065e21385806fafb6488b0b0205741495229b3f0",
+          "reported_selected_bytes": 25,
+          "reported_selected_files": 1,
+          "reported_selection_sha256": "c2ddb3869945ccb9514b13ed813b3d43e8edb3b7836bee0f4d69917ce3f0dc12",
+          "same_day_kst": true,
+          "scope": "RECEIPT_METADATA_ONLY",
+          "selection_recomputed_from_receipt": true,
+          "snapshot_id": "ASSET_V21_20261108_023502_KST_90099",
+          "status": "PARTIAL"
+        },
+        "production_deployment": false,
+        "reason": "ISOLATED_EVIDENCE_CONTRACT",
+        "run_id": "aa7ba966e1c441a593b4e4745d3aaf1b",
+        "scope": "ISOLATED_FIXTURE_ONLY",
+        "stages": [
+          {
+            "actual_backup_success": false,
+            "children": [
+              {
+                "event": "READY",
+                "observed_exit": 0,
+                "pgid": 90099,
+                "pid": 90099,
+                "sid": 90099,
+                "token": "3adc1298df5648d1bd400fa2b52cd578",
+                "uid": 501
+              }
+            ],
+            "cleanup": null,
+            "cleanup_timeout": 0.85,
+            "cleanup_verified": true,
+            "exit_code": 0,
+            "fixture_payload": {
+              "rows": [
+                {
+                  "files": 1,
+                  "gate": "READY_FOR_LOCAL_ONCE",
+                  "job": "local",
+                  "manifest": "asset_manifest_v0.27.json",
+                  "manifest_sha256": "8bb3f0f773576895907965f9065e21385806fafb6488b0b0205741495229b3f0",
+                  "mode": "run",
+                  "no_work_executed": false,
+                  "selection_sha256": "c2ddb3869945ccb9514b13ed813b3d43e8edb3b7836bee0f4d69917ce3f0dc12"
+                },
+                {
+                  "job": "local",
+                  "manifest_sha256": "8bb3f0f773576895907965f9065e21385806fafb6488b0b0205741495229b3f0",
+                  "receipt_chain_verified": true,
+                  "result": "SUCCESS",
+                  "selection_sha256": "c2ddb3869945ccb9514b13ed813b3d43e8edb3b7836bee0f4d69917ce3f0dc12"
+                }
+              ],
+              "wire_exit": 0
+            },
+            "fixture_reported_active_seconds": 1.0001355840000001,
+            "run_id": "3adc1298df5648d1bd400fa2b52cd578",
+            "stage": "gate",
+            "startup_seconds": 0.4987,
+            "status": "FIXTURE_COMPLETED_DELAYED",
+            "stdout_eof": true,
+            "work_seconds": 1.064,
+            "work_timeout": 1.1
+          },
+          {
+            "actual_backup_success": false,
+            "children": [
+              {
+                "event": "READY",
+                "observed_exit": 0,
+                "pgid": 90106,
+                "pid": 90106,
+                "sid": 90106,
+                "token": "a6b0d3544b6b447aa8e2edd955396f39",
+                "uid": 501
+              }
+            ],
+            "cleanup": null,
+            "cleanup_timeout": 0.85,
+            "cleanup_verified": true,
+            "exit_code": 0,
+            "fixture_payload": {
+              "rows": [
+                {
+                  "result": "INCREMENTAL_SNAPSHOT_VERIFIED"
+                }
+              ],
+              "wire_exit": 0
+            },
+            "fixture_reported_active_seconds": 0.003218999999999972,
+            "run_id": "a6b0d3544b6b447aa8e2edd955396f39",
+            "stage": "nas",
+            "startup_seconds": 0.5136,
+            "status": "FIXTURE_COMPLETED",
+            "stdout_eof": true,
+            "work_seconds": 0.219,
+            "work_timeout": 1.1
+          }
+        ],
+        "status": "CANDIDATE_NEW_EVIDENCE"
+      },
+      "expected": "CANDIDATE_NEW_EVIDENCE",
+      "verdict": "PASS"
+    },
+    {
+      "actual": "FIXTURE_COMPLETED_DELAYED",
+      "case": "hold_classified_as_delay",
+      "detail": null,
+      "expected": "FIXTURE_COMPLETED_DELAYED",
+      "verdict": "PASS"
+    },
+    {
+      "actual": "SKIPPED_LOCK_HELD",
+      "case": "child_lock",
+      "detail": {
+        "actual_backup_success": false,
+        "events": [
+          {
+            "code": "INVENTORY_READ",
+            "executed": null,
+            "exit_code": null,
+            "phase": "baseline"
+          },
+          {
+            "code": "LOCK_HELD",
+            "executed": false,
+            "exit_code": 0,
+            "phase": "local"
+          }
+        ],
+        "production_deployment": false,
+        "reason": "CHILD_LOCK_HELD",
+        "run_id": "4dc6dd9a7c11469b9346ad7125c4a9a6",
+        "scope": "ISOLATED_FIXTURE_ONLY",
+        "stages": [
+          {
+            "actual_backup_success": false,
+            "children": [
+              {
+                "event": "READY",
+                "observed_exit": 0,
+                "pgid": 90108,
+                "pid": 90108,
+                "sid": 90108,
+                "token": "292a52156b1348789c92d866f4a1f935",
+                "uid": 501
+              }
+            ],
+            "cleanup": null,
+            "cleanup_timeout": 0.85,
+            "cleanup_verified": true,
+            "exit_code": 0,
+            "fixture_payload": {
+              "rows": [
+                {
+                  "executed": false,
+                  "job": "local",
+                  "state": "ALREADY_RUNNING"
+                }
+              ],
+              "wire_exit": 0
+            },
+            "fixture_reported_active_seconds": 0.0021314170000000243,
+            "run_id": "292a52156b1348789c92d866f4a1f935",
+            "stage": "gate",
+            "startup_seconds": 0.5239,
+            "status": "FIXTURE_COMPLETED",
+            "stdout_eof": true,
+            "work_seconds": 0.0106,
+            "work_timeout": 1.1
+          }
+        ],
+        "status": "SKIPPED_LOCK_HELD"
+      },
+      "expected": "SKIPPED_LOCK_HELD",
+      "verdict": "PASS"
+    },
+    {
+      "actual": "NO_NEW_BACKUP_EVIDENCE",
+      "case": "no_work",
+      "detail": {
+        "actual_backup_success": false,
+        "events": [
+          {
+            "code": "INVENTORY_READ",
+            "executed": null,
+            "exit_code": null,
+            "phase": "baseline"
+          },
+          {
+            "code": "NO_WORK",
+            "executed": false,
+            "exit_code": 0,
+            "phase": "local"
+          }
+        ],
+        "production_deployment": false,
+        "reason": "LOCAL_WORK_NOT_PROVEN",
+        "run_id": "ed5d8c2e4495478c9d9ff0aa02ef95f4",
+        "scope": "ISOLATED_FIXTURE_ONLY",
+        "stages": [
+          {
+            "actual_backup_success": false,
+            "children": [
+              {
+                "event": "READY",
+                "observed_exit": 0,
+                "pgid": 90110,
+                "pid": 90110,
+                "sid": 90110,
+                "token": "6363278f50534b2bb0bac68ee322d5fd",
+                "uid": 501
+              }
+            ],
+            "cleanup": null,
+            "cleanup_timeout": 0.85,
+            "cleanup_verified": true,
+            "exit_code": 0,
+            "fixture_payload": {
+              "rows": [
+                {
+                  "files": 1,
+                  "gate": "READY_FOR_LOCAL_ONCE",
+                  "job": "local",
+                  "manifest": "asset_manifest_v0.27.json",
+                  "manifest_sha256": "8bb3f0f773576895907965f9065e21385806fafb6488b0b0205741495229b3f0",
+                  "mode": "check",
+                  "no_work_executed": true,
+                  "selection_sha256": "c2ddb3869945ccb9514b13ed813b3d43e8edb3b7836bee0f4d69917ce3f0dc12"
+                }
+              ],
+              "wire_exit": 0
+            },
+            "fixture_reported_active_seconds": 0.001375124999999977,
+            "run_id": "6363278f50534b2bb0bac68ee322d5fd",
+            "stage": "gate",
+            "startup_seconds": 0.4856,
+            "status": "FIXTURE_COMPLETED",
+            "stdout_eof": true,
+            "work_seconds": 0.216,
+            "work_timeout": 1.1
+          }
+        ],
+        "status": "NO_NEW_BACKUP_EVIDENCE"
+      },
+      "expected": "NO_NEW_BACKUP_EVIDENCE",
+      "verdict": "PASS"
+    },
+    {
+      "actual": "FAILED_SAFE",
+      "case": "nonzero",
+      "detail": {
+        "actual_backup_success": false,
+        "events": [
+          {
+            "code": "INVENTORY_READ",
+            "executed": null,
+            "exit_code": null,
+            "phase": "baseline"
+          },
+          {
+            "code": "FAILED",
+            "executed": false,
+            "exit_code": 7,
+            "phase": "local"
+          }
+        ],
+        "production_deployment": false,
+        "reason": "CHILD_NONZERO",
+        "run_id": "4ca8b5b7849a404e910217b44fcabbf4",
+        "scope": "ISOLATED_FIXTURE_ONLY",
+        "stages": [
+          {
+            "actual_backup_success": false,
+            "children": [
+              {
+                "event": "READY",
+                "observed_exit": 0,
+                "pgid": 90112,
+                "pid": 90112,
+                "sid": 90112,
+                "token": "66c38bac17c2474caff464ac9edc5031",
+                "uid": 501
+              }
+            ],
+            "cleanup": null,
+            "cleanup_timeout": 0.85,
+            "cleanup_verified": true,
+            "exit_code": 0,
+            "fixture_payload": {
+              "rows": [],
+              "wire_exit": 7
+            },
+            "fixture_reported_active_seconds": 0.002006624999999984,
+            "run_id": "66c38bac17c2474caff464ac9edc5031",
+            "stage": "gate",
+            "startup_seconds": 0.513,
+            "status": "FIXTURE_COMPLETED",
+            "stdout_eof": true,
+            "work_seconds": 0.0109,
+            "work_timeout": 1.1
+          }
+        ],
+        "status": "FAILED_SAFE"
+      },
+      "expected": "FAILED_SAFE",
+      "verdict": "PASS"
+    },
+    {
+      "actual": "FAILED_SAFE",
+      "case": "malformed",
+      "detail": {
+        "actual_backup_success": false,
+        "events": [
+          {
+            "code": "INVENTORY_READ",
+            "executed": null,
+            "exit_code": null,
+            "phase": "baseline"
+          },
+          {
+            "code": "FAILED",
+            "executed": false,
+            "exit_code": 0,
+            "phase": "local"
+          }
+        ],
+        "production_deployment": false,
+        "reason": "LOCAL_RESULT_CONTRADICTORY_OR_FAILED",
+        "run_id": "1dcf6ffd8a9b4582aefa57bd13a91590",
+        "scope": "ISOLATED_FIXTURE_ONLY",
+        "stages": [
+          {
+            "actual_backup_success": false,
+            "children": [
+              {
+                "event": "READY",
+                "observed_exit": 0,
+                "pgid": 90116,
+                "pid": 90116,
+                "sid": 90116,
+                "token": "76d1fe5324344a8998eefeedd08d6742",
+                "uid": 501
+              }
+            ],
+            "cleanup": null,
+            "cleanup_timeout": 0.85,
+            "cleanup_verified": true,
+            "exit_code": 0,
+            "fixture_payload": {
+              "rows": null,
+              "wire_exit": 0
+            },
+            "fixture_reported_active_seconds": 0.001972750000000023,
+            "run_id": "76d1fe5324344a8998eefeedd08d6742",
+            "stage": "gate",
+            "startup_seconds": 0.5231,
+            "status": "FIXTURE_COMPLETED",
+            "stdout_eof": true,
+            "work_seconds": 0.0104,
+            "work_timeout": 1.1
+          }
+        ],
+        "status": "FAILED_SAFE"
+      },
+      "expected": "FAILED_SAFE",
+      "verdict": "PASS"
+    },
+    {
+      "actual": "FAILED_SAFE",
+      "case": "selection_change",
+      "detail": {
+        "actual_backup_success": false,
+        "events": [
+          {
+            "code": "INVENTORY_READ",
+            "executed": null,
+            "exit_code": null,
+            "phase": "baseline"
+          },
+          {
+            "code": "CREATED",
+            "executed": true,
+            "exit_code": 0,
+            "phase": "local"
+          },
+          {
+            "code": "REPLICATED",
+            "executed": true,
+            "exit_code": 0,
+            "phase": "nas"
+          },
+          {
+            "code": "CHAIN_VERIFIED",
+            "executed": true,
+            "exit_code": 0,
+            "phase": "final"
+          }
+        ],
+        "production_deployment": false,
+        "reason": "INVENTORY_CHANGED",
+        "run_id": "baa89c2d055a495b8169627b4a76cbc4",
+        "scope": "ISOLATED_FIXTURE_ONLY",
+        "stages": [
+          {
+            "actual_backup_success": false,
+            "children": [
+              {
+                "event": "READY",
+                "observed_exit": 0,
+                "pgid": 90118,
+                "pid": 90118,
+                "sid": 90118,
+                "token": "9c849baa3bf04b2e86404db6035c43f6",
+                "uid": 501
+              }
+            ],
+            "cleanup": null,
+            "cleanup_timeout": 0.85,
+            "cleanup_verified": true,
+            "exit_code": 0,
+            "fixture_payload": {
+              "rows": [
+                {
+                  "files": 1,
+                  "gate": "READY_FOR_LOCAL_ONCE",
+                  "job": "local",
+                  "manifest": "asset_manifest_v0.27.json",
+                  "manifest_sha256": "8bb3f0f773576895907965f9065e21385806fafb6488b0b0205741495229b3f0",
+                  "mode": "run",
+                  "no_work_executed": false,
+                  "selection_sha256": "c2ddb3869945ccb9514b13ed813b3d43e8edb3b7836bee0f4d69917ce3f0dc12"
+                },
+                {
+                  "job": "local",
+                  "manifest_sha256": "8bb3f0f773576895907965f9065e21385806fafb6488b0b0205741495229b3f0",
+                  "receipt_chain_verified": true,
+                  "result": "SUCCESS",
+                  "selection_sha256": "c2ddb3869945ccb9514b13ed813b3d43e8edb3b7836bee0f4d69917ce3f0dc12"
+                }
+              ],
+              "wire_exit": 0
+            },
+            "fixture_reported_active_seconds": 0.0069747500000000295,
+            "run_id": "9c849baa3bf04b2e86404db6035c43f6",
+            "stage": "gate",
+            "startup_seconds": 0.4914,
+            "status": "FIXTURE_COMPLETED",
+            "stdout_eof": true,
+            "work_seconds": 0.199,
+            "work_timeout": 1.1
+          },
+          {
+            "actual_backup_success": false,
+            "children": [
+              {
+                "event": "READY",
+                "observed_exit": 0,
+                "pgid": 90120,
+                "pid": 90120,
+                "sid": 90120,
+                "token": "97d667f1cf0d415c8418643c6e0d90b3",
+                "uid": 501
+              }
+            ],
+            "cleanup": null,
+            "cleanup_timeout": 0.85,
+            "cleanup_verified": true,
+            "exit_code": 0,
+            "fixture_payload": {
+              "rows": [
+                {
+                  "result": "INCREMENTAL_SNAPSHOT_VERIFIED"
+                }
+              ],
+              "wire_exit": 0
+            },
+            "fixture_reported_active_seconds": 0.005383958999999994,
+            "run_id": "97d667f1cf0d415c8418643c6e0d90b3",
+            "stage": "nas",
+            "startup_seconds": 0.5178,
+            "status": "FIXTURE_COMPLETED",
+            "stdout_eof": true,
+            "work_seconds": 0.2132,
+            "work_timeout": 1.1
+          }
+        ],
+        "status": "FAILED_SAFE"
+      },
+      "expected": "FAILED_SAFE",
+      "verdict": "PASS"
+    },
+    {
+      "actual": "NAS_CHAIN_NOT_VERIFIED",
+      "case": "missing_nas",
+      "detail": {
+        "actual_backup_success": false,
+        "events": [
+          {
+            "code": "INVENTORY_READ",
+            "executed": null,
+            "exit_code": null,
+            "phase": "baseline"
+          },
+          {
+            "code": "CREATED",
+            "executed": true,
+            "exit_code": 0,
+            "phase": "local"
+          },
+          {
+            "code": "REPLICATED",
+            "executed": true,
+            "exit_code": 0,
+            "phase": "nas"
+          }
+        ],
+        "production_deployment": false,
+        "reason": "NAS_EVIDENCE_MISSING_OR_MISMATCH",
+        "run_id": "480f51c97a574aaf9378bea052b04f59",
+        "scope": "ISOLATED_FIXTURE_ONLY",
+        "stages": [
+          {
+            "actual_backup_success": false,
+            "children": [
+              {
+                "event": "READY",
+                "observed_exit": 0,
+                "pgid": 90122,
+                "pid": 90122,
+                "sid": 90122,
+                "token": "c55565d0a24b4201aac068d61cfd9a6f",
+                "uid": 501
+              }
+            ],
+            "cleanup": null,
+            "cleanup_timeout": 0.85,
+            "cleanup_verified": true,
+            "exit_code": 0,
+            "fixture_payload": {
+              "rows": [
+                {
+                  "files": 1,
+                  "gate": "READY_FOR_LOCAL_ONCE",
+                  "job": "local",
+                  "manifest": "asset_manifest_v0.27.json",
+                  "manifest_sha256": "8bb3f0f773576895907965f9065e21385806fafb6488b0b0205741495229b3f0",
+                  "mode": "run",
+                  "no_work_executed": false,
+                  "selection_sha256": "c2ddb3869945ccb9514b13ed813b3d43e8edb3b7836bee0f4d69917ce3f0dc12"
+                },
+                {
+                  "job": "local",
+                  "manifest_sha256": "8bb3f0f773576895907965f9065e21385806fafb6488b0b0205741495229b3f0",
+                  "receipt_chain_verified": true,
+                  "result": "SUCCESS",
+                  "selection_sha256": "c2ddb3869945ccb9514b13ed813b3d43e8edb3b7836bee0f4d69917ce3f0dc12"
+                }
+              ],
+              "wire_exit": 0
+            },
+            "fixture_reported_active_seconds": 0.0068047499999999705,
+            "run_id": "c55565d0a24b4201aac068d61cfd9a6f",
+            "stage": "gate",
+            "startup_seconds": 0.5242,
+            "status": "FIXTURE_COMPLETED",
+            "stdout_eof": true,
+            "work_seconds": 0.0163,
+            "work_timeout": 1.1
+          },
+          {
+            "actual_backup_success": false,
+            "children": [
+              {
+                "event": "READY",
+                "observed_exit": 0,
+                "pgid": 90124,
+                "pid": 90124,
+                "sid": 90124,
+                "token": "586ee743f6e34ebea620a75c10d06153",
+                "uid": 501
+              }
+            ],
+            "cleanup": null,
+            "cleanup_timeout": 0.85,
+            "cleanup_verified": true,
+            "exit_code": 0,
+            "fixture_payload": {
+              "rows": [
+                {
+                  "result": "INCREMENTAL_SNAPSHOT_VERIFIED"
+                }
+              ],
+              "wire_exit": 0
+            },
+            "fixture_reported_active_seconds": 7.766600000003177e-05,
+            "run_id": "586ee743f6e34ebea620a75c10d06153",
+            "stage": "nas",
+            "startup_seconds": 0.5021,
+            "status": "FIXTURE_COMPLETED",
+            "stdout_eof": true,
+            "work_seconds": 0.2156,
+            "work_timeout": 1.1
+          }
+        ],
+        "status": "NAS_CHAIN_NOT_VERIFIED"
+      },
+      "expected": "NAS_CHAIN_NOT_VERIFIED",
+      "verdict": "PASS"
+    },
+    {
+      "actual": "NAS_CHAIN_NOT_VERIFIED",
+      "case": "incomplete_nas",
+      "detail": {
+        "actual_backup_success": false,
+        "events": [
+          {
+            "code": "INVENTORY_READ",
+            "executed": null,
+            "exit_code": null,
+            "phase": "baseline"
+          },
+          {
+            "code": "CREATED",
+            "executed": true,
+            "exit_code": 0,
+            "phase": "local"
+          },
+          {
+            "code": "REPLICATED",
+            "executed": true,
+            "exit_code": 0,
+            "phase": "nas"
+          }
+        ],
+        "production_deployment": false,
+        "reason": "NAS_EVIDENCE_MISSING_OR_MISMATCH",
+        "run_id": "f2ded1d983a546db82af7417fe0b3f64",
+        "scope": "ISOLATED_FIXTURE_ONLY",
+        "stages": [
+          {
+            "actual_backup_success": false,
+            "children": [
+              {
+                "event": "READY",
+                "observed_exit": 0,
+                "pgid": 90126,
+                "pid": 90126,
+                "sid": 90126,
+                "token": "e19b18f1ec1f4f499baa2b87090b5681",
+                "uid": 501
+              }
+            ],
+            "cleanup": null,
+            "cleanup_timeout": 0.85,
+            "cleanup_verified": true,
+            "exit_code": 0,
+            "fixture_payload": {
+              "rows": [
+                {
+                  "files": 1,
+                  "gate": "READY_FOR_LOCAL_ONCE",
+                  "job": "local",
+                  "manifest": "asset_manifest_v0.27.json",
+                  "manifest_sha256": "8bb3f0f773576895907965f9065e21385806fafb6488b0b0205741495229b3f0",
+                  "mode": "run",
+                  "no_work_executed": false,
+                  "selection_sha256": "c2ddb3869945ccb9514b13ed813b3d43e8edb3b7836bee0f4d69917ce3f0dc12"
+                },
+                {
+                  "job": "local",
+                  "manifest_sha256": "8bb3f0f773576895907965f9065e21385806fafb6488b0b0205741495229b3f0",
+                  "receipt_chain_verified": true,
+                  "result": "SUCCESS",
+                  "selection_sha256": "c2ddb3869945ccb9514b13ed813b3d43e8edb3b7836bee0f4d69917ce3f0dc12"
+                }
+              ],
+              "wire_exit": 0
+            },
+            "fixture_reported_active_seconds": 0.006701750000000006,
+            "run_id": "e19b18f1ec1f4f499baa2b87090b5681",
+            "stage": "gate",
+            "startup_seconds": 0.5026,
+            "status": "FIXTURE_COMPLETED",
+            "stdout_eof": true,
+            "work_seconds": 0.0171,
+            "work_timeout": 1.1
+          },
+          {
+            "actual_backup_success": false,
+            "children": [
+              {
+                "event": "READY",
+                "observed_exit": 0,
+                "pgid": 90128,
+                "pid": 90128,
+                "sid": 90128,
+                "token": "7f0eea740fa44dd18cca02248664c28d",
+                "uid": 501
+              }
+            ],
+            "cleanup": null,
+            "cleanup_timeout": 0.85,
+            "cleanup_verified": true,
+            "exit_code": 0,
+            "fixture_payload": {
+              "rows": [
+                {
+                  "result": "INCREMENTAL_SNAPSHOT_VERIFIED"
+                }
+              ],
+              "wire_exit": 0
+            },
+            "fixture_reported_active_seconds": 0.005403416999999966,
+            "run_id": "7f0eea740fa44dd18cca02248664c28d",
+            "stage": "nas",
+            "startup_seconds": 0.5131,
+            "status": "FIXTURE_COMPLETED",
+            "stdout_eof": true,
+            "work_seconds": 0.0105,
+            "work_timeout": 1.1
+          }
+        ],
+        "status": "NAS_CHAIN_NOT_VERIFIED"
+      },
+      "expected": "NAS_CHAIN_NOT_VERIFIED",
+      "verdict": "PASS"
+    },
+    {
+      "actual": "NAS_CHAIN_NOT_VERIFIED",
+      "case": "mismatched_nas",
+      "detail": {
+        "actual_backup_success": false,
+        "events": [
+          {
+            "code": "INVENTORY_READ",
+            "executed": null,
+            "exit_code": null,
+            "phase": "baseline"
+          },
+          {
+            "code": "CREATED",
+            "executed": true,
+            "exit_code": 0,
+            "phase": "local"
+          },
+          {
+            "code": "REPLICATED",
+            "executed": true,
+            "exit_code": 0,
+            "phase": "nas"
+          }
+        ],
+        "production_deployment": false,
+        "reason": "NAS_EVIDENCE_MISSING_OR_MISMATCH",
+        "run_id": "a1720896c7df48c0b3dbbc1577b873ee",
+        "scope": "ISOLATED_FIXTURE_ONLY",
+        "stages": [
+          {
+            "actual_backup_success": false,
+            "children": [
+              {
+                "event": "READY",
+                "observed_exit": 0,
+                "pgid": 90130,
+                "pid": 90130,
+                "sid": 90130,
+                "token": "fa664318e4674071a1391828eefbe0f8",
+                "uid": 501
+              }
+            ],
+            "cleanup": null,
+            "cleanup_timeout": 0.85,
+            "cleanup_verified": true,
+            "exit_code": 0,
+            "fixture_payload": {
+              "rows": [
+                {
+                  "files": 1,
+                  "gate": "READY_FOR_LOCAL_ONCE",
+                  "job": "local",
+                  "manifest": "asset_manifest_v0.27.json",
+                  "manifest_sha256": "8bb3f0f773576895907965f9065e21385806fafb6488b0b0205741495229b3f0",
+                  "mode": "run",
+                  "no_work_executed": false,
+                  "selection_sha256": "c2ddb3869945ccb9514b13ed813b3d43e8edb3b7836bee0f4d69917ce3f0dc12"
+                },
+                {
+                  "job": "local",
+                  "manifest_sha256": "8bb3f0f773576895907965f9065e21385806fafb6488b0b0205741495229b3f0",
+                  "receipt_chain_verified": true,
+                  "result": "SUCCESS",
+                  "selection_sha256": "c2ddb3869945ccb9514b13ed813b3d43e8edb3b7836bee0f4d69917ce3f0dc12"
+                }
+              ],
+              "wire_exit": 0
+            },
+            "fixture_reported_active_seconds": 0.0072984999999999856,
+            "run_id": "fa664318e4674071a1391828eefbe0f8",
+            "stage": "gate",
+            "startup_seconds": 0.411,
+            "status": "FIXTURE_COMPLETED",
+            "stdout_eof": true,
+            "work_seconds": 0.0247,
+            "work_timeout": 1.1
+          },
+          {
+            "actual_backup_success": false,
+            "children": [
+              {
+                "event": "READY",
+                "observed_exit": 0,
+                "pgid": 90132,
+                "pid": 90132,
+                "sid": 90132,
+                "token": "67a272950c4d441aa6f5d704e940f498",
+                "uid": 501
+              }
+            ],
+            "cleanup": null,
+            "cleanup_timeout": 0.85,
+            "cleanup_verified": true,
+            "exit_code": 0,
+            "fixture_payload": {
+              "rows": [
+                {
+                  "result": "INCREMENTAL_SNAPSHOT_VERIFIED"
+                }
+              ],
+              "wire_exit": 0
+            },
+            "fixture_reported_active_seconds": 0.00363612499999999,
+            "run_id": "67a272950c4d441aa6f5d704e940f498",
+            "stage": "nas",
+            "startup_seconds": 0.5247,
+            "status": "FIXTURE_COMPLETED",
+            "stdout_eof": true,
+            "work_seconds": 0.2193,
+            "work_timeout": 1.1
+          }
+        ],
+        "status": "NAS_CHAIN_NOT_VERIFIED"
+      },
+      "expected": "NAS_CHAIN_NOT_VERIFIED",
+      "verdict": "PASS"
+    },
+    {
+      "actual": "NAS_CHAIN_NOT_VERIFIED",
+      "case": "already_indexed_new",
+      "detail": {
+        "actual_backup_success": false,
+        "events": [
+          {
+            "code": "INVENTORY_READ",
+            "executed": null,
+            "exit_code": null,
+            "phase": "baseline"
+          },
+          {
+            "code": "CREATED",
+            "executed": true,
+            "exit_code": 0,
+            "phase": "local"
+          },
+          {
+            "code": "ALREADY_VERIFIED",
+            "executed": false,
+            "exit_code": 0,
+            "phase": "nas"
+          }
+        ],
+        "production_deployment": false,
+        "reason": "NAS_WORK_STATE_MISMATCH",
+        "run_id": "c18aca15de394b3597b7df68ce649fc5",
+        "scope": "ISOLATED_FIXTURE_ONLY",
+        "stages": [
+          {
+            "actual_backup_success": false,
+            "children": [
+              {
+                "event": "READY",
+                "observed_exit": 0,
+                "pgid": 90136,
+                "pid": 90136,
+                "sid": 90136,
+                "token": "c7aa6b1da90b4c5d8a6ccb9b389d1612",
+                "uid": 501
+              }
+            ],
+            "cleanup": null,
+            "cleanup_timeout": 0.85,
+            "cleanup_verified": true,
+            "exit_code": 0,
+            "fixture_payload": {
+              "rows": [
+                {
+                  "files": 1,
+                  "gate": "READY_FOR_LOCAL_ONCE",
+                  "job": "local",
+                  "manifest": "asset_manifest_v0.27.json",
+                  "manifest_sha256": "8bb3f0f773576895907965f9065e21385806fafb6488b0b0205741495229b3f0",
+                  "mode": "run",
+                  "no_work_executed": false,
+                  "selection_sha256": "c2ddb3869945ccb9514b13ed813b3d43e8edb3b7836bee0f4d69917ce3f0dc12"
+                },
+                {
+                  "job": "local",
+                  "manifest_sha256": "8bb3f0f773576895907965f9065e21385806fafb6488b0b0205741495229b3f0",
+                  "receipt_chain_verified": true,
+                  "result": "SUCCESS",
+                  "selection_sha256": "c2ddb3869945ccb9514b13ed813b3d43e8edb3b7836bee0f4d69917ce3f0dc12"
+                }
+              ],
+              "wire_exit": 0
+            },
+            "fixture_reported_active_seconds": 0.006822125000000012,
+            "run_id": "c7aa6b1da90b4c5d8a6ccb9b389d1612",
+            "stage": "gate",
+            "startup_seconds": 0.6186,
+            "status": "FIXTURE_COMPLETED",
+            "stdout_eof": true,
+            "work_seconds": 0.018,
+            "work_timeout": 1.1
+          },
+          {
+            "actual_backup_success": false,
+            "children": [
+              {
+                "event": "READY",
+                "observed_exit": 0,
+                "pgid": 90138,
+                "pid": 90138,
+                "sid": 90138,
+                "token": "899901146f864b81b24b8c0b509a209e",
+                "uid": 501
+              }
+            ],
+            "cleanup": null,
+            "cleanup_timeout": 0.85,
+            "cleanup_verified": true,
+            "exit_code": 0,
+            "fixture_payload": {
+              "rows": [
+                {
+                  "result": "SNAPSHOT_ALREADY_INDEXED"
+                }
+              ],
+              "wire_exit": 0
+            },
+            "fixture_reported_active_seconds": 0.00011225000000003593,
+            "run_id": "899901146f864b81b24b8c0b509a209e",
+            "stage": "nas",
+            "startup_seconds": 0.5143,
+            "status": "FIXTURE_COMPLETED",
+            "stdout_eof": true,
+            "work_seconds": 0.2117,
+            "work_timeout": 1.1
+          }
+        ],
+        "status": "NAS_CHAIN_NOT_VERIFIED"
+      },
+      "expected": "NAS_CHAIN_NOT_VERIFIED",
+      "verdict": "PASS"
+    },
+    {
+      "actual": "historical",
+      "case": "old_receipt_preserved",
+      "detail": null,
+      "expected": "historical",
+      "verdict": "PASS"
+    },
+    {
+      "actual": "CANDIDATE_SAME_DAY_RECHECK",
+      "case": "reuse",
+      "detail": {
+        "actual_backup_success": false,
+        "events": [
+          {
+            "code": "INVENTORY_READ",
+            "executed": null,
+            "exit_code": null,
+            "phase": "baseline"
+          },
+          {
+            "code": "ALREADY_VERIFIED",
+            "executed": false,
+            "exit_code": 0,
+            "phase": "local"
+          },
+          {
+            "code": "ALREADY_VERIFIED",
+            "executed": false,
+            "exit_code": 0,
+            "phase": "nas"
+          },
+          {
+            "code": "CHAIN_VERIFIED",
+            "executed": true,
+            "exit_code": 0,
+            "phase": "final"
+          },
+          {
+            "code": "CHAIN_AND_INVENTORY_VERIFIED",
+            "executed": true,
+            "exit_code": 0,
+            "phase": "decision"
+          }
+        ],
+        "evidence": {
+          "actual_backup_verified": false,
+          "cas_completed": true,
+          "cas_components": 1,
+          "cas_created_at": "2026-11-08T02:35:09.035884+09:00",
+          "cas_manifest_sha256": "2d2f77ca44de03aeb0ec8ec8b68e40da9d2b66c48e1eb015736d499bb9f7c52a",
+          "cas_manifest_structure": "VERIFIED",
+          "cas_referenced_bytes": 18,
+          "chain": "METADATA_LINKED",
+          "current_cas_component_sha256": "NOT_PERFORMED",
+          "current_registry_match": true,
+          "current_selection_match": true,
+          "fixture_component_verification": {
+            "all_component_bytes_verified_in_fixture": true,
+            "manifest_sha256": "2d2f77ca44de03aeb0ec8ec8b68e40da9d2b66c48e1eb015736d499bb9f7c52a",
+            "verified_bytes": 18,
+            "verified_count": 1
+          },
+          "historical_oneshot": "SUCCESS_CLAIM_BOUND_TO_METADATA",
+          "latest_registry": "asset_manifest_v0.27.json",
+          "latest_registry_sha256": "8bb3f0f773576895907965f9065e21385806fafb6488b0b0205741495229b3f0",
+          "local_created_at": "2026-11-08T02:35:08.035884+09:00",
+          "local_lock_and_integrity": "HISTORICAL_STATUS_REPORT_ONLY",
+          "local_receipt_bytes_verified": true,
+          "local_receipt_sha256_reported": "c8787a32e490c95b96e28fb5b7b38bead5c7db2eada981848004e1b2a7b06244",
+          "observed_at": "2026-11-08T02:35:14.401734+09:00",
+          "reported_registry": "asset_manifest_v0.27.json",
+          "reported_registry_sha256": "8bb3f0f773576895907965f9065e21385806fafb6488b0b0205741495229b3f0",
+          "reported_selected_bytes": 25,
+          "reported_selected_files": 1,
+          "reported_selection_sha256": "c2ddb3869945ccb9514b13ed813b3d43e8edb3b7836bee0f4d69917ce3f0dc12",
+          "same_day_kst": true,
+          "scope": "RECEIPT_METADATA_ONLY",
+          "selection_recomputed_from_receipt": true,
+          "snapshot_id": "ASSET_V21_20261108_023508_KST_90081",
+          "status": "PARTIAL"
+        },
+        "production_deployment": false,
+        "reason": "ISOLATED_EVIDENCE_CONTRACT",
+        "run_id": "8ab45ffb40ae4bb7b3367e39e865441c",
+        "scope": "ISOLATED_FIXTURE_ONLY",
+        "stages": [
+          {
+            "actual_backup_success": false,
+            "children": [
+              {
+                "event": "READY",
+                "observed_exit": 0,
+                "pgid": 90140,
+                "pid": 90140,
+                "sid": 90140,
+                "token": "f091ecf494a044638cc4ecb955106806",
+                "uid": 501
+              }
+            ],
+            "cleanup": null,
+            "cleanup_timeout": 0.85,
+            "cleanup_verified": true,
+            "exit_code": 0,
+            "fixture_payload": {
+              "rows": [
+                {
+                  "files": 1,
+                  "gate": "SKIPPED_CURRENT_SNAPSHOT_VERIFIED",
+                  "job": "local",
+                  "manifest": "asset_manifest_v0.27.json",
+                  "manifest_sha256": "8bb3f0f773576895907965f9065e21385806fafb6488b0b0205741495229b3f0",
+                  "mode": "run",
+                  "no_work_executed": true,
+                  "selection_sha256": "c2ddb3869945ccb9514b13ed813b3d43e8edb3b7836bee0f4d69917ce3f0dc12"
+                }
+              ],
+              "wire_exit": 0
+            },
+            "fixture_reported_active_seconds": 0.0014865829999999858,
+            "run_id": "f091ecf494a044638cc4ecb955106806",
+            "stage": "gate",
+            "startup_seconds": 0.5431,
+            "status": "FIXTURE_COMPLETED",
+            "stdout_eof": true,
+            "work_seconds": 0.0112,
+            "work_timeout": 1.1
+          },
+          {
+            "actual_backup_success": false,
+            "children": [
+              {
+                "event": "READY",
+                "observed_exit": 0,
+                "pgid": 90142,
+                "pid": 90142,
+                "sid": 90142,
+                "token": "5f074691ad804d74a23b234dfa5be9fc",
+                "uid": 501
+              }
+            ],
+            "cleanup": null,
+            "cleanup_timeout": 0.85,
+            "cleanup_verified": true,
+            "exit_code": 0,
+            "fixture_payload": {
+              "rows": [
+                {
+                  "result": "SNAPSHOT_ALREADY_INDEXED"
+                }
+              ],
+              "wire_exit": 0
+            },
+            "fixture_reported_active_seconds": 7.574999999998555e-05,
+            "run_id": "5f074691ad804d74a23b234dfa5be9fc",
+            "stage": "nas",
+            "startup_seconds": 0.5165,
+            "status": "FIXTURE_COMPLETED",
+            "stdout_eof": true,
+            "work_seconds": 0.2126,
+            "work_timeout": 1.1
+          }
+        ],
+        "status": "CANDIDATE_SAME_DAY_RECHECK"
+      },
+      "expected": "CANDIDATE_SAME_DAY_RECHECK",
+      "verdict": "PASS"
+    },
+    {
+      "actual": "STALE_REGISTRY_BACKUP",
+      "case": "yesterday",
+      "detail": {
+        "actual_backup_success": false,
+        "events": [
+          {
+            "code": "INVENTORY_READ",
+            "executed": null,
+            "exit_code": null,
+            "phase": "baseline"
+          },
+          {
+            "code": "ALREADY_VERIFIED",
+            "executed": false,
+            "exit_code": 0,
+            "phase": "local"
+          }
+        ],
+        "production_deployment": false,
+        "reason": "LOCAL_NOT_SAME_KST_DAY",
+        "run_id": "75be393a47014a94af33caf8b9785b90",
+        "scope": "ISOLATED_FIXTURE_ONLY",
+        "stages": [
+          {
+            "actual_backup_success": false,
+            "children": [
+              {
+                "event": "READY",
+                "observed_exit": 0,
+                "pgid": 90144,
+                "pid": 90144,
+                "sid": 90144,
+                "token": "55eb55519f0e43599d9f855a557c053b",
+                "uid": 501
+              }
+            ],
+            "cleanup": null,
+            "cleanup_timeout": 0.85,
+            "cleanup_verified": true,
+            "exit_code": 0,
+            "fixture_payload": {
+              "rows": [
+                {
+                  "files": 1,
+                  "gate": "SKIPPED_CURRENT_SNAPSHOT_VERIFIED",
+                  "job": "local",
+                  "manifest": "asset_manifest_v0.27.json",
+                  "manifest_sha256": "8bb3f0f773576895907965f9065e21385806fafb6488b0b0205741495229b3f0",
+                  "mode": "run",
+                  "no_work_executed": true,
+                  "selection_sha256": "c2ddb3869945ccb9514b13ed813b3d43e8edb3b7836bee0f4d69917ce3f0dc12"
+                }
+              ],
+              "wire_exit": 0
+            },
+            "fixture_reported_active_seconds": 0.0013571669999999925,
+            "run_id": "55eb55519f0e43599d9f855a557c053b",
+            "stage": "gate",
+            "startup_seconds": 0.5189,
+            "status": "FIXTURE_COMPLETED",
+            "stdout_eof": true,
+            "work_seconds": 0.0102,
+            "work_timeout": 1.1
+          }
+        ],
+        "status": "STALE_REGISTRY_BACKUP"
+      },
+      "expected": "STALE_REGISTRY_BACKUP",
+      "verdict": "PASS"
+    },
+    {
+      "actual": "STALE_REGISTRY_BACKUP",
+      "case": "stale",
+      "detail": {
+        "actual_backup_success": false,
+        "events": [
+          {
+            "code": "INVENTORY_READ",
+            "executed": null,
+            "exit_code": null,
+            "phase": "baseline"
+          },
+          {
+            "code": "ALREADY_VERIFIED",
+            "executed": false,
+            "exit_code": 0,
+            "phase": "local"
+          }
+        ],
+        "production_deployment": false,
+        "reason": "LOCAL_INVENTORY_MISMATCH",
+        "run_id": "109907b748334a76869a4650e8e9901d",
+        "scope": "ISOLATED_FIXTURE_ONLY",
+        "stages": [
+          {
+            "actual_backup_success": false,
+            "children": [
+              {
+                "event": "READY",
+                "observed_exit": 0,
+                "pgid": 90146,
+                "pid": 90146,
+                "sid": 90146,
+                "token": "9c84433177bd4a8d90994f73b2c8dbf6",
+                "uid": 501
+              }
+            ],
+            "cleanup": null,
+            "cleanup_timeout": 0.85,
+            "cleanup_verified": true,
+            "exit_code": 0,
+            "fixture_payload": {
+              "rows": [
+                {
+                  "files": 1,
+                  "gate": "SKIPPED_CURRENT_SNAPSHOT_VERIFIED",
+                  "job": "local",
+                  "manifest": "asset_manifest_v0.27.json",
+                  "manifest_sha256": "8bb3f0f773576895907965f9065e21385806fafb6488b0b0205741495229b3f0",
+                  "mode": "run",
+                  "no_work_executed": true,
+                  "selection_sha256": "c2ddb3869945ccb9514b13ed813b3d43e8edb3b7836bee0f4d69917ce3f0dc12"
+                }
+              ],
+              "wire_exit": 0
+            },
+            "fixture_reported_active_seconds": 0.001703832999999988,
+            "run_id": "9c84433177bd4a8d90994f73b2c8dbf6",
+            "stage": "gate",
+            "startup_seconds": 0.5055,
+            "status": "FIXTURE_COMPLETED",
+            "stdout_eof": true,
+            "work_seconds": 0.0106,
+            "work_timeout": 1.1
+          }
+        ],
+        "status": "STALE_REGISTRY_BACKUP"
+      },
+      "expected": "STALE_REGISTRY_BACKUP",
+      "verdict": "PASS"
+    },
+    {
+      "actual": "FAILED_SAFE",
+      "case": "pin",
+      "detail": {
+        "actual_backup_success": false,
+        "events": [],
+        "production_deployment": false,
+        "reason": "PROGRAM_PIN_MISMATCH",
+        "scope": "ISOLATED_FIXTURE_ONLY",
+        "stages": [],
+        "status": "FAILED_SAFE"
+      },
+      "expected": "FAILED_SAFE",
+      "verdict": "PASS"
+    },
+    {
+      "actual": "SCHEDULE_NOT_SINGLE_AUTHORIZED_ENTRY",
+      "case": "duplicate_entry_rejected",
+      "detail": null,
+      "expected": "SCHEDULE_NOT_SINGLE_AUTHORIZED_ENTRY",
+      "verdict": "PASS"
+    },
+    {
+      "actual": "INVALID_CASE_NAME",
+      "case": "outside_fixture_rejected",
+      "detail": null,
+      "expected": "INVALID_CASE_NAME",
+      "verdict": "PASS"
+    },
+    {
+      "actual": "BLOCKED_MEDIA_STATE",
+      "case": "media_unknown",
+      "detail": {
+        "actual_backup_success": false,
+        "events": [],
+        "production_deployment": false,
+        "reason": "MEDIA_UNKNOWN",
+        "scope": "ISOLATED_FIXTURE_ONLY",
+        "stages": [],
+        "status": "BLOCKED_MEDIA_STATE"
+      },
+      "expected": "BLOCKED_MEDIA_STATE",
+      "verdict": "PASS"
+    },
+    {
+      "actual": "FAILED_SAFE",
+      "case": "hang",
+      "detail": {
+        "actual_backup_success": false,
+        "events": [
+          {
+            "code": "INVENTORY_READ",
+            "executed": null,
+            "exit_code": null,
+            "phase": "baseline"
+          },
+          {
+            "code": "TIMEOUT",
+            "executed": null,
+            "exit_code": null,
+            "phase": "local"
+          }
+        ],
+        "production_deployment": false,
+        "reason": "TIMEOUT_CLEANED",
+        "run_id": "410d2b64a6014f2aa0eb39584e602889",
+        "scope": "ISOLATED_FIXTURE_ONLY",
+        "stages": [
+          {
+            "actual_backup_success": false,
+            "children": [
+              {
+                "event": "READY",
+                "observed_exit": 3,
+                "pgid": 90149,
+                "pid": 90149,
+                "sid": 90149,
+                "token": "6a0ec13cae7e4004a38a9af17d65eb88",
+                "uid": 501
+              }
+            ],
+            "cleanup": null,
+            "cleanup_timeout": 0.85,
+            "cleanup_verified": true,
+            "exit_code": 3,
+            "fixture_reported_active_seconds": null,
+            "run_id": "6a0ec13cae7e4004a38a9af17d65eb88",
+            "stage": "gate",
+            "startup_seconds": 0.5627,
+            "status": "TIMEOUT_CLEANED",
+            "stdout_eof": true,
+            "work_seconds": 0.1604,
+            "work_timeout": 0.16
+          }
+        ],
+        "status": "FAILED_SAFE"
+      },
+      "expected": "FAILED_SAFE",
+      "verdict": "PASS"
+    },
+    {
+      "actual": false,
+      "case": "cleaned_timeout_does_not_leave_fence",
+      "detail": null,
+      "expected": false,
+      "verdict": "PASS"
+    },
+    {
+      "actual": "BLOCKED_UNRESOLVED_RUN",
+      "case": "resistant",
+      "detail": {
+        "actual_backup_success": false,
+        "events": [
+          {
+            "code": "INVENTORY_READ",
+            "executed": null,
+            "exit_code": null,
+            "phase": "baseline"
+          },
+          {
+            "code": "TIMEOUT",
+            "executed": null,
+            "exit_code": null,
+            "phase": "local"
+          }
+        ],
+        "production_deployment": false,
+        "reason": "CLEANUP_PERMISSION_DENIED",
+        "run_id": "457b9ac365ab4bccb1c56c84bbcdca04",
+        "scope": "ISOLATED_FIXTURE_ONLY",
+        "stages": [
+          {
+            "actual_backup_success": false,
+            "children": [
+              {
+                "event": "READY",
+                "observed_exit": null,
+                "pgid": 90152,
+                "pid": 90152,
+                "sid": 90152,
+                "token": "3b04b4d14d7a4fd690a062446d9ea756",
+                "uid": 501
+              }
+            ],
+            "cleanup": {
+              "call": "direct_child_terminate",
+              "code": "CLEANUP_PERMISSION_DENIED",
+              "errno": 1
+            },
+            "cleanup_timeout": 0.85,
+            "cleanup_verified": false,
+            "exit_code": null,
+            "fixture_reported_active_seconds": null,
+            "run_id": "3b04b4d14d7a4fd690a062446d9ea756",
+            "stage": "gate",
+            "startup_seconds": 0.5201,
+            "status": "CLEANUP_PERMISSION_DENIED",
+            "stdout_eof": false,
+            "work_seconds": 0.1221,
+            "work_timeout": 0.12
+          }
+        ],
+        "status": "BLOCKED_UNRESOLVED_RUN"
+      },
+      "expected": "BLOCKED_UNRESOLVED_RUN",
+      "verdict": "PASS"
+    },
+    {
+      "actual": 1,
+      "case": "errno_retained",
+      "detail": null,
+      "expected": 1,
+      "verdict": "PASS"
+    },
+    {
+      "actual": "BLOCKED_UNRESOLVED_RUN",
+      "case": "new_supervisor_process_cannot_reenter_after_denial",
+      "detail": {
+        "actual_backup_success": false,
+        "events": [],
+        "production_deployment": false,
+        "reason": "PERSISTENT_FENCE",
+        "scope": "ISOLATED_FIXTURE_ONLY",
+        "stages": [],
+        "status": "BLOCKED_UNRESOLVED_RUN"
+      },
+      "expected": "BLOCKED_UNRESOLVED_RUN",
+      "verdict": "PASS"
+    },
+    {
+      "actual": [],
+      "case": "no_worker_launched_on_reentry",
+      "detail": null,
+      "expected": [],
+      "verdict": "PASS"
+    },
+    {
+      "actual": "BLOCKED_RECONCILIATION",
+      "case": "approval_required",
+      "detail": null,
+      "expected": "BLOCKED_RECONCILIATION",
+      "verdict": "PASS"
+    },
+    {
+      "actual": "BLOCKED_RECONCILIATION",
+      "case": "media_check_required",
+      "detail": null,
+      "expected": "BLOCKED_RECONCILIATION",
+      "verdict": "PASS"
+    },
+    {
+      "actual": "RECONCILED",
+      "case": "reconciled_after_verified_exit",
+      "detail": null,
+      "expected": "RECONCILED",
+      "verdict": "PASS"
+    },
+    {
+      "actual": "CANDIDATE_NEW_EVIDENCE",
+      "case": "after_deny",
+      "detail": {
+        "actual_backup_success": false,
+        "events": [
+          {
+            "code": "INVENTORY_READ",
+            "executed": null,
+            "exit_code": null,
+            "phase": "baseline"
+          },
+          {
+            "code": "CREATED",
+            "executed": true,
+            "exit_code": 0,
+            "phase": "local"
+          },
+          {
+            "code": "REPLICATED",
+            "executed": true,
+            "exit_code": 0,
+            "phase": "nas"
+          },
+          {
+            "code": "CHAIN_VERIFIED",
+            "executed": true,
+            "exit_code": 0,
+            "phase": "final"
+          },
+          {
+            "code": "CHAIN_AND_INVENTORY_VERIFIED",
+            "executed": true,
+            "exit_code": 0,
+            "phase": "decision"
+          }
+        ],
+        "evidence": {
+          "actual_backup_verified": false,
+          "cas_completed": true,
+          "cas_components": 1,
+          "cas_created_at": "2026-11-08T02:35:21.471096+09:00",
+          "cas_manifest_sha256": "e4de9ad118e42aaa3742aab0499602ac76eada8f420d67180df6638cc43a7ba6",
+          "cas_manifest_structure": "VERIFIED",
+          "cas_referenced_bytes": 18,
+          "chain": "METADATA_LINKED",
+          "current_cas_component_sha256": "NOT_PERFORMED",
+          "current_registry_match": true,
+          "current_selection_match": true,
+          "fixture_component_verification": {
+            "all_component_bytes_verified_in_fixture": true,
+            "manifest_sha256": "e4de9ad118e42aaa3742aab0499602ac76eada8f420d67180df6638cc43a7ba6",
+            "verified_bytes": 18,
+            "verified_count": 1
+          },
+          "historical_oneshot": "SUCCESS_CLAIM_BOUND_TO_METADATA",
+          "latest_registry": "asset_manifest_v0.27.json",
+          "latest_registry_sha256": "8bb3f0f773576895907965f9065e21385806fafb6488b0b0205741495229b3f0",
+          "local_created_at": "2026-11-08T02:35:20.925757+09:00",
+          "local_lock_and_integrity": "HISTORICAL_STATUS_REPORT_ONLY",
+          "local_receipt_bytes_verified": true,
+          "local_receipt_sha256_reported": "4ccdb2f97160b944256368f369953eeb5954da2f3f2c2fa5138c0e1db1cac053",
+          "observed_at": "2026-11-08T02:35:21.725100+09:00",
+          "reported_registry": "asset_manifest_v0.27.json",
+          "reported_registry_sha256": "8bb3f0f773576895907965f9065e21385806fafb6488b0b0205741495229b3f0",
+          "reported_selected_bytes": 25,
+          "reported_selected_files": 1,
+          "reported_selection_sha256": "c2ddb3869945ccb9514b13ed813b3d43e8edb3b7836bee0f4d69917ce3f0dc12",
+          "same_day_kst": true,
+          "scope": "RECEIPT_METADATA_ONLY",
+          "selection_recomputed_from_receipt": true,
+          "snapshot_id": "ASSET_V21_20261108_023520_KST_90162",
+          "status": "PARTIAL"
+        },
+        "production_deployment": false,
+        "reason": "ISOLATED_EVIDENCE_CONTRACT",
+        "run_id": "8722ab8e9c7c4752864f7a4c4b0e8cf7",
+        "scope": "ISOLATED_FIXTURE_ONLY",
+        "stages": [
+          {
+            "actual_backup_success": false,
+            "children": [
+              {
+                "event": "READY",
+                "observed_exit": 0,
+                "pgid": 90162,
+                "pid": 90162,
+                "sid": 90162,
+                "token": "16f1dbe7a3594576b153a339c7584b89",
+                "uid": 501
+              }
+            ],
+            "cleanup": null,
+            "cleanup_timeout": 0.85,
+            "cleanup_verified": true,
+            "exit_code": 0,
+            "fixture_payload": {
+              "rows": [
+                {
+                  "files": 1,
+                  "gate": "READY_FOR_LOCAL_ONCE",
+                  "job": "local",
+                  "manifest": "asset_manifest_v0.27.json",
+                  "manifest_sha256": "8bb3f0f773576895907965f9065e21385806fafb6488b0b0205741495229b3f0",
+                  "mode": "run",
+                  "no_work_executed": false,
+                  "selection_sha256": "c2ddb3869945ccb9514b13ed813b3d43e8edb3b7836bee0f4d69917ce3f0dc12"
+                },
+                {
+                  "job": "local",
+                  "manifest_sha256": "8bb3f0f773576895907965f9065e21385806fafb6488b0b0205741495229b3f0",
+                  "receipt_chain_verified": true,
+                  "result": "SUCCESS",
+                  "selection_sha256": "c2ddb3869945ccb9514b13ed813b3d43e8edb3b7836bee0f4d69917ce3f0dc12"
+                }
+              ],
+              "wire_exit": 0
+            },
+            "fixture_reported_active_seconds": 0.006845750000000039,
+            "run_id": "16f1dbe7a3594576b153a339c7584b89",
+            "stage": "gate",
+            "startup_seconds": 0.5012,
+            "status": "FIXTURE_COMPLETED",
+            "stdout_eof": true,
+            "work_seconds": 0.0173,
+            "work_timeout": 1.1
+          },
+          {
+            "actual_backup_success": false,
+            "children": [
+              {
+                "event": "READY",
+                "observed_exit": 0,
+                "pgid": 90164,
+                "pid": 90164,
+                "sid": 90164,
+                "token": "d33bc6f96a524d2d82dec218425ef441",
+                "uid": 501
+              }
+            ],
+            "cleanup": null,
+            "cleanup_timeout": 0.85,
+            "cleanup_verified": true,
+            "exit_code": 0,
+            "fixture_payload": {
+              "rows": [
+                {
+                  "result": "INCREMENTAL_SNAPSHOT_VERIFIED"
+                }
+              ],
+              "wire_exit": 0
+            },
+            "fixture_reported_active_seconds": 0.003066166000000037,
+            "run_id": "d33bc6f96a524d2d82dec218425ef441",
+            "stage": "nas",
+            "startup_seconds": 0.4989,
+            "status": "FIXTURE_COMPLETED",
+            "stdout_eof": true,
+            "work_seconds": 0.2168,
+            "work_timeout": 1.1
+          }
+        ],
+        "status": "CANDIDATE_NEW_EVIDENCE"
+      },
+      "expected": "CANDIDATE_NEW_EVIDENCE",
+      "verdict": "PASS"
+    },
+    {
+      "actual": true,
+      "case": "failure_receipt_survives_recovery",
+      "detail": null,
+      "expected": true,
+      "verdict": "PASS"
+    },
+    {
+      "actual": "BLOCKED_UNRESOLVED_RUN",
+      "case": "escape",
+      "detail": {
+        "actual_backup_success": false,
+        "events": [
+          {
+            "code": "INVENTORY_READ",
+            "executed": null,
+            "exit_code": null,
+            "phase": "baseline"
+          },
+          {
+            "code": "TIMEOUT",
+            "executed": null,
+            "exit_code": null,
+            "phase": "local"
+          }
+        ],
+        "production_deployment": false,
+        "reason": "CLEANUP_UNCONFIRMED",
+        "run_id": "b797c6bf4a1a4c2abd219a2ee701b7f7",
+        "scope": "ISOLATED_FIXTURE_ONLY",
+        "stages": [
+          {
+            "actual_backup_success": false,
+            "children": [
+              {
+                "event": "READY",
+                "observed_exit": 3,
+                "pgid": 90166,
+                "pid": 90166,
+                "sid": 90166,
+                "token": "2bc4c81080834cdcacd192edc0c7b2e3",
+                "uid": 501
+              },
+              {
+                "event": "DESCENDANT",
+                "observed_exit": null,
+                "pgid": 90167,
+                "pid": 90167,
+                "sid": 90167,
+                "token": "2bc4c81080834cdcacd192edc0c7b2e3",
+                "uid": 501
+              }
+            ],
+            "cleanup": "CLEANUP_UNCONFIRMED",
+            "cleanup_timeout": 0.22,
+            "cleanup_verified": false,
+            "exit_code": 3,
+            "fixture_reported_active_seconds": null,
+            "run_id": "2bc4c81080834cdcacd192edc0c7b2e3",
+            "stage": "gate",
+            "startup_seconds": 0.5234,
+            "status": "CLEANUP_UNCONFIRMED",
+            "stdout_eof": false,
+            "work_seconds": 0.1301,
+            "work_timeout": 0.13
+          }
+        ],
+        "status": "BLOCKED_UNRESOLVED_RUN"
+      },
+      "expected": "BLOCKED_UNRESOLVED_RUN",
+      "verdict": "PASS"
+    },
+    {
+      "actual": true,
+      "case": "escape_records_new_session",
+      "detail": [
+        {
+          "event": "READY",
+          "observed_exit": 3,
+          "pgid": 90166,
+          "pid": 90166,
+          "sid": 90166,
+          "token": "2bc4c81080834cdcacd192edc0c7b2e3",
+          "uid": 501
+        },
+        {
+          "event": "DESCENDANT",
+          "observed_exit": null,
+          "pgid": 90167,
+          "pid": 90167,
+          "sid": 90167,
+          "token": "2bc4c81080834cdcacd192edc0c7b2e3",
+          "uid": 501
+        }
+      ],
+      "expected": true,
+      "verdict": "PASS"
+    },
+    {
+      "actual": "BLOCKED_UNRESOLVED_RUN",
+      "case": "escaped_descendant_blocks_next",
+      "detail": {
+        "actual_backup_success": false,
+        "events": [],
+        "production_deployment": false,
+        "reason": "PERSISTENT_FENCE",
+        "scope": "ISOLATED_FIXTURE_ONLY",
+        "stages": [],
+        "status": "BLOCKED_UNRESOLVED_RUN"
+      },
+      "expected": "BLOCKED_UNRESOLVED_RUN",
+      "verdict": "PASS"
+    },
+    {
+      "actual": "RECONCILED",
+      "case": "escaped_fixture_self_exit_and_review",
+      "detail": null,
+      "expected": "RECONCILED",
+      "verdict": "PASS"
+    },
+    {
+      "actual": "CANDIDATE_NEW_EVIDENCE",
+      "case": "next",
+      "detail": {
+        "actual_backup_success": false,
+        "events": [
+          {
+            "code": "INVENTORY_READ",
+            "executed": null,
+            "exit_code": null,
+            "phase": "baseline"
+          },
+          {
+            "code": "CREATED",
+            "executed": true,
+            "exit_code": 0,
+            "phase": "local"
+          },
+          {
+            "code": "REPLICATED",
+            "executed": true,
+            "exit_code": 0,
+            "phase": "nas"
+          },
+          {
+            "code": "CHAIN_VERIFIED",
+            "executed": true,
+            "exit_code": 0,
+            "phase": "final"
+          },
+          {
+            "code": "CHAIN_AND_INVENTORY_VERIFIED",
+            "executed": true,
+            "exit_code": 0,
+            "phase": "decision"
+          }
+        ],
+        "evidence": {
+          "actual_backup_verified": false,
+          "cas_completed": true,
+          "cas_components": 1,
+          "cas_created_at": "2026-11-08T02:35:25.887722+09:00",
+          "cas_manifest_sha256": "97976234a6d545513ef1e616c4dbcf4a1e59acc893521a28ff0e58275f4337c0",
+          "cas_manifest_structure": "VERIFIED",
+          "cas_referenced_bytes": 18,
+          "chain": "METADATA_LINKED",
+          "current_cas_component_sha256": "NOT_PERFORMED",
+          "current_registry_match": true,
+          "current_selection_match": true,
+          "fixture_component_verification": {
+            "all_component_bytes_verified_in_fixture": true,
+            "manifest_sha256": "97976234a6d545513ef1e616c4dbcf4a1e59acc893521a28ff0e58275f4337c0",
+            "verified_bytes": 18,
+            "verified_count": 1
+          },
+          "historical_oneshot": "SUCCESS_CLAIM_BOUND_TO_METADATA",
+          "latest_registry": "asset_manifest_v0.27.json",
+          "latest_registry_sha256": "8bb3f0f773576895907965f9065e21385806fafb6488b0b0205741495229b3f0",
+          "local_created_at": "2026-11-08T02:35:25.146386+09:00",
+          "local_lock_and_integrity": "HISTORICAL_STATUS_REPORT_ONLY",
+          "local_receipt_bytes_verified": true,
+          "local_receipt_sha256_reported": "6316a1074f9b29ac3f539b7533b8db5dbd0eb9940ab2911479b0dcb0c92c7e6a",
+          "observed_at": "2026-11-08T02:35:25.929133+09:00",
+          "reported_registry": "asset_manifest_v0.27.json",
+          "reported_registry_sha256": "8bb3f0f773576895907965f9065e21385806fafb6488b0b0205741495229b3f0",
+          "reported_selected_bytes": 25,
+          "reported_selected_files": 1,
+          "reported_selection_sha256": "c2ddb3869945ccb9514b13ed813b3d43e8edb3b7836bee0f4d69917ce3f0dc12",
+          "same_day_kst": true,
+          "scope": "RECEIPT_METADATA_ONLY",
+          "selection_recomputed_from_receipt": true,
+          "snapshot_id": "ASSET_V21_20261108_023525_KST_90184",
+          "status": "PARTIAL"
+        },
+        "production_deployment": false,
+        "reason": "ISOLATED_EVIDENCE_CONTRACT",
+        "run_id": "b8942d826c1e4609baf1cdcb6d288688",
+        "scope": "ISOLATED_FIXTURE_ONLY",
+        "stages": [
+          {
+            "actual_backup_success": false,
+            "children": [
+              {
+                "event": "READY",
+                "observed_exit": 0,
+                "pgid": 90184,
+                "pid": 90184,
+                "sid": 90184,
+                "token": "00c34353f36240dca1fc7e04378ab67b",
+                "uid": 501
+              }
+            ],
+            "cleanup": null,
+            "cleanup_timeout": 0.85,
+            "cleanup_verified": true,
+            "exit_code": 0,
+            "fixture_payload": {
+              "rows": [
+                {
+                  "files": 1,
+                  "gate": "READY_FOR_LOCAL_ONCE",
+                  "job": "local",
+                  "manifest": "asset_manifest_v0.27.json",
+                  "manifest_sha256": "8bb3f0f773576895907965f9065e21385806fafb6488b0b0205741495229b3f0",
+                  "mode": "run",
+                  "no_work_executed": false,
+                  "selection_sha256": "c2ddb3869945ccb9514b13ed813b3d43e8edb3b7836bee0f4d69917ce3f0dc12"
+                },
+                {
+                  "job": "local",
+                  "manifest_sha256": "8bb3f0f773576895907965f9065e21385806fafb6488b0b0205741495229b3f0",
+                  "receipt_chain_verified": true,
+                  "result": "SUCCESS",
+                  "selection_sha256": "c2ddb3869945ccb9514b13ed813b3d43e8edb3b7836bee0f4d69917ce3f0dc12"
+                }
+              ],
+              "wire_exit": 0
+            },
+            "fixture_reported_active_seconds": 0.006702957999999981,
+            "run_id": "00c34353f36240dca1fc7e04378ab67b",
+            "stage": "gate",
+            "startup_seconds": 0.5075,
+            "status": "FIXTURE_COMPLETED",
+            "stdout_eof": true,
+            "work_seconds": 0.2222,
+            "work_timeout": 1.1
+          },
+          {
+            "actual_backup_success": false,
+            "children": [
+              {
+                "event": "READY",
+                "observed_exit": 0,
+                "pgid": 90187,
+                "pid": 90187,
+                "sid": 90187,
+                "token": "32b08d1e72ca478dbd438a680d33d638",
+                "uid": 501
+              }
+            ],
+            "cleanup": null,
+            "cleanup_timeout": 0.85,
+            "cleanup_verified": true,
+            "exit_code": 0,
+            "fixture_payload": {
+              "rows": [
+                {
+                  "result": "INCREMENTAL_SNAPSHOT_VERIFIED"
+                }
+              ],
+              "wire_exit": 0
+            },
+            "fixture_reported_active_seconds": 0.003154584000000016,
+            "run_id": "32b08d1e72ca478dbd438a680d33d638",
+            "stage": "nas",
+            "startup_seconds": 0.4863,
+            "status": "FIXTURE_COMPLETED",
+            "stdout_eof": true,
+            "work_seconds": 0.0119,
+            "work_timeout": 1.1
+          }
+        ],
+        "status": "CANDIDATE_NEW_EVIDENCE"
+      },
+      "expected": "CANDIDATE_NEW_EVIDENCE",
+      "verdict": "PASS"
+    },
+    {
+      "actual": "BLOCKED_LOCK_REPLACED",
+      "case": "inode_replaced",
+      "detail": {
+        "actual_backup_success": false,
+        "events": [
+          {
+            "code": "INVENTORY_READ",
+            "executed": null,
+            "exit_code": null,
+            "phase": "baseline"
+          },
+          {
+            "code": "CREATED",
+            "executed": true,
+            "exit_code": 0,
+            "phase": "local"
+          },
+          {
+            "code": "REPLICATED",
+            "executed": true,
+            "exit_code": 0,
+            "phase": "nas"
+          },
+          {
+            "code": "CHAIN_VERIFIED",
+            "executed": true,
+            "exit_code": 0,
+            "phase": "final"
+          },
+          {
+            "code": "CHAIN_AND_INVENTORY_VERIFIED",
+            "executed": true,
+            "exit_code": 0,
+            "phase": "decision"
+          }
+        ],
+        "production_deployment": false,
+        "reason": "LOCK_INODE_CHANGED",
+        "run_id": "cfcb6a8e28af4976a78560c5e4fd1337",
+        "scope": "ISOLATED_FIXTURE_ONLY",
+        "stages": [
+          {
+            "actual_backup_success": false,
+            "children": [
+              {
+                "event": "READY",
+                "observed_exit": 0,
+                "pgid": 90190,
+                "pid": 90190,
+                "sid": 90190,
+                "token": "0e25745de49f4dda88ec0104721a7e00",
+                "uid": 501
+              }
+            ],
+            "cleanup": null,
+            "cleanup_timeout": 0.85,
+            "cleanup_verified": true,
+            "exit_code": 0,
+            "fixture_payload": {
+              "rows": [
+                {
+                  "files": 1,
+                  "gate": "READY_FOR_LOCAL_ONCE",
+                  "job": "local",
+                  "manifest": "asset_manifest_v0.27.json",
+                  "manifest_sha256": "8bb3f0f773576895907965f9065e21385806fafb6488b0b0205741495229b3f0",
+                  "mode": "run",
+                  "no_work_executed": false,
+                  "selection_sha256": "c2ddb3869945ccb9514b13ed813b3d43e8edb3b7836bee0f4d69917ce3f0dc12"
+                },
+                {
+                  "job": "local",
+                  "manifest_sha256": "8bb3f0f773576895907965f9065e21385806fafb6488b0b0205741495229b3f0",
+                  "receipt_chain_verified": true,
+                  "result": "SUCCESS",
+                  "selection_sha256": "c2ddb3869945ccb9514b13ed813b3d43e8edb3b7836bee0f4d69917ce3f0dc12"
+                }
+              ],
+              "wire_exit": 0
+            },
+            "fixture_reported_active_seconds": 0.007720667000000014,
+            "run_id": "0e25745de49f4dda88ec0104721a7e00",
+            "stage": "gate",
+            "startup_seconds": 0.5239,
+            "status": "FIXTURE_COMPLETED",
+            "stdout_eof": true,
+            "work_seconds": 0.0173,
+            "work_timeout": 1.1
+          },
+          {
+            "actual_backup_success": false,
+            "children": [
+              {
+                "event": "READY",
+                "observed_exit": 0,
+                "pgid": 90192,
+                "pid": 90192,
+                "sid": 90192,
+                "token": "4a40e8fe17334bb58b59fd77830fa558",
+                "uid": 501
+              }
+            ],
+            "cleanup": null,
+            "cleanup_timeout": 0.85,
+            "cleanup_verified": true,
+            "exit_code": 0,
+            "fixture_payload": {
+              "rows": [
+                {
+                  "result": "INCREMENTAL_SNAPSHOT_VERIFIED"
+                }
+              ],
+              "wire_exit": 0
+            },
+            "fixture_reported_active_seconds": 0.004883417000000001,
+            "run_id": "4a40e8fe17334bb58b59fd77830fa558",
+            "stage": "nas",
+            "startup_seconds": 0.5047,
+            "status": "FIXTURE_COMPLETED",
+            "stdout_eof": true,
+            "work_seconds": 0.2203,
+            "work_timeout": 1.1
+          }
+        ],
+        "status": "BLOCKED_LOCK_REPLACED"
+      },
+      "expected": "BLOCKED_LOCK_REPLACED",
+      "verdict": "PASS"
+    },
+    {
+      "actual": "BLOCKED_LOCK_OR_STATE",
+      "case": "replacement_inode_rejected",
+      "detail": {
+        "actual_backup_success": false,
+        "events": [],
+        "production_deployment": false,
+        "reason": "LOCK_OR_STATE_INVALID",
+        "scope": "ISOLATED_FIXTURE_ONLY",
+        "stages": [],
+        "status": "BLOCKED_LOCK_OR_STATE"
+      },
+      "expected": "BLOCKED_LOCK_OR_STATE",
+      "verdict": "PASS"
+    },
+    {
+      "actual": true,
+      "case": "inode_failure_leaves_fence",
+      "detail": null,
+      "expected": true,
+      "verdict": "PASS"
+    },
+    {
+      "actual": "BLOCKED_PIN_CHANGED",
+      "case": "midrun_pin_change",
+      "detail": {
+        "actual_backup_success": false,
+        "events": [
+          {
+            "code": "INVENTORY_READ",
+            "executed": null,
+            "exit_code": null,
+            "phase": "baseline"
+          },
+          {
+            "code": "CREATED",
+            "executed": true,
+            "exit_code": 0,
+            "phase": "local"
+          },
+          {
+            "code": "REPLICATED",
+            "executed": true,
+            "exit_code": 0,
+            "phase": "nas"
+          },
+          {
+            "code": "CHAIN_VERIFIED",
+            "executed": true,
+            "exit_code": 0,
+            "phase": "final"
+          },
+          {
+            "code": "CHAIN_AND_INVENTORY_VERIFIED",
+            "executed": true,
+            "exit_code": 0,
+            "phase": "decision"
+          }
+        ],
+        "production_deployment": false,
+        "reason": "PIN_OR_APPROVAL_CHANGED",
+        "run_id": "05a3540e211a49a0a7eaababdb26b988",
+        "scope": "ISOLATED_FIXTURE_ONLY",
+        "stages": [
+          {
+            "actual_backup_success": false,
+            "children": [
+              {
+                "event": "READY",
+                "observed_exit": 0,
+                "pgid": 90195,
+                "pid": 90195,
+                "sid": 90195,
+                "token": "02f1f8eeb62341178e478e2425419ab6",
+                "uid": 501
+              }
+            ],
+            "cleanup": null,
+            "cleanup_timeout": 0.85,
+            "cleanup_verified": true,
+            "exit_code": 0,
+            "fixture_payload": {
+              "rows": [
+                {
+                  "files": 1,
+                  "gate": "READY_FOR_LOCAL_ONCE",
+                  "job": "local",
+                  "manifest": "asset_manifest_v0.27.json",
+                  "manifest_sha256": "8bb3f0f773576895907965f9065e21385806fafb6488b0b0205741495229b3f0",
+                  "mode": "run",
+                  "no_work_executed": false,
+                  "selection_sha256": "c2ddb3869945ccb9514b13ed813b3d43e8edb3b7836bee0f4d69917ce3f0dc12"
+                },
+                {
+                  "job": "local",
+                  "manifest_sha256": "8bb3f0f773576895907965f9065e21385806fafb6488b0b0205741495229b3f0",
+                  "receipt_chain_verified": true,
+                  "result": "SUCCESS",
+                  "selection_sha256": "c2ddb3869945ccb9514b13ed813b3d43e8edb3b7836bee0f4d69917ce3f0dc12"
+                }
+              ],
+              "wire_exit": 0
+            },
+            "fixture_reported_active_seconds": 0.004723917000000022,
+            "run_id": "02f1f8eeb62341178e478e2425419ab6",
+            "stage": "gate",
+            "startup_seconds": 0.5195,
+            "status": "FIXTURE_COMPLETED",
+            "stdout_eof": true,
+            "work_seconds": 0.2098,
+            "work_timeout": 1.1
+          },
+          {
+            "actual_backup_success": false,
+            "children": [
+              {
+                "event": "READY",
+                "observed_exit": 0,
+                "pgid": 90197,
+                "pid": 90197,
+                "sid": 90197,
+                "token": "62af5abdc5ab4ee1884e1913fb70fcd0",
+                "uid": 501
+              }
+            ],
+            "cleanup": null,
+            "cleanup_timeout": 0.85,
+            "cleanup_verified": true,
+            "exit_code": 0,
+            "fixture_payload": {
+              "rows": [
+                {
+                  "result": "INCREMENTAL_SNAPSHOT_VERIFIED"
+                }
+              ],
+              "wire_exit": 0
+            },
+            "fixture_reported_active_seconds": 0.0036355000000000137,
+            "run_id": "62af5abdc5ab4ee1884e1913fb70fcd0",
+            "stage": "nas",
+            "startup_seconds": 0.2794,
+            "status": "FIXTURE_COMPLETED",
+            "stdout_eof": true,
+            "work_seconds": 0.2183,
+            "work_timeout": 1.1
+          }
+        ],
+        "status": "BLOCKED_PIN_CHANGED"
+      },
+      "expected": "BLOCKED_PIN_CHANGED",
+      "verdict": "PASS"
+    },
+    {
+      "actual": "BLOCKED_UNRESOLVED_RUN",
+      "case": "policy_failure_leaves_fence",
+      "detail": {
+        "actual_backup_success": false,
+        "events": [],
+        "production_deployment": false,
+        "reason": "PERSISTENT_FENCE",
+        "scope": "ISOLATED_FIXTURE_ONLY",
+        "stages": [],
+        "status": "BLOCKED_UNRESOLVED_RUN"
+      },
+      "expected": "BLOCKED_UNRESOLVED_RUN",
+      "verdict": "PASS"
+    },
+    {
+      "actual": 42,
+      "case": "fixture_supervisor_abrupt_exit",
+      "detail": null,
+      "expected": 42,
+      "verdict": "PASS"
+    },
+    {
+      "actual": "BLOCKED_UNRESOLVED_RUN",
+      "case": "supervisor_restart_keeps_unfinished_journal",
+      "detail": null,
+      "expected": "BLOCKED_UNRESOLVED_RUN",
+      "verdict": "PASS"
+    },
+    {
+      "actual": "BLOCKED_RECONCILIATION",
+      "case": "crash_without_terminal_state_requires_manual_review",
+      "detail": null,
+      "expected": "BLOCKED_RECONCILIATION",
+      "verdict": "PASS"
+    }
+  ],
+  "exit": 0,
+  "passed": 45,
+  "total": 45
+}

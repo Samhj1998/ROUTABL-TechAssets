@@ -1,0 +1,591 @@
+{
+  "cases": [
+    {
+      "actual": "FIXTURE_COMPLETED",
+      "case": "normal_owner_finishes",
+      "detail": {
+        "actual_backup_success": false,
+        "children": [
+          {
+            "event": "READY",
+            "observed_exit": 0,
+            "pgid": 89347,
+            "pid": 89347,
+            "sid": 89347,
+            "token": "b174ebfb66a64f2cb80fea62bce58b13",
+            "uid": 501
+          }
+        ],
+        "cleanup": null,
+        "cleanup_timeout": 0.85,
+        "cleanup_verified": true,
+        "exit_code": 0,
+        "fixture_reported_active_seconds": 0.11328854200000002,
+        "run_id": "b174ebfb66a64f2cb80fea62bce58b13",
+        "startup_seconds": 0.2481,
+        "status": "FIXTURE_COMPLETED",
+        "stdout_eof": true,
+        "work_seconds": 0.2025,
+        "work_timeout": 1.1
+      },
+      "expected": "FIXTURE_COMPLETED",
+      "verdict": "PASS"
+    },
+    {
+      "actual": "FIXTURE_COMPLETED_DELAYED",
+      "case": "healthy_delay_warns_but_completes",
+      "detail": {
+        "actual_backup_success": false,
+        "children": [
+          {
+            "event": "READY",
+            "observed_exit": 0,
+            "pgid": 89349,
+            "pid": 89349,
+            "sid": 89349,
+            "token": "3fe2e0c424404cdaa48d719e336fa71c",
+            "uid": 501
+          }
+        ],
+        "cleanup": null,
+        "cleanup_timeout": 0.85,
+        "cleanup_verified": true,
+        "exit_code": 0,
+        "fixture_reported_active_seconds": 0.523008833,
+        "run_id": "3fe2e0c424404cdaa48d719e336fa71c",
+        "startup_seconds": 0.2506,
+        "status": "FIXTURE_COMPLETED_DELAYED",
+        "stdout_eof": true,
+        "work_seconds": 0.6347,
+        "work_timeout": 1.1
+      },
+      "expected": "FIXTURE_COMPLETED_DELAYED",
+      "verdict": "PASS"
+    },
+    {
+      "actual": "TIMEOUT_CLEANED",
+      "case": "real_child_timeout_then_cooperative_exit",
+      "detail": {
+        "actual_backup_success": false,
+        "children": [
+          {
+            "event": "READY",
+            "observed_exit": 3,
+            "pgid": 89351,
+            "pid": 89351,
+            "sid": 89351,
+            "token": "79732fe66d494f9591e64192d333b188",
+            "uid": 501
+          }
+        ],
+        "cleanup": null,
+        "cleanup_timeout": 0.85,
+        "cleanup_verified": true,
+        "exit_code": 3,
+        "fixture_reported_active_seconds": null,
+        "run_id": "79732fe66d494f9591e64192d333b188",
+        "startup_seconds": 0.2574,
+        "status": "TIMEOUT_CLEANED",
+        "stdout_eof": true,
+        "work_seconds": 0.1511,
+        "work_timeout": 0.15
+      },
+      "expected": "TIMEOUT_CLEANED",
+      "verdict": "PASS"
+    },
+    {
+      "actual": "TIMEOUT_CLEANED",
+      "case": "direct_owned_child_sigterm_after_timeout",
+      "detail": {
+        "actual_backup_success": false,
+        "children": [
+          {
+            "event": "READY",
+            "observed_exit": -15,
+            "pgid": 89353,
+            "pid": 89353,
+            "sid": 89353,
+            "token": "c31e480563154a9fb3a07276dff69ceb",
+            "uid": 501
+          }
+        ],
+        "cleanup": null,
+        "cleanup_timeout": 1.1,
+        "cleanup_verified": true,
+        "exit_code": -15,
+        "fixture_reported_active_seconds": null,
+        "run_id": "c31e480563154a9fb3a07276dff69ceb",
+        "startup_seconds": 0.2536,
+        "status": "TIMEOUT_CLEANED",
+        "stdout_eof": true,
+        "work_seconds": 0.1511,
+        "work_timeout": 0.15
+      },
+      "expected": "TIMEOUT_CLEANED",
+      "verdict": "PASS"
+    },
+    {
+      "actual": -15,
+      "case": "direct_termination_observed",
+      "detail": null,
+      "expected": -15,
+      "verdict": "PASS"
+    },
+    {
+      "actual": "FIXTURE_RESULT_UNPROVEN",
+      "case": "exit_zero_without_new_evidence",
+      "detail": {
+        "actual_backup_success": false,
+        "children": [
+          {
+            "event": "READY",
+            "observed_exit": 0,
+            "pgid": 89355,
+            "pid": 89355,
+            "sid": 89355,
+            "token": "c28a6ec98efc41278794f2e19ed88414",
+            "uid": 501
+          }
+        ],
+        "cleanup": null,
+        "cleanup_timeout": 0.85,
+        "cleanup_verified": true,
+        "exit_code": 0,
+        "fixture_reported_active_seconds": null,
+        "run_id": "c28a6ec98efc41278794f2e19ed88414",
+        "startup_seconds": 0.2214,
+        "status": "FIXTURE_RESULT_UNPROVEN",
+        "stdout_eof": true,
+        "work_seconds": 0.1105,
+        "work_timeout": 1.1
+      },
+      "expected": "FIXTURE_RESULT_UNPROVEN",
+      "verdict": "PASS"
+    },
+    {
+      "actual": "FIXTURE_RESULT_UNPROVEN",
+      "case": "old_receipt_cannot_convert_failure_to_success",
+      "detail": {
+        "actual_backup_success": false,
+        "children": [
+          {
+            "event": "READY",
+            "observed_exit": 0,
+            "pgid": 89357,
+            "pid": 89357,
+            "sid": 89357,
+            "token": "609ee384ab6045dd8ef9795feccb62bf",
+            "uid": 501
+          }
+        ],
+        "cleanup": null,
+        "cleanup_timeout": 0.85,
+        "cleanup_verified": true,
+        "exit_code": 0,
+        "fixture_reported_active_seconds": null,
+        "run_id": "609ee384ab6045dd8ef9795feccb62bf",
+        "startup_seconds": 0.2455,
+        "status": "FIXTURE_RESULT_UNPROVEN",
+        "stdout_eof": true,
+        "work_seconds": 0.1003,
+        "work_timeout": 1.1
+      },
+      "expected": "FIXTURE_RESULT_UNPROVEN",
+      "verdict": "PASS"
+    },
+    {
+      "actual": true,
+      "case": "old_receipt_unchanged",
+      "detail": null,
+      "expected": true,
+      "verdict": "PASS"
+    },
+    {
+      "actual": "BLOCKED_MEDIA_STATE",
+      "case": "uncertain_media_blocks_entry",
+      "detail": {
+        "actual_backup_success": false,
+        "status": "BLOCKED_MEDIA_STATE"
+      },
+      "expected": "BLOCKED_MEDIA_STATE",
+      "verdict": "PASS"
+    },
+    {
+      "actual": "BLOCKED_APPROVAL_OR_PIN",
+      "case": "wrong_pin_before_launch",
+      "detail": {
+        "actual_backup_success": false,
+        "status": "BLOCKED_APPROVAL_OR_PIN"
+      },
+      "expected": "BLOCKED_APPROVAL_OR_PIN",
+      "verdict": "PASS"
+    },
+    {
+      "actual": "BLOCKED_PIN_CHANGED",
+      "case": "approval_changes_during_run",
+      "detail": {
+        "actual_backup_success": false,
+        "children": [
+          {
+            "event": "READY",
+            "observed_exit": 0,
+            "pgid": 89359,
+            "pid": 89359,
+            "sid": 89359,
+            "token": "487d6bc5cd33484a880bd5c64daf47e6",
+            "uid": 501
+          }
+        ],
+        "cleanup": null,
+        "cleanup_timeout": 0.85,
+        "cleanup_verified": true,
+        "exit_code": 0,
+        "fixture_reported_active_seconds": 0.10870074999999998,
+        "run_id": "487d6bc5cd33484a880bd5c64daf47e6",
+        "startup_seconds": 0.2396,
+        "status": "BLOCKED_PIN_CHANGED",
+        "stdout_eof": true,
+        "work_seconds": 0.2061,
+        "work_timeout": 1.1
+      },
+      "expected": "BLOCKED_PIN_CHANGED",
+      "verdict": "PASS"
+    },
+    {
+      "actual": "CLEANUP_PERMISSION_DENIED",
+      "case": "injected_signal_refusal_is_distinct",
+      "detail": {
+        "actual_backup_success": false,
+        "children": [
+          {
+            "event": "READY",
+            "observed_exit": null,
+            "pgid": 89361,
+            "pid": 89361,
+            "sid": 89361,
+            "token": "fa98eb5d7da84bef9556b690fec5548e",
+            "uid": 501
+          }
+        ],
+        "cleanup": {
+          "call": "direct_child_terminate",
+          "code": "CLEANUP_PERMISSION_DENIED",
+          "errno": 1
+        },
+        "cleanup_timeout": 0.85,
+        "cleanup_verified": false,
+        "exit_code": null,
+        "fixture_reported_active_seconds": null,
+        "run_id": "fa98eb5d7da84bef9556b690fec5548e",
+        "startup_seconds": 0.2256,
+        "status": "CLEANUP_PERMISSION_DENIED",
+        "stdout_eof": false,
+        "work_seconds": 0.1211,
+        "work_timeout": 0.12
+      },
+      "expected": "CLEANUP_PERMISSION_DENIED",
+      "verdict": "PASS"
+    },
+    {
+      "actual": 1,
+      "case": "permission_errno_preserved",
+      "detail": null,
+      "expected": 1,
+      "verdict": "PASS"
+    },
+    {
+      "actual": "UNRESOLVED",
+      "case": "durable_unresolved_fence",
+      "detail": null,
+      "expected": "UNRESOLVED",
+      "verdict": "PASS"
+    },
+    {
+      "actual": "BLOCKED_UNRESOLVED_RUN",
+      "case": "released_flock_does_not_allow_reentry",
+      "detail": {
+        "actual_backup_success": false,
+        "status": "BLOCKED_UNRESOLVED_RUN"
+      },
+      "expected": "BLOCKED_UNRESOLVED_RUN",
+      "verdict": "PASS"
+    },
+    {
+      "actual": "BLOCKED_RECONCILIATION",
+      "case": "manual_review_required",
+      "detail": null,
+      "expected": "BLOCKED_RECONCILIATION",
+      "verdict": "PASS"
+    },
+    {
+      "actual": "BLOCKED_RECONCILIATION",
+      "case": "media_recheck_required",
+      "detail": null,
+      "expected": "BLOCKED_RECONCILIATION",
+      "verdict": "PASS"
+    },
+    {
+      "actual": "RECONCILED",
+      "case": "verified_exit_allows_reconciliation",
+      "detail": null,
+      "expected": "RECONCILED",
+      "verdict": "PASS"
+    },
+    {
+      "actual": "FIXTURE_COMPLETED",
+      "case": "admission_reopens_after_reconciliation",
+      "detail": {
+        "actual_backup_success": false,
+        "children": [
+          {
+            "event": "READY",
+            "observed_exit": 0,
+            "pgid": 89373,
+            "pid": 89373,
+            "sid": 89373,
+            "token": "3aca0ad05c3c484cbb6432caeb5ee9b3",
+            "uid": 501
+          }
+        ],
+        "cleanup": null,
+        "cleanup_timeout": 0.85,
+        "cleanup_verified": true,
+        "exit_code": 0,
+        "fixture_reported_active_seconds": 0.11864487500000001,
+        "run_id": "3aca0ad05c3c484cbb6432caeb5ee9b3",
+        "startup_seconds": 0.2595,
+        "status": "FIXTURE_COMPLETED",
+        "stdout_eof": true,
+        "work_seconds": 0.2257,
+        "work_timeout": 1.1
+      },
+      "expected": "FIXTURE_COMPLETED",
+      "verdict": "PASS"
+    },
+    {
+      "actual": true,
+      "case": "original_failure_evidence_retained",
+      "detail": null,
+      "expected": true,
+      "verdict": "PASS"
+    },
+    {
+      "actual": "CLEANUP_UNCONFIRMED",
+      "case": "escaped_descendant_keeps_run_unresolved",
+      "detail": {
+        "actual_backup_success": false,
+        "children": [
+          {
+            "event": "READY",
+            "observed_exit": 3,
+            "pgid": 89375,
+            "pid": 89375,
+            "sid": 89375,
+            "token": "8b12fd700179495b9988480f77d1588d",
+            "uid": 501
+          },
+          {
+            "event": "DESCENDANT",
+            "observed_exit": null,
+            "pgid": 89376,
+            "pid": 89376,
+            "sid": 89376,
+            "token": "8b12fd700179495b9988480f77d1588d",
+            "uid": 501
+          }
+        ],
+        "cleanup": "CLEANUP_UNCONFIRMED",
+        "cleanup_timeout": 0.35,
+        "cleanup_verified": false,
+        "exit_code": 3,
+        "fixture_reported_active_seconds": null,
+        "run_id": "8b12fd700179495b9988480f77d1588d",
+        "startup_seconds": 0.2287,
+        "status": "CLEANUP_UNCONFIRMED",
+        "stdout_eof": false,
+        "work_seconds": 0.1211,
+        "work_timeout": 0.12
+      },
+      "expected": "CLEANUP_UNCONFIRMED",
+      "verdict": "PASS"
+    },
+    {
+      "actual": true,
+      "case": "escaped_fixture_sid_and_pgid",
+      "detail": [
+        {
+          "event": "DESCENDANT",
+          "observed_exit": null,
+          "pgid": 89376,
+          "pid": 89376,
+          "sid": 89376,
+          "token": "8b12fd700179495b9988480f77d1588d",
+          "uid": 501
+        }
+      ],
+      "expected": true,
+      "verdict": "PASS"
+    },
+    {
+      "actual": "BLOCKED_UNRESOLVED_RUN",
+      "case": "escaped_child_prevents_reentry",
+      "detail": {
+        "actual_backup_success": false,
+        "status": "BLOCKED_UNRESOLVED_RUN"
+      },
+      "expected": "BLOCKED_UNRESOLVED_RUN",
+      "verdict": "PASS"
+    },
+    {
+      "actual": "RECONCILED",
+      "case": "escaped_fixture_self_exit_confirmed",
+      "detail": null,
+      "expected": "RECONCILED",
+      "verdict": "PASS"
+    },
+    {
+      "actual": "BLOCKED_LOCK_REPLACED",
+      "case": "inode_swap_never_releases_fence",
+      "detail": {
+        "actual_backup_success": false,
+        "children": [
+          {
+            "event": "READY",
+            "observed_exit": 0,
+            "pgid": 89395,
+            "pid": 89395,
+            "sid": 89395,
+            "token": "bd440a4914864e29a971fc54ab01de01",
+            "uid": 501
+          }
+        ],
+        "cleanup": null,
+        "cleanup_timeout": 0.85,
+        "cleanup_verified": true,
+        "exit_code": 0,
+        "fixture_reported_active_seconds": 0.107193917,
+        "run_id": "bd440a4914864e29a971fc54ab01de01",
+        "startup_seconds": 0.2262,
+        "status": "BLOCKED_LOCK_REPLACED",
+        "stdout_eof": true,
+        "work_seconds": 0.211,
+        "work_timeout": 1.1
+      },
+      "expected": "BLOCKED_LOCK_REPLACED",
+      "verdict": "PASS"
+    },
+    {
+      "actual": "BLOCKED_LOCK_OR_STATE",
+      "case": "new_inode_cannot_admit_next_run",
+      "detail": {
+        "actual_backup_success": false,
+        "status": "BLOCKED_LOCK_OR_STATE"
+      },
+      "expected": "BLOCKED_LOCK_OR_STATE",
+      "verdict": "PASS"
+    },
+    {
+      "actual": true,
+      "case": "inode_swap_active_fence_preserved",
+      "detail": null,
+      "expected": true,
+      "verdict": "PASS"
+    },
+    {
+      "actual": "BLOCKED_PIN_CHANGED",
+      "case": "post_run_code_pin_change",
+      "detail": {
+        "actual_backup_success": false,
+        "children": [
+          {
+            "event": "READY",
+            "observed_exit": 0,
+            "pgid": 89397,
+            "pid": 89397,
+            "sid": 89397,
+            "token": "6f771db8040347caab0f8e2c3df24bbd",
+            "uid": 501
+          }
+        ],
+        "cleanup": null,
+        "cleanup_timeout": 0.85,
+        "cleanup_verified": true,
+        "exit_code": 0,
+        "fixture_reported_active_seconds": 0.10766079199999998,
+        "run_id": "6f771db8040347caab0f8e2c3df24bbd",
+        "startup_seconds": 0.2437,
+        "status": "BLOCKED_PIN_CHANGED",
+        "stdout_eof": true,
+        "work_seconds": 0.2219,
+        "work_timeout": 1.1
+      },
+      "expected": "BLOCKED_PIN_CHANGED",
+      "verdict": "PASS"
+    },
+    {
+      "actual": true,
+      "case": "lock_holder_process_ready",
+      "detail": null,
+      "expected": true,
+      "verdict": "PASS"
+    },
+    {
+      "actual": "SKIPPED_LOCK_HELD",
+      "case": "real_cross_process_contention",
+      "detail": {
+        "actual_backup_success": false,
+        "status": "SKIPPED_LOCK_HELD"
+      },
+      "expected": "SKIPPED_LOCK_HELD",
+      "verdict": "PASS"
+    },
+    {
+      "actual": "FIXTURE_COMPLETED",
+      "case": "real_lock_released_with_no_pending",
+      "detail": {
+        "actual_backup_success": false,
+        "children": [
+          {
+            "event": "READY",
+            "observed_exit": 0,
+            "pgid": 89400,
+            "pid": 89400,
+            "sid": 89400,
+            "token": "0acfbb4b89f046b49b3aacd8df2d420b",
+            "uid": 501
+          }
+        ],
+        "cleanup": null,
+        "cleanup_timeout": 0.85,
+        "cleanup_verified": true,
+        "exit_code": 0,
+        "fixture_reported_active_seconds": 0.10077645799999999,
+        "run_id": "0acfbb4b89f046b49b3aacd8df2d420b",
+        "startup_seconds": 0.2497,
+        "status": "FIXTURE_COMPLETED",
+        "stdout_eof": true,
+        "work_seconds": 0.2128,
+        "work_timeout": 1.1
+      },
+      "expected": "FIXTURE_COMPLETED",
+      "verdict": "PASS"
+    },
+    {
+      "actual": true,
+      "case": "real_os_signal_zero_error_on_ended_fixture_group",
+      "detail": {
+        "errno": 3,
+        "exit_code": 0,
+        "name": "ESRCH",
+        "operation": "os.killpg(pgid,0)",
+        "pgid": 89402,
+        "pid": 89402
+      },
+      "expected": true,
+      "verdict": "PASS"
+    }
+  ],
+  "exit": 0,
+  "passed": 32,
+  "total": 32
+}

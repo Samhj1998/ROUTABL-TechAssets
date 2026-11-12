@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.routabl.assetbackup.nas.daily</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/usr/bin/open</string>
+    <string>-gj</string>
+    <string>-a</string>
+    <string>Terminal</string>
+    <string>/Users/yongho/ROUTABL-TechAssets/00_GUIDE/RUN_ROUTABL_NASScheduledBackup.command</string>
+  </array>
+  <key>StartCalendarInterval</key>
+  <dict>
+    <key>Hour</key><integer>5</integer>
+    <key>Minute</key><integer>0</integer>
+  </dict>
+  <key>RunAtLoad</key><false/>
+  <key>ProcessType</key><string>Background</string>
+  <key>Umask</key><integer>63</integer>
+  <key>WorkingDirectory</key>
+  <string>/Users/yongho/ROUTABL-TechAssets</string>
+  <key>StandardOutPath</key>
+  <string>/Users/yongho/Library/Logs/ROUTABL-AssetBackup/nas.launchd.stdout.log</string>
+  <key>StandardErrorPath</key>
+  <string>/Users/yongho/Library/Logs/ROUTABL-AssetBackup/nas.launchd.stderr.log</string>
+</dict>
+</plist>

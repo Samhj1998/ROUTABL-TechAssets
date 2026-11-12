@@ -1,0 +1,44 @@
+{
+  "permissions": {
+    "allow": [
+      "Edit(//Users/yongho/121_CLAUDE_ISOLATED_V01/implementation/output/**)",
+      "Bash(/usr/bin/shasum -a 256 output/IMPLEMENTATION_REPORT.md output/DEV_TEST_REPORT.md output/CHANGE_MANIFEST.md)"
+    ],
+    "defaultMode": "dontAsk",
+    "deny": [
+      "Edit(//Users/yongho/121_CLAUDE_ISOLATED_V01/implementation/input/**)",
+      "Edit(//Users/yongho/121_CLAUDE_ISOLATED_V01/implementation/IMPLEMENTATION_COMMON_PROMPT.md)",
+      "Edit(//Users/yongho/121_CLAUDE_ISOLATED_V01/implementation/.claude/**)"
+    ]
+  },
+  "sandbox": {
+    "allowUnsandboxedCommands": false,
+    "autoAllowBashIfSandboxed": false,
+    "enabled": true,
+    "excludedCommands": [],
+    "failIfUnavailable": true,
+    "filesystem": {
+      "allowRead": [
+        "/Users/yongho/121_CLAUDE_ISOLATED_V01/implementation"
+      ],
+      "allowWrite": [
+        "/Users/yongho/121_CLAUDE_ISOLATED_V01/implementation/output"
+      ],
+      "denyRead": [
+        "/Users/yongho"
+      ],
+      "denyWrite": [
+        "/Users/yongho/121_CLAUDE_ISOLATED_V01/implementation/input",
+        "/Users/yongho/121_CLAUDE_ISOLATED_V01/implementation/IMPLEMENTATION_COMMON_PROMPT.md",
+        "/Users/yongho/121_CLAUDE_ISOLATED_V01/implementation/.claude",
+        "/Users/yongho/121_CLAUDE_ISOLATED_V01/implementation/src",
+        "/Users/yongho/121_CLAUDE_ISOLATED_V01/implementation/tests"
+      ]
+    },
+    "network": {
+      "allowAllUnixSockets": false,
+      "allowLocalBinding": false,
+      "allowedDomains": []
+    }
+  }
+}

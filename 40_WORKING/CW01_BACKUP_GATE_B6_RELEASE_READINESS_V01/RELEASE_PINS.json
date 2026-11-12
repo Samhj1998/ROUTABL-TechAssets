@@ -1,0 +1,77 @@
+{
+  "candidate_module_sha256": {
+    "ROUTABL_BackupEvidenceAdapter_v0_1.py": "8ad3e95a9dba518b44384145354468b5339f452128780385bd138f1ee0c083af",
+    "ROUTABL_BackupEvidenceNormalizer_v0_1.py": "3fb5482c3da20aac42dcb4a638e78262d5b8a0eda3cc4625f96b827a3046dd51",
+    "ROUTABL_BackupHeadlessSupervisor_v0_3.py": "187f8bb4d168d2d77344d032a391e3792baf646dd5117a1bf410b2efd59d91a5",
+    "ROUTABL_MacToNasOneShot_v0_2.py": "334e38c1e0cf991cfef28d9c07f70faffdae360a2fa0d467bdf4a04875af8b8f"
+  },
+  "candidate_scope": "isolated injectable engine only; operational implementation and final transitive pins pending",
+  "deployment_enabled": false,
+  "direct_stdlib_imports": [
+    "datetime",
+    "fcntl",
+    "hashlib",
+    "json",
+    "os",
+    "pathlib",
+    "re",
+    "stat",
+    "tempfile"
+  ],
+  "final_v043": {
+    "designated_requirement": null,
+    "release_closure_sha256": null,
+    "signed_binary_sha256": null,
+    "team_id": null
+  },
+  "fixture_assets_in_runtime_list": false,
+  "legacy_same_bytes_candidates": {
+    "ROUTABL_HeadlessDailyGate_v0_3.py": "4992b2213bf2598c55a6ab68dd5bf35c501258d47e1e4780765c2a67343a3ce5",
+    "ROUTABL_NAS_ContentAwareBackup_v0_2.py": "fa370842507ae0afb1e11ede46d1a0f72ab4736c60329c8aa18f94c797794631",
+    "ROUTABL_SelectiveSecureBackup_v2_1.py": "f365dfec0b0053f5c124a7440e5fe0bdcf8ccef0b74b639a8b3473288b42186c"
+  },
+  "observed_legacy_signatures": {
+    "라우터블 백업 권한·안전관리 v0.4.2.app": {
+      "binary_mode": "0o700",
+      "binary_uid": 501,
+      "bundle_mode": "0o700",
+      "bundle_uid": 501,
+      "details": [
+        "Identifier=ROUTABLBackupAgent-555549442c31417f08e5361f95a797e587dce85f",
+        "Signature=adhoc",
+        "TeamIdentifier=not set"
+      ],
+      "sha256": "53b22eabeb73e776697af2baa72702a864e4bc0b80c1137429fb10c8d192e577",
+      "strict_exit": 0
+    },
+    "라우터블 백업 자동실행 준비 v0.2.app": {
+      "binary_mode": "0o700",
+      "binary_uid": 501,
+      "bundle_mode": "0o700",
+      "bundle_uid": 501,
+      "details": [
+        "Identifier=ROUTABLBackupAgent-55554944912c631b30e03c93a2db688433bb9502",
+        "Signature=adhoc",
+        "TeamIdentifier=not set"
+      ],
+      "sha256": "2decbf7bd13b5e6916fbb54eaebaa606c869b021749d318efd9fe1ee47fa20f2",
+      "strict_exit": 0
+    }
+  },
+  "platform_observed": {
+    "observed_executable_sha256": {
+      "/Library/Developer/CommandLineTools/usr/bin/python3": "de598544fe9820c083bc3e8dbbf0f658dbcfe08f71c3280e3bdb96c694179b19",
+      "/bin/launchctl": "c09fb522287bee5483d281ccd145fda129cd5eba940e5716cc4a2f25c18299e3",
+      "/usr/bin/codesign": "f9e0b219e5f934869f9647a2203bfd6bd00a819ad1bf9e617e9e6c14a4bef983",
+      "/usr/bin/hdiutil": "726137735d3cc07985520204bc7ae135c988ec9f3c52eb39bcb1c5b299cfe55c",
+      "/usr/bin/python3": "ed6f5284033aa2aae6a58427c25ba3ab119947b40365627b24e5d51a4b70a1cd",
+      "/usr/sbin/diskutil": "ff405d21781cde02f92cc6e0b5c33ef0880f5af4c46d673a5c73adb53c3252e7"
+    },
+    "os_build": "26B123",
+    "python_base_prefix": "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9",
+    "python_version": "3.9.6"
+  },
+  "proposed_bundle_id": "com.routabl.assetbackup.manager.v043",
+  "proposed_label": "com.routabl.assetbackup.native.v043",
+  "status": "PROPOSED_INACTIVE"
+}

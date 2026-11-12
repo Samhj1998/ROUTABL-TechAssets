@@ -1,0 +1,875 @@
+{
+  "backup_ms": 717.03,
+  "dev": {
+    "Q01": {
+      "extra_rowid_union": 0,
+      "fallback_short": false,
+      "kind": "exact_id",
+      "like": 3,
+      "match": 3,
+      "miss_match": 0,
+      "miss_path_union": 3,
+      "miss_rowid_union": 0,
+      "title": 0
+    },
+    "Q02": {
+      "extra_rowid_union": 0,
+      "fallback_short": false,
+      "kind": "hangul_infix",
+      "like": 3,
+      "match": 3,
+      "miss_match": 0,
+      "miss_path_union": 0,
+      "miss_rowid_union": 0,
+      "title": 3
+    },
+    "Q05": {
+      "extra_rowid_union": 0,
+      "fallback_short": false,
+      "kind": "jamo_intent",
+      "like": 0,
+      "match": 0,
+      "miss_match": 0,
+      "miss_path_union": 0,
+      "miss_rowid_union": 0,
+      "title": 0
+    },
+    "Q06": {
+      "extra_rowid_union": 0,
+      "fallback_short": false,
+      "kind": "exact_id",
+      "like": 3,
+      "match": 3,
+      "miss_match": 0,
+      "miss_path_union": 3,
+      "miss_rowid_union": 0,
+      "title": 0
+    },
+    "Q09": {
+      "extra_rowid_union": 0,
+      "fallback_short": false,
+      "kind": "configured_alias",
+      "like": 3,
+      "match": 3,
+      "miss_match": 0,
+      "miss_path_union": 3,
+      "miss_rowid_union": 0,
+      "title": 0
+    },
+    "Q10": {
+      "extra_rowid_union": 0,
+      "fallback_short": false,
+      "kind": "jamo_intent",
+      "like": 0,
+      "match": 0,
+      "miss_match": 0,
+      "miss_path_union": 0,
+      "miss_rowid_union": 0,
+      "title": 0
+    },
+    "Q13": {
+      "extra_rowid_union": 0,
+      "fallback_short": false,
+      "kind": "body_only",
+      "like": 3,
+      "match": 3,
+      "miss_match": 0,
+      "miss_path_union": 3,
+      "miss_rowid_union": 0,
+      "title": 0
+    },
+    "Q14": {
+      "extra_rowid_union": 0,
+      "fallback_short": false,
+      "kind": "configured_alias",
+      "like": 3,
+      "match": 3,
+      "miss_match": 0,
+      "miss_path_union": 3,
+      "miss_rowid_union": 0,
+      "title": 0
+    },
+    "Q15": {
+      "extra_rowid_union": 0,
+      "fallback_short": false,
+      "kind": "jamo_intent",
+      "like": 0,
+      "match": 0,
+      "miss_match": 0,
+      "miss_path_union": 0,
+      "miss_rowid_union": 0,
+      "title": 0
+    },
+    "Q17": {
+      "extra_rowid_union": 0,
+      "fallback_short": false,
+      "kind": "hangul_infix",
+      "like": 3,
+      "match": 3,
+      "miss_match": 0,
+      "miss_path_union": 0,
+      "miss_rowid_union": 0,
+      "title": 3
+    },
+    "Q18": {
+      "extra_rowid_union": 0,
+      "fallback_short": false,
+      "kind": "body_only",
+      "like": 3,
+      "match": 3,
+      "miss_match": 0,
+      "miss_path_union": 3,
+      "miss_rowid_union": 0,
+      "title": 0
+    },
+    "Q19": {
+      "extra_rowid_union": 0,
+      "fallback_short": false,
+      "kind": "configured_alias",
+      "like": 3,
+      "match": 3,
+      "miss_match": 0,
+      "miss_path_union": 3,
+      "miss_rowid_union": 0,
+      "title": 0
+    },
+    "Q21": {
+      "extra_rowid_union": 0,
+      "fallback_short": false,
+      "kind": "exact_id",
+      "like": 3,
+      "match": 3,
+      "miss_match": 0,
+      "miss_path_union": 3,
+      "miss_rowid_union": 0,
+      "title": 0
+    },
+    "Q22": {
+      "extra_rowid_union": 0,
+      "fallback_short": false,
+      "kind": "hangul_infix",
+      "like": 3,
+      "match": 3,
+      "miss_match": 0,
+      "miss_path_union": 0,
+      "miss_rowid_union": 0,
+      "title": 3
+    },
+    "Q23": {
+      "extra_rowid_union": 0,
+      "fallback_short": false,
+      "kind": "body_only",
+      "like": 3,
+      "match": 3,
+      "miss_match": 0,
+      "miss_path_union": 3,
+      "miss_rowid_union": 0,
+      "title": 0
+    },
+    "Q26": {
+      "extra_rowid_union": 0,
+      "fallback_short": false,
+      "kind": "exact_id",
+      "like": 3,
+      "match": 3,
+      "miss_match": 0,
+      "miss_path_union": 3,
+      "miss_rowid_union": 0,
+      "title": 0
+    },
+    "Q27": {
+      "extra_rowid_union": 0,
+      "fallback_short": false,
+      "kind": "hangul_infix",
+      "like": 3,
+      "match": 3,
+      "miss_match": 0,
+      "miss_path_union": 0,
+      "miss_rowid_union": 0,
+      "title": 3
+    },
+    "Q30": {
+      "extra_rowid_union": 0,
+      "fallback_short": false,
+      "kind": "jamo_intent",
+      "like": 0,
+      "match": 0,
+      "miss_match": 0,
+      "miss_path_union": 0,
+      "miss_rowid_union": 0,
+      "title": 0
+    },
+    "Q31": {
+      "extra_rowid_union": 0,
+      "fallback_short": false,
+      "kind": "exact_id",
+      "like": 3,
+      "match": 3,
+      "miss_match": 0,
+      "miss_path_union": 3,
+      "miss_rowid_union": 0,
+      "title": 0
+    },
+    "Q34": {
+      "extra_rowid_union": 0,
+      "fallback_short": false,
+      "kind": "configured_alias",
+      "like": 3,
+      "match": 3,
+      "miss_match": 0,
+      "miss_path_union": 3,
+      "miss_rowid_union": 0,
+      "title": 0
+    },
+    "Q35": {
+      "extra_rowid_union": 0,
+      "fallback_short": false,
+      "kind": "jamo_intent",
+      "like": 0,
+      "match": 0,
+      "miss_match": 0,
+      "miss_path_union": 0,
+      "miss_rowid_union": 0,
+      "title": 0
+    },
+    "Q38": {
+      "extra_rowid_union": 0,
+      "fallback_short": false,
+      "kind": "body_only",
+      "like": 3,
+      "match": 3,
+      "miss_match": 0,
+      "miss_path_union": 3,
+      "miss_rowid_union": 0,
+      "title": 0
+    },
+    "Q39": {
+      "extra_rowid_union": 0,
+      "fallback_short": false,
+      "kind": "configured_alias",
+      "like": 3,
+      "match": 3,
+      "miss_match": 0,
+      "miss_path_union": 3,
+      "miss_rowid_union": 0,
+      "title": 0
+    },
+    "Q40": {
+      "extra_rowid_union": 0,
+      "fallback_short": false,
+      "kind": "jamo_intent",
+      "like": 0,
+      "match": 0,
+      "miss_match": 0,
+      "miss_path_union": 0,
+      "miss_rowid_union": 0,
+      "title": 0
+    },
+    "Q42": {
+      "extra_rowid_union": 0,
+      "fallback_short": false,
+      "kind": "hangul_infix",
+      "like": 3,
+      "match": 3,
+      "miss_match": 0,
+      "miss_path_union": 0,
+      "miss_rowid_union": 0,
+      "title": 3
+    },
+    "Q43": {
+      "extra_rowid_union": 0,
+      "fallback_short": false,
+      "kind": "body_only",
+      "like": 3,
+      "match": 3,
+      "miss_match": 0,
+      "miss_path_union": 3,
+      "miss_rowid_union": 0,
+      "title": 0
+    },
+    "Q44": {
+      "extra_rowid_union": 0,
+      "fallback_short": false,
+      "kind": "configured_alias",
+      "like": 3,
+      "match": 3,
+      "miss_match": 0,
+      "miss_path_union": 3,
+      "miss_rowid_union": 0,
+      "title": 0
+    },
+    "Q46": {
+      "extra_rowid_union": 0,
+      "fallback_short": false,
+      "kind": "exact_id",
+      "like": 3,
+      "match": 3,
+      "miss_match": 0,
+      "miss_path_union": 3,
+      "miss_rowid_union": 0,
+      "title": 0
+    },
+    "Q47": {
+      "extra_rowid_union": 0,
+      "fallback_short": false,
+      "kind": "hangul_infix",
+      "like": 3,
+      "match": 3,
+      "miss_match": 0,
+      "miss_path_union": 0,
+      "miss_rowid_union": 0,
+      "title": 3
+    },
+    "Q48": {
+      "extra_rowid_union": 0,
+      "fallback_short": false,
+      "kind": "body_only",
+      "like": 3,
+      "match": 3,
+      "miss_match": 0,
+      "miss_path_union": 3,
+      "miss_rowid_union": 0,
+      "title": 0
+    }
+  },
+  "edge": {
+    "ascii_case": {
+      "extra_rowid_union": 0,
+      "fallback_short": false,
+      "like": 1,
+      "match": 1,
+      "miss_match": 0,
+      "miss_path_union": 1,
+      "miss_rowid_union": 0,
+      "title": 0
+    },
+    "boolean_literal": {
+      "extra_rowid_union": 0,
+      "fallback_short": false,
+      "like": 1,
+      "match": 1,
+      "miss_match": 0,
+      "miss_path_union": 1,
+      "miss_rowid_union": 0,
+      "title": 0
+    },
+    "double_quote": {
+      "extra_rowid_union": 0,
+      "fallback_short": false,
+      "like": 1,
+      "match": 1,
+      "miss_match": 0,
+      "miss_path_union": 1,
+      "miss_rowid_union": 0,
+      "title": 0
+    },
+    "emoji": {
+      "extra_rowid_union": 0,
+      "fallback_short": false,
+      "like": 1,
+      "match": 1,
+      "miss_match": 0,
+      "miss_path_union": 1,
+      "miss_rowid_union": 0,
+      "title": 0
+    },
+    "hyphen": {
+      "extra_rowid_union": 0,
+      "fallback_short": false,
+      "like": 1,
+      "match": 1,
+      "miss_match": 0,
+      "miss_path_union": 1,
+      "miss_rowid_union": 0,
+      "title": 0
+    },
+    "jamo_literal": {
+      "extra_rowid_union": 0,
+      "fallback_short": false,
+      "like": 1,
+      "match": 1,
+      "miss_match": 0,
+      "miss_path_union": 1,
+      "miss_rowid_union": 0,
+      "title": 0
+    },
+    "ko2": {
+      "extra_rowid_union": 0,
+      "fallback_short": true,
+      "like": 2,
+      "match": 0,
+      "miss_match": 2,
+      "miss_path_union": 2,
+      "miss_rowid_union": 2,
+      "title": 0
+    },
+    "ko3": {
+      "extra_rowid_union": 0,
+      "fallback_short": false,
+      "like": 1,
+      "match": 1,
+      "miss_match": 0,
+      "miss_path_union": 1,
+      "miss_rowid_union": 0,
+      "title": 0
+    },
+    "ko4": {
+      "extra_rowid_union": 0,
+      "fallback_short": false,
+      "like": 1,
+      "match": 1,
+      "miss_match": 0,
+      "miss_path_union": 1,
+      "miss_rowid_union": 0,
+      "title": 0
+    },
+    "nfc": {
+      "extra_rowid_union": 0,
+      "fallback_short": false,
+      "like": 1,
+      "match": 1,
+      "miss_match": 0,
+      "miss_path_union": 1,
+      "miss_rowid_union": 0,
+      "title": 0
+    },
+    "nfd": {
+      "extra_rowid_union": 0,
+      "fallback_short": false,
+      "like": 1,
+      "match": 1,
+      "miss_match": 0,
+      "miss_path_union": 1,
+      "miss_rowid_union": 0,
+      "title": 0
+    },
+    "only_spaces": {
+      "extra_rowid_union": 0,
+      "fallback_short": false,
+      "like": 0,
+      "match": 0,
+      "miss_match": 0,
+      "miss_path_union": 0,
+      "miss_rowid_union": 0,
+      "title": 0
+    },
+    "path": {
+      "extra_rowid_union": 0,
+      "fallback_short": false,
+      "like": 1,
+      "match": 1,
+      "miss_match": 0,
+      "miss_path_union": 1,
+      "miss_rowid_union": 0,
+      "title": 0
+    },
+    "percent_underscore_escape": {
+      "extra_rowid_union": 0,
+      "fallback_short": false,
+      "like": 2,
+      "match": 2,
+      "miss_match": 0,
+      "miss_path_union": 2,
+      "miss_rowid_union": 0,
+      "title": 0
+    },
+    "query_nul_4": {
+      "error": "unterminated string"
+    },
+    "query_nul_7": {
+      "error": "unterminated string"
+    },
+    "short_alias_or": {
+      "extra_rowid_union": 0,
+      "fallback_short": true,
+      "like": 2,
+      "match": 0,
+      "miss_match": 2,
+      "miss_path_union": 2,
+      "miss_rowid_union": 2,
+      "title": 0
+    },
+    "space": {
+      "extra_rowid_union": 0,
+      "fallback_short": false,
+      "like": 1,
+      "match": 1,
+      "miss_match": 0,
+      "miss_path_union": 1,
+      "miss_rowid_union": 0,
+      "title": 0
+    },
+    "tag": {
+      "extra_rowid_union": 0,
+      "fallback_short": false,
+      "like": 1,
+      "match": 1,
+      "miss_match": 0,
+      "miss_path_union": 1,
+      "miss_rowid_union": 0,
+      "title": 0
+    },
+    "title_only": {
+      "extra_rowid_union": 0,
+      "fallback_short": false,
+      "like": 1,
+      "match": 1,
+      "miss_match": 0,
+      "miss_path_union": 0,
+      "miss_rowid_union": 0,
+      "title": 1
+    },
+    "unicode_case": {
+      "extra_rowid_union": 1,
+      "fallback_short": false,
+      "like": 1,
+      "match": 2,
+      "miss_match": 0,
+      "miss_path_union": 1,
+      "miss_rowid_union": 0,
+      "title": 0
+    }
+  },
+  "environment": {
+    "arch": "arm64",
+    "host": "MacStudioui-MacStudio.local",
+    "macOS": "27.2",
+    "python": "3.9.6",
+    "sqlite": "3.54.0",
+    "time_utc": "2026-11-08T03:53:02Z"
+  },
+  "fixture": {
+    "bytes": 3325952,
+    "sha": "d1b5045dd3a7669a076fe790bb038c4461e27a0062c16f0492afc2e78bd6b158"
+  },
+  "fixture_counts": {
+    "docs": 1230,
+    "ft": 1230,
+    "manual": 0,
+    "missing_ft": 0,
+    "orphan_ft": 0,
+    "path_exact": 0,
+    "path_join_misses": 1230,
+    "path_other": 0,
+    "path_plus_title": 1230,
+    "tags_or_content_mismatch": 0
+  },
+  "fixture_qrels_paths_present": true,
+  "lifecycle": {
+    "add_only_rename_leaves_old": true,
+    "delete_with_legacy_purge": true,
+    "insert_and_read": true,
+    "native_check_misses_missing_docs_row": true,
+    "rename_with_legacy_purge": true,
+    "repair_both_checks": true,
+    "same_size_mtime_leaves_old": true,
+    "transaction_rollback": true,
+    "update_changed_mtime": true
+  },
+  "operating_bytes_objects": {
+    "docs": 20402176,
+    "ft_config": 4096,
+    "ft_content": 19308544,
+    "ft_data": 43544576,
+    "ft_docsize": 77824,
+    "ft_idx": 176128,
+    "manual": 4096,
+    "sqlite_autoindex_docs_1": 876544,
+    "sqlite_autoindex_manual_1": 4096,
+    "sqlite_schema": 4096
+  },
+  "operating_counts": {
+    "docs": 5519,
+    "ft": 5519,
+    "manual": 3,
+    "missing_ft": 0,
+    "orphan_ft": 0,
+    "path_exact": 0,
+    "path_join_misses": 5519,
+    "path_other": 0,
+    "path_plus_title": 5519,
+    "tags_or_content_mismatch": 0
+  },
+  "operating_native_fts_check": "ok",
+  "operating_quick_check": "ok",
+  "schema": [
+    [
+      "table",
+      "docs",
+      "CREATE TABLE docs(\n  path TEXT PRIMARY KEY, carrier TEXT NOT NULL, kind TEXT NOT NULL, sz INTEGER NOT NULL,\n  mtime_ns INTEGER NOT NULL, sha TEXT NOT NULL, status TEXT NOT NULL, title TEXT NOT NULL,\n  tags TEXT NOT NULL, content TEXT NOT NULL, scan INTEGER NOT NULL)"
+    ],
+    [
+      "table",
+      "ft",
+      "CREATE VIRTUAL TABLE ft USING fts5(path,tags,content,tokenize='trigram')"
+    ],
+    [
+      "table",
+      "ft_config",
+      "CREATE TABLE 'ft_config'(k PRIMARY KEY, v) WITHOUT ROWID"
+    ],
+    [
+      "table",
+      "ft_content",
+      "CREATE TABLE 'ft_content'(id INTEGER PRIMARY KEY, c0, c1, c2)"
+    ],
+    [
+      "table",
+      "ft_data",
+      "CREATE TABLE 'ft_data'(id INTEGER PRIMARY KEY, block BLOB)"
+    ],
+    [
+      "table",
+      "ft_docsize",
+      "CREATE TABLE 'ft_docsize'(id INTEGER PRIMARY KEY, sz BLOB)"
+    ],
+    [
+      "table",
+      "ft_idx",
+      "CREATE TABLE 'ft_idx'(segid, term, pgno, PRIMARY KEY(segid, term)) WITHOUT ROWID"
+    ],
+    [
+      "table",
+      "manual",
+      "CREATE TABLE manual(\n  id TEXT PRIMARY KEY,title TEXT,tags TEXT,path TEXT,source_grade TEXT,validation_grade TEXT,details TEXT)"
+    ]
+  ],
+  "schema_columns_ft": [
+    [
+      0,
+      "path",
+      "",
+      0,
+      null,
+      0,
+      0
+    ],
+    [
+      1,
+      "tags",
+      "",
+      0,
+      null,
+      0,
+      0
+    ],
+    [
+      2,
+      "content",
+      "",
+      0,
+      null,
+      0,
+      0
+    ],
+    [
+      3,
+      "ft",
+      "",
+      0,
+      null,
+      0,
+      1
+    ],
+    [
+      4,
+      "rank",
+      "",
+      0,
+      null,
+      0,
+      1
+    ]
+  ],
+  "snapshot": {
+    "bytes": 86417408,
+    "sha": "c7fc620620e87f885b506f72c14fcd68644a381dae58d8c1acf5b976e1359f22",
+    "sidecars": {
+      "-journal": false,
+      "-shm": false,
+      "-wal": false
+    }
+  },
+  "source_journal_mode": "delete",
+  "source_post_sha": "c5a800f36aaaeddd1b5aad086403df115fa8f99fb8f616271421e89dff71cba4",
+  "timing": {
+    "broad": {
+      "a_like": {
+        "avg_ms": 2.4773,
+        "max_ms": 3.0655,
+        "p50_ms": 2.5185,
+        "p95_ms": 2.9025,
+        "plan": [
+          "SCAN docs"
+        ],
+        "rows": 30
+      },
+      "fts_match": {
+        "avg_ms": 0.122,
+        "max_ms": 0.1527,
+        "p50_ms": 0.1236,
+        "p95_ms": 0.1518,
+        "plan": [
+          "SCAN ft VIRTUAL TABLE INDEX 0:M3"
+        ],
+        "rows": 30
+      },
+      "recheck_only": {
+        "avg_ms": 0.248,
+        "max_ms": 0.3488,
+        "p50_ms": 0.2441,
+        "p95_ms": 0.3043,
+        "plan": [
+          "SEARCH docs USING INTEGER PRIMARY KEY (rowid=?)"
+        ],
+        "rows": 30
+      },
+      "title_scan": {
+        "avg_ms": 0.4763,
+        "max_ms": 0.6387,
+        "p50_ms": 0.5177,
+        "p95_ms": 0.5919,
+        "plan": [
+          "SCAN docs"
+        ],
+        "rows": 0
+      }
+    },
+    "selective": {
+      "a_like": {
+        "avg_ms": 2.6328,
+        "max_ms": 3.427,
+        "p50_ms": 2.7695,
+        "p95_ms": 3.3952,
+        "plan": [
+          "SCAN docs"
+        ],
+        "rows": 3
+      },
+      "fts_match": {
+        "avg_ms": 0.1353,
+        "max_ms": 0.3485,
+        "p50_ms": 0.1176,
+        "p95_ms": 0.2361,
+        "plan": [
+          "SCAN ft VIRTUAL TABLE INDEX 0:M3"
+        ],
+        "rows": 3
+      },
+      "recheck_only": {
+        "avg_ms": 0.1671,
+        "max_ms": 0.3817,
+        "p50_ms": 0.1457,
+        "p95_ms": 0.2942,
+        "plan": [
+          "SEARCH docs USING INTEGER PRIMARY KEY (rowid=?)"
+        ],
+        "rows": 3
+      },
+      "title_scan": {
+        "avg_ms": 0.5316,
+        "max_ms": 0.7989,
+        "p50_ms": 0.5047,
+        "p95_ms": 0.7477,
+        "plan": [
+          "SCAN docs"
+        ],
+        "rows": 0
+      }
+    }
+  },
+  "variants": {
+    "column": {
+      "ascii_case": "fts5: phrase queries are not supported (detail!=full)",
+      "ko2": 0,
+      "ko3": 1,
+      "ko4": "fts5: phrase queries are not supported (detail!=full)",
+      "like_eq": 1,
+      "like_escaped_plan": [
+        [
+          2,
+          0,
+          215,
+          "SCAN probe VIRTUAL TABLE INDEX 0:"
+        ]
+      ],
+      "like_plan": [
+        [
+          2,
+          0,
+          156,
+          "SCAN probe VIRTUAL TABLE INDEX 0:L0"
+        ]
+      ]
+    },
+    "full": {
+      "ascii_case": 1,
+      "ko2": 0,
+      "ko3": 1,
+      "ko4": 1,
+      "like_eq": 1,
+      "like_escaped_plan": [
+        [
+          2,
+          0,
+          215,
+          "SCAN probe VIRTUAL TABLE INDEX 0:"
+        ]
+      ],
+      "like_plan": [
+        [
+          2,
+          0,
+          156,
+          "SCAN probe VIRTUAL TABLE INDEX 0:L0"
+        ]
+      ]
+    },
+    "none": {
+      "ascii_case": "fts5: phrase queries are not supported (detail!=full)",
+      "ko2": 0,
+      "ko3": 1,
+      "ko4": "fts5: phrase queries are not supported (detail!=full)",
+      "like_eq": 1,
+      "like_escaped_plan": [
+        [
+          2,
+          0,
+          215,
+          "SCAN probe VIRTUAL TABLE INDEX 0:"
+        ]
+      ],
+      "like_plan": [
+        [
+          2,
+          0,
+          156,
+          "SCAN probe VIRTUAL TABLE INDEX 0:L0"
+        ]
+      ]
+    },
+    "sensitive": {
+      "ascii_case": 0,
+      "ko2": 0,
+      "ko3": 1,
+      "ko4": 1,
+      "like_eq": 1,
+      "like_escaped_plan": [
+        [
+          2,
+          0,
+          215,
+          "SCAN probe VIRTUAL TABLE INDEX 0:"
+        ]
+      ],
+      "like_plan": [
+        [
+          2,
+          0,
+          215,
+          "SCAN probe VIRTUAL TABLE INDEX 0:"
+        ]
+      ]
+    }
+  }
+}

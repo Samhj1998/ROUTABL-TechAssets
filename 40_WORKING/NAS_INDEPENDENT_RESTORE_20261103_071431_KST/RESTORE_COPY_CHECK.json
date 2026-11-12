@@ -1,0 +1,10 @@
+{
+  "restored_at_kst": "2026-11-03T07:15:20.367841+09:00",
+  "source": "/Volumes/Dev_Assets/ROUTABL-TechAssets-Backup/snapshots/20261103_071431_KST/ROUTABL-SecureBackup.sparsebundle",
+  "destination": "/Users/yongho/ROUTABL-TechAssets/40_WORKING/NAS_INDEPENDENT_RESTORE_20261103_071431_KST/ROUTABL-SecureBackup.sparsebundle",
+  "file_count": 16,
+  "all_restored_hashes_match": true,
+  "restored_image_aes256": true,
+  "mounted_file_read_test": "PENDING",
+  "original_nas_and_ssd_untouched": true
+}

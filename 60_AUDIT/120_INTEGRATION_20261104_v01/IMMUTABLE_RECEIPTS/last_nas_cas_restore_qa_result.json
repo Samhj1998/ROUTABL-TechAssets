@@ -1,0 +1,16 @@
+{
+  "status": "PASS_CAS_CIPHERTEXT_FULL_RESTORE",
+  "checked_at_kst": "2026-11-03T23:45:08+09:00",
+  "snapshot": "ASSET_V21_20261103_232836_KST_26015",
+  "local_receipt_sha256": "83b94ca9f313c4149bfef5d367bff50fd4f5ef37518b3beec52618dc50cba015",
+  "ciphertext_components_reconstructed": 205,
+  "ciphertext_bytes_reconstructed": 1658655604,
+  "all_components_sha256_pass": true,
+  "reconstructed_matches_local_image": true,
+  "restored_image_aes256_structure_pass": true,
+  "sample_plaintext_extracted": false,
+  "image_mounted_or_unlocked": false,
+  "existing_nas_snapshot_changed": false,
+  "future_anchor_prune_allowed": false,
+  "isolated_reconstruction_scratch_removed": true
+}

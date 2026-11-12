@@ -1,0 +1,89 @@
+{
+  "date_kst": "2026-11-03T20:04:19+09:00",
+  "scope": "120 tech asset search v1.5 QA",
+  "result": "PROGRAMMATIC_TESTS_PASS_UI_USER_CONFIRM_PENDING",
+  "baseline": "asset_manifest_v0.6.json and v1.4 search 5519 rows",
+  "originals_modified": false,
+  "nas_modified": false,
+  "github_modified": false,
+  "firebase_modified": false,
+  "launchd_agents_changed": false,
+  "external_network_requests": false,
+  "search": [
+    {
+      "term": "정산",
+      "v1_4_result": 0,
+      "v1_5_merged_matches": 572,
+      "note": "contains synonyms 월간정산 and Settlement"
+    },
+    {
+      "term": "고객",
+      "v1_4_result": 0,
+      "v1_5_result": 589
+    },
+    {
+      "term": "TransportStatusPolicy",
+      "v1_4_main_original_in_top10": false,
+      "v1_5_main_original_rank": 1
+    },
+    {
+      "term": "취소상태",
+      "v1_4_main_original_in_top10": false,
+      "v1_5_main_original_rank": 1
+    },
+    {
+      "term": "시니어",
+      "v1_4_top10_main_mac_count": 0,
+      "v1_5_rank1_project": "ROUTABL-Senior-Driver"
+    },
+    {
+      "term": "SEARCH-01",
+      "v1_4_per_term_limit": 500,
+      "v1_5_all_match_rows": 1215,
+      "v1_5_groups": 897
+    },
+    {
+      "term": "초성검색",
+      "v1_5_curated_original_first": true,
+      "matches_including_alias": 1224
+    },
+    {
+      "term": "cloud_access.py",
+      "v1_5_matches": 7,
+      "grouped_sha": 1,
+      "github_crosswalk_verified": true
+    }
+  ],
+  "duplicate_evidence": {
+    "f1_same_sha_locations": 9,
+    "f1_verified_github": true,
+    "f1_verified_nas": true
+  },
+  "functionality": {
+    "page2_and_nas_filter": "PASS",
+    "single_server_lock": "PASS",
+    "csrf_refresh_denied_without_token": "PASS",
+    "csrf_reveal_denied_without_token": "PASS",
+    "finder_path_allowlist_rejects_unsafe": "PASS",
+    "finder_safe_path_resolves": "PASS_WITHOUT_GUI_OPEN",
+    "refresh_ui_equivalent_http": "PASS",
+    "post_refresh_rows": 5519,
+    "prior_generation_rows": 5519,
+    "sqlite_quick_check": "ok",
+    "launchservices_integration": "PASS_WITHOUT_BROWSER_OPEN",
+    "idle_exit_shortened_test": "PASS"
+  },
+  "new_service_port": 8769,
+  "requires_user_observation": [
+    "Finder double click opens v1.5 browser",
+    "on-screen refresh button",
+    "Finder reveal button"
+  ],
+  "known_limits": [
+    "Search content coverage limited by v1.3 allowlist and masking",
+    "Relying on filenames for category is a heuristic, not a code deployment verdict",
+    "Only two sources have verified Mac-GitHub-NAS provenance crosswalk",
+    "Search index is not a backup; scheduled backups remain disabled",
+    "No source execution or actual Firebase permissions test"
+  ]
+}

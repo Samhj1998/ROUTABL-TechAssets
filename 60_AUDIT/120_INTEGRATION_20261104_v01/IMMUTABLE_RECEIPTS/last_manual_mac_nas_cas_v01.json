@@ -1,0 +1,18 @@
+{
+  "status": "SUCCESS_LOCAL_TO_NAS_ENCRYPTED_CAS",
+  "verified_at_kst": "2026-11-04T08:46:24+09:00",
+  "local_snapshot": "ASSET_V21_20261104_084130_KST_34561",
+  "local_file_count": 3328,
+  "manifest_name": "asset_manifest_v0.14.json",
+  "manifest_sha256": "f2e7d88d16b6b2aa98d8cc53ed6cbf099f8b19bc4c7cbce072b1ee62ffd7233d",
+  "selection_sha256": "980efcc57e190f645768673516c067d4823b632a0ec61c02095449a0e644c834",
+  "local_receipt_sha256": "46d242becacd6cf2b3e020d475be80eb1e5213a68dc75fd6d873146dc9bfbd06",
+  "nas_cas_manifest": "CAS_ASSET_V21_20261104_084130_KST_34561.json",
+  "cas_components": 395,
+  "cas_new_ciphertext_bytes": 573710336,
+  "cas_reused_components": 325,
+  "google_drive_upload": false,
+  "automatic_scheduling": false,
+  "existing_snapshots_pruned": false,
+  "aes_image_detached": true
+}

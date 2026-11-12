@@ -1,0 +1,44 @@
+{
+  "receipt_version": "0.1",
+  "created_at_kst": "2026-11-05T20:44:47+09:00",
+  "classification": "P3_ACCOUNT_WIDE_PRIVATE_ARCHIVE",
+  "origin": "OPENAI_OFFICIAL_CHATGPT_DATA_EXPORT",
+  "captured_user_download": "2026-11-05",
+  "original_download_path": "/Users/yongho/Downloads/baf409011133e16d57eab39aec045f1394676d50a269d023b6008db51848fd63-2026-11-05-03-30-27-86cdce8a39af493493da6b91bf952559.zip",
+  "preserved_archive_path": "/Users/yongho/ROUTABL-TechAssets/20_ORIGINALS/ChatGPT-Account-Exports/2026-11-05/00_ORIGINAL/baf409011133e16d57eab39aec045f1394676d50a269d023b6008db51848fd63-2026-11-05-03-30-27-86cdce8a39af493493da6b91bf952559.zip",
+  "archive_sha256": "06efc5c5c787d59b7d1bd62566974563416b29792bb17ac318335475884c5553",
+  "bytes": 1589174843,
+  "verify": {
+    "original_and_copy_sha256": "MATCH",
+    "zip_crc_full_test": "PASS",
+    "zip_path_traversal_index": "NONE_OBSERVED",
+    "archive_permissions": "0600",
+    "parent_archive_dir_permissions": "0700",
+    "filevault_status": "ON"
+  },
+  "zip_index_summary": {
+    "zip_members": 2780,
+    "uncompressed_bytes": 1810441264,
+    "conversation_json_parts": 4,
+    "chat_html_present": true,
+    "conversation_asset_names_file_present": true,
+    "file_payload_count": 2529,
+    "inline_library_filename_count": 1,
+    "duplicate_member_names": 0
+  },
+  "export_extracted": false,
+  "original_download_retained": true,
+  "technical_assets_manifest": "v0.16_UNCHANGED",
+  "backup_scope": {
+    "current_encrypted_v21_single_file_limit_bytes": 105000000,
+    "raw_export_exceeds_current_limit": true,
+    "off_device_encrypted_backup_status": "NOT_VERIFIED",
+    "do_not_claim_auto_backup": true
+  },
+  "future_work": [
+    "120 full conversation extraction and comparison with 24-page PDF",
+    "Library file completeness and mapping",
+    "isolated large export encrypted SSD and NAS backup independent acceptance",
+    "cleanup Downloads source after independent backup verified and user confirmation"
+  ]
+}

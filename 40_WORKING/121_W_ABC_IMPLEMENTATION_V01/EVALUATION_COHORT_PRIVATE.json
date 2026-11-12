@@ -1,0 +1,807 @@
+{
+  "boundary_scenarios": [
+    "short original or alias",
+    "NUL",
+    "injected FTS error",
+    "missing or mismatched FTS row",
+    "unsupported FTS schema",
+    "dense >=20% controlled fixture"
+  ],
+  "docs": 1230,
+  "locked_at_kst": "2026-11-08T13:14:36+09:00",
+  "operating_layer": [
+    {
+      "id": "R01",
+      "scope": "all",
+      "term": "고객등록"
+    },
+    {
+      "id": "R02",
+      "scope": "all",
+      "term": "취소상태"
+    },
+    {
+      "id": "R03",
+      "scope": "all",
+      "term": "월간정산"
+    },
+    {
+      "id": "R04",
+      "scope": "main",
+      "term": "기사앱"
+    },
+    {
+      "id": "R05",
+      "scope": "main",
+      "term": "TransportStatusPolicy.kt"
+    },
+    {
+      "id": "R06",
+      "scope": "main",
+      "term": "cloud_access.py"
+    },
+    {
+      "id": "R07",
+      "scope": "variants",
+      "term": "DailyInspection"
+    },
+    {
+      "id": "R08",
+      "scope": "nas",
+      "term": "ROUTABL"
+    },
+    {
+      "id": "R09",
+      "scope": "all",
+      "term": "no-result-mvl01-20261108"
+    }
+  ],
+  "operating_scope": "no A/B/C execution in 4-B",
+  "selection": {
+    "dense": "count/N >= 0.20",
+    "medium": "0.01 < count/N < 0.20",
+    "selective": "0 < count/N <= 0.01",
+    "zero": "0"
+  },
+  "sources": {
+    "dev": "db2fca0951c1c43d30da560d7ecafd6c967e7ff9389c21c773b347714a93f3a1",
+    "fixture": "d1b5045dd3a7669a076fe790bb038c4461e27a0062c16f0492afc2e78bd6b158",
+    "holdout": "ac1344d20277c62143a0fd8e0c7afdd3a8c27fb010ff37dd52a11490032a5ba5",
+    "operating_list": "6c2f0486b4ecc33aecde4156edbc2fe8f9b06cb717b937e60bdee3b9ea1a8cbf"
+  },
+  "summary": {
+    "dev": {
+      "cohorts": {
+        "dense": 0,
+        "medium": 0,
+        "selective": 24,
+        "zero": 6
+      },
+      "kinds": {
+        "asset_id": 6,
+        "body_only": 6,
+        "configured_alias": 6,
+        "hangul_infix": 6,
+        "jamo_intent": 6
+      }
+    },
+    "holdout": {
+      "cohorts": {
+        "dense": 0,
+        "medium": 0,
+        "selective": 16,
+        "zero": 4
+      },
+      "kinds": {
+        "asset_id": 4,
+        "body_only": 4,
+        "configured_alias": 4,
+        "hangul_infix": 4,
+        "jamo_intent": 4
+      }
+    }
+  },
+  "synthetic": [
+    {
+      "a_docs_hits": 3,
+      "cohort": "selective",
+      "id": "Q01",
+      "scope": "all",
+      "split": "dev",
+      "tags": [
+        "asset_id",
+        "fts_eligible_3plus"
+      ],
+      "term": "SIM-001",
+      "type": "asset_id",
+      "weight": "1/50"
+    },
+    {
+      "a_docs_hits": 3,
+      "cohort": "selective",
+      "id": "Q02",
+      "scope": "all",
+      "split": "dev",
+      "tags": [
+        "hangul_infix",
+        "fts_eligible_3plus"
+      ],
+      "term": "정색인보",
+      "type": "hangul_infix",
+      "weight": "1/50"
+    },
+    {
+      "a_docs_hits": 3,
+      "cohort": "selective",
+      "id": "Q03",
+      "scope": "all",
+      "split": "holdout",
+      "tags": [
+        "body_only",
+        "fts_eligible_3plus"
+      ],
+      "term": "결정관측원리",
+      "type": "body_only",
+      "weight": "1/50"
+    },
+    {
+      "a_docs_hits": 3,
+      "cohort": "selective",
+      "id": "Q04",
+      "scope": "all",
+      "split": "holdout",
+      "tags": [
+        "configured_alias",
+        "fts_eligible_3plus"
+      ],
+      "term": "alias-quartz",
+      "type": "configured_alias",
+      "weight": "1/50"
+    },
+    {
+      "a_docs_hits": 0,
+      "cohort": "zero",
+      "id": "Q05",
+      "scope": "all",
+      "split": "dev",
+      "tags": [
+        "jamo_intent",
+        "fts_eligible_3plus"
+      ],
+      "term": "ㄱㅈㄱㅊ",
+      "type": "jamo_intent",
+      "weight": "1/50"
+    },
+    {
+      "a_docs_hits": 3,
+      "cohort": "selective",
+      "id": "Q06",
+      "scope": "all",
+      "split": "dev",
+      "tags": [
+        "asset_id",
+        "fts_eligible_3plus"
+      ],
+      "term": "SIM-002",
+      "type": "asset_id",
+      "weight": "1/50"
+    },
+    {
+      "a_docs_hits": 3,
+      "cohort": "selective",
+      "id": "Q07",
+      "scope": "all",
+      "split": "holdout",
+      "tags": [
+        "hangul_infix",
+        "fts_eligible_3plus"
+      ],
+      "term": "나무복원절",
+      "type": "hangul_infix",
+      "weight": "1/50"
+    },
+    {
+      "a_docs_hits": 3,
+      "cohort": "selective",
+      "id": "Q08",
+      "scope": "all",
+      "split": "holdout",
+      "tags": [
+        "body_only",
+        "fts_eligible_3plus"
+      ],
+      "term": "연륜표본보존",
+      "type": "body_only",
+      "weight": "1/50"
+    },
+    {
+      "a_docs_hits": 3,
+      "cohort": "selective",
+      "id": "Q09",
+      "scope": "all",
+      "split": "dev",
+      "tags": [
+        "configured_alias",
+        "fts_eligible_3plus"
+      ],
+      "term": "alias-cedar",
+      "type": "configured_alias",
+      "weight": "1/50"
+    },
+    {
+      "a_docs_hits": 0,
+      "cohort": "zero",
+      "id": "Q10",
+      "scope": "all",
+      "split": "dev",
+      "tags": [
+        "jamo_intent",
+        "fts_eligible_3plus"
+      ],
+      "term": "ㅇㄹㅍㅂ",
+      "type": "jamo_intent",
+      "weight": "1/50"
+    },
+    {
+      "a_docs_hits": 3,
+      "cohort": "selective",
+      "id": "Q11",
+      "scope": "all",
+      "split": "holdout",
+      "tags": [
+        "asset_id",
+        "fts_eligible_3plus"
+      ],
+      "term": "SIM-003",
+      "type": "asset_id",
+      "weight": "1/50"
+    },
+    {
+      "a_docs_hits": 3,
+      "cohort": "selective",
+      "id": "Q12",
+      "scope": "all",
+      "split": "holdout",
+      "tags": [
+        "hangul_infix",
+        "fts_eligible_3plus"
+      ],
+      "term": "팔검증규",
+      "type": "hangul_infix",
+      "weight": "1/50"
+    },
+    {
+      "a_docs_hits": 3,
+      "cohort": "selective",
+      "id": "Q13",
+      "scope": "all",
+      "split": "dev",
+      "tags": [
+        "body_only",
+        "fts_eligible_3plus"
+      ],
+      "term": "빛분산관측법",
+      "type": "body_only",
+      "weight": "1/50"
+    },
+    {
+      "a_docs_hits": 3,
+      "cohort": "selective",
+      "id": "Q14",
+      "scope": "all",
+      "split": "dev",
+      "tags": [
+        "configured_alias",
+        "fts_eligible_3plus"
+      ],
+      "term": "alias-opal",
+      "type": "configured_alias",
+      "weight": "1/50"
+    },
+    {
+      "a_docs_hits": 0,
+      "cohort": "zero",
+      "id": "Q15",
+      "scope": "all",
+      "split": "dev",
+      "tags": [
+        "jamo_intent",
+        "fts_eligible_3plus"
+      ],
+      "term": "ㅂㅂㅅ",
+      "type": "jamo_intent",
+      "weight": "1/50"
+    },
+    {
+      "a_docs_hits": 3,
+      "cohort": "selective",
+      "id": "Q16",
+      "scope": "all",
+      "split": "holdout",
+      "tags": [
+        "asset_id",
+        "fts_eligible_3plus"
+      ],
+      "term": "SIM-004",
+      "type": "asset_id",
+      "weight": "1/50"
+    },
+    {
+      "a_docs_hits": 3,
+      "cohort": "selective",
+      "id": "Q17",
+      "scope": "all",
+      "split": "dev",
+      "tags": [
+        "hangul_infix",
+        "fts_eligible_3plus"
+      ],
+      "term": "대경로확",
+      "type": "hangul_infix",
+      "weight": "1/50"
+    },
+    {
+      "a_docs_hits": 3,
+      "cohort": "selective",
+      "id": "Q18",
+      "scope": "all",
+      "split": "dev",
+      "tags": [
+        "body_only",
+        "fts_eligible_3plus"
+      ],
+      "term": "안개항법원리",
+      "type": "body_only",
+      "weight": "1/50"
+    },
+    {
+      "a_docs_hits": 3,
+      "cohort": "selective",
+      "id": "Q19",
+      "scope": "all",
+      "split": "dev",
+      "tags": [
+        "configured_alias",
+        "fts_eligible_3plus"
+      ],
+      "term": "alias-beacon",
+      "type": "configured_alias",
+      "weight": "1/50"
+    },
+    {
+      "a_docs_hits": 0,
+      "cohort": "zero",
+      "id": "Q20",
+      "scope": "all",
+      "split": "holdout",
+      "tags": [
+        "jamo_intent",
+        "fts_eligible_3plus"
+      ],
+      "term": "ㅇㄱㅎㅂ",
+      "type": "jamo_intent",
+      "weight": "1/50"
+    },
+    {
+      "a_docs_hits": 3,
+      "cohort": "selective",
+      "id": "Q21",
+      "scope": "all",
+      "split": "dev",
+      "tags": [
+        "asset_id",
+        "fts_eligible_3plus"
+      ],
+      "term": "SIM-005",
+      "type": "asset_id",
+      "weight": "1/50"
+    },
+    {
+      "a_docs_hits": 3,
+      "cohort": "selective",
+      "id": "Q22",
+      "scope": "all",
+      "split": "dev",
+      "tags": [
+        "hangul_infix",
+        "fts_eligible_3plus"
+      ],
+      "term": "량측정노",
+      "type": "hangul_infix",
+      "weight": "1/50"
+    },
+    {
+      "a_docs_hits": 3,
+      "cohort": "selective",
+      "id": "Q23",
+      "scope": "all",
+      "split": "dev",
+      "tags": [
+        "body_only",
+        "fts_eligible_3plus"
+      ],
+      "term": "렌즈투과가정",
+      "type": "body_only",
+      "weight": "1/50"
+    },
+    {
+      "a_docs_hits": 3,
+      "cohort": "selective",
+      "id": "Q24",
+      "scope": "all",
+      "split": "holdout",
+      "tags": [
+        "configured_alias",
+        "fts_eligible_3plus"
+      ],
+      "term": "alias-lumen",
+      "type": "configured_alias",
+      "weight": "1/50"
+    },
+    {
+      "a_docs_hits": 0,
+      "cohort": "zero",
+      "id": "Q25",
+      "scope": "all",
+      "split": "holdout",
+      "tags": [
+        "jamo_intent",
+        "fts_eligible_3plus"
+      ],
+      "term": "ㄹㅈㅌㄱ",
+      "type": "jamo_intent",
+      "weight": "1/50"
+    },
+    {
+      "a_docs_hits": 3,
+      "cohort": "selective",
+      "id": "Q26",
+      "scope": "all",
+      "split": "dev",
+      "tags": [
+        "asset_id",
+        "fts_eligible_3plus"
+      ],
+      "term": "SIM-006",
+      "type": "asset_id",
+      "weight": "1/50"
+    },
+    {
+      "a_docs_hits": 3,
+      "cohort": "selective",
+      "id": "Q27",
+      "scope": "all",
+      "split": "dev",
+      "tags": [
+        "hangul_infix",
+        "fts_eligible_3plus"
+      ],
+      "term": "토온도기",
+      "type": "hangul_infix",
+      "weight": "1/50"
+    },
+    {
+      "a_docs_hits": 3,
+      "cohort": "selective",
+      "id": "Q28",
+      "scope": "all",
+      "split": "holdout",
+      "tags": [
+        "body_only",
+        "fts_eligible_3plus"
+      ],
+      "term": "빙층변화수식",
+      "type": "body_only",
+      "weight": "1/50"
+    },
+    {
+      "a_docs_hits": 3,
+      "cohort": "selective",
+      "id": "Q29",
+      "scope": "all",
+      "split": "holdout",
+      "tags": [
+        "configured_alias",
+        "fts_eligible_3plus"
+      ],
+      "term": "alias-tundra",
+      "type": "configured_alias",
+      "weight": "1/50"
+    },
+    {
+      "a_docs_hits": 0,
+      "cohort": "zero",
+      "id": "Q30",
+      "scope": "all",
+      "split": "dev",
+      "tags": [
+        "jamo_intent",
+        "fts_eligible_3plus"
+      ],
+      "term": "ㅂㅊㅂㅎ",
+      "type": "jamo_intent",
+      "weight": "1/50"
+    },
+    {
+      "a_docs_hits": 3,
+      "cohort": "selective",
+      "id": "Q31",
+      "scope": "all",
+      "split": "dev",
+      "tags": [
+        "asset_id",
+        "fts_eligible_3plus"
+      ],
+      "term": "SIM-007",
+      "type": "asset_id",
+      "weight": "1/50"
+    },
+    {
+      "a_docs_hits": 3,
+      "cohort": "selective",
+      "id": "Q32",
+      "scope": "all",
+      "split": "holdout",
+      "tags": [
+        "hangul_infix",
+        "fts_eligible_3plus"
+      ],
+      "term": "풍모델정",
+      "type": "hangul_infix",
+      "weight": "1/50"
+    },
+    {
+      "a_docs_hits": 3,
+      "cohort": "selective",
+      "id": "Q33",
+      "scope": "all",
+      "split": "holdout",
+      "tags": [
+        "body_only",
+        "fts_eligible_3plus"
+      ],
+      "term": "풍속오차공식",
+      "type": "body_only",
+      "weight": "1/50"
+    },
+    {
+      "a_docs_hits": 3,
+      "cohort": "selective",
+      "id": "Q34",
+      "scope": "all",
+      "split": "dev",
+      "tags": [
+        "configured_alias",
+        "fts_eligible_3plus"
+      ],
+      "term": "alias-zephyr",
+      "type": "configured_alias",
+      "weight": "1/50"
+    },
+    {
+      "a_docs_hits": 0,
+      "cohort": "zero",
+      "id": "Q35",
+      "scope": "all",
+      "split": "dev",
+      "tags": [
+        "jamo_intent",
+        "fts_eligible_3plus"
+      ],
+      "term": "ㅍㅅㅇㅊ",
+      "type": "jamo_intent",
+      "weight": "1/50"
+    },
+    {
+      "a_docs_hits": 3,
+      "cohort": "selective",
+      "id": "Q36",
+      "scope": "all",
+      "split": "holdout",
+      "tags": [
+        "asset_id",
+        "fts_eligible_3plus"
+      ],
+      "term": "SIM-008",
+      "type": "asset_id",
+      "weight": "1/50"
+    },
+    {
+      "a_docs_hits": 3,
+      "cohort": "selective",
+      "id": "Q37",
+      "scope": "all",
+      "split": "holdout",
+      "tags": [
+        "hangul_infix",
+        "fts_eligible_3plus"
+      ],
+      "term": "리석분류",
+      "type": "hangul_infix",
+      "weight": "1/50"
+    },
+    {
+      "a_docs_hits": 3,
+      "cohort": "selective",
+      "id": "Q38",
+      "scope": "all",
+      "split": "dev",
+      "tags": [
+        "body_only",
+        "fts_eligible_3plus"
+      ],
+      "term": "표면입도계수",
+      "type": "body_only",
+      "weight": "1/50"
+    },
+    {
+      "a_docs_hits": 3,
+      "cohort": "selective",
+      "id": "Q39",
+      "scope": "all",
+      "split": "dev",
+      "tags": [
+        "configured_alias",
+        "fts_eligible_3plus"
+      ],
+      "term": "alias-marble",
+      "type": "configured_alias",
+      "weight": "1/50"
+    },
+    {
+      "a_docs_hits": 0,
+      "cohort": "zero",
+      "id": "Q40",
+      "scope": "all",
+      "split": "dev",
+      "tags": [
+        "jamo_intent",
+        "fts_eligible_3plus"
+      ],
+      "term": "ㅍㅁㅇㄷ",
+      "type": "jamo_intent",
+      "weight": "1/50"
+    },
+    {
+      "a_docs_hits": 3,
+      "cohort": "selective",
+      "id": "Q41",
+      "scope": "all",
+      "split": "holdout",
+      "tags": [
+        "asset_id",
+        "fts_eligible_3plus"
+      ],
+      "term": "SIM-009",
+      "type": "asset_id",
+      "weight": "1/50"
+    },
+    {
+      "a_docs_hits": 3,
+      "cohort": "selective",
+      "id": "Q42",
+      "scope": "all",
+      "split": "dev",
+      "tags": [
+        "hangul_infix",
+        "fts_eligible_3plus"
+      ],
+      "term": "발트분석",
+      "type": "hangul_infix",
+      "weight": "1/50"
+    },
+    {
+      "a_docs_hits": 3,
+      "cohort": "selective",
+      "id": "Q43",
+      "scope": "all",
+      "split": "dev",
+      "tags": [
+        "body_only",
+        "fts_eligible_3plus"
+      ],
+      "term": "파장교정실험",
+      "type": "body_only",
+      "weight": "1/50"
+    },
+    {
+      "a_docs_hits": 3,
+      "cohort": "selective",
+      "id": "Q44",
+      "scope": "all",
+      "split": "dev",
+      "tags": [
+        "configured_alias",
+        "fts_eligible_3plus"
+      ],
+      "term": "alias-cobalt",
+      "type": "configured_alias",
+      "weight": "1/50"
+    },
+    {
+      "a_docs_hits": 0,
+      "cohort": "zero",
+      "id": "Q45",
+      "scope": "all",
+      "split": "holdout",
+      "tags": [
+        "jamo_intent",
+        "fts_eligible_3plus"
+      ],
+      "term": "ㅍㅈㄱㅈ",
+      "type": "jamo_intent",
+      "weight": "1/50"
+    },
+    {
+      "a_docs_hits": 3,
+      "cohort": "selective",
+      "id": "Q46",
+      "scope": "all",
+      "split": "dev",
+      "tags": [
+        "asset_id",
+        "fts_eligible_3plus"
+      ],
+      "term": "SIM-010",
+      "type": "asset_id",
+      "weight": "1/50"
+    },
+    {
+      "a_docs_hits": 3,
+      "cohort": "selective",
+      "id": "Q47",
+      "scope": "all",
+      "split": "dev",
+      "tags": [
+        "hangul_infix",
+        "fts_eligible_3plus"
+      ],
+      "term": "박표본대",
+      "type": "hangul_infix",
+      "weight": "1/50"
+    },
+    {
+      "a_docs_hits": 3,
+      "cohort": "selective",
+      "id": "Q48",
+      "scope": "all",
+      "split": "dev",
+      "tags": [
+        "body_only",
+        "fts_eligible_3plus"
+      ],
+      "term": "수지경화시간",
+      "type": "body_only",
+      "weight": "1/50"
+    },
+    {
+      "a_docs_hits": 3,
+      "cohort": "selective",
+      "id": "Q49",
+      "scope": "all",
+      "split": "holdout",
+      "tags": [
+        "configured_alias",
+        "fts_eligible_3plus"
+      ],
+      "term": "alias-amber",
+      "type": "configured_alias",
+      "weight": "1/50"
+    },
+    {
+      "a_docs_hits": 0,
+      "cohort": "zero",
+      "id": "Q50",
+      "scope": "all",
+      "split": "holdout",
+      "tags": [
+        "jamo_intent",
+        "fts_eligible_3plus"
+      ],
+      "term": "ㅅㅈㄱㅎ",
+      "type": "jamo_intent",
+      "weight": "1/50"
+    }
+  ],
+  "weight": "1/50"
+}

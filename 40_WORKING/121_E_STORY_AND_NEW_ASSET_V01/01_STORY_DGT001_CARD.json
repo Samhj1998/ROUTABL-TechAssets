@@ -1,0 +1,122 @@
+{
+  "story_id": "DGT-STORY-001",
+  "version": "v1.0-candidate",
+  "status": "DRAFT_CANDIDATE",
+  "approved_as_representative_story": true,
+  "official_registry_inserted": false,
+  "source_chat": "121 Chat, 2026-11-08; complete conversation export not captured",
+  "title": "검색엔진에서 경험 재활용 시스템으로 — Digitopia 설계 전환의 역사",
+  "project": "디지털 자산관리/용호의 Digitopia",
+  "problem": "과거 개발 경험과 실패의 맥락이 새 AI 작업에서 유실되어 동일한 시행착오가 반복됨",
+  "failed_approaches": [
+    "운영 조회 시 반복적인 전수 무결성 검증으로 검색 지연 발생",
+    "파일명·단순 태그 중심 탐색은 프로젝트가 달라도 재사용할 수 있는 해결 원칙을 놓침",
+    "신규 자료도 오래된 아카이브처럼 재탐색하면 이미 알고 있는 대화 맥락을 낭비함"
+  ],
+  "pivots": [
+    "읽기 최적화: 검증은 등록/갱신 시, 검색은 SSD SQLite 색인+캐시",
+    "인덱싱 품질 우선: 문제/실패/전환/해결/적용 조건을 색인",
+    "파일 중심 보존 + 스토리 중심 검색 및 발견",
+    "과거는 백서 스토리 후보 목록에서 필요 시 복원, 신규는 작업 종료 시 현행 맥락으로 즉시 등록"
+  ],
+  "solution_principles": [
+    "원본 보존, 파생 스토리 카드와 근거 파일/시험 연결",
+    "신규 건 증분 색인과 검색 시 AI 호출 최소화",
+    "사용자 발언 원문과 AI 해석·시험 검증을 구분",
+    "새 작업의 반복 시행착오 감소가 최종 성과지표"
+  ],
+  "events": [
+    {
+      "label": "120-2 선순환 최소 완성",
+      "evidence_kind": "historical_reports",
+      "confidence": "documented"
+    },
+    {
+      "label": "121 A/B/C 검색·정합성 실험",
+      "evidence_kind": "benchmarks",
+      "confidence": "documented"
+    },
+    {
+      "label": "121-D V01 초경량 합성 검색",
+      "evidence_kind": "isolated_synthetic_test",
+      "confidence": "documented"
+    },
+    {
+      "label": "121-D V02 I0/I1/I2 맥락 색인 비교",
+      "evidence_kind": "isolated_real_document_test",
+      "confidence": "documented"
+    },
+    {
+      "label": "백서와 사용자 대화에서 스토리 중심 지식 자산 발견",
+      "evidence_kind": "chat_statement_and_whitepaper",
+      "confidence": "user_and_source_supported"
+    },
+    {
+      "label": "아카이브 목록화 + 신규 맥락 즉시 카드화 확정",
+      "evidence_kind": "user_approval",
+      "confidence": "user_supported"
+    }
+  ],
+  "sample_user_verbatim": [
+    "라우터블에서 전체 품질을 좌우하는 것이 배차입력인 것처럼, 기술자산에서도 인덱싱이 모든걸 좌우 할거야.",
+    "내가 대량의 기억은 AI에 밀릴지 몰라도 3시간이나 고생한 특별한 경험은 잘 기억하고 있지.",
+    "결국 내 어록, 나와 챗지피티가 한 작업에서 버릴것은 없이 되었어.",
+    "전체 과정을 첫번째 대표 스토리로 남기는 것에 찬성하고, 이제 두가지 아카이브와 신규 기술자산에 대해서 집중해서 끝장을 보자."
+  ],
+  "tags": [
+    "Digitopia",
+    "스토리인덱싱",
+    "기술자산",
+    "증분인덱싱",
+    "라우터블",
+    "백서",
+    "AI협업",
+    "검색",
+    "캐시",
+    "시행착오",
+    "실패원인",
+    "해결원칙",
+    "인계",
+    "원본",
+    "신규등록",
+    "자원최적화"
+  ],
+  "aliases": [
+    "디지토피아 최초 대표 스토리",
+    "검색 알고리즘 시행착오",
+    "파일중심에서 스토리중심",
+    "과거 아카이브 신규 카드 분리",
+    "기술자산을 왜 만드는가"
+  ],
+  "related_story_ids": [
+    "STORY-ARCH-010",
+    "STORY-ARCH-015",
+    "STORY-ARCH-016"
+  ],
+  "evidence": [
+    {
+      "path": "/Users/yongho/ROUTABL-TechAssets/40_WORKING/121_W_ABC_BENCHMARK_V01/",
+      "kind": "A_B_C_benchmark",
+      "status": "historical_reference"
+    },
+    {
+      "path": "/Users/yongho/121_D_V02/output/121_CHAT_RETURN.md",
+      "kind": "I0_I1_I2_test",
+      "status": "reported_and_read"
+    },
+    {
+      "path": "/Users/yongho/ROUTABL-TechAssets/20_ORIGINALS/NAS-Imported/ROUTABL-97-1-V4.1/",
+      "kind": "whitepaper",
+      "section": "chapters 4,6,9,11,13",
+      "status": "selected_pages_read"
+    }
+  ],
+  "validation": {
+    "first_story_draft_written": "PASS",
+    "user_approval_of_rep_story": "PASS",
+    "full_original_transcript_archived": "NOT_TESTED",
+    "automatic_new_card_generation": "NOT_TESTED",
+    "cross_ai_retrieval": "NOT_TESTED",
+    "official_registry_inserted": "NO"
+  }
+}

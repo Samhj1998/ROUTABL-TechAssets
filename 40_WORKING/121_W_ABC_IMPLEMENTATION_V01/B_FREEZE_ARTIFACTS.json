@@ -1,0 +1,161 @@
+{
+  "artifact_count": 36,
+  "artifacts": {
+    "output/CHANGE_MANIFEST.md": {
+      "bytes": 1998,
+      "sha256": "3cf263026ca863012669a9371fcfca9b2cb2fc959995e583c279d2fdf266cfcb"
+    },
+    "output/DEV_TEST_REPORT.md": {
+      "bytes": 2780,
+      "sha256": "290b8d689795aab66ceebf94b3b0cd7b5ccf2a98afa92b3fd3608434ca07ef12"
+    },
+    "output/IMPLEMENTATION_REPORT.md": {
+      "bytes": 4556,
+      "sha256": "a99497b2394791e533afff75581d363038ed92804b13f2b18342335b5e019f09"
+    },
+    "output/SHA256SUMS": {
+      "bytes": 929,
+      "sha256": "70ec00dfe861be12aa075ec0011dd9bab58dafeae1d6f3829f9b441d3f795a28"
+    },
+    "output/dev-5ru8s0iy/absent.sqlite": {
+      "bytes": 3325952,
+      "sha256": "f5f6ccd97b0c2ca6c76a3f22a4e8c21c8ca40a41dbc1d8e472ca6d5d7aab44cf"
+    },
+    "output/dev-5ru8s0iy/edge.sqlite": {
+      "bytes": 4562944,
+      "sha256": "0f737b5bd6b78e5228dd9bb46919dc1430e936ffaadc814a6877a8dec08e462a"
+    },
+    "output/dev-5ru8s0iy/extra.sqlite": {
+      "bytes": 3325952,
+      "sha256": "02c874cf5142d3c7850d7f76a701a908032269e769f27a34279c39d66e1e8cde"
+    },
+    "output/dev-5ru8s0iy/missing.sqlite": {
+      "bytes": 3325952,
+      "sha256": "6d2a3c27388e275f231c28ceaf989ff03c29a9cffb28671e85183bcd94417e34"
+    },
+    "output/dev-5ru8s0iy/nul.sqlite": {
+      "bytes": 3325952,
+      "sha256": "8bdd68bf6cd0b819b40e5db1124a076b843f657638fd53c93a65c9093b35c2bb"
+    },
+    "output/dev-5ru8s0iy/postings.sqlite": {
+      "bytes": 3325952,
+      "sha256": "d1b5045dd3a7669a076fe790bb038c4461e27a0062c16f0492afc2e78bd6b158"
+    },
+    "output/dev-5ru8s0iy/public.sqlite": {
+      "bytes": 3325952,
+      "sha256": "d1b5045dd3a7669a076fe790bb038c4461e27a0062c16f0492afc2e78bd6b158"
+    },
+    "output/dev-5ru8s0iy/schema.sqlite": {
+      "bytes": 3325952,
+      "sha256": "cdf9147d3b4681df3d7b8a94b1dc52a400ee281a3caaae1e8bb58239ef54ae6b"
+    },
+    "output/dev-5ru8s0iy/stale.sqlite": {
+      "bytes": 3325952,
+      "sha256": "464548281ad78158382179fb3720663127e02774ed670581bb5d3c86f25ca43e"
+    },
+    "output/dev-5ru8s0iy/updates.sqlite": {
+      "bytes": 3325952,
+      "sha256": "5fd02ec2014b80b1e5e54a8ba0a6d99a152c30676c7f34883ab89a843054db10"
+    },
+    "output/dev-5ru8s0iy/updates.sqlite-shm": {
+      "bytes": 32768,
+      "sha256": "fd4c9fda9cd3f9ae7c962b0ddf37232294d55580e1aa165aa06129b8549389eb"
+    },
+    "output/dev-5ru8s0iy/updates.sqlite-wal": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "output/dev-gybpymeq/absent.sqlite": {
+      "bytes": 3325952,
+      "sha256": "f5f6ccd97b0c2ca6c76a3f22a4e8c21c8ca40a41dbc1d8e472ca6d5d7aab44cf"
+    },
+    "output/dev-gybpymeq/edge.sqlite": {
+      "bytes": 4562944,
+      "sha256": "a7b9014cf9b33d5f8b5dc4539887c9c4f5ae9cc4331409dff729c0e7364c2084"
+    },
+    "output/dev-gybpymeq/extra.sqlite": {
+      "bytes": 3325952,
+      "sha256": "02c874cf5142d3c7850d7f76a701a908032269e769f27a34279c39d66e1e8cde"
+    },
+    "output/dev-gybpymeq/missing.sqlite": {
+      "bytes": 3325952,
+      "sha256": "6d2a3c27388e275f231c28ceaf989ff03c29a9cffb28671e85183bcd94417e34"
+    },
+    "output/dev-gybpymeq/nul.sqlite": {
+      "bytes": 3325952,
+      "sha256": "8bdd68bf6cd0b819b40e5db1124a076b843f657638fd53c93a65c9093b35c2bb"
+    },
+    "output/dev-gybpymeq/postings.sqlite": {
+      "bytes": 3325952,
+      "sha256": "2125bf3cffb2d334602b177f212c3552ce007c415691fe67b88ee769dcc9e3f9"
+    },
+    "output/dev-gybpymeq/public.sqlite": {
+      "bytes": 3325952,
+      "sha256": "d1b5045dd3a7669a076fe790bb038c4461e27a0062c16f0492afc2e78bd6b158"
+    },
+    "output/dev-gybpymeq/schema.sqlite": {
+      "bytes": 3325952,
+      "sha256": "cdf9147d3b4681df3d7b8a94b1dc52a400ee281a3caaae1e8bb58239ef54ae6b"
+    },
+    "output/dev-gybpymeq/stale.sqlite": {
+      "bytes": 3325952,
+      "sha256": "464548281ad78158382179fb3720663127e02774ed670581bb5d3c86f25ca43e"
+    },
+    "output/dev-gybpymeq/updates.sqlite": {
+      "bytes": 3325952,
+      "sha256": "5fd02ec2014b80b1e5e54a8ba0a6d99a152c30676c7f34883ab89a843054db10"
+    },
+    "output/dev-gybpymeq/updates.sqlite-shm": {
+      "bytes": 32768,
+      "sha256": "fd4c9fda9cd3f9ae7c962b0ddf37232294d55580e1aa165aa06129b8549389eb"
+    },
+    "output/dev-gybpymeq/updates.sqlite-wal": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "output/dev_run_01.jsonl": {
+      "bytes": 29343,
+      "sha256": "33062c1de098f878a106e0b72125642f75412f5f8367544e15a2937bd240c2fa"
+    },
+    "output/dev_run_01_test_source.py.txt": {
+      "bytes": 16941,
+      "sha256": "706ac510942b294d2db1edbbb483326ab823600e18da9d972d8cf81240ea2bfc"
+    },
+    "output/dev_run_02.jsonl": {
+      "bytes": 29357,
+      "sha256": "6507e87b3a32db86ed19569ccf7b46ade3f864f46f3ab29679f828218885e661"
+    },
+    "output/dev_run_02_test_source.py.txt": {
+      "bytes": 17867,
+      "sha256": "83029499625276da0557e0c55ee707c8bc611d193af926d3ff3f143d11612fba"
+    },
+    "output/dev_run_03.jsonl": {
+      "bytes": 28747,
+      "sha256": "6c8a76f6ef8b93d282fa301a4b59024e56abe5a125039dee4600f21af6aadf83"
+    },
+    "output/work/fixture.sqlite": {
+      "bytes": 3325952,
+      "sha256": "d1b5045dd3a7669a076fe790bb038c4461e27a0062c16f0492afc2e78bd6b158"
+    },
+    "src/search_b.py": {
+      "bytes": 11395,
+      "sha256": "f46f64e2479a331c6bd6822f7b0b41af2fbceeab801bb27ad679dce108d1950d"
+    },
+    "tests/test_search_b.py": {
+      "bytes": 17836,
+      "sha256": "befd28ddf68045e6a16bb8e1452a153a64a4d3d207a645a4b15621aad91b5299"
+    }
+  },
+  "candidate_manifest": "PASS",
+  "candidate_manifest_entries": 10,
+  "candidate_manifest_errors": [],
+  "common_prompt_sha": "e22dd54c0a9047c5d5e72f282d98bcc75ba8f28dfa9d854c672ebbd4899402c0",
+  "frozen": true,
+  "frozen_kst": "2026-11-08T13:30:29+09:00",
+  "has_source": true,
+  "has_test_source": true,
+  "missing_deliverables": [],
+  "root": "/Users/yongho/121_CHATGPT_B_V01/implementation",
+  "unsigned_code": [],
+  "unsigned_required": []
+}

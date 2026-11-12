@@ -1,0 +1,382 @@
+[
+  {
+    "id": "Q03",
+    "kind": "body_only",
+    "term": "결정관측원리",
+    "scope": "all",
+    "split": "holdout",
+    "grades": {
+      "SIM-001-current": 3,
+      "SIM-001-old": 1
+    },
+    "top_path": "00_SYNTHETIC/SIM-001.md",
+    "expected_sha": "9871dbd2e056adccb324e72533365d3689e1280421483576c1cbe33380e86b9c",
+    "expected_status": "OK",
+    "expected_version": "v2",
+    "duplicate_paths": [
+      "00_SYNTHETIC/SIM-001.md",
+      "00_SYNTHETIC/archive/SIM-001-copy.md"
+    ]
+  },
+  {
+    "id": "Q04",
+    "kind": "configured_alias",
+    "term": "alias-quartz",
+    "scope": "all",
+    "split": "holdout",
+    "grades": {
+      "SIM-001-current": 3,
+      "SIM-001-old": 1
+    },
+    "top_path": "00_SYNTHETIC/SIM-001.md",
+    "expected_sha": "9871dbd2e056adccb324e72533365d3689e1280421483576c1cbe33380e86b9c",
+    "expected_status": "OK",
+    "expected_version": "v2",
+    "duplicate_paths": [
+      "00_SYNTHETIC/SIM-001.md",
+      "00_SYNTHETIC/archive/SIM-001-copy.md"
+    ]
+  },
+  {
+    "id": "Q07",
+    "kind": "hangul_infix",
+    "term": "나무복원절",
+    "scope": "all",
+    "split": "holdout",
+    "grades": {
+      "SIM-002-current": 3,
+      "SIM-002-old": 1
+    },
+    "top_path": "00_SYNTHETIC/SIM-002.md",
+    "expected_sha": "641b302d54c38e7e6320076cb56fd8cd58680efed2b4c9dd0e51870574ed50e6",
+    "expected_status": "OK",
+    "expected_version": "v2",
+    "duplicate_paths": [
+      "00_SYNTHETIC/SIM-002.md",
+      "00_SYNTHETIC/archive/SIM-002-copy.md"
+    ]
+  },
+  {
+    "id": "Q08",
+    "kind": "body_only",
+    "term": "연륜표본보존",
+    "scope": "all",
+    "split": "holdout",
+    "grades": {
+      "SIM-002-current": 3,
+      "SIM-002-old": 1
+    },
+    "top_path": "00_SYNTHETIC/SIM-002.md",
+    "expected_sha": "641b302d54c38e7e6320076cb56fd8cd58680efed2b4c9dd0e51870574ed50e6",
+    "expected_status": "OK",
+    "expected_version": "v2",
+    "duplicate_paths": [
+      "00_SYNTHETIC/SIM-002.md",
+      "00_SYNTHETIC/archive/SIM-002-copy.md"
+    ]
+  },
+  {
+    "id": "Q11",
+    "kind": "exact_id",
+    "term": "SIM-003",
+    "scope": "all",
+    "split": "holdout",
+    "grades": {
+      "SIM-003-current": 3,
+      "SIM-003-old": 1
+    },
+    "top_path": "00_SYNTHETIC/SIM-003.md",
+    "expected_sha": "42e34aec8298777dae481835cb93cf2d05bd1e8083e695db119e0e272fbd6031",
+    "expected_status": "OK",
+    "expected_version": "v2",
+    "duplicate_paths": [
+      "00_SYNTHETIC/SIM-003.md",
+      "00_SYNTHETIC/archive/SIM-003-copy.md"
+    ]
+  },
+  {
+    "id": "Q12",
+    "kind": "hangul_infix",
+    "term": "팔검증규",
+    "scope": "all",
+    "split": "holdout",
+    "grades": {
+      "SIM-003-current": 3,
+      "SIM-003-old": 1
+    },
+    "top_path": "00_SYNTHETIC/SIM-003.md",
+    "expected_sha": "42e34aec8298777dae481835cb93cf2d05bd1e8083e695db119e0e272fbd6031",
+    "expected_status": "OK",
+    "expected_version": "v2",
+    "duplicate_paths": [
+      "00_SYNTHETIC/SIM-003.md",
+      "00_SYNTHETIC/archive/SIM-003-copy.md"
+    ]
+  },
+  {
+    "id": "Q16",
+    "kind": "exact_id",
+    "term": "SIM-004",
+    "scope": "all",
+    "split": "holdout",
+    "grades": {
+      "SIM-004-current": 3,
+      "SIM-004-old": 1
+    },
+    "top_path": "00_SYNTHETIC/SIM-004.md",
+    "expected_sha": "e5a683edae95e0cd3f514398cce329c591b530c66f8436e53851bb14aa971c95",
+    "expected_status": "OK",
+    "expected_version": "v2",
+    "duplicate_paths": [
+      "00_SYNTHETIC/SIM-004.md",
+      "00_SYNTHETIC/archive/SIM-004-copy.md"
+    ]
+  },
+  {
+    "id": "Q20",
+    "kind": "jamo_intent",
+    "term": "ㅇㄱㅎㅂ",
+    "scope": "all",
+    "split": "holdout",
+    "grades": {
+      "SIM-004-current": 3,
+      "SIM-004-old": 1
+    },
+    "top_path": "00_SYNTHETIC/SIM-004.md",
+    "expected_sha": "e5a683edae95e0cd3f514398cce329c591b530c66f8436e53851bb14aa971c95",
+    "expected_status": "OK",
+    "expected_version": "v2",
+    "duplicate_paths": [
+      "00_SYNTHETIC/SIM-004.md",
+      "00_SYNTHETIC/archive/SIM-004-copy.md"
+    ]
+  },
+  {
+    "id": "Q24",
+    "kind": "configured_alias",
+    "term": "alias-lumen",
+    "scope": "all",
+    "split": "holdout",
+    "grades": {
+      "SIM-005-current": 3,
+      "SIM-005-old": 1
+    },
+    "top_path": "00_SYNTHETIC/SIM-005.md",
+    "expected_sha": "5233d835ba841c3dfee292d3752f94561e3ad3d6010133a638611c5a019c47aa",
+    "expected_status": "OK",
+    "expected_version": "v2",
+    "duplicate_paths": [
+      "00_SYNTHETIC/SIM-005.md",
+      "00_SYNTHETIC/archive/SIM-005-copy.md"
+    ]
+  },
+  {
+    "id": "Q25",
+    "kind": "jamo_intent",
+    "term": "ㄹㅈㅌㄱ",
+    "scope": "all",
+    "split": "holdout",
+    "grades": {
+      "SIM-005-current": 3,
+      "SIM-005-old": 1
+    },
+    "top_path": "00_SYNTHETIC/SIM-005.md",
+    "expected_sha": "5233d835ba841c3dfee292d3752f94561e3ad3d6010133a638611c5a019c47aa",
+    "expected_status": "OK",
+    "expected_version": "v2",
+    "duplicate_paths": [
+      "00_SYNTHETIC/SIM-005.md",
+      "00_SYNTHETIC/archive/SIM-005-copy.md"
+    ]
+  },
+  {
+    "id": "Q28",
+    "kind": "body_only",
+    "term": "빙층변화수식",
+    "scope": "all",
+    "split": "holdout",
+    "grades": {
+      "SIM-006-current": 3,
+      "SIM-006-old": 1
+    },
+    "top_path": "00_SYNTHETIC/SIM-006.md",
+    "expected_sha": "b1957a5c47dd10467cd95f5b7c5e420374d2e41efb249ce54bd081e7d2f2dcef",
+    "expected_status": "OK",
+    "expected_version": "v2",
+    "duplicate_paths": [
+      "00_SYNTHETIC/SIM-006.md",
+      "00_SYNTHETIC/archive/SIM-006-copy.md"
+    ]
+  },
+  {
+    "id": "Q29",
+    "kind": "configured_alias",
+    "term": "alias-tundra",
+    "scope": "all",
+    "split": "holdout",
+    "grades": {
+      "SIM-006-current": 3,
+      "SIM-006-old": 1
+    },
+    "top_path": "00_SYNTHETIC/SIM-006.md",
+    "expected_sha": "b1957a5c47dd10467cd95f5b7c5e420374d2e41efb249ce54bd081e7d2f2dcef",
+    "expected_status": "OK",
+    "expected_version": "v2",
+    "duplicate_paths": [
+      "00_SYNTHETIC/SIM-006.md",
+      "00_SYNTHETIC/archive/SIM-006-copy.md"
+    ]
+  },
+  {
+    "id": "Q32",
+    "kind": "hangul_infix",
+    "term": "풍모델정",
+    "scope": "all",
+    "split": "holdout",
+    "grades": {
+      "SIM-007-current": 3,
+      "SIM-007-old": 1
+    },
+    "top_path": "00_SYNTHETIC/SIM-007.md",
+    "expected_sha": "0235c6ed458f6ef8ce6d996cd99001c1627abbc5159cb1dd75d0b3a4b53fe8fb",
+    "expected_status": "OK",
+    "expected_version": "v2",
+    "duplicate_paths": [
+      "00_SYNTHETIC/SIM-007.md",
+      "00_SYNTHETIC/archive/SIM-007-copy.md"
+    ]
+  },
+  {
+    "id": "Q33",
+    "kind": "body_only",
+    "term": "풍속오차공식",
+    "scope": "all",
+    "split": "holdout",
+    "grades": {
+      "SIM-007-current": 3,
+      "SIM-007-old": 1
+    },
+    "top_path": "00_SYNTHETIC/SIM-007.md",
+    "expected_sha": "0235c6ed458f6ef8ce6d996cd99001c1627abbc5159cb1dd75d0b3a4b53fe8fb",
+    "expected_status": "OK",
+    "expected_version": "v2",
+    "duplicate_paths": [
+      "00_SYNTHETIC/SIM-007.md",
+      "00_SYNTHETIC/archive/SIM-007-copy.md"
+    ]
+  },
+  {
+    "id": "Q36",
+    "kind": "exact_id",
+    "term": "SIM-008",
+    "scope": "all",
+    "split": "holdout",
+    "grades": {
+      "SIM-008-current": 3,
+      "SIM-008-old": 1
+    },
+    "top_path": "00_SYNTHETIC/SIM-008.md",
+    "expected_sha": "bf5ac06ee7a997979216bc580cfae0856a65aeef198452c739f5be1116c67c11",
+    "expected_status": "OK",
+    "expected_version": "v2",
+    "duplicate_paths": [
+      "00_SYNTHETIC/SIM-008.md",
+      "00_SYNTHETIC/archive/SIM-008-copy.md"
+    ]
+  },
+  {
+    "id": "Q37",
+    "kind": "hangul_infix",
+    "term": "리석분류",
+    "scope": "all",
+    "split": "holdout",
+    "grades": {
+      "SIM-008-current": 3,
+      "SIM-008-old": 1
+    },
+    "top_path": "00_SYNTHETIC/SIM-008.md",
+    "expected_sha": "bf5ac06ee7a997979216bc580cfae0856a65aeef198452c739f5be1116c67c11",
+    "expected_status": "OK",
+    "expected_version": "v2",
+    "duplicate_paths": [
+      "00_SYNTHETIC/SIM-008.md",
+      "00_SYNTHETIC/archive/SIM-008-copy.md"
+    ]
+  },
+  {
+    "id": "Q41",
+    "kind": "exact_id",
+    "term": "SIM-009",
+    "scope": "all",
+    "split": "holdout",
+    "grades": {
+      "SIM-009-current": 3,
+      "SIM-009-old": 1
+    },
+    "top_path": "00_SYNTHETIC/SIM-009.md",
+    "expected_sha": "77fc92dc11eb4ea235ca4fb0149600cc59543d902c0ff08c86c9f43bb0d3bc09",
+    "expected_status": "OK",
+    "expected_version": "v2",
+    "duplicate_paths": [
+      "00_SYNTHETIC/SIM-009.md",
+      "00_SYNTHETIC/archive/SIM-009-copy.md"
+    ]
+  },
+  {
+    "id": "Q45",
+    "kind": "jamo_intent",
+    "term": "ㅍㅈㄱㅈ",
+    "scope": "all",
+    "split": "holdout",
+    "grades": {
+      "SIM-009-current": 3,
+      "SIM-009-old": 1
+    },
+    "top_path": "00_SYNTHETIC/SIM-009.md",
+    "expected_sha": "77fc92dc11eb4ea235ca4fb0149600cc59543d902c0ff08c86c9f43bb0d3bc09",
+    "expected_status": "OK",
+    "expected_version": "v2",
+    "duplicate_paths": [
+      "00_SYNTHETIC/SIM-009.md",
+      "00_SYNTHETIC/archive/SIM-009-copy.md"
+    ]
+  },
+  {
+    "id": "Q49",
+    "kind": "configured_alias",
+    "term": "alias-amber",
+    "scope": "all",
+    "split": "holdout",
+    "grades": {
+      "SIM-010-current": 3,
+      "SIM-010-old": 1
+    },
+    "top_path": "00_SYNTHETIC/SIM-010.md",
+    "expected_sha": "7c2313078f515fb676826bd9ea4cdd7337c96e350f49a934ed1e49eb7ed7b858",
+    "expected_status": "OK",
+    "expected_version": "v2",
+    "duplicate_paths": [
+      "00_SYNTHETIC/SIM-010.md",
+      "00_SYNTHETIC/archive/SIM-010-copy.md"
+    ]
+  },
+  {
+    "id": "Q50",
+    "kind": "jamo_intent",
+    "term": "ㅅㅈㄱㅎ",
+    "scope": "all",
+    "split": "holdout",
+    "grades": {
+      "SIM-010-current": 3,
+      "SIM-010-old": 1
+    },
+    "top_path": "00_SYNTHETIC/SIM-010.md",
+    "expected_sha": "7c2313078f515fb676826bd9ea4cdd7337c96e350f49a934ed1e49eb7ed7b858",
+    "expected_status": "OK",
+    "expected_version": "v2",
+    "duplicate_paths": [
+      "00_SYNTHETIC/SIM-010.md",
+      "00_SYNTHETIC/archive/SIM-010-copy.md"
+    ]
+  }
+]

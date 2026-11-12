@@ -1,0 +1,572 @@
+[
+  {
+    "id": "Q01",
+    "kind": "exact_id",
+    "term": "SIM-001",
+    "scope": "all",
+    "split": "dev",
+    "grades": {
+      "SIM-001-current": 3,
+      "SIM-001-old": 1
+    },
+    "top_path": "00_SYNTHETIC/SIM-001.md",
+    "expected_sha": "9871dbd2e056adccb324e72533365d3689e1280421483576c1cbe33380e86b9c",
+    "expected_status": "OK",
+    "expected_version": "v2",
+    "duplicate_paths": [
+      "00_SYNTHETIC/SIM-001.md",
+      "00_SYNTHETIC/archive/SIM-001-copy.md"
+    ]
+  },
+  {
+    "id": "Q02",
+    "kind": "hangul_infix",
+    "term": "정색인보",
+    "scope": "all",
+    "split": "dev",
+    "grades": {
+      "SIM-001-current": 3,
+      "SIM-001-old": 1
+    },
+    "top_path": "00_SYNTHETIC/SIM-001.md",
+    "expected_sha": "9871dbd2e056adccb324e72533365d3689e1280421483576c1cbe33380e86b9c",
+    "expected_status": "OK",
+    "expected_version": "v2",
+    "duplicate_paths": [
+      "00_SYNTHETIC/SIM-001.md",
+      "00_SYNTHETIC/archive/SIM-001-copy.md"
+    ]
+  },
+  {
+    "id": "Q05",
+    "kind": "jamo_intent",
+    "term": "ㄱㅈㄱㅊ",
+    "scope": "all",
+    "split": "dev",
+    "grades": {
+      "SIM-001-current": 3,
+      "SIM-001-old": 1
+    },
+    "top_path": "00_SYNTHETIC/SIM-001.md",
+    "expected_sha": "9871dbd2e056adccb324e72533365d3689e1280421483576c1cbe33380e86b9c",
+    "expected_status": "OK",
+    "expected_version": "v2",
+    "duplicate_paths": [
+      "00_SYNTHETIC/SIM-001.md",
+      "00_SYNTHETIC/archive/SIM-001-copy.md"
+    ]
+  },
+  {
+    "id": "Q06",
+    "kind": "exact_id",
+    "term": "SIM-002",
+    "scope": "all",
+    "split": "dev",
+    "grades": {
+      "SIM-002-current": 3,
+      "SIM-002-old": 1
+    },
+    "top_path": "00_SYNTHETIC/SIM-002.md",
+    "expected_sha": "641b302d54c38e7e6320076cb56fd8cd58680efed2b4c9dd0e51870574ed50e6",
+    "expected_status": "OK",
+    "expected_version": "v2",
+    "duplicate_paths": [
+      "00_SYNTHETIC/SIM-002.md",
+      "00_SYNTHETIC/archive/SIM-002-copy.md"
+    ]
+  },
+  {
+    "id": "Q09",
+    "kind": "configured_alias",
+    "term": "alias-cedar",
+    "scope": "all",
+    "split": "dev",
+    "grades": {
+      "SIM-002-current": 3,
+      "SIM-002-old": 1
+    },
+    "top_path": "00_SYNTHETIC/SIM-002.md",
+    "expected_sha": "641b302d54c38e7e6320076cb56fd8cd58680efed2b4c9dd0e51870574ed50e6",
+    "expected_status": "OK",
+    "expected_version": "v2",
+    "duplicate_paths": [
+      "00_SYNTHETIC/SIM-002.md",
+      "00_SYNTHETIC/archive/SIM-002-copy.md"
+    ]
+  },
+  {
+    "id": "Q10",
+    "kind": "jamo_intent",
+    "term": "ㅇㄹㅍㅂ",
+    "scope": "all",
+    "split": "dev",
+    "grades": {
+      "SIM-002-current": 3,
+      "SIM-002-old": 1
+    },
+    "top_path": "00_SYNTHETIC/SIM-002.md",
+    "expected_sha": "641b302d54c38e7e6320076cb56fd8cd58680efed2b4c9dd0e51870574ed50e6",
+    "expected_status": "OK",
+    "expected_version": "v2",
+    "duplicate_paths": [
+      "00_SYNTHETIC/SIM-002.md",
+      "00_SYNTHETIC/archive/SIM-002-copy.md"
+    ]
+  },
+  {
+    "id": "Q13",
+    "kind": "body_only",
+    "term": "빛분산관측법",
+    "scope": "all",
+    "split": "dev",
+    "grades": {
+      "SIM-003-current": 3,
+      "SIM-003-old": 1
+    },
+    "top_path": "00_SYNTHETIC/SIM-003.md",
+    "expected_sha": "42e34aec8298777dae481835cb93cf2d05bd1e8083e695db119e0e272fbd6031",
+    "expected_status": "OK",
+    "expected_version": "v2",
+    "duplicate_paths": [
+      "00_SYNTHETIC/SIM-003.md",
+      "00_SYNTHETIC/archive/SIM-003-copy.md"
+    ]
+  },
+  {
+    "id": "Q14",
+    "kind": "configured_alias",
+    "term": "alias-opal",
+    "scope": "all",
+    "split": "dev",
+    "grades": {
+      "SIM-003-current": 3,
+      "SIM-003-old": 1
+    },
+    "top_path": "00_SYNTHETIC/SIM-003.md",
+    "expected_sha": "42e34aec8298777dae481835cb93cf2d05bd1e8083e695db119e0e272fbd6031",
+    "expected_status": "OK",
+    "expected_version": "v2",
+    "duplicate_paths": [
+      "00_SYNTHETIC/SIM-003.md",
+      "00_SYNTHETIC/archive/SIM-003-copy.md"
+    ]
+  },
+  {
+    "id": "Q15",
+    "kind": "jamo_intent",
+    "term": "ㅂㅂㅅ",
+    "scope": "all",
+    "split": "dev",
+    "grades": {
+      "SIM-003-current": 3,
+      "SIM-003-old": 1
+    },
+    "top_path": "00_SYNTHETIC/SIM-003.md",
+    "expected_sha": "42e34aec8298777dae481835cb93cf2d05bd1e8083e695db119e0e272fbd6031",
+    "expected_status": "OK",
+    "expected_version": "v2",
+    "duplicate_paths": [
+      "00_SYNTHETIC/SIM-003.md",
+      "00_SYNTHETIC/archive/SIM-003-copy.md"
+    ]
+  },
+  {
+    "id": "Q17",
+    "kind": "hangul_infix",
+    "term": "대경로확",
+    "scope": "all",
+    "split": "dev",
+    "grades": {
+      "SIM-004-current": 3,
+      "SIM-004-old": 1
+    },
+    "top_path": "00_SYNTHETIC/SIM-004.md",
+    "expected_sha": "e5a683edae95e0cd3f514398cce329c591b530c66f8436e53851bb14aa971c95",
+    "expected_status": "OK",
+    "expected_version": "v2",
+    "duplicate_paths": [
+      "00_SYNTHETIC/SIM-004.md",
+      "00_SYNTHETIC/archive/SIM-004-copy.md"
+    ]
+  },
+  {
+    "id": "Q18",
+    "kind": "body_only",
+    "term": "안개항법원리",
+    "scope": "all",
+    "split": "dev",
+    "grades": {
+      "SIM-004-current": 3,
+      "SIM-004-old": 1
+    },
+    "top_path": "00_SYNTHETIC/SIM-004.md",
+    "expected_sha": "e5a683edae95e0cd3f514398cce329c591b530c66f8436e53851bb14aa971c95",
+    "expected_status": "OK",
+    "expected_version": "v2",
+    "duplicate_paths": [
+      "00_SYNTHETIC/SIM-004.md",
+      "00_SYNTHETIC/archive/SIM-004-copy.md"
+    ]
+  },
+  {
+    "id": "Q19",
+    "kind": "configured_alias",
+    "term": "alias-beacon",
+    "scope": "all",
+    "split": "dev",
+    "grades": {
+      "SIM-004-current": 3,
+      "SIM-004-old": 1
+    },
+    "top_path": "00_SYNTHETIC/SIM-004.md",
+    "expected_sha": "e5a683edae95e0cd3f514398cce329c591b530c66f8436e53851bb14aa971c95",
+    "expected_status": "OK",
+    "expected_version": "v2",
+    "duplicate_paths": [
+      "00_SYNTHETIC/SIM-004.md",
+      "00_SYNTHETIC/archive/SIM-004-copy.md"
+    ]
+  },
+  {
+    "id": "Q21",
+    "kind": "exact_id",
+    "term": "SIM-005",
+    "scope": "all",
+    "split": "dev",
+    "grades": {
+      "SIM-005-current": 3,
+      "SIM-005-old": 1
+    },
+    "top_path": "00_SYNTHETIC/SIM-005.md",
+    "expected_sha": "5233d835ba841c3dfee292d3752f94561e3ad3d6010133a638611c5a019c47aa",
+    "expected_status": "OK",
+    "expected_version": "v2",
+    "duplicate_paths": [
+      "00_SYNTHETIC/SIM-005.md",
+      "00_SYNTHETIC/archive/SIM-005-copy.md"
+    ]
+  },
+  {
+    "id": "Q22",
+    "kind": "hangul_infix",
+    "term": "량측정노",
+    "scope": "all",
+    "split": "dev",
+    "grades": {
+      "SIM-005-current": 3,
+      "SIM-005-old": 1
+    },
+    "top_path": "00_SYNTHETIC/SIM-005.md",
+    "expected_sha": "5233d835ba841c3dfee292d3752f94561e3ad3d6010133a638611c5a019c47aa",
+    "expected_status": "OK",
+    "expected_version": "v2",
+    "duplicate_paths": [
+      "00_SYNTHETIC/SIM-005.md",
+      "00_SYNTHETIC/archive/SIM-005-copy.md"
+    ]
+  },
+  {
+    "id": "Q23",
+    "kind": "body_only",
+    "term": "렌즈투과가정",
+    "scope": "all",
+    "split": "dev",
+    "grades": {
+      "SIM-005-current": 3,
+      "SIM-005-old": 1
+    },
+    "top_path": "00_SYNTHETIC/SIM-005.md",
+    "expected_sha": "5233d835ba841c3dfee292d3752f94561e3ad3d6010133a638611c5a019c47aa",
+    "expected_status": "OK",
+    "expected_version": "v2",
+    "duplicate_paths": [
+      "00_SYNTHETIC/SIM-005.md",
+      "00_SYNTHETIC/archive/SIM-005-copy.md"
+    ]
+  },
+  {
+    "id": "Q26",
+    "kind": "exact_id",
+    "term": "SIM-006",
+    "scope": "all",
+    "split": "dev",
+    "grades": {
+      "SIM-006-current": 3,
+      "SIM-006-old": 1
+    },
+    "top_path": "00_SYNTHETIC/SIM-006.md",
+    "expected_sha": "b1957a5c47dd10467cd95f5b7c5e420374d2e41efb249ce54bd081e7d2f2dcef",
+    "expected_status": "OK",
+    "expected_version": "v2",
+    "duplicate_paths": [
+      "00_SYNTHETIC/SIM-006.md",
+      "00_SYNTHETIC/archive/SIM-006-copy.md"
+    ]
+  },
+  {
+    "id": "Q27",
+    "kind": "hangul_infix",
+    "term": "토온도기",
+    "scope": "all",
+    "split": "dev",
+    "grades": {
+      "SIM-006-current": 3,
+      "SIM-006-old": 1
+    },
+    "top_path": "00_SYNTHETIC/SIM-006.md",
+    "expected_sha": "b1957a5c47dd10467cd95f5b7c5e420374d2e41efb249ce54bd081e7d2f2dcef",
+    "expected_status": "OK",
+    "expected_version": "v2",
+    "duplicate_paths": [
+      "00_SYNTHETIC/SIM-006.md",
+      "00_SYNTHETIC/archive/SIM-006-copy.md"
+    ]
+  },
+  {
+    "id": "Q30",
+    "kind": "jamo_intent",
+    "term": "ㅂㅊㅂㅎ",
+    "scope": "all",
+    "split": "dev",
+    "grades": {
+      "SIM-006-current": 3,
+      "SIM-006-old": 1
+    },
+    "top_path": "00_SYNTHETIC/SIM-006.md",
+    "expected_sha": "b1957a5c47dd10467cd95f5b7c5e420374d2e41efb249ce54bd081e7d2f2dcef",
+    "expected_status": "OK",
+    "expected_version": "v2",
+    "duplicate_paths": [
+      "00_SYNTHETIC/SIM-006.md",
+      "00_SYNTHETIC/archive/SIM-006-copy.md"
+    ]
+  },
+  {
+    "id": "Q31",
+    "kind": "exact_id",
+    "term": "SIM-007",
+    "scope": "all",
+    "split": "dev",
+    "grades": {
+      "SIM-007-current": 3,
+      "SIM-007-old": 1
+    },
+    "top_path": "00_SYNTHETIC/SIM-007.md",
+    "expected_sha": "0235c6ed458f6ef8ce6d996cd99001c1627abbc5159cb1dd75d0b3a4b53fe8fb",
+    "expected_status": "OK",
+    "expected_version": "v2",
+    "duplicate_paths": [
+      "00_SYNTHETIC/SIM-007.md",
+      "00_SYNTHETIC/archive/SIM-007-copy.md"
+    ]
+  },
+  {
+    "id": "Q34",
+    "kind": "configured_alias",
+    "term": "alias-zephyr",
+    "scope": "all",
+    "split": "dev",
+    "grades": {
+      "SIM-007-current": 3,
+      "SIM-007-old": 1
+    },
+    "top_path": "00_SYNTHETIC/SIM-007.md",
+    "expected_sha": "0235c6ed458f6ef8ce6d996cd99001c1627abbc5159cb1dd75d0b3a4b53fe8fb",
+    "expected_status": "OK",
+    "expected_version": "v2",
+    "duplicate_paths": [
+      "00_SYNTHETIC/SIM-007.md",
+      "00_SYNTHETIC/archive/SIM-007-copy.md"
+    ]
+  },
+  {
+    "id": "Q35",
+    "kind": "jamo_intent",
+    "term": "ㅍㅅㅇㅊ",
+    "scope": "all",
+    "split": "dev",
+    "grades": {
+      "SIM-007-current": 3,
+      "SIM-007-old": 1
+    },
+    "top_path": "00_SYNTHETIC/SIM-007.md",
+    "expected_sha": "0235c6ed458f6ef8ce6d996cd99001c1627abbc5159cb1dd75d0b3a4b53fe8fb",
+    "expected_status": "OK",
+    "expected_version": "v2",
+    "duplicate_paths": [
+      "00_SYNTHETIC/SIM-007.md",
+      "00_SYNTHETIC/archive/SIM-007-copy.md"
+    ]
+  },
+  {
+    "id": "Q38",
+    "kind": "body_only",
+    "term": "표면입도계수",
+    "scope": "all",
+    "split": "dev",
+    "grades": {
+      "SIM-008-current": 3,
+      "SIM-008-old": 1
+    },
+    "top_path": "00_SYNTHETIC/SIM-008.md",
+    "expected_sha": "bf5ac06ee7a997979216bc580cfae0856a65aeef198452c739f5be1116c67c11",
+    "expected_status": "OK",
+    "expected_version": "v2",
+    "duplicate_paths": [
+      "00_SYNTHETIC/SIM-008.md",
+      "00_SYNTHETIC/archive/SIM-008-copy.md"
+    ]
+  },
+  {
+    "id": "Q39",
+    "kind": "configured_alias",
+    "term": "alias-marble",
+    "scope": "all",
+    "split": "dev",
+    "grades": {
+      "SIM-008-current": 3,
+      "SIM-008-old": 1
+    },
+    "top_path": "00_SYNTHETIC/SIM-008.md",
+    "expected_sha": "bf5ac06ee7a997979216bc580cfae0856a65aeef198452c739f5be1116c67c11",
+    "expected_status": "OK",
+    "expected_version": "v2",
+    "duplicate_paths": [
+      "00_SYNTHETIC/SIM-008.md",
+      "00_SYNTHETIC/archive/SIM-008-copy.md"
+    ]
+  },
+  {
+    "id": "Q40",
+    "kind": "jamo_intent",
+    "term": "ㅍㅁㅇㄷ",
+    "scope": "all",
+    "split": "dev",
+    "grades": {
+      "SIM-008-current": 3,
+      "SIM-008-old": 1
+    },
+    "top_path": "00_SYNTHETIC/SIM-008.md",
+    "expected_sha": "bf5ac06ee7a997979216bc580cfae0856a65aeef198452c739f5be1116c67c11",
+    "expected_status": "OK",
+    "expected_version": "v2",
+    "duplicate_paths": [
+      "00_SYNTHETIC/SIM-008.md",
+      "00_SYNTHETIC/archive/SIM-008-copy.md"
+    ]
+  },
+  {
+    "id": "Q42",
+    "kind": "hangul_infix",
+    "term": "발트분석",
+    "scope": "all",
+    "split": "dev",
+    "grades": {
+      "SIM-009-current": 3,
+      "SIM-009-old": 1
+    },
+    "top_path": "00_SYNTHETIC/SIM-009.md",
+    "expected_sha": "77fc92dc11eb4ea235ca4fb0149600cc59543d902c0ff08c86c9f43bb0d3bc09",
+    "expected_status": "OK",
+    "expected_version": "v2",
+    "duplicate_paths": [
+      "00_SYNTHETIC/SIM-009.md",
+      "00_SYNTHETIC/archive/SIM-009-copy.md"
+    ]
+  },
+  {
+    "id": "Q43",
+    "kind": "body_only",
+    "term": "파장교정실험",
+    "scope": "all",
+    "split": "dev",
+    "grades": {
+      "SIM-009-current": 3,
+      "SIM-009-old": 1
+    },
+    "top_path": "00_SYNTHETIC/SIM-009.md",
+    "expected_sha": "77fc92dc11eb4ea235ca4fb0149600cc59543d902c0ff08c86c9f43bb0d3bc09",
+    "expected_status": "OK",
+    "expected_version": "v2",
+    "duplicate_paths": [
+      "00_SYNTHETIC/SIM-009.md",
+      "00_SYNTHETIC/archive/SIM-009-copy.md"
+    ]
+  },
+  {
+    "id": "Q44",
+    "kind": "configured_alias",
+    "term": "alias-cobalt",
+    "scope": "all",
+    "split": "dev",
+    "grades": {
+      "SIM-009-current": 3,
+      "SIM-009-old": 1
+    },
+    "top_path": "00_SYNTHETIC/SIM-009.md",
+    "expected_sha": "77fc92dc11eb4ea235ca4fb0149600cc59543d902c0ff08c86c9f43bb0d3bc09",
+    "expected_status": "OK",
+    "expected_version": "v2",
+    "duplicate_paths": [
+      "00_SYNTHETIC/SIM-009.md",
+      "00_SYNTHETIC/archive/SIM-009-copy.md"
+    ]
+  },
+  {
+    "id": "Q46",
+    "kind": "exact_id",
+    "term": "SIM-010",
+    "scope": "all",
+    "split": "dev",
+    "grades": {
+      "SIM-010-current": 3,
+      "SIM-010-old": 1
+    },
+    "top_path": "00_SYNTHETIC/SIM-010.md",
+    "expected_sha": "7c2313078f515fb676826bd9ea4cdd7337c96e350f49a934ed1e49eb7ed7b858",
+    "expected_status": "OK",
+    "expected_version": "v2",
+    "duplicate_paths": [
+      "00_SYNTHETIC/SIM-010.md",
+      "00_SYNTHETIC/archive/SIM-010-copy.md"
+    ]
+  },
+  {
+    "id": "Q47",
+    "kind": "hangul_infix",
+    "term": "박표본대",
+    "scope": "all",
+    "split": "dev",
+    "grades": {
+      "SIM-010-current": 3,
+      "SIM-010-old": 1
+    },
+    "top_path": "00_SYNTHETIC/SIM-010.md",
+    "expected_sha": "7c2313078f515fb676826bd9ea4cdd7337c96e350f49a934ed1e49eb7ed7b858",
+    "expected_status": "OK",
+    "expected_version": "v2",
+    "duplicate_paths": [
+      "00_SYNTHETIC/SIM-010.md",
+      "00_SYNTHETIC/archive/SIM-010-copy.md"
+    ]
+  },
+  {
+    "id": "Q48",
+    "kind": "body_only",
+    "term": "수지경화시간",
+    "scope": "all",
+    "split": "dev",
+    "grades": {
+      "SIM-010-current": 3,
+      "SIM-010-old": 1
+    },
+    "top_path": "00_SYNTHETIC/SIM-010.md",
+    "expected_sha": "7c2313078f515fb676826bd9ea4cdd7337c96e350f49a934ed1e49eb7ed7b858",
+    "expected_status": "OK",
+    "expected_version": "v2",
+    "duplicate_paths": [
+      "00_SYNTHETIC/SIM-010.md",
+      "00_SYNTHETIC/archive/SIM-010-copy.md"
+    ]
+  }
+]

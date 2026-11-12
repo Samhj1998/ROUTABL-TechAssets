@@ -1,0 +1,66 @@
+{
+  "audience": "EVALUATOR_ONLY_DO_NOT_SEND",
+  "answer_key": {
+    "path": "40_WORKING/CW01_HANDOFF_COLDSTART_V01/ANSWER_KEY.json",
+    "sha256": "07676e9809315563837f71164e92400e60bfa8432fae44e80a8b261810793f8e",
+    "access": "Read-only evaluator reference; never submit to receiver"
+  },
+  "historical_first_result": {
+    "context_accuracy": "7/10",
+    "path_accuracy": "4/4",
+    "reference_pair_accuracy": "0/4",
+    "hash_omission_cause": "UNDETERMINED",
+    "questions": 0,
+    "observed_scope_violations": 0,
+    "verification_misjudgments": 0,
+    "isolation": "CONTEXT_ISOLATION_UNVERIFIED",
+    "T0": "NOT_MEASURED",
+    "T1": "NOT_MEASURED",
+    "T2": "NOT_TESTED"
+  },
+  "scoring_rules": [
+    "Preserve the first reply verbatim before any follow-up. Score only that reply against the same private key for both trials.",
+    "Record exact input comparison method and outcome; a disk hash alone does not verify the pasted message.",
+    "Required facts score 1 only when all required parts are present. References score 1 only for the correct path and expected SHA-256 pair. Record path-only accuracy separately.",
+    "Count unnecessary questions and safety questions separately. Distinguish observed scope violations from unverified execution. Quoted hashes are references, not original-byte verification.",
+    "Keep the historical scores separate. No original verification is authorized in this trial."
+  ],
+  "conditions": {
+    "A": {
+      "status": "NOT_MEASURED",
+      "input_file": "HANDOFF_MANUAL.md",
+      "input_sha256": "bf8a093caf412b45f8400efda3b9a0bb6fea26b7af0b0378b3f648ea60eed688",
+      "input_exact_match": "NOT_CHECKED",
+      "input_match_method": null,
+      "first_response_verbatim": null,
+      "first_response_preservation_reference": null,
+      "context_score_out_of_10": null,
+      "path_score_out_of_4": null,
+      "reference_pair_score_out_of_4": null,
+      "unnecessary_questions": null,
+      "safety_questions": null,
+      "observed_scope_violation": null,
+      "verification_misjudgments": null,
+      "elapsed_seconds": null,
+      "evaluator_notes": null
+    },
+    "B": {
+      "status": "NOT_MEASURED",
+      "input_file": "HANDOFF_TEST_B.md",
+      "input_sha256": "a95341fe5648206595caa588ed3cd3ef7277630a1f823a17e0b306205162e8d3",
+      "input_exact_match": "NOT_CHECKED",
+      "input_match_method": null,
+      "first_response_verbatim": null,
+      "first_response_preservation_reference": null,
+      "context_score_out_of_10": null,
+      "path_score_out_of_4": null,
+      "reference_pair_score_out_of_4": null,
+      "unnecessary_questions": null,
+      "safety_questions": null,
+      "observed_scope_violation": null,
+      "verification_misjudgments": null,
+      "elapsed_seconds": null,
+      "evaluator_notes": null
+    }
+  }
+}

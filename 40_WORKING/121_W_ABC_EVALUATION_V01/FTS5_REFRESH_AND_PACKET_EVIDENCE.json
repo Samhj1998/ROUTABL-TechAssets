@@ -1,0 +1,153 @@
+{
+  "dev_queries": 30,
+  "dev_reference_full_object_checks": 90,
+  "mocked_dependencies": [
+    "v1.3 synthetic root and paths",
+    "read-only text classifier for synthetic Markdown",
+    "synthetic tag helper",
+    "impossible PII regex for fixed literals",
+    "injected local load_engine",
+    "fixed 2272 synthetic baseline, including two synthetic protected rows"
+  ],
+  "package": {
+    "A_V15_QUERY_REFERENCE.py": {
+      "bytes": 7811,
+      "sha": "10ecc1343744cfc0697ed5e6d634c6040231766f69a0bb33e861e63c36b98231"
+    },
+    "COMMON_ANALYSIS_PACKET_V01.md": {
+      "bytes": 1944,
+      "sha": "d88a5a12e4a814105991fce95391079e7cdd22cddee0296d5ad33d3812c69bba"
+    },
+    "COMMON_TEST_SPEC.md": {
+      "bytes": 3471,
+      "sha": "552bb8111f703048e657a26922954f2739156362efa37f54f5f7e5cf1e254f6d"
+    },
+    "SYNTHETIC_CORPUS_V01.json": {
+      "bytes": 1097578,
+      "sha": "840ecf1ea98a59fa20d499e559205ceae130c513aa68531e295cb129e01a7b8b"
+    },
+    "SYNTHETIC_DEV_FIXTURE_V01.sqlite": {
+      "bytes": 3325952,
+      "sha": "d1b5045dd3a7669a076fe790bb038c4461e27a0062c16f0492afc2e78bd6b158"
+    },
+    "SYNTHETIC_DEV_V01.json": {
+      "bytes": 14829,
+      "sha": "db2fca0951c1c43d30da560d7ecafd6c967e7ff9389c21c773b347714a93f3a1"
+    }
+  },
+  "refresh_with_original_function_bodies": {
+    "delete": {
+      "generation_keys": [
+        "renamed.md"
+      ],
+      "matches": {
+        "deletemarker": 0,
+        "newmarker": 1,
+        "oldmarker": 0
+      },
+      "misalignment": 0,
+      "orphan_ft": 0,
+      "rollback_matches_prior_active": false,
+      "rollback_rows": 2274,
+      "worker": "complete"
+    },
+    "initial": {
+      "generation_keys": [
+        "delete.md",
+        "old.md"
+      ],
+      "matches": {
+        "deletemarker": 1,
+        "newmarker": 0,
+        "oldmarker": 1
+      },
+      "misalignment": 0,
+      "orphan_ft": 0,
+      "rollback_matches_prior_active": false,
+      "rollback_rows": 2272,
+      "worker": "complete"
+    },
+    "rename": {
+      "generation_keys": [
+        "delete.md",
+        "renamed.md"
+      ],
+      "matches": {
+        "deletemarker": 1,
+        "newmarker": 1,
+        "oldmarker": 0
+      },
+      "misalignment": 0,
+      "orphan_ft": 0,
+      "rollback_matches_prior_active": false,
+      "rollback_rows": 2274,
+      "worker": "complete"
+    },
+    "same_size_and_mtime_source_update": {
+      "generation_keys": [
+        "delete.md",
+        "old.md"
+      ],
+      "matches": {
+        "deletemarker": 1,
+        "newmarker": 1,
+        "oldmarker": 0
+      },
+      "misalignment": 0,
+      "orphan_ft": 0,
+      "rollback_matches_prior_active": false,
+      "rollback_rows": 2274,
+      "worker": "complete"
+    }
+  },
+  "screen_hits_count": {
+    "A_V15_QUERY_REFERENCE.py": {
+      "credential_assignment": 0,
+      "email": 0,
+      "korean_identity": 0,
+      "korean_mobile": 0,
+      "private_key": 0,
+      "token_like": 0
+    },
+    "COMMON_ANALYSIS_PACKET_V01.md": {
+      "credential_assignment": 0,
+      "email": 0,
+      "korean_identity": 0,
+      "korean_mobile": 0,
+      "private_key": 0,
+      "token_like": 0
+    },
+    "COMMON_TEST_SPEC.md": {
+      "credential_assignment": 0,
+      "email": 0,
+      "korean_identity": 0,
+      "korean_mobile": 0,
+      "private_key": 0,
+      "token_like": 0
+    },
+    "SYNTHETIC_CORPUS_V01.json": {
+      "credential_assignment": 0,
+      "email": 0,
+      "korean_identity": 0,
+      "korean_mobile": 0,
+      "private_key": 0,
+      "token_like": 0
+    },
+    "SYNTHETIC_DEV_V01.json": {
+      "credential_assignment": 0,
+      "email": 0,
+      "korean_identity": 0,
+      "korean_mobile": 0,
+      "private_key": 0,
+      "token_like": 0
+    }
+  },
+  "synthetic_metadata_diff": {
+    "fixture_carrier": "path",
+    "fixture_kind": ".md",
+    "fixture_mtime_ns": 100,
+    "historical_carrier": "SYNTHETIC",
+    "historical_kind": "FILE",
+    "historical_mtime_ns": 1
+  }
+}

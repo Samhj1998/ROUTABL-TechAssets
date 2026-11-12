@@ -1,0 +1,110 @@
+[
+  {
+    "test": "latest registry byte pin and schema",
+    "result": "PASS",
+    "evidence": {
+      "latest": "asset_manifest_v0.27.json",
+      "sha256": "afe17adb54103952c0e84d296ded42a478fca49f25bd53f1f87dc0c73e1ce244",
+      "rows": 162
+    }
+  },
+  {
+    "test": "legacy query regression after seeding",
+    "result": "PASS",
+    "evidence": {
+      "post_overlay_cases": 9,
+      "checks": "result order, score, group counts, manual counts"
+    }
+  },
+  {
+    "test": "legacy official crosswalk source 1",
+    "result": "PASS",
+    "evidence": {
+      "asset_id": "TA-CASE-20261102-01",
+      "source_version": null,
+      "source_path": "/Users/yongho/StudioProjects/ROUTIVEL-Firebase-Migration/tools/firebase-migration/cloud_access.py",
+      "expected_sha256": "de08b060d03a6b6c9f155cf89673f2285a67502cf664442b1a9bc835529a54e5",
+      "expected_size_bytes": 3995,
+      "registration": "OFFICIAL_ROW",
+      "registry_version": "0.27",
+      "registry_sha256": "afe17adb54103952c0e84d296ded42a478fca49f25bd53f1f87dc0c73e1ce244",
+      "observed_sha256": "de08b060d03a6b6c9f155cf89673f2285a67502cf664442b1a9bc835529a54e5",
+      "status": "LOCAL_HASH_MATCH",
+      "observed_size_bytes": 3995
+    }
+  },
+  {
+    "test": "legacy official crosswalk source 2",
+    "result": "PASS",
+    "evidence": {
+      "asset_id": "INTEGRATION-F1",
+      "source_version": null,
+      "source_path": "/Users/yongho/StudioProjects/DISPATCH-One-Android/app/src/main/java/com/routivel/driver/TransportStatusPolicy.kt",
+      "expected_sha256": "5494734c4599b051c545523ed9142c52919c21d5d04bdd4f8dc3436dd41d8e03",
+      "expected_size_bytes": 3864,
+      "registration": "OFFICIAL_ROW",
+      "registry_version": "0.27",
+      "registry_sha256": "afe17adb54103952c0e84d296ded42a478fca49f25bd53f1f87dc0c73e1ce244",
+      "observed_sha256": "5494734c4599b051c545523ed9142c52919c21d5d04bdd4f8dc3436dd41d8e03",
+      "status": "LOCAL_HASH_MATCH",
+      "observed_size_bytes": 3864
+    }
+  },
+  {
+    "test": "seven actual search references",
+    "result": "PASS",
+    "evidence": {
+      "found": 7,
+      "classification_preserved": true
+    }
+  },
+  {
+    "test": "missing, tampered, symlinked, or unbound source",
+    "result": "PASS",
+    "evidence": [
+      "byte mutation",
+      "indexed hash mismatch",
+      "missing",
+      "file symlink",
+      "directory symlink"
+    ]
+  },
+  {
+    "test": "future, tampered, or conflicting registry",
+    "result": "PASS",
+    "evidence": [
+      "numeric latest",
+      "future pin absent",
+      "tampered pin",
+      "duplicate version"
+    ]
+  },
+  {
+    "test": "user registration and local-only content",
+    "result": "PASS",
+    "evidence": [
+      "new row",
+      "idempotence",
+      "collision rejection",
+      "no source text indexing",
+      "no automatic export",
+      "traversal rejection"
+    ]
+  },
+  {
+    "test": "idempotent baseline registry",
+    "result": "PASS",
+    "evidence": {
+      "idempotent_count": 7
+    }
+  },
+  {
+    "test": "initial handoff allowlist",
+    "result": "PASS",
+    "evidence": {
+      "phase": "initial",
+      "records": 7,
+      "export": "static allowlist; paths and evidence metadata only"
+    }
+  }
+]

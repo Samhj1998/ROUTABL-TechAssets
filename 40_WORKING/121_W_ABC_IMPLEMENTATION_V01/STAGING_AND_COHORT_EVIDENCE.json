@@ -1,0 +1,57 @@
+{
+  "aggregates": {
+    "dev": {
+      "cohorts": {
+        "dense": 0,
+        "medium": 0,
+        "selective": 24,
+        "zero": 6
+      },
+      "kinds": {
+        "asset_id": 6,
+        "body_only": 6,
+        "configured_alias": 6,
+        "hangul_infix": 6,
+        "jamo_intent": 6
+      }
+    },
+    "holdout": {
+      "cohorts": {
+        "dense": 0,
+        "medium": 0,
+        "selective": 16,
+        "zero": 4
+      },
+      "kinds": {
+        "asset_id": 4,
+        "body_only": 4,
+        "configured_alias": 4,
+        "hangul_infix": 4,
+        "jamo_intent": 4
+      }
+    }
+  },
+  "cohort_sha": "a5aa8fac99eaddf410a89fa7a7b0a05bdd9c9e298473557b1dd01efe9ec43efc",
+  "inputs": {
+    "A_V15_QUERY_REFERENCE.py": "10ecc1343744cfc0697ed5e6d634c6040231766f69a0bb33e861e63c36b98231",
+    "COMMON_ANALYSIS_PACKET_V01.md": "d88a5a12e4a814105991fce95391079e7cdd22cddee0296d5ad33d3812c69bba",
+    "COMMON_TEST_SPEC.md": "552bb8111f703048e657a26922954f2739156362efa37f54f5f7e5cf1e254f6d",
+    "FTS5_COMMON_FACTS_V01.md": "db07e512bd349c6ff04d9bf898f94ff9ddde5f38f5bb9e5fb9c439b6921e50e1",
+    "SYNTHETIC_CORPUS_V01.json": "840ecf1ea98a59fa20d499e559205ceae130c513aa68531e295cb129e01a7b8b",
+    "SYNTHETIC_DEV_FIXTURE_V01.sqlite": "d1b5045dd3a7669a076fe790bb038c4461e27a0062c16f0492afc2e78bd6b158",
+    "SYNTHETIC_DEV_V01.json": "db2fca0951c1c43d30da560d7ecafd6c967e7ff9389c21c773b347714a93f3a1"
+  },
+  "locked_at_kst": "2026-11-08T13:14:36+09:00",
+  "originals": {
+    "/Users/yongho/121_CHATGPT_B_V01/output/ANALYSIS_B.md": "c06379618720e1d982f0aae79d43d798775ea283659a8b6306ed0e5185ab8a8a",
+    "/Users/yongho/121_CLAUDE_ISOLATED_V01/output/ANALYSIS_C.md": "d534a406094e4e42d146fb0640d77e10b97667c72cf08452258f09244e0976c7",
+    "/Users/yongho/Library/Application Support/ROUTABL-AssetSearch/assets_v1_5.sqlite": "c5a800f36aaaeddd1b5aad086403df115fa8f99fb8f616271421e89dff71cba4",
+    "/Users/yongho/Library/Application Support/ROUTABL-AssetSearch/routabl_search_v1_5_service.py": "55b8747b145463c62366deba13904e3136893b8a611bb4ae94bbc2d7a642347d"
+  },
+  "prompt_sha": "e22dd54c0a9047c5d5e72f282d98bcc75ba8f28dfa9d854c672ebbd4899402c0",
+  "prompt_size": 3895,
+  "roots": {
+    "B": "/Users/yongho/121_CHATGPT_B_V01/implementation",
+    "C": "/Users/yongho/121_CLAUDE_ISOLATED_V01/implementation"
+  }
+}

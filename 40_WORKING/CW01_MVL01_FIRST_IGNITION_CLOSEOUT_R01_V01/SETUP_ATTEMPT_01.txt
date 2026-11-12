@@ -1,0 +1,1 @@
+Setup PID 94328 copied verified files and wrote source evidence. Its local orchestration omitted the subprocess import and stopped before launching the check command. The import was restored in the orchestration; no candidate, scope runner or DB was modified by this error.

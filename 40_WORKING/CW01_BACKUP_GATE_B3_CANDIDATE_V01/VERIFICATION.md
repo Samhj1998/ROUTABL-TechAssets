@@ -1,0 +1,106 @@
+# Backup Gate B3 verification
+
+- KST window: 2026-11-07T15:04:47+09:00 to 2026-11-07T15:04:47+09:00
+- Device: MacStudioui-MacStudio.local (c377300b-a710-43a6-8169-f17e87175403)
+- Test command: /Library/Developer/CommandLineTools/usr/bin/python3 -B test_backup_gate_b3.py
+- Synthetic tests: 22/22; Python exit 0.
+- Historical incident trigger: ROOT_CAUSE_UNVERIFIED.
+- Repository inventory outside candidate: 430 before / 430 after; changed 0.
+- Inventory compares inode, mode and owner; file size, mtime and ctime; symlink target. Directory timestamps are excluded.
+- Allowlisted SHA-256 files: 45/45; changes 0.
+- Approval file: metadata only, unchanged=True, exists=True. No approval or secret bytes opened.
+- Installed binaries found in inspected application folders: 0; observed schedule projections unchanged=True.
+- Step 5-C target existence before / after: [False, False, False] / [False, False, False] (registry, output contract, access policy).
+- Production backup, real process-lock/timeout behavior, deployment, media and restore: NOT_TESTED.
+- SSD/NAS media, service settings outside the launchctl projection and unlisted external files: no full invariance audit.
+- 11/8 scheduled run is outside this test. Step 5-C remains BLOCKED.
+
+## Candidate SHA-256 (read back from disk)
+
+- ACCEPTANCE_CRITERIA.md: fb44ad57dbd121dcd805c7afa7ab466e73547ccefb18eea54e86e28d803a7715
+- APPROVAL_PIN_IMPACT.md: f8f3b95f78ba389da5b4f9d650db885dd7fee2cb2ba88862e4a6f383df7118ca
+- DEFECT_AND_DESIGN.md: 8e97675d2b33afffe77727e7ca91f30bd2164d8ea7ceb986321fb7f77303f054
+- SINGLE_SCHEDULE_CUTOVER.md: da7eeda2d8d646f66777933d1cea1b362c7dec0793d17b71c124f143338dc5c4
+- TEST_RESULTS.json: 9b7cc59e63125f96dc68551c73641d631b6e63e31597563a2283165c2f065468
+- backup_runner_candidate.py: ced384e9890a30f504a1babd5d9cc9e2b4733b127d41d763446498c273dbcd92
+- backup_supervisor_candidate.py: cf36c46dd3c391b5133f39f59f27ed42fcaa98b78de3eb0008628a3ee5feb972
+- test_backup_gate_b3.py: 59f55b4f79fc02d6169a584fea9a47e5dd2d6d0a2227ffe868a67c1a2ae5ca10
+- VERIFICATION.md: own digest is recorded in Work output after final readback.
+
+## Protected file SHA-256
+
+- /Users/yongho/Library/Logs/ROUTABL-AssetBackup/last_manual_mac_nas_cas_v01.json: 65961c4e3a542eae354f438935f8b1ce742b63455521327435c6864fd4afacfc
+- /Users/yongho/Library/Logs/ROUTABL-AssetBackup/last_native_backup_supervisor_v01.json: 471596b65e1fc8c3abb3fb951cd8da5cae92e7f21168528aafebc9f40071fc11
+- /Users/yongho/Library/Logs/ROUTABL-AssetBackup/last_native_backup_supervisor_v02.json: 6c3cd6eb058111df8279a77e9e5b5f8e16173ec6ae6de4ba3eeab0cb0b5af7e3
+- /Users/yongho/Library/Logs/ROUTABL-AssetBackup/last_native_launchagent_v03.json: babeaec77b1126a7dcac597aae8dada6c921a8cd38f3fec270f12d67b869bed3
+- /Users/yongho/Library/Logs/ROUTABL-AssetBackup/last_native_launchagent_v04.json: 89242c78a5ddb9422df612bbb974b2b5a0f04e28a9235443726048a2ae97dd84
+- /Users/yongho/Library/Logs/ROUTABL-AssetBackup/last_selective_nas_v21_result.json: a0cacf4c15c68063e75ab4da6857ea4f0dd9d39c665d6dcb872814bd8b3bf2b8
+- /Users/yongho/Library/Logs/ROUTABL-AssetBackup/last_selective_v21_result.json: 374cf9b884a079dd383ec313d0508ee2c69101387201d078b5604c88757ca2ea
+- /Users/yongho/ROUTABL-TechAssets/00_GUIDE/DIGITOPIA_CHAT_WORK_PROTOCOL_v1.0.md: 7b48c1deb08ab1c8904541f7c9acedbf2406e51f510fbccf0d7ae17609d585d1
+- /Users/yongho/ROUTABL-TechAssets/00_GUIDE/ROUTABL_3TIER_ASSET_PROTECTION_AND_RESTORATION_PRINCIPLE_TI01_v1.0_20261106.md: 21833f37c1c0e686743dca77a341577db9b2f0e97d93a8773a25fc8955711132
+- /Users/yongho/ROUTABL-TechAssets/00_GUIDE/ROUTABL_BackupHeadlessSupervisor_v0_1.py: c2417c49daa17b99db9aae9ebbd74a67e81e0931ffd4ca264e5304d25e74c970
+- /Users/yongho/ROUTABL-TechAssets/00_GUIDE/ROUTABL_BackupHeadlessSupervisor_v0_2.py: 49a1533b22a166715bd606c3c151f89d24752c653c5c119f5107267af640f878
+- /Users/yongho/ROUTABL-TechAssets/00_GUIDE/ROUTABL_HeadlessDailyGate_v0_3.py: 4992b2213bf2598c55a6ab68dd5bf35c501258d47e1e4780765c2a67343a3ce5
+- /Users/yongho/ROUTABL-TechAssets/00_GUIDE/ROUTABL_MacToNasOneShot_v0_1.py: 2283dcd37881494d84a0c05f4a04c778543fe8084d882ec7b0567c48d3615552
+- /Users/yongho/ROUTABL-TechAssets/00_GUIDE/ROUTABL_NAS_ContentAwareBackup_v0_2.py: fa370842507ae0afb1e11ede46d1a0f72ab4736c60329c8aa18f94c797794631
+- /Users/yongho/ROUTABL-TechAssets/00_GUIDE/ROUTABL_SelectiveSecureBackup_v2_1.py: f365dfec0b0053f5c124a7440e5fe0bdcf8ccef0b74b639a8b3473288b42186c
+- /Users/yongho/ROUTABL-TechAssets/00_GUIDE/ROUTABL_VERSION_INDEPENDENCE_PRINCIPLE_v1.0_20261106.md: 86c79cd8cc11aac2aed2054c9f92ad445050ce5cfb6f17f17b355f75b4c4eb54
+- /Users/yongho/ROUTABL-TechAssets/30_REGISTRY/asset_manifest_v0.1.json: d9fd437b6773db8d1494be6906f06a9b7b8c39e75d8d69a019e8f600f3929215
+- /Users/yongho/ROUTABL-TechAssets/30_REGISTRY/asset_manifest_v0.10.json: 39510a6c57d40b6a3b148aedba08e185417fa41b4f9001facb11f783657a415f
+- /Users/yongho/ROUTABL-TechAssets/30_REGISTRY/asset_manifest_v0.11.json: 64b4fa4fe79fd06880b7d12edd5e842ba9856718a82737b4abb715c91f53601c
+- /Users/yongho/ROUTABL-TechAssets/30_REGISTRY/asset_manifest_v0.12.json: 8cd3c14f6883d92689af60129162d1775270a942348ddfaefe3a1b4079138d5d
+- /Users/yongho/ROUTABL-TechAssets/30_REGISTRY/asset_manifest_v0.13.json: 7e31a60be05b8528292433bd44cdad10d02ecae7e3f79056b437fdef9800929d
+- /Users/yongho/ROUTABL-TechAssets/30_REGISTRY/asset_manifest_v0.14.json: f2e7d88d16b6b2aa98d8cc53ed6cbf099f8b19bc4c7cbce072b1ee62ffd7233d
+- /Users/yongho/ROUTABL-TechAssets/30_REGISTRY/asset_manifest_v0.15.json: cc84d033c02ee215ce8a1cf0f7635f3c541295a34bfa0f1f1da6175121fdeda2
+- /Users/yongho/ROUTABL-TechAssets/30_REGISTRY/asset_manifest_v0.16.json: 7b47fc552ce2edd3a44f0a7f93b52deb8309dfc89229c80a9c7592ddbc8ba96b
+- /Users/yongho/ROUTABL-TechAssets/30_REGISTRY/asset_manifest_v0.17.json: 5681f2b4f74928655caeb77f23a214ebc4584ce6c422dfa82fe491bc04bb7f0b
+- /Users/yongho/ROUTABL-TechAssets/30_REGISTRY/asset_manifest_v0.18.json: f1a01ce4e84b515ea6bbb2b6b37308f2c13f9cfa94f62c23895a45cd00923b06
+- /Users/yongho/ROUTABL-TechAssets/30_REGISTRY/asset_manifest_v0.19.json: f8c6837c4d2a238c5d5ebe66df1c3ee5c9ba77d3dda3e2aa59222684b4d3e49b
+- /Users/yongho/ROUTABL-TechAssets/30_REGISTRY/asset_manifest_v0.2.json: 686fe79e01e3f3224ed0c2c996648eb6208644bb32ec3826983d09257719402c
+- /Users/yongho/ROUTABL-TechAssets/30_REGISTRY/asset_manifest_v0.20.json: f99281b98c0fca31e2ccd4d5f6a77d89791d5bfae6f4a2f6caf96a1eafbd7b4d
+- /Users/yongho/ROUTABL-TechAssets/30_REGISTRY/asset_manifest_v0.21.json: 5daf11b02fa0e1ab4f6bfadcb1970b5e623503ef6e9cbab2e08fa015a1a853da
+- /Users/yongho/ROUTABL-TechAssets/30_REGISTRY/asset_manifest_v0.22.json: f4895969dce0855cecc2b2bd575758d134322ec6911b7743fec4a53f2e8918a0
+- /Users/yongho/ROUTABL-TechAssets/30_REGISTRY/asset_manifest_v0.23.json: d1c3437f32e66f6c42076b2c9d328714007aabe1bf611f24c15639dfa8c3e49d
+- /Users/yongho/ROUTABL-TechAssets/30_REGISTRY/asset_manifest_v0.24.json: 48f54ebb88666c5891163e283fb3b3548e4760cd9c20e13dfdeff0a141f283c1
+- /Users/yongho/ROUTABL-TechAssets/30_REGISTRY/asset_manifest_v0.25.json: c0daf1cb5714fff8a5d9dcd2bc24867098d01875e29b5eb69013780b2e7c8216
+- /Users/yongho/ROUTABL-TechAssets/30_REGISTRY/asset_manifest_v0.26.json: aec9ed1a2b255f66a8cdbe32961e99a46f42861fa4c244eedf9132cbc4b5643d
+- /Users/yongho/ROUTABL-TechAssets/30_REGISTRY/asset_manifest_v0.27.json: afe17adb54103952c0e84d296ded42a478fca49f25bd53f1f87dc0c73e1ce244
+- /Users/yongho/ROUTABL-TechAssets/30_REGISTRY/asset_manifest_v0.3.json: e94ecbfa40b3af2b3713ae2507c0dff61ef7bc0282b43e267e8c657c30585822
+- /Users/yongho/ROUTABL-TechAssets/30_REGISTRY/asset_manifest_v0.4.json: 80cbd27733c22699bef9e35eb46e871a094a7c6b7cb54cdd448c820e2533bf4f
+- /Users/yongho/ROUTABL-TechAssets/30_REGISTRY/asset_manifest_v0.5.json: d0dd2700bc072ef2db55bccecfd428f62360bbc3ec4bbdb40b07a402b60c4d12
+- /Users/yongho/ROUTABL-TechAssets/30_REGISTRY/asset_manifest_v0.6.json: 5efa3cd63a8c780e27ff7c474b7029b968d56bcbbe7299bb74adeaf0020d0a54
+- /Users/yongho/ROUTABL-TechAssets/30_REGISTRY/asset_manifest_v0.7.json: 5d124567508150c384e69b9110648da4c3f6fbebb7aad8a396e6e760e28386cb
+- /Users/yongho/ROUTABL-TechAssets/30_REGISTRY/asset_manifest_v0.8.json: f888b3f01aa000bc5f622f31ffd9e4a10090c12c44eea94e6063ce036f96c0c1
+- /Users/yongho/ROUTABL-TechAssets/30_REGISTRY/asset_manifest_v0.9.json: 88008d8cd7f0deb44e9708fc004abf42998b2ee52e55470d48e72f2579699636
+- /Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_HANDOFF_POC_V01/VERIFICATION_RETEST.md: e1fb4a7504d08cd234621c020439e57578145e5277d66d1a842f2a46bc759bbf
+- /Users/yongho/ROUTABL-TechAssets/60_AUDIT/120-2-W_CW01_STEP2_VERIFICATION_v1.0.md: ab56b5518120d93a300549757eb6f8c854989b339622367b73907d320a25e56d
+
+## Registration projection
+
+{
+  "com.routabl.assetbackup.native.v042": [
+    0,
+    [
+      "program identifier = Contents/MacOS/ROUTABLBackupAgent (mode: 2)",
+      "parent bundle identifier = com.routabl.assetbackup.manager.v042",
+      "\"Minute\" => 30",
+      "\"Hour\" => 4"
+    ]
+  ],
+  "com.routabl.assetbackup.native.v02": [
+    0,
+    [
+      "program identifier = Contents/MacOS/ROUTABLBackupAgent (mode: 2)",
+      "parent bundle identifier = com.routabl.assetbackup.manager.v02",
+      "\"Minute\" => 30",
+      "\"Hour\" => 4"
+    ]
+  ]
+}
+
+## Differences
+
+{
+  "metadata": [],
+  "hashes": []
+}

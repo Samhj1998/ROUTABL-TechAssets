@@ -1,0 +1,60 @@
+{
+  "status": "PASS",
+  "index_path": "MVL/MVL01-FEEDBACK",
+  "table": "mvl_sources",
+  "rows_updated": 1,
+  "before": {
+    "asset_id": "MVL01-FEEDBACK",
+    "expected_sha256": "04402d26ebc08985acd63a49bba77064deb315c02b994197165adef8d8d861b3",
+    "expected_size_bytes": 2187,
+    "registration": "ISOLATED_CANDIDATE",
+    "registry_sha256": null,
+    "registry_version": null,
+    "source_path": "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_MINIMUM_VIABLE_LOOP_MVL01_V01/FEEDBACK_CANDIDATE.md",
+    "source_version": "0.1"
+  },
+  "after": {
+    "asset_id": "MVL01-FEEDBACK",
+    "expected_sha256": "04402d26ebc08985acd63a49bba77064deb315c02b994197165adef8d8d861b3",
+    "expected_size_bytes": 2187,
+    "registration": "ISOLATED_CANDIDATE",
+    "registry_sha256": null,
+    "registry_version": null,
+    "source_path": "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_MVL01_FIRST_IGNITION_CLOSEOUT_R01_V01/FEEDBACK_CANDIDATE.md",
+    "source_version": "0.1"
+  },
+  "changed_fields": [
+    "source_path"
+  ],
+  "other_rows_and_docs_sha256": {
+    "docs": {
+      "rows": 5527,
+      "sha256": "4d22c3750f14e7d7d0883231691c123ba0436a7178399b44a2b5956ec30c6bdb"
+    },
+    "manual": {
+      "rows": 3,
+      "sha256": "ba4b795187b8e1833d637840d59ea12f5e871bb1d12e556edc73accda6699ddb"
+    },
+    "mvl_sources": {
+      "rows": 7,
+      "sha256": "eb8d99c0c947c14e500a0c2f5f976cc37939666224ca8d95c9e38ab40058e8e2"
+    }
+  },
+  "integrity_check": "ok",
+  "document_sha256_before_and_after": "04402d26ebc08985acd63a49bba77064deb315c02b994197165adef8d8d861b3",
+  "document_size_bytes": 2187,
+  "initial_db_sha256": "755e7695eb3e4e4073906940999665b21248cb1dc1fbf6847c2b8bc84e310eda",
+  "rebound_db_sha256": "d01926fb55c5296d421be23c58f1b50ca8dd6efe53862be686ad03bf26f33913",
+  "original_db_sha256_after": "755e7695eb3e4e4073906940999665b21248cb1dc1fbf6847c2b8bc84e310eda",
+  "cli_check_before": {
+    "command": "/usr/bin/python3 -E -s -B scope_runner.py mvl.py check",
+    "exit_code": 0,
+    "stdout_bytes": 77,
+    "stderr": [],
+    "result": {
+      "registry_version": "0.27",
+      "rows": 5527,
+      "explicit_local_rows": 2
+    }
+  }
+}

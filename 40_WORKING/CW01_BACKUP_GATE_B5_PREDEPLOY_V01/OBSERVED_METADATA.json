@@ -1,0 +1,250 @@
+{
+  "access": "CAS manifest bytes only; did not follow component references or mount the image",
+  "field_observation": {
+    "cas": {
+      "fields": {
+        "completed": true,
+        "components": 585,
+        "created_kst": "2026-11-06T04:35:30+09:00",
+        "local_receipt_sha256": "522768f65f52c270c7c079fd43a0335258052d78f0e144f4b43cea1da9813070",
+        "local_snapshot_name": "ASSET_V21_20261106_043146_KST_59950",
+        "manifest_sha256": "f8c6837c4d2a238c5d5ebe66df1c3ee5c9ba77d3dda3e2aa59222684b4d3e49b",
+        "selection_sha256": "cbaed80d42349dd3ac38c20078f0e04db7a086039714ec698508abf83d50f8a5",
+        "total_ciphertext_bytes": 4851127156,
+        "type": "ROUTABL_CIPHERTEXT_CAS_V01"
+      },
+      "keys": [
+        "anchor_snapshot",
+        "completed",
+        "components",
+        "created_kst",
+        "files",
+        "local_receipt_sha256",
+        "local_snapshot_name",
+        "manifest_sha256",
+        "new_ciphertext_bytes_copied",
+        "new_ciphertext_components",
+        "reused_ciphertext_components",
+        "selection_sha256",
+        "source",
+        "total_ciphertext_bytes",
+        "type",
+        "warning_anchor_must_be_retained"
+      ],
+      "manifest": "CAS_ASSET_V21_20261106_043146_KST_59950.json",
+      "reference_types": [
+        "anchor",
+        "blob"
+      ],
+      "row_count": 585,
+      "row_keys": [
+        "reference",
+        "relative_path",
+        "sha256",
+        "size"
+      ],
+      "rows_sum": 4851127156,
+      "sha256": "bc078b0271d583a73cd98a441d649a845e1cc60307cf18be10d1fedcc2262109"
+    },
+    "executables": {
+      "라우터블 백업 권한·안전관리 v0.4.2.app": {
+        "binary_mode": "0o700",
+        "binary_uid": 501,
+        "bundle_mode": "0o700",
+        "bundle_uid": 501,
+        "details": [
+          "Identifier=ROUTABLBackupAgent-555549442c31417f08e5361f95a797e587dce85f",
+          "Signature=adhoc",
+          "TeamIdentifier=not set"
+        ],
+        "sha256": "53b22eabeb73e776697af2baa72702a864e4bc0b80c1137429fb10c8d192e577",
+        "strict_exit": 0
+      },
+      "라우터블 백업 자동실행 준비 v0.2.app": {
+        "binary_mode": "0o700",
+        "binary_uid": 501,
+        "bundle_mode": "0o700",
+        "bundle_uid": 501,
+        "details": [
+          "Identifier=ROUTABLBackupAgent-55554944912c631b30e03c93a2db688433bb9502",
+          "Signature=adhoc",
+          "TeamIdentifier=not set"
+        ],
+        "sha256": "2decbf7bd13b5e6916fbb54eaebaa606c869b021749d318efd9fe1ee47fa20f2",
+        "strict_exit": 0
+      }
+    },
+    "latest_registry": {
+      "name": "asset_manifest_v0.27.json",
+      "sha256": "afe17adb54103952c0e84d296ded42a478fca49f25bd53f1f87dc0c73e1ce244"
+    },
+    "local": {
+      "fields": {
+        "created_at_kst": "2026-11-06T04:31:54.446068+09:00",
+        "file_count": 3373,
+        "locked_after_backup": true,
+        "manifest_name": "asset_manifest_v0.19.json",
+        "manifest_sha256": "f8c6837c4d2a238c5d5ebe66df1c3ee5c9ba77d3dda3e2aa59222684b4d3e49b",
+        "receipt_sha256": "522768f65f52c270c7c079fd43a0335258052d78f0e144f4b43cea1da9813070",
+        "selection_sha256": "cbaed80d42349dd3ac38c20078f0e04db7a086039714ec698508abf83d50f8a5",
+        "sha256_verified": true,
+        "snapshot_name": "ASSET_V21_20261106_043146_KST_59950",
+        "source_bytes": 521588443,
+        "status": "SUCCESS"
+      },
+      "keys": [
+        "created_at_kst",
+        "file_count",
+        "isolated_restore_samples",
+        "locked_after_backup",
+        "manifest_name",
+        "manifest_sha256",
+        "receipt_sha256",
+        "selection_sha256",
+        "sha256_verified",
+        "snapshot_name",
+        "snapshot_path",
+        "source_bytes",
+        "status"
+      ],
+      "sha256": "374cf9b884a079dd383ec313d0508ee2c69101387201d078b5604c88757ca2ea"
+    },
+    "nas_copy": {
+      "fields": {
+        "local_receipt_sha256": "66c6d86f5cdb5b629ed8f716c9a150ebc76e2aa49633d56f298427f9e4713240",
+        "local_snapshot_name": "ASSET_V21_20261103_214028_KST_24533",
+        "manifest_sha256": "88008d8cd7f0deb44e9708fc004abf42998b2ee52e55470d48e72f2579699636",
+        "nas_sha256_verified": true,
+        "receipt_sha256": "6d69eff73302dd525ad9d90e26717c3c5b9edf79845521bf31895197a84ec837",
+        "selection_sha256": "ec65b6d643392a1ca4c9fce7985e46ee7ae85fdeecca2153c8d99d5f0320d8ef",
+        "status": "SUCCESS"
+      },
+      "keys": [
+        "copied_ciphertext_bytes",
+        "copied_ciphertext_file_count",
+        "day_kst",
+        "local_receipt_sha256",
+        "local_snapshot_name",
+        "manifest_sha256",
+        "nas_sha256_verified",
+        "nas_snapshot",
+        "receipt_sha256",
+        "restored_ciphertext_samples",
+        "selection_sha256",
+        "source_image_mounted",
+        "status"
+      ],
+      "sha256": "a0cacf4c15c68063e75ab4da6857ea4f0dd9d39c665d6dcb872814bd8b3bf2b8"
+    },
+    "native": {
+      "fields": {
+        "state": "BACKUP_VERIFIED_RECEIPT_CURRENT"
+      },
+      "keys": [
+        "at",
+        "backupAttempted",
+        "childExitCode",
+        "elapsedSeconds",
+        "kind",
+        "launchAgentRegistrationChanged",
+        "networkVolumeAccessAttempted",
+        "permissionsModified",
+        "phase",
+        "state"
+      ],
+      "sha256": "89242c78a5ddb9422df612bbb974b2b5a0f04e28a9235443726048a2ae97dd84"
+    },
+    "oneshot": {
+      "fields": {
+        "cas_components": 585,
+        "local_receipt_sha256": "522768f65f52c270c7c079fd43a0335258052d78f0e144f4b43cea1da9813070",
+        "local_snapshot": "ASSET_V21_20261106_043146_KST_59950",
+        "manifest_name": "asset_manifest_v0.19.json",
+        "manifest_sha256": "f8c6837c4d2a238c5d5ebe66df1c3ee5c9ba77d3dda3e2aa59222684b4d3e49b",
+        "nas_cas_manifest": "CAS_ASSET_V21_20261106_043146_KST_59950.json",
+        "selection_sha256": "cbaed80d42349dd3ac38c20078f0e04db7a086039714ec698508abf83d50f8a5",
+        "status": "SUCCESS_LOCAL_TO_NAS_ENCRYPTED_CAS",
+        "verified_at_kst": "2026-11-06T04:41:22+09:00"
+      },
+      "keys": [
+        "aes_image_detached",
+        "automatic_scheduling",
+        "cas_components",
+        "cas_new_ciphertext_bytes",
+        "cas_reused_components",
+        "existing_snapshots_pruned",
+        "google_drive_upload",
+        "local_file_count",
+        "local_receipt_sha256",
+        "local_snapshot",
+        "manifest_name",
+        "manifest_sha256",
+        "nas_cas_manifest",
+        "selection_sha256",
+        "status",
+        "verified_at_kst"
+      ],
+      "sha256": "65961c4e3a542eae354f438935f8b1ce742b63455521327435c6864fd4afacfc"
+    },
+    "receipt": {
+      "available_without_mount": false,
+      "mountpoint_present": false
+    },
+    "sup": {
+      "fields": {
+        "local_snapshot": "ASSET_V21_20261106_043146_KST_59950",
+        "manifest_sha256": "f8c6837c4d2a238c5d5ebe66df1c3ee5c9ba77d3dda3e2aa59222684b4d3e49b",
+        "nas_cas_manifest": "CAS_ASSET_V21_20261106_043146_KST_59950.json",
+        "state": "SUCCESS_VERIFIED"
+      },
+      "keys": [
+        "actual_backup_success",
+        "automatic_retry",
+        "backed_up_files",
+        "configured_jobs_modified",
+        "date_kst",
+        "google_drive_transfer",
+        "local_snapshot",
+        "manifest_sha256",
+        "nas_cas_manifest",
+        "phase",
+        "protected_existing_backup",
+        "state",
+        "version"
+      ],
+      "sha256": "6c3cd6eb058111df8279a77e9e5b5f8e16173ec6ae6de4ba3eeab0cb0b5af7e3"
+    }
+  },
+  "normalized": {
+    "actual_backup_verified": false,
+    "cas_completed": true,
+    "cas_components": 585,
+    "cas_created_at": "2026-11-06T04:35:30+09:00",
+    "cas_manifest_sha256": "bc078b0271d583a73cd98a441d649a845e1cc60307cf18be10d1fedcc2262109",
+    "cas_manifest_structure": "VERIFIED",
+    "cas_referenced_bytes": 4851127156,
+    "chain": "METADATA_LINKED",
+    "current_cas_component_sha256": "NOT_PERFORMED",
+    "current_registry_match": false,
+    "current_selection_match": null,
+    "historical_oneshot": "SUCCESS_CLAIM_BOUND_TO_METADATA",
+    "latest_registry": "asset_manifest_v0.27.json",
+    "latest_registry_sha256": "afe17adb54103952c0e84d296ded42a478fca49f25bd53f1f87dc0c73e1ce244",
+    "local_created_at": "2026-11-06T04:31:54.446068+09:00",
+    "local_lock_and_integrity": "HISTORICAL_STATUS_REPORT_ONLY",
+    "local_receipt_bytes_verified": false,
+    "local_receipt_sha256_reported": "522768f65f52c270c7c079fd43a0335258052d78f0e144f4b43cea1da9813070",
+    "observed_at": "2026-11-07T17:58:41.278046+09:00",
+    "reported_historical_registry_hash_matches_disk": true,
+    "reported_registry": "asset_manifest_v0.19.json",
+    "reported_registry_sha256": "f8c6837c4d2a238c5d5ebe66df1c3ee5c9ba77d3dda3e2aa59222684b4d3e49b",
+    "reported_selected_bytes": 521588443,
+    "reported_selected_files": 3373,
+    "reported_selection_sha256": "cbaed80d42349dd3ac38c20078f0e04db7a086039714ec698508abf83d50f8a5",
+    "same_day_kst": false,
+    "scope": "RECEIPT_METADATA_ONLY",
+    "selection_recomputed_from_receipt": false,
+    "snapshot_id": "ASSET_V21_20261106_043146_KST_59950",
+    "status": "PARTIAL"
+  }
+}

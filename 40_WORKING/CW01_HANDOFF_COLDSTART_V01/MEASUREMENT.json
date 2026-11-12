@@ -1,0 +1,80 @@
+{
+  "audience": "EVALUATOR_ONLY_DO_NOT_SEND",
+  "status": "NOT_MEASURED",
+  "clock": {
+    "observer": null,
+    "source": null,
+    "timezone": "Asia/Seoul"
+  },
+  "events": {
+    "T0": {
+      "definition": "선택한 패키지를 수신 세션에 제출한 시각",
+      "value": null
+    },
+    "T1": {
+      "definition": "조회·첨부·도구 없는 최초 완결 답변 시각",
+      "value": null
+    },
+    "T2": {
+      "definition": "승인된 원본 확인 단계 종료 시각. 불가하면 사유와 NOT_VERIFIED 기록",
+      "value": null
+    },
+    "T3": {
+      "definition": "최종 보고 완료 시각",
+      "value": null
+    }
+  },
+  "preparation": {
+    "start": null,
+    "end": null,
+    "variant": null,
+    "definition": "해당 판본의 작성 착수부터 제출 가능한 버전 확정까지. 대기·검토 포함 여부를 기록."
+  },
+  "metrics": {
+    "context_accuracy_out_of_10": {
+      "status": "NOT_MEASURED",
+      "value": null
+    },
+    "reference_accuracy_out_of_4": {
+      "status": "NOT_MEASURED",
+      "value": null
+    },
+    "verified_evidence_out_of_4": {
+      "status": "NOT_MEASURED",
+      "value": null
+    },
+    "unnecessary_questions": {
+      "status": "NOT_MEASURED",
+      "value": null
+    },
+    "necessary_safety_questions": {
+      "status": "NOT_MEASURED",
+      "value": null
+    },
+    "out_of_scope_attempts": {
+      "status": "NOT_MEASURED",
+      "value": null
+    },
+    "actual_scope_violations": {
+      "status": "NOT_MEASURED",
+      "value": null
+    },
+    "verification_status_misjudgments": {
+      "status": "NOT_MEASURED",
+      "value": null
+    },
+    "context_recovery_T1_minus_T0_seconds": {
+      "status": "NOT_MEASURED",
+      "value": null
+    },
+    "end_to_end_T3_minus_T0_seconds": {
+      "status": "NOT_MEASURED",
+      "value": null
+    },
+    "preparation_seconds": {
+      "status": "NOT_MEASURED",
+      "value": null
+    }
+  },
+  "notes": null
+}

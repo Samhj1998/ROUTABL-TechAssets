@@ -1,0 +1,96 @@
+{
+  "dense": {
+    "a_like": {
+      "p95_ms": 2.0986,
+      "plan": [
+        "SCAN docs"
+      ],
+      "rows": 1200
+    },
+    "title_without_index": {
+      "p95_ms": 0.4174,
+      "plan": [
+        "SCAN docs"
+      ],
+      "rows": 0
+    },
+    "union_rowid_recheck": {
+      "p95_ms": 3.6045,
+      "plan": [
+        "CO-ROUTINE k",
+        "MERGE (UNION)",
+        "LEFT",
+        "SCAN ft VIRTUAL TABLE INDEX 64:M3",
+        "RIGHT",
+        "SCAN docs",
+        "SCAN k",
+        "SEARCH d USING INTEGER PRIMARY KEY (rowid=?)"
+      ],
+      "rows": 1200
+    },
+    "wide_union_no_recheck": {
+      "p95_ms": 6.8231,
+      "plan": [
+        "MERGE (UNION)",
+        "LEFT",
+        "SEARCH docs USING INTEGER PRIMARY KEY (rowid=?)",
+        "LIST SUBQUERY 1",
+        "SCAN ft VIRTUAL TABLE INDEX 0:M3",
+        "RIGHT",
+        "SCAN docs"
+      ],
+      "rows": 1200
+    }
+  },
+  "selective": {
+    "a_like": {
+      "p95_ms": 2.9182,
+      "plan": [
+        "SCAN docs"
+      ],
+      "rows": 3
+    },
+    "title_without_index": {
+      "p95_ms": 0.5051,
+      "plan": [
+        "SCAN docs"
+      ],
+      "rows": 0
+    },
+    "union_rowid_recheck": {
+      "p95_ms": 0.4933,
+      "plan": [
+        "CO-ROUTINE k",
+        "MERGE (UNION)",
+        "LEFT",
+        "SCAN ft VIRTUAL TABLE INDEX 64:M3",
+        "RIGHT",
+        "SCAN docs",
+        "SCAN k",
+        "SEARCH d USING INTEGER PRIMARY KEY (rowid=?)"
+      ],
+      "rows": 3
+    },
+    "wide_union_no_recheck": {
+      "p95_ms": 0.508,
+      "plan": [
+        "MERGE (UNION)",
+        "LEFT",
+        "SEARCH docs USING INTEGER PRIMARY KEY (rowid=?)",
+        "LIST SUBQUERY 1",
+        "SCAN ft VIRTUAL TABLE INDEX 0:M3",
+        "RIGHT",
+        "SCAN docs"
+      ],
+      "rows": 3
+    }
+  },
+  "title_hypothetical_index": {
+    "p95_ms": 0.2802,
+    "plan": [
+      "SCAN docs USING COVERING INDEX isolated_title_only_probe"
+    ],
+    "rows": 0
+  },
+  "title_hypothetical_index_bytes": 73728
+}

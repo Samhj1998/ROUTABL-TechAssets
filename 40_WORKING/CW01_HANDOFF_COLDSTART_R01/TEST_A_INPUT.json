@@ -1,0 +1,9 @@
+{
+  "audience": "OPERATOR_ONLY",
+  "condition": "A",
+  "source_relative_path": "40_WORKING/CW01_HANDOFF_COLDSTART_V01/HANDOFF_MANUAL.md",
+  "sha256": "bf8a093caf412b45f8400efda3b9a0bb6fea26b7af0b0378b3f648ea60eed688",
+  "delivery": "Paste only the exact Markdown body in a separate new temporary chat. No prefix, suffix, attachments, or extra prompt. This specification is not receiver input.",
+  "approval": "PENDING_TRIAL_AUTHORIZATION",
+  "comparison_note": "A is a new matched-condition run. The original T1 result is historical only."
+}

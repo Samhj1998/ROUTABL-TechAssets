@@ -1,0 +1,48 @@
+{
+  "schema_version": "0.1",
+  "case_id": "ROUTABL-ADDR-REUSE-20261105-01",
+  "evidence_scope": "USER_REPORTED_FAILED_CHAT_AND_REMOTE_DESKTOP_COMMANDER_RECENT_TOOL_HISTORY",
+  "evidence_collected_kst": "2026-11-05",
+  "requested_customer_names": [
+    "다윤테크",
+    "세종텍스타일"
+  ],
+  "firebase_project": "routivel-prod",
+  "source_asset_id": "TA-CASE-20261102-01",
+  "v015_source_sha256": "de08b060d03a6b6c9f155cf89673f2285a67502cf664442b1a9bc835529a54e5",
+  "events": [
+    {
+      "time_kst": "11:47",
+      "claim": "authenticated customers read; total 1958 entries and potential duplicate location reviewed"
+    },
+    {
+      "time_kst": "11:53",
+      "claim": "UnicodeEncodeError in an unencoded Korean URL request, then alternate supported API route evaluated"
+    },
+    {
+      "time_kst": "12:02",
+      "claim": "savedVerified true for both named customers by Firestore readback"
+    },
+    {
+      "time_kst": "12:02",
+      "claim": "incrementalSyncVerified true for both named customers by customerDirectoryChanges comparison"
+    }
+  ],
+  "acceptance": {
+    "firebase_saved_and_read_back_count": 2,
+    "change_journal_verified_count": 2,
+    "app_device_sync_field_test": "NOT_VERIFIED",
+    "failed_chat_exact_tool_root_cause": "UNPROVEN_WITHOUT_FULL_ORIGINAL_TRACE",
+    "full_original_tool_log_archived": "NO",
+    "previous_customer_data_modified_by_this_tech_asset_update": false,
+    "original_source_script_modified_by_this_tech_asset_update": false
+  },
+  "classification": "P3_LOCAL_AES256_BACKUP_ONLY",
+  "secrets_or_phone_numbers_embedded": false,
+  "open_followups": [
+    "ASSET-SEARCH-03 automatic discovery and reexecution not yet implemented",
+    "mobile client field validation pending",
+    "privacy-safe immutable operation receipt needed",
+    "first failed chat full trace unavailable"
+  ]
+}

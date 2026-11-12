@@ -1,0 +1,1498 @@
+{
+  "cases": [
+    {
+      "case": "normal_new",
+      "details": {},
+      "entry_exit": 0,
+      "expected": "NEW_BACKUP_VERIFIED",
+      "result": {
+        "actual_backup_success": true,
+        "backup_executed": true,
+        "entry": "manual",
+        "events": [
+          {
+            "at_kst": "2026-11-08T02:35:34.955297+09:00",
+            "code": "ACQUIRED",
+            "executed": false,
+            "exit_code": null,
+            "run_id": "f0e92ea75d2749dbb9d2d721b8b17a23",
+            "stage": "lock"
+          },
+          {
+            "at_kst": "2026-11-08T02:35:34.959756+09:00",
+            "code": "PINS_VERIFIED",
+            "executed": false,
+            "exit_code": null,
+            "run_id": "f0e92ea75d2749dbb9d2d721b8b17a23",
+            "stage": "preflight"
+          },
+          {
+            "at_kst": "2026-11-08T02:35:34.962282+09:00",
+            "code": "INVENTORY_READ",
+            "executed": null,
+            "exit_code": null,
+            "file_count": 1,
+            "manifest_name": "asset_manifest_v0.27.json",
+            "manifest_sha256": "7041ecbfb7cf3ce28b64a4d10d9a431e72361ed8734bf48bfa95634cd487da23",
+            "run_id": "f0e92ea75d2749dbb9d2d721b8b17a23",
+            "selection_sha256": "38c655fc388cfdc6df9b74bc15fb38c9a167ca0f3b1527ce027aa51ec8991446",
+            "stage": "baseline",
+            "total_bytes": 22
+          },
+          {
+            "at_kst": "2026-11-08T02:35:35.661008+09:00",
+            "code": "CREATED",
+            "executed": true,
+            "exit_code": 0,
+            "file_count": 1,
+            "local_receipt_sha256": "9f1970e914b1e011ffc4c47923ca3b7b58a11e48f45b373f8e8dde875b930b68",
+            "manifest_name": "asset_manifest_v0.27.json",
+            "manifest_sha256": "7041ecbfb7cf3ce28b64a4d10d9a431e72361ed8734bf48bfa95634cd487da23",
+            "run_id": "f0e92ea75d2749dbb9d2d721b8b17a23",
+            "selection_sha256": "38c655fc388cfdc6df9b74bc15fb38c9a167ca0f3b1527ce027aa51ec8991446",
+            "snapshot_id": "ASSET_V21_20261108_023535_KST_90209",
+            "stage": "local",
+            "total_bytes": 22
+          },
+          {
+            "at_kst": "2026-11-08T02:35:36.355102+09:00",
+            "cas_id": "CAS-ASSET_V21_20261108_023535_KST_90209",
+            "code": "REPLICATED",
+            "executed": true,
+            "exit_code": 0,
+            "local_receipt_sha256": "9f1970e914b1e011ffc4c47923ca3b7b58a11e48f45b373f8e8dde875b930b68",
+            "manifest_sha256": "7041ecbfb7cf3ce28b64a4d10d9a431e72361ed8734bf48bfa95634cd487da23",
+            "run_id": "f0e92ea75d2749dbb9d2d721b8b17a23",
+            "selection_sha256": "38c655fc388cfdc6df9b74bc15fb38c9a167ca0f3b1527ce027aa51ec8991446",
+            "stage": "nas"
+          },
+          {
+            "at_kst": "2026-11-08T02:35:36.358602+09:00",
+            "code": "CHAIN_VERIFIED",
+            "executed": true,
+            "exit_code": 0,
+            "run_id": "f0e92ea75d2749dbb9d2d721b8b17a23",
+            "stage": "final"
+          },
+          {
+            "at_kst": "2026-11-08T02:35:36.361024+09:00",
+            "code": "CHAIN_AND_INVENTORY_VERIFIED",
+            "executed": true,
+            "exit_code": 0,
+            "file_count": 1,
+            "local_receipt_sha256": "9f1970e914b1e011ffc4c47923ca3b7b58a11e48f45b373f8e8dde875b930b68",
+            "manifest_name": "asset_manifest_v0.27.json",
+            "manifest_sha256": "7041ecbfb7cf3ce28b64a4d10d9a431e72361ed8734bf48bfa95634cd487da23",
+            "run_id": "f0e92ea75d2749dbb9d2d721b8b17a23",
+            "selection_sha256": "38c655fc388cfdc6df9b74bc15fb38c9a167ca0f3b1527ce027aa51ec8991446",
+            "snapshot_id": "ASSET_V21_20261108_023535_KST_90209",
+            "stage": "decision",
+            "total_bytes": 22
+          },
+          {
+            "at_kst": "2026-11-08T02:35:36.363839+09:00",
+            "code": "PINS_UNCHANGED",
+            "executed": false,
+            "exit_code": null,
+            "run_id": "f0e92ea75d2749dbb9d2d721b8b17a23",
+            "stage": "postflight"
+          }
+        ],
+        "processes": [
+          {
+            "exit_code": 0,
+            "live_descendants": [],
+            "pid": 90209,
+            "stage": "gate",
+            "timed_out": false
+          },
+          {
+            "exit_code": 0,
+            "live_descendants": [],
+            "pid": 90211,
+            "stage": "nas",
+            "timed_out": false
+          }
+        ],
+        "reason": "VERIFIED",
+        "run_id": "f0e92ea75d2749dbb9d2d721b8b17a23",
+        "schema_version": "0.1",
+        "scope": "ISOLATED_FIXTURE_ONLY",
+        "status": "NEW_BACKUP_VERIFIED",
+        "verified_chain": {
+          "local": {
+            "created_at": "2026-11-08T02:35:35.502773+09:00",
+            "inventory": {
+              "file_count": 1,
+              "manifest_name": "asset_manifest_v0.27.json",
+              "manifest_sha256": "7041ecbfb7cf3ce28b64a4d10d9a431e72361ed8734bf48bfa95634cd487da23",
+              "selection_sha256": "38c655fc388cfdc6df9b74bc15fb38c9a167ca0f3b1527ce027aa51ec8991446",
+              "total_bytes": 22
+            },
+            "locked": true,
+            "receipt_sha256": "9f1970e914b1e011ffc4c47923ca3b7b58a11e48f45b373f8e8dde875b930b68",
+            "sha_verified": true,
+            "snapshot_id": "ASSET_V21_20261108_023535_KST_90209"
+          },
+          "nas": {
+            "cas_id": "CAS-ASSET_V21_20261108_023535_KST_90209",
+            "completed": true,
+            "local_receipt_sha256": "9f1970e914b1e011ffc4c47923ca3b7b58a11e48f45b373f8e8dde875b930b68",
+            "manifest_sha256": "7041ecbfb7cf3ce28b64a4d10d9a431e72361ed8734bf48bfa95634cd487da23",
+            "selection_sha256": "38c655fc388cfdc6df9b74bc15fb38c9a167ca0f3b1527ce027aa51ec8991446",
+            "snapshot_id": "ASSET_V21_20261108_023535_KST_90209"
+          }
+        }
+      },
+      "verdict": "PASS"
+    },
+    {
+      "case": "os_lock_contention_manual_vs_scheduled",
+      "details": {
+        "contender_children": 0,
+        "lock_holder_pid": 90213
+      },
+      "entry_exit": 20,
+      "expected": "SKIPPED_LOCK_HELD",
+      "result": {
+        "actual_backup_success": false,
+        "backup_executed": false,
+        "entry": "manual",
+        "events": [],
+        "processes": [],
+        "reason": "SHARED_LOCK_HELD",
+        "run_id": "c664891b4d384603a29d195c5c1a74db",
+        "schema_version": "0.1",
+        "scope": "ISOLATED_FIXTURE_ONLY",
+        "status": "SKIPPED_LOCK_HELD",
+        "verified_chain": null
+      },
+      "verdict": "PASS"
+    },
+    {
+      "case": "lock_owner_finishes",
+      "details": {},
+      "entry_exit": 30,
+      "expected": "NEW_BACKUP_VERIFIED",
+      "result": {
+        "actual_backup_success": false,
+        "backup_executed": null,
+        "entry": "scheduled",
+        "events": [
+          {
+            "at_kst": "2026-11-08T02:35:37.067891+09:00",
+            "code": "ACQUIRED",
+            "executed": false,
+            "exit_code": null,
+            "run_id": "13d1fe34fdad458f89d712827289094a",
+            "stage": "lock"
+          },
+          {
+            "at_kst": "2026-11-08T02:35:37.073297+09:00",
+            "code": "PINS_VERIFIED",
+            "executed": false,
+            "exit_code": null,
+            "run_id": "13d1fe34fdad458f89d712827289094a",
+            "stage": "preflight"
+          },
+          {
+            "at_kst": "2026-11-08T02:35:37.076589+09:00",
+            "code": "INVENTORY_READ",
+            "executed": null,
+            "exit_code": null,
+            "file_count": 1,
+            "manifest_name": "asset_manifest_v0.27.json",
+            "manifest_sha256": "7041ecbfb7cf3ce28b64a4d10d9a431e72361ed8734bf48bfa95634cd487da23",
+            "run_id": "13d1fe34fdad458f89d712827289094a",
+            "selection_sha256": "38c655fc388cfdc6df9b74bc15fb38c9a167ca0f3b1527ce027aa51ec8991446",
+            "stage": "baseline",
+            "total_bytes": 22
+          },
+          {
+            "at_kst": "2026-11-08T02:35:38.885775+09:00",
+            "code": "ADAPTER_ERROR",
+            "executed": null,
+            "exit_code": null,
+            "run_id": "13d1fe34fdad458f89d712827289094a",
+            "stage": "local"
+          },
+          {
+            "at_kst": "2026-11-08T02:35:38.890646+09:00",
+            "code": "PINS_UNCHANGED",
+            "executed": false,
+            "exit_code": null,
+            "run_id": "13d1fe34fdad458f89d712827289094a",
+            "stage": "postflight"
+          }
+        ],
+        "processes": [],
+        "reason": "ADAPTER_ERROR",
+        "run_id": "13d1fe34fdad458f89d712827289094a",
+        "schema_version": "0.1",
+        "scope": "ISOLATED_FIXTURE_ONLY",
+        "status": "FAILED_SAFE",
+        "verified_chain": null
+      },
+      "verdict": "FAIL"
+    },
+    {
+      "case": "child_lock",
+      "details": {},
+      "entry_exit": 20,
+      "expected": "SKIPPED_LOCK_HELD",
+      "result": {
+        "actual_backup_success": false,
+        "backup_executed": false,
+        "entry": "manual",
+        "events": [
+          {
+            "at_kst": "2026-11-08T02:35:39.593323+09:00",
+            "code": "ACQUIRED",
+            "executed": false,
+            "exit_code": null,
+            "run_id": "9196ef664292467e891acbde65ffcf87",
+            "stage": "lock"
+          },
+          {
+            "at_kst": "2026-11-08T02:35:39.597598+09:00",
+            "code": "PINS_VERIFIED",
+            "executed": false,
+            "exit_code": null,
+            "run_id": "9196ef664292467e891acbde65ffcf87",
+            "stage": "preflight"
+          },
+          {
+            "at_kst": "2026-11-08T02:35:39.600354+09:00",
+            "code": "INVENTORY_READ",
+            "executed": null,
+            "exit_code": null,
+            "file_count": 1,
+            "manifest_name": "asset_manifest_v0.27.json",
+            "manifest_sha256": "7041ecbfb7cf3ce28b64a4d10d9a431e72361ed8734bf48bfa95634cd487da23",
+            "run_id": "9196ef664292467e891acbde65ffcf87",
+            "selection_sha256": "38c655fc388cfdc6df9b74bc15fb38c9a167ca0f3b1527ce027aa51ec8991446",
+            "stage": "baseline",
+            "total_bytes": 22
+          },
+          {
+            "at_kst": "2026-11-08T02:35:40.320015+09:00",
+            "code": "LOCK_HELD",
+            "executed": false,
+            "exit_code": 0,
+            "run_id": "9196ef664292467e891acbde65ffcf87",
+            "stage": "local"
+          },
+          {
+            "at_kst": "2026-11-08T02:35:40.324009+09:00",
+            "code": "PINS_UNCHANGED",
+            "executed": false,
+            "exit_code": null,
+            "run_id": "9196ef664292467e891acbde65ffcf87",
+            "stage": "postflight"
+          }
+        ],
+        "processes": [
+          {
+            "exit_code": 0,
+            "live_descendants": [],
+            "pid": 90218,
+            "stage": "gate",
+            "timed_out": false
+          }
+        ],
+        "reason": "CHILD_LOCK_HELD",
+        "run_id": "9196ef664292467e891acbde65ffcf87",
+        "schema_version": "0.1",
+        "scope": "ISOLATED_FIXTURE_ONLY",
+        "status": "SKIPPED_LOCK_HELD",
+        "verified_chain": null
+      },
+      "verdict": "PASS"
+    },
+    {
+      "case": "exit_zero_no_work",
+      "details": {},
+      "entry_exit": 30,
+      "expected": "NO_NEW_BACKUP_EVIDENCE",
+      "result": {
+        "actual_backup_success": false,
+        "backup_executed": false,
+        "entry": "manual",
+        "events": [
+          {
+            "at_kst": "2026-11-08T02:35:41.013883+09:00",
+            "code": "ACQUIRED",
+            "executed": false,
+            "exit_code": null,
+            "run_id": "d967dc7dfbb048afbdceddba4f108da3",
+            "stage": "lock"
+          },
+          {
+            "at_kst": "2026-11-08T02:35:41.019273+09:00",
+            "code": "PINS_VERIFIED",
+            "executed": false,
+            "exit_code": null,
+            "run_id": "d967dc7dfbb048afbdceddba4f108da3",
+            "stage": "preflight"
+          },
+          {
+            "at_kst": "2026-11-08T02:35:41.022255+09:00",
+            "code": "INVENTORY_READ",
+            "executed": null,
+            "exit_code": null,
+            "file_count": 1,
+            "manifest_name": "asset_manifest_v0.27.json",
+            "manifest_sha256": "7041ecbfb7cf3ce28b64a4d10d9a431e72361ed8734bf48bfa95634cd487da23",
+            "run_id": "d967dc7dfbb048afbdceddba4f108da3",
+            "selection_sha256": "38c655fc388cfdc6df9b74bc15fb38c9a167ca0f3b1527ce027aa51ec8991446",
+            "stage": "baseline",
+            "total_bytes": 22
+          },
+          {
+            "at_kst": "2026-11-08T02:35:41.725423+09:00",
+            "code": "NO_WORK",
+            "executed": false,
+            "exit_code": 0,
+            "run_id": "d967dc7dfbb048afbdceddba4f108da3",
+            "stage": "local"
+          },
+          {
+            "at_kst": "2026-11-08T02:35:41.728568+09:00",
+            "code": "PINS_UNCHANGED",
+            "executed": false,
+            "exit_code": null,
+            "run_id": "d967dc7dfbb048afbdceddba4f108da3",
+            "stage": "postflight"
+          }
+        ],
+        "processes": [
+          {
+            "exit_code": 0,
+            "live_descendants": [],
+            "pid": 90221,
+            "stage": "gate",
+            "timed_out": false
+          }
+        ],
+        "reason": "LOCAL_WORK_NOT_PROVEN",
+        "run_id": "d967dc7dfbb048afbdceddba4f108da3",
+        "schema_version": "0.1",
+        "scope": "ISOLATED_FIXTURE_ONLY",
+        "status": "NO_NEW_BACKUP_EVIDENCE",
+        "verified_chain": null
+      },
+      "verdict": "PASS"
+    },
+    {
+      "case": "child_exit7",
+      "details": {},
+      "entry_exit": 30,
+      "expected": "FAILED_SAFE",
+      "result": {
+        "actual_backup_success": false,
+        "backup_executed": false,
+        "entry": "manual",
+        "events": [
+          {
+            "at_kst": "2026-11-08T02:35:42.419012+09:00",
+            "code": "ACQUIRED",
+            "executed": false,
+            "exit_code": null,
+            "run_id": "d3973d7a4f894a93bf4008b713b4faa2",
+            "stage": "lock"
+          },
+          {
+            "at_kst": "2026-11-08T02:35:42.424201+09:00",
+            "code": "PINS_VERIFIED",
+            "executed": false,
+            "exit_code": null,
+            "run_id": "d3973d7a4f894a93bf4008b713b4faa2",
+            "stage": "preflight"
+          },
+          {
+            "at_kst": "2026-11-08T02:35:42.427470+09:00",
+            "code": "INVENTORY_READ",
+            "executed": null,
+            "exit_code": null,
+            "file_count": 1,
+            "manifest_name": "asset_manifest_v0.27.json",
+            "manifest_sha256": "7041ecbfb7cf3ce28b64a4d10d9a431e72361ed8734bf48bfa95634cd487da23",
+            "run_id": "d3973d7a4f894a93bf4008b713b4faa2",
+            "selection_sha256": "38c655fc388cfdc6df9b74bc15fb38c9a167ca0f3b1527ce027aa51ec8991446",
+            "stage": "baseline",
+            "total_bytes": 22
+          },
+          {
+            "at_kst": "2026-11-08T02:35:43.064106+09:00",
+            "code": "FAILED",
+            "executed": false,
+            "exit_code": 7,
+            "run_id": "d3973d7a4f894a93bf4008b713b4faa2",
+            "stage": "local"
+          },
+          {
+            "at_kst": "2026-11-08T02:35:43.067990+09:00",
+            "code": "PINS_UNCHANGED",
+            "executed": false,
+            "exit_code": null,
+            "run_id": "d3973d7a4f894a93bf4008b713b4faa2",
+            "stage": "postflight"
+          }
+        ],
+        "processes": [
+          {
+            "exit_code": 7,
+            "live_descendants": [],
+            "pid": 90224,
+            "stage": "gate",
+            "timed_out": false
+          }
+        ],
+        "reason": "CHILD_NONZERO",
+        "run_id": "d3973d7a4f894a93bf4008b713b4faa2",
+        "schema_version": "0.1",
+        "scope": "ISOLATED_FIXTURE_ONLY",
+        "status": "FAILED_SAFE",
+        "verified_chain": null
+      },
+      "verdict": "PASS"
+    },
+    {
+      "case": "child_timeout",
+      "details": {
+        "force_kill_signal": 9,
+        "grandchild_live": false,
+        "grandchild_pid": 90228
+      },
+      "entry_exit": 30,
+      "expected": "FAILED_SAFE",
+      "result": {
+        "actual_backup_success": false,
+        "backup_executed": null,
+        "entry": "manual",
+        "events": [
+          {
+            "at_kst": "2026-11-08T02:35:43.724028+09:00",
+            "code": "ACQUIRED",
+            "executed": false,
+            "exit_code": null,
+            "run_id": "cf3d2d7d4a3e45aca0eb658d50092882",
+            "stage": "lock"
+          },
+          {
+            "at_kst": "2026-11-08T02:35:43.728009+09:00",
+            "code": "PINS_VERIFIED",
+            "executed": false,
+            "exit_code": null,
+            "run_id": "cf3d2d7d4a3e45aca0eb658d50092882",
+            "stage": "preflight"
+          },
+          {
+            "at_kst": "2026-11-08T02:35:43.730436+09:00",
+            "code": "INVENTORY_READ",
+            "executed": null,
+            "exit_code": null,
+            "file_count": 1,
+            "manifest_name": "asset_manifest_v0.27.json",
+            "manifest_sha256": "7041ecbfb7cf3ce28b64a4d10d9a431e72361ed8734bf48bfa95634cd487da23",
+            "run_id": "cf3d2d7d4a3e45aca0eb658d50092882",
+            "selection_sha256": "38c655fc388cfdc6df9b74bc15fb38c9a167ca0f3b1527ce027aa51ec8991446",
+            "stage": "baseline",
+            "total_bytes": 22
+          },
+          {
+            "at_kst": "2026-11-08T02:35:45.747964+09:00",
+            "code": "TIMEOUT",
+            "executed": null,
+            "exit_code": null,
+            "run_id": "cf3d2d7d4a3e45aca0eb658d50092882",
+            "stage": "local"
+          },
+          {
+            "at_kst": "2026-11-08T02:35:45.752414+09:00",
+            "code": "PINS_UNCHANGED",
+            "executed": false,
+            "exit_code": null,
+            "run_id": "cf3d2d7d4a3e45aca0eb658d50092882",
+            "stage": "postflight"
+          }
+        ],
+        "processes": [
+          {
+            "exit_code": -9,
+            "live_descendants": [],
+            "pid": 90227,
+            "stage": "gate",
+            "timed_out": true
+          }
+        ],
+        "reason": "TIMEOUT",
+        "run_id": "cf3d2d7d4a3e45aca0eb658d50092882",
+        "schema_version": "0.1",
+        "scope": "ISOLATED_FIXTURE_ONLY",
+        "status": "FAILED_SAFE",
+        "verified_chain": null
+      },
+      "verdict": "PASS"
+    },
+    {
+      "case": "pin_mismatch",
+      "details": {},
+      "entry_exit": 30,
+      "expected": "FAILED_SAFE",
+      "result": {
+        "actual_backup_success": false,
+        "backup_executed": false,
+        "entry": "manual",
+        "events": [
+          {
+            "at_kst": "2026-11-08T02:35:46.503042+09:00",
+            "code": "ACQUIRED",
+            "executed": false,
+            "exit_code": null,
+            "run_id": "8703f58ad6374a1b96092bced1d7f736",
+            "stage": "lock"
+          }
+        ],
+        "processes": [],
+        "reason": "PROGRAM_PIN_MISMATCH",
+        "run_id": "8703f58ad6374a1b96092bced1d7f736",
+        "schema_version": "0.1",
+        "scope": "ISOLATED_FIXTURE_ONLY",
+        "status": "FAILED_SAFE",
+        "verified_chain": null
+      },
+      "verdict": "PASS"
+    },
+    {
+      "case": "today_reuse",
+      "details": {},
+      "entry_exit": 10,
+      "expected": "CURRENT_BACKUP_ALREADY_VERIFIED",
+      "result": {
+        "actual_backup_success": false,
+        "backup_executed": false,
+        "entry": "manual",
+        "events": [
+          {
+            "at_kst": "2026-11-08T02:35:46.926594+09:00",
+            "code": "ACQUIRED",
+            "executed": false,
+            "exit_code": null,
+            "run_id": "a2f62d928af946648ef4effb616c7981",
+            "stage": "lock"
+          },
+          {
+            "at_kst": "2026-11-08T02:35:46.930177+09:00",
+            "code": "PINS_VERIFIED",
+            "executed": false,
+            "exit_code": null,
+            "run_id": "a2f62d928af946648ef4effb616c7981",
+            "stage": "preflight"
+          },
+          {
+            "at_kst": "2026-11-08T02:35:46.932025+09:00",
+            "code": "INVENTORY_READ",
+            "executed": null,
+            "exit_code": null,
+            "file_count": 1,
+            "manifest_name": "asset_manifest_v0.27.json",
+            "manifest_sha256": "7041ecbfb7cf3ce28b64a4d10d9a431e72361ed8734bf48bfa95634cd487da23",
+            "run_id": "a2f62d928af946648ef4effb616c7981",
+            "selection_sha256": "38c655fc388cfdc6df9b74bc15fb38c9a167ca0f3b1527ce027aa51ec8991446",
+            "stage": "baseline",
+            "total_bytes": 22
+          },
+          {
+            "at_kst": "2026-11-08T02:35:47.291824+09:00",
+            "code": "ALREADY_VERIFIED",
+            "executed": false,
+            "exit_code": 0,
+            "file_count": 1,
+            "local_receipt_sha256": "33b7be84dcc2c84014783346532aeb111ff3f41c3cea1ef7ef2fa62df7fb9727",
+            "manifest_name": "asset_manifest_v0.27.json",
+            "manifest_sha256": "7041ecbfb7cf3ce28b64a4d10d9a431e72361ed8734bf48bfa95634cd487da23",
+            "run_id": "a2f62d928af946648ef4effb616c7981",
+            "selection_sha256": "38c655fc388cfdc6df9b74bc15fb38c9a167ca0f3b1527ce027aa51ec8991446",
+            "snapshot_id": "ASSET_V21_20261108_023545_KST_90206",
+            "stage": "local",
+            "total_bytes": 22
+          },
+          {
+            "at_kst": "2026-11-08T02:35:47.658988+09:00",
+            "cas_id": "CAS-ASSET_V21_20261108_023545_KST_90206",
+            "code": "ALREADY_VERIFIED",
+            "executed": false,
+            "exit_code": 0,
+            "local_receipt_sha256": "33b7be84dcc2c84014783346532aeb111ff3f41c3cea1ef7ef2fa62df7fb9727",
+            "manifest_sha256": "7041ecbfb7cf3ce28b64a4d10d9a431e72361ed8734bf48bfa95634cd487da23",
+            "run_id": "a2f62d928af946648ef4effb616c7981",
+            "selection_sha256": "38c655fc388cfdc6df9b74bc15fb38c9a167ca0f3b1527ce027aa51ec8991446",
+            "stage": "nas"
+          },
+          {
+            "at_kst": "2026-11-08T02:35:47.660683+09:00",
+            "code": "CHAIN_VERIFIED",
+            "executed": true,
+            "exit_code": 0,
+            "run_id": "a2f62d928af946648ef4effb616c7981",
+            "stage": "final"
+          },
+          {
+            "at_kst": "2026-11-08T02:35:47.661663+09:00",
+            "code": "CHAIN_AND_INVENTORY_VERIFIED",
+            "executed": true,
+            "exit_code": 0,
+            "file_count": 1,
+            "local_receipt_sha256": "33b7be84dcc2c84014783346532aeb111ff3f41c3cea1ef7ef2fa62df7fb9727",
+            "manifest_name": "asset_manifest_v0.27.json",
+            "manifest_sha256": "7041ecbfb7cf3ce28b64a4d10d9a431e72361ed8734bf48bfa95634cd487da23",
+            "run_id": "a2f62d928af946648ef4effb616c7981",
+            "selection_sha256": "38c655fc388cfdc6df9b74bc15fb38c9a167ca0f3b1527ce027aa51ec8991446",
+            "snapshot_id": "ASSET_V21_20261108_023545_KST_90206",
+            "stage": "decision",
+            "total_bytes": 22
+          },
+          {
+            "at_kst": "2026-11-08T02:35:47.662863+09:00",
+            "code": "PINS_UNCHANGED",
+            "executed": false,
+            "exit_code": null,
+            "run_id": "a2f62d928af946648ef4effb616c7981",
+            "stage": "postflight"
+          }
+        ],
+        "processes": [
+          {
+            "exit_code": 0,
+            "live_descendants": [],
+            "pid": 90236,
+            "stage": "gate",
+            "timed_out": false
+          },
+          {
+            "exit_code": 0,
+            "live_descendants": [],
+            "pid": 90238,
+            "stage": "nas",
+            "timed_out": false
+          }
+        ],
+        "reason": "VERIFIED",
+        "run_id": "a2f62d928af946648ef4effb616c7981",
+        "schema_version": "0.1",
+        "scope": "ISOLATED_FIXTURE_ONLY",
+        "status": "CURRENT_BACKUP_ALREADY_VERIFIED",
+        "verified_chain": {
+          "local": {
+            "created_at": "2026-11-08T02:35:45.529775+09:00",
+            "inventory": {
+              "file_count": 1,
+              "manifest_name": "asset_manifest_v0.27.json",
+              "manifest_sha256": "7041ecbfb7cf3ce28b64a4d10d9a431e72361ed8734bf48bfa95634cd487da23",
+              "selection_sha256": "38c655fc388cfdc6df9b74bc15fb38c9a167ca0f3b1527ce027aa51ec8991446",
+              "total_bytes": 22
+            },
+            "locked": true,
+            "receipt_sha256": "33b7be84dcc2c84014783346532aeb111ff3f41c3cea1ef7ef2fa62df7fb9727",
+            "sha_verified": true,
+            "snapshot_id": "ASSET_V21_20261108_023545_KST_90206"
+          },
+          "nas": {
+            "cas_id": "CAS-ASSET_V21_20261108_023545_KST_90206",
+            "completed": true,
+            "local_receipt_sha256": "33b7be84dcc2c84014783346532aeb111ff3f41c3cea1ef7ef2fa62df7fb9727",
+            "manifest_sha256": "7041ecbfb7cf3ce28b64a4d10d9a431e72361ed8734bf48bfa95634cd487da23",
+            "selection_sha256": "38c655fc388cfdc6df9b74bc15fb38c9a167ca0f3b1527ce027aa51ec8991446",
+            "snapshot_id": "ASSET_V21_20261108_023545_KST_90206"
+          }
+        }
+      },
+      "verdict": "PASS"
+    },
+    {
+      "case": "stale_manifest",
+      "details": {},
+      "entry_exit": 30,
+      "expected": "STALE_REGISTRY_BACKUP",
+      "result": {
+        "actual_backup_success": false,
+        "backup_executed": false,
+        "entry": "manual",
+        "events": [
+          {
+            "at_kst": "2026-11-08T02:35:48.058755+09:00",
+            "code": "ACQUIRED",
+            "executed": false,
+            "exit_code": null,
+            "run_id": "782d60c6a5f548a79f99af5b84400d96",
+            "stage": "lock"
+          },
+          {
+            "at_kst": "2026-11-08T02:35:48.062373+09:00",
+            "code": "PINS_VERIFIED",
+            "executed": false,
+            "exit_code": null,
+            "run_id": "782d60c6a5f548a79f99af5b84400d96",
+            "stage": "preflight"
+          },
+          {
+            "at_kst": "2026-11-08T02:35:48.065060+09:00",
+            "code": "INVENTORY_READ",
+            "executed": null,
+            "exit_code": null,
+            "file_count": 1,
+            "manifest_name": "asset_manifest_v0.27.json",
+            "manifest_sha256": "7041ecbfb7cf3ce28b64a4d10d9a431e72361ed8734bf48bfa95634cd487da23",
+            "run_id": "782d60c6a5f548a79f99af5b84400d96",
+            "selection_sha256": "38c655fc388cfdc6df9b74bc15fb38c9a167ca0f3b1527ce027aa51ec8991446",
+            "stage": "baseline",
+            "total_bytes": 22
+          },
+          {
+            "at_kst": "2026-11-08T02:35:48.448139+09:00",
+            "code": "ALREADY_VERIFIED",
+            "executed": false,
+            "exit_code": 0,
+            "file_count": 1,
+            "local_receipt_sha256": "7ab9ee732762d8cc7ee301a8f2c090c174f6fc54052ceff3a9ce7e67b88bde5e",
+            "manifest_name": "asset_manifest_v0.19.json",
+            "manifest_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+            "run_id": "782d60c6a5f548a79f99af5b84400d96",
+            "selection_sha256": "38c655fc388cfdc6df9b74bc15fb38c9a167ca0f3b1527ce027aa51ec8991446",
+            "snapshot_id": "ASSET_V21_20261108_023546_KST_90206",
+            "stage": "local",
+            "total_bytes": 22
+          },
+          {
+            "at_kst": "2026-11-08T02:35:48.450107+09:00",
+            "code": "PINS_UNCHANGED",
+            "executed": false,
+            "exit_code": null,
+            "run_id": "782d60c6a5f548a79f99af5b84400d96",
+            "stage": "postflight"
+          }
+        ],
+        "processes": [
+          {
+            "exit_code": 0,
+            "live_descendants": [],
+            "pid": 90242,
+            "stage": "gate",
+            "timed_out": false
+          }
+        ],
+        "reason": "LOCAL_INVENTORY_MISMATCH",
+        "run_id": "782d60c6a5f548a79f99af5b84400d96",
+        "schema_version": "0.1",
+        "scope": "ISOLATED_FIXTURE_ONLY",
+        "status": "STALE_REGISTRY_BACKUP",
+        "verified_chain": null
+      },
+      "verdict": "PASS"
+    },
+    {
+      "case": "old_snapshot",
+      "details": {},
+      "entry_exit": 30,
+      "expected": "STALE_REGISTRY_BACKUP",
+      "result": {
+        "actual_backup_success": false,
+        "backup_executed": false,
+        "entry": "manual",
+        "events": [
+          {
+            "at_kst": "2026-11-08T02:35:48.896243+09:00",
+            "code": "ACQUIRED",
+            "executed": false,
+            "exit_code": null,
+            "run_id": "1df4cffb20b94aafaf43e1e423d2df2d",
+            "stage": "lock"
+          },
+          {
+            "at_kst": "2026-11-08T02:35:48.899845+09:00",
+            "code": "PINS_VERIFIED",
+            "executed": false,
+            "exit_code": null,
+            "run_id": "1df4cffb20b94aafaf43e1e423d2df2d",
+            "stage": "preflight"
+          },
+          {
+            "at_kst": "2026-11-08T02:35:48.902945+09:00",
+            "code": "INVENTORY_READ",
+            "executed": null,
+            "exit_code": null,
+            "file_count": 1,
+            "manifest_name": "asset_manifest_v0.27.json",
+            "manifest_sha256": "7041ecbfb7cf3ce28b64a4d10d9a431e72361ed8734bf48bfa95634cd487da23",
+            "run_id": "1df4cffb20b94aafaf43e1e423d2df2d",
+            "selection_sha256": "38c655fc388cfdc6df9b74bc15fb38c9a167ca0f3b1527ce027aa51ec8991446",
+            "stage": "baseline",
+            "total_bytes": 22
+          },
+          {
+            "at_kst": "2026-11-08T02:35:49.399524+09:00",
+            "code": "ALREADY_VERIFIED",
+            "executed": false,
+            "exit_code": 0,
+            "file_count": 1,
+            "local_receipt_sha256": "aa46672d87661a77321e6b1e7de9ba0d40d380c4facd0c121fb8a09bd181ae65",
+            "manifest_name": "asset_manifest_v0.27.json",
+            "manifest_sha256": "7041ecbfb7cf3ce28b64a4d10d9a431e72361ed8734bf48bfa95634cd487da23",
+            "run_id": "1df4cffb20b94aafaf43e1e423d2df2d",
+            "selection_sha256": "38c655fc388cfdc6df9b74bc15fb38c9a167ca0f3b1527ce027aa51ec8991446",
+            "snapshot_id": "ASSET_V21_20261107_023547_KST_90206",
+            "stage": "local",
+            "total_bytes": 22
+          },
+          {
+            "at_kst": "2026-11-08T02:35:49.403959+09:00",
+            "code": "PINS_UNCHANGED",
+            "executed": false,
+            "exit_code": null,
+            "run_id": "1df4cffb20b94aafaf43e1e423d2df2d",
+            "stage": "postflight"
+          }
+        ],
+        "processes": [
+          {
+            "exit_code": 0,
+            "live_descendants": [],
+            "pid": 90245,
+            "stage": "gate",
+            "timed_out": false
+          }
+        ],
+        "reason": "LOCAL_NOT_SAME_KST_DAY",
+        "run_id": "1df4cffb20b94aafaf43e1e423d2df2d",
+        "schema_version": "0.1",
+        "scope": "ISOLATED_FIXTURE_ONLY",
+        "status": "STALE_REGISTRY_BACKUP",
+        "verified_chain": null
+      },
+      "verdict": "PASS"
+    },
+    {
+      "case": "selection_changed",
+      "details": {},
+      "entry_exit": 30,
+      "expected": "FAILED_SAFE",
+      "result": {
+        "actual_backup_success": false,
+        "backup_executed": true,
+        "entry": "manual",
+        "events": [
+          {
+            "at_kst": "2026-11-08T02:35:50.123418+09:00",
+            "code": "ACQUIRED",
+            "executed": false,
+            "exit_code": null,
+            "run_id": "1b2b1e3632974f30b54945322845dc10",
+            "stage": "lock"
+          },
+          {
+            "at_kst": "2026-11-08T02:35:50.128073+09:00",
+            "code": "PINS_VERIFIED",
+            "executed": false,
+            "exit_code": null,
+            "run_id": "1b2b1e3632974f30b54945322845dc10",
+            "stage": "preflight"
+          },
+          {
+            "at_kst": "2026-11-08T02:35:50.131071+09:00",
+            "code": "INVENTORY_READ",
+            "executed": null,
+            "exit_code": null,
+            "file_count": 1,
+            "manifest_name": "asset_manifest_v0.27.json",
+            "manifest_sha256": "7041ecbfb7cf3ce28b64a4d10d9a431e72361ed8734bf48bfa95634cd487da23",
+            "run_id": "1b2b1e3632974f30b54945322845dc10",
+            "selection_sha256": "38c655fc388cfdc6df9b74bc15fb38c9a167ca0f3b1527ce027aa51ec8991446",
+            "stage": "baseline",
+            "total_bytes": 22
+          },
+          {
+            "at_kst": "2026-11-08T02:35:50.846416+09:00",
+            "code": "CREATED",
+            "executed": true,
+            "exit_code": 0,
+            "file_count": 1,
+            "local_receipt_sha256": "526e7edc41b7a8ee0e9afcd7c0209b55d705a28bfe14ad050be9b6b83bda67ab",
+            "manifest_name": "asset_manifest_v0.27.json",
+            "manifest_sha256": "7041ecbfb7cf3ce28b64a4d10d9a431e72361ed8734bf48bfa95634cd487da23",
+            "run_id": "1b2b1e3632974f30b54945322845dc10",
+            "selection_sha256": "38c655fc388cfdc6df9b74bc15fb38c9a167ca0f3b1527ce027aa51ec8991446",
+            "snapshot_id": "ASSET_V21_20261108_023550_KST_90248",
+            "stage": "local",
+            "total_bytes": 22
+          },
+          {
+            "at_kst": "2026-11-08T02:35:51.554403+09:00",
+            "cas_id": "CAS-ASSET_V21_20261108_023550_KST_90248",
+            "code": "REPLICATED",
+            "executed": true,
+            "exit_code": 0,
+            "local_receipt_sha256": "526e7edc41b7a8ee0e9afcd7c0209b55d705a28bfe14ad050be9b6b83bda67ab",
+            "manifest_sha256": "7041ecbfb7cf3ce28b64a4d10d9a431e72361ed8734bf48bfa95634cd487da23",
+            "run_id": "1b2b1e3632974f30b54945322845dc10",
+            "selection_sha256": "38c655fc388cfdc6df9b74bc15fb38c9a167ca0f3b1527ce027aa51ec8991446",
+            "stage": "nas"
+          },
+          {
+            "at_kst": "2026-11-08T02:35:51.557026+09:00",
+            "code": "CHAIN_VERIFIED",
+            "executed": true,
+            "exit_code": 0,
+            "run_id": "1b2b1e3632974f30b54945322845dc10",
+            "stage": "final"
+          },
+          {
+            "at_kst": "2026-11-08T02:35:51.561307+09:00",
+            "code": "PINS_UNCHANGED",
+            "executed": false,
+            "exit_code": null,
+            "run_id": "1b2b1e3632974f30b54945322845dc10",
+            "stage": "postflight"
+          }
+        ],
+        "processes": [
+          {
+            "exit_code": 0,
+            "live_descendants": [],
+            "pid": 90248,
+            "stage": "gate",
+            "timed_out": false
+          },
+          {
+            "exit_code": 0,
+            "live_descendants": [],
+            "pid": 90250,
+            "stage": "nas",
+            "timed_out": false
+          }
+        ],
+        "reason": "INVENTORY_CHANGED",
+        "run_id": "1b2b1e3632974f30b54945322845dc10",
+        "schema_version": "0.1",
+        "scope": "ISOLATED_FIXTURE_ONLY",
+        "status": "FAILED_SAFE",
+        "verified_chain": null
+      },
+      "verdict": "PASS"
+    },
+    {
+      "case": "nas_incomplete",
+      "details": {},
+      "entry_exit": 30,
+      "expected": "NAS_CHAIN_NOT_VERIFIED",
+      "result": {
+        "actual_backup_success": false,
+        "backup_executed": true,
+        "entry": "manual",
+        "events": [
+          {
+            "at_kst": "2026-11-08T02:35:52.278008+09:00",
+            "code": "ACQUIRED",
+            "executed": false,
+            "exit_code": null,
+            "run_id": "d9134a6ec2bd4781bebce82120619558",
+            "stage": "lock"
+          },
+          {
+            "at_kst": "2026-11-08T02:35:52.283423+09:00",
+            "code": "PINS_VERIFIED",
+            "executed": false,
+            "exit_code": null,
+            "run_id": "d9134a6ec2bd4781bebce82120619558",
+            "stage": "preflight"
+          },
+          {
+            "at_kst": "2026-11-08T02:35:52.286481+09:00",
+            "code": "INVENTORY_READ",
+            "executed": null,
+            "exit_code": null,
+            "file_count": 1,
+            "manifest_name": "asset_manifest_v0.27.json",
+            "manifest_sha256": "7041ecbfb7cf3ce28b64a4d10d9a431e72361ed8734bf48bfa95634cd487da23",
+            "run_id": "d9134a6ec2bd4781bebce82120619558",
+            "selection_sha256": "38c655fc388cfdc6df9b74bc15fb38c9a167ca0f3b1527ce027aa51ec8991446",
+            "stage": "baseline",
+            "total_bytes": 22
+          },
+          {
+            "at_kst": "2026-11-08T02:35:53.023270+09:00",
+            "code": "CREATED",
+            "executed": true,
+            "exit_code": 0,
+            "file_count": 1,
+            "local_receipt_sha256": "690c42ce9391bf937c4cd94ea94710283a22b87a843cc6c13ebe0f9026b28c05",
+            "manifest_name": "asset_manifest_v0.27.json",
+            "manifest_sha256": "7041ecbfb7cf3ce28b64a4d10d9a431e72361ed8734bf48bfa95634cd487da23",
+            "run_id": "d9134a6ec2bd4781bebce82120619558",
+            "selection_sha256": "38c655fc388cfdc6df9b74bc15fb38c9a167ca0f3b1527ce027aa51ec8991446",
+            "snapshot_id": "ASSET_V21_20261108_023552_KST_90253",
+            "stage": "local",
+            "total_bytes": 22
+          },
+          {
+            "at_kst": "2026-11-08T02:35:53.723046+09:00",
+            "cas_id": "CAS-ASSET_V21_20261108_023552_KST_90253",
+            "code": "REPLICATED",
+            "executed": true,
+            "exit_code": 0,
+            "local_receipt_sha256": "690c42ce9391bf937c4cd94ea94710283a22b87a843cc6c13ebe0f9026b28c05",
+            "manifest_sha256": "7041ecbfb7cf3ce28b64a4d10d9a431e72361ed8734bf48bfa95634cd487da23",
+            "run_id": "d9134a6ec2bd4781bebce82120619558",
+            "selection_sha256": "38c655fc388cfdc6df9b74bc15fb38c9a167ca0f3b1527ce027aa51ec8991446",
+            "stage": "nas"
+          },
+          {
+            "at_kst": "2026-11-08T02:35:53.727114+09:00",
+            "code": "PINS_UNCHANGED",
+            "executed": false,
+            "exit_code": null,
+            "run_id": "d9134a6ec2bd4781bebce82120619558",
+            "stage": "postflight"
+          }
+        ],
+        "processes": [
+          {
+            "exit_code": 0,
+            "live_descendants": [],
+            "pid": 90253,
+            "stage": "gate",
+            "timed_out": false
+          },
+          {
+            "exit_code": 0,
+            "live_descendants": [],
+            "pid": 90255,
+            "stage": "nas",
+            "timed_out": false
+          }
+        ],
+        "reason": "NAS_EVIDENCE_MISSING_OR_MISMATCH",
+        "run_id": "d9134a6ec2bd4781bebce82120619558",
+        "schema_version": "0.1",
+        "scope": "ISOLATED_FIXTURE_ONLY",
+        "status": "NAS_CHAIN_NOT_VERIFIED",
+        "verified_chain": null
+      },
+      "verdict": "PASS"
+    },
+    {
+      "case": "nas_mismatch",
+      "details": {},
+      "entry_exit": 30,
+      "expected": "NAS_CHAIN_NOT_VERIFIED",
+      "result": {
+        "actual_backup_success": false,
+        "backup_executed": true,
+        "entry": "manual",
+        "events": [
+          {
+            "at_kst": "2026-11-08T02:35:54.454479+09:00",
+            "code": "ACQUIRED",
+            "executed": false,
+            "exit_code": null,
+            "run_id": "f7efb7a4efaa4c4db8f484e18f63d412",
+            "stage": "lock"
+          },
+          {
+            "at_kst": "2026-11-08T02:35:54.460372+09:00",
+            "code": "PINS_VERIFIED",
+            "executed": false,
+            "exit_code": null,
+            "run_id": "f7efb7a4efaa4c4db8f484e18f63d412",
+            "stage": "preflight"
+          },
+          {
+            "at_kst": "2026-11-08T02:35:54.463677+09:00",
+            "code": "INVENTORY_READ",
+            "executed": null,
+            "exit_code": null,
+            "file_count": 1,
+            "manifest_name": "asset_manifest_v0.27.json",
+            "manifest_sha256": "7041ecbfb7cf3ce28b64a4d10d9a431e72361ed8734bf48bfa95634cd487da23",
+            "run_id": "f7efb7a4efaa4c4db8f484e18f63d412",
+            "selection_sha256": "38c655fc388cfdc6df9b74bc15fb38c9a167ca0f3b1527ce027aa51ec8991446",
+            "stage": "baseline",
+            "total_bytes": 22
+          },
+          {
+            "at_kst": "2026-11-08T02:35:55.152078+09:00",
+            "code": "CREATED",
+            "executed": true,
+            "exit_code": 0,
+            "file_count": 1,
+            "local_receipt_sha256": "4b9ae593960987a0d76898760b28f89f1f5285246b84cb5de3f875931a15c2b2",
+            "manifest_name": "asset_manifest_v0.27.json",
+            "manifest_sha256": "7041ecbfb7cf3ce28b64a4d10d9a431e72361ed8734bf48bfa95634cd487da23",
+            "run_id": "f7efb7a4efaa4c4db8f484e18f63d412",
+            "selection_sha256": "38c655fc388cfdc6df9b74bc15fb38c9a167ca0f3b1527ce027aa51ec8991446",
+            "snapshot_id": "ASSET_V21_20261108_023555_KST_90258",
+            "stage": "local",
+            "total_bytes": 22
+          },
+          {
+            "at_kst": "2026-11-08T02:35:55.831893+09:00",
+            "cas_id": "CAS-ASSET_V21_20261108_023555_KST_90258",
+            "code": "REPLICATED",
+            "executed": true,
+            "exit_code": 0,
+            "local_receipt_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+            "manifest_sha256": "7041ecbfb7cf3ce28b64a4d10d9a431e72361ed8734bf48bfa95634cd487da23",
+            "run_id": "f7efb7a4efaa4c4db8f484e18f63d412",
+            "selection_sha256": "38c655fc388cfdc6df9b74bc15fb38c9a167ca0f3b1527ce027aa51ec8991446",
+            "stage": "nas"
+          },
+          {
+            "at_kst": "2026-11-08T02:35:55.835202+09:00",
+            "code": "PINS_UNCHANGED",
+            "executed": false,
+            "exit_code": null,
+            "run_id": "f7efb7a4efaa4c4db8f484e18f63d412",
+            "stage": "postflight"
+          }
+        ],
+        "processes": [
+          {
+            "exit_code": 0,
+            "live_descendants": [],
+            "pid": 90258,
+            "stage": "gate",
+            "timed_out": false
+          },
+          {
+            "exit_code": 0,
+            "live_descendants": [],
+            "pid": 90261,
+            "stage": "nas",
+            "timed_out": false
+          }
+        ],
+        "reason": "NAS_EVIDENCE_MISSING_OR_MISMATCH",
+        "run_id": "f7efb7a4efaa4c4db8f484e18f63d412",
+        "schema_version": "0.1",
+        "scope": "ISOLATED_FIXTURE_ONLY",
+        "status": "NAS_CHAIN_NOT_VERIFIED",
+        "verified_chain": null
+      },
+      "verdict": "PASS"
+    },
+    {
+      "case": "nas_missing",
+      "details": {},
+      "entry_exit": 30,
+      "expected": "NAS_CHAIN_NOT_VERIFIED",
+      "result": {
+        "actual_backup_success": false,
+        "backup_executed": true,
+        "entry": "manual",
+        "events": [
+          {
+            "at_kst": "2026-11-08T02:35:56.517958+09:00",
+            "code": "ACQUIRED",
+            "executed": false,
+            "exit_code": null,
+            "run_id": "ca4818be6bed47229e47ce64bb784448",
+            "stage": "lock"
+          },
+          {
+            "at_kst": "2026-11-08T02:35:56.522003+09:00",
+            "code": "PINS_VERIFIED",
+            "executed": false,
+            "exit_code": null,
+            "run_id": "ca4818be6bed47229e47ce64bb784448",
+            "stage": "preflight"
+          },
+          {
+            "at_kst": "2026-11-08T02:35:56.524422+09:00",
+            "code": "INVENTORY_READ",
+            "executed": null,
+            "exit_code": null,
+            "file_count": 1,
+            "manifest_name": "asset_manifest_v0.27.json",
+            "manifest_sha256": "7041ecbfb7cf3ce28b64a4d10d9a431e72361ed8734bf48bfa95634cd487da23",
+            "run_id": "ca4818be6bed47229e47ce64bb784448",
+            "selection_sha256": "38c655fc388cfdc6df9b74bc15fb38c9a167ca0f3b1527ce027aa51ec8991446",
+            "stage": "baseline",
+            "total_bytes": 22
+          },
+          {
+            "at_kst": "2026-11-08T02:35:57.209420+09:00",
+            "code": "CREATED",
+            "executed": true,
+            "exit_code": 0,
+            "file_count": 1,
+            "local_receipt_sha256": "2f2257b4c3fbb70997d3512da00550f9e59b49fe4c4fc97a7abef448ec56eeb2",
+            "manifest_name": "asset_manifest_v0.27.json",
+            "manifest_sha256": "7041ecbfb7cf3ce28b64a4d10d9a431e72361ed8734bf48bfa95634cd487da23",
+            "run_id": "ca4818be6bed47229e47ce64bb784448",
+            "selection_sha256": "38c655fc388cfdc6df9b74bc15fb38c9a167ca0f3b1527ce027aa51ec8991446",
+            "snapshot_id": "ASSET_V21_20261108_023557_KST_90264",
+            "stage": "local",
+            "total_bytes": 22
+          },
+          {
+            "at_kst": "2026-11-08T02:35:57.919851+09:00",
+            "code": "REPLICATED",
+            "executed": true,
+            "exit_code": 0,
+            "run_id": "ca4818be6bed47229e47ce64bb784448",
+            "stage": "nas"
+          },
+          {
+            "at_kst": "2026-11-08T02:35:57.923617+09:00",
+            "code": "PINS_UNCHANGED",
+            "executed": false,
+            "exit_code": null,
+            "run_id": "ca4818be6bed47229e47ce64bb784448",
+            "stage": "postflight"
+          }
+        ],
+        "processes": [
+          {
+            "exit_code": 0,
+            "live_descendants": [],
+            "pid": 90264,
+            "stage": "gate",
+            "timed_out": false
+          },
+          {
+            "exit_code": 0,
+            "live_descendants": [],
+            "pid": 90266,
+            "stage": "nas",
+            "timed_out": false
+          }
+        ],
+        "reason": "NAS_EVIDENCE_MISSING_OR_MISMATCH",
+        "run_id": "ca4818be6bed47229e47ce64bb784448",
+        "schema_version": "0.1",
+        "scope": "ISOLATED_FIXTURE_ONLY",
+        "status": "NAS_CHAIN_NOT_VERIFIED",
+        "verified_chain": null
+      },
+      "verdict": "PASS"
+    },
+    {
+      "case": "nas_indexed_is_not_new",
+      "details": {},
+      "entry_exit": 30,
+      "expected": "NAS_CHAIN_NOT_VERIFIED",
+      "result": {
+        "actual_backup_success": false,
+        "backup_executed": true,
+        "entry": "manual",
+        "events": [
+          {
+            "at_kst": "2026-11-08T02:35:58.617820+09:00",
+            "code": "ACQUIRED",
+            "executed": false,
+            "exit_code": null,
+            "run_id": "095c9ca713884027a00dc21bf349a640",
+            "stage": "lock"
+          },
+          {
+            "at_kst": "2026-11-08T02:35:58.622691+09:00",
+            "code": "PINS_VERIFIED",
+            "executed": false,
+            "exit_code": null,
+            "run_id": "095c9ca713884027a00dc21bf349a640",
+            "stage": "preflight"
+          },
+          {
+            "at_kst": "2026-11-08T02:35:58.625591+09:00",
+            "code": "INVENTORY_READ",
+            "executed": null,
+            "exit_code": null,
+            "file_count": 1,
+            "manifest_name": "asset_manifest_v0.27.json",
+            "manifest_sha256": "7041ecbfb7cf3ce28b64a4d10d9a431e72361ed8734bf48bfa95634cd487da23",
+            "run_id": "095c9ca713884027a00dc21bf349a640",
+            "selection_sha256": "38c655fc388cfdc6df9b74bc15fb38c9a167ca0f3b1527ce027aa51ec8991446",
+            "stage": "baseline",
+            "total_bytes": 22
+          },
+          {
+            "at_kst": "2026-11-08T02:35:59.336995+09:00",
+            "code": "CREATED",
+            "executed": true,
+            "exit_code": 0,
+            "file_count": 1,
+            "local_receipt_sha256": "679bbf5774cd5a628e28f2c8da10fbf6baaa29a66954ce267561ffd36f54fd6d",
+            "manifest_name": "asset_manifest_v0.27.json",
+            "manifest_sha256": "7041ecbfb7cf3ce28b64a4d10d9a431e72361ed8734bf48bfa95634cd487da23",
+            "run_id": "095c9ca713884027a00dc21bf349a640",
+            "selection_sha256": "38c655fc388cfdc6df9b74bc15fb38c9a167ca0f3b1527ce027aa51ec8991446",
+            "snapshot_id": "ASSET_V21_20261108_023559_KST_90269",
+            "stage": "local",
+            "total_bytes": 22
+          },
+          {
+            "at_kst": "2026-11-08T02:36:00.043319+09:00",
+            "code": "ALREADY_VERIFIED",
+            "executed": false,
+            "exit_code": 0,
+            "run_id": "095c9ca713884027a00dc21bf349a640",
+            "stage": "nas"
+          },
+          {
+            "at_kst": "2026-11-08T02:36:00.045000+09:00",
+            "code": "PINS_UNCHANGED",
+            "executed": false,
+            "exit_code": null,
+            "run_id": "095c9ca713884027a00dc21bf349a640",
+            "stage": "postflight"
+          }
+        ],
+        "processes": [
+          {
+            "exit_code": 0,
+            "live_descendants": [],
+            "pid": 90269,
+            "stage": "gate",
+            "timed_out": false
+          },
+          {
+            "exit_code": 0,
+            "live_descendants": [],
+            "pid": 90271,
+            "stage": "nas",
+            "timed_out": false
+          }
+        ],
+        "reason": "NAS_WORK_STATE_MISMATCH",
+        "run_id": "095c9ca713884027a00dc21bf349a640",
+        "schema_version": "0.1",
+        "scope": "ISOLATED_FIXTURE_ONLY",
+        "status": "NAS_CHAIN_NOT_VERIFIED",
+        "verified_chain": null
+      },
+      "verdict": "PASS"
+    },
+    {
+      "case": "duplicate_schedule",
+      "details": {},
+      "entry_exit": 30,
+      "expected": "FAILED_SAFE",
+      "result": {
+        "actual_backup_success": false,
+        "backup_executed": false,
+        "entry": "manual",
+        "events": [],
+        "processes": [],
+        "reason": "SCHEDULE_NOT_SINGLE_AUTHORIZED_ENTRY",
+        "run_id": "ae7b94d8b1cf4e94ad2b6fb63afd3f21",
+        "schema_version": "0.1",
+        "scope": "ISOLATED_FIXTURE_ONLY",
+        "status": "FAILED_SAFE",
+        "verified_chain": null
+      },
+      "verdict": "PASS"
+    },
+    {
+      "case": "malformed_wire",
+      "details": {},
+      "entry_exit": 30,
+      "expected": "FAILED_SAFE",
+      "result": {
+        "actual_backup_success": false,
+        "backup_executed": false,
+        "entry": "manual",
+        "events": [
+          {
+            "at_kst": "2026-11-08T02:36:01.495021+09:00",
+            "code": "ACQUIRED",
+            "executed": false,
+            "exit_code": null,
+            "run_id": "591f58eff8794a84bccaffa08655780a",
+            "stage": "lock"
+          },
+          {
+            "at_kst": "2026-11-08T02:36:01.509016+09:00",
+            "code": "PINS_VERIFIED",
+            "executed": false,
+            "exit_code": null,
+            "run_id": "591f58eff8794a84bccaffa08655780a",
+            "stage": "preflight"
+          },
+          {
+            "at_kst": "2026-11-08T02:36:01.512325+09:00",
+            "code": "INVENTORY_READ",
+            "executed": null,
+            "exit_code": null,
+            "file_count": 1,
+            "manifest_name": "asset_manifest_v0.27.json",
+            "manifest_sha256": "7041ecbfb7cf3ce28b64a4d10d9a431e72361ed8734bf48bfa95634cd487da23",
+            "run_id": "591f58eff8794a84bccaffa08655780a",
+            "selection_sha256": "38c655fc388cfdc6df9b74bc15fb38c9a167ca0f3b1527ce027aa51ec8991446",
+            "stage": "baseline",
+            "total_bytes": 22
+          },
+          {
+            "at_kst": "2026-11-08T02:36:02.914026+09:00",
+            "code": "FAILED",
+            "executed": false,
+            "exit_code": 0,
+            "run_id": "591f58eff8794a84bccaffa08655780a",
+            "stage": "local"
+          },
+          {
+            "at_kst": "2026-11-08T02:36:02.918964+09:00",
+            "code": "PINS_UNCHANGED",
+            "executed": false,
+            "exit_code": null,
+            "run_id": "591f58eff8794a84bccaffa08655780a",
+            "stage": "postflight"
+          }
+        ],
+        "processes": [
+          {
+            "exit_code": 0,
+            "live_descendants": [],
+            "pid": 90275,
+            "stage": "gate",
+            "timed_out": false
+          }
+        ],
+        "reason": "LOCAL_RESULT_CONTRADICTORY_OR_FAILED",
+        "run_id": "591f58eff8794a84bccaffa08655780a",
+        "schema_version": "0.1",
+        "scope": "ISOLATED_FIXTURE_ONLY",
+        "status": "FAILED_SAFE",
+        "verified_chain": null
+      },
+      "verdict": "PASS"
+    },
+    {
+      "case": "path_traversal_rejected",
+      "details": {},
+      "entry_exit": 30,
+      "expected": "FAILED_SAFE",
+      "result": {
+        "actual_backup_success": false,
+        "backup_executed": false,
+        "entry": "manual",
+        "events": [],
+        "processes": [],
+        "reason": "INVALID_CASE_NAME",
+        "run_id": "1cf95c9b58964dd99385a0d4bae4b4f5",
+        "schema_version": "0.1",
+        "scope": "ISOLATED_FIXTURE_ONLY",
+        "status": "FAILED_SAFE",
+        "verified_chain": null
+      },
+      "verdict": "PASS"
+    },
+    {
+      "case": "audit_denies_outside_read_and_unapproved_exec",
+      "exit": 0,
+      "verdict": "PASS"
+    }
+  ],
+  "exit": 1,
+  "passed": 19,
+  "total": 20
+}

@@ -1,0 +1,58 @@
+[
+  {
+    "id": "ASSET-SEARCH-V15-SERVICE",
+    "version": "1.5",
+    "path": "/Users/yongho/Library/Application Support/ROUTABL-AssetSearch/routabl_search_v1_5_service.py",
+    "sha256": "55b8747b145463c62366deba13904e3136893b8a611bb4ae94bbc2d7a642347d",
+    "registration": "OFFICIAL_ROW",
+    "title": "검색 v1.5의 실제 Python 검색·랭킹 소스"
+  },
+  {
+    "id": "MVL01-REGISTRY",
+    "version": "0.27",
+    "path": "30_REGISTRY/asset_manifest_v0.27.json",
+    "sha256": "afe17adb54103952c0e84d296ded42a478fca49f25bd53f1f87dc0c73e1ce244",
+    "registration": "REGISTRY_DOCUMENT",
+    "title": "최신 공식 대장 v0.27 및 provenance_crosswalk"
+  },
+  {
+    "id": "AF-01",
+    "version": "1.0",
+    "path": "40_WORKING/CW01_ACCESS_FIRST_PRINCIPLE_AF01_V01/DIGITOPIA_ACCESS_FIRST_PRINCIPLE_AF01_v1.0_20261108.md",
+    "sha256": "13eadac676aed2e97c0486edbed67c9db85a1d693545de80db209830614805d5",
+    "registration": "PINNED_REFERENCE",
+    "title": "접근성 우선 원칙 AF-01"
+  },
+  {
+    "id": "CW-01",
+    "version": "1.0",
+    "path": "00_GUIDE/DIGITOPIA_CHAT_WORK_PROTOCOL_v1.0.md",
+    "sha256": "7b48c1deb08ab1c8904541f7c9acedbf2406e51f510fbccf0d7ae17609d585d1",
+    "registration": "PINNED_REFERENCE",
+    "title": "CW-01 공식 인계 원칙"
+  },
+  {
+    "id": "MVL01-CW-POC",
+    "version": null,
+    "path": "40_WORKING/CW01_HANDOFF_POC_V01/VERIFICATION_RETEST.md",
+    "sha256": "e1fb4a7504d08cd234621c020439e57578145e5277d66d1a842f2a46bc759bbf",
+    "registration": "PINNED_REFERENCE",
+    "title": "CW-01 인계 실증 재시험 증거"
+  },
+  {
+    "id": "MVL01-CW-COLD",
+    "version": null,
+    "path": "40_WORKING/CW01_HANDOFF_COLDSTART_V01/HANDOFF_MANUAL.md",
+    "sha256": "bf8a093caf412b45f8400efda3b9a0bb6fea26b7af0b0378b3f648ea60eed688",
+    "registration": "PINNED_REFERENCE",
+    "title": "CW-01 초기 상태 수동 인계 참고자료"
+  },
+  {
+    "id": "MVL01-CW-FEEDBACK",
+    "version": "0.1",
+    "path": "40_WORKING/CW01_STEP5_FEEDBACK_V01/HANDOFF_OUTPUT_CONTRACT_v0.1.md",
+    "sha256": "c5735b796213cb93f718167ed5a2b4006b6a1816991a6d7eb71520053666e455",
+    "registration": "PINNED_REFERENCE",
+    "title": "CW-01 환류 출력 계약 후보"
+  }
+]

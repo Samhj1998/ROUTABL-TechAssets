@@ -1,0 +1,145 @@
+{
+  "contender_trace": [],
+  "exit": 0,
+  "legacy_contender": {
+    "actual_backup_success": false,
+    "backup_executed": false,
+    "entry": "manual",
+    "events": [],
+    "processes": [],
+    "reason": "SHARED_LOCK_HELD",
+    "run_id": "a503cc37d3e34ddba45806c53c7654a5",
+    "schema_version": "0.1",
+    "scope": "ISOLATED_FIXTURE_ONLY",
+    "status": "SKIPPED_LOCK_HELD",
+    "verified_chain": null
+  },
+  "legacy_owner": {
+    "actual_backup_success": false,
+    "backup_executed": null,
+    "entry": "scheduled",
+    "events": [
+      {
+        "at_kst": "2026-11-08T01:43:19.972217+09:00",
+        "code": "ACQUIRED",
+        "executed": false,
+        "exit_code": null,
+        "run_id": "61b488ce09b547c99fd0de5c543b8aab",
+        "stage": "lock"
+      },
+      {
+        "at_kst": "2026-11-08T01:43:19.977758+09:00",
+        "code": "PINS_VERIFIED",
+        "executed": false,
+        "exit_code": null,
+        "run_id": "61b488ce09b547c99fd0de5c543b8aab",
+        "stage": "preflight"
+      },
+      {
+        "at_kst": "2026-11-08T01:43:19.980758+09:00",
+        "code": "INVENTORY_READ",
+        "executed": null,
+        "exit_code": null,
+        "file_count": 1,
+        "manifest_name": "asset_manifest_v0.27.json",
+        "manifest_sha256": "7041ecbfb7cf3ce28b64a4d10d9a431e72361ed8734bf48bfa95634cd487da23",
+        "run_id": "61b488ce09b547c99fd0de5c543b8aab",
+        "selection_sha256": "38c655fc388cfdc6df9b74bc15fb38c9a167ca0f3b1527ce027aa51ec8991446",
+        "stage": "baseline",
+        "total_bytes": 22
+      },
+      {
+        "at_kst": "2026-11-08T01:43:21.939005+09:00",
+        "code": "ADAPTER_ERROR",
+        "executed": null,
+        "exit_code": null,
+        "run_id": "61b488ce09b547c99fd0de5c543b8aab",
+        "stage": "local"
+      },
+      {
+        "at_kst": "2026-11-08T01:43:21.942255+09:00",
+        "code": "PINS_UNCHANGED",
+        "executed": false,
+        "exit_code": null,
+        "run_id": "61b488ce09b547c99fd0de5c543b8aab",
+        "stage": "postflight"
+      }
+    ],
+    "processes": [],
+    "reason": "ADAPTER_ERROR",
+    "run_id": "61b488ce09b547c99fd0de5c543b8aab",
+    "schema_version": "0.1",
+    "scope": "ISOLATED_FIXTURE_ONLY",
+    "status": "FAILED_SAFE",
+    "verified_chain": null
+  },
+  "owned_zombie_signal_zero": {
+    "errno": 1,
+    "exit": 0,
+    "name": "EPERM",
+    "pgid": 89151,
+    "pid": 89151,
+    "pre_reap_state": "Z"
+  },
+  "owner_trace": [
+    {
+      "event": "child_spawn",
+      "monotonic": 0.699621833,
+      "pgid": 89137,
+      "pid": 89137,
+      "sid": 89137,
+      "spawn_seconds": 0.009286542000000009,
+      "supervisor_uid": 501
+    },
+    {
+      "elapsed": 1.502474625,
+      "event": "communicate_timeout",
+      "monotonic": 2.20279625,
+      "pgid": 89137,
+      "pid": 89137,
+      "ready_seen": true,
+      "sid": 89137,
+      "stdout_bytes": 0,
+      "supervisor_uid": 501,
+      "timeout": 1.5
+    },
+    {
+      "event": "killpg_returned",
+      "monotonic": 2.203039875,
+      "pgid": 89137,
+      "pid": 89137,
+      "sid": 89137,
+      "signal": 15,
+      "supervisor_uid": 501
+    },
+    {
+      "errno": 1,
+      "event": "killpg_error",
+      "lookup_errno": 3,
+      "monotonic": 2.50725925,
+      "name": "EPERM",
+      "pid": 89137,
+      "signal": 9
+    },
+    {
+      "errno": 1,
+      "event": "killpg_zero_after_error",
+      "lookup_errno": 3,
+      "monotonic": 2.507428333,
+      "name": "EPERM",
+      "pid": 89137
+    },
+    {
+      "event": "group_status_after_error",
+      "monotonic": 2.648261666,
+      "probe_exit": 0,
+      "rows": [
+        [
+          "89137",
+          "89137",
+          "Z"
+        ]
+      ]
+    }
+  ]
+}

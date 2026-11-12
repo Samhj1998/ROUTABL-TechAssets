@@ -1,0 +1,39 @@
+{
+  "audience": "OPERATOR_ONLY",
+  "design": {
+    "sessions": "Separate new ChatGPT Temporary Chats outside projects",
+    "preferred_model": "GPT-6 Instant",
+    "personalization": "Not applied",
+    "before_T1": "No lookup, tools, additional message, or attachments",
+    "controls": "Use matching settings/model where feasible. Record trial order and deviations. If isolation cannot be established, retain CONTEXT_ISOLATION_UNVERIFIED."
+  },
+  "trial_order": null,
+  "conditions": {
+    "A": {
+      "actual_model": null,
+      "new_session": null,
+      "outside_project": null,
+      "temporary_chat": null,
+      "personalization_not_applied": null,
+      "prior_context_or_memory_access": null,
+      "tools_used_before_T1": null,
+      "attachments_before_T1": null,
+      "setting_evidence": null,
+      "context_isolation": "CONTEXT_ISOLATION_UNVERIFIED",
+      "deviations": null
+    },
+    "B": {
+      "actual_model": null,
+      "new_session": null,
+      "outside_project": null,
+      "temporary_chat": null,
+      "personalization_not_applied": null,
+      "prior_context_or_memory_access": null,
+      "tools_used_before_T1": null,
+      "attachments_before_T1": null,
+      "setting_evidence": null,
+      "context_isolation": "CONTEXT_ISOLATION_UNVERIFIED",
+      "deviations": null
+    }
+  }
+}

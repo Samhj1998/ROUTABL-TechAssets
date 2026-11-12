@@ -1,0 +1,604 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "0.1"
+    },
+    "scope": {
+      "const": "ISOLATED_FIXTURE_ONLY"
+    },
+    "run_id": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{32}$"
+    },
+    "entry": {
+      "enum": [
+        "manual",
+        "scheduled"
+      ]
+    },
+    "status": {
+      "enum": [
+        "NEW_BACKUP_VERIFIED",
+        "CURRENT_BACKUP_ALREADY_VERIFIED",
+        "SKIPPED_LOCK_HELD",
+        "NO_NEW_BACKUP_EVIDENCE",
+        "STALE_REGISTRY_BACKUP",
+        "NAS_CHAIN_NOT_VERIFIED",
+        "FAILED_SAFE"
+      ]
+    },
+    "reason": {
+      "type": "string"
+    },
+    "actual_backup_success": {
+      "type": "boolean"
+    },
+    "backup_executed": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "events": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "stage": {
+            "enum": [
+              "lock",
+              "preflight",
+              "baseline",
+              "local",
+              "nas",
+              "final",
+              "decision",
+              "postflight"
+            ]
+          },
+          "code": {
+            "type": "string"
+          },
+          "exit_code": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "executed": {
+            "type": [
+              "boolean",
+              "null"
+            ]
+          },
+          "at_kst": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "run_id": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "stage",
+          "code",
+          "exit_code",
+          "executed",
+          "at_kst",
+          "run_id"
+        ]
+      }
+    },
+    "processes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "stage": {
+            "enum": [
+              "gate",
+              "nas"
+            ]
+          },
+          "pid": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "exit_code": {
+            "type": "integer"
+          },
+          "live_descendants": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "minimum": 1
+            }
+          },
+          "timed_out": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "stage",
+          "pid",
+          "exit_code",
+          "live_descendants",
+          "timed_out"
+        ]
+      }
+    },
+    "verified_chain": {
+      "anyOf": [
+        {
+          "type": "object",
+          "properties": {
+            "local": {
+              "type": "object",
+              "properties": {
+                "inventory": {
+                  "type": "object",
+                  "properties": {
+                    "manifest_name": {
+                      "type": "string",
+                      "pattern": "^asset_manifest_v0\\.[0-9]+\\.json$"
+                    },
+                    "manifest_sha256": {
+                      "type": "string",
+                      "pattern": "^[0-9a-f]{64}$"
+                    },
+                    "selection_sha256": {
+                      "type": "string",
+                      "pattern": "^[0-9a-f]{64}$"
+                    },
+                    "file_count": {
+                      "type": "integer",
+                      "minimum": 1
+                    },
+                    "total_bytes": {
+                      "type": "integer",
+                      "minimum": 1
+                    }
+                  },
+                  "required": [
+                    "manifest_name",
+                    "manifest_sha256",
+                    "selection_sha256",
+                    "file_count",
+                    "total_bytes"
+                  ]
+                },
+                "snapshot_id": {
+                  "type": "string"
+                },
+                "created_at": {
+                  "type": "string",
+                  "format": "date-time"
+                },
+                "receipt_sha256": {
+                  "type": "string",
+                  "pattern": "^[0-9a-f]{64}$"
+                },
+                "locked": {
+                  "const": true
+                },
+                "sha_verified": {
+                  "const": true
+                }
+              },
+              "required": [
+                "inventory",
+                "snapshot_id",
+                "created_at",
+                "receipt_sha256",
+                "locked",
+                "sha_verified"
+              ]
+            },
+            "nas": {
+              "type": "object",
+              "properties": {
+                "cas_id": {
+                  "type": "string"
+                },
+                "snapshot_id": {
+                  "type": "string"
+                },
+                "local_receipt_sha256": {
+                  "type": "string",
+                  "pattern": "^[0-9a-f]{64}$"
+                },
+                "manifest_sha256": {
+                  "type": "string",
+                  "pattern": "^[0-9a-f]{64}$"
+                },
+                "selection_sha256": {
+                  "type": "string",
+                  "pattern": "^[0-9a-f]{64}$"
+                },
+                "completed": {
+                  "const": true
+                }
+              },
+              "required": [
+                "cas_id",
+                "snapshot_id",
+                "local_receipt_sha256",
+                "manifest_sha256",
+                "selection_sha256",
+                "completed"
+              ]
+            }
+          },
+          "required": [
+            "local",
+            "nas"
+          ]
+        },
+        {
+          "type": "null"
+        }
+      ]
+    }
+  },
+  "required": [
+    "schema_version",
+    "scope",
+    "run_id",
+    "entry",
+    "status",
+    "reason",
+    "actual_backup_success",
+    "backup_executed",
+    "events",
+    "processes",
+    "verified_chain"
+  ],
+  "additionalProperties": false,
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "status": {
+            "const": "NEW_BACKUP_VERIFIED"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "actual_backup_success": {
+            "const": true
+          },
+          "verified_chain": {
+            "type": "object",
+            "properties": {
+              "local": {
+                "type": "object",
+                "properties": {
+                  "inventory": {
+                    "type": "object",
+                    "properties": {
+                      "manifest_name": {
+                        "type": "string",
+                        "pattern": "^asset_manifest_v0\\.[0-9]+\\.json$"
+                      },
+                      "manifest_sha256": {
+                        "type": "string",
+                        "pattern": "^[0-9a-f]{64}$"
+                      },
+                      "selection_sha256": {
+                        "type": "string",
+                        "pattern": "^[0-9a-f]{64}$"
+                      },
+                      "file_count": {
+                        "type": "integer",
+                        "minimum": 1
+                      },
+                      "total_bytes": {
+                        "type": "integer",
+                        "minimum": 1
+                      }
+                    },
+                    "required": [
+                      "manifest_name",
+                      "manifest_sha256",
+                      "selection_sha256",
+                      "file_count",
+                      "total_bytes"
+                    ]
+                  },
+                  "snapshot_id": {
+                    "type": "string"
+                  },
+                  "created_at": {
+                    "type": "string",
+                    "format": "date-time"
+                  },
+                  "receipt_sha256": {
+                    "type": "string",
+                    "pattern": "^[0-9a-f]{64}$"
+                  },
+                  "locked": {
+                    "const": true
+                  },
+                  "sha_verified": {
+                    "const": true
+                  }
+                },
+                "required": [
+                  "inventory",
+                  "snapshot_id",
+                  "created_at",
+                  "receipt_sha256",
+                  "locked",
+                  "sha_verified"
+                ]
+              },
+              "nas": {
+                "type": "object",
+                "properties": {
+                  "cas_id": {
+                    "type": "string"
+                  },
+                  "snapshot_id": {
+                    "type": "string"
+                  },
+                  "local_receipt_sha256": {
+                    "type": "string",
+                    "pattern": "^[0-9a-f]{64}$"
+                  },
+                  "manifest_sha256": {
+                    "type": "string",
+                    "pattern": "^[0-9a-f]{64}$"
+                  },
+                  "selection_sha256": {
+                    "type": "string",
+                    "pattern": "^[0-9a-f]{64}$"
+                  },
+                  "completed": {
+                    "const": true
+                  }
+                },
+                "required": [
+                  "cas_id",
+                  "snapshot_id",
+                  "local_receipt_sha256",
+                  "manifest_sha256",
+                  "selection_sha256",
+                  "completed"
+                ]
+              }
+            },
+            "required": [
+              "local",
+              "nas"
+            ]
+          },
+          "backup_executed": {
+            "const": true
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "status": {
+            "const": "CURRENT_BACKUP_ALREADY_VERIFIED"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "actual_backup_success": {
+            "const": false
+          },
+          "verified_chain": {
+            "type": "object",
+            "properties": {
+              "local": {
+                "type": "object",
+                "properties": {
+                  "inventory": {
+                    "type": "object",
+                    "properties": {
+                      "manifest_name": {
+                        "type": "string",
+                        "pattern": "^asset_manifest_v0\\.[0-9]+\\.json$"
+                      },
+                      "manifest_sha256": {
+                        "type": "string",
+                        "pattern": "^[0-9a-f]{64}$"
+                      },
+                      "selection_sha256": {
+                        "type": "string",
+                        "pattern": "^[0-9a-f]{64}$"
+                      },
+                      "file_count": {
+                        "type": "integer",
+                        "minimum": 1
+                      },
+                      "total_bytes": {
+                        "type": "integer",
+                        "minimum": 1
+                      }
+                    },
+                    "required": [
+                      "manifest_name",
+                      "manifest_sha256",
+                      "selection_sha256",
+                      "file_count",
+                      "total_bytes"
+                    ]
+                  },
+                  "snapshot_id": {
+                    "type": "string"
+                  },
+                  "created_at": {
+                    "type": "string",
+                    "format": "date-time"
+                  },
+                  "receipt_sha256": {
+                    "type": "string",
+                    "pattern": "^[0-9a-f]{64}$"
+                  },
+                  "locked": {
+                    "const": true
+                  },
+                  "sha_verified": {
+                    "const": true
+                  }
+                },
+                "required": [
+                  "inventory",
+                  "snapshot_id",
+                  "created_at",
+                  "receipt_sha256",
+                  "locked",
+                  "sha_verified"
+                ]
+              },
+              "nas": {
+                "type": "object",
+                "properties": {
+                  "cas_id": {
+                    "type": "string"
+                  },
+                  "snapshot_id": {
+                    "type": "string"
+                  },
+                  "local_receipt_sha256": {
+                    "type": "string",
+                    "pattern": "^[0-9a-f]{64}$"
+                  },
+                  "manifest_sha256": {
+                    "type": "string",
+                    "pattern": "^[0-9a-f]{64}$"
+                  },
+                  "selection_sha256": {
+                    "type": "string",
+                    "pattern": "^[0-9a-f]{64}$"
+                  },
+                  "completed": {
+                    "const": true
+                  }
+                },
+                "required": [
+                  "cas_id",
+                  "snapshot_id",
+                  "local_receipt_sha256",
+                  "manifest_sha256",
+                  "selection_sha256",
+                  "completed"
+                ]
+              }
+            },
+            "required": [
+              "local",
+              "nas"
+            ]
+          },
+          "backup_executed": {
+            "const": false
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "status": {
+            "const": "SKIPPED_LOCK_HELD"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "actual_backup_success": {
+            "const": false
+          },
+          "verified_chain": {
+            "type": "null"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "status": {
+            "const": "NO_NEW_BACKUP_EVIDENCE"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "actual_backup_success": {
+            "const": false
+          },
+          "verified_chain": {
+            "type": "null"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "status": {
+            "const": "STALE_REGISTRY_BACKUP"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "actual_backup_success": {
+            "const": false
+          },
+          "verified_chain": {
+            "type": "null"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "status": {
+            "const": "NAS_CHAIN_NOT_VERIFIED"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "actual_backup_success": {
+            "const": false
+          },
+          "verified_chain": {
+            "type": "null"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "status": {
+            "const": "FAILED_SAFE"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "actual_backup_success": {
+            "const": false
+          },
+          "verified_chain": {
+            "type": "null"
+          }
+        }
+      }
+    }
+  ]
+}

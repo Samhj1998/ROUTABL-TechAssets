@@ -1,0 +1,94 @@
+{
+  "schema_version": "CW01-HANDOFF-SCHEMA v0.1",
+  "id": "MOCK-CW01-W2C-001",
+  "record_kind": "simulation",
+  "direction": "work_to_chat",
+  "from": {
+    "mode": "Work",
+    "chat": "120-2-W"
+  },
+  "to": {
+    "mode": "Chat",
+    "chat": "120-2"
+  },
+  "reason": "격리 시험 뒤 남은 설계 결정을 Chat에 전달하는 상황을 재현한다.",
+  "created_at": "2026-11-07T00:00:00+09:00",
+  "decisions": [
+    "CW-01 v1.0 적용",
+    "모의 ID만 사용"
+  ],
+  "remaining": [
+    "Step 4 검증 설계"
+  ],
+  "assets": [
+    {
+      "id": "CW-01",
+      "path": "00_GUIDE/DIGITOPIA_CHAT_WORK_PROTOCOL_v1.0.md",
+      "sha256": "7b48c1deb08ab1c8904541f7c9acedbf2406e51f510fbccf0d7ae17609d585d1"
+    },
+    {
+      "id": "STEP2-AUDIT",
+      "path": "60_AUDIT/120-2-W_CW01_STEP2_VERIFICATION_v1.0.md",
+      "sha256": "ab56b5518120d93a300549757eb6f8c854989b339622367b73907d320a25e56d"
+    },
+    {
+      "id": "MANIFEST-V0.27",
+      "path": "30_REGISTRY/asset_manifest_v0.27.json",
+      "sha256": "afe17adb54103952c0e84d296ded42a478fca49f25bd53f1f87dc0c73e1ce244"
+    }
+  ],
+  "evidence": [
+    {
+      "source": "60_AUDIT/120-2-W_CW01_STEP2_VERIFICATION_v1.0.md",
+      "origin": "historical",
+      "status": "PASS",
+      "detail": "Step 2 공식 규칙 전문 및 원칙·대장 해시 검증 완료 기록."
+    },
+    {
+      "source": "가상 검증 사례",
+      "origin": "simulated",
+      "status": "FAIL",
+      "detail": "변조 인계문 발견 상황을 가정."
+    },
+    {
+      "source": "가상 운영 시험",
+      "origin": "simulated",
+      "status": "NOT_TESTED",
+      "detail": "실제 모드 간 자동 연결 미검증."
+    },
+    {
+      "source": "가상 배포 요청",
+      "origin": "simulated",
+      "status": "BLOCKED",
+      "detail": "외부 배포 금지 사례."
+    }
+  ],
+  "approval": {
+    "state": "pending",
+    "allowed": [],
+    "prohibited": [
+      "external_delivery",
+      "production_write",
+      "registry_write"
+    ],
+    "evidence": "Step 4 실행 승인 없음. 설계 검토 대기."
+  },
+  "delivery": {
+    "target": "local",
+    "sensitivity": "internal"
+  },
+  "next": {
+    "action": "review_step4_design",
+    "completion": "운영 검증 범위와 승인 조건 결정.",
+    "return_if": "운영 접근, 외부 전송, 승인 확대 또는 새 설계 결정 필요."
+  },
+  "details": {
+    "results": "Step 2 완료 사실을 참조하며 이 인계 기록은 모의 예시.",
+    "open_issue": "수동 인계와 자동화의 경계 검토.",
+    "options": [
+      "수동 복사",
+      "로컬 생성 보조"
+    ],
+    "decision_question": "Step 4에서 어떤 사례와 기준을 적용할까?"
+  }
+}

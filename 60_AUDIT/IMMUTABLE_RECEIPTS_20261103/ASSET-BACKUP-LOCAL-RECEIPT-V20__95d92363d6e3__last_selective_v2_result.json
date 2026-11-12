@@ -1,0 +1,12 @@
+{
+  "status": "SUCCESS",
+  "snapshot_name": "ASSET_V2_20261103_204312_KST_23716",
+  "snapshot_path": "/Volumes/ROUTABL-Secure/snapshots/ASSET_V2_20261103_204312_KST_23716",
+  "file_count": 3269,
+  "source_bytes": 518762578,
+  "receipt_sha256": "10bbb0150bfdab7634cbfe69d7b82213633677f039cecc2961f8cdfa95638917",
+  "isolated_restore_samples": 15,
+  "sha256_verified": true,
+  "created_at_kst": "2026-11-03T20:43:17.342660+09:00",
+  "locked_after_backup": true
+}

@@ -1,0 +1,394 @@
+{
+  "status": "PASS",
+  "cases": [
+    {
+      "term": "고객등록",
+      "scope": "all",
+      "match_count": 89,
+      "group_count": 57,
+      "manual_count": 1,
+      "order": [
+        [
+          "MAC::StudioProjects/ROUTIVEL-Firebase-Migration/tools/firebase-migration/cloud_access.py",
+          316,
+          7
+        ],
+        [
+          "02_핵심기술/DATA-01_고객정보구축/DATA-01_P01_NAS_인계요약_v0.1_20261024.md",
+          216,
+          2
+        ],
+        [
+          "02_핵심기술/DATA-01_고객정보구축/DATA-01_P02_개발변천_NAS요약_v0.1_20261024.md",
+          216,
+          2
+        ],
+        [
+          "02_핵심기술/DATA-01_고객정보구축/DATA-01_P03_연결계약_NAS_보관요약_v0.1_20261024.md",
+          216,
+          2
+        ],
+        [
+          "02_핵심기술/DATA-01_고객정보구축/DATA-01_P04_NAS_인계요약_v0.1_20261024.md",
+          216,
+          2
+        ],
+        [
+          "02_핵심기술/DATA-01_고객정보구축/DATA-01_P05_인계안전성_NAS요약_v0.1_20261024.md",
+          216,
+          2
+        ],
+        [
+          "02_핵심기술/DATA-01_고객정보구축/DATA-01_P01_NAS_인계요약_v0.1_20261024.zip",
+          209,
+          2
+        ],
+        [
+          "02_핵심기술/DATA-01_고객정보구축/DATA-01_P03_NAS_보관요약_v0.1_20261024.zip",
+          209,
+          2
+        ],
+        [
+          "02_핵심기술/DATA-01_고객정보구축/DATA-01_P04_NAS_인계요약_v0.1_20261024.zip",
+          209,
+          2
+        ],
+        [
+          "02_핵심기술/DATA-01_고객정보구축/DATA-01_P05_NAS요약보관_v0.1_20261024.zip",
+          209,
+          2
+        ],
+        [
+          "ROUTABL_Whitepaper_Archive_20261101/01_ORIGINAL_SNAPSHOTS/Mac_Downloads/DATA-01_고객정보구축_정정중복관리_기술원고_v0.2_20261024.md",
+          131,
+          1
+        ],
+        [
+          "ROUTABL_Whitepaper_Archive_20261101/04_INCREMENTAL_107_20261101/01_TRANSFER_FILES/ROUTABL_107_DATA-01_106번_증분백업_인계체크포인트_20261101.md",
+          105,
+          1
+        ]
+      ]
+    },
+    {
+      "term": "취소상태",
+      "scope": "all",
+      "match_count": 121,
+      "group_count": 47,
+      "manual_count": 2,
+      "order": [
+        [
+          "MAC::StudioProjects/DISPATCH-One-Android/app/src/main/java/com/routivel/driver/TransportStatusPolicy.kt",
+          324,
+          9
+        ],
+        [
+          "MAC::StudioProjects/DISPATCH-One-Android/app/src/test/java/com/routivel/driver/TransportStatusPolicyTest.kt",
+          95,
+          6
+        ],
+        [
+          "MAC::StudioProjects/DISPATCH-One-Android/CUSTOMER_CACHE_REVIEW.md",
+          42,
+          6
+        ],
+        [
+          "MAC::StudioProjects/DISPATCH-One-Android/app/src/main/java/com/routivel/driver/CustomerRequestDialog.kt",
+          42,
+          5
+        ],
+        [
+          "MAC::StudioProjects/DISPATCH-One-Android/app/src/main/java/com/routivel/driver/CustomerRequestsActivity.kt",
+          42,
+          1
+        ],
+        [
+          "MAC::StudioProjects/DISPATCH-One-Android/app/src/main/java/com/routivel/driver/OutputActivity.kt",
+          42,
+          1
+        ],
+        [
+          "MAC::StudioProjects/DISPATCH-One-Android/app/src/main/java/com/routivel/driver/TransportStatusRepository.kt",
+          42,
+          6
+        ],
+        [
+          "MAC::StudioProjects/DISPATCH-One-Android/docs/CONTROL_CUSTOMER_REQUESTS_20261017.md",
+          42,
+          5
+        ],
+        [
+          "MAC::StudioProjects/DISPATCH-One-Android/docs/evidence/control-response-20261017/device-verification.txt",
+          42,
+          5
+        ],
+        [
+          "MAC::StudioProjects/DISPATCH-One-Android/docs/receipt-preview-20261022.md",
+          42,
+          2
+        ],
+        [
+          "MAC::StudioProjects/DailyInspection-Android/app/src/main/assets/com/tom_roush/fontbox/resources/unicode/Scripts.txt",
+          42,
+          1
+        ],
+        [
+          "MAC::StudioProjects/DailyInspection-Android/app/src/main/assets/com/tom_roush/pdfbox/resources/glyphlist/glyphlist.txt",
+          42,
+          1
+        ]
+      ]
+    },
+    {
+      "term": "월간정산",
+      "scope": "all",
+      "match_count": 87,
+      "group_count": 31,
+      "manual_count": 0,
+      "order": [
+        [
+          "MAC::StudioProjects/DISPATCH-One-Android/app/src/main/java/com/routivel/driver/MonthlySettlementActivity.kt",
+          153,
+          2
+        ],
+        [
+          "MAC::StudioProjects/ROUTABL-Senior-Driver/app/src/main/java/com/routivel/driver/MonthlySettlementActivity.kt",
+          153,
+          2
+        ],
+        [
+          "MAC::StudioProjects/ROUTIVEL-Customer-Android/app/src/main/java/com/routivel/driver/MonthlySettlementActivity.kt",
+          153,
+          2
+        ],
+        [
+          "MAC::StudioProjects/ROUTIVEL-Firebase-Migration/app/src/main/java/com/routivel/driver/MonthlySettlementActivity.kt",
+          153,
+          1
+        ],
+        [
+          "MAC::StudioProjects/ROUTABL-Control-Public-20261020/app/src/main/java/com/routivel/driver/MonthlySettlementActivity.kt",
+          99,
+          3
+        ],
+        [
+          "MAC::StudioProjects/DISPATCH-One-Android/CUSTOMER_ACCESS_REVIEW.md",
+          42,
+          6
+        ],
+        [
+          "MAC::StudioProjects/DISPATCH-One-Android/CUSTOMER_UI_SPEED_REVIEW.md",
+          42,
+          6
+        ],
+        [
+          "MAC::StudioProjects/DISPATCH-One-Android/CUSTOMER_WORKFLOWS.md",
+          42,
+          6
+        ],
+        [
+          "MAC::StudioProjects/DISPATCH-One-Android/FIELD_TEST_RELIABILITY_REVIEW.md",
+          42,
+          2
+        ],
+        [
+          "MAC::StudioProjects/DISPATCH-One-Android/app/src/main/java/com/routivel/driver/AdminAuthentication.kt",
+          42,
+          7
+        ],
+        [
+          "MAC::StudioProjects/DISPATCH-One-Android/app/src/main/java/com/routivel/driver/DailySettlementActivity.kt",
+          42,
+          1
+        ],
+        [
+          "MAC::StudioProjects/DISPATCH-One-Android/app/src/main/java/com/routivel/driver/DispatchExportController.kt",
+          42,
+          2
+        ]
+      ]
+    },
+    {
+      "term": "기사앱",
+      "scope": "main",
+      "match_count": 574,
+      "group_count": 542,
+      "manual_count": 1,
+      "order": [
+        [
+          "MAC::StudioProjects/DISPATCH-One-Android/app/src/main/java/com/routivel/driver/TransportStatusPolicy.kt",
+          259,
+          1
+        ],
+        [
+          "MAC::StudioProjects/DISPATCH-One-Android/ARRIVAL_REQUEST_REVIEW.md",
+          62,
+          1
+        ],
+        [
+          "MAC::StudioProjects/DISPATCH-One-Android/BLANK_RECEIPT_NOTES.md",
+          62,
+          1
+        ],
+        [
+          "MAC::StudioProjects/DISPATCH-One-Android/CUSTOMER_ACCESS_REVIEW.md",
+          62,
+          3
+        ],
+        [
+          "MAC::StudioProjects/DISPATCH-One-Android/CUSTOMER_CACHE_REVIEW.md",
+          62,
+          1
+        ],
+        [
+          "MAC::StudioProjects/DISPATCH-One-Android/CUSTOMER_DIRECTORY_SYNC.md",
+          62,
+          1
+        ],
+        [
+          "MAC::StudioProjects/DISPATCH-One-Android/CUSTOMER_PORTAL.md",
+          62,
+          2
+        ],
+        [
+          "MAC::StudioProjects/DISPATCH-One-Android/CUSTOMER_RECENT_PLACES_REVIEW.md",
+          62,
+          3
+        ],
+        [
+          "MAC::StudioProjects/DISPATCH-One-Android/CUSTOMER_REQUEST_BILLING_REVIEW.md",
+          62,
+          3
+        ],
+        [
+          "MAC::StudioProjects/DISPATCH-One-Android/CUSTOMER_UI_SPEED_REVIEW.md",
+          62,
+          3
+        ],
+        [
+          "MAC::StudioProjects/DISPATCH-One-Android/CUSTOMER_WORKFLOWS.md",
+          62,
+          1
+        ],
+        [
+          "MAC::StudioProjects/DISPATCH-One-Android/FIELD_TEST_RELIABILITY_REVIEW.md",
+          62,
+          1
+        ]
+      ]
+    },
+    {
+      "term": "TransportStatusPolicy.kt",
+      "scope": "main",
+      "match_count": 3,
+      "group_count": 1,
+      "manual_count": 1,
+      "order": [
+        [
+          "MAC::StudioProjects/DISPATCH-One-Android/app/src/main/java/com/routivel/driver/TransportStatusPolicy.kt",
+          358,
+          3
+        ]
+      ]
+    },
+    {
+      "term": "cloud_access.py",
+      "scope": "main",
+      "match_count": 4,
+      "group_count": 1,
+      "manual_count": 1,
+      "order": [
+        [
+          "MAC::StudioProjects/ROUTIVEL-Firebase-Migration/tools/firebase-migration/cloud_access.py",
+          358,
+          4
+        ]
+      ]
+    },
+    {
+      "term": "DailyInspection",
+      "scope": "variants",
+      "match_count": 0,
+      "group_count": 0,
+      "manual_count": 0,
+      "order": []
+    },
+    {
+      "term": "ROUTABL",
+      "scope": "nas",
+      "match_count": 1776,
+      "group_count": 1422,
+      "manual_count": 1,
+      "order": [
+        [
+          "ROUTABL_Whitepaper_Archive_20261101/01_ORIGINAL_SNAPSHOTS/Existing_NAS_Routabl/00_인계와기준/ROUTABL_Work_시작프롬프트_v1.0_20261024.txt",
+          165,
+          5
+        ],
+        [
+          "ROUTABL_Whitepaper_Archive_20261101/01_ORIGINAL_SNAPSHOTS/Existing_NAS_Routabl/00_인계와기준/ROUTABL_Work_인계서_v1.0_20261024.md",
+          165,
+          5
+        ],
+        [
+          "ROUTABL_Whitepaper_Archive_20261101/04_INCREMENTAL_107_20261101/01_TRANSFER_FILES/ROUTABL_107_기술자산_맥락보존_자료탐색_운영지침_v0.1_20261101.md",
+          165,
+          1
+        ],
+        [
+          "ROUTABL_Whitepaper_Archive_20261101/04_INCREMENTAL_107_20261101/01_TRANSFER_FILES/ROUTABL_107_기술자산_최상위철학_및_맥락기반_재사용규격_v0.2_20261101.md",
+          165,
+          1
+        ],
+        [
+          "ROUTABL_Whitepaper_Archive_20261101/01_ORIGINAL_SNAPSHOTS/Existing_NAS_Routabl/00_인계와기준/ROUTABL_Work_인계자료_v1.0_20261024.zip",
+          158,
+          3
+        ],
+        [
+          "ROUTABL_Whitepaper_Archive_20261101/01_ORIGINAL_SNAPSHOTS/Mac_Downloads/ROUTABL_106_%EB%B0%B1%EC%84%9C_%EA%B8%B0%EC%88%A0%EC%9E%90%EC%82%B0_%EC%9D%BC%EA%B4%84%EB%B0%B1%EC%97%85_%EC%8B%A4%ED%96%89%EC%A4%80%EB%B9%84_v0.1_20261031.zip",
+          158,
+          1
+        ],
+        [
+          "ROUTABL_Whitepaper_Archive_20261101/01_ORIGINAL_SNAPSHOTS/Mac_Downloads/ROUTABL_95_P16-45_SEARCH-01_외부AI응시전용_정답미포함_v0.1_20261030.zip",
+          158,
+          1
+        ],
+        [
+          "ROUTABL_Whitepaper_Archive_20261101/01_ORIGINAL_SNAPSHOTS/Mac_Downloads/ROUTABL_96_to_97_백서_맥락승계_인계서_v2.0_운영앱보호_P16-44_20261030.zip",
+          158,
+          1
+        ],
+        [
+          "ROUTABL_Whitepaper_Archive_20261101/02_BASELINE_P16-98/ROUTABL_13장_B형_173쪽_내부보존기준판_P16-92.pdf",
+          158,
+          1
+        ],
+        [
+          "ROUTABL_Whitepaper_Archive_20261101/02_BASELINE_P16-98/ROUTABL_P16-97_98_%EB%82%B4%EB%B6%80%EB%B3%B4%EC%A1%B4_%EA%B8%B0%EC%A4%80%ED%8C%90_%EB%A7%88%EA%B0%90%ED%8C%A8%ED%82%A4%EC%A7%80.zip",
+          158,
+          1
+        ],
+        [
+          "ROUTABL_Whitepaper_Archive_20261101/04_INCREMENTAL_107_20261101/01_TRANSFER_FILES/ROUTABL_107_5대기술자산_Base통합정합성_독립AI시험준비_v0.1_20261101.zip",
+          158,
+          1
+        ],
+        [
+          "ROUTABL_Whitepaper_Archive_20261101/04_INCREMENTAL_107_20261101/01_TRANSFER_FILES/ROUTABL_107_5대기술자산_맥락계보_시범대조_v0.1_20261101.zip",
+          158,
+          1
+        ]
+      ]
+    },
+    {
+      "term": "no-result-mvl01-20261108",
+      "scope": "all",
+      "match_count": 0,
+      "group_count": 0,
+      "manual_count": 0,
+      "order": []
+    }
+  ]
+}

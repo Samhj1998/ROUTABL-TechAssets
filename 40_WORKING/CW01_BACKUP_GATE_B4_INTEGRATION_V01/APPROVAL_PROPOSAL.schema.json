@@ -1,0 +1,115 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "B4 approval candidate, intentionally inactive",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "0.1"
+    },
+    "scope": {
+      "const": "PROPOSED_INACTIVE"
+    },
+    "deployment_enabled": {
+      "const": false
+    },
+    "allowed_label": {
+      "const": "com.routabl.assetbackup.native.v043"
+    },
+    "owner_uid": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "permitted_entries": {
+      "const": [
+        "scheduled",
+        "manual"
+      ]
+    },
+    "supervisor_path": {
+      "type": "string",
+      "pattern": "^/"
+    },
+    "program_pins": {
+      "type": "object",
+      "properties": {
+        "ROUTABL_BackupHeadlessSupervisor_v0_3.py": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "ROUTABL_MacToNasOneShot_v0_2.py": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "ROUTABL_BackupEvidenceAdapter_v0_1.py": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "backup_runner_candidate.py": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        }
+      },
+      "required": [
+        "ROUTABL_BackupHeadlessSupervisor_v0_3.py",
+        "ROUTABL_MacToNasOneShot_v0_2.py",
+        "ROUTABL_BackupEvidenceAdapter_v0_1.py",
+        "backup_runner_candidate.py"
+      ],
+      "additionalProperties": {
+        "type": "string",
+        "pattern": "^[0-9a-f]{64}$",
+        "description": "Pin every direct executable and imported project module, including reused engines."
+      }
+    },
+    "agent": {
+      "type": "object",
+      "properties": {
+        "bundle_identifier": {
+          "type": "string"
+        },
+        "team_identifier": {
+          "type": "string"
+        },
+        "designated_requirement": {
+          "type": "string"
+        },
+        "signed_binary_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        }
+      },
+      "required": [
+        "bundle_identifier",
+        "team_identifier",
+        "designated_requirement",
+        "signed_binary_sha256"
+      ],
+      "additionalProperties": false
+    },
+    "lock_path": {
+      "type": "string",
+      "pattern": "^/"
+    },
+    "schedule_kst": {
+      "const": "04:30"
+    },
+    "require_single_active_schedule": {
+      "const": true
+    }
+  },
+  "required": [
+    "schema_version",
+    "scope",
+    "deployment_enabled",
+    "allowed_label",
+    "owner_uid",
+    "permitted_entries",
+    "supervisor_path",
+    "program_pins",
+    "agent",
+    "lock_path",
+    "schedule_kst",
+    "require_single_active_schedule"
+  ],
+  "additionalProperties": false
+}

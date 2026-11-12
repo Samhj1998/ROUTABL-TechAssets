@@ -1,0 +1,45 @@
+[
+  {
+    "test": "feedback search and local source hash",
+    "result": "PASS",
+    "evidence": {
+      "asset_id": "MVL01-FEEDBACK",
+      "expected_sha256": "04402d26ebc08985acd63a49bba77064deb315c02b994197165adef8d8d861b3",
+      "expected_size_bytes": 2187,
+      "registration": "ISOLATED_CANDIDATE",
+      "registry_sha256": null,
+      "registry_version": null,
+      "source_path": "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CW01_MINIMUM_VIABLE_LOOP_MVL01_V01/FEEDBACK_CANDIDATE.md",
+      "source_version": "0.1",
+      "observed_sha256": "04402d26ebc08985acd63a49bba77064deb315c02b994197165adef8d8d861b3",
+      "status": "LOCAL_HASH_MATCH",
+      "observed_size_bytes": 2187
+    }
+  },
+  {
+    "test": "final handoff includes independently re-searched feedback",
+    "result": "PASS",
+    "evidence": {
+      "phase": "final",
+      "records": 8,
+      "export": "static allowlist; paths and evidence metadata only"
+    }
+  },
+  {
+    "test": "legacy regression after feedback",
+    "result": "PASS",
+    "evidence": {
+      "post_overlay_cases": 9,
+      "checks": "result order, score, group counts, manual counts"
+    }
+  },
+  {
+    "test": "SQLite and Mac CLI entry point",
+    "result": "PASS",
+    "evidence": {
+      "registry_version": "0.27",
+      "rows": 5527,
+      "explicit_local_rows": 2
+    }
+  }
+]
