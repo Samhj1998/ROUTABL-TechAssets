@@ -5,22 +5,22 @@
 	<key>KeepAlive</key>
 	<false/>
 	<key>Label</key>
-	<string>com.routabl.assetbackup.v2.headless.local</string>
+	<string>com.routabl.assetbackup.v21.headless.local</string>
 	<key>ProcessType</key>
 	<string>Background</string>
 	<key>ProgramArguments</key>
 	<array>
 		<string>/usr/bin/python3</string>
-		<string>/Users/yongho/ROUTABL-TechAssets/00_GUIDE/ROUTABL_HeadlessDailyGate_v0_2.py</string>
+		<string>/Users/yongho/ROUTABL-TechAssets/00_GUIDE/ROUTABL_HeadlessDailyGate_v0_3.py</string>
 		<string>run</string>
 		<string>local</string>
 	</array>
 	<key>RunAtLoad</key>
 	<false/>
 	<key>StandardErrorPath</key>
-	<string>/Users/yongho/Library/Logs/ROUTABL-AssetBackup/local.v2.headless.stderr.log</string>
+	<string>/Users/yongho/Library/Logs/ROUTABL-AssetBackup/local.v21.stderr.log</string>
 	<key>StandardOutPath</key>
-	<string>/Users/yongho/Library/Logs/ROUTABL-AssetBackup/local.v2.headless.stdout.log</string>
+	<string>/Users/yongho/Library/Logs/ROUTABL-AssetBackup/local.v21.stdout.log</string>
 	<key>StartCalendarInterval</key>
 	<dict>
 		<key>Hour</key>
