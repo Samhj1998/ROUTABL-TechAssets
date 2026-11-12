@@ -6,11 +6,11 @@
 	<dict/>
 	<key>files2</key>
 	<dict>
-		<key>Library/LaunchAgents/com.routabl.assetbackup.native.safe.plist</key>
+		<key>Library/LaunchAgents/com.routabl.assetbackup.native.v041.plist</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ogSgRWOOiuVke3YWVobU1ngZDo7Du2h3XHAs6hFN9f4=
+			q/Ph8/qtKq/FH/1op4Ni0LMJ5yfv+MkQhJxwNzuvOSI=
 			</data>
 		</dict>
 		<key>MacOS/ROUTABLBackupAgent</key>
