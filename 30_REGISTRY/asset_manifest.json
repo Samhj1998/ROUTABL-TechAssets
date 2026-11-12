@@ -1,7 +1,7 @@
 {
-  "schema_version": "0.24",
-  "captured_at_kst": "2026-11-06T20:28:14+09:00",
-  "scope": "CHATGPT_20261105_V04_MARKDOWN_AND_20261106_USER_RESTORED_19_PLUS_2",
+  "schema_version": "0.25",
+  "captured_at_kst": "2026-11-06T20:54:32+09:00",
+  "scope": "CHATGPT_V04_GRID_LAYOUT_CSS_DEPENDENCY_REMOVAL_1925_ASSETS_COW",
   "registry_mode": "local-only security classification and search metadata",
   "existing_index_baseline": {
     "sqlite_integrity": "ok",
@@ -2273,6 +2273,125 @@
       "original_file_unchanged": true,
       "provenance_status": "LOCAL_EXPORT_AND_USER_ATTESTATION_SEPARATE",
       "registry_added_in": "v0.24"
+    },
+    {
+      "asset_id": "ASSET-120-CHATGPT-V04-REPAIR-LAYOUT-CSS",
+      "title": "v0.4 좌우 화면 배치 독립 복원 CSS",
+      "observed_original_path": "/Users/yongho/ROUTABL-ChatGPT-Archive/2026-11-05/13_GUI_MARKDOWN_V04/v03-style.css",
+      "bytes": 3940,
+      "sha256": "d4b6b88dee5ffc2ed041f8a07ffeb1e9582cdd5e4e54b8a10451c74a59d8ed5d",
+      "mtime_utc": "2026-11-06T09:12:03.919525+00:00",
+      "source_system": "LOCAL_CHATGPT_V04_CSS_FIX_AND_STANDALONE_MEDIA_20261106",
+      "source_chat_number": "120-1",
+      "observation": "Existing v04 CSS link repaired; v04 asset files COW cloned and validated; required resources independent from prior GUI versions.",
+      "execution_validation": "V04_CHROME_GRID_290PX_13_OF_13_PASS_PREVIOUS_VERSION_RESOURCES_BLOCKED",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "REFERENCED_ONLY_PRIVATE_GUI_LOCAL",
+      "original_file_unchanged": true,
+      "provenance_status": "LOCAL_GUI_REPAIR_READONLY_OLD_VERSION_WITH_APFS_COW_MEDIA",
+      "registry_added_in": "v0.25"
+    },
+    {
+      "asset_id": "ASSET-120-CHATGPT-V04-REPAIR-PATCH-SCRIPT",
+      "title": "v0.4 독립 CSS·APFS 첨부파일 복제 보수 프로그램",
+      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_OFFICIAL_CHATGPT_EXPORT_20261105_v01/fix_v04_independent_css_assets_20261106_v0.1.py",
+      "bytes": 6493,
+      "sha256": "fffc7595ccbd86e3e539d0578ed4f2111d623a2058c9e736bd186beaad06d650",
+      "mtime_utc": "2026-11-06T11:49:36.804022+00:00",
+      "source_system": "LOCAL_CHATGPT_V04_CSS_FIX_AND_STANDALONE_MEDIA_20261106",
+      "source_chat_number": "120-1",
+      "observation": "Existing v04 CSS link repaired; v04 asset files COW cloned and validated; required resources independent from prior GUI versions.",
+      "execution_validation": "V04_CHROME_GRID_290PX_13_OF_13_PASS_PREVIOUS_VERSION_RESOURCES_BLOCKED",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "REFERENCED_ONLY_PRIVATE_GUI_LOCAL",
+      "original_file_unchanged": true,
+      "provenance_status": "LOCAL_GUI_REPAIR_READONLY_OLD_VERSION_WITH_APFS_COW_MEDIA",
+      "registry_added_in": "v0.25"
+    },
+    {
+      "asset_id": "ASSET-120-CHATGPT-V04-REPAIR-BROWSER-PROBE",
+      "title": "v0.4 기존버전 차단·레이아웃 실측 자동 검사 프로그램",
+      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_OFFICIAL_CHATGPT_EXPORT_20261105_v01/test_v04_independent_layout_20261106.js",
+      "bytes": 6052,
+      "sha256": "8841b48f6f469c79f3306242ef6a9458c06e7a293f96524f96ca5d06dd2fce2c",
+      "mtime_utc": "2026-11-06T11:51:07.832958+00:00",
+      "source_system": "LOCAL_CHATGPT_V04_CSS_FIX_AND_STANDALONE_MEDIA_20261106",
+      "source_chat_number": "120-1",
+      "observation": "Existing v04 CSS link repaired; v04 asset files COW cloned and validated; required resources independent from prior GUI versions.",
+      "execution_validation": "V04_CHROME_GRID_290PX_13_OF_13_PASS_PREVIOUS_VERSION_RESOURCES_BLOCKED",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "REFERENCED_ONLY_PRIVATE_GUI_LOCAL",
+      "original_file_unchanged": true,
+      "provenance_status": "LOCAL_GUI_REPAIR_READONLY_OLD_VERSION_WITH_APFS_COW_MEDIA",
+      "registry_added_in": "v0.25"
+    },
+    {
+      "asset_id": "ASSET-120-CHATGPT-V04-REPAIR-REPAIR-RECEIPT",
+      "title": "v0.4 이전 버전 의존성 제거 및 1925개 첨부 무결성 기록",
+      "observed_original_path": "/Users/yongho/ROUTABL-ChatGPT-Archive/2026-11-05/20_AUDIT/v04_independence_repair_20261106_v0.1.json",
+      "bytes": 1224,
+      "sha256": "cdfcf837ef7a4c829f2ce118f2a4ae67c4bd7e9f8984051de83f8dec547eaae2",
+      "mtime_utc": "2026-11-06T11:49:57.679533+00:00",
+      "source_system": "LOCAL_CHATGPT_V04_CSS_FIX_AND_STANDALONE_MEDIA_20261106",
+      "source_chat_number": "120-1",
+      "observation": "Existing v04 CSS link repaired; v04 asset files COW cloned and validated; required resources independent from prior GUI versions.",
+      "execution_validation": "V04_CHROME_GRID_290PX_13_OF_13_PASS_PREVIOUS_VERSION_RESOURCES_BLOCKED",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "REFERENCED_ONLY_PRIVATE_GUI_LOCAL",
+      "original_file_unchanged": true,
+      "provenance_status": "LOCAL_GUI_REPAIR_READONLY_OLD_VERSION_WITH_APFS_COW_MEDIA",
+      "registry_added_in": "v0.25"
+    },
+    {
+      "asset_id": "ASSET-120-CHATGPT-V04-REPAIR-BROWSER-RECEIPT",
+      "title": "v0.4 좌우 레이아웃·이전버전 차단 브라우저 13/13 검증",
+      "observed_original_path": "/Users/yongho/ROUTABL-ChatGPT-Archive/2026-11-05/20_AUDIT/v04_independent_layout_browser_verification_20261106.json",
+      "bytes": 3964,
+      "sha256": "96d77a96443544deefea1de449e88b8668cd98c55eb0a8ab9741a1d044884eb2",
+      "mtime_utc": "2026-11-06T11:51:22.278240+00:00",
+      "source_system": "LOCAL_CHATGPT_V04_CSS_FIX_AND_STANDALONE_MEDIA_20261106",
+      "source_chat_number": "120-1",
+      "observation": "Existing v04 CSS link repaired; v04 asset files COW cloned and validated; required resources independent from prior GUI versions.",
+      "execution_validation": "V04_CHROME_GRID_290PX_13_OF_13_PASS_PREVIOUS_VERSION_RESOURCES_BLOCKED",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "REFERENCED_ONLY_PRIVATE_GUI_LOCAL",
+      "original_file_unchanged": true,
+      "provenance_status": "LOCAL_GUI_REPAIR_READONLY_OLD_VERSION_WITH_APFS_COW_MEDIA",
+      "registry_added_in": "v0.25"
+    },
+    {
+      "asset_id": "ASSET-120-CHATGPT-V04-REPAIR-ASSET-MANIFEST",
+      "title": "v0.4 독립 첨부 1925개 개별 SHA-256 데이터",
+      "observed_original_path": "/Users/yongho/ROUTABL-ChatGPT-Archive/2026-11-05/20_AUDIT/v04_independent_assets_sha256_20261106.json",
+      "bytes": 343243,
+      "sha256": "90b1d5ba6745009702102dc738f3a611a218dcf11c7a0ddfd00f83970d9145d6",
+      "mtime_utc": "2026-11-06T11:52:30.122544+00:00",
+      "source_system": "LOCAL_CHATGPT_V04_CSS_FIX_AND_STANDALONE_MEDIA_20261106",
+      "source_chat_number": "120-1",
+      "observation": "Existing v04 CSS link repaired; v04 asset files COW cloned and validated; required resources independent from prior GUI versions.",
+      "execution_validation": "V04_CHROME_GRID_290PX_13_OF_13_PASS_PREVIOUS_VERSION_RESOURCES_BLOCKED",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "REFERENCED_ONLY_PRIVATE_GUI_LOCAL",
+      "original_file_unchanged": true,
+      "provenance_status": "LOCAL_GUI_REPAIR_READONLY_OLD_VERSION_WITH_APFS_COW_MEDIA",
+      "registry_added_in": "v0.25"
+    },
+    {
+      "asset_id": "ASSET-120-CHATGPT-V04-REPAIR-ACCEPTANCE-REPORT",
+      "title": "v0.4 CSS 파일 누락 원인·독립성 개선 및 검증 보고",
+      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_OFFICIAL_CHATGPT_EXPORT_20261105_v01/GUI_V04_MISSING_CSS_AND_INDEPENDENCE_FIX_20261106_v0.1.md",
+      "bytes": 5674,
+      "sha256": "6d4caaf5384c5fcc88df28105498437a8822fdba508e6149ec83b18a8b530251",
+      "mtime_utc": "2026-11-06T11:53:36.348165+00:00",
+      "source_system": "LOCAL_CHATGPT_V04_CSS_FIX_AND_STANDALONE_MEDIA_20261106",
+      "source_chat_number": "120-1",
+      "observation": "Existing v04 CSS link repaired; v04 asset files COW cloned and validated; required resources independent from prior GUI versions.",
+      "execution_validation": "V04_CHROME_GRID_290PX_13_OF_13_PASS_PREVIOUS_VERSION_RESOURCES_BLOCKED",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "REFERENCED_ONLY_PRIVATE_GUI_LOCAL",
+      "original_file_unchanged": true,
+      "provenance_status": "LOCAL_GUI_REPAIR_READONLY_OLD_VERSION_WITH_APFS_COW_MEDIA",
+      "registry_added_in": "v0.25"
     }
   ],
   "unresolved": [
@@ -2470,7 +2589,7 @@
       "issue": "Actual Android app UI display not field-tested; original failed chat tool trace not archived."
     }
   ],
-  "supersedes": "asset_manifest_v0.23.json (immutable previous preserved)",
+  "supersedes": "asset_manifest_v0.24.json (immutable previous preserved)",
   "library_crosswalk": [
     {
       "asset_id": "TA-CASE-20261102-01",
@@ -3482,6 +3601,48 @@
       "grade": "P3",
       "policy": "private_local_FileVault_no_plaintext_remote_storage",
       "classification_scope": "CHATGPT_EXPORT_OFFLINE_GUI_MARKDOWN_AND_USER_RESTORE_ATTESTATION"
+    },
+    {
+      "asset_id": "ASSET-120-CHATGPT-V04-REPAIR-LAYOUT-CSS",
+      "grade": "P3",
+      "policy": "private_local_FileVault_no_plaintext_remote_storage",
+      "classification_scope": "OFFLINE_GUI_LAYOUT_DEPENDENCY_REPAIR_AND_MEDIA_MANIFEST"
+    },
+    {
+      "asset_id": "ASSET-120-CHATGPT-V04-REPAIR-PATCH-SCRIPT",
+      "grade": "P3",
+      "policy": "private_local_FileVault_no_plaintext_remote_storage",
+      "classification_scope": "OFFLINE_GUI_LAYOUT_DEPENDENCY_REPAIR_AND_MEDIA_MANIFEST"
+    },
+    {
+      "asset_id": "ASSET-120-CHATGPT-V04-REPAIR-BROWSER-PROBE",
+      "grade": "P3",
+      "policy": "private_local_FileVault_no_plaintext_remote_storage",
+      "classification_scope": "OFFLINE_GUI_LAYOUT_DEPENDENCY_REPAIR_AND_MEDIA_MANIFEST"
+    },
+    {
+      "asset_id": "ASSET-120-CHATGPT-V04-REPAIR-REPAIR-RECEIPT",
+      "grade": "P3",
+      "policy": "private_local_FileVault_no_plaintext_remote_storage",
+      "classification_scope": "OFFLINE_GUI_LAYOUT_DEPENDENCY_REPAIR_AND_MEDIA_MANIFEST"
+    },
+    {
+      "asset_id": "ASSET-120-CHATGPT-V04-REPAIR-BROWSER-RECEIPT",
+      "grade": "P3",
+      "policy": "private_local_FileVault_no_plaintext_remote_storage",
+      "classification_scope": "OFFLINE_GUI_LAYOUT_DEPENDENCY_REPAIR_AND_MEDIA_MANIFEST"
+    },
+    {
+      "asset_id": "ASSET-120-CHATGPT-V04-REPAIR-ASSET-MANIFEST",
+      "grade": "P3",
+      "policy": "private_local_FileVault_no_plaintext_remote_storage",
+      "classification_scope": "OFFLINE_GUI_LAYOUT_DEPENDENCY_REPAIR_AND_MEDIA_MANIFEST"
+    },
+    {
+      "asset_id": "ASSET-120-CHATGPT-V04-REPAIR-ACCEPTANCE-REPORT",
+      "grade": "P3",
+      "policy": "private_local_FileVault_no_plaintext_remote_storage",
+      "classification_scope": "OFFLINE_GUI_LAYOUT_DEPENDENCY_REPAIR_AND_MEDIA_MANIFEST"
     }
   ],
   "search_v1_3": {
@@ -3934,6 +4095,11 @@
       "id": "B-18",
       "source": "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_OFFICIAL_CHATGPT_EXPORT_20261105_v01/CHATGPT_GUI_V04_MARKDOWN_AND_RESTORE_20261106_v0.1.md",
       "status": "OPEN_SAFARI_USER_MARKDOWN_REVIEW_AND_20261106_RESTORATION_ACCOUNT_LIVE_READONLY_CONFIRMATION"
+    },
+    {
+      "id": "B-19",
+      "source": "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_OFFICIAL_CHATGPT_EXPORT_20261105_v01/GUI_V04_MISSING_CSS_AND_INDEPENDENCE_FIX_20261106_v0.1.md",
+      "status": "OPEN_USER_SAFARI_VISUAL_INSPECTION_AND_OPTIONAL_PREVIOUS_VERSION_LINKS_IF_DELETING"
     }
   ],
   "addressbook_registration_reuse_v016": {
@@ -4163,6 +4329,35 @@
       "ASSET-120-CHATGPT-V04-MD-V04-MARKDOWN-RECEIPT",
       "ASSET-120-CHATGPT-V04-MD-V04-BROWSER-RECEIPT",
       "ASSET-120-CHATGPT-V04-MD-V04-REPORT"
+    ]
+  },
+  "v04_gui_independence_v025": {
+    "source_export_snapshot": "2026-11-05",
+    "gui_current": "/Users/yongho/ROUTABL-ChatGPT-Archive/2026-11-05/13_GUI_MARKDOWN_V04/index.html",
+    "v04_chats": 327,
+    "v04_routabl_effective_count": 121,
+    "v04_user_restored": 21,
+    "fixed_css_file": "v03-style.css",
+    "wide_layout": "GRID_290PX_AND_RIGHT_PANEL_VERIFIED",
+    "narrow_layout": "RESPONSIVE_STACK_VERIFIED",
+    "independent_asset_count": 1925,
+    "independent_asset_logical_bytes": 1619366714,
+    "independent_assets_manifest": "/Users/yongho/ROUTABL-ChatGPT-Archive/2026-11-05/20_AUDIT/v04_independent_assets_sha256_20261106.json",
+    "standalone_media_apfs_copy_on_write": true,
+    "previous_versions_resources_blocked_browser_acceptance": "13_OF_13_PASS",
+    "optional_prev_version_links_require_prev_dirs": true,
+    "optional_raw_source_html_link_requires_separate_00_EXTRACTED_ORIGINAL": true,
+    "prior_GUI_versions_deleted": false,
+    "original_ZIP_deleted": false,
+    "previous_manifest_sha256": "48f54ebb88666c5891163e283fb3b3548e4760cd9c20e13dfdeff0a141f283c1",
+    "asset_ids": [
+      "ASSET-120-CHATGPT-V04-REPAIR-LAYOUT-CSS",
+      "ASSET-120-CHATGPT-V04-REPAIR-PATCH-SCRIPT",
+      "ASSET-120-CHATGPT-V04-REPAIR-BROWSER-PROBE",
+      "ASSET-120-CHATGPT-V04-REPAIR-REPAIR-RECEIPT",
+      "ASSET-120-CHATGPT-V04-REPAIR-BROWSER-RECEIPT",
+      "ASSET-120-CHATGPT-V04-REPAIR-ASSET-MANIFEST",
+      "ASSET-120-CHATGPT-V04-REPAIR-ACCEPTANCE-REPORT"
     ]
   }
 }
