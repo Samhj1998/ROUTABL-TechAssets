@@ -1,7 +1,7 @@
 {
-  "schema_version": "0.9",
-  "captured_at_kst": "2026-11-03T20:51:29+09:00",
-  "scope": "SELECTIVE_AES256_V2_LOCAL_3269_FILES_NAS_78_ENCRYPTED_FILES_VERIFIED",
+  "schema_version": "0.10",
+  "captured_at_kst": "2026-11-03T21:50:31+09:00",
+  "scope": "V21_LATEST_MANIFEST_AES_BACKUP_NAS_CHAIN_AND_HEADLESS_GATES",
   "registry_mode": "local-only security classification and search metadata",
   "existing_index_baseline": {
     "sqlite_integrity": "ok",
@@ -603,6 +603,126 @@
       "write_or_execution_approval_class": "C",
       "copy_in_managed_repository": "NO",
       "original_file_unchanged": true
+    },
+    {
+      "asset_id": "ASSET-BACKUP-V21-LOCAL-ENGINE",
+      "title": "Latest-manifest AES backup and file selection fingerprint",
+      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/00_GUIDE/ROUTABL_SelectiveSecureBackup_v2_1.py",
+      "bytes": 19514,
+      "sha256": "f365dfec0b0053f5c124a7440e5fe0bdcf8ccef0b74b639a8b3473288b42186c",
+      "observation": "NEW_V21_ASSET_CREATED_OR_UPDATED_AFTER_V09_SNAPSHOT",
+      "execution_validation": "SUCCESS_REAL_BACKUP",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "NO",
+      "original_file_unchanged": true
+    },
+    {
+      "asset_id": "ASSET-BACKUP-V21-NAS-ENGINE",
+      "title": "Closed AES disk image independent NAS copy v2.1",
+      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/00_GUIDE/ROUTABL_SelectiveNasCopy_v2_1.py",
+      "bytes": 8542,
+      "sha256": "bbdbff4e6a917f01cb9c563691134cd363459944c3dfd1360abe85b96352bdfb",
+      "observation": "NEW_V21_ASSET_CREATED_OR_UPDATED_AFTER_V09_SNAPSHOT",
+      "execution_validation": "SUCCESS_REAL_NAS_SHA256",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "NO",
+      "original_file_unchanged": true
+    },
+    {
+      "asset_id": "ASSET-BACKUP-V21-HEADLESS-GATE",
+      "title": "Idempotent same-day manifest/source and receipt chain gate v0.3",
+      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/00_GUIDE/ROUTABL_HeadlessDailyGate_v0_3.py",
+      "bytes": 6756,
+      "sha256": "4992b2213bf2598c55a6ab68dd5bf35c501258d47e1e4780765c2a67343a3ce5",
+      "observation": "NEW_V21_ASSET_CREATED_OR_UPDATED_AFTER_V09_SNAPSHOT",
+      "execution_validation": "UNIT_AND_LIVE_GATE_PASS_BACKGROUND_LAUNCHD_FAILED",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "NO",
+      "original_file_unchanged": true
+    },
+    {
+      "asset_id": "ASSET-BACKUP-V21-LOCAL-STATUS",
+      "title": "v2.1 local receipt status",
+      "observed_original_path": "/Users/yongho/Library/Logs/ROUTABL-AssetBackup/last_selective_v21_result.json",
+      "bytes": 688,
+      "sha256": "260acad2db5eef378e96976f2c503027428b9f64d38596431e1b66b9b0eb217d",
+      "observation": "NEW_V21_ASSET_CREATED_OR_UPDATED_AFTER_V09_SNAPSHOT",
+      "execution_validation": "SUCCESS_3282_FILES",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "NO",
+      "original_file_unchanged": true
+    },
+    {
+      "asset_id": "ASSET-BACKUP-V21-NAS-STATUS",
+      "title": "v2.1 NAS receipt status",
+      "observed_original_path": "/Users/yongho/Library/Logs/ROUTABL-AssetBackup/last_selective_nas_v21_result.json",
+      "bytes": 781,
+      "sha256": "a0cacf4c15c68063e75ab4da6857ea4f0dd9d39c665d6dcb872814bd8b3bf2b8",
+      "observation": "NEW_V21_ASSET_CREATED_OR_UPDATED_AFTER_V09_SNAPSHOT",
+      "execution_validation": "SUCCESS_141_AES_BANDS",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "NO",
+      "original_file_unchanged": true
+    },
+    {
+      "asset_id": "ASSET-BACKUP-V21-NAS-RECEIPT",
+      "title": "NAS v2.1 whole image ciphertext file hash manifest",
+      "observed_original_path": "/Volumes/Dev_Assets/ROUTABL-TechAssets-Backup/snapshots/NAS_MANUAL_ASSET_V21_20261103_214221_KST_24639/NAS_ASSET_V21_RECEIPT.json",
+      "bytes": 21446,
+      "sha256": "6d69eff73302dd525ad9d90e26717c3c5b9edf79845521bf31895197a84ec837",
+      "observation": "NEW_V21_ASSET_CREATED_OR_UPDATED_AFTER_V09_SNAPSHOT",
+      "execution_validation": "NAS_RECEIPT_SHA256_VERIFIED",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "NO",
+      "original_file_unchanged": true
+    },
+    {
+      "asset_id": "ASSET-BACKUP-V21-AGENT-LOCAL-DRAFT",
+      "title": "New v2.1 launchd candidate local - not installed",
+      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/40_WORKING/BACKUP_HEADLESS_V0_3/proposed_launchagents/com.routabl.assetbackup.v21.headless.local.plist",
+      "bytes": 1151,
+      "sha256": "2bc264058e7c97ec37832a278f205b6ede5035348466c2a2302771e377653972",
+      "observation": "NEW_V21_ASSET_CREATED_OR_UPDATED_AFTER_V09_SNAPSHOT",
+      "execution_validation": "PLIST_VALID_NOT_INSTALLED",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "NO",
+      "original_file_unchanged": true
+    },
+    {
+      "asset_id": "ASSET-BACKUP-V21-AGENT-NAS-DRAFT",
+      "title": "New v2.1 launchd candidate nas - not installed",
+      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/40_WORKING/BACKUP_HEADLESS_V0_3/proposed_launchagents/com.routabl.assetbackup.v21.headless.nas.plist",
+      "bytes": 1143,
+      "sha256": "10de29273bc0a1d7521225b96091788c770edcab39fa3bb255712a0de53d80fb",
+      "observation": "NEW_V21_ASSET_CREATED_OR_UPDATED_AFTER_V09_SNAPSHOT",
+      "execution_validation": "PLIST_VALID_NOT_INSTALLED",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "NO",
+      "original_file_unchanged": true
+    },
+    {
+      "asset_id": "ASSET-BACKUP-V21-LAUNCHD-PERMISSION-EVIDENCE",
+      "title": "One-off launchd permission error evidence - one-off removed",
+      "observed_original_path": "/Users/yongho/Library/Logs/ROUTABL-AssetBackup/v21.launchd.oneoff.stderr.log",
+      "bytes": 366,
+      "sha256": "26e7c709296d4e0cea20d60c235e0ac310ecff8e1addfc15a2ff038ee1be1871",
+      "observation": "NEW_V21_ASSET_CREATED_OR_UPDATED_AFTER_V09_SNAPSHOT",
+      "execution_validation": "PERMISSION_ERROR_EXECUTION_HOLD",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "NO",
+      "original_file_unchanged": true
+    },
+    {
+      "asset_id": "ASSET-BACKUP-V21-FINAL-AUDIT",
+      "title": "v2.1 batch execution and remaining approval gates",
+      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/ASSET_V21_BATCH_COMPLETION_AND_GATES_20261103.md",
+      "bytes": 6223,
+      "sha256": "f7e1b34803118bcbea02074595c10869c6d7521ed37a83a7408d70fc4f40ce42",
+      "observation": "NEW_V21_ASSET_CREATED_OR_UPDATED_AFTER_V09_SNAPSHOT",
+      "execution_validation": "SIGNED_BY_HASH_LOCAL_AUDIT",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "NO",
+      "original_file_unchanged": true
     }
   ],
   "unresolved": [
@@ -714,9 +834,33 @@
     {
       "asset_id": "ASSET-BACKUP-SELECTIVE-V20",
       "issue": "Sensitive content heuristic cannot guarantee all ZIP/PDF/binary members are free from confidential material"
+    },
+    {
+      "asset_id": "ASSET-BACKUP-V21-HEADLESS-GATE",
+      "issue": "One-off launchctl submit produced PermissionError and retries; service removed. Headless macOS permissions remain unresolved, no scheduled backup enabled."
+    },
+    {
+      "asset_id": "ASSET-BACKUP-V21-NAS-ENGINE",
+      "issue": "Full NAS AES image copy is not incremental and will grow over time; retention and bandwidth plan required."
+    },
+    {
+      "asset_id": "ASSET-BACKUP-V21-NAS-RECEIPT",
+      "issue": "NAS encryption image after isolated restore was structurally AES-256 verified, but internal 3282 files not decrypted/read from NAS copy due safety guard."
+    },
+    {
+      "asset_id": "ASSET-BACKUP-V21-FINAL-AUDIT",
+      "issue": "Google Drive latest v2.1 remote backup hash and restore not performed; only existing test probe in folder confirmed."
+    },
+    {
+      "asset_id": "ASSET-SEARCH-V15",
+      "issue": "User physical click on index refresh remains unconfirmed; automated API refresh already verified."
+    },
+    {
+      "asset_id": "ASSET-BACKUP-V21-FINAL-AUDIT",
+      "issue": "v0.10 manifest and this audit are after v0.9 snapshot, not yet backed up in local/NAS AES v2.1 snapshot."
     }
   ],
-  "supersedes": "asset_manifest_v0.8.json (retained unchanged)",
+  "supersedes": "asset_manifest_v0.9.json (untouched retained)",
   "library_crosswalk": [
     {
       "asset_id": "TA-CASE-20261102-01",
@@ -1092,6 +1236,66 @@
       "grade": "P3",
       "policy": "local_only_private_audit",
       "classification_scope": "backup infrastructure"
+    },
+    {
+      "asset_id": "ASSET-BACKUP-V21-LOCAL-ENGINE",
+      "grade": "P3",
+      "policy": "local_only_private_audit",
+      "classification_scope": "v2.1 backup operational evidence"
+    },
+    {
+      "asset_id": "ASSET-BACKUP-V21-NAS-ENGINE",
+      "grade": "P3",
+      "policy": "local_only_private_audit",
+      "classification_scope": "v2.1 backup operational evidence"
+    },
+    {
+      "asset_id": "ASSET-BACKUP-V21-HEADLESS-GATE",
+      "grade": "P3",
+      "policy": "local_only_private_audit",
+      "classification_scope": "v2.1 backup operational evidence"
+    },
+    {
+      "asset_id": "ASSET-BACKUP-V21-LOCAL-STATUS",
+      "grade": "P2",
+      "policy": "local_only_private_audit",
+      "classification_scope": "v2.1 backup operational evidence"
+    },
+    {
+      "asset_id": "ASSET-BACKUP-V21-NAS-STATUS",
+      "grade": "P2",
+      "policy": "local_only_private_audit",
+      "classification_scope": "v2.1 backup operational evidence"
+    },
+    {
+      "asset_id": "ASSET-BACKUP-V21-NAS-RECEIPT",
+      "grade": "P2",
+      "policy": "local_only_private_audit",
+      "classification_scope": "v2.1 backup operational evidence"
+    },
+    {
+      "asset_id": "ASSET-BACKUP-V21-AGENT-LOCAL-DRAFT",
+      "grade": "P2",
+      "policy": "local_only_private_audit",
+      "classification_scope": "v2.1 backup operational evidence"
+    },
+    {
+      "asset_id": "ASSET-BACKUP-V21-AGENT-NAS-DRAFT",
+      "grade": "P2",
+      "policy": "local_only_private_audit",
+      "classification_scope": "v2.1 backup operational evidence"
+    },
+    {
+      "asset_id": "ASSET-BACKUP-V21-LAUNCHD-PERMISSION-EVIDENCE",
+      "grade": "P2",
+      "policy": "local_only_private_audit",
+      "classification_scope": "v2.1 backup operational evidence"
+    },
+    {
+      "asset_id": "ASSET-BACKUP-V21-FINAL-AUDIT",
+      "grade": "P3",
+      "policy": "local_only_private_audit",
+      "classification_scope": "v2.1 backup operational evidence"
     }
   ],
   "search_v1_3": {
@@ -1276,5 +1480,29 @@
     "v0_9_registry_in_v0_8_snapshot": false,
     "source_files_changed": false,
     "source_exclusion_gate": "PATTERN_BASED_NOT_COMPLETE_PROOF"
+  },
+  "aes256_v21_verified_backup": {
+    "manifest_basis": "asset_manifest_v0.9.json",
+    "manifest_basis_sha256": "88008d8cd7f0deb44e9708fc004abf42998b2ee52e55470d48e72f2579699636",
+    "selection_sha256": "ec65b6d643392a1ca4c9fce7985e46ee7ae85fdeecca2153c8d99d5f0320d8ef",
+    "local_snapshot_name": "ASSET_V21_20261103_214028_KST_24533",
+    "local_snapshot_sha256_receipt": "66c6d86f5cdb5b629ed8f716c9a150ebc76e2aa49633d56f298427f9e4713240",
+    "local_file_count": 3282,
+    "local_source_bytes": 518882082,
+    "local_plaintext_samples_sha256_checked": 15,
+    "nas_snapshot": "/Volumes/Dev_Assets/ROUTABL-TechAssets-Backup/snapshots/NAS_MANUAL_ASSET_V21_20261103_214221_KST_24639",
+    "nas_receipt_sha256": "6d69eff73302dd525ad9d90e26717c3c5b9edf79845521bf31895197a84ec837",
+    "nas_ciphertext_components": 141,
+    "nas_ciphertext_bytes": 1128457076,
+    "nas_independent_full_ciphertext_restore": "141_COMPONENTS_SHA256_AND_AES256_STRUCTURE_PASS",
+    "nas_same_local_snapshot_chain": "VERIFIED_BY_SNAPSHOT_RECEIPT_MANIFEST_SELECTION_SHA",
+    "same_day_duplicate_skip": "PASS",
+    "nas_full_internal_readonly_decrypt_restore": "BLOCKED_BY_REMOTE_SAFETY_CHECK",
+    "launchd_headless": "ONE_SHOT_PERMISSION_ERROR_JOB_REMOVED",
+    "old_3_launchagents_disabled": true,
+    "new_2_launchagents_installed": false,
+    "drive_v21_remote_backup": "NOT_UPLOADED",
+    "current_v010_manifest_in_v09_snapshot": false,
+    "incremental_nas_copy": "NOT_YET_IMPLEMENTED"
   }
 }
