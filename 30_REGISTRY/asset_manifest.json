@@ -1,6 +1,6 @@
 {
-  "schema_version": "0.1",
-  "captured_at_kst": "2026-11-03T00:20:08.827572+09:00",
+  "schema_version": "0.2",
+  "captured_at_kst": "2026-11-03T00:23:41.981005+09:00",
   "scope": "SELECTED_BASELINE_ONLY_NOT_FULL_INVENTORY",
   "registry_mode": "metadata-only;no_secret_material;no_source_copy",
   "existing_index_baseline": {
@@ -102,20 +102,73 @@
       "write_or_execution_approval_class": "C",
       "copy_in_managed_repository": "NO",
       "original_file_unchanged": true
+    },
+    {
+      "asset_id": "ROUTABL-97-1-V4.1-ZIP",
+      "title": "97-1 internal whitepaper v4.1 ZIP",
+      "observed_original_path": "/Volumes/Dev_Assets/Routabl/97-1_최종내부기준판_v4.1_20261102/ROUTABL_97-1_v4.1_FINAL.zip",
+      "bytes": 3320156,
+      "sha256": "4f56d30d346c075347f890aca0e91b3c58a00672b0d85edb37a73cc1d84dea89",
+      "observation": "NAS_RECEIPT_FILE_SHA256_MATCH",
+      "execution_validation": "NOT_APPLICABLE",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "NO",
+      "original_file_unchanged": true,
+      "sealed": true,
+      "archive_crc_test": "PASS",
+      "archive_members": 19
+    },
+    {
+      "asset_id": "ROUTABL-97-1-V4.1-PDF",
+      "title": "97-1 internal whitepaper v4.1 PDF",
+      "observed_original_path": "/Volumes/Dev_Assets/Routabl/97-1_최종내부기준판_v4.1_20261102/01_라우터블개발백서_최종내부기준판_v4.1.pdf",
+      "bytes": 4907472,
+      "sha256": "c10eec1954129bfdaacb18a5239a7d193723658d12336723f09096f98d04f799",
+      "observation": "NAS_RECEIPT_FILE_SHA256_MATCH",
+      "execution_validation": "NOT_APPLICABLE",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "NO",
+      "original_file_unchanged": true,
+      "sealed": true
     }
   ],
   "unresolved": [
     {
-      "asset_id": "INTEGRATION-E04",
-      "issue": "historical manual entry; current physical original not verified"
+      "asset_id": "ASSET-SEARCH-01",
+      "issue": "NAS index excludes local StudioProjects and its cloud_access.py"
     },
     {
       "asset_id": "TA-CASE-20261102-01",
-      "issue": "past execution success documented, current Firestore write/credential validation not done"
+      "issue": "historical success exists, current Firebase run not validated"
     },
     {
-      "asset_id": "ASSET-SEARCH-01",
-      "issue": "NAS direct-index scope excludes local StudioProjects/cloud_access.py"
+      "asset_id": "INTEGRATION-E04",
+      "issue": "Library identity located; physical copy and hash still not verified"
+    },
+    {
+      "asset_id": "ROUTABL-97-1-V4.1",
+      "issue": "NAS integrity checked, no independent restoration of sealed archive performed"
+    }
+  ],
+  "supersedes": "asset_manifest_v0.1.json (preserved; not overwritten)",
+  "library_crosswalk": [
+    {
+      "asset_id": "TA-CASE-20261102-01",
+      "library_filename": "ROUTABL_Firebase_Address_Registration_Case_Study_20261102.pdf",
+      "library_file_id": "libfile_aae40558a6ec819189990681d3e6f4b2",
+      "evidence": "LIBRARY_SEARCH_FOUND;BYTES_NOT_COMPARED_TO_LOCAL"
+    },
+    {
+      "asset_id": "INTEGRATION-E04",
+      "library_filename": "ROUTABL-integration-audit-20261019.html",
+      "library_file_id": "libfile_1348cf4cf49c8191af70ae0162dffe99",
+      "evidence": "LIBRARY_SEARCH_FOUND;LOCAL_COPY_NOT_VERIFIED"
+    },
+    {
+      "asset_id": "ROUTABL-97-1-V4.1-PDF",
+      "library_filename": "01_라우터블개발백서_최종내부기준판_v4.1.pdf",
+      "library_file_id": "libfile_72a4f0a4043c819192d8967951f680a1",
+      "evidence": "LIBRARY_SEARCH_FOUND;NAS_AND_LIBRARY_BYTES_NOT_COMPARED"
     }
   ]
 }
