@@ -1,0 +1,328 @@
+#!/usr/bin/env python3
+"""ROUTABL AssetSearch v1.4: localhost GUI search and explicit safe refresh.
+
+No Terminal.app, launchd, network egress, source-file edits, or background scheduling.
+Only the v1.4 SQLite index and its single rollback copy may change.
+"""
+from __future__ import annotations
+import contextlib
+import fcntl
+import html
+import importlib.util
+import io
+import json
+import os
+import secrets
+import sqlite3
+import tempfile
+import threading
+import time
+import urllib.parse
+from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
+from pathlib import Path
+
+STORE = Path.home() / "Library/Application Support/ROUTABL-AssetSearch"
+SOURCE_ENGINE = STORE / "routabl_assetsearch_v1_3.py"
+BASELINE = STORE / "assets_v1_3.sqlite"
+ACTIVE = STORE / "assets_v1_4.sqlite"
+PREVIOUS = STORE / "assets_v1_4.previous.sqlite"
+PORT = 8768
+URL = "http://127.0.0.1:" + str(PORT)
+SERVICE = "ROUTABL_ASSET_SEARCH_V1_4"
+INACTIVITY_SECONDS = max(15, int(os.environ.get("ROUTABL_SEARCH_IDLE_SECONDS", "2700")))
+TOKEN = secrets.token_urlsafe(32)
+STATE_LOCK = threading.Lock()
+QUERY_LOCK = threading.Lock()
+STATE = {"state": "idle", "last_result": None, "last_error": None, "last_updated": None}
+LAST_ACTIVITY = time.monotonic()
+
+
+def load_engine():
+    spec = importlib.util.spec_from_file_location("routabl_v1_3_scanner", SOURCE_ENGINE)
+    mod = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(mod)
+    return mod
+
+
+def check_db(path: Path) -> tuple[int, int]:
+    with sqlite3.connect("file:" + str(path) + "?mode=ro", uri=True, timeout=10) as db:
+        if db.execute("PRAGMA quick_check").fetchone()[0] != "ok":
+            raise RuntimeError("SQLite integrity check failed")
+        rows = db.execute("SELECT COUNT(*) FROM docs").fetchone()[0]
+        safe = db.execute(
+            "SELECT COUNT(*) FROM docs WHERE carrier='MAC_STUDIOPROJECTS_EXPLICIT_ALLOWLIST'"
+        ).fetchone()[0]
+        if safe != 2 or rows < 2272:
+            raise RuntimeError("Expected verified baseline not found")
+        return rows, safe
+
+
+def initialize_index():
+    if ACTIVE.exists():
+        check_db(ACTIVE)
+        return
+    check_db(BASELINE)
+    tmp = ACTIVE.with_suffix(".initializing")
+    if tmp.exists():
+        raise RuntimeError("Incomplete initial index exists; refusing overwrite")
+    try:
+        with sqlite3.connect("file:" + str(BASELINE) + "?mode=ro", uri=True) as src:
+            with sqlite3.connect(tmp) as dst:
+                src.backup(dst)
+        os.chmod(tmp, 0o600)
+        check_db(tmp)
+        # Another instance cannot simultaneously initialize: exclusive process lock.
+        os.replace(tmp, ACTIVE)
+    finally:
+        if tmp.exists():
+            tmp.unlink()
+
+
+def refresh():
+    with STATE_LOCK:
+        if STATE["state"] == "running":
+            return False
+        STATE.update(state="running", last_error=None)
+    worker = threading.Thread(target=refresh_worker, name="ROUTABL-IndexRefresh", daemon=True)
+    worker.start()
+    return True
+
+
+def refresh_worker():
+    global LAST_ACTIVITY
+    try:
+        old_rows, _ = check_db(ACTIVE)
+        with tempfile.TemporaryDirectory(prefix="v1_4_refresh_", dir=STORE) as td:
+            stage = Path(td)
+            os.chmod(stage, 0o700)
+            candidate = stage / "candidate.sqlite"
+            scanner = load_engine()
+            # Isolate v1.3's temporary filename; never touch its real index.
+            scanner.STORE = stage
+            scanner.INDEX = candidate
+            # Suppress the scanner's one-line stdout report; concurrent HTTP searches stay clean.
+            scanner.print = lambda *args, **kwargs: None
+            scanner.build()
+            new_rows, _ = check_db(candidate)
+            if new_rows < max(2272, int(old_rows * 0.8)):
+                raise RuntimeError("New index unexpectedly lost more than 20% of entries")
+            # Save the prior active index as one rollback generation before switching.
+            rollback_tmp = stage / "previous.sqlite"
+            with sqlite3.connect("file:" + str(ACTIVE) + "?mode=ro", uri=True) as src:
+                with sqlite3.connect(rollback_tmp) as dst:
+                    src.backup(dst)
+            check_db(rollback_tmp)
+            os.chmod(rollback_tmp, 0o600)
+            os.replace(rollback_tmp, PREVIOUS)
+            os.replace(candidate, ACTIVE)
+            os.chmod(ACTIVE, 0o600)
+        # Validate after atomic switch.
+        rows, _ = check_db(ACTIVE)
+        with STATE_LOCK:
+            STATE.update(state="complete", last_result={"total": rows, "before": old_rows},
+                         last_error=None, last_updated=time.strftime("%Y-%m-%d %H:%M:%S"))
+    except Exception as exc:
+        with STATE_LOCK:
+            STATE.update(state="failed", last_error=str(exc)[:180], last_result=None)
+    finally:
+        LAST_ACTIVITY = time.monotonic()
+
+
+def search(term: str) -> dict:
+    mod = load_engine()
+    mod.INDEX = ACTIVE
+    output = io.StringIO()
+    # The v1.3 engine prints JSON; serialize redirects among simultaneous requests.
+    with QUERY_LOCK:
+        with contextlib.redirect_stdout(output):
+            mod.query(term)
+    return json.loads(output.getvalue())
+
+
+def status() -> dict:
+    with STATE_LOCK:
+        st = dict(STATE)
+    return {"service": SERVICE, "version": "1.4", "refresh": st, "index_exists": ACTIVE.is_file()}
+
+
+def ui_page() -> str:
+    page = """<!doctype html><html lang="ko"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>라우터블 기술자산 통합검색</title>
+<style nonce="__NONCE__">
+:root{font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo",sans-serif;color:#1a3545;background:#f3f7f9}
+body{margin:0}main{max-width:970px;margin:35px auto;padding:0 20px}
+h1{font-size:27px;color:#12334f;margin-bottom:8px}p{line-height:1.55}
+header{display:flex;justify-content:space-between;flex-wrap:wrap;gap:14px;align-items:center}
+.toolbar{display:flex;gap:8px;margin:21px 0 10px}
+input{flex:1;min-width:0;border:1px solid #b6cbd4;border-radius:10px;padding:13px;font-size:17px}
+button{border:none;background:#146f7e;color:#fff;border-radius:9px;padding:11px 15px;font-size:15px;cursor:pointer}
+button.secondary{background:#ddebed;color:#164654}
+button:disabled{opacity:.45;cursor:not-allowed}
+#notice{font-size:13px;color:#52717f;margin-bottom:20px}
+.entry{border:1px solid #dce9ee;border-radius:12px;background:white;padding:15px 18px;margin:10px 0}
+.entry b{font-size:16px}small{display:block;color:#59717f;margin-top:6px;overflow-wrap:anywhere}
+.tag{display:inline-block;background:#e3f0f2;color:#155867;border-radius:8px;padding:4px 8px;margin-top:7px;font-size:12px}
+h2{font-size:18px;margin-top:24px}footer{font-size:13px;color:#667984;margin:35px 0}
+</style></head><body><main>
+<header><div><h1>라우터블 기술자산 통합검색</h1><p>Mac · NAS · GitHub 기술자산의 위치와 근거를 찾습니다.<br>원본 파일은 실행하거나 변경하지 않습니다.</p></div>
+<button class="secondary" id="refresh" type="button">색인 새로 고침</button></header>
+<form class="toolbar" id="form"><input id="term" autocomplete="off" autofocus placeholder="파일명, 기술자산 ID, 고객등록, 상태처리, Firebase 등">
+<button type="submit">검색</button></form>
+<div id="notice">로컬 Mac 전용 · 일반 소스 내용 검색 · 인증키 원문 제외</div>
+<div id="results"></div>
+<footer>v1.4 · 수동 갱신 · 이전 색인 자동 보호 · 외부 서버 전송 없음 · 검색 DB는 원본 백업이 아닙니다.</footer>
+<script nonce="__NONCE__">
+const token="__TOKEN__";
+const el=(tag,value,klass)=>{const n=document.createElement(tag);if(value!==undefined)n.textContent=value;if(klass)n.className=klass;return n};
+const $=id=>document.getElementById(id);
+function result(title,path,tags,explanation){const div=el('div',undefined,'entry');div.append(el('b',title),el('small','위치: '+path),el('small',explanation));if(tags)div.append(el('span',tags,'tag'));return div;}
+$('form').addEventListener('submit',async ev=>{
+ ev.preventDefault();const term=$('term').value.trim();if(!term)return;
+ $('results').replaceChildren();$('notice').textContent='검색 중…';
+ try{
+  const response=await fetch('/api?q='+encodeURIComponent(term));if(!response.ok)throw Error('검색 서비스 오류');
+  const data=await response.json();
+  $('notice').textContent='일반 결과 '+data.match_count+'건 · 별도 관리 사례 '+data.manual.length+'건';
+  if(data.manual.length){$('results').append(el('h2','검증 사례 · 원본 계보'));for(const x of data.manual)$('results').append(result(x.title,x.path,x.tags,x.source_grade+' / '+x.validation_grade+' — '+x.details));}
+  $('results').append(el('h2','기술자료 · 소스코드'));
+  for(const x of data.top)$('results').append(result(x.title,x.path,x.tags,x.status+(x.archive_member?' · ZIP 내부 파일명':'')));
+  if(!data.manual.length&&!data.top.length)$('results').append(el('p','검색 결과가 없습니다.'));
+ }catch(err){$('notice').textContent=err.message;}
+});
+let busy=false;
+async function poll(){
+ try{
+  const res=await fetch('/api/status',{cache:'no-store'});const data=await res.json();const info=data.refresh;
+  if(info.state==='running'){busy=true;$('refresh').disabled=true;$('notice').textContent='색인을 갱신하는 중입니다. 기존 검색은 계속 이용할 수 있습니다.';}
+  else if(busy){busy=false;$('refresh').disabled=false;
+   $('notice').textContent=info.state==='complete'?'색인 갱신 완료 · 전체 '+info.last_result.total+'개':'색인 갱신 실패 · 이전 검색 DB 유지 · '+info.last_error;}
+ }catch(err){/* local browser may be closed or service may have expired */}
+}
+$('refresh').addEventListener('click',async()=>{
+ if(busy)return;
+ busy=true;$('refresh').disabled=true;
+ try{const r=await fetch('/api/refresh',{method:'POST',headers:{'X-ROUTABL-Request':token}});if(!r.ok)throw Error('갱신 시작 실패');$('notice').textContent='색인을 갱신합니다…';}
+ catch(err){busy=false;$('refresh').disabled=false;$('notice').textContent=err.message;}
+});
+setInterval(poll,1500);
+</script></main></body></html>"""
+    return page.replace("__NONCE__", TOKEN).replace("__TOKEN__", TOKEN)
+
+
+class App(BaseHTTPRequestHandler):
+    protocol_version = "HTTP/1.0"
+
+    def allowed(self):
+        return self.headers.get("Host") == "127.0.0.1:" + str(PORT)
+
+    def respond(self, code, content, mimetype="application/json; charset=utf-8"):
+        body = content.encode("utf-8")
+        self.send_response(code)
+        self.send_header("Content-Type", mimetype)
+        self.send_header("Content-Length", str(len(body)))
+        self.send_header("Cache-Control", "no-store")
+        self.send_header("X-Content-Type-Options", "nosniff")
+        self.send_header("X-Frame-Options", "DENY")
+        self.send_header("Referrer-Policy", "no-referrer")
+        self.send_header("Content-Security-Policy",
+                         "default-src 'none'; script-src 'nonce-" + TOKEN +
+                         "'; style-src 'nonce-" + TOKEN +
+                         "'; connect-src 'self'; frame-ancestors 'none'; base-uri 'none'; form-action 'self'")
+        self.end_headers()
+        self.wfile.write(body)
+
+    def do_GET(self):
+        global LAST_ACTIVITY
+        if not self.allowed():
+            self.respond(403, '{"error":"host"}')
+            return
+        p = urllib.parse.urlsplit(self.path)
+        # Status polling does not count as activity; an idle browser tab cannot
+        # keep the local service alive indefinitely.
+        if p.path != "/api/status":
+            LAST_ACTIVITY = time.monotonic()
+        if p.path == "/":
+            self.respond(200, ui_page(), "text/html; charset=utf-8")
+        elif p.path == "/api/status":
+            self.respond(200, json.dumps(status(), ensure_ascii=False))
+        elif p.path == "/api":
+            q = urllib.parse.parse_qs(p.query).get("q", [""])[0].strip()[:80]
+            if not q or len(q) < 2:
+                self.respond(400, '{"error":"short search term"}')
+                return
+            try:
+                self.respond(200, json.dumps(search(q), ensure_ascii=False))
+            except Exception:
+                self.respond(500, '{"error":"read-only index query failed"}')
+        else:
+            self.respond(404, '{"error":"not found"}')
+
+    def do_POST(self):
+        global LAST_ACTIVITY
+        if not self.allowed() or self.path != "/api/refresh":
+            self.respond(404, '{"error":"not found"}')
+            return
+        origin = self.headers.get("Origin", "")
+        key = self.headers.get("X-ROUTABL-Request", "")
+        if origin != URL or not secrets.compare_digest(key, TOKEN):
+            self.respond(403, '{"error":"confirmation token required"}')
+            return
+        if self.headers.get("Content-Length", "0") not in ("", "0"):
+            self.respond(400, '{"error":"no body allowed"}')
+            return
+        LAST_ACTIVITY = time.monotonic()
+        if refresh():
+            self.respond(202, '{"ok":true,"message":"refresh started"}')
+        else:
+            self.respond(409, '{"ok":false,"message":"already refreshing"}')
+
+    def log_message(self, *args):
+        pass
+
+
+def stop_when_idle(server):
+    while True:
+        time.sleep(8)
+        with STATE_LOCK:
+            in_progress = STATE["state"] == "running"
+        if not in_progress and time.monotonic() - LAST_ACTIVITY > INACTIVITY_SECONDS:
+            server.shutdown()
+            break
+
+
+def serve():
+    STORE.mkdir(mode=0o700, parents=True, exist_ok=True)
+    lock_file = STORE / "search_v1_4_server.lock"
+    fd = os.open(lock_file, os.O_CREAT | os.O_RDWR, 0o600)
+    try:
+        try:
+            fcntl.flock(fd, fcntl.LOCK_EX | fcntl.LOCK_NB)
+        except BlockingIOError:
+            print("ROUTABL_ASSET_SEARCH_ALREADY_RUNNING", flush=True)
+            return 0
+        initialize_index()
+        ThreadingHTTPServer.allow_reuse_address = True
+        server = ThreadingHTTPServer(("127.0.0.1", PORT), App)
+        server.daemon_threads = True
+        threading.Thread(target=stop_when_idle, args=(server,), daemon=True).start()
+        print("ROUTABL_ASSET_SEARCH_READY", URL, flush=True)
+        try:
+            server.serve_forever(poll_interval=.5)
+        finally:
+            server.server_close()
+        return 0
+    finally:
+        fcntl.flock(fd, fcntl.LOCK_UN)
+        os.close(fd)
+
+
+if __name__ == "__main__":
+    import sys
+    if len(sys.argv) == 2 and sys.argv[1] == "serve":
+        raise SystemExit(serve())
+    if len(sys.argv) == 2 and sys.argv[1] == "check":
+        print(json.dumps({"index": str(ACTIVE), "exists": ACTIVE.exists(),
+                          "rows": check_db(ACTIVE)[0] if ACTIVE.exists() else 0}))
+    else:
+        raise SystemExit("Usage: routabl_search_v1_4_service.py serve|check")
