@@ -451,6 +451,14 @@ ALIASES = {
     "행정동": ["adminDong"], "초성": ["chosung", "Chosung", "KoreanSearch"], "주소록": ["customerDirectory", "CustomerDirectory"],
     "분석앱": ["Analytics"], "일상점검": ["DailyInspection"], "분업": ["DW-01"], "백서": ["Whitepaper", "백서"],
     "등록부": ["asset_manifest"], "보안규칙": ["firestore.rules"], "관리자": ["isAdmin", "admin"],
+    # 2026-11-12 보강: 현장 표현 → 코드·문서 표기
+    "호수": ["NNN호X", "기사 배제"], "기사배제": ["NNN호X", "기사 배제"],
+    "동명": ["adminDong", "dong", "행정동"], "주소확인": ["CustomerAddressLookup", "주소 확인"],
+    "중복": ["duplicate", "FirstRegistration", "중복 기준"], "슬래시": ["'/'", "스포릭"],
+    "백업": ["Backup", "SelectiveSecure", "백업"], "자동백업": ["BackupHeadlessSupervisor", "SelectiveSecureBackup"],
+    "어록": ["WORK_PRINCIPLES", "어록"], "지침": ["AI 작업 규칙", "INSTRUCTIONS", "지침"], "원칙": ["PRINCIPLE", "원칙"],
+    "검색앱": ["ASSET_SEARCH", "routabl_search"], "폴더정리": ["FOLDER_GIT_REORG", "PATH_MAP"],
+    "캡처": ["CaptureParser", "capture"], "공유등록": ["ShareRegisterWorker"], "정리목록": ["ReviewQueue"],
 }
 KIND_BOOST = {"main": 2.0, "docs": 1.5, "test": 0.0, "working": -0.5, "gpt": -0.5, "variant": -2.5}
 _ASSETS = {"name": None, "map": {}}
