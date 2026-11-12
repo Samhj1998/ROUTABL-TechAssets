@@ -3,19 +3,19 @@
 <plist version="1.0">
 <dict>
 	<key>CFBundleDisplayName</key>
-	<string>라우터블 백업 권한·안전관리 v0.4.1</string>
+	<string>라우터블 백업 권한·안전관리 v0.4.2</string>
 	<key>CFBundleExecutable</key>
 	<string>ROUTABLBackupManager</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.routabl.assetbackup.manager.v041</string>
+	<string>com.routabl.assetbackup.manager.v042</string>
 	<key>CFBundleName</key>
 	<string>ROUTABL Backup Safe Manager</string>
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>0.4.1</string>
+	<string>0.4.2</string>
 	<key>CFBundleVersion</key>
-	<string>41</string>
+	<string>42</string>
 	<key>LSMinimumSystemVersion</key>
 	<string>13.0</string>
 	<key>NSHighResolutionCapable</key>

@@ -7,7 +7,7 @@
 	<key>KeepAlive</key>
 	<false/>
 	<key>Label</key>
-	<string>com.routabl.assetbackup.native.v041</string>
+	<string>com.routabl.assetbackup.native.v042</string>
 	<key>ProcessType</key>
 	<string>Background</string>
 	<key>RunAtLoad</key>

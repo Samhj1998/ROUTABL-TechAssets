@@ -2,7 +2,7 @@ import AppKit
 import Foundation
 import ServiceManagement
 
-let plist = "com.routabl.assetbackup.native.v041.plist"
+let plist = "com.routabl.assetbackup.native.v042.plist"
 let service = SMAppService.agent(plistName: plist)
 
 if CommandLine.arguments.contains("--status") {
@@ -21,7 +21,7 @@ final class Manager: NSObject, NSApplicationDelegate {
         window=NSWindow(contentRect:size,
                         styleMask:[.titled,.closable,.miniaturizable],
                         backing:.buffered,defer:false)
-        window.title="라우터블 백업 권한·안전관리 v0.4.1"
+        window.title="라우터블 백업 권한·안전관리 v0.4.2"
         window.center()
         window.isReleasedWhenClosed=false
         let panel=NSView(frame:size)
