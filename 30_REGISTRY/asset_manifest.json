@@ -1,7 +1,7 @@
 {
-  "schema_version": "0.10",
-  "captured_at_kst": "2026-11-03T21:50:31+09:00",
-  "scope": "V21_LATEST_MANIFEST_AES_BACKUP_NAS_CHAIN_AND_HEADLESS_GATES",
+  "schema_version": "0.11",
+  "captured_at_kst": "2026-11-03T22:48:50+09:00",
+  "scope": "NAS_CONTENT_AWARE_REFERENCE_SEED_AND_HEADLESS_LAUNCHD_READONLY_AUDIT",
   "registry_mode": "local-only security classification and search metadata",
   "existing_index_baseline": {
     "sqlite_integrity": "ok",
@@ -723,6 +723,42 @@
       "write_or_execution_approval_class": "C",
       "copy_in_managed_repository": "NO",
       "original_file_unchanged": true
+    },
+    {
+      "asset_id": "ASSET-NAS-CAS-V01-ENGINE",
+      "title": "Content-aware encrypted sparsebundle NAS reference and changed-band object writer",
+      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/00_GUIDE/ROUTABL_NAS_ContentAwareBackup_v0_1.py",
+      "bytes": 16633,
+      "sha256": "75da8580ea0e4e3811e1a962e19051b774804b8557db1752be11bd197fb7b8bc",
+      "observation": "NEW_CAS_AND_AUDIT_ASSETS_CREATED_AFTER_V09_AES_SNAPSHOT",
+      "execution_validation": "SEED_141_VERIFIED_SYNTHETIC_CHANGED_BAND_PASS",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "NO",
+      "original_file_unchanged": true
+    },
+    {
+      "asset_id": "ASSET-NAS-CAS-V01-ANCHOR",
+      "title": "Content-aware NAS seed index references existing v2.1 full encrypted copy",
+      "observed_original_path": "/Volumes/Dev_Assets/ROUTABL-TechAssets-Backup/snapshots/ROUTABL-Ciphertext-CAS-v0_1/manifests/CAS_ASSET_V21_20261103_214028_KST_24533.json",
+      "bytes": 53262,
+      "sha256": "4c99f17e9b8e9a4a42c5dc0f8e6ec4cb2f1b515662ec1279c659e62aafffa305",
+      "observation": "NEW_CAS_AND_AUDIT_ASSETS_CREATED_AFTER_V09_AES_SNAPSHOT",
+      "execution_validation": "REFERENCE_MANIFEST_141_BANDS_SHA256_PASS",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "NO",
+      "original_file_unchanged": true
+    },
+    {
+      "asset_id": "ASSET-NAS-CAS-V01-QA",
+      "title": "CAS compatibility, baseline verification, launchd error audit and remaining gates",
+      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/NAS_INCREMENTAL_CAS_V01_BASELINE_AND_HEADLESS_DIAGNOSIS_20261103.md",
+      "bytes": 5267,
+      "sha256": "28394c95623bd1b8c44b61839e7d3506581e93643f806865998be86e6ae29a78",
+      "observation": "NEW_CAS_AND_AUDIT_ASSETS_CREATED_AFTER_V09_AES_SNAPSHOT",
+      "execution_validation": "READONLY_AUDIT_AND_SYNTHETIC_UNIT_TEST_PASS",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "NO",
+      "original_file_unchanged": true
     }
   ],
   "unresolved": [
@@ -858,9 +894,25 @@
     {
       "asset_id": "ASSET-BACKUP-V21-FINAL-AUDIT",
       "issue": "v0.10 manifest and this audit are after v0.9 snapshot, not yet backed up in local/NAS AES v2.1 snapshot."
+    },
+    {
+      "asset_id": "ASSET-NAS-CAS-V01-ANCHOR",
+      "issue": "Anchor full NAS ciphertext image must remain; reference-based CAS currently depends on existing full snapshot."
+    },
+    {
+      "asset_id": "ASSET-NAS-CAS-V01-ENGINE",
+      "issue": "Real changed sparsebundle incremental capture and restore composition not attempted after remote safety gate refused."
+    },
+    {
+      "asset_id": "ASSET-NAS-CAS-V01-QA",
+      "issue": "launchd background PermissionError root cause not isolated, scheduled backup remains disabled."
+    },
+    {
+      "asset_id": "ASSET-NAS-CAS-V01-QA",
+      "issue": "New v0.11 registry authored after last verified v0.9 AES snapshot, not yet in that backup."
     }
   ],
-  "supersedes": "asset_manifest_v0.9.json (untouched retained)",
+  "supersedes": "asset_manifest_v0.10.json (unchanged)",
   "library_crosswalk": [
     {
       "asset_id": "TA-CASE-20261102-01",
@@ -1296,6 +1348,24 @@
       "grade": "P3",
       "policy": "local_only_private_audit",
       "classification_scope": "v2.1 backup operational evidence"
+    },
+    {
+      "asset_id": "ASSET-NAS-CAS-V01-ENGINE",
+      "grade": "P3",
+      "policy": "local_only_private_audit",
+      "classification_scope": "technical backup operations"
+    },
+    {
+      "asset_id": "ASSET-NAS-CAS-V01-ANCHOR",
+      "grade": "P2",
+      "policy": "local_only_private_audit",
+      "classification_scope": "technical backup operations"
+    },
+    {
+      "asset_id": "ASSET-NAS-CAS-V01-QA",
+      "grade": "P3",
+      "policy": "local_only_private_audit",
+      "classification_scope": "technical backup operations"
     }
   ],
   "search_v1_3": {
@@ -1504,5 +1574,21 @@
     "drive_v21_remote_backup": "NOT_UPLOADED",
     "current_v010_manifest_in_v09_snapshot": false,
     "incremental_nas_copy": "NOT_YET_IMPLEMENTED"
+  },
+  "nas_incremental_cas_v01": {
+    "reference_snapshot": "NAS_MANUAL_ASSET_V21_20261103_214221_KST_24639",
+    "reference_local_snapshot": "ASSET_V21_20261103_214028_KST_24533",
+    "verified_anchor_ciphertext_components": 141,
+    "reused_anchor_bytes": 1128457076,
+    "additional_bytes_copied_to_seed": 0,
+    "synthetic_changed_components_written": 1,
+    "synthetic_unchanged_components_reused": 2,
+    "real_changed_snapshot_incremental_capture": "NOT_EXECUTED_REMOTE_SAFETY_CHECK_REFUSED",
+    "old_nas_anchor_retention": "MUST_NOT_DELETE",
+    "launchd_oneoff_permission_error": "6_ATTEMPTS_ABOUT_10_SECONDS_APART_SERVICE_REMOVED",
+    "all_scheduled_backups": "DISABLED_OR_NOT_INSTALLED",
+    "aes_full_internal_decrypted_restore": "NOT_VERIFIED",
+    "google_drive_current_aes_backup": "NOT_VERIFIED",
+    "search_v15_refresh_ui": "USER_NOT_VERIFIED"
   }
 }
