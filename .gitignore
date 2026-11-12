@@ -1,6 +1,8 @@
 # 큰 원본·실행 데이터는 git 밖 (SHA로만 참조)
 20_ORIGINALS/
-80_RUNTIME/
+80_RUNTIME/**
+!80_RUNTIME/**/
+!80_RUNTIME/**/*.py
 _to_delete/
 **/_to_delete/
 *.sqlite

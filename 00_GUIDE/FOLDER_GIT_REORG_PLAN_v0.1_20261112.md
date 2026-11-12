@@ -22,6 +22,14 @@
   - 제외: 20_ORIGINALS·80_RUNTIME·*.sqlite·*.pdf·*.zip·암호화본·비밀 파일·고객 데이터 덤프(CUSTOMER_DONG plan*.json)·private/
   - git 임시·잠금 파일 정리를 위해 이 폴더 삭제 권한 승인(이 세션 한정)
 
+- 2026-11-12 15:3x P2 완료 (사용자 승인): 기준 등록부 30_REGISTRY/asset_manifest.json 하나 + 이름표 registry-v0.1~v0.32 (32/32 SHA 일치)
+  - 옛 사본 v0.1~v0.31·조회DB v0.1~v0.17 → 30_REGISTRY/_archive_versions/ (삭제 아님)
+  - 호환용 asset_manifest_v0.32.json 유지: 정기 백업 SelectiveSecureBackup_v2_1·검색 v1.6/v1.7이 v0.N 파일을 찾음
+  - 검색 v1.8: asset_manifest.json 우선 읽기, 보관함 제외, 대표본 삭제 시 중복본 재색인 수정
+  - v1.8 코드(.py)도 git 추적 (실행 데이터는 계속 제외)
+
 ## 다음 행동
-- P2 등록부 하나로 (사용자 승인 후)
+- 등록부 갱신 방법(앞으로): asset_manifest.json 수정 → 커밋 → 이름표 registry-v0.N. v0.N 사본은 만들지 않음
+- 남은 호환 사본 v0.32 제거 조건: 백업 스크립트가 asset_manifest.json을 읽도록 수정·검증 (백업 영향이라 별도 승인)
+- P3 40_WORKING 정리 (사용자 승인 후)
 - 앞으로 텍스트 변경은 커밋으로 기록 (_vN 사본 대신)
