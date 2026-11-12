@@ -1,7 +1,7 @@
 {
-  "schema_version": "0.15",
-  "captured_at_kst": "2026-11-04T09:30:39+09:00",
-  "scope": "120_COMPREHENSIVE_TECH_ASSET_REGISTER__HEADLESS_MANUAL_KICKSTART_VERIFIED__0430_SCHEDULE_UNVERIFIED",
+  "schema_version": "0.16",
+  "captured_at_kst": "2026-11-05T17:48:25+09:00",
+  "scope": "120_TECH_ASSET_REGISTER_PLUS_20261105_ADDRESSBOOK_REUSE_CASE__BACKUP_SCHEDULE_INDEPENDENT_VERIFICATION_REQUIRED",
   "registry_mode": "local-only security classification and search metadata",
   "existing_index_baseline": {
     "sqlite_integrity": "ok",
@@ -1343,6 +1343,66 @@
       "provenance_status": "DIRECT_FILE_BYTES_SHA256_VERIFIED_NOT_FULL_CHAT_TRANSCRIPT",
       "registry_added_in": "v0.15",
       "evidence_catalog_path": "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_INTEGRATION_20261104_v01/EVIDENCE_CATALOG_v0.1.json"
+    },
+    {
+      "asset_id": "ASSET-120-ADDR-REUSE-CASE-20261105",
+      "title": "주소록 등록 실패·성공 경로 재사용 분석",
+      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_ADDRESSBOOK_REUSE_20261105_v01/ADDRESSBOOK_FAILURE_AND_RECOVERY_CASE_v0.1.md",
+      "bytes": 4143,
+      "sha256": "3cb1ca4eb74f12dc39c38551b13016d715c420a7d6cde586d9f26fcb091bfadc",
+      "mtime_utc": "2026-11-05T08:46:41.536705+00:00",
+      "source_system": "DERIVED_AUDIT_LOCAL",
+      "source_chat_number": "120-1",
+      "observation": "2026-11-05 addressbook repetitive-work failure recovery; no original customer data embedded",
+      "execution_validation": "CASE_ANALYSIS_VIA_TOOL_HISTORY",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "YES_ORIGINAL_LOCAL_AUDIT",
+      "original_file_unchanged": true,
+      "provenance_status": "DERIVED_USER_REPORT_PLUS_RECENT_REMOTE_TOOL_HISTORY_NOT_FULL_CHAT_TRACE",
+      "registry_added_in": "v0.16",
+      "parent_asset_ids": [
+        "TA-CASE-20261102-01"
+      ]
+    },
+    {
+      "asset_id": "ASSET-120-ADDR-REGISTRATION-RUNBOOK-V01",
+      "title": "사진 기반 고객 주소록 등록 표준 실행 런북",
+      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_ADDRESSBOOK_REUSE_20261105_v01/ADDRESSBOOK_REGISTRATION_RUNBOOK_v0.1.md",
+      "bytes": 4334,
+      "sha256": "5b86657214b09808cdfe5bab74426ea21677f1ed03890811bf1ef4eef1239eb3",
+      "mtime_utc": "2026-11-05T08:47:10.593447+00:00",
+      "source_system": "DERIVED_AUDIT_LOCAL",
+      "source_chat_number": "120-1",
+      "observation": "2026-11-05 addressbook repetitive-work failure recovery; no original customer data embedded",
+      "execution_validation": "PROPOSED_OPERATION_RUNBOOK_NOT_EXECUTABLE",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "YES_ORIGINAL_LOCAL_AUDIT",
+      "original_file_unchanged": true,
+      "provenance_status": "DERIVED_USER_REPORT_PLUS_RECENT_REMOTE_TOOL_HISTORY_NOT_FULL_CHAT_TRACE",
+      "registry_added_in": "v0.16",
+      "parent_asset_ids": [
+        "TA-CASE-20261102-01"
+      ]
+    },
+    {
+      "asset_id": "ASSET-120-ADDR-REUSE-EVIDENCE-V01",
+      "title": "2건 등록 재조회 및 변경 저널 검증 요약",
+      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_ADDRESSBOOK_REUSE_20261105_v01/ADDRESSBOOK_EVIDENCE_AND_ACCEPTANCE_v0.1.json",
+      "bytes": 1848,
+      "sha256": "3c06f81bb1965dae1b9a48c17ceb64a35b87647daf2b79e6635321a06b578335",
+      "mtime_utc": "2026-11-05T08:47:26.869936+00:00",
+      "source_system": "DERIVED_AUDIT_LOCAL",
+      "source_chat_number": "120-1",
+      "observation": "2026-11-05 addressbook repetitive-work failure recovery; no original customer data embedded",
+      "execution_validation": "REDACTED_TOOL_HISTORY_SUMMARY_NOT_IMMUTABLE_LOG",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "YES_ORIGINAL_LOCAL_AUDIT",
+      "original_file_unchanged": true,
+      "provenance_status": "DERIVED_USER_REPORT_PLUS_RECENT_REMOTE_TOOL_HISTORY_NOT_FULL_CHAT_TRACE",
+      "registry_added_in": "v0.16",
+      "parent_asset_ids": [
+        "TA-CASE-20261102-01"
+      ]
     }
   ],
   "unresolved": [
@@ -1530,9 +1590,17 @@
     {
       "asset_id": "ASSET-HEADLESS-APPROVAL-GATE-V01",
       "issue": "Interactive actual backup enablement must await successful background probe and explicit owner action."
+    },
+    {
+      "asset_id": "ASSET-120-ADDR-REGISTRATION-RUNBOOK-V01",
+      "issue": "New chats do not yet automatically discover or execute the existing approved success path; integration and security test pending."
+    },
+    {
+      "asset_id": "ASSET-120-ADDR-REUSE-EVIDENCE-V01",
+      "issue": "Actual Android app UI display not field-tested; original failed chat tool trace not archived."
     }
   ],
-  "supersedes": "asset_manifest_v0.14.json (immutable previous version preserved)",
+  "supersedes": "asset_manifest_v0.15.json (immutable previous version preserved)",
   "library_crosswalk": [
     {
       "asset_id": "TA-CASE-20261102-01",
@@ -2220,6 +2288,24 @@
       "grade": "P2",
       "policy": "local_metadata_only",
       "classification_scope": "NAS_CAS_PRIMARY"
+    },
+    {
+      "asset_id": "ASSET-120-ADDR-REUSE-CASE-20261105",
+      "grade": "P3",
+      "policy": "private_local_and_aes_nas",
+      "classification_scope": "DERIVED_AUDIT_LOCAL"
+    },
+    {
+      "asset_id": "ASSET-120-ADDR-REGISTRATION-RUNBOOK-V01",
+      "grade": "P3",
+      "policy": "private_local_and_aes_nas",
+      "classification_scope": "DERIVED_AUDIT_LOCAL"
+    },
+    {
+      "asset_id": "ASSET-120-ADDR-REUSE-EVIDENCE-V01",
+      "grade": "P3",
+      "policy": "private_local_and_aes_nas",
+      "classification_scope": "DERIVED_AUDIT_LOCAL"
     }
   ],
   "search_v1_3": {
@@ -2633,5 +2719,26 @@
       "source": "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_INTEGRATION_20261104_v01/OPEN_ISSUES_FOR_OWNER_v0.1.md",
       "status": "OPEN_OR_PENDING"
     }
-  ]
+  ],
+  "addressbook_registration_reuse_v016": {
+    "case_id": "ROUTABL-ADDR-REUSE-20261105-01",
+    "date_kst": "2026-11-05",
+    "parent_success_asset": "TA-CASE-20261102-01",
+    "new_records": [
+      "ASSET-120-ADDR-REUSE-CASE-20261105",
+      "ASSET-120-ADDR-REGISTRATION-RUNBOOK-V01",
+      "ASSET-120-ADDR-REUSE-EVIDENCE-V01"
+    ],
+    "firebase_project": "routivel-prod",
+    "firestore_customer_readback_count": 2,
+    "customer_directory_change_journal_verified_count": 2,
+    "mobile_app_ui_field_verification": "PENDING",
+    "automatic_session_asset_discovery": "NOT_IMPLEMENTED",
+    "raw_failed_chat_full_trace": "NOT_OBTAINED",
+    "provenance": "USER_REPORT_PLUS_REMOTE_TOOL_HISTORY_EXTRACT",
+    "source_program_changed": false,
+    "firestore_write_in_this_registration_update": false,
+    "v15_previous_sha256": "cc84d033c02ee215ce8a1cf0f7635f3c541295a34bfa0f1f1da6175121fdeda2",
+    "prior_search_gui_v15_modified": false
+  }
 }
