@@ -28,8 +28,17 @@
   - 검색 v1.8: asset_manifest.json 우선 읽기, 보관함 제외, 대표본 삭제 시 중복본 재색인 수정
   - v1.8 코드(.py)도 git 추적 (실행 데이터는 계속 제외)
 
+- 2026-11-12 15:4x P3 완료 (사용자 승인): 40_WORKING 54개 → search·backup·ai_loop·customer 4개 묶음. 내용 변경 없음, git 이름 변경으로 이력 유지
+  - 대응표 40_WORKING/PATH_MAP_P3_20261112.tsv. 등록부 v0.33(이름표 registry-v0.33): 자산 19개 경로 갱신, previous_paths 보존. 등록부 상태 이동 전후 동일
+  - 호환 사본 v0.32 → 보관함, asset_manifest_v0.33.json으로 교체. 조회DB v0.19
+  - 사고·조치: 경로가 바뀌며 고객 데이터 제외 규칙(40_WORKING/CUSTOMER_DONG_*/plan*.json)이 안 맞아 plan.json 3개가 커밋됨. P1부터 plan.json.review.csv(업체명·주소)도 규칙 밖이었음 → 규칙을 **/CUSTOMER_DONG_*/plan* 로 바꾸고 이력 전체에서 제거(filter-branch, gc). 남은 객체 0, 등록부 이름표 33개 SHA 재검증 통과. 로컬 저장소 밖으로 나간 적 없음
+  - 교훈: 제외 규칙은 경로가 아니라 이름 패턴(**/)으로. 폴더 이동 전 git check-ignore로 확인
+  - 검색 v1.8 새로 고침: 옮겨진 458개 재색인, 문서 수 동일(3,046)
+
 ## 다음 행동
 - 등록부 갱신 방법(앞으로): asset_manifest.json 수정 → 커밋 → 이름표 registry-v0.N. v0.N 사본은 만들지 않음
 - 남은 호환 사본 v0.32 제거 조건: 백업 스크립트가 asset_manifest.json을 읽도록 수정·검증 (백업 영향이라 별도 승인)
-- P3 40_WORKING 정리 (사용자 승인 후)
+- P3b 40_WORKING 버전 폴더(V0_1·V0_2…, R01·V01) → git 이력 통합 (사용자 승인 후)
+- P4 00_GUIDE 정리 (사용자 승인 후)
+- 백업 스크립트 점검 (별도 승인): SelectiveSecureBackup_v2_1은 등록부 모든 자산의 경로·SHA 일치와 옛 프로젝트 폴더(2026-11-11 삭제분 포함)를 요구 → 현재 그대로 실행하면 실패할 가능성 높음 (P3 전에도 SHA 변경 5·확인 불가 25)
 - 앞으로 텍스트 변경은 커밋으로 기록 (_vN 사본 대신)
