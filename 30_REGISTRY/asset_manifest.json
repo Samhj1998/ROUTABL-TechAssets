@@ -1,6 +1,6 @@
 {
- "schema_version": "0.29",
- "captured_at_kst": "2026-11-11T14:38:14+09:00",
+ "schema_version": "0.30",
+ "captured_at_kst": "2026-11-12T01:31:12+09:00",
  "scope": "TI01_3TIER_IMPORTANCE_RECOVERY_GOVERNANCE_ABOVE_VI01",
  "registry_mode": "local-only security classification and search metadata",
  "existing_index_baseline": {
@@ -2749,6 +2749,253 @@
     "ANALYTICS-APP-01-README"
    ],
    "registry_added_in": "v0.29"
+  },
+  {
+   "asset_id": "CUSTOMER-REG-APP-01-CONSENSUS-V05",
+   "title": "고객등록앱 합의안 v0.5 — 1차 즉시 저장, 2차 여유 있을 때 정리 / 공유 빠른 경로 / 정식 경로",
+   "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/40_WORKING/CUSTOMER_REG_APP_PREP_20261111/CUSTOMER_REG_APP_CONSENSUS_v0.5.md",
+   "bytes": 3642,
+   "sha256": "a974f0124db5bc3b4c49565c399a30070d49190a994adea122ef499466e89df5",
+   "mtime_utc": "2026-11-11T11:08:26.545402+00:00",
+   "source_system": "CLAUDE_SESSION_20261112_CUSTOMER_REG_STAGE5",
+   "source_chat_number": "CUSTOMER-REG-STAGE5",
+   "execution_validation": "USER_CONFIRMED_CONSENSUS_ALL_5_STAGES_IMPLEMENTED_20261112",
+   "write_or_execution_approval_class": "B",
+   "copy_in_managed_repository": "NO_REFERENCED_ONLY",
+   "original_file_unchanged": true,
+   "provenance_status": "DIRECT_FILE_BYTES_SHA256_VERIFIED_AUTHORED_IN_THIS_SESSION",
+   "parent_asset_ids": [
+    "ASSET-120-ADDR-REGISTRATION-RUNBOOK-V01"
+   ],
+   "registry_added_in": "v0.30"
+  },
+  {
+   "asset_id": "CUSTOMER-REG-APP-01-CAPTURE-PARSER",
+   "title": "캡처·사진 글자 인식 칸 나누기 CaptureParser (인성데이타 정형·카톡 비정형, 업체명 규칙, 메모 뒤 주소 줄 인식)",
+   "observed_original_path": "/Users/yongho/StudioProjects/ROUTABL-CustomerRegistration-Android/app/src/main/java/com/routivel/customerreg/capture/CaptureParser.kt",
+   "bytes": 12627,
+   "sha256": "63fb85a52f05dd614168ca12f82293f1e3fa530f1084dc356c0674eda3b3acf8",
+   "mtime_utc": "2026-11-11T15:18:21.363820+00:00",
+   "source_system": "CLAUDE_SESSION_20261112_CUSTOMER_REG_STAGE5",
+   "source_chat_number": "CUSTOMER-REG-STAGE5",
+   "execution_validation": "DEVICE_S25_VERIFIED__PHOTO_3000x4000_KAB_ADDRESS_LINE_FIX_6B6531C__PUSHED",
+   "write_or_execution_approval_class": "B",
+   "copy_in_managed_repository": "NO_REFERENCED_ONLY",
+   "original_file_unchanged": true,
+   "provenance_status": "DIRECT_FILE_BYTES_SHA256_VERIFIED_AUTHORED_IN_THIS_SESSION",
+   "parent_asset_ids": [
+    "CUSTOMER-REG-APP-01-CONSENSUS-V05"
+   ],
+   "registry_added_in": "v0.30"
+  },
+  {
+   "asset_id": "CUSTOMER-REG-APP-01-FIRST-REGISTRATION",
+   "title": "1차 등록 규칙 FirstRegistration (중복·지번/도로명 선택·행정동 우선 동명·확인 필요 표시)",
+   "observed_original_path": "/Users/yongho/StudioProjects/ROUTABL-CustomerRegistration-Android/app/src/main/java/com/routivel/customerreg/register/FirstRegistration.kt",
+   "bytes": 10227,
+   "sha256": "47b17f32a3671e4542b015442bf401f5f7fcdcf71c9e0ea862967fb41b45cd70",
+   "mtime_utc": "2026-11-11T15:06:20.304354+00:00",
+   "source_system": "CLAUDE_SESSION_20261112_CUSTOMER_REG_STAGE5",
+   "source_chat_number": "CUSTOMER-REG-STAGE5",
+   "execution_validation": "DEVICE_S25_VERIFIED_DUPLICATE_BY_NAME_AND_PHONE__ADMIN_DONG_6B6531C__PUSHED",
+   "write_or_execution_approval_class": "B",
+   "copy_in_managed_repository": "NO_REFERENCED_ONLY",
+   "original_file_unchanged": true,
+   "provenance_status": "DIRECT_FILE_BYTES_SHA256_VERIFIED_AUTHORED_IN_THIS_SESSION",
+   "parent_asset_ids": [
+    "CUSTOMER-REG-APP-01-CONSENSUS-V05"
+   ],
+   "registry_added_in": "v0.30"
+  },
+  {
+   "asset_id": "CUSTOMER-REG-APP-01-SHARE-QUICK-PATH",
+   "title": "공유 빠른 경로 ShareRegisterWorker (갤러리·카톡 공유 → 화면 없이 백그라운드 1차 등록 → 묶음 알림)",
+   "observed_original_path": "/Users/yongho/StudioProjects/ROUTABL-CustomerRegistration-Android/app/src/main/java/com/routivel/customerreg/share/ShareRegisterWorker.kt",
+   "bytes": 5728,
+   "sha256": "1a6215cfd22d439a084faab59f4c5848d54d8c7796fc135fcc2e2577c020e571",
+   "mtime_utc": "2026-11-11T13:57:55.021337+00:00",
+   "source_system": "CLAUDE_SESSION_20261112_CUSTOMER_REG_STAGE5",
+   "source_chat_number": "CUSTOMER-REG-STAGE5",
+   "execution_validation": "DEVICE_S25_VERIFIED_STAGE4_0F0C1A7__PUSHED",
+   "write_or_execution_approval_class": "B",
+   "copy_in_managed_repository": "NO_REFERENCED_ONLY",
+   "original_file_unchanged": true,
+   "provenance_status": "DIRECT_FILE_BYTES_SHA256_VERIFIED_AUTHORED_IN_THIS_SESSION",
+   "parent_asset_ids": [
+    "CUSTOMER-REG-APP-01-CONSENSUS-V05"
+   ],
+   "registry_added_in": "v0.30"
+  },
+  {
+   "asset_id": "CUSTOMER-REG-APP-01-REVIEW-QUEUE",
+   "title": "정리 목록 저장소 ReviewQueue (폰 안 review-queue.json, 확인 필요·보완 후보·등록 못 함, 계정 구분)",
+   "observed_original_path": "/Users/yongho/StudioProjects/ROUTABL-CustomerRegistration-Android/app/src/main/java/com/routivel/customerreg/register/ReviewQueue.kt",
+   "bytes": 7151,
+   "sha256": "3f7a3a210319113c1a2fd87bfc395879f7f734172f77c4eac8c4a6ea52314f6f",
+   "mtime_utc": "2026-11-11T14:46:17.283177+00:00",
+   "source_system": "CLAUDE_SESSION_20261112_CUSTOMER_REG_STAGE5",
+   "source_chat_number": "CUSTOMER-REG-STAGE5",
+   "execution_validation": "DEVICE_S25_VERIFIED_STAGE5_6C73C97__PUSHED",
+   "write_or_execution_approval_class": "B",
+   "copy_in_managed_repository": "NO_REFERENCED_ONLY",
+   "original_file_unchanged": true,
+   "provenance_status": "DIRECT_FILE_BYTES_SHA256_VERIFIED_AUTHORED_IN_THIS_SESSION",
+   "parent_asset_ids": [
+    "CUSTOMER-REG-APP-01-CONSENSUS-V05"
+   ],
+   "registry_added_in": "v0.30"
+  },
+  {
+   "asset_id": "CUSTOMER-REG-APP-01-REVIEW-EDIT",
+   "title": "수정 화면 ReviewEditActivity (기사앱 CustomerEditActivity와 같은 칸·주소 확인·저장 경로, 보완은 바뀐 칸만, 다른 업체로 신규 등록)",
+   "observed_original_path": "/Users/yongho/StudioProjects/ROUTABL-CustomerRegistration-Android/app/src/main/java/com/routivel/customerreg/review/ReviewEditActivity.kt",
+   "bytes": 27125,
+   "sha256": "3add7b2319d3c4bafc684ad4d248a8e958d24c64fc0f99bf79d0c27c2ba4dce0",
+   "mtime_utc": "2026-11-11T16:06:20.952429+00:00",
+   "source_system": "CLAUDE_SESSION_20261112_CUSTOMER_REG_STAGE5",
+   "source_chat_number": "CUSTOMER-REG-STAGE5",
+   "execution_validation": "DEVICE_S25_VERIFIED_D6CC4FD__PUSHED",
+   "write_or_execution_approval_class": "B",
+   "copy_in_managed_repository": "NO_REFERENCED_ONLY",
+   "original_file_unchanged": true,
+   "provenance_status": "DIRECT_FILE_BYTES_SHA256_VERIFIED_AUTHORED_IN_THIS_SESSION",
+   "parent_asset_ids": [
+    "CUSTOMER-REG-APP-01-REVIEW-QUEUE"
+   ],
+   "registry_added_in": "v0.30"
+  },
+  {
+   "asset_id": "CUSTOMER-REG-APP-01-HOME",
+   "title": "첫 화면 HomeActivity (고객 목록·초성 검색·정리 배너·직접 입력·캡처로 등록, 화면 구성안 ①)",
+   "observed_original_path": "/Users/yongho/StudioProjects/ROUTABL-CustomerRegistration-Android/app/src/main/java/com/routivel/customerreg/HomeActivity.kt",
+   "bytes": 16956,
+   "sha256": "258fc56dd648734b404e1a3b3e60e3e039a97e5895f2989a68b854ee6fc7afb5",
+   "mtime_utc": "2026-11-11T16:06:27.053220+00:00",
+   "source_system": "CLAUDE_SESSION_20261112_CUSTOMER_REG_STAGE5",
+   "source_chat_number": "CUSTOMER-REG-STAGE5",
+   "execution_validation": "DEVICE_S25_VERIFIED_9BD6757_D6CC4FD__PUSHED",
+   "write_or_execution_approval_class": "B",
+   "copy_in_managed_repository": "NO_REFERENCED_ONLY",
+   "original_file_unchanged": true,
+   "provenance_status": "DIRECT_FILE_BYTES_SHA256_VERIFIED_AUTHORED_IN_THIS_SESSION",
+   "parent_asset_ids": [
+    "CUSTOMER-REG-APP-01-CONSENSUS-V05"
+   ],
+   "registry_added_in": "v0.30"
+  },
+  {
+   "asset_id": "CUSTOMER-REG-APP-01-UI-COMMON",
+   "title": "고객등록앱 공통 화면 모양 Ui.kt (남색 머리·카드·큰 버튼, 화면 구성안 ③④⑤)",
+   "observed_original_path": "/Users/yongho/StudioProjects/ROUTABL-CustomerRegistration-Android/app/src/main/java/com/routivel/customerreg/ui/Ui.kt",
+   "bytes": 4947,
+   "sha256": "b055807db2a7c93e3edf8c943eb190e3238fe8473eff64eaa75363a3c0ebd813",
+   "mtime_utc": "2026-11-11T16:06:20.568082+00:00",
+   "source_system": "CLAUDE_SESSION_20261112_CUSTOMER_REG_STAGE5",
+   "source_chat_number": "CUSTOMER-REG-STAGE5",
+   "execution_validation": "DEVICE_S25_VERIFIED_SCREENS_1_3_5__SCREEN_4_PENDING_D6CC4FD__PUSHED",
+   "write_or_execution_approval_class": "B",
+   "copy_in_managed_repository": "NO_REFERENCED_ONLY",
+   "original_file_unchanged": true,
+   "provenance_status": "DIRECT_FILE_BYTES_SHA256_VERIFIED_AUTHORED_IN_THIS_SESSION",
+   "parent_asset_ids": [
+    "CUSTOMER-REG-APP-01-HOME"
+   ],
+   "registry_added_in": "v0.30"
+  },
+  {
+   "asset_id": "CUSTOMER-REG-APP-01-HANDOFF-STAGE5",
+   "title": "고객등록앱 5단계 인계 기록 (결정·구현·실기기 시험·행정동·보류·남은 일)",
+   "observed_original_path": "/Users/yongho/StudioProjects/ROUTABL-CustomerRegistration-Android/docs/HANDOFF_STAGE5_20261111.md",
+   "bytes": 9352,
+   "sha256": "e65a5aa69684b38d1d4fed638e46b96dcd6f9a58f3915a8a6a6d88b39f43f308",
+   "mtime_utc": "2026-11-11T16:15:53.915231+00:00",
+   "source_system": "CLAUDE_SESSION_20261112_CUSTOMER_REG_STAGE5",
+   "source_chat_number": "CUSTOMER-REG-STAGE5",
+   "execution_validation": "DOCUMENT_COMMITTED_D6CC4FD__PUSHED",
+   "write_or_execution_approval_class": "B",
+   "copy_in_managed_repository": "NO_REFERENCED_ONLY",
+   "original_file_unchanged": true,
+   "provenance_status": "DIRECT_FILE_BYTES_SHA256_VERIFIED_AUTHORED_IN_THIS_SESSION",
+   "parent_asset_ids": [
+    "CUSTOMER-REG-APP-01-CONSENSUS-V05"
+   ],
+   "registry_added_in": "v0.30"
+  },
+  {
+   "asset_id": "SERVER-ADDR-SEARCH-ADMIN-DONG",
+   "title": "주소 검색 서버 함수 routablCustomerAddressSearch 행정동(adminDong = 카카오 region_3depth_h_name) 추가",
+   "observed_original_path": "/Users/yongho/StudioProjects/DISPATCH-One-Android/server/control-routing/customer-address-policy.js",
+   "bytes": 2172,
+   "sha256": "3c3439b176d483b2e243b50391314c30a8969c144a5789979bd161973ad686f5",
+   "mtime_utc": "2026-11-11T15:06:02.199898+00:00",
+   "source_system": "CLAUDE_SESSION_20261112_CUSTOMER_REG_STAGE5",
+   "source_chat_number": "CUSTOMER-REG-STAGE5",
+   "execution_validation": "NODE_TEST_68_PASS__DEPLOYED_ROUTIVEL_PROD_20261112_0012__EA537FE_PUSHED",
+   "write_or_execution_approval_class": "C",
+   "copy_in_managed_repository": "NO_REFERENCED_ONLY",
+   "original_file_unchanged": true,
+   "provenance_status": "DIRECT_FILE_BYTES_SHA256_VERIFIED_AUTHORED_IN_THIS_SESSION",
+   "parent_asset_ids": [
+    "CUSTOMER-REG-APP-01-FIRST-REGISTRATION"
+   ],
+   "registry_added_in": "v0.30"
+  },
+  {
+   "asset_id": "DRIVER-APP-ADDR-LOOKUP-ADMIN-DONG",
+   "title": "기사앱 고객 수정 \"주소 확인\" 동명 = 행정동 우선 (1.0.69)",
+   "observed_original_path": "/Users/yongho/StudioProjects/DISPATCH-One-Android/app/src/main/java/com/routivel/driver/CustomerEditActivity.kt",
+   "bytes": 30544,
+   "sha256": "7bee6f36b4315880261d554cd2d2ddefa93a824762b3c99ecb35cf6cf502b0f1",
+   "mtime_utc": "2026-11-11T15:30:50.640861+00:00",
+   "source_system": "CLAUDE_SESSION_20261112_CUSTOMER_REG_STAGE5",
+   "source_chat_number": "CUSTOMER-REG-STAGE5",
+   "execution_validation": "DEVICE_S25_VERIFIED_BEOMEO_TO_BEOMEO2_DA31932_F245A74__PUSHED",
+   "write_or_execution_approval_class": "B",
+   "copy_in_managed_repository": "NO_REFERENCED_ONLY",
+   "original_file_unchanged": true,
+   "provenance_status": "DIRECT_FILE_BYTES_SHA256_VERIFIED_AUTHORED_IN_THIS_SESSION",
+   "parent_asset_ids": [
+    "SERVER-ADDR-SEARCH-ADMIN-DONG"
+   ],
+   "registry_added_in": "v0.30"
+  },
+  {
+   "asset_id": "SENIOR-APP-ADDR-LOOKUP-ADMIN-DONG",
+   "title": "시니어 기사앱 고객 수정 \"주소 확인\" 동명 = 행정동 우선 (1.0.21, 기사앱과 같은 코드)",
+   "observed_original_path": "/Users/yongho/StudioProjects/ROUTABL-Senior-Driver/app/src/main/java/com/routivel/driver/CustomerEditActivity.kt",
+   "bytes": 30592,
+   "sha256": "d7b8647d70d749871b4ff84976cbb80cfac965f46ecf320d236758e972b432f6",
+   "mtime_utc": "2026-11-11T15:33:29.186964+00:00",
+   "source_system": "CLAUDE_SESSION_20261112_CUSTOMER_REG_STAGE5",
+   "source_chat_number": "CUSTOMER-REG-STAGE5",
+   "execution_validation": "COMMITTED_BE52144_766E658__PUSHED__BUILD_NOT_YET_RUN",
+   "write_or_execution_approval_class": "B",
+   "copy_in_managed_repository": "NO_REFERENCED_ONLY",
+   "original_file_unchanged": true,
+   "provenance_status": "DIRECT_FILE_BYTES_SHA256_VERIFIED_AUTHORED_IN_THIS_SESSION",
+   "parent_asset_ids": [
+    "DRIVER-APP-ADDR-LOOKUP-ADMIN-DONG"
+   ],
+   "registry_added_in": "v0.30"
+  },
+  {
+   "asset_id": "CUSTOMER-DONG-NORMALIZE-TOOL",
+   "title": "기존 주소록 동명 행정동 일괄 정리 도구 normalize_dongs.py (plan → apply CAS → verify)",
+   "observed_original_path": "/Users/yongho/StudioProjects/DISPATCH-One-Android/tools/customer-dong/normalize_dongs.py",
+   "bytes": 11352,
+   "sha256": "2ffda2cb16c436501012b881854473b9ce21f408685f2ec24202e45ea66ceb61",
+   "mtime_utc": "2026-11-11T15:45:50.323558+00:00",
+   "source_system": "CLAUDE_SESSION_20261112_CUSTOMER_REG_STAGE5",
+   "source_chat_number": "CUSTOMER-REG-STAGE5",
+   "execution_validation": "UNIT_TEST_5_PASS__PLAN_RUN_20261112_0047__APPLY_ON_HOLD_USER_DECISION__CE85D7A_PUSHED",
+   "write_or_execution_approval_class": "B",
+   "copy_in_managed_repository": "NO_REFERENCED_ONLY",
+   "original_file_unchanged": true,
+   "provenance_status": "DIRECT_FILE_BYTES_SHA256_VERIFIED_AUTHORED_IN_THIS_SESSION",
+   "parent_asset_ids": [
+    "SERVER-ADDR-SEARCH-ADMIN-DONG"
+   ],
+   "registry_added_in": "v0.30"
   }
  ],
  "unresolved": [
@@ -4803,9 +5050,9 @@
   "asset_id": "ASSET-120-GOVERNANCE-TI01-3TIER-ORIGINAL-PROTECTION-20261106"
  },
  "previous_registry": {
-  "path": "asset_manifest_v0.28.json",
-  "bytes": 234461,
-  "sha256": "21460c0642fc8ad5e6597cc08946203eed012d80d4677516e92be8715fbc6cae"
+  "path": "asset_manifest_v0.29.json",
+  "bytes": 240090,
+  "sha256": "78f132785ffb9b48f8be87556f71dd9561ac64d720f3f6f1a77a7ec0847d512f"
  },
  "analytics_app_v028": {
   "status": "IMPLEMENTED_ANALYSIS-APP-FUTURE_AS_INDEPENDENT_READ_ONLY_APP",
@@ -4889,5 +5136,51 @@
    "driver app code"
   ],
   "audit_record": "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/200_ANALYTICS_APP_20261111_v01/DW01_WORKFLOW_REGISTRATION_20261111_v1.0.md"
+ },
+ "customer_reg_app_v030": {
+  "status": "CUSTOMER_REG_APP_STAGES_1_TO_5_AND_SCREEN_DESIGN_IMPLEMENTED_DEVICE_VERIFIED",
+  "version": "0.6.1-ui (versionCode 15)",
+  "repo": "https://github.com/Samhj1998/ROUTABL-CustomerRegistration-Android (PRIVATE, first push 2026-11-12, origin/main d6cc4fd)",
+  "consensus": "v0.5: 1차 즉시 저장 → 2차 정리, 공유 빠른 경로 + 정식 경로 + 직접 입력",
+  "screen_design_artifact": "https://claude.ai/artifact/GrqffN8oRpUf2VZfg4JdE4 (라우터블고객등록 화면 구성안, 8 screens)",
+  "decisions_20261112": [
+   "수정 저장: 관리자 saveShared / 기사 submit",
+   "되돌리기: 관리자만(저장 직후 그대로일 때 삭제), 기사 되돌리기 없음(firestore.rules 요청 삭제 금지)",
+   "정리 목록 무시 버튼",
+   "알림 → 정리 목록",
+   "동명은 행정동 우선",
+   "기존 주소록 동명 일괄 정리 보류 (거리별 요금 계산 전)"
+  ],
+  "admin_dong_chain": {
+   "server": "routablCustomerAddressSearch adminDong, deployed routivel-prod 2026-11-12 00:12, ea537fe",
+   "driver_app": "1.0.69 da31932",
+   "senior_app": "1.0.21 be52144",
+   "customer_reg_app": "6b6531c"
+  },
+  "customer_dong_plan_20261112": {
+   "run_at_kst": "2026-11-12T00:47",
+   "file": "40_WORKING/CUSTOMER_DONG_20261112/plan.json (0600, private)",
+   "total": 1979,
+   "update": 1833,
+   "update_kinds": {
+    "renamed": 1486,
+    "numbered": 347
+   },
+   "unchanged": 118,
+   "review": 29,
+   "review_reasons": {
+    "no_exact_parcel": 22,
+    "dong_differs": 6,
+    "name_slash": 1
+   },
+   "apply": "NOT_RUN_ON_HOLD"
+  },
+  "pending": [
+   "정리 목록(④) 실기기 모양 확인",
+   "신규 등록 건 행정동 저장 실기기 확인",
+   "고객등록앱 단위 시험 Android Studio 실행",
+   "시니어앱 빌드",
+   "동명 일괄 정리 apply 전 renamed 종류 표본 확인"
+  ]
  }
 }
