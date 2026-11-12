@@ -29,7 +29,7 @@ __pycache__/
 *.pyc
 .DS_Store
 # 고객 데이터 덤프·비공개 시험 데이터 (지식 아님, 원래 위치에 그대로 둠)
-**/CUSTOMER_DONG_*/plan*.json
+**/CUSTOMER_DONG_*/plan*
 **/private/
 
 # P2: 옛 등록부 사본 보관함 (내용은 git 이름표 registry-v0.N에 그대로 있음)
