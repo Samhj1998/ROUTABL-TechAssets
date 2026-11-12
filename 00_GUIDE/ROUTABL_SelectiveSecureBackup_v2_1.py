@@ -24,10 +24,24 @@ import zipfile
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
-HOME = Path("/Users/yongho")
+HOME = Path(os.environ.get("ROUTABL_HOME", "/Users/yongho"))   # v2.2: 시험용 덮어쓰기 (Mac에서는 기본값)
+ENGINE = "SelectiveSecureBackup v2.2 (2026-11-12 draft)"
+_PATH_MAP = os.environ.get("ROUTABL_PATH_MAP", "")              # 시험용 "원래접두=>실제접두"
+
+def local_path(p):
+    p = str(p)
+    if "=>" in _PATH_MAP:
+        a, b = _PATH_MAP.split("=>", 1)
+        if p.startswith(a):
+            p = b + p[len(a):]
+    return Path(p)
 ROOT = HOME / "ROUTABL-TechAssets"
 STUDIO = HOME / "StudioProjects"
 def latest_registry():
+    # v2.2: 기준 등록부 하나(asset_manifest.json, P2 2026-11-12)를 우선. 없으면 가장 높은 v0.N
+    canonical = ROOT / "30_REGISTRY" / "asset_manifest.json"
+    if canonical.is_file() and not canonical.is_symlink():
+        return canonical
     choices=[]
     for p in (ROOT / "30_REGISTRY").glob("asset_manifest_v0.*.json"):
         match=re.fullmatch(r"asset_manifest_v0\.(\d+)\.json",p.name)
@@ -43,11 +57,10 @@ VOLUME = Path("/Volumes/ROUTABL-Secure")
 STATE = HOME / "Library/Logs/ROUTABL-AssetBackup"
 LOCK = STATE / "selective_v21.lock"
 STATUS = STATE / "last_selective_v21_result.json"
-PROJECTS = (
-    "DISPATCH-One-Android", "ROUTABL-Senior-Driver",
-    "ROUTIVEL-Customer-Android", "DailyInspection-Android",
-    "ROUTIVEL-Firebase-Migration", "ROUTABL-Control-Public-20261020",
-    "ROUTABL-Integration-Audit-20261019", "ROUTABL-Dispatch-Search-20261019",
+PROJECTS = (   # v2.2: 2026-11-11 정리로 사라진 옛 프로젝트 4개 제외, 현재 주요 앱 6개
+    "DISPATCH-One-Android", "ROUTABL-Senior-Driver", "DailyInspection-Android",
+    "ROUTIVEL-Firebase-Migration", "ROUTABL-Analytics-Android",
+    "ROUTABL-CustomerRegistration-Android",
 )
 SKIP_DIRS = {
     ".git", ".gradle", ".idea", ".kotlin", "build", "node_modules", "dist",
@@ -143,29 +156,44 @@ def safe_source_file(p, counters):
             return False
     return True
 
+REGISTRY_REPORT = {}
+
 def inventory():
     if REGISTRY.is_symlink() or not REGISTRY.is_file():
         raise RuntimeError("LATEST_REGISTRY_UNAVAILABLE")
     record = json.loads(REGISTRY.read_text(encoding="utf-8"))
-    if record.get("schema_version") != "0." + REGISTRY.stem.split("v0.")[-1] or len(record.get("asset_files", [])) < 40:
+    expected = None if REGISTRY.name == "asset_manifest.json" else "0." + REGISTRY.stem.split("v0.")[-1]
+    if (expected and record.get("schema_version") != expected) or not str(record.get("schema_version", "")).startswith("0.") \
+            or len(record.get("asset_files", [])) < 40:
         raise RuntimeError("LATEST_REGISTRY_MISMATCH")
     entries = []
     rejected = collections.Counter()
     seen_originals = set()
     registered = 0
+    # v2.2: 등록부는 살아 있는 파일을 가리킨다. 바뀌었거나 사라진 자산 때문에 백업 전체를 멈추지 않고
+    #       지금 파일을 백업하며 차이는 ID로만 기록한다 (경로는 기록하지 않음)
+    REGISTRY_REPORT.update(drift=[], missing=[], rejected=[], same_path_superseded=0)
     for item in record["asset_files"]:
-        src = Path(item["observed_original_path"])
+        src = local_path(item["observed_original_path"])
+        if not src.exists():
+            REGISTRY_REPORT["missing"].append(item["asset_id"])
+            continue
+        if str(src.resolve()) in seen_originals:
+            REGISTRY_REPORT["same_path_superseded"] += 1
+            continue
         if not safe_source_file(src, rejected):
             rejected["registry_asset_rejected"] += 1
+            REGISTRY_REPORT["rejected"].append(item["asset_id"])
             continue
-        if src.stat().st_size != item["bytes"] or digest(src) != item["sha256"]:
-            raise RuntimeError("VERIFIED_REGISTRY_SOURCE_CHANGED")
+        size, sha = src.stat().st_size, digest(src)
+        if size != item["bytes"] or sha != item["sha256"]:
+            REGISTRY_REPORT["drift"].append(item["asset_id"])
         target = "registered_assets/" + item["asset_id"] + "/" + src.name
-        entries.append((src, target, item["sha256"], item["bytes"], "registry"))
+        entries.append((src, target, sha, size, "registry"))
         seen_originals.add(str(src.resolve()))
         registered += 1
-    if registered != len(record["asset_files"]):
-        raise RuntimeError("NOT_ALL_40_VERIFIED_ASSETS_CLEARED_SECURITY_CHECK")
+    if registered < 40:
+        raise RuntimeError("TOO_FEW_REGISTERED_ASSETS_AVAILABLE")
     for project in PROJECTS:
         root = STUDIO / project
         if root.is_symlink() or not root.is_dir():
@@ -216,8 +244,6 @@ def inventory():
     size = sum(x[3] for x in entries)
     if size > LIMIT_TOTAL:
         raise RuntimeError("DATA_SIZE_LIMIT_EXCEEDED")
-    if registered != len(record["asset_files"]):
-        raise RuntimeError("REGISTRY_INCOMPLETE")
     return entries, rejected, size
 
 
@@ -253,6 +279,11 @@ def result_summary(entries, rejected, nbytes):
         "total_source_bytes": nbytes,
         "rejection_counts_no_sensitive_paths": dict(rejected),
         "image": "EXISTING_AES256_SPARSEBUNDLE",
+        "engine": ENGINE,
+        "registry_drift_asset_ids": REGISTRY_REPORT.get("drift", []),
+        "registry_missing_asset_ids": REGISTRY_REPORT.get("missing", []),
+        "registry_rejected_asset_ids": REGISTRY_REPORT.get("rejected", []),
+        "registry_same_path_superseded": REGISTRY_REPORT.get("same_path_superseded", 0),
         "source_code_executed": False,
         "archive_contains_credentials_by_known_patterns": False,
         "secret_detection_is_not_complete_guarantee": True,
