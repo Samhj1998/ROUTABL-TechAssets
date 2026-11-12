@@ -1,7 +1,7 @@
 {
-  "schema_version": "0.20",
-  "captured_at_kst": "2026-11-06T07:35:16+09:00",
-  "scope": "CHATGPT_OFFICIAL_EXPORT_AES256_V2_PASSWORD_NEWLINE_FIX_SSD_NAS_RESTORED__FINDER_GUI_PENDING",
+  "schema_version": "0.21",
+  "captured_at_kst": "2026-11-06T08:20:12+09:00",
+  "scope": "CHATGPT_EXPORT_20261105_SAFE_UNZIP_AND_OFFLINE_SAFARI_GUI_327_CHATS",
   "registry_mode": "local-only security classification and search metadata",
   "existing_index_baseline": {
     "sqlite_integrity": "ok",
@@ -1627,6 +1627,176 @@
       "original_file_unchanged": true,
       "provenance_status": "DIRECT_MAC_STUDIO_RUN_AND_INDEPENDENT_READONLY_RESTORE",
       "registry_added_in": "v0.20"
+    },
+    {
+      "asset_id": "ASSET-120-CHATGPT-GUI-20261106-EXTRACTOR",
+      "title": "안전 압축해제 실행 프로그램",
+      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_OFFICIAL_CHATGPT_EXPORT_20261105_v01/chatgpt_export_safe_extract_20261106_v0.1.py",
+      "bytes": 3801,
+      "sha256": "c5e362817ad5bf0f31ce5745fe7627f8eca133e3ee2dfd878bc92c0d35219ea1",
+      "mtime_utc": "2026-11-05T23:06:46.515169+00:00",
+      "source_system": "PRIVATE_LOCAL_CHATGPT_OFFLINE_GUI_20261106",
+      "source_chat_number": "120-1",
+      "observation": "Official export Nov 5 offline Safari GUI snapshot; original ZIP unmodified. Search data contains private conversation text.",
+      "execution_validation": "CHROME_GUI_RENDER_PASS_SAFARI_OPENED_USER_VISUAL_CHECK_PENDING",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "REFERENCED_ONLY_PRIVATE_GUI_LOCAL",
+      "original_file_unchanged": true,
+      "provenance_status": "DIRECT_LOCAL_EXPORT_EXTRACTION_AND_GUI_BUILD",
+      "registry_added_in": "v0.21"
+    },
+    {
+      "asset_id": "ASSET-120-CHATGPT-GUI-20261106-GUI-BUILDER",
+      "title": "ChatGPT 오프라인 GUI 대화 변환 프로그램",
+      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_OFFICIAL_CHATGPT_EXPORT_20261105_v01/build_chatgpt_offline_gui_v01.py",
+      "bytes": 14727,
+      "sha256": "cc803c6981f0ebc47b0506d13b619237bd653193cf7f685e816acaab62aec617",
+      "mtime_utc": "2026-11-05T23:13:52.285369+00:00",
+      "source_system": "PRIVATE_LOCAL_CHATGPT_OFFLINE_GUI_20261106",
+      "source_chat_number": "120-1",
+      "observation": "Official export Nov 5 offline Safari GUI snapshot; original ZIP unmodified. Search data contains private conversation text.",
+      "execution_validation": "CHROME_GUI_RENDER_PASS_SAFARI_OPENED_USER_VISUAL_CHECK_PENDING",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "REFERENCED_ONLY_PRIVATE_GUI_LOCAL",
+      "original_file_unchanged": true,
+      "provenance_status": "DIRECT_LOCAL_EXPORT_EXTRACTION_AND_GUI_BUILD",
+      "registry_added_in": "v0.21"
+    },
+    {
+      "asset_id": "ASSET-120-CHATGPT-GUI-20261106-RAW-EXTRACT-RECEIPT",
+      "title": "ChatGPT 공식 원본 ZIP 2780개 추출 검증 영수증",
+      "observed_original_path": "/Users/yongho/ROUTABL-ChatGPT-Archive/2026-11-05/20_AUDIT/original_extract_validation_v0.1.json",
+      "bytes": 770,
+      "sha256": "da2aa390ee09b73d3a6a68c9f08376f7f8d4d8f4aa6210d8d6390fd575e50419",
+      "mtime_utc": "2026-11-05T23:07:15.218127+00:00",
+      "source_system": "PRIVATE_LOCAL_CHATGPT_OFFLINE_GUI_20261106",
+      "source_chat_number": "120-1",
+      "observation": "Official export Nov 5 offline Safari GUI snapshot; original ZIP unmodified. Search data contains private conversation text.",
+      "execution_validation": "CHROME_GUI_RENDER_PASS_SAFARI_OPENED_USER_VISUAL_CHECK_PENDING",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "REFERENCED_ONLY_PRIVATE_GUI_LOCAL",
+      "original_file_unchanged": true,
+      "provenance_status": "DIRECT_LOCAL_EXPORT_EXTRACTION_AND_GUI_BUILD",
+      "registry_added_in": "v0.21"
+    },
+    {
+      "asset_id": "ASSET-120-CHATGPT-GUI-20261106-GUI-BUILD-RECEIPT",
+      "title": "ChatGPT 327개 대화 GUI 인덱스 검증 영수증",
+      "observed_original_path": "/Users/yongho/ROUTABL-ChatGPT-Archive/2026-11-05/20_AUDIT/gui_build_validation_v0.1.json",
+      "bytes": 106395,
+      "sha256": "6cc3f3f1c38c505b72257c43887cd39bb696726ce230bce2e6faf5cea4320c2a",
+      "mtime_utc": "2026-11-05T23:14:10.197183+00:00",
+      "source_system": "PRIVATE_LOCAL_CHATGPT_OFFLINE_GUI_20261106",
+      "source_chat_number": "120-1",
+      "observation": "Official export Nov 5 offline Safari GUI snapshot; original ZIP unmodified. Search data contains private conversation text.",
+      "execution_validation": "CHROME_GUI_RENDER_PASS_SAFARI_OPENED_USER_VISUAL_CHECK_PENDING",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "REFERENCED_ONLY_PRIVATE_GUI_LOCAL",
+      "original_file_unchanged": true,
+      "provenance_status": "DIRECT_LOCAL_EXPORT_EXTRACTION_AND_GUI_BUILD",
+      "registry_added_in": "v0.21"
+    },
+    {
+      "asset_id": "ASSET-120-CHATGPT-GUI-20261106-GUI-ACCEPTANCE",
+      "title": "사람 중심 GUI 아카이브 구축·제한사항 검증 보고서",
+      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_OFFICIAL_CHATGPT_EXPORT_20261105_v01/CHATGPT_EXPORT_GUI_READABLE_ARCHIVE_ACCEPTANCE_20261106_v0.1.md",
+      "bytes": 4976,
+      "sha256": "f1af882cadc722330fe3cac1940b32c146814e46a4459201555c7683560de2da",
+      "mtime_utc": "2026-11-05T23:18:51.103199+00:00",
+      "source_system": "PRIVATE_LOCAL_CHATGPT_OFFLINE_GUI_20261106",
+      "source_chat_number": "120-1",
+      "observation": "Official export Nov 5 offline Safari GUI snapshot; original ZIP unmodified. Search data contains private conversation text.",
+      "execution_validation": "CHROME_GUI_RENDER_PASS_SAFARI_OPENED_USER_VISUAL_CHECK_PENDING",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "REFERENCED_ONLY_PRIVATE_GUI_LOCAL",
+      "original_file_unchanged": true,
+      "provenance_status": "DIRECT_LOCAL_EXPORT_EXTRACTION_AND_GUI_BUILD",
+      "registry_added_in": "v0.21"
+    },
+    {
+      "asset_id": "ASSET-120-CHATGPT-GUI-20261106-GUI-INDEX",
+      "title": "라우터블 ChatGPT 대화 아카이브 시작 HTML",
+      "observed_original_path": "/Users/yongho/ROUTABL-ChatGPT-Archive/2026-11-05/10_GUI_VIEWER/index.html",
+      "bytes": 2747,
+      "sha256": "fd6685dde1e45fdc37d28d57534a608f61faf034177757b82c62cca6c7bb808d",
+      "mtime_utc": "2026-11-05T23:14:10.154131+00:00",
+      "source_system": "PRIVATE_LOCAL_CHATGPT_OFFLINE_GUI_20261106",
+      "source_chat_number": "120-1",
+      "observation": "Official export Nov 5 offline Safari GUI snapshot; original ZIP unmodified. Search data contains private conversation text.",
+      "execution_validation": "CHROME_GUI_RENDER_PASS_SAFARI_OPENED_USER_VISUAL_CHECK_PENDING",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "REFERENCED_ONLY_PRIVATE_GUI_LOCAL",
+      "original_file_unchanged": true,
+      "provenance_status": "DIRECT_LOCAL_EXPORT_EXTRACTION_AND_GUI_BUILD",
+      "registry_added_in": "v0.21"
+    },
+    {
+      "asset_id": "ASSET-120-CHATGPT-GUI-20261106-GUI-STYLE",
+      "title": "라우터블 ChatGPT 대화 아카이브 CSS",
+      "observed_original_path": "/Users/yongho/ROUTABL-ChatGPT-Archive/2026-11-05/10_GUI_VIEWER/style.css",
+      "bytes": 6130,
+      "sha256": "6e3914da228a80321f1fa2735d19f79a3d643ba2003d347097dcef08eb3248ef",
+      "mtime_utc": "2026-11-05T23:10:55.166704+00:00",
+      "source_system": "PRIVATE_LOCAL_CHATGPT_OFFLINE_GUI_20261106",
+      "source_chat_number": "120-1",
+      "observation": "Official export Nov 5 offline Safari GUI snapshot; original ZIP unmodified. Search data contains private conversation text.",
+      "execution_validation": "CHROME_GUI_RENDER_PASS_SAFARI_OPENED_USER_VISUAL_CHECK_PENDING",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "REFERENCED_ONLY_PRIVATE_GUI_LOCAL",
+      "original_file_unchanged": true,
+      "provenance_status": "DIRECT_LOCAL_EXPORT_EXTRACTION_AND_GUI_BUILD",
+      "registry_added_in": "v0.21"
+    },
+    {
+      "asset_id": "ASSET-120-CHATGPT-GUI-20261106-GUI-SCRIPT",
+      "title": "라우터블 ChatGPT 대화 검색 JavaScript",
+      "observed_original_path": "/Users/yongho/ROUTABL-ChatGPT-Archive/2026-11-05/10_GUI_VIEWER/app.js",
+      "bytes": 2940,
+      "sha256": "1fc110da0871511c9c0f3787b7e8f193cda31317e2af2cada0a7d4f399d4d75f",
+      "mtime_utc": "2026-11-05T23:11:38.446634+00:00",
+      "source_system": "PRIVATE_LOCAL_CHATGPT_OFFLINE_GUI_20261106",
+      "source_chat_number": "120-1",
+      "observation": "Official export Nov 5 offline Safari GUI snapshot; original ZIP unmodified. Search data contains private conversation text.",
+      "execution_validation": "CHROME_GUI_RENDER_PASS_SAFARI_OPENED_USER_VISUAL_CHECK_PENDING",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "REFERENCED_ONLY_PRIVATE_GUI_LOCAL",
+      "original_file_unchanged": true,
+      "provenance_status": "DIRECT_LOCAL_EXPORT_EXTRACTION_AND_GUI_BUILD",
+      "registry_added_in": "v0.21"
+    },
+    {
+      "asset_id": "ASSET-120-CHATGPT-GUI-20261106-GUI-SEARCH",
+      "title": "ChatGPT 327개 대화 전체 본문 로컬 검색 데이터",
+      "observed_original_path": "/Users/yongho/ROUTABL-ChatGPT-Archive/2026-11-05/10_GUI_VIEWER/search-data.js",
+      "bytes": 27815843,
+      "sha256": "a67f441a8ef5c40d4f56728764ef6e65bbc9cabc8059ce828f859aed0632d5b0",
+      "mtime_utc": "2026-11-05T23:14:10.152758+00:00",
+      "source_system": "PRIVATE_LOCAL_CHATGPT_OFFLINE_GUI_20261106",
+      "source_chat_number": "120-1",
+      "observation": "Official export Nov 5 offline Safari GUI snapshot; original ZIP unmodified. Search data contains private conversation text.",
+      "execution_validation": "CHROME_GUI_RENDER_PASS_SAFARI_OPENED_USER_VISUAL_CHECK_PENDING",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "REFERENCED_ONLY_PRIVATE_GUI_LOCAL",
+      "original_file_unchanged": true,
+      "provenance_status": "DIRECT_LOCAL_EXPORT_EXTRACTION_AND_GUI_BUILD",
+      "registry_added_in": "v0.21"
+    },
+    {
+      "asset_id": "ASSET-120-CHATGPT-GUI-20261106-GUI-README",
+      "title": "사용자용 GUI 열람 안내문",
+      "observed_original_path": "/Users/yongho/ROUTABL-ChatGPT-Archive/2026-11-05/이용안내_먼저읽기.txt",
+      "bytes": 825,
+      "sha256": "e7ef9377890539f75105d9284776c80c758a706d6162db90d979d32c270c7e2a",
+      "mtime_utc": "2026-11-05T23:17:15.445801+00:00",
+      "source_system": "PRIVATE_LOCAL_CHATGPT_OFFLINE_GUI_20261106",
+      "source_chat_number": "120-1",
+      "observation": "Official export Nov 5 offline Safari GUI snapshot; original ZIP unmodified. Search data contains private conversation text.",
+      "execution_validation": "CHROME_GUI_RENDER_PASS_SAFARI_OPENED_USER_VISUAL_CHECK_PENDING",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "REFERENCED_ONLY_PRIVATE_GUI_LOCAL",
+      "original_file_unchanged": true,
+      "provenance_status": "DIRECT_LOCAL_EXPORT_EXTRACTION_AND_GUI_BUILD",
+      "registry_added_in": "v0.21"
     }
   ],
   "unresolved": [
@@ -1824,7 +1994,7 @@
       "issue": "Actual Android app UI display not field-tested; original failed chat tool trace not archived."
     }
   ],
-  "supersedes": "asset_manifest_v0.19.json (immutable previous preserved)",
+  "supersedes": "asset_manifest_v0.20.json (immutable previous preserved)",
   "library_crosswalk": [
     {
       "asset_id": "TA-CASE-20261102-01",
@@ -2608,6 +2778,66 @@
       "grade": "P3",
       "policy": "private_local_and_aes_nas",
       "classification_scope": "AES256_V2_NONSECRET_SOURCE_AND_AUDIT"
+    },
+    {
+      "asset_id": "ASSET-120-CHATGPT-GUI-20261106-EXTRACTOR",
+      "grade": "P3",
+      "policy": "private_local_only_FileVault_no_plaintext_remote_storage",
+      "classification_scope": "CHATGPT_GUI_USER_PRIVATE_ARCHIVE"
+    },
+    {
+      "asset_id": "ASSET-120-CHATGPT-GUI-20261106-GUI-BUILDER",
+      "grade": "P3",
+      "policy": "private_local_only_FileVault_no_plaintext_remote_storage",
+      "classification_scope": "CHATGPT_GUI_USER_PRIVATE_ARCHIVE"
+    },
+    {
+      "asset_id": "ASSET-120-CHATGPT-GUI-20261106-RAW-EXTRACT-RECEIPT",
+      "grade": "P3",
+      "policy": "private_local_only_FileVault_no_plaintext_remote_storage",
+      "classification_scope": "CHATGPT_GUI_USER_PRIVATE_ARCHIVE"
+    },
+    {
+      "asset_id": "ASSET-120-CHATGPT-GUI-20261106-GUI-BUILD-RECEIPT",
+      "grade": "P3",
+      "policy": "private_local_only_FileVault_no_plaintext_remote_storage",
+      "classification_scope": "CHATGPT_GUI_USER_PRIVATE_ARCHIVE"
+    },
+    {
+      "asset_id": "ASSET-120-CHATGPT-GUI-20261106-GUI-ACCEPTANCE",
+      "grade": "P3",
+      "policy": "private_local_only_FileVault_no_plaintext_remote_storage",
+      "classification_scope": "CHATGPT_GUI_USER_PRIVATE_ARCHIVE"
+    },
+    {
+      "asset_id": "ASSET-120-CHATGPT-GUI-20261106-GUI-INDEX",
+      "grade": "P3",
+      "policy": "private_local_only_FileVault_no_plaintext_remote_storage",
+      "classification_scope": "CHATGPT_GUI_USER_PRIVATE_ARCHIVE"
+    },
+    {
+      "asset_id": "ASSET-120-CHATGPT-GUI-20261106-GUI-STYLE",
+      "grade": "P3",
+      "policy": "private_local_only_FileVault_no_plaintext_remote_storage",
+      "classification_scope": "CHATGPT_GUI_USER_PRIVATE_ARCHIVE"
+    },
+    {
+      "asset_id": "ASSET-120-CHATGPT-GUI-20261106-GUI-SCRIPT",
+      "grade": "P3",
+      "policy": "private_local_only_FileVault_no_plaintext_remote_storage",
+      "classification_scope": "CHATGPT_GUI_USER_PRIVATE_ARCHIVE"
+    },
+    {
+      "asset_id": "ASSET-120-CHATGPT-GUI-20261106-GUI-SEARCH",
+      "grade": "P3",
+      "policy": "private_local_only_FileVault_no_plaintext_remote_storage",
+      "classification_scope": "CHATGPT_GUI_USER_PRIVATE_ARCHIVE"
+    },
+    {
+      "asset_id": "ASSET-120-CHATGPT-GUI-20261106-GUI-README",
+      "grade": "P3",
+      "policy": "private_local_only_FileVault_no_plaintext_remote_storage",
+      "classification_scope": "CHATGPT_GUI_USER_PRIVATE_ARCHIVE"
     }
   ],
   "search_v1_3": {
@@ -3039,7 +3269,12 @@
     {
       "id": "B-14",
       "source": "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_OFFICIAL_CHATGPT_EXPORT_20261105_v01/AES256_V2_PASSWORD_NEWLINE_FIX_AND_RESTORE_20261106_v0.1.md",
-      "status": "OPEN_FINDER_V2_DIRECT_GUI_AND_DIFFERENT_MAC_RECOVERY_TEST"
+      "status": "PARTIAL_MACSTUDIO_FINDER_AES256_V2_MOUNT_PASS_OTHER_MAC_RESTORE_PENDING"
+    },
+    {
+      "id": "B-15",
+      "source": "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_OFFICIAL_CHATGPT_EXPORT_20261105_v01/CHATGPT_EXPORT_GUI_READABLE_ARCHIVE_ACCEPTANCE_20261106_v0.1.md",
+      "status": "OPEN_USER_SAFARI_READABILITY_AND_97_ATTACHMENT_REFERENCES_REVIEW"
     }
   ],
   "addressbook_registration_reuse_v016": {
@@ -3131,5 +3366,34 @@
       "ASSET-120-EXPORT-AES256-V2-ACCEPTANCE-20261106"
     ],
     "prior_manifest_sha256": "f8c6837c4d2a238c5d5ebe66df1c3ee5c9ba77d3dda3e2aa59222684b4d3e49b"
+  },
+  "chatgpt_export_gui_v021": {
+    "source_export_sha256": "06efc5c5c787d59b7d1bd62566974563416b29792bb17ac318335475884c5553",
+    "archive_folder": "/Users/yongho/ROUTABL-ChatGPT-Archive/2026-11-05",
+    "gui_entry_file": "/Users/yongho/ROUTABL-ChatGPT-Archive/2026-11-05/10_GUI_VIEWER/index.html",
+    "desktop_shortcut": "/Users/yongho/Desktop/라우터블 ChatGPT 아카이브.html",
+    "conversations_indexed": 327,
+    "visible_message_count": 13303,
+    "viewable_attachment_references": 1685,
+    "missing_or_unsupported_attachment_references": 97,
+    "browser_smoke_test": "CHROME_DOM_327_OF_327_SUCCESS_SAFARI_LAUNCH_REQUEST_SUCCEEDED",
+    "user_finder_safari_validation": "PENDING_PERSONAL_SCREEN_CHECK",
+    "original_export_modified": false,
+    "aes256_v1_v2_modified": false,
+    "existing_search_gui_v1_5_modified": false,
+    "private_extracted_plaintext_nas_upload": "NOT_DONE",
+    "previous_manifest_sha256": "f99281b98c0fca31e2ccd4d5f6a77d89791d5bfae6f4a2f6caf96a1eafbd7b4d",
+    "new_asset_ids": [
+      "ASSET-120-CHATGPT-GUI-20261106-EXTRACTOR",
+      "ASSET-120-CHATGPT-GUI-20261106-GUI-BUILDER",
+      "ASSET-120-CHATGPT-GUI-20261106-RAW-EXTRACT-RECEIPT",
+      "ASSET-120-CHATGPT-GUI-20261106-GUI-BUILD-RECEIPT",
+      "ASSET-120-CHATGPT-GUI-20261106-GUI-ACCEPTANCE",
+      "ASSET-120-CHATGPT-GUI-20261106-GUI-INDEX",
+      "ASSET-120-CHATGPT-GUI-20261106-GUI-STYLE",
+      "ASSET-120-CHATGPT-GUI-20261106-GUI-SCRIPT",
+      "ASSET-120-CHATGPT-GUI-20261106-GUI-SEARCH",
+      "ASSET-120-CHATGPT-GUI-20261106-GUI-README"
+    ]
   }
 }
