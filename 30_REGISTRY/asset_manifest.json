@@ -1,7 +1,7 @@
 {
-  "schema_version": "0.12",
-  "captured_at_kst": "2026-11-03T23:15:36+09:00",
-  "scope": "HEADLESS_ACCESS_PHASE_DIAGNOSTIC_AND_SAFE_APPLICATION_SERVICE_PLAN",
+  "schema_version": "0.13",
+  "captured_at_kst": "2026-11-04T00:01:11+09:00",
+  "scope": "VERIFIED_MAC_AES_TO_NAS_CAS_AND_IMMUTABLE_BACKUP_RECEIPTS",
   "registry_mode": "local-only security classification and search metadata",
   "existing_index_baseline": {
     "sqlite_integrity": "ok",
@@ -547,26 +547,34 @@
     {
       "asset_id": "ASSET-BACKUP-LOCAL-RECEIPT-V20",
       "title": "Successful local v2 encrypted snapshot receipt status",
-      "observed_original_path": "/Users/yongho/Library/Logs/ROUTABL-AssetBackup/last_selective_v2_result.json",
+      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/IMMUTABLE_RECEIPTS_20261103/ASSET-BACKUP-LOCAL-RECEIPT-V20__95d92363d6e3__last_selective_v2_result.json",
       "bytes": 460,
       "sha256": "95d92363d6e333d3499914c5ff99f271ee0a58f14705cab44848268d72e5ab57",
-      "observation": "NEW_ASSET_CREATED_AFTER_ENCRYPTED_V08_SNAPSHOT",
+      "observation": "IMMUTABLE_AUDIT_SNAPSHOT_OF_PREVIOUSLY_MUTABLE_LOG",
       "execution_validation": "3269_FILES_15_SAMPLE_RESTORES_VERIFIED",
       "write_or_execution_approval_class": "C",
       "copy_in_managed_repository": "NO",
-      "original_file_unchanged": true
+      "original_file_unchanged": true,
+      "source_provenance_live_path": "/Users/yongho/Library/Logs/ROUTABL-AssetBackup/last_selective_v2_result.json",
+      "source_provenance_captured_at_kst": "2026-11-04T00:01:11+09:00",
+      "previous_registry_sha256": "95d92363d6e333d3499914c5ff99f271ee0a58f14705cab44848268d72e5ab57",
+      "previous_registry_bytes": 460
     },
     {
       "asset_id": "ASSET-BACKUP-NAS-RECEIPT-V20",
       "title": "Successful NAS encrypted image verification status",
-      "observed_original_path": "/Users/yongho/Library/Logs/ROUTABL-AssetBackup/last_selective_nas_v2_result.json",
+      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/IMMUTABLE_RECEIPTS_20261103/ASSET-BACKUP-NAS-RECEIPT-V20__2f89829f483f__last_selective_nas_v2_result.json",
       "bytes": 441,
       "sha256": "2f89829f483f2afd33e9b58be012d2a77c2e20a248af7e36929ed0399dda77d4",
-      "observation": "NEW_ASSET_CREATED_AFTER_ENCRYPTED_V08_SNAPSHOT",
+      "observation": "IMMUTABLE_AUDIT_SNAPSHOT_OF_PREVIOUSLY_MUTABLE_LOG",
       "execution_validation": "78_CIPHERTEXT_FILES_SHA256_MATCH",
       "write_or_execution_approval_class": "C",
       "copy_in_managed_repository": "NO",
-      "original_file_unchanged": true
+      "original_file_unchanged": true,
+      "source_provenance_live_path": "/Users/yongho/Library/Logs/ROUTABL-AssetBackup/last_selective_nas_v2_result.json",
+      "source_provenance_captured_at_kst": "2026-11-04T00:01:11+09:00",
+      "previous_registry_sha256": "2f89829f483f2afd33e9b58be012d2a77c2e20a248af7e36929ed0399dda77d4",
+      "previous_registry_bytes": 441
     },
     {
       "asset_id": "ASSET-BACKUP-LOCAL-AGENT-DRAFT-V02",
@@ -643,26 +651,34 @@
     {
       "asset_id": "ASSET-BACKUP-V21-LOCAL-STATUS",
       "title": "v2.1 local receipt status",
-      "observed_original_path": "/Users/yongho/Library/Logs/ROUTABL-AssetBackup/last_selective_v21_result.json",
-      "bytes": 688,
-      "sha256": "260acad2db5eef378e96976f2c503027428b9f64d38596431e1b66b9b0eb217d",
-      "observation": "NEW_V21_ASSET_CREATED_OR_UPDATED_AFTER_V09_SNAPSHOT",
+      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/IMMUTABLE_RECEIPTS_20261103/ASSET-BACKUP-V21-LOCAL-STATUS__2715df925158__last_selective_v21_result.json",
+      "bytes": 689,
+      "sha256": "2715df925158c9fa3c6f78c875c143ee1dbd459db43bf102c492706dfa0400f3",
+      "observation": "IMMUTABLE_AUDIT_SNAPSHOT_OF_PREVIOUSLY_MUTABLE_LOG",
       "execution_validation": "SUCCESS_3282_FILES",
       "write_or_execution_approval_class": "C",
       "copy_in_managed_repository": "NO",
-      "original_file_unchanged": true
+      "original_file_unchanged": true,
+      "source_provenance_live_path": "/Users/yongho/Library/Logs/ROUTABL-AssetBackup/last_selective_v21_result.json",
+      "source_provenance_captured_at_kst": "2026-11-04T00:01:11+09:00",
+      "previous_registry_sha256": "260acad2db5eef378e96976f2c503027428b9f64d38596431e1b66b9b0eb217d",
+      "previous_registry_bytes": 688
     },
     {
       "asset_id": "ASSET-BACKUP-V21-NAS-STATUS",
       "title": "v2.1 NAS receipt status",
-      "observed_original_path": "/Users/yongho/Library/Logs/ROUTABL-AssetBackup/last_selective_nas_v21_result.json",
+      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/IMMUTABLE_RECEIPTS_20261103/ASSET-BACKUP-V21-NAS-STATUS__a0cacf4c15c6__last_selective_nas_v21_result.json",
       "bytes": 781,
       "sha256": "a0cacf4c15c68063e75ab4da6857ea4f0dd9d39c665d6dcb872814bd8b3bf2b8",
-      "observation": "NEW_V21_ASSET_CREATED_OR_UPDATED_AFTER_V09_SNAPSHOT",
+      "observation": "IMMUTABLE_AUDIT_SNAPSHOT_OF_PREVIOUSLY_MUTABLE_LOG",
       "execution_validation": "SUCCESS_141_AES_BANDS",
       "write_or_execution_approval_class": "C",
       "copy_in_managed_repository": "NO",
-      "original_file_unchanged": true
+      "original_file_unchanged": true,
+      "source_provenance_live_path": "/Users/yongho/Library/Logs/ROUTABL-AssetBackup/last_selective_nas_v21_result.json",
+      "source_provenance_captured_at_kst": "2026-11-04T00:01:11+09:00",
+      "previous_registry_sha256": "a0cacf4c15c68063e75ab4da6857ea4f0dd9d39c665d6dcb872814bd8b3bf2b8",
+      "previous_registry_bytes": 781
     },
     {
       "asset_id": "ASSET-BACKUP-V21-NAS-RECEIPT",
@@ -703,14 +719,18 @@
     {
       "asset_id": "ASSET-BACKUP-V21-LAUNCHD-PERMISSION-EVIDENCE",
       "title": "One-off launchd permission error evidence - one-off removed",
-      "observed_original_path": "/Users/yongho/Library/Logs/ROUTABL-AssetBackup/v21.launchd.oneoff.stderr.log",
+      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/IMMUTABLE_RECEIPTS_20261103/ASSET-BACKUP-V21-LAUNCHD-PERMISSION-EVIDENCE__26e7c709296d__v21.launchd.oneoff.stderr.log",
       "bytes": 366,
       "sha256": "26e7c709296d4e0cea20d60c235e0ac310ecff8e1addfc15a2ff038ee1be1871",
-      "observation": "NEW_V21_ASSET_CREATED_OR_UPDATED_AFTER_V09_SNAPSHOT",
+      "observation": "IMMUTABLE_AUDIT_SNAPSHOT_OF_PREVIOUSLY_MUTABLE_LOG",
       "execution_validation": "PERMISSION_ERROR_EXECUTION_HOLD",
       "write_or_execution_approval_class": "C",
       "copy_in_managed_repository": "NO",
-      "original_file_unchanged": true
+      "original_file_unchanged": true,
+      "source_provenance_live_path": "/Users/yongho/Library/Logs/ROUTABL-AssetBackup/v21.launchd.oneoff.stderr.log",
+      "source_provenance_captured_at_kst": "2026-11-04T00:01:11+09:00",
+      "previous_registry_sha256": "26e7c709296d4e0cea20d60c235e0ac310ecff8e1addfc15a2ff038ee1be1871",
+      "previous_registry_bytes": 366
     },
     {
       "asset_id": "ASSET-BACKUP-V21-FINAL-AUDIT",
@@ -792,6 +812,114 @@
       "sha256": "1de3e3adf8dec6c4e882a02f253afedf4d96674ae5be7f5da8226619aa9bd5c4",
       "observation": "NEW_LOCAL_DIAGNOSTIC_RECORD_CREATED_AFTER_LAST_VERIFIED_V09_AES_SNAPSHOT",
       "execution_validation": "GUIDE_CREATED_NO_SCHEDULED_AGENT_INSTALLED",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "NO",
+      "original_file_unchanged": true
+    },
+    {
+      "asset_id": "ASSET-NAS-CAS-V02",
+      "title": "NAS closed AES image content-aware changed-band replication",
+      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/00_GUIDE/ROUTABL_NAS_ContentAwareBackup_v0_2.py",
+      "bytes": 16900,
+      "sha256": "fa370842507ae0afb1e11ede46d1a0f72ab4736c60329c8aa18f94c797794631",
+      "observation": "ADDED_AFTER_V012_VERIFIED_BACKUP",
+      "execution_validation": "REAL_CHANGE_67_COPIED_138_REUSED",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "NO",
+      "original_file_unchanged": true
+    },
+    {
+      "asset_id": "ASSET-NAS-CAS-RESTORE-QA",
+      "title": "CAS full encrypted image reconstruction and SHA verification",
+      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/00_GUIDE/ROUTABL_NAS_CAS_EncryptedImageRestoreQA_v0_1.py",
+      "bytes": 6200,
+      "sha256": "dc73732c03cb1947e698fafcaf54c9084a28518f66f21c89f0655b0cbe5135db",
+      "observation": "ADDED_AFTER_V012_VERIFIED_BACKUP",
+      "execution_validation": "205_ENCRYPTED_COMPONENTS_RESTORED",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "NO",
+      "original_file_unchanged": true
+    },
+    {
+      "asset_id": "ASSET-NAS-CAS-RESTORE-RESULT",
+      "title": "Independent encrypted CAS restoration receipt",
+      "observed_original_path": "/Users/yongho/Library/Logs/ROUTABL-AssetBackup/last_nas_cas_restore_qa_result.json",
+      "bytes": 682,
+      "sha256": "20de97efe2f30ed757715467ff2439228ac950602c91998a355d05019eaf80a1",
+      "observation": "ADDED_AFTER_V012_VERIFIED_BACKUP",
+      "execution_validation": "AES256_STRUCTURE_SHA_ALL_PASS",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "NO",
+      "original_file_unchanged": true
+    },
+    {
+      "asset_id": "ASSET-MAC-NAS-ONESHOT-V01",
+      "title": "Single manual Mac encrypted backup to NAS CAS orchestration",
+      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/00_GUIDE/ROUTABL_MacToNasOneShot_v0_1.py",
+      "bytes": 6321,
+      "sha256": "2283dcd37881494d84a0c05f4a04c778543fe8084d882ec7b0567c48d3615552",
+      "observation": "ADDED_AFTER_V012_VERIFIED_BACKUP",
+      "execution_validation": "STATIC_SYNTAX_PREFLIGHT_PASS",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "NO",
+      "original_file_unchanged": true
+    },
+    {
+      "asset_id": "ASSET-NATIVE-ACCESS-PROBE-SWIFT",
+      "title": "Native Swift phase-separated read-only permission probe source",
+      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/40_WORKING/HEADLESS_NATIVE_V0_1/RoutablNativeAccessProbe.swift",
+      "bytes": 4546,
+      "sha256": "c0a80f0d6e594aa70925e9a13d4b19d80b0e84543bd427d5c99e6c35676a41cb",
+      "observation": "ADDED_AFTER_V012_VERIFIED_BACKUP",
+      "execution_validation": "13_PHASES_PASS_DENIAL_FAIL_CLOSED",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "NO",
+      "original_file_unchanged": true
+    },
+    {
+      "asset_id": "ASSET-NATIVE-BACKUP-DIAGNOSTIC-SWIFT",
+      "title": "Native Mac GUI diagnostics application source",
+      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/40_WORKING/HEADLESS_NATIVE_V0_1/RoutablBackupDiagnosticApp.swift",
+      "bytes": 5004,
+      "sha256": "ebe9bf145c65d229cbad3445225a3275530d9354ebf3798aef6d635e06ec4f2c",
+      "observation": "ADDED_AFTER_V012_VERIFIED_BACKUP",
+      "execution_validation": "SWIFTC_SIGNED_BUILD_PASS",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "NO",
+      "original_file_unchanged": true
+    },
+    {
+      "asset_id": "ASSET-NATIVE-BACKUP-DIAGNOSTIC-ZIP",
+      "title": "Signed Mac diagnostic app full bundle portable archive",
+      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/70_EXPORTS/ROUTABL_Backup_Diagnostic_v0.1_20261103.zip",
+      "bytes": 45066,
+      "sha256": "0f8df1970beae6c8de9dba0ec50a585e372f5afcd8b7042e1597b33f5bf1d51c",
+      "observation": "ADDED_AFTER_V012_VERIFIED_BACKUP",
+      "execution_validation": "ZIP_TEST_AND_MAC_CODESIGN_VERIFIED",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "NO",
+      "original_file_unchanged": true
+    },
+    {
+      "asset_id": "ASSET-NAS-CAS-REAL-CHANGE-MANIFEST",
+      "title": "Production NAS CAS delta index (67 new and 138 reused bands)",
+      "observed_original_path": "/Volumes/Dev_Assets/ROUTABL-TechAssets-Backup/snapshots/ROUTABL-Ciphertext-CAS-v0_1/manifests/CAS_ASSET_V21_20261103_232836_KST_26015.json",
+      "bytes": 66063,
+      "sha256": "96b3e7c3e97861a00b781d667decf6852f5c4896e86455160b896ec76ac8274b",
+      "observation": "ADDED_AFTER_V012_VERIFIED_BACKUP",
+      "execution_validation": "REAL_NAS_CIPHERTEXT_INCREMENTAL_PASS",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "NO",
+      "original_file_unchanged": true
+    },
+    {
+      "asset_id": "ASSET-120-BATCH-PREBACKUP-AUDIT",
+      "title": "Consolidated backup status, blockers and user joint checklist",
+      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_MAC_NAS_CAS_CONSOLIDATED_PREBACKUP_QA_20261103.md",
+      "bytes": 5529,
+      "sha256": "1250249614e7a64d6f5f3f1868210b2317fc046294e220f6ea41c09c5c42beb2",
+      "observation": "ADDED_AFTER_V012_VERIFIED_BACKUP",
+      "execution_validation": "AUDIT_REPORT_CREATED",
       "write_or_execution_approval_class": "C",
       "copy_in_managed_repository": "NO",
       "original_file_unchanged": true
@@ -958,9 +1086,21 @@
     {
       "asset_id": "ASSET-BACKUP-V012-AUDIT",
       "issue": "Latest v0.12 registry and newly created evidence are not included in verified v0.9 AES backup."
+    },
+    {
+      "asset_id": "ASSET-MAC-NAS-ONESHOT-V01",
+      "issue": "One consolidated manual backup now required after registering v0.13 and freezing volatile receipts."
+    },
+    {
+      "asset_id": "ASSET-NATIVE-BACKUP-DIAGNOSTIC-ZIP",
+      "issue": "Actual launchd access permission and signed helper user approval remain unverified, existing jobs disabled."
+    },
+    {
+      "asset_id": "ASSET-NAS-CAS-RESTORE-QA",
+      "issue": "Decrypted internal full restore via Keychain not performed; only encrypted image rebuilt and matched."
     }
   ],
-  "supersedes": "asset_manifest_v0.11.json (retained unchanged)",
+  "supersedes": "asset_manifest_v0.12.json (retained unchanged)",
   "library_crosswalk": [
     {
       "asset_id": "TA-CASE-20261102-01",
@@ -1432,6 +1572,60 @@
       "grade": "P3",
       "policy": "local_only_private_audit",
       "classification_scope": "diagnostic and planning records"
+    },
+    {
+      "asset_id": "ASSET-NAS-CAS-V02",
+      "grade": "P3",
+      "policy": "local_only_private_audit",
+      "classification_scope": "backup infrastructure"
+    },
+    {
+      "asset_id": "ASSET-NAS-CAS-RESTORE-QA",
+      "grade": "P3",
+      "policy": "local_only_private_audit",
+      "classification_scope": "backup infrastructure"
+    },
+    {
+      "asset_id": "ASSET-NAS-CAS-RESTORE-RESULT",
+      "grade": "P2",
+      "policy": "local_only_private_audit",
+      "classification_scope": "backup infrastructure"
+    },
+    {
+      "asset_id": "ASSET-MAC-NAS-ONESHOT-V01",
+      "grade": "P3",
+      "policy": "local_only_private_audit",
+      "classification_scope": "backup infrastructure"
+    },
+    {
+      "asset_id": "ASSET-NATIVE-ACCESS-PROBE-SWIFT",
+      "grade": "P3",
+      "policy": "local_only_private_audit",
+      "classification_scope": "backup infrastructure"
+    },
+    {
+      "asset_id": "ASSET-NATIVE-BACKUP-DIAGNOSTIC-SWIFT",
+      "grade": "P3",
+      "policy": "local_only_private_audit",
+      "classification_scope": "backup infrastructure"
+    },
+    {
+      "asset_id": "ASSET-NATIVE-BACKUP-DIAGNOSTIC-ZIP",
+      "grade": "P2",
+      "policy": "local_only_private_audit",
+      "classification_scope": "backup infrastructure"
+    },
+    {
+      "asset_id": "ASSET-NAS-CAS-REAL-CHANGE-MANIFEST",
+      "grade": "P2",
+      "policy": "local_only_private_audit",
+      "classification_scope": "backup infrastructure"
+    },
+    {
+      "asset_id": "ASSET-120-BATCH-PREBACKUP-AUDIT",
+      "grade": "P3",
+      "policy": "local_only_private_audit",
+      "classification_scope": "backup infrastructure"
     }
   ],
   "search_v1_3": {
@@ -1674,5 +1868,32 @@
     "verified_last_aes_registered_assets": 48,
     "current_registry_assets": 64,
     "newer_assets_backed_up": "NOT_VERIFIED"
+  },
+  "volatile_receipt_provenance": {
+    "action": "COPY_LIVE_MUTABLE_RECEIPTS_TO_IMMUTABLE_SHA_PRESERVED_ARCHIVE",
+    "old_manifest_unchanged": true,
+    "archived_logs": 5,
+    "matched_prior_registry_sha": 4,
+    "prior_registry_sha_changed": 1,
+    "changed_item_id": "ASSET-BACKUP-V21-LOCAL-STATUS",
+    "prior_sha256": "260acad2db5eef378e96976f2c503027428b9f64d38596431e1b66b9b0eb217d",
+    "new_sha256": "2715df925158c9fa3c6f78c875c143ee1dbd459db43bf102c492706dfa0400f3",
+    "reason": "LIVE_BACKUP_STATUS_UPDATED_WHEN_NEW_SNAPSHOT_CREATED",
+    "live_status_files_modified": false,
+    "archived_snapshot_files_will_not_BE_OVERWRITTEN": true
+  },
+  "mac_nas_scope_v013": {
+    "google_drive_transfer": "EXCLUDED_USER_MANAGES_SYNOLOGY_CLOUD_SYNC_WEEKLY",
+    "verified_local_backup_basis_before_v013": "asset_manifest_v0.12.json",
+    "prior_local_file_count": 3299,
+    "nas_real_incremental_new_components": 67,
+    "nas_real_incremental_reused_components": 138,
+    "nas_ciphertext_bytes_new": 547971072,
+    "nas_full_ciphertext_reconstruction_components": 205,
+    "nas_ciphertext_sha_and_aes256_structure": "PASS",
+    "nas_decrypted_inner_asset_restoration": "PENDING_USER_LOCAL_AUTH",
+    "launchd_agents": "DISABLED",
+    "native_app_manual_access_13_phases": "PASS",
+    "next_one_shot_backup": "PENDING"
   }
 }
