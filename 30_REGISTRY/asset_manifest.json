@@ -1,7 +1,7 @@
 {
-  "schema_version": "0.11",
-  "captured_at_kst": "2026-11-03T22:48:50+09:00",
-  "scope": "NAS_CONTENT_AWARE_REFERENCE_SEED_AND_HEADLESS_LAUNCHD_READONLY_AUDIT",
+  "schema_version": "0.12",
+  "captured_at_kst": "2026-11-03T23:15:36+09:00",
+  "scope": "HEADLESS_ACCESS_PHASE_DIAGNOSTIC_AND_SAFE_APPLICATION_SERVICE_PLAN",
   "registry_mode": "local-only security classification and search metadata",
   "existing_index_baseline": {
     "sqlite_integrity": "ok",
@@ -759,6 +759,42 @@
       "write_or_execution_approval_class": "C",
       "copy_in_managed_repository": "NO",
       "original_file_unchanged": true
+    },
+    {
+      "asset_id": "ASSET-BACKUP-V012-ACCESS-PROBE",
+      "title": "Thirteen-stage non-destructive macOS background access probe",
+      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/00_GUIDE/ROUTABL_HeadlessAccessDiagnostics_v0_1.py",
+      "bytes": 10136,
+      "sha256": "7d8237c955d3b77de8725e169b1354a4879979f9b951bcc4779c30f0bf1fae2b",
+      "observation": "NEW_LOCAL_DIAGNOSTIC_RECORD_CREATED_AFTER_LAST_VERIFIED_V09_AES_SNAPSHOT",
+      "execution_validation": "13_MANUAL_CHECK_PASS_5_SYNTHETIC_DENIAL_CASES_PASS",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "NO",
+      "original_file_unchanged": true
+    },
+    {
+      "asset_id": "ASSET-BACKUP-V012-AUDIT",
+      "title": "Launchd PermissionError and app-service restart gate audit",
+      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/HEADLESS_ACCESS_DIAGNOSTIC_V01_AND_APP_SERVICE_GATE_20261103.md",
+      "bytes": 6221,
+      "sha256": "142c9883f1f3bda344aafcbf568c7e543ac81c76d1f0bc609797d3630b036012",
+      "observation": "NEW_LOCAL_DIAGNOSTIC_RECORD_CREATED_AFTER_LAST_VERIFIED_V09_AES_SNAPSHOT",
+      "execution_validation": "READONLY_OS_LOG_AND_MANUAL_PROBE_VERIFIED",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "NO",
+      "original_file_unchanged": true
+    },
+    {
+      "asset_id": "ASSET-BACKUP-V012-RUNBOOK",
+      "title": "Minimal-permission macOS headless backup approval and recovery sequence",
+      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/00_GUIDE/HEADLESS_MACOS_SERVICE_RESTART_PLAN_v0.1.md",
+      "bytes": 3179,
+      "sha256": "1de3e3adf8dec6c4e882a02f253afedf4d96674ae5be7f5da8226619aa9bd5c4",
+      "observation": "NEW_LOCAL_DIAGNOSTIC_RECORD_CREATED_AFTER_LAST_VERIFIED_V09_AES_SNAPSHOT",
+      "execution_validation": "GUIDE_CREATED_NO_SCHEDULED_AGENT_INSTALLED",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "NO",
+      "original_file_unchanged": true
     }
   ],
   "unresolved": [
@@ -910,9 +946,21 @@
     {
       "asset_id": "ASSET-NAS-CAS-V01-QA",
       "issue": "New v0.11 registry authored after last verified v0.9 AES snapshot, not yet in that backup."
+    },
+    {
+      "asset_id": "ASSET-BACKUP-V012-ACCESS-PROBE",
+      "issue": "Manual user environment access passes; actual launchd TCC failing phase not isolated. Do not enable scheduled jobs."
+    },
+    {
+      "asset_id": "ASSET-BACKUP-V012-RUNBOOK",
+      "issue": "Signed app ServiceManagement implementation and explicit one-time user authorization are pending."
+    },
+    {
+      "asset_id": "ASSET-BACKUP-V012-AUDIT",
+      "issue": "Latest v0.12 registry and newly created evidence are not included in verified v0.9 AES backup."
     }
   ],
-  "supersedes": "asset_manifest_v0.10.json (unchanged)",
+  "supersedes": "asset_manifest_v0.11.json (retained unchanged)",
   "library_crosswalk": [
     {
       "asset_id": "TA-CASE-20261102-01",
@@ -1366,6 +1414,24 @@
       "grade": "P3",
       "policy": "local_only_private_audit",
       "classification_scope": "technical backup operations"
+    },
+    {
+      "asset_id": "ASSET-BACKUP-V012-ACCESS-PROBE",
+      "grade": "P3",
+      "policy": "local_only_private_audit",
+      "classification_scope": "diagnostic and planning records"
+    },
+    {
+      "asset_id": "ASSET-BACKUP-V012-AUDIT",
+      "grade": "P3",
+      "policy": "local_only_private_audit",
+      "classification_scope": "diagnostic and planning records"
+    },
+    {
+      "asset_id": "ASSET-BACKUP-V012-RUNBOOK",
+      "grade": "P3",
+      "policy": "local_only_private_audit",
+      "classification_scope": "diagnostic and planning records"
     }
   ],
   "search_v1_3": {
@@ -1590,5 +1656,23 @@
     "aes_full_internal_decrypted_restore": "NOT_VERIFIED",
     "google_drive_current_aes_backup": "NOT_VERIFIED",
     "search_v15_refresh_ui": "USER_NOT_VERIFIED"
+  },
+  "headless_access_v012": {
+    "macos_version": "27.2",
+    "observed_user_uid": 501,
+    "submitted_oneoff_previous_failure": "SIX_PERMISSION_ERRORS_ABOUT_10_SECONDS_APART",
+    "actual_failing_operation": "UNKNOWN_PRIOR_GATE_LOGGED_EXCEPTION_CLASS_ONLY",
+    "tcc_logs": "NO_DEFINITIVE_DENIAL_IN_FILTERED_LOGS",
+    "manual_context_stages_passed": 13,
+    "simulated_permission_denial_fail_closed_passed": 5,
+    "permission_scope_changed": false,
+    "new_launch_agent_installed": false,
+    "old_three_agents": "DISABLED",
+    "launchctl_submit_reuse": "PROHIBITED",
+    "preferred_future_design": "SIGNED_APP_WITH_SMAppService_AND_USER_APPROVAL_NOT_YET_IMPLEMENTED",
+    "verified_last_aes_backup_manifest": "asset_manifest_v0.9.json",
+    "verified_last_aes_registered_assets": 48,
+    "current_registry_assets": 64,
+    "newer_assets_backed_up": "NOT_VERIFIED"
   }
 }
