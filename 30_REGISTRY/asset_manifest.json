@@ -1,7 +1,7 @@
 {
-  "schema_version": "0.7",
-  "captured_at_kst": "2026-11-03T20:05:02+09:00",
-  "scope": "LOCAL_SEARCH_V1_5_RELEVANCE_PROVENANCE_FILTERS_FINDER_APP",
+  "schema_version": "0.8",
+  "captured_at_kst": "2026-11-03T20:24:42+09:00",
+  "scope": "ASSETSEARCH_V15_USER_FIELD_QA_AND_ENCRYPTED_BACKUP_HEADLESS_PREFLIGHT",
   "registry_mode": "local-only security classification and search metadata",
   "existing_index_baseline": {
     "sqlite_integrity": "ok",
@@ -423,6 +423,90 @@
       "write_or_execution_approval_class": "C",
       "copy_in_managed_repository": "NO",
       "original_file_unchanged": true
+    },
+    {
+      "asset_id": "ASSET-BACKUP-PREFLIGHT-V01",
+      "title": "Headless backup read-only preflight and synthetic subprocess test",
+      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/00_GUIDE/ROUTABL_HeadlessBackupPreflight_v0_1.py",
+      "bytes": 9282,
+      "sha256": "5939783e5ba09e2101ea5e53315e972cdebd9a7530e00739a89eee5e5478f2cd",
+      "observation": "NEW_LOCAL_TECHNICAL_ASSET_NO_PRODUCTION_SOURCE_CHANGE",
+      "execution_validation": "SYNTHETIC_TEST_PASS_LIVE_RESTART_HELD",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "NO",
+      "original_file_unchanged": true
+    },
+    {
+      "asset_id": "ASSET-BACKUP-HEADLESS-LOCAL-DRAFT",
+      "title": "Headless direct-Python local launchd plist, not installed",
+      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/40_WORKING/BACKUP_HEADLESS_V0_1/proposed_launchagents/com.routabl.assetbackup.headless.local.plist",
+      "bytes": 1107,
+      "sha256": "8e505d7d5279f4a39fca8807428d4d2a63496180f16543f8574e1a9b59da1736",
+      "observation": "NEW_LOCAL_TECHNICAL_ASSET_NO_PRODUCTION_SOURCE_CHANGE",
+      "execution_validation": "PLIST_VALIDATED_NOT_INSTALLED",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "NO",
+      "original_file_unchanged": true
+    },
+    {
+      "asset_id": "ASSET-BACKUP-HEADLESS-NAS-DRAFT",
+      "title": "Headless direct-Python NAS launchd plist, not installed",
+      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/40_WORKING/BACKUP_HEADLESS_V0_1/proposed_launchagents/com.routabl.assetbackup.headless.nas.plist",
+      "bytes": 1100,
+      "sha256": "ffecb609b3b0c68ca6bb088eddfbf226be445d2ff32c4fb04da9cfd37df2f0fe",
+      "observation": "NEW_LOCAL_TECHNICAL_ASSET_NO_PRODUCTION_SOURCE_CHANGE",
+      "execution_validation": "PLIST_VALIDATED_NOT_INSTALLED",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "NO",
+      "original_file_unchanged": true
+    },
+    {
+      "asset_id": "ASSET-BACKUP-SCOPE-MATRIX-V01",
+      "title": "Current backup inclusion rules vs 33 asset records",
+      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/30_REGISTRY/asset_backup_scope_v0.1.json",
+      "bytes": 6326,
+      "sha256": "1344a5ef69ea1bd64009a3c30f59b5d473ba64d8bc305a7d9039d1836bbb89f1",
+      "observation": "NEW_LOCAL_TECHNICAL_ASSET_NO_PRODUCTION_SOURCE_CHANGE",
+      "execution_validation": "STATIC_COVERAGE_AUDIT_5_OF_33",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "NO",
+      "original_file_unchanged": true
+    },
+    {
+      "asset_id": "ASSET-BACKUP-HEADLESS-QA-V01",
+      "title": "Headless restart safety audit and hold reasons",
+      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/HEADLESS_BACKUP_PREFLIGHT_AND_COVERAGE_20261103_v1.0.md",
+      "bytes": 4026,
+      "sha256": "62e44ec935ddb886426ddac325b42e325a552c640a34dba6a962461b2e093ec3",
+      "observation": "NEW_LOCAL_TECHNICAL_ASSET_NO_PRODUCTION_SOURCE_CHANGE",
+      "execution_validation": "READ_ONLY_AND_SYNTHETIC_TESTS",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "NO",
+      "original_file_unchanged": true
+    },
+    {
+      "asset_id": "ASSET-BACKUP-RESTART-GUIDE-V01",
+      "title": "User guidance for safe headless backup restart gates",
+      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/00_GUIDE/HEADLESS_BACKUP_RESTART_GATE_v0.1.md",
+      "bytes": 2019,
+      "sha256": "c3766b24c3db29daf51fadf018bbf70a3c2a9e1d69b28a0dc1a99180c91e1b2b",
+      "observation": "NEW_LOCAL_TECHNICAL_ASSET_NO_PRODUCTION_SOURCE_CHANGE",
+      "execution_validation": "DOCUMENTED_NO_REAL_EXECUTION",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "NO",
+      "original_file_unchanged": true
+    },
+    {
+      "asset_id": "ASSET-SEARCH-V15-USER-FINDER-QA",
+      "title": "User-supplied Safari/Finder verification observations",
+      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/ASSET_SEARCH_V1_5_USER_FIELD_VERIFICATION_20261103.md",
+      "bytes": 1219,
+      "sha256": "089c4824b717e5dc3fb02cd1509223e5024027edba942a5ce767e47f8f83f5c9",
+      "observation": "NEW_LOCAL_TECHNICAL_ASSET_NO_PRODUCTION_SOURCE_CHANGE",
+      "execution_validation": "USER_CONFIRMED_FINDER_AND_SEARCH_NOT_REFRESH",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "NO",
+      "original_file_unchanged": true
     }
   ],
   "unresolved": [
@@ -502,9 +586,21 @@
     {
       "asset_id": "ASSET-SEARCH-V15",
       "issue": "v1.5 native launcher and private SQLite index were not verified in paused NAS/Drive backups"
+    },
+    {
+      "asset_id": "ASSET-BACKUP-HEADLESS-QA-V01",
+      "issue": "33 manifest assets, only 5 eligible under previous encrypted backup filters. Coverage expansion must be designed and tested"
+    },
+    {
+      "asset_id": "ASSET-BACKUP-PREFLIGHT-V01",
+      "issue": "Do not install new agent candidates or enable old three until actual TCC/Keychain and isolated restore tests pass"
+    },
+    {
+      "asset_id": "ASSET-SEARCH-V15-USER-FINDER-QA",
+      "issue": "Actual on-screen manual refresh button remains unconfirmed"
     }
   ],
-  "supersedes": "asset_manifest_v0.6.json (retained unchanged)",
+  "supersedes": "asset_manifest_v0.7.json (unchanged)",
   "library_crosswalk": [
     {
       "asset_id": "TA-CASE-20261102-01",
@@ -790,6 +886,48 @@
       "grade": "P2",
       "policy": "local_use_only",
       "classification_scope": "local metadata and search evidence"
+    },
+    {
+      "asset_id": "ASSET-BACKUP-PREFLIGHT-V01",
+      "grade": "P3",
+      "policy": "local_use_only",
+      "classification_scope": "new local audited asset"
+    },
+    {
+      "asset_id": "ASSET-BACKUP-HEADLESS-LOCAL-DRAFT",
+      "grade": "P2",
+      "policy": "local_use_only",
+      "classification_scope": "new local audited asset"
+    },
+    {
+      "asset_id": "ASSET-BACKUP-HEADLESS-NAS-DRAFT",
+      "grade": "P2",
+      "policy": "local_use_only",
+      "classification_scope": "new local audited asset"
+    },
+    {
+      "asset_id": "ASSET-BACKUP-SCOPE-MATRIX-V01",
+      "grade": "P2",
+      "policy": "local_use_only",
+      "classification_scope": "new local audited asset"
+    },
+    {
+      "asset_id": "ASSET-BACKUP-HEADLESS-QA-V01",
+      "grade": "P3",
+      "policy": "local_use_only",
+      "classification_scope": "new local audited asset"
+    },
+    {
+      "asset_id": "ASSET-BACKUP-RESTART-GUIDE-V01",
+      "grade": "P3",
+      "policy": "local_use_only",
+      "classification_scope": "new local audited asset"
+    },
+    {
+      "asset_id": "ASSET-SEARCH-V15-USER-FINDER-QA",
+      "grade": "P3",
+      "policy": "local_use_only",
+      "classification_scope": "new local audited asset"
     }
   ],
   "search_v1_3": {
@@ -920,5 +1058,34 @@
     "production_app_code_modified": false,
     "authoritative_source_code_execution": "NOT_PERFORMED"
   },
-  "search_v1_5_audit_report": "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/ASSET_SEARCH_V1_5_RELEVANCE_AND_FINDER_QA_20261103_v1.0.md"
+  "search_v1_5_audit_report": "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/ASSET_SEARCH_V1_5_RELEVANCE_AND_FINDER_QA_20261103_v1.0.md",
+  "backup_headless_preflight": {
+    "real_execution": "NOT_PERFORMED",
+    "overall_gate": "HOLD_INCOMPLETE_ASSET_COVERAGE_AND_HEADLESS_TCC_NOT_VERIFIED",
+    "audit_existing_manifest": "asset_manifest_v0.7.json",
+    "audit_baseline_assets": 33,
+    "eligible_for_existing_backup_rule": 5,
+    "outside_existing_backup_scope": 28,
+    "new_draft_agents": 2,
+    "drafts_installed": false,
+    "old_three_launchagents_disabled": true,
+    "synthetic_headless_subprocess": "PASS",
+    "synthetic_duplicate_lock": "PASS",
+    "real_launchd_tcc": "NOT_TESTED",
+    "real_AES_image_mount_or_snapshot": "NOT_PERFORMED",
+    "real_restoration": "NOT_PERFORMED",
+    "google_drive_remote_integrity": "NOT_VERIFIED",
+    "newer_search_and_v0_7_backed_up": "NOT_VERIFIED",
+    "requirements_before_enable": [
+      "approve allowed source scope",
+      "prove encryption and Keychain headless access on one-off controlled job",
+      "read-only or isolated snapshot restore SHA verification",
+      "approve new schedule installation after no-GUI test"
+    ]
+  },
+  "search_v1_5_user_field": {
+    "search_first_canonical_TransportStatusPolicy": "PASS_USER_SCREENSHOT",
+    "finder_selected_TransportStatusPolicy.kt": "PASS_USER_SCREENSHOT",
+    "manual_refresh_button": "NOT_USER_VERIFIED"
+  }
 }
