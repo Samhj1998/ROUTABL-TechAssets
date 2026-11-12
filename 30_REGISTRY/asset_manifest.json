@@ -1,6 +1,6 @@
 {
-  "schema_version": "0.34",
-  "captured_at_kst": "2026-11-12T23:18:05+09:00",
+  "schema_version": "0.35",
+  "captured_at_kst": "2026-11-12T23:19:35+09:00",
   "scope": "TI01_3TIER_IMPORTANCE_RECOVERY_GOVERNANCE_ABOVE_VI01",
   "registry_mode": "local-only security classification and search metadata",
   "existing_index_baseline": {
@@ -223,14 +223,17 @@
     {
       "asset_id": "ASSET-SECURITY-POLICY-01",
       "title": "Technical asset access and search classification policy v0.1",
-      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/00_GUIDE/ASSET_SECURITY_AND_SEARCH_POLICY_v0.1.md",
+      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/00_GUIDE/docs/principles/ASSET_SECURITY_AND_SEARCH_POLICY_v0.1.md",
       "bytes": 4223,
       "sha256": "703140ed59a76bbf8306fcbcff89dbeda84f050bcd300ffef39b6d61fcabc4fc",
       "observation": "NEW_V1_3_LOCAL_ARTIFACT_NOT_REMOTE_REPLICATED",
       "execution_validation": "DOCUMENT_ONLY",
       "write_or_execution_approval_class": "C",
       "copy_in_managed_repository": "NO",
-      "original_file_unchanged": true
+      "original_file_unchanged": true,
+      "previous_paths": [
+        "/Users/yongho/ROUTABL-TechAssets/00_GUIDE/ASSET_SECURITY_AND_SEARCH_POLICY_v0.1.md"
+      ]
     },
     {
       "asset_id": "ASSET-SEARCH-V14-SERVICE",
@@ -312,14 +315,17 @@
     {
       "asset_id": "ASSET-SEARCH-V14-GUIDE",
       "title": "Finder search app operating instructions",
-      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/00_GUIDE/ASSET_SEARCH_V1_4_QUICKSTART_20261103.md",
+      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/00_GUIDE/docs/history/ASSET_SEARCH_V1_4_QUICKSTART_20261103.md",
       "bytes": 3372,
       "sha256": "57e71cdb87c07361d5fb7ea135eee4666d74075cdd6ec70f6d1b637c724340cd",
       "observation": "NEW_LOCAL_V1_4_ARTIFACT_WITHOUT_SOURCE_REWRITE",
       "execution_validation": "USER_GUIDE_CREATED",
       "write_or_execution_approval_class": "C",
       "copy_in_managed_repository": "NO",
-      "original_file_unchanged": true
+      "original_file_unchanged": true,
+      "previous_paths": [
+        "/Users/yongho/ROUTABL-TechAssets/00_GUIDE/ASSET_SEARCH_V1_4_QUICKSTART_20261103.md"
+      ]
     },
     {
       "asset_id": "ASSET-SEARCH-V15-SERVICE",
@@ -401,14 +407,17 @@
     {
       "asset_id": "ASSET-SEARCH-V15-GUIDE",
       "title": "v1.5 Finder user instructions",
-      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/00_GUIDE/ASSET_SEARCH_V1_5_QUICKSTART_20261103.md",
+      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/00_GUIDE/docs/history/ASSET_SEARCH_V1_5_QUICKSTART_20261103.md",
       "bytes": 4045,
       "sha256": "6ba415e94a27b5a18a93e565b5738000788c54cc9d251ed67661e53af3540d45",
       "observation": "NEW_SEPARATE_V1_5_SEARCH_ARTIFACT_NOT_PRODUCTION_SOURCE",
       "execution_validation": "INSTRUCTIONS_CREATED",
       "write_or_execution_approval_class": "C",
       "copy_in_managed_repository": "NO",
-      "original_file_unchanged": true
+      "original_file_unchanged": true,
+      "previous_paths": [
+        "/Users/yongho/ROUTABL-TechAssets/00_GUIDE/ASSET_SEARCH_V1_5_QUICKSTART_20261103.md"
+      ]
     },
     {
       "asset_id": "ASSET-SEARCH-V15-QA",
@@ -507,14 +516,17 @@
     {
       "asset_id": "ASSET-BACKUP-RESTART-GUIDE-V01",
       "title": "User guidance for safe headless backup restart gates",
-      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/00_GUIDE/HEADLESS_BACKUP_RESTART_GATE_v0.1.md",
+      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/00_GUIDE/docs/history/HEADLESS_BACKUP_RESTART_GATE_v0.1.md",
       "bytes": 2019,
       "sha256": "c3766b24c3db29daf51fadf018bbf70a3c2a9e1d69b28a0dc1a99180c91e1b2b",
       "observation": "NEW_LOCAL_TECHNICAL_ASSET_NO_PRODUCTION_SOURCE_CHANGE",
       "execution_validation": "DOCUMENTED_NO_REAL_EXECUTION",
       "write_or_execution_approval_class": "C",
       "copy_in_managed_repository": "NO",
-      "original_file_unchanged": true
+      "original_file_unchanged": true,
+      "previous_paths": [
+        "/Users/yongho/ROUTABL-TechAssets/00_GUIDE/HEADLESS_BACKUP_RESTART_GATE_v0.1.md"
+      ]
     },
     {
       "asset_id": "ASSET-SEARCH-V15-USER-FINDER-QA",
@@ -531,38 +543,50 @@
     {
       "asset_id": "ASSET-BACKUP-SELECTIVE-V20",
       "title": "Selective v2 AES-256 backup implementation",
-      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/00_GUIDE/ROUTABL_SelectiveSecureBackup_v2_0.py",
+      "observed_original_path": "git:guide-before-p4:00_GUIDE/ROUTABL_SelectiveSecureBackup_v2_0.py",
       "bytes": 18168,
       "sha256": "161453d5a86eeba2ab9114b6478ab0446bb0d90e6c263a04ed878d7a7b84b7de",
       "observation": "NEW_ASSET_CREATED_AFTER_ENCRYPTED_V08_SNAPSHOT",
       "execution_validation": "V20_3269_FILES_HASHED_AND_15_RESTORE_SAMPLES_PASS",
       "write_or_execution_approval_class": "C",
       "copy_in_managed_repository": "NO",
-      "original_file_unchanged": true
+      "original_file_unchanged": true,
+      "previous_paths": [
+        "/Users/yongho/ROUTABL-TechAssets/00_GUIDE/ROUTABL_SelectiveSecureBackup_v2_0.py"
+      ],
+      "git_ref": "guide-before-p4:00_GUIDE/ROUTABL_SelectiveSecureBackup_v2_0.py"
     },
     {
       "asset_id": "ASSET-NAS-SELECTIVE-V20",
       "title": "Selective encrypted NAS copy v2",
-      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/00_GUIDE/ROUTABL_SelectiveNasCopy_v2_0.py",
+      "observed_original_path": "git:guide-before-p4:00_GUIDE/ROUTABL_SelectiveNasCopy_v2_0.py",
       "bytes": 7883,
       "sha256": "8fc75e3ad08caac3d6eb38a3157b5d10c7f9461713c0d82849f394379bbe2191",
       "observation": "NEW_ASSET_CREATED_AFTER_ENCRYPTED_V08_SNAPSHOT",
       "execution_validation": "V20_78_ENCRYPTED_COMPONENTS_VERIFIED",
       "write_or_execution_approval_class": "C",
       "copy_in_managed_repository": "NO",
-      "original_file_unchanged": true
+      "original_file_unchanged": true,
+      "previous_paths": [
+        "/Users/yongho/ROUTABL-TechAssets/00_GUIDE/ROUTABL_SelectiveNasCopy_v2_0.py"
+      ],
+      "git_ref": "guide-before-p4:00_GUIDE/ROUTABL_SelectiveNasCopy_v2_0.py"
     },
     {
       "asset_id": "ASSET-BACKUP-DAILY-GATE-V02",
       "title": "Headless daily duplicate and stale-receipt gate",
-      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/00_GUIDE/ROUTABL_HeadlessDailyGate_v0_2.py",
+      "observed_original_path": "git:guide-before-p4:00_GUIDE/ROUTABL_HeadlessDailyGate_v0_2.py",
       "bytes": 4776,
       "sha256": "0b57762d54a87c4e31312ea31916298d73897abc04134468101e25f7692639bc",
       "observation": "NEW_ASSET_CREATED_AFTER_ENCRYPTED_V08_SNAPSHOT",
       "execution_validation": "CHECK_MODE_PASSED_NOT_SCHEDULED",
       "write_or_execution_approval_class": "C",
       "copy_in_managed_repository": "NO",
-      "original_file_unchanged": true
+      "original_file_unchanged": true,
+      "previous_paths": [
+        "/Users/yongho/ROUTABL-TechAssets/00_GUIDE/ROUTABL_HeadlessDailyGate_v0_2.py"
+      ],
+      "git_ref": "guide-before-p4:00_GUIDE/ROUTABL_HeadlessDailyGate_v0_2.py"
     },
     {
       "asset_id": "ASSET-BACKUP-LOCAL-RECEIPT-V20",
@@ -787,14 +811,18 @@
     {
       "asset_id": "ASSET-NAS-CAS-V01-ENGINE",
       "title": "Content-aware encrypted sparsebundle NAS reference and changed-band object writer",
-      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/00_GUIDE/ROUTABL_NAS_ContentAwareBackup_v0_1.py",
+      "observed_original_path": "git:guide-before-p4:00_GUIDE/ROUTABL_NAS_ContentAwareBackup_v0_1.py",
       "bytes": 16633,
       "sha256": "75da8580ea0e4e3811e1a962e19051b774804b8557db1752be11bd197fb7b8bc",
       "observation": "NEW_CAS_AND_AUDIT_ASSETS_CREATED_AFTER_V09_AES_SNAPSHOT",
       "execution_validation": "SEED_141_VERIFIED_SYNTHETIC_CHANGED_BAND_PASS",
       "write_or_execution_approval_class": "C",
       "copy_in_managed_repository": "NO",
-      "original_file_unchanged": true
+      "original_file_unchanged": true,
+      "previous_paths": [
+        "/Users/yongho/ROUTABL-TechAssets/00_GUIDE/ROUTABL_NAS_ContentAwareBackup_v0_1.py"
+      ],
+      "git_ref": "guide-before-p4:00_GUIDE/ROUTABL_NAS_ContentAwareBackup_v0_1.py"
     },
     {
       "asset_id": "ASSET-NAS-CAS-V01-ANCHOR",
@@ -847,14 +875,17 @@
     {
       "asset_id": "ASSET-BACKUP-V012-RUNBOOK",
       "title": "Minimal-permission macOS headless backup approval and recovery sequence",
-      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/00_GUIDE/HEADLESS_MACOS_SERVICE_RESTART_PLAN_v0.1.md",
+      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/00_GUIDE/docs/history/HEADLESS_MACOS_SERVICE_RESTART_PLAN_v0.1.md",
       "bytes": 3179,
       "sha256": "1de3e3adf8dec6c4e882a02f253afedf4d96674ae5be7f5da8226619aa9bd5c4",
       "observation": "NEW_LOCAL_DIAGNOSTIC_RECORD_CREATED_AFTER_LAST_VERIFIED_V09_AES_SNAPSHOT",
       "execution_validation": "GUIDE_CREATED_NO_SCHEDULED_AGENT_INSTALLED",
       "write_or_execution_approval_class": "C",
       "copy_in_managed_repository": "NO",
-      "original_file_unchanged": true
+      "original_file_unchanged": true,
+      "previous_paths": [
+        "/Users/yongho/ROUTABL-TechAssets/00_GUIDE/HEADLESS_MACOS_SERVICE_RESTART_PLAN_v0.1.md"
+      ]
     },
     {
       "asset_id": "ASSET-NAS-CAS-V02",
@@ -2476,7 +2507,7 @@
     {
       "asset_id": "ASSET-120-GOVERNANCE-VI01-VERSION-INDEPENDENCE-20261106",
       "title": "라우터블 기술자산 운영 원칙 VI-01 — 버전별 완전 독립성과 공통 원본 분리",
-      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/00_GUIDE/ROUTABL_VERSION_INDEPENDENCE_PRINCIPLE_v1.0_20261106.md",
+      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/00_GUIDE/docs/principles/ROUTABL_VERSION_INDEPENDENCE_PRINCIPLE_v1.0_20261106.md",
       "bytes": 10389,
       "sha256": "86c79cd8cc11aac2aed2054c9f92ad445050ce5cfb6f17f17b355f75b4c4eb54",
       "mtime_utc": "2026-11-06T12:14:59.491712+00:00",
@@ -2488,12 +2519,15 @@
       "copy_in_managed_repository": "ORIGINAL_NEW_POLICY_STORED_IN_00_GUIDE",
       "original_file_unchanged": true,
       "provenance_status": "DIRECT_USER_DESIGN_PRINCIPLE_AND_VERIFIED_V04_CASE",
-      "registry_added_in": "v0.26"
+      "registry_added_in": "v0.26",
+      "previous_paths": [
+        "/Users/yongho/ROUTABL-TechAssets/00_GUIDE/ROUTABL_VERSION_INDEPENDENCE_PRINCIPLE_v1.0_20261106.md"
+      ]
     },
     {
       "asset_id": "ASSET-120-GOVERNANCE-TI01-3TIER-ORIGINAL-PROTECTION-20261106",
       "title": "라우터블 TI-01 3-Tier 핵심 원본 보호·손실 영향·복구 우선순위",
-      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/00_GUIDE/ROUTABL_3TIER_ASSET_PROTECTION_AND_RESTORATION_PRINCIPLE_TI01_v1.0_20261106.md",
+      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/00_GUIDE/docs/principles/ROUTABL_3TIER_ASSET_PROTECTION_AND_RESTORATION_PRINCIPLE_TI01_v1.0_20261106.md",
       "bytes": 10233,
       "sha256": "21833f37c1c0e686743dca77a341577db9b2f0e97d93a8773a25fc8955711132",
       "mtime_utc": "2026-11-06T12:43:11.608194+00:00",
@@ -2505,7 +2539,10 @@
       "copy_in_managed_repository": "NEW_VERSIONED_POLICY_IN_00_GUIDE",
       "original_file_unchanged": true,
       "provenance_status": "USER_EXPLICIT_LIVED_EXPERIENCE_AND_USER_CONFIRMED_POLICY",
-      "registry_added_in": "v0.27"
+      "registry_added_in": "v0.27",
+      "previous_paths": [
+        "/Users/yongho/ROUTABL-TechAssets/00_GUIDE/ROUTABL_3TIER_ASSET_PROTECTION_AND_RESTORATION_PRINCIPLE_TI01_v1.0_20261106.md"
+      ]
     },
     {
       "asset_id": "ANALYTICS-APP-01-READONLY-BUILD-GUARD",
@@ -2774,7 +2811,7 @@
     {
       "asset_id": "ASSET-120-GOVERNANCE-DW01-DUAL-AI-BUILD-WORKFLOW-20261111",
       "title": "DW-01 두 AI 분업 개발·검증 방식 (Claude 수정·진단 / ChatGPT+Desktop Commander Mac 빌드·푸시 / 커밋 전 검증 게이트)",
-      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/00_GUIDE/ROUTABL_DUAL_AI_BUILD_WORKFLOW_DW01_v1.0_20261111.md",
+      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/00_GUIDE/docs/principles/ROUTABL_DUAL_AI_BUILD_WORKFLOW_DW01_v1.0_20261111.md",
       "bytes": 5116,
       "sha256": "ad688f9dac48e922f3365bad4d3784e08a050815ea55febe34c88dc02f234222",
       "mtime_utc": "2026-11-11T05:37:46.822579+00:00",
@@ -2789,7 +2826,10 @@
         "ASSET-120-GOVERNANCE-VI01-VERSION-INDEPENDENCE-20261106",
         "ASSET-120-GOVERNANCE-TI01-3TIER-ORIGINAL-PROTECTION-20261106"
       ],
-      "registry_added_in": "v0.29"
+      "registry_added_in": "v0.29",
+      "previous_paths": [
+        "/Users/yongho/ROUTABL-TechAssets/00_GUIDE/ROUTABL_DUAL_AI_BUILD_WORKFLOW_DW01_v1.0_20261111.md"
+      ]
     },
     {
       "asset_id": "ANALYTICS-APP-01-SHARED-HASH-GUARD",
@@ -3165,7 +3205,7 @@
     {
       "asset_id": "ASSET-SEARCH-V18-GUIDE",
       "title": "검색 v1.8 사용 안내 (AI용 find/chunk/lines API, 보안, 시험 결과)",
-      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/00_GUIDE/ASSET_SEARCH_V1_8_QUICKSTART_20261112.md",
+      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/00_GUIDE/docs/guides/ASSET_SEARCH_V1_8_QUICKSTART_20261112.md",
       "bytes": 4713,
       "sha256": "b500ebcc11ee216f57efbbde7dc98eb421fdea58f27092ab9de65507b357990d",
       "mtime_utc": "2026-11-12T00:05:19.159293+00:00",
@@ -3179,7 +3219,10 @@
       "parent_asset_ids": [
         "ASSET-SEARCH-V17-SERVICE"
       ],
-      "registry_added_in": "v0.32"
+      "registry_added_in": "v0.32",
+      "previous_paths": [
+        "/Users/yongho/ROUTABL-TechAssets/00_GUIDE/ASSET_SEARCH_V1_8_QUICKSTART_20261112.md"
+      ]
     },
     {
       "asset_id": "ASSET-SEARCH-V18-LAUNCHER",
@@ -3251,7 +3294,7 @@
     {
       "asset_id": "ASSET-SEARCH-V17-GUIDE",
       "title": "검색 v1.7 사용 안내",
-      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/00_GUIDE/ASSET_SEARCH_V1_7_QUICKSTART_20261112.md",
+      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/00_GUIDE/docs/history/ASSET_SEARCH_V1_7_QUICKSTART_20261112.md",
       "bytes": 4359,
       "sha256": "a57b4a972310e63d24f022827612ffc7af9c5da46b8e306a4dc32fcd4ff23622",
       "mtime_utc": "2026-11-11T17:08:43.130166+00:00",
@@ -3265,7 +3308,10 @@
       "parent_asset_ids": [
         "ASSET-SEARCH-V15-GUIDE"
       ],
-      "registry_added_in": "v0.32"
+      "registry_added_in": "v0.32",
+      "previous_paths": [
+        "/Users/yongho/ROUTABL-TechAssets/00_GUIDE/ASSET_SEARCH_V1_7_QUICKSTART_20261112.md"
+      ]
     }
   ],
   "unresolved": [
@@ -3463,7 +3509,7 @@
       "issue": "Actual Android app UI display not field-tested; original failed chat tool trace not archived."
     }
   ],
-  "supersedes": "registry-v0.33 (git 이름표)",
+  "supersedes": "registry-v0.34 (git 이름표)",
   "library_crosswalk": [
     {
       "asset_id": "TA-CASE-20261102-01",
@@ -5563,5 +5609,10 @@
       "only_in_git_history": 12
     },
     "how_to_read_old": "observed_original_path가 git:으로 시작하면 git show <이름표>:<경로>"
+  },
+  "folder_reorg_p4_v035": {
+    "action": "00_GUIDE: 문서 19개 → docs/principles·guides·history, 상태 보고서 6개 → docs/history/STATUS_20261103.md + 이름표 status-20261103-v0.2~0.7, 참조 없는 옛 스크립트 6개 → 이름표 guide-before-p4",
+    "kept_in_place": "자동 백업 체인 6개, RUN_*.command와 대상 스크립트, 백업 앱이 부르는 감독 스크립트 v0_1·v0_2, 진단·점검 도구, plist",
+    "registry_paths_updated": 14
   }
 }

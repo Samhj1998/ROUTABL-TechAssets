@@ -1,6 +1,6 @@
 # AI 지침 — 붙여 넣기용 (2026-11-12)
 
-근거: 00_GUIDE/WORK_PRINCIPLES_QUOTES_v1.0_20261112.md (어록 카드 Q-01~03). 아래 블록을 그대로 복사해 붙여 넣는다.
+근거: 00_GUIDE/docs/principles/WORK_PRINCIPLES_QUOTES_v1.0_20261112.md (어록 카드 Q-01~03). 아래 블록을 그대로 복사해 붙여 넣는다.
 
 ## A. Claude 프로젝트 지침 (약 900자)
 ```
