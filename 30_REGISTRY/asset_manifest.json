@@ -1,7 +1,7 @@
 {
-  "schema_version": "0.8",
-  "captured_at_kst": "2026-11-03T20:24:42+09:00",
-  "scope": "ASSETSEARCH_V15_USER_FIELD_QA_AND_ENCRYPTED_BACKUP_HEADLESS_PREFLIGHT",
+  "schema_version": "0.9",
+  "captured_at_kst": "2026-11-03T20:51:29+09:00",
+  "scope": "SELECTIVE_AES256_V2_LOCAL_3269_FILES_NAS_78_ENCRYPTED_FILES_VERIFIED",
   "registry_mode": "local-only security classification and search metadata",
   "existing_index_baseline": {
     "sqlite_integrity": "ok",
@@ -507,6 +507,102 @@
       "write_or_execution_approval_class": "C",
       "copy_in_managed_repository": "NO",
       "original_file_unchanged": true
+    },
+    {
+      "asset_id": "ASSET-BACKUP-SELECTIVE-V20",
+      "title": "Selective v2 AES-256 backup implementation",
+      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/00_GUIDE/ROUTABL_SelectiveSecureBackup_v2_0.py",
+      "bytes": 18168,
+      "sha256": "161453d5a86eeba2ab9114b6478ab0446bb0d90e6c263a04ed878d7a7b84b7de",
+      "observation": "NEW_ASSET_CREATED_AFTER_ENCRYPTED_V08_SNAPSHOT",
+      "execution_validation": "V20_3269_FILES_HASHED_AND_15_RESTORE_SAMPLES_PASS",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "NO",
+      "original_file_unchanged": true
+    },
+    {
+      "asset_id": "ASSET-NAS-SELECTIVE-V20",
+      "title": "Selective encrypted NAS copy v2",
+      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/00_GUIDE/ROUTABL_SelectiveNasCopy_v2_0.py",
+      "bytes": 7883,
+      "sha256": "8fc75e3ad08caac3d6eb38a3157b5d10c7f9461713c0d82849f394379bbe2191",
+      "observation": "NEW_ASSET_CREATED_AFTER_ENCRYPTED_V08_SNAPSHOT",
+      "execution_validation": "V20_78_ENCRYPTED_COMPONENTS_VERIFIED",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "NO",
+      "original_file_unchanged": true
+    },
+    {
+      "asset_id": "ASSET-BACKUP-DAILY-GATE-V02",
+      "title": "Headless daily duplicate and stale-receipt gate",
+      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/00_GUIDE/ROUTABL_HeadlessDailyGate_v0_2.py",
+      "bytes": 4776,
+      "sha256": "0b57762d54a87c4e31312ea31916298d73897abc04134468101e25f7692639bc",
+      "observation": "NEW_ASSET_CREATED_AFTER_ENCRYPTED_V08_SNAPSHOT",
+      "execution_validation": "CHECK_MODE_PASSED_NOT_SCHEDULED",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "NO",
+      "original_file_unchanged": true
+    },
+    {
+      "asset_id": "ASSET-BACKUP-LOCAL-RECEIPT-V20",
+      "title": "Successful local v2 encrypted snapshot receipt status",
+      "observed_original_path": "/Users/yongho/Library/Logs/ROUTABL-AssetBackup/last_selective_v2_result.json",
+      "bytes": 460,
+      "sha256": "95d92363d6e333d3499914c5ff99f271ee0a58f14705cab44848268d72e5ab57",
+      "observation": "NEW_ASSET_CREATED_AFTER_ENCRYPTED_V08_SNAPSHOT",
+      "execution_validation": "3269_FILES_15_SAMPLE_RESTORES_VERIFIED",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "NO",
+      "original_file_unchanged": true
+    },
+    {
+      "asset_id": "ASSET-BACKUP-NAS-RECEIPT-V20",
+      "title": "Successful NAS encrypted image verification status",
+      "observed_original_path": "/Users/yongho/Library/Logs/ROUTABL-AssetBackup/last_selective_nas_v2_result.json",
+      "bytes": 441,
+      "sha256": "2f89829f483f2afd33e9b58be012d2a77c2e20a248af7e36929ed0399dda77d4",
+      "observation": "NEW_ASSET_CREATED_AFTER_ENCRYPTED_V08_SNAPSHOT",
+      "execution_validation": "78_CIPHERTEXT_FILES_SHA256_MATCH",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "NO",
+      "original_file_unchanged": true
+    },
+    {
+      "asset_id": "ASSET-BACKUP-LOCAL-AGENT-DRAFT-V02",
+      "title": "New local v2 Python headless candidate plist NOT INSTALLED",
+      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/40_WORKING/BACKUP_HEADLESS_V0_2/proposed_launchagents/com.routabl.assetbackup.v2.headless.local.plist",
+      "bytes": 1166,
+      "sha256": "e2ac55d38f8ce94a9677b3c25938dd9dfb0d341aadb209ba48c18818d7bf0970",
+      "observation": "NEW_ASSET_CREATED_AFTER_ENCRYPTED_V08_SNAPSHOT",
+      "execution_validation": "PLUTIL_PASS_NOT_INSTALLED",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "NO",
+      "original_file_unchanged": true
+    },
+    {
+      "asset_id": "ASSET-BACKUP-NAS-AGENT-DRAFT-V02",
+      "title": "New NAS v2 Python headless candidate plist NOT INSTALLED",
+      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/40_WORKING/BACKUP_HEADLESS_V0_2/proposed_launchagents/com.routabl.assetbackup.v2.headless.nas.plist",
+      "bytes": 1158,
+      "sha256": "5c5d39b6de089fbc41f15d9807d76497870ed63d771b4307802b4509a3936f98",
+      "observation": "NEW_ASSET_CREATED_AFTER_ENCRYPTED_V08_SNAPSHOT",
+      "execution_validation": "PLUTIL_PASS_NOT_INSTALLED",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "NO",
+      "original_file_unchanged": true
+    },
+    {
+      "asset_id": "ASSET-BACKUP-V20-FINAL-QA",
+      "title": "AES v2 complete local+NAS backup audit with restoration boundaries",
+      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/ASSET_V2_LOCAL_NAS_ENCRYPTED_BACKUP_AND_RESTORE_QA_20261103.md",
+      "bytes": 5352,
+      "sha256": "ee8cbeb8b1d7a035f03a531183b1cf2206c9d8ad385b9e67ea768aa38e970255",
+      "observation": "NEW_ASSET_CREATED_AFTER_ENCRYPTED_V08_SNAPSHOT",
+      "execution_validation": "SIGNED_LOCAL_RECEIPT_AND_NAS_RECEIPT_CROSSCHECKED",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "NO",
+      "original_file_unchanged": true
     }
   ],
   "unresolved": [
@@ -598,9 +694,29 @@
     {
       "asset_id": "ASSET-SEARCH-V15-USER-FINDER-QA",
       "issue": "Actual on-screen manual refresh button remains unconfirmed"
+    },
+    {
+      "asset_id": "ASSET-BACKUP-SELECTIVE-V20",
+      "issue": "Full NAS-to-isolated-SSD encrypted image restore, mount, entire original contents SHA verification pending"
+    },
+    {
+      "asset_id": "ASSET-BACKUP-DAILY-GATE-V02",
+      "issue": "Launchd-background macOS permissions and Keychain behavior unverified; do not enable staged or old agents"
+    },
+    {
+      "asset_id": "ASSET-BACKUP-V20-FINAL-QA",
+      "issue": "v0.9 manifest and new receipts were authored after v0.8 backup and are not covered by current snapshot"
+    },
+    {
+      "asset_id": "ASSET-SEARCH-V15",
+      "issue": "User on-screen Search refresh button remains unverified"
+    },
+    {
+      "asset_id": "ASSET-BACKUP-SELECTIVE-V20",
+      "issue": "Sensitive content heuristic cannot guarantee all ZIP/PDF/binary members are free from confidential material"
     }
   ],
-  "supersedes": "asset_manifest_v0.7.json (unchanged)",
+  "supersedes": "asset_manifest_v0.8.json (retained unchanged)",
   "library_crosswalk": [
     {
       "asset_id": "TA-CASE-20261102-01",
@@ -928,6 +1044,54 @@
       "grade": "P3",
       "policy": "local_use_only",
       "classification_scope": "new local audited asset"
+    },
+    {
+      "asset_id": "ASSET-BACKUP-SELECTIVE-V20",
+      "grade": "P3",
+      "policy": "local_only_private_audit",
+      "classification_scope": "backup infrastructure"
+    },
+    {
+      "asset_id": "ASSET-NAS-SELECTIVE-V20",
+      "grade": "P3",
+      "policy": "local_only_private_audit",
+      "classification_scope": "backup infrastructure"
+    },
+    {
+      "asset_id": "ASSET-BACKUP-DAILY-GATE-V02",
+      "grade": "P3",
+      "policy": "local_only_private_audit",
+      "classification_scope": "backup infrastructure"
+    },
+    {
+      "asset_id": "ASSET-BACKUP-LOCAL-RECEIPT-V20",
+      "grade": "P2",
+      "policy": "local_only_private_audit",
+      "classification_scope": "backup infrastructure"
+    },
+    {
+      "asset_id": "ASSET-BACKUP-NAS-RECEIPT-V20",
+      "grade": "P2",
+      "policy": "local_only_private_audit",
+      "classification_scope": "backup infrastructure"
+    },
+    {
+      "asset_id": "ASSET-BACKUP-LOCAL-AGENT-DRAFT-V02",
+      "grade": "P2",
+      "policy": "local_only_private_audit",
+      "classification_scope": "backup infrastructure"
+    },
+    {
+      "asset_id": "ASSET-BACKUP-NAS-AGENT-DRAFT-V02",
+      "grade": "P2",
+      "policy": "local_only_private_audit",
+      "classification_scope": "backup infrastructure"
+    },
+    {
+      "asset_id": "ASSET-BACKUP-V20-FINAL-QA",
+      "grade": "P3",
+      "policy": "local_only_private_audit",
+      "classification_scope": "backup infrastructure"
     }
   ],
   "search_v1_3": {
@@ -1087,5 +1251,30 @@
     "search_first_canonical_TransportStatusPolicy": "PASS_USER_SCREENSHOT",
     "finder_selected_TransportStatusPolicy.kt": "PASS_USER_SCREENSHOT",
     "manual_refresh_button": "NOT_USER_VERIFIED"
+  },
+  "aes256_v2_verified_backup": {
+    "snapshot_basis": "asset_manifest_v0.8.json",
+    "snapshot_name": "ASSET_V2_20261103_204312_KST_23716",
+    "local_source_file_count": 3269,
+    "local_original_bytes": 518762578,
+    "registered_assets_included": 40,
+    "project_source_files_included": 3171,
+    "extra_managed_files_included": 58,
+    "local_receipt_sha256": "10bbb0150bfdab7634cbfe69d7b82213633677f039cecc2961f8cdfa95638917",
+    "local_receipt_status": "SUCCESS_LOCKED_AND_SHA256_VERIFIED",
+    "isolated_plaintext_restore_samples": 15,
+    "nas_snapshot": "/Volumes/Dev_Assets/ROUTABL-TechAssets-Backup/snapshots/NAS_MANUAL_ASSET_V2_20261103_204614_KST_23829",
+    "nas_ciphertext_component_count": 78,
+    "nas_ciphertext_bytes": 597836660,
+    "nas_receipt_sha256": "bb26ef207ee2bbd077d3e5a16d0e3e79ff9fcb1e456ba9deb1a6d797a39e48c4",
+    "nas_ciphertext_independent_restore_samples": 8,
+    "nas_image_encryption_structure": "AES256_DISKUTIL_VERIFIED",
+    "full_nas_decrypt_restore_test": "NOT_PERFORMED",
+    "mac_backup_agents_3": "DISABLED",
+    "new_candidate_agents": "STAGED_ONLY_NOT_INSTALLED",
+    "cloud_remote_integrity": "NOT_VERIFIED",
+    "v0_9_registry_in_v0_8_snapshot": false,
+    "source_files_changed": false,
+    "source_exclusion_gate": "PATTERN_BASED_NOT_COMPLETE_PROOF"
   }
 }
