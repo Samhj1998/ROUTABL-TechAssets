@@ -2,11 +2,11 @@ import AppKit
 import Foundation
 import ServiceManagement
 
-let plist = "com.routabl.assetbackup.native.v02.plist"
+let plist = "com.routabl.assetbackup.native.safe.plist"
 let service = SMAppService.agent(plistName: plist)
 
 if CommandLine.arguments.contains("--status") {
-    print("ROUTABL_NATIVE_V02_SERVICE_STATUS=\(service.status)")
+    print("ROUTABL_NATIVE_SAFE_SERVICE_STATUS=\(service.status)")
     print("AUTOMATIC_BACKUP_APPROVED=false")
     exit(0)
 }
@@ -21,7 +21,7 @@ final class Manager: NSObject, NSApplicationDelegate {
         window=NSWindow(contentRect:size,
                         styleMask:[.titled,.closable,.miniaturizable],
                         backing:.buffered,defer:false)
-        window.title="라우터블 백업 자동실행 준비 v0.2"
+        window.title="라우터블 백업 권한·안전관리 v0.3"
         window.center()
         window.isReleasedWhenClosed=false
         let panel=NSView(frame:size)
@@ -38,8 +38,8 @@ final class Manager: NSObject, NSApplicationDelegate {
         panel.addSubview(status)
 
         let explanation=NSTextField(wrappingLabelWithString:
-            "1차 관문은 4:30 단발 진단 전용입니다. 실제 백업을 실행하는 승인 파일은 생성되지 않았습니다. " +
-            "macOS 권한·SSD·NAS·복원 이미지 마운트 상태를 확인한 뒤, 추후 별도 승인과 실환경 검증으로 운영을 전환합니다.")
+            "권한 승인 전까지 자동 백업은 시작되지 않습니다. 미승인 상태에서는 NAS 접근 자체를 시도하지 않습니다. " +
+            "최초 SSD·NAS 접근은 사용자 승인이 필요할 수 있습니다. 기존 v0.2 예약은 비활성화했습니다.")
         explanation.font=NSFont.systemFont(ofSize:13)
         explanation.textColor = .secondaryLabelColor
         explanation.frame=NSRect(x:30,y:417,width:740,height:61)
@@ -47,8 +47,8 @@ final class Manager: NSObject, NSApplicationDelegate {
 
         var offset:CGFloat=29
         for (text,action,width) in [
-            ("안전 진단",#selector(runProbe) as Selector,CGFloat(135)),
-            ("진단 에이전트 등록",#selector(registerAgent) as Selector,CGFloat(190)),
+            ("로컬 안전 진단",#selector(runProbe) as Selector,CGFloat(135)),
+            ("안전 에이전트 등록",#selector(registerAgent) as Selector,CGFloat(190)),
             ("등록 해제",#selector(unregisterAgent) as Selector,CGFloat(125)),
             ("등록 상태",#selector(checkStatus) as Selector,CGFloat(122)),
             ("macOS 설정",#selector(showSettings) as Selector,CGFloat(145))
@@ -84,8 +84,8 @@ final class Manager: NSObject, NSApplicationDelegate {
         let state=String(describing:service.status)
         status.stringValue="LaunchAgent 등록 상태: \(state) · 실제 백업 승인 파일 없음"
         report.string="현재: \(state)\n\n" +
-            "안전 진단을 누르면 Swift 네이티브 파일 접근 검사를 실행합니다.\n" +
-            "진단 에이전트를 등록하더라도 기본 상태는 DISARMED이며 백업은 실행하지 않습니다.\n"
+            "로컬 로컬 안전 진단은 NAS·SSD 접근을 시도하지 않습니다.\n" +
+            "승인 파일이 없으면 등록돼도 NAS에 접근하지 않고 종료합니다.\n"
     }
     @objc func checkStatus() {updateRegistrationStatus()}
     @objc func showSettings() {SMAppService.openSystemSettingsLoginItems()}
@@ -93,7 +93,7 @@ final class Manager: NSObject, NSApplicationDelegate {
         let helperPath=Bundle.main.bundleURL.appendingPathComponent("Contents/MacOS/\(helper)")
         let task=Process()
         task.executableURL=helperPath
-        task.arguments=["--probe"]
+        task.arguments=["--local-probe"]
         task.standardInput=FileHandle.nullDevice
         let out=Pipe()
         task.standardOutput=out
@@ -105,25 +105,31 @@ final class Manager: NSObject, NSApplicationDelegate {
             let text=String(data:data,encoding:.utf8) ?? "결과를 읽을 수 없습니다."
             report.string=text
             let good=task.terminationStatus==0 &&
-                    text.contains("PASS_NATIVE_USER_CONTEXT_ONLY")
+                    text.contains("LOCAL_SAFE_ACCESS_OK")
             status.stringValue=good
-                    ? "읽기 전용 진단 통과 · 실제 launchd 권한은 미검증"
+                    ? "로컬 진단 통과 · NAS 권한 별도 승인 필요"
                     : "읽기 전용 진단 실패 · 백업 활성화 금지"
         } catch {
             status.stringValue="진단 도구 실행 실패 · 백업 활성화 금지"
         }
     }
     @objc func registerAgent() {
+        let policy=URL(fileURLWithPath:"/Users/yongho/Library/Application Support/ROUTABL-AssetBackup/approval_v01.json")
+        if FileManager.default.fileExists(atPath:policy.path) {
+            status.stringValue="실제 백업 승인 파일 존재 · 새 에이전트 등록 중단"
+            report.string="승인 파일이 존재하므로 미검증 에이전트를 등록하지 않습니다."
+            return
+        }
         let alert=NSAlert()
-        alert.messageText="진단 전용 백그라운드 작업만 등록할까요?"
-        alert.informativeText="기본 비활성화 상태로 매일 오전 4:30 한 번만 접근 진단을 실행합니다. 실제 백업은 수행하지 않습니다. 등록 이후 macOS가 추가 승인을 요청할 수 있습니다."
+        alert.messageText="미승인 안전 에이전트를 등록할까요?"
+        alert.informativeText="오전 4:30 한 번 실행하지만 승인 파일이 없으면 NAS에 접근하지 않고 종료합니다. 실제 자동 백업은 별도 승인과 검증 후 활성화합니다."
         alert.alertStyle = .warning
-        alert.addButton(withTitle:"진단 에이전트 등록")
+        alert.addButton(withTitle:"안전 에이전트 등록")
         alert.addButton(withTitle:"취소")
         guard alert.runModal() == .alertFirstButtonReturn else {return}
         do {
             try service.register()
-            report.string="진단 전용 등록 요청 완료. 시스템 설정에서 백그라운드 허용 상태를 확인하세요."
+            report.string="미승인 안전 에이전트 등록 요청 완료. 시스템 설정에서 상태를 확인하세요."
         } catch {
             report.string="등록 요청 실패. 서비스 등록 상태 및 macOS 승인 여부를 확인하세요.\n오류 분류: \(type(of:error))"
         }
@@ -131,14 +137,14 @@ final class Manager: NSObject, NSApplicationDelegate {
     }
     @objc func unregisterAgent() {
         let alert=NSAlert()
-        alert.messageText="라우터블 진단 에이전트를 등록 해제할까요?"
+        alert.messageText="라우터블 안전 에이전트 등록을 해제할까요?"
         alert.informativeText="라우터블 백업의 기존 성공 보관본이나 암호화 이미지는 변경하지 않습니다."
         alert.addButton(withTitle:"등록 해제")
         alert.addButton(withTitle:"취소")
         guard alert.runModal() == .alertFirstButtonReturn else {return}
         do {
             try service.unregister()
-            report.string="진단 에이전트 등록 해제 요청 완료"
+            report.string="안전 에이전트 등록 해제 요청 완료"
         } catch {
             report.string="등록 해제 오류. 시스템 설정을 확인해 주세요."
         }

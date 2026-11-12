@@ -6,21 +6,21 @@
 	<dict/>
 	<key>files2</key>
 	<dict>
-		<key>Library/LaunchAgents/com.routabl.assetbackup.native.v02.plist</key>
+		<key>Library/LaunchAgents/com.routabl.assetbackup.native.safe.plist</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			g5yDuAujxBkwAfQTsbFxNIPCCLWMflEBcuCtnpF4oDs=
+			ogSgRWOOiuVke3YWVobU1ngZDo7Du2h3XHAs6hFN9f4=
 			</data>
 		</dict>
 		<key>MacOS/ROUTABLBackupAgent</key>
 		<dict>
 			<key>cdhash</key>
 			<data>
-			H750ou0jvQDVUm/AzoBe0UdlM2E=
+			DyToEJbBNhORoE7TYHhpao+BuZo=
 			</data>
 			<key>requirement</key>
-			<string>cdhash H"1fbe74a2ed23bd00d5526fc0ce805ed147653361"</string>
+			<string>cdhash H"0f24e81096c1361391a04ed36078696a8f81b99a"</string>
 		</dict>
 	</dict>
 	<key>rules</key>
