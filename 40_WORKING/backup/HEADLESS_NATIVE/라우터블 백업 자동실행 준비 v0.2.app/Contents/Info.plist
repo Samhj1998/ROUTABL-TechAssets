@@ -3,19 +3,19 @@
 <plist version="1.0">
 <dict>
 	<key>CFBundleDisplayName</key>
-	<string>라우터블 백업 진단</string>
+	<string>라우터블 자동 백업 관리</string>
 	<key>CFBundleExecutable</key>
-	<string>RoutablBackupDiagnosticApp</string>
+	<string>ROUTABLBackupManager</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.routabl.assetbackup.diagnostic.v01</string>
+	<string>com.routabl.assetbackup.manager.v02</string>
 	<key>CFBundleName</key>
-	<string>라우터블 기술자산 백업 진단</string>
+	<string>ROUTABL Backup Manager</string>
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>0.1</string>
+	<string>0.2</string>
 	<key>CFBundleVersion</key>
-	<string>1</string>
+	<string>2</string>
 	<key>LSMinimumSystemVersion</key>
 	<string>13.0</string>
 	<key>NSHighResolutionCapable</key>
