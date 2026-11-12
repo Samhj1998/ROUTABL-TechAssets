@@ -1,7 +1,7 @@
 {
-  "schema_version": "0.17",
-  "captured_at_kst": "2026-11-05T21:47:10+09:00",
-  "scope": "120_OFFICIAL_CHATGPT_EXPORT_RAW_SEPARATELY_PRESERVED_METADATA_REGISTERED_OFFSITE_PENDING",
+  "schema_version": "0.18",
+  "captured_at_kst": "2026-11-05T21:50:28+09:00",
+  "scope": "120_EXPORT_OFFICIAL_CHAT_SOURCE_AVAILABLE__LIBRARY_TEXT_SAMPLE_2OF2__COMPLETE_LIBRARY_BYTES_PENDING",
   "registry_mode": "local-only security classification and search metadata",
   "existing_index_baseline": {
     "sqlite_integrity": "ok",
@@ -1505,6 +1505,23 @@
       "original_file_unchanged": true,
       "provenance_status": "DERIVED_FROM_OWNER_EXPORT_AND_UPLOADED_PDF",
       "registry_added_in": "v0.17"
+    },
+    {
+      "asset_id": "ASSET-120-EXPORT-LIBRARY-CONTENT-CROSSWALK-V02",
+      "title": "Library original text to ChatGPT official export .dat content crosswalk",
+      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_OFFICIAL_CHATGPT_EXPORT_20261105_v01/LIBRARY_CONTENT_CROSSWALK_ADDENDUM_v0.2.md",
+      "bytes": 2208,
+      "sha256": "3fa566e151f765beb0105a5053bd183e35c70d04f4a64ec10b5089149450886b",
+      "mtime_utc": "2026-11-05T12:50:01.371048+00:00",
+      "source_system": "DERIVED_AUDIT_CONTENT_CROSSWALK",
+      "source_chat_number": "120-1",
+      "observation": "Two pre-existing Library Markdown documents had unique excerpts found within official .dat members; full byte coverage not confirmed",
+      "execution_validation": "TWO_LIBRARY_EXCERPTS_FOUND_IN_EXPORT_FILE_PAYLOADS_NOT_SHA_EQUIVALENCE",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "YES_METADATA_ONLY",
+      "original_file_unchanged": true,
+      "provenance_status": "PARTIAL_CONTENT_CROSSWALK",
+      "registry_added_in": "v0.18"
     }
   ],
   "unresolved": [
@@ -1702,7 +1719,7 @@
       "issue": "Actual Android app UI display not field-tested; original failed chat tool trace not archived."
     }
   ],
-  "supersedes": "asset_manifest_v0.16.json (immutable prior retained)",
+  "supersedes": "asset_manifest_v0.17.json (immutable prior retained)",
   "library_crosswalk": [
     {
       "asset_id": "TA-CASE-20261102-01",
@@ -2444,6 +2461,12 @@
       "grade": "P3",
       "policy": "private_local_and_aes_nas",
       "classification_scope": "METADATA_ONLY_DERIVED_AUDIT"
+    },
+    {
+      "asset_id": "ASSET-120-EXPORT-LIBRARY-CONTENT-CROSSWALK-V02",
+      "grade": "P3",
+      "policy": "private_local_and_aes_nas",
+      "classification_scope": "DERIVED_AUDIT_CONTENT_CROSSWALK"
     }
   ],
   "search_v1_3": {
@@ -2915,6 +2938,9 @@
       "ASSET-120-EXPORT-20261105-LIBRARY_COMPARISON",
       "ASSET-120-EXPORT-20261105-LARGE_EXPORT_BACKUP_GATE"
     ],
-    "previous_manifest_sha256": "7b47fc552ce2edd3a44f0a7f93b52deb8309dfc89229c80a9c7592ddbc8ba96b"
+    "previous_manifest_sha256": "7b47fc552ce2edd3a44f0a7f93b52deb8309dfc89229c80a9c7592ddbc8ba96b",
+    "library_two_text_samples_exact_match_in_dat": true,
+    "library_two_text_samples_complete_binary_sha_equivalence": "NOT_VERIFIED",
+    "library_content_addendum_path": "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_OFFICIAL_CHATGPT_EXPORT_20261105_v01/LIBRARY_CONTENT_CROSSWALK_ADDENDUM_v0.2.md"
   }
 }
