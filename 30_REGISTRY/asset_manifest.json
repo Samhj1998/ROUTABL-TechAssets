@@ -1,7 +1,7 @@
 {
-  "schema_version": "0.21",
-  "captured_at_kst": "2026-11-06T08:20:12+09:00",
-  "scope": "CHATGPT_EXPORT_20261105_SAFE_UNZIP_AND_OFFLINE_SAFARI_GUI_327_CHATS",
+  "schema_version": "0.22",
+  "captured_at_kst": "2026-11-06T11:21:31+09:00",
+  "scope": "CHATGPT_20261105_ARCHIVE_PROJECT_TOPIC_CLASSIFICATION_GUI_V02",
   "registry_mode": "local-only security classification and search metadata",
   "existing_index_baseline": {
     "sqlite_integrity": "ok",
@@ -1797,6 +1797,142 @@
       "original_file_unchanged": true,
       "provenance_status": "DIRECT_LOCAL_EXPORT_EXTRACTION_AND_GUI_BUILD",
       "registry_added_in": "v0.21"
+    },
+    {
+      "asset_id": "ASSET-120-CHATGPT-GUI-GROUP-V02-GROUP-BUILDER",
+      "title": "ChatGPT 327건 프로젝트별 추천 분류 생성기",
+      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_OFFICIAL_CHATGPT_EXPORT_20261105_v01/build_chatgpt_project_groups_v02.py",
+      "bytes": 7590,
+      "sha256": "f011770bf16f5884f9fd1f2b39631de2b20f4620a6a1ebcea6a96f06fe82f094",
+      "mtime_utc": "2026-11-06T02:14:10.024348+00:00",
+      "source_system": "PRIVATE_LOCAL_CHATGPT_PROJECT_GROUPING_GUI_V02_20261106",
+      "source_chat_number": "120-1",
+      "observation": "2026-11-05 ChatGPT official export; inferred groups only, no original project membership in data. Kept originals and v01 GUI.",
+      "execution_validation": "CHROME_HEADLESS_ALL_327_FILTER_ROUTABL_83_SEARCH_ARCHIVED_SUCCESS_USER_SAFARI_VISUAL_PENDING",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "REFERENCED_ONLY_PRIVATE_GUI_LOCAL",
+      "original_file_unchanged": true,
+      "provenance_status": "DIRECT_CHATGPT_OFFICIAL_EXPORT_GROUPING_GENERATION",
+      "registry_added_in": "v0.22"
+    },
+    {
+      "asset_id": "ASSET-120-CHATGPT-GUI-GROUP-V02-GROUP-RECEIPT",
+      "title": "ChatGPT 프로젝트 분류 v0.2 검증 영수증",
+      "observed_original_path": "/Users/yongho/ROUTABL-ChatGPT-Archive/2026-11-05/20_AUDIT/gui_project_classification_v02.json",
+      "bytes": 877,
+      "sha256": "e58b2dd2dcca09793a40a36a756bda72857f8d730ce6c27d415d3edce71e7b13",
+      "mtime_utc": "2026-11-06T02:14:25.622675+00:00",
+      "source_system": "PRIVATE_LOCAL_CHATGPT_PROJECT_GROUPING_GUI_V02_20261106",
+      "source_chat_number": "120-1",
+      "observation": "2026-11-05 ChatGPT official export; inferred groups only, no original project membership in data. Kept originals and v01 GUI.",
+      "execution_validation": "CHROME_HEADLESS_ALL_327_FILTER_ROUTABL_83_SEARCH_ARCHIVED_SUCCESS_USER_SAFARI_VISUAL_PENDING",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "REFERENCED_ONLY_PRIVATE_GUI_LOCAL",
+      "original_file_unchanged": true,
+      "provenance_status": "DIRECT_CHATGPT_OFFICIAL_EXPORT_GROUPING_GENERATION",
+      "registry_added_in": "v0.22"
+    },
+    {
+      "asset_id": "ASSET-120-CHATGPT-GUI-GROUP-V02-GROUP-JSON",
+      "title": "채팅 ID 기반 프로젝트 분류·근거·보관 상태 JSON",
+      "observed_original_path": "/Users/yongho/ROUTABL-ChatGPT-Archive/2026-11-05/11_GUI_PROJECTS_V02/classification.json",
+      "bytes": 113089,
+      "sha256": "815b1b485d4cc3ff2e2d7cdc9ead54b6c7dff596e48f2d7768093dcecd0ccdf0",
+      "mtime_utc": "2026-11-06T02:14:25.615191+00:00",
+      "source_system": "PRIVATE_LOCAL_CHATGPT_PROJECT_GROUPING_GUI_V02_20261106",
+      "source_chat_number": "120-1",
+      "observation": "2026-11-05 ChatGPT official export; inferred groups only, no original project membership in data. Kept originals and v01 GUI.",
+      "execution_validation": "CHROME_HEADLESS_ALL_327_FILTER_ROUTABL_83_SEARCH_ARCHIVED_SUCCESS_USER_SAFARI_VISUAL_PENDING",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "REFERENCED_ONLY_PRIVATE_GUI_LOCAL",
+      "original_file_unchanged": true,
+      "provenance_status": "DIRECT_CHATGPT_OFFICIAL_EXPORT_GROUPING_GENERATION",
+      "registry_added_in": "v0.22"
+    },
+    {
+      "asset_id": "ASSET-120-CHATGPT-GUI-GROUP-V02-GROUP-JS",
+      "title": "프로젝트 분류를 브라우저에 전달하는 로컬 데이터",
+      "observed_original_path": "/Users/yongho/ROUTABL-ChatGPT-Archive/2026-11-05/11_GUI_PROJECTS_V02/project-data.js",
+      "bytes": 93363,
+      "sha256": "13d0419a4e0d35ffda36728ed4b5fe185ce4bdc088cadb98fdf331f9cdf597fc",
+      "mtime_utc": "2026-11-06T02:14:25.619607+00:00",
+      "source_system": "PRIVATE_LOCAL_CHATGPT_PROJECT_GROUPING_GUI_V02_20261106",
+      "source_chat_number": "120-1",
+      "observation": "2026-11-05 ChatGPT official export; inferred groups only, no original project membership in data. Kept originals and v01 GUI.",
+      "execution_validation": "CHROME_HEADLESS_ALL_327_FILTER_ROUTABL_83_SEARCH_ARCHIVED_SUCCESS_USER_SAFARI_VISUAL_PENDING",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "REFERENCED_ONLY_PRIVATE_GUI_LOCAL",
+      "original_file_unchanged": true,
+      "provenance_status": "DIRECT_CHATGPT_OFFICIAL_EXPORT_GROUPING_GENERATION",
+      "registry_added_in": "v0.22"
+    },
+    {
+      "asset_id": "ASSET-120-CHATGPT-GUI-GROUP-V02-GROUP-HTML",
+      "title": "프로젝트 선택형 GUI v0.2 시작 화면",
+      "observed_original_path": "/Users/yongho/ROUTABL-ChatGPT-Archive/2026-11-05/11_GUI_PROJECTS_V02/index.html",
+      "bytes": 4775,
+      "sha256": "a553073890eeaab0150dbe292341070c90f35d758390fe40a806608514fb5193",
+      "mtime_utc": "2026-11-06T02:17:45.616174+00:00",
+      "source_system": "PRIVATE_LOCAL_CHATGPT_PROJECT_GROUPING_GUI_V02_20261106",
+      "source_chat_number": "120-1",
+      "observation": "2026-11-05 ChatGPT official export; inferred groups only, no original project membership in data. Kept originals and v01 GUI.",
+      "execution_validation": "CHROME_HEADLESS_ALL_327_FILTER_ROUTABL_83_SEARCH_ARCHIVED_SUCCESS_USER_SAFARI_VISUAL_PENDING",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "REFERENCED_ONLY_PRIVATE_GUI_LOCAL",
+      "original_file_unchanged": true,
+      "provenance_status": "DIRECT_CHATGPT_OFFICIAL_EXPORT_GROUPING_GENERATION",
+      "registry_added_in": "v0.22"
+    },
+    {
+      "asset_id": "ASSET-120-CHATGPT-GUI-GROUP-V02-GROUP-APP",
+      "title": "프로젝트별 검색·분류 변경·JSON 저장 웹 코드",
+      "observed_original_path": "/Users/yongho/ROUTABL-ChatGPT-Archive/2026-11-05/11_GUI_PROJECTS_V02/app.js",
+      "bytes": 8992,
+      "sha256": "b78bf39f0fe0ffe14301a87cd8287301770a979f2d452cec12a246d0900dc98a",
+      "mtime_utc": "2026-11-06T02:17:04.283477+00:00",
+      "source_system": "PRIVATE_LOCAL_CHATGPT_PROJECT_GROUPING_GUI_V02_20261106",
+      "source_chat_number": "120-1",
+      "observation": "2026-11-05 ChatGPT official export; inferred groups only, no original project membership in data. Kept originals and v01 GUI.",
+      "execution_validation": "CHROME_HEADLESS_ALL_327_FILTER_ROUTABL_83_SEARCH_ARCHIVED_SUCCESS_USER_SAFARI_VISUAL_PENDING",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "REFERENCED_ONLY_PRIVATE_GUI_LOCAL",
+      "original_file_unchanged": true,
+      "provenance_status": "DIRECT_CHATGPT_OFFICIAL_EXPORT_GROUPING_GENERATION",
+      "registry_added_in": "v0.22"
+    },
+    {
+      "asset_id": "ASSET-120-CHATGPT-GUI-GROUP-V02-GROUP-STYLE",
+      "title": "프로젝트별 GUI 확장 CSS",
+      "observed_original_path": "/Users/yongho/ROUTABL-ChatGPT-Archive/2026-11-05/11_GUI_PROJECTS_V02/project-style.css",
+      "bytes": 3798,
+      "sha256": "266d29aa907dd17ae8816717dd369f293732a416026ce36e04b8931753ad08e2",
+      "mtime_utc": "2026-11-06T02:15:49.342871+00:00",
+      "source_system": "PRIVATE_LOCAL_CHATGPT_PROJECT_GROUPING_GUI_V02_20261106",
+      "source_chat_number": "120-1",
+      "observation": "2026-11-05 ChatGPT official export; inferred groups only, no original project membership in data. Kept originals and v01 GUI.",
+      "execution_validation": "CHROME_HEADLESS_ALL_327_FILTER_ROUTABL_83_SEARCH_ARCHIVED_SUCCESS_USER_SAFARI_VISUAL_PENDING",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "REFERENCED_ONLY_PRIVATE_GUI_LOCAL",
+      "original_file_unchanged": true,
+      "provenance_status": "DIRECT_CHATGPT_OFFICIAL_EXPORT_GROUPING_GENERATION",
+      "registry_added_in": "v0.22"
+    },
+    {
+      "asset_id": "ASSET-120-CHATGPT-GUI-GROUP-V02-GROUP-AUDIT",
+      "title": "프로젝트 분류 v0.2 구축·검증 보고서",
+      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_OFFICIAL_CHATGPT_EXPORT_20261105_v01/CHATGPT_ARCHIVE_PROJECT_GROUPS_GUI_V02_ACCEPTANCE_20261106_v0.1.md",
+      "bytes": 4395,
+      "sha256": "8416abb336862eb9d126ac25feede6d050cd2c5cda2d028a1fc644b3799844b5",
+      "mtime_utc": "2026-11-06T02:20:56.978343+00:00",
+      "source_system": "PRIVATE_LOCAL_CHATGPT_PROJECT_GROUPING_GUI_V02_20261106",
+      "source_chat_number": "120-1",
+      "observation": "2026-11-05 ChatGPT official export; inferred groups only, no original project membership in data. Kept originals and v01 GUI.",
+      "execution_validation": "CHROME_HEADLESS_ALL_327_FILTER_ROUTABL_83_SEARCH_ARCHIVED_SUCCESS_USER_SAFARI_VISUAL_PENDING",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "REFERENCED_ONLY_PRIVATE_GUI_LOCAL",
+      "original_file_unchanged": true,
+      "provenance_status": "DIRECT_CHATGPT_OFFICIAL_EXPORT_GROUPING_GENERATION",
+      "registry_added_in": "v0.22"
     }
   ],
   "unresolved": [
@@ -1994,7 +2130,7 @@
       "issue": "Actual Android app UI display not field-tested; original failed chat tool trace not archived."
     }
   ],
-  "supersedes": "asset_manifest_v0.20.json (immutable previous preserved)",
+  "supersedes": "asset_manifest_v0.21.json (immutable previous preserved)",
   "library_crosswalk": [
     {
       "asset_id": "TA-CASE-20261102-01",
@@ -2838,6 +2974,54 @@
       "grade": "P3",
       "policy": "private_local_only_FileVault_no_plaintext_remote_storage",
       "classification_scope": "CHATGPT_GUI_USER_PRIVATE_ARCHIVE"
+    },
+    {
+      "asset_id": "ASSET-120-CHATGPT-GUI-GROUP-V02-GROUP-BUILDER",
+      "grade": "P3",
+      "policy": "private_local_FileVault_no_plaintext_remote_storage",
+      "classification_scope": "LOCAL_CHATGPT_EXPORT_GUI_PROJECT_INFERENCE"
+    },
+    {
+      "asset_id": "ASSET-120-CHATGPT-GUI-GROUP-V02-GROUP-RECEIPT",
+      "grade": "P3",
+      "policy": "private_local_FileVault_no_plaintext_remote_storage",
+      "classification_scope": "LOCAL_CHATGPT_EXPORT_GUI_PROJECT_INFERENCE"
+    },
+    {
+      "asset_id": "ASSET-120-CHATGPT-GUI-GROUP-V02-GROUP-JSON",
+      "grade": "P3",
+      "policy": "private_local_FileVault_no_plaintext_remote_storage",
+      "classification_scope": "LOCAL_CHATGPT_EXPORT_GUI_PROJECT_INFERENCE"
+    },
+    {
+      "asset_id": "ASSET-120-CHATGPT-GUI-GROUP-V02-GROUP-JS",
+      "grade": "P3",
+      "policy": "private_local_FileVault_no_plaintext_remote_storage",
+      "classification_scope": "LOCAL_CHATGPT_EXPORT_GUI_PROJECT_INFERENCE"
+    },
+    {
+      "asset_id": "ASSET-120-CHATGPT-GUI-GROUP-V02-GROUP-HTML",
+      "grade": "P3",
+      "policy": "private_local_FileVault_no_plaintext_remote_storage",
+      "classification_scope": "LOCAL_CHATGPT_EXPORT_GUI_PROJECT_INFERENCE"
+    },
+    {
+      "asset_id": "ASSET-120-CHATGPT-GUI-GROUP-V02-GROUP-APP",
+      "grade": "P3",
+      "policy": "private_local_FileVault_no_plaintext_remote_storage",
+      "classification_scope": "LOCAL_CHATGPT_EXPORT_GUI_PROJECT_INFERENCE"
+    },
+    {
+      "asset_id": "ASSET-120-CHATGPT-GUI-GROUP-V02-GROUP-STYLE",
+      "grade": "P3",
+      "policy": "private_local_FileVault_no_plaintext_remote_storage",
+      "classification_scope": "LOCAL_CHATGPT_EXPORT_GUI_PROJECT_INFERENCE"
+    },
+    {
+      "asset_id": "ASSET-120-CHATGPT-GUI-GROUP-V02-GROUP-AUDIT",
+      "grade": "P3",
+      "policy": "private_local_FileVault_no_plaintext_remote_storage",
+      "classification_scope": "LOCAL_CHATGPT_EXPORT_GUI_PROJECT_INFERENCE"
     }
   ],
   "search_v1_3": {
@@ -3275,6 +3459,11 @@
       "id": "B-15",
       "source": "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_OFFICIAL_CHATGPT_EXPORT_20261105_v01/CHATGPT_EXPORT_GUI_READABLE_ARCHIVE_ACCEPTANCE_20261106_v0.1.md",
       "status": "OPEN_USER_SAFARI_READABILITY_AND_97_ATTACHMENT_REFERENCES_REVIEW"
+    },
+    {
+      "id": "B-16",
+      "source": "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_OFFICIAL_CHATGPT_EXPORT_20261105_v01/CHATGPT_ARCHIVE_PROJECT_GROUPS_GUI_V02_ACCEPTANCE_20261106_v0.1.md",
+      "status": "OPEN_USER_GUI_REVIEW_AND_PROJECT_MEMBERSHIP_CONFIRMATION"
     }
   ],
   "addressbook_registration_reuse_v016": {
@@ -3394,6 +3583,43 @@
       "ASSET-120-CHATGPT-GUI-20261106-GUI-SCRIPT",
       "ASSET-120-CHATGPT-GUI-20261106-GUI-SEARCH",
       "ASSET-120-CHATGPT-GUI-20261106-GUI-README"
+    ]
+  },
+  "chatgpt_gui_project_groups_v022": {
+    "source_export_sha256": "06efc5c5c787d59b7d1bd62566974563416b29792bb17ac318335475884c5553",
+    "total_chats": 327,
+    "archived_on_export": 162,
+    "regular_on_export": 165,
+    "group_counts": {
+      "routabl": 83,
+      "digital": 6,
+      "chatgpt": 24,
+      "checklist": 5,
+      "digitopia": 4,
+      "devices": 42,
+      "review": 163
+    },
+    "true_project_membership_not_in_export": true,
+    "classification_policy": "EXPLICIT_TITLE_KEYWORD_INFERENCE_REVIEW_ON_AMBIGUOUS",
+    "manual_override": "BROWSER_LOCAL_STORAGE_IF_SUPPORTED_AND_JSON_EXPORT_IMPORT",
+    "gui_entry": "/Users/yongho/ROUTABL-ChatGPT-Archive/2026-11-05/11_GUI_PROJECTS_V02/index.html",
+    "desktop_shortcut": "/Users/yongho/Desktop/라우터블 ChatGPT 아카이브.html",
+    "prior_gui_entry": "/Users/yongho/ROUTABL-ChatGPT-Archive/2026-11-05/10_GUI_VIEWER/index.html",
+    "browser_smoke": "ALL_327_PASS_ROUTABL_83_PASS_ARCHIVED_CHAT_SEARCH_PASS_120_DETAIL_PASS",
+    "user_visual_review": "PENDING",
+    "original_zip_modified": false,
+    "legacy_gui_modified": false,
+    "library_folder_names_recovered": false,
+    "previous_manifest_sha256": "5daf11b02fa0e1ab4f6bfadcb1970b5e623503ef6e9cbab2e08fa015a1a853da",
+    "asset_ids": [
+      "ASSET-120-CHATGPT-GUI-GROUP-V02-GROUP-BUILDER",
+      "ASSET-120-CHATGPT-GUI-GROUP-V02-GROUP-RECEIPT",
+      "ASSET-120-CHATGPT-GUI-GROUP-V02-GROUP-JSON",
+      "ASSET-120-CHATGPT-GUI-GROUP-V02-GROUP-JS",
+      "ASSET-120-CHATGPT-GUI-GROUP-V02-GROUP-HTML",
+      "ASSET-120-CHATGPT-GUI-GROUP-V02-GROUP-APP",
+      "ASSET-120-CHATGPT-GUI-GROUP-V02-GROUP-STYLE",
+      "ASSET-120-CHATGPT-GUI-GROUP-V02-GROUP-AUDIT"
     ]
   }
 }
