@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""ROUTABL AssetSearch v1.6 scanner: current Mac projects + TechAssets guide/audit docs.
+"""ROUTABL AssetSearch v1.7 scanner: current Mac projects + TechAssets guide/audit docs.
 Derived from v1.3 (unchanged). Retired 2026-11-11 worktrees are no longer required.
 Never runs source code, sends network requests, writes original files, or follows symlinks.
 New independent DB; prior v1.1/v1.2 scripts/databases remain unchanged.
@@ -10,11 +10,11 @@ from pathlib import Path
 STORE = Path.home() / "Library/Application Support/ROUTABL-AssetSearch"
 ROOT = Path.home() / "StudioProjects"
 PREVIOUS = STORE / "assets_v1_2.sqlite"
-INDEX = STORE / "assets_v1_6_scanner_output.sqlite"
+INDEX = STORE / "assets_v1_7_scanner_output.sqlite"
 TA_ROOT = Path.home() / "ROUTABL-TechAssets"
 TA_DIRS = ("00_GUIDE", "60_AUDIT")
 TA_EXT = {".md", ".txt"}
-TA_CARRIER = "TECHASSETS_DOCS_ALLOWLIST_V1_6"
+TA_CARRIER = "TECHASSETS_DOCS_ALLOWLIST_V1_7"
 LEGACY_ENGINE = STORE / "routabl_assetsearch_v1_1.py"
 PROJECTS = (
     "DISPATCH-One-Android",          # 기사앱 (고객앱은 customer-android 하위)
@@ -22,6 +22,7 @@ PROJECTS = (
     "DailyInspection-Android",
     "ROUTIVEL-Firebase-Migration",
     "ROUTABL-Analytics-Android",     # v1.6 추가
+    "ROUTABL-CustomerRegistration-Android",  # v1.7 추가 (고객등록앱)
 )
 # 2026-11-11 정리로 삭제·패치 보관된 옛 작업본. v1.6은 더 이상 요구하지 않음.
 RETIRED_PROJECTS = ("ROUTIVEL-Customer-Android", "ROUTABL-Control-Public-20261020",
@@ -89,12 +90,12 @@ def protect_or_redact(path, extension, size):
 
 def build():
     if INDEX.exists():
-        raise RuntimeError("V1_6_EXISTS_REFUSE_OVERWRITE")
+        raise RuntimeError("V1_7_EXISTS_REFUSE_OVERWRITE")
     if not PREVIOUS.is_file() or not LEGACY_ENGINE.is_file():
         raise RuntimeError("PREVIOUS_INDEX_OR_ENGINE_UNAVAILABLE")
-    temp = STORE / "assets_v1_6.sqlite.building"
+    temp = STORE / "assets_v1_7.sqlite.building"
     if temp.exists():
-        raise RuntimeError("V1_6_TEMP_EXISTS_REFUSE_OVERWRITE")
+        raise RuntimeError("V1_7_TEMP_EXISTS_REFUSE_OVERWRITE")
     project_paths = []
     for name in PROJECTS:
         p = ROOT / name
@@ -227,7 +228,7 @@ def build():
     except Exception:
         if temp.exists(): temp.unlink()
         raise
-    print(json.dumps({"result": "SUCCESS", "version": "1.6", "techassets_doc_rows": ta_actual, "previous_rows": previous_rows,
+    print(json.dumps({"result": "SUCCESS", "version": "1.7", "techassets_doc_rows": ta_actual, "previous_rows": previous_rows,
                       "total_rows": rows, "mac_new_rows": expected,
                       "mac_prior_verified_rows": verified,
                       "scan_summary": dict(total), "project_counts": by_project,

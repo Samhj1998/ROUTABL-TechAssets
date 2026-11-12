@@ -1,0 +1,53 @@
+#!/bin/bash
+# 라우터블 기술자산 검색 v1.7 실행기
+# 1) 기술자산 작업 폴더의 v1.7 파일을 서비스 폴더에 설치(바뀐 경우만) — v1.6 파일은 건드리지 않음
+# 2) 로그인 때마다 자동으로 켜지도록 LaunchAgent 등록 (127.0.0.1:8771 전용, 쉬어도 꺼지지 않음)
+# 3) 준비되면 브라우저로 열기
+# 해제: launchctl bootout gui/$(id -u)/com.routabl.assetsearch.v17 && rm ~/Library/LaunchAgents/com.routabl.assetsearch.v17.plist
+S="$HOME/Library/Application Support/ROUTABL-AssetSearch"
+STAGE="$HOME/ROUTABL-TechAssets/40_WORKING/SEARCH_V1_7_20261112/v1_7"
+URL="http://127.0.0.1:8771/"
+LABEL="com.routabl.assetsearch.v17"
+AGENT="$HOME/Library/LaunchAgents/$LABEL.plist"
+LOG="$S/search_v1_7_launcher.log"
+mkdir -p "$S" && chmod 700 "$S"
+changed=0
+for f in routabl_search_v1_7_service.py routabl_assetsearch_v1_7_scanner.py; do
+  if [ -f "$STAGE/$f" ] && ! /usr/bin/cmp -s "$STAGE/$f" "$S/$f"; then
+    /usr/bin/install -m 600 "$STAGE/$f" "$S/$f" && changed=1 && echo "$(date '+%F %T') installed $f" >> "$LOG"
+  fi
+done
+if [ ! -f "$AGENT" ]; then
+  mkdir -p "$HOME/Library/LaunchAgents"
+  cat > "$AGENT" <<PLIST
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0"><dict>
+ <key>Label</key><string>$LABEL</string>
+ <key>ProgramArguments</key><array><string>/usr/bin/python3</string><string>-B</string><string>$S/routabl_search_v1_7_service.py</string><string>serve</string></array>
+ <key>WorkingDirectory</key><string>$S</string>
+ <key>EnvironmentVariables</key><dict><key>PYTHONDONTWRITEBYTECODE</key><string>1</string></dict>
+ <key>RunAtLoad</key><true/>
+ <key>KeepAlive</key><dict><key>SuccessfulExit</key><false/></dict>
+ <key>ThrottleInterval</key><integer>30</integer>
+ <key>StandardOutPath</key><string>$S/search_v1_7_service.log</string>
+ <key>StandardErrorPath</key><string>$S/search_v1_7_service.log</string>
+</dict></plist>
+PLIST
+  chmod 600 "$AGENT"
+  echo "$(date '+%F %T') LaunchAgent written" >> "$LOG"
+fi
+/bin/launchctl print "gui/$(id -u)/$LABEL" >/dev/null 2>&1 || /bin/launchctl bootstrap "gui/$(id -u)" "$AGENT" >> "$LOG" 2>&1
+if [ "$changed" = 1 ]; then
+  /bin/launchctl kickstart -k "gui/$(id -u)/$LABEL" >> "$LOG" 2>&1
+fi
+for i in $(seq 1 80); do
+  /usr/bin/curl -s -o /dev/null --max-time 1 "$URL" && break
+  sleep 0.25
+done
+if ! /usr/bin/curl -s -o /dev/null --max-time 1 "$URL"; then
+  # LaunchAgent가 막혀도 v1.6처럼 직접 켬
+  cd "$S" && PYTHONDONTWRITEBYTECODE=1 /usr/bin/nohup /usr/bin/python3 -B "$S/routabl_search_v1_7_service.py" serve >> "$LOG" 2>&1 &
+  for i in $(seq 1 60); do sleep 0.25; /usr/bin/curl -s -o /dev/null --max-time 1 "$URL" && break; done
+fi
+/usr/bin/open "$URL"

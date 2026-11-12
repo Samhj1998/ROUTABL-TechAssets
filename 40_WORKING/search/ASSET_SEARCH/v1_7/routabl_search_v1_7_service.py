@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""ROUTABL AssetSearch v1.5: accurate ranked local search and provenance views.
+"""ROUTABL AssetSearch v1.7: v1.6 + 고객등록앱 검색 + 재등록 자산(SHA 일치 우선) + Claude 제어용 읽기 API + 상시 실행.
 Separate from v1.4. Reuses its independently tested refresh/lifecycle guard.
 No source execution, no remote access, no automatic scheduled jobs.
 """
@@ -23,31 +23,59 @@ from typing import Any
 
 STORE = Path.home() / "Library/Application Support/ROUTABL-AssetSearch"
 PROJECT_ROOT = Path.home() / "StudioProjects"
-MANIFEST = Path.home() / "ROUTABL-TechAssets/30_REGISTRY/asset_manifest_v0.6.json"
+TA_ROOT = Path.home() / "ROUTABL-TechAssets"
+REGISTRY = TA_ROOT / "30_REGISTRY"
+MANIFEST_FALLBACK = REGISTRY / "asset_manifest_v0.6.json"
+
+def latest_manifest():
+    """v1.6: 가장 높은 버전의 등록부를 자동 선택. 실패하면 v0.6으로 되돌아감."""
+    best = None
+    for p in REGISTRY.glob("asset_manifest_v0.*.json"):
+        m = re.fullmatch(r"asset_manifest_v0\.(\d+)\.json", p.name)
+        if m and not p.is_symlink() and p.is_file():
+            n = int(m.group(1))
+            if best is None or n > best[0]:
+                best = (n, p)
+    return best[1] if best else MANIFEST_FALLBACK
+
+MANIFEST = latest_manifest()
 V14 = STORE / "routabl_search_v1_4_service.py"
-SERVICE = "ROUTABL_ASSET_SEARCH_V1_5"
-PORT = 8769
+SERVICE = "ROUTABL_ASSET_SEARCH_V1_7"
+PORT = 8771
 URL = "http://127.0.0.1:" + str(PORT)
-INDEX = STORE / "assets_v1_5.sqlite"
-BASELINE = STORE / "assets_v1_4.sqlite"
-PREVIOUS = STORE / "assets_v1_5.previous.sqlite"
+INDEX = STORE / "assets_v1_7.sqlite"
+# v1.6 시작 기준: NAS 기준선 v1_2(2,272행). 첫 새로 고침에서 현재 Mac 원본·문서를 더함.
+# (v1.5 색인에는 삭제된 옛 작업본이 있어 20% 감소 보호에 걸리므로 기준으로 쓰지 않음)
+BASELINE = STORE / "assets_v1_2.sqlite"
+SCANNER = STORE / "routabl_assetsearch_v1_7_scanner.py"
+PREVIOUS = STORE / "assets_v1_7.previous.sqlite"
 MAIN_PROJECTS = ("DISPATCH-One-Android", "ROUTABL-Senior-Driver",
-                 "ROUTIVEL-Customer-Android", "DailyInspection-Android",
-                 "ROUTIVEL-Firebase-Migration")
-PROJECTS = MAIN_PROJECTS + ("ROUTABL-Control-Public-20261020",
-  "ROUTABL-Integration-Audit-20261019", "ROUTABL-Dispatch-Search-20261019")
-SCOPE = {"all", "main", "variants", "nas"}
+                 "DailyInspection-Android", "ROUTIVEL-Firebase-Migration",
+                 "ROUTABL-Analytics-Android", "ROUTABL-CustomerRegistration-Android")
+PROJECTS = MAIN_PROJECTS
+TA_DIRS = ("00_GUIDE", "60_AUDIT")
+TA_CARRIER = "TECHASSETS_DOCS_ALLOWLIST_V1_7"
+SCOPE = {"all", "main", "docs", "variants", "nas"}
 ALIASES = {
     "정산": ("월간정산", "Settlement"),
     "시니어": ("Senior",),
     "기사앱": ("DISPATCH-One-Android",),
-    "고객앱": ("ROUTIVEL-Customer-Android",),
     "초성검색": ("SEARCH-01",),
     "고객등록": ("DATA-01", "cloud_access.py"),
     "주소등록": ("DATA-01", "cloud_access.py"),
     "취소상태": ("TransportStatusPolicy", "F1"),
     "완료 취소": ("TransportStatusPolicy", "transportStatusUndo"),
     "월간정산": ("MonthlySettlement", "월간정산"),
+    "분석앱": ("ROUTABL-Analytics-Android", "com.routivel.analytics"),
+    "고객앱": ("ROUTIVEL-Customer-Android", "customer-android"),
+    "공통코드": ("verifySharedHash", "SHARED_SOURCE"),
+    "해시검사": ("verifySharedHash",),
+    "읽기전용": ("verifyReadOnlyFirestore", "FirestoreReader"),
+    "인계": ("HANDOFF", "인계"),
+    "두AI": ("DW-01", "DUAL_AI"),
+    "분업": ("DW-01", "DUAL_AI"),
+    "고객등록앱": ("ROUTABL-CustomerRegistration-Android", "customerreg"),
+    "행정동": ("adminDong", "normalize_dongs"),
 }
 spec = importlib.util.spec_from_file_location("routabl_search_v14_core", V14)
 core = importlib.util.module_from_spec(spec)
@@ -58,19 +86,38 @@ core.ACTIVE = INDEX
 core.BASELINE = BASELINE
 core.PREVIOUS = PREVIOUS
 core.SERVICE = SERVICE
+core.SOURCE_ENGINE = SCANNER
 
 def resolve_crosswalk():
     data = json.loads(MANIFEST.read_text(encoding="utf-8"))
-    if data.get("schema_version") != "0.6":
+    expected = re.fullmatch(r"asset_manifest_v(0\.\d+)\.json", MANIFEST.name)
+    if not expected or data.get("schema_version") != expected.group(1):
         raise RuntimeError("UNEXPECTED_ASSET_REGISTER_VERSION")
     items = {}
+    # v1.6: 등록부 asset_files의 자산 ID도 연결 (SHA가 같을 때만 표시됨). GitHub/NAS 증거는 없음.
+    for item in data.get("asset_files", []):
+        p, sha = item.get("observed_original_path"), item.get("sha256")
+        if not p or not sha or len(str(sha)) != 64:
+            continue
+        p = Path(p)
+        for root, prefix in ((PROJECT_ROOT, "MAC::StudioProjects/"), (TA_ROOT, "TA::")):
+            try:
+                rel = p.relative_to(root).as_posix()
+            except ValueError:
+                continue
+            items.setdefault(prefix + rel, []).append({
+                "asset_id": item.get("asset_id"), "sha256": sha,
+                "github_repository": None, "github_file_path": None, "nas_copy": None,
+                "github_verified": False, "nas_verified": False,
+                "registry_version": data.get("schema_version")})
     for item in data.get("provenance_crosswalk", []):
         p = Path(item["mac_original_path"])
         try:
             rel = p.relative_to(PROJECT_ROOT).as_posix()
         except ValueError:
             continue
-        items["MAC::StudioProjects/" + rel] = {
+        items.setdefault("MAC::StudioProjects/" + rel, []).insert(0, {
+            "registry_version": data.get("schema_version"),
             "asset_id": item["asset_id"],
             "sha256": item["mac_sha256"],
             "github_repository": item.get("github_repository"),
@@ -78,12 +125,39 @@ def resolve_crosswalk():
             "nas_copy": item.get("nas_independent_copy_path"),
             "github_verified": item.get("github_remote_file_verified", "").startswith("YES_"),
             "nas_verified": item.get("nas_status") == "DIRECT_SOURCE_SHA256_MATCH",
-        }
+        })
     return items
 
+# v1.7: 같은 경로가 여러 번 등록되어도(파일 수정 후 재등록) 지금 파일과 SHA가 같은 등록을 씁니다.
+# v1.6은 경로마다 첫 등록만 써서, 재등록된 자산의 ID가 옛 SHA에 가려졌습니다.
 CROSSWALK = resolve_crosswalk()
 
+_REG_LOCK = threading.Lock()
+
+def reload_registry_if_newer():
+    """v1.7: 서비스가 계속 켜져 있으므로, 새 등록부(v0.N)가 생기면 다시 읽습니다."""
+    global MANIFEST, CROSSWALK
+    latest = latest_manifest()
+    if latest != MANIFEST:
+        with _REG_LOCK:
+            if latest != MANIFEST:
+                old = MANIFEST
+                MANIFEST = latest
+                try:
+                    CROSSWALK = resolve_crosswalk()
+                except Exception:
+                    MANIFEST = old
+                    raise
+
+def prov(path, sha):
+    for entry in CROSSWALK.get(path, ()):
+        if entry["sha256"] == sha:
+            return entry
+    return None
+
 def kind(path):
+    if path.startswith("TA::"):
+        return "docs", "기술자산 문서"
     if path.startswith("MAC::StudioProjects/"):
         rel = path.removeprefix("MAC::StudioProjects/")
         project = rel.split("/", 1)[0]
@@ -139,6 +213,8 @@ def relevant(row, terms):
         score += 8
     elif category == "variant":
         score -= 12
+    elif category == "docs":
+        score += 30
     elif category == "nas":
         # Reward a curated source only if its filename/title/path actually
         # matches the query, not an incidental mention buried in its content.
@@ -152,7 +228,7 @@ def relevant(row, terms):
     elif category == "zip":
         # A filename found inside a ZIP is not a directly usable original.
         score -= 135
-    if row["path"] in CROSSWALK and CROSSWALK[row["path"]]["sha256"] == row["sha"]:
+    if prov(row["path"], row["sha"]) is not None:
         # A SHA-verified, explicitly registered original outranks copies with
         # more keyword hits in automatic titles. Authority is not popularity.
         score += 160
@@ -166,6 +242,7 @@ def relevant(row, terms):
     return score
 
 def query(term, page=1, scope="all", page_size=12):
+    reload_registry_if_newer()
     term = str(term).strip()
     if not 2 <= len(term) <= 80:
         raise ValueError("검색어는 2~80자로 입력하세요.")
@@ -196,6 +273,8 @@ def query(term, page=1, scope="all", page_size=12):
         category, label = kind(row["path"])
         if scope == "main" and category not in ("main", "test"):
             continue
+        if scope == "docs" and category != "docs":
+            continue
         if scope == "variants" and category != "variant":
             continue
         if scope == "nas" and category not in ("nas", "zip"):
@@ -208,22 +287,19 @@ def query(term, page=1, scope="all", page_size=12):
         key = "sha:" + row["sha"] if row["sha"] and len(row["sha"]) == 64 else "path:" + row["path"]
         loc = {"path": row["path"], "category": category, "label": label, "status": row["status"]}
         if key not in grouped:
-            matched = row["path"] in CROSSWALK and CROSSWALK[row["path"]]["sha256"] == row["sha"]
-            provenance = CROSSWALK[row["path"]] if matched else None
+            provenance = prov(row["path"], row["sha"])
             grouped[key] = {
                 "title": row["title"], "path": row["path"], "status": row["status"],
                 "score": score, "kind": category, "label": label, "sha256": row["sha"],
                 "size_bytes": row["sz"], "locations": [loc], "duplicate_count": 1,
                 "provenance": provenance,
-                "can_reveal": category in ("main", "test", "variant"),
+                "can_reveal": category in ("main", "test", "variant", "docs"),
             }
         else:
             grouped[key]["locations"].append(loc)
             grouped[key]["duplicate_count"] += 1
-            if grouped[key]["provenance"] is None and row["path"] in CROSSWALK:
-                evidence = CROSSWALK[row["path"]]
-                if evidence["sha256"] == row["sha"]:
-                    grouped[key]["provenance"] = evidence
+            if grouped[key]["provenance"] is None:
+                grouped[key]["provenance"] = prov(row["path"], row["sha"])
     found = list(grouped.values())
     result_count = len(found)
     pages = max(1, math.ceil(result_count / page_size))
@@ -246,7 +322,25 @@ def query(term, page=1, scope="all", page_size=12):
             "page_size": page_size, "pages": pages, "match_count": len(scored),
             "group_count": result_count, "manual": manual, "results": subset}
 
+def reveal_docs_path(index_path):
+    rel = index_path.removeprefix("TA::")
+    parts = rel.split("/")
+    if (len(parts) < 2 or parts[0] not in TA_DIRS or
+        any(part in ("", "..", ".") for part in parts) or "\x00" in rel):
+        raise ValueError("Invalid source path")
+    with sqlite3.connect("file:" + str(INDEX) + "?mode=ro", uri=True, timeout=5) as db:
+        r = db.execute("SELECT carrier FROM docs WHERE path=?", (index_path,)).fetchone()
+    if not r or r[0] != TA_CARRIER:
+        raise ValueError("Not present in trusted local index")
+    target = (TA_ROOT / rel).resolve(strict=True)
+    base = (TA_ROOT / parts[0]).resolve(strict=True)
+    if not target.is_relative_to(base) or not target.is_file():
+        raise ValueError("File is outside approved folder or missing")
+    return target
+
 def reveal_path(index_path):
+    if isinstance(index_path, str) and index_path.startswith("TA::"):
+        return reveal_docs_path(index_path)
     prefix = "MAC::StudioProjects/"
     if not isinstance(index_path, str) or not index_path.startswith(prefix):
         raise ValueError("Only indexed Mac project files can be revealed")
@@ -266,10 +360,43 @@ def reveal_path(index_path):
         raise ValueError("File is outside approved project or missing")
     return target
 
+def registry_health():
+    """v1.7: 등록부의 각 자산이 지금 색인된 파일과 SHA가 맞는지 (읽기 전용)."""
+    reload_registry_if_newer()
+    data = json.loads(MANIFEST.read_text(encoding="utf-8"))
+    with sqlite3.connect("file:" + str(INDEX) + "?mode=ro", uri=True, timeout=8) as db:
+        index_sha = dict(db.execute("SELECT path, sha FROM docs WHERE path LIKE 'MAC::%' OR path LIKE 'TA::%'"))
+    out = {"registry": MANIFEST.name, "schema_version": data.get("schema_version"),
+           "asset_files": 0, "matched": [], "superseded": [], "stale": [], "not_indexed": []}
+    for path, entries in CROSSWALK.items():
+        current = index_sha.get(path)
+        for e in entries:
+            out["asset_files"] += 1
+            if current is None:
+                out["not_indexed"].append({"asset_id": e["asset_id"], "path": path})
+            elif e["sha256"] == current:
+                out["matched"].append(e["asset_id"])
+            elif any(x["sha256"] == current for x in entries):
+                out["superseded"].append(e["asset_id"])
+            else:
+                out["stale"].append({"asset_id": e["asset_id"], "path": path})
+    out["counts"] = {k: len(out[k]) for k in ("matched", "superseded", "stale", "not_indexed")}
+    return out
+
 class App(core.App):
     def do_GET(self):
         global _unused
-        if urllib.parse.urlsplit(self.path).path != "/api":
+        p = urllib.parse.urlsplit(self.path).path
+        if p == "/api/registry":
+            if not self.allowed():
+                self.respond(403, '{"error":"host"}')
+                return
+            try:
+                self.respond(200, json.dumps(registry_health(), ensure_ascii=False))
+            except Exception:
+                self.respond(500, '{"error":"registry read error"}')
+            return
+        if p != "/api":
             return super().do_GET()
         if not self.allowed():
             self.respond(403, '{"error":"host"}')
@@ -321,7 +448,7 @@ class App(core.App):
 def ui_page():
     page = """<!doctype html><html lang="ko"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>라우터블 기술자산 검색 v1.5</title>
+<title>라우터블 기술자산 검색 v1.7</title>
 <style nonce="__NONCE__">
 :root{font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo",sans-serif;
 color:#183746;background:#f3f7f9}
@@ -353,12 +480,13 @@ h2{font-size:17px;margin:22px 0 9px}footer{font-size:12px;color:#71838b;margin:2
 <div class="controls"><label for="scope">범위</label>
 <select id="scope"><option value="all">전체 자료</option>
 <option value="main">주요 개발 프로젝트</option>
+<option value="docs">기술자산 문서</option>
 <option value="variants">과거·파생 작업본</option>
 <option value="nas">NAS·보관자료</option></select></div>
 <p class="status" id="notice">로컬 Mac 전용 · 두 글자 검색 지원 · 검증된 원본 우선 · 색인 5,519개</p>
 <section id="results"></section>
 <div class="pagination" id="pagination"></div>
-<footer>v1.5 · 같은 내용의 파일은 대표본 아래 보관 위치 묶음으로 표시합니다.
+<footer>v1.7 · 같은 내용의 파일은 대표본 아래 보관 위치 묶음으로 표시합니다.
 소스코드 자체는 실행·수정하지 않습니다. Finder에서 보기는 원본 위치만 표시합니다.</footer>
 <script nonce="__NONCE__">
 const token="__TOKEN__";
@@ -452,7 +580,8 @@ _ORIGINAL_STATUS = core.status
 
 def status():
     state = _ORIGINAL_STATUS()
-    state["version"] = "1.5"
+    state["version"] = "1.7"
+    state["registry"] = MANIFEST.name
     state["service"] = SERVICE
     return state
 
@@ -462,19 +591,19 @@ core.status = status
 
 def serve():
     STORE.mkdir(mode=0o700, parents=True, exist_ok=True)
-    fd = os.open(STORE / "search_v1_5_server.lock",
+    fd = os.open(STORE / "search_v1_7_server.lock",
                  os.O_RDWR | os.O_CREAT, 0o600)
     try:
         try:
             fcntl.flock(fd, fcntl.LOCK_EX | fcntl.LOCK_NB)
         except BlockingIOError:
-            print("ROUTABL_ASSET_SEARCH_V1_5_ALREADY_RUNNING", flush=True)
+            print("ROUTABL_ASSET_SEARCH_V1_7_ALREADY_RUNNING", flush=True)
             return 0
         core.initialize_index()
         server = ThreadingHTTPServer(("127.0.0.1", PORT), App)
         server.daemon_threads = True
-        threading.Thread(target=core.stop_when_idle, args=(server,), daemon=True).start()
-        print("ROUTABL_ASSET_SEARCH_V1_5_READY", URL, flush=True)
+        # v1.7: 쉬어도 꺼지지 않음 (Claude가 언제든 브라우저로 접속할 수 있게). 127.0.0.1 전용.
+        print("ROUTABL_ASSET_SEARCH_V1_7_READY", URL, flush=True)
         try:
             server.serve_forever(poll_interval=.5)
         finally:
@@ -490,10 +619,10 @@ if __name__ == "__main__":
     if len(sys.argv) == 2 and sys.argv[1] == "serve":
         raise SystemExit(serve())
     if len(sys.argv) > 2 and sys.argv[1] == "query":
-        # Run without server, provided the v1.5 DB has already been initialized.
+        # Run without server, provided the v1.6 DB has already been initialized.
         print(json.dumps(query(" ".join(sys.argv[2:])), ensure_ascii=False))
     elif len(sys.argv) == 2 and sys.argv[1] == "check":
         print(json.dumps({"service": SERVICE, "db_exists": INDEX.is_file(),
                           "rows": core.check_db(INDEX)[0] if INDEX.exists() else 0}))
     else:
-        raise SystemExit("Usage: routabl_search_v1_5_service.py serve|check|query TERM")
+        raise SystemExit("Usage: routabl_search_v1_7_service.py serve|check|query TERM")
