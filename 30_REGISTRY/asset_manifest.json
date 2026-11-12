@@ -1,7 +1,7 @@
 {
-  "schema_version": "0.16",
-  "captured_at_kst": "2026-11-05T17:48:25+09:00",
-  "scope": "120_TECH_ASSET_REGISTER_PLUS_20261105_ADDRESSBOOK_REUSE_CASE__BACKUP_SCHEDULE_INDEPENDENT_VERIFICATION_REQUIRED",
+  "schema_version": "0.17",
+  "captured_at_kst": "2026-11-05T21:47:10+09:00",
+  "scope": "120_OFFICIAL_CHATGPT_EXPORT_RAW_SEPARATELY_PRESERVED_METADATA_REGISTERED_OFFSITE_PENDING",
   "registry_mode": "local-only security classification and search metadata",
   "existing_index_baseline": {
     "sqlite_integrity": "ok",
@@ -1403,6 +1403,108 @@
       "parent_asset_ids": [
         "TA-CASE-20261102-01"
       ]
+    },
+    {
+      "asset_id": "ASSET-120-EXPORT-20261105-ORIGINAL_EXPORT_RECEIPT",
+      "title": "ORIGINAL EXPORT RECEIPT",
+      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_OFFICIAL_CHATGPT_EXPORT_20261105_v01/OFFICIAL_EXPORT_INTEGRITY_RECEIPT_v0.1.json",
+      "bytes": 1983,
+      "sha256": "a0c41608ba594b5633797eb2e88f952e47516c8272a24d23294d41a48f1e294e",
+      "mtime_utc": "2026-11-05T11:44:47.352598+00:00",
+      "source_system": "METADATA_ONLY_DERIVED_AUDIT",
+      "source_chat_number": "120-1",
+      "observation": "Full account raw ZIP excluded; privacy-safe metadata only",
+      "execution_validation": "METADATA_SHA256_VERIFIED_OFFSITE_BACKUP_NOT_CLAIMED",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "YES_METADATA_ONLY",
+      "original_file_unchanged": true,
+      "provenance_status": "DERIVED_FROM_OWNER_EXPORT_AND_UPLOADED_PDF",
+      "registry_added_in": "v0.17"
+    },
+    {
+      "asset_id": "ASSET-120-EXPORT-20261105-ORIGINAL_ARCHIVE_POLICY",
+      "title": "ORIGINAL ARCHIVE POLICY",
+      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_OFFICIAL_CHATGPT_EXPORT_20261105_v01/ORIGINAL_ARCHIVE_AND_FOLLOWUP_v0.1.md",
+      "bytes": 1724,
+      "sha256": "450eaadc1495e1d06ec8e43623946d8353f9c164e8f2118713fa38495f3843c0",
+      "mtime_utc": "2026-11-05T11:44:47.353219+00:00",
+      "source_system": "METADATA_ONLY_DERIVED_AUDIT",
+      "source_chat_number": "120-1",
+      "observation": "Full account raw ZIP excluded; privacy-safe metadata only",
+      "execution_validation": "METADATA_SHA256_VERIFIED_OFFSITE_BACKUP_NOT_CLAIMED",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "YES_METADATA_ONLY",
+      "original_file_unchanged": true,
+      "provenance_status": "DERIVED_FROM_OWNER_EXPORT_AND_UPLOADED_PDF",
+      "registry_added_in": "v0.17"
+    },
+    {
+      "asset_id": "ASSET-120-EXPORT-20261105-CONVERSATION_EXTRACT_RECEIPT",
+      "title": "CONVERSATION EXTRACT RECEIPT",
+      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_OFFICIAL_CHATGPT_EXPORT_20261105_v01/120_EXTRACTION_VERIFICATION_v0.1.json",
+      "bytes": 1576,
+      "sha256": "6323105a4d2f4ad233bbf3f635a02da29696cc25ae903f53beadd5cb3c387b76",
+      "mtime_utc": "2026-11-05T12:34:30.179162+00:00",
+      "source_system": "METADATA_ONLY_DERIVED_AUDIT",
+      "source_chat_number": "120-1",
+      "observation": "Full account raw ZIP excluded; privacy-safe metadata only",
+      "execution_validation": "METADATA_SHA256_VERIFIED_OFFSITE_BACKUP_NOT_CLAIMED",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "YES_METADATA_ONLY",
+      "original_file_unchanged": true,
+      "provenance_status": "DERIVED_FROM_OWNER_EXPORT_AND_UPLOADED_PDF",
+      "registry_added_in": "v0.17"
+    },
+    {
+      "asset_id": "ASSET-120-EXPORT-20261105-PDF_COMPARISON",
+      "title": "PDF COMPARISON",
+      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_OFFICIAL_CHATGPT_EXPORT_20261105_v01/120_PDF_VS_OFFICIAL_EXPORT_COMPARISON_v0.1.md",
+      "bytes": 2762,
+      "sha256": "34834235a5d7fd2dc2c56382412af163194bcd889e68f3f5e56aeeb0f89dad33",
+      "mtime_utc": "2026-11-05T12:36:53.185058+00:00",
+      "source_system": "METADATA_ONLY_DERIVED_AUDIT",
+      "source_chat_number": "120-1",
+      "observation": "Full account raw ZIP excluded; privacy-safe metadata only",
+      "execution_validation": "METADATA_SHA256_VERIFIED_OFFSITE_BACKUP_NOT_CLAIMED",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "YES_METADATA_ONLY",
+      "original_file_unchanged": true,
+      "provenance_status": "DERIVED_FROM_OWNER_EXPORT_AND_UPLOADED_PDF",
+      "registry_added_in": "v0.17"
+    },
+    {
+      "asset_id": "ASSET-120-EXPORT-20261105-LIBRARY_COMPARISON",
+      "title": "LIBRARY COMPARISON",
+      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_OFFICIAL_CHATGPT_EXPORT_20261105_v01/LIBRARY_AND_ATTACHMENTS_CROSSWALK_v0.1.md",
+      "bytes": 3013,
+      "sha256": "29eeb92bb012ad57bee864f6c6810a59a92c19e1a75db7333e72d95b4699b0a4",
+      "mtime_utc": "2026-11-05T12:43:32.237608+00:00",
+      "source_system": "METADATA_ONLY_DERIVED_AUDIT",
+      "source_chat_number": "120-1",
+      "observation": "Full account raw ZIP excluded; privacy-safe metadata only",
+      "execution_validation": "METADATA_SHA256_VERIFIED_OFFSITE_BACKUP_NOT_CLAIMED",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "YES_METADATA_ONLY",
+      "original_file_unchanged": true,
+      "provenance_status": "DERIVED_FROM_OWNER_EXPORT_AND_UPLOADED_PDF",
+      "registry_added_in": "v0.17"
+    },
+    {
+      "asset_id": "ASSET-120-EXPORT-20261105-LARGE_EXPORT_BACKUP_GATE",
+      "title": "LARGE EXPORT BACKUP GATE",
+      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_OFFICIAL_CHATGPT_EXPORT_20261105_v01/LARGE_EXPORT_ENCRYPTED_BACKUP_GATE_v0.1.md",
+      "bytes": 2667,
+      "sha256": "8bea8f6c38824a00f16bfbd9deccd773dd7ed8e2315214c825218820a0b2dc3a",
+      "mtime_utc": "2026-11-05T12:45:30.179932+00:00",
+      "source_system": "METADATA_ONLY_DERIVED_AUDIT",
+      "source_chat_number": "120-1",
+      "observation": "Full account raw ZIP excluded; privacy-safe metadata only",
+      "execution_validation": "METADATA_SHA256_VERIFIED_OFFSITE_BACKUP_NOT_CLAIMED",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "YES_METADATA_ONLY",
+      "original_file_unchanged": true,
+      "provenance_status": "DERIVED_FROM_OWNER_EXPORT_AND_UPLOADED_PDF",
+      "registry_added_in": "v0.17"
     }
   ],
   "unresolved": [
@@ -1600,7 +1702,7 @@
       "issue": "Actual Android app UI display not field-tested; original failed chat tool trace not archived."
     }
   ],
-  "supersedes": "asset_manifest_v0.15.json (immutable previous version preserved)",
+  "supersedes": "asset_manifest_v0.16.json (immutable prior retained)",
   "library_crosswalk": [
     {
       "asset_id": "TA-CASE-20261102-01",
@@ -2306,6 +2408,42 @@
       "grade": "P3",
       "policy": "private_local_and_aes_nas",
       "classification_scope": "DERIVED_AUDIT_LOCAL"
+    },
+    {
+      "asset_id": "ASSET-120-EXPORT-20261105-ORIGINAL_EXPORT_RECEIPT",
+      "grade": "P3",
+      "policy": "private_local_and_aes_nas",
+      "classification_scope": "METADATA_ONLY_DERIVED_AUDIT"
+    },
+    {
+      "asset_id": "ASSET-120-EXPORT-20261105-ORIGINAL_ARCHIVE_POLICY",
+      "grade": "P3",
+      "policy": "private_local_and_aes_nas",
+      "classification_scope": "METADATA_ONLY_DERIVED_AUDIT"
+    },
+    {
+      "asset_id": "ASSET-120-EXPORT-20261105-CONVERSATION_EXTRACT_RECEIPT",
+      "grade": "P3",
+      "policy": "private_local_and_aes_nas",
+      "classification_scope": "METADATA_ONLY_DERIVED_AUDIT"
+    },
+    {
+      "asset_id": "ASSET-120-EXPORT-20261105-PDF_COMPARISON",
+      "grade": "P3",
+      "policy": "private_local_and_aes_nas",
+      "classification_scope": "METADATA_ONLY_DERIVED_AUDIT"
+    },
+    {
+      "asset_id": "ASSET-120-EXPORT-20261105-LIBRARY_COMPARISON",
+      "grade": "P3",
+      "policy": "private_local_and_aes_nas",
+      "classification_scope": "METADATA_ONLY_DERIVED_AUDIT"
+    },
+    {
+      "asset_id": "ASSET-120-EXPORT-20261105-LARGE_EXPORT_BACKUP_GATE",
+      "grade": "P3",
+      "policy": "private_local_and_aes_nas",
+      "classification_scope": "METADATA_ONLY_DERIVED_AUDIT"
     }
   ],
   "search_v1_3": {
@@ -2672,7 +2810,7 @@
     {
       "id": "B-01",
       "source": "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_INTEGRATION_20261104_v01/OPEN_ISSUES_FOR_OWNER_v0.1.md",
-      "status": "OPEN_OR_PENDING"
+      "status": "PARTIAL_OFFICIAL_CHAT_RECORD_ACQUIRED_BACKEND_TRACE_UNVERIFIED"
     },
     {
       "id": "B-02",
@@ -2702,7 +2840,7 @@
     {
       "id": "B-07",
       "source": "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_INTEGRATION_20261104_v01/OPEN_ISSUES_FOR_OWNER_v0.1.md",
-      "status": "OPEN_OR_PENDING"
+      "status": "PARTIAL_LIBRARY_BINARY_SHA_UNVERIFIED"
     },
     {
       "id": "B-08",
@@ -2718,6 +2856,16 @@
       "id": "B-10",
       "source": "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_INTEGRATION_20261104_v01/OPEN_ISSUES_FOR_OWNER_v0.1.md",
       "status": "OPEN_OR_PENDING"
+    },
+    {
+      "id": "B-11",
+      "source": "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_OFFICIAL_CHATGPT_EXPORT_20261105_v01/LARGE_EXPORT_ENCRYPTED_BACKUP_GATE_v0.1.md",
+      "status": "OPEN_ENCRYPTED_INDEPENDENT_LARGE_EXPORT_BACKUP"
+    },
+    {
+      "id": "B-12",
+      "source": "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_OFFICIAL_CHATGPT_EXPORT_20261105_v01/LIBRARY_AND_ATTACHMENTS_CROSSWALK_v0.1.md",
+      "status": "OPEN_FULL_LIBRARY_BINARY_CROSSWALK"
     }
   ],
   "addressbook_registration_reuse_v016": {
@@ -2740,5 +2888,33 @@
     "firestore_write_in_this_registration_update": false,
     "v15_previous_sha256": "cc84d033c02ee215ce8a1cf0f7635f3c541295a34bfa0f1f1da6175121fdeda2",
     "prior_search_gui_v15_modified": false
+  },
+  "chatgpt_20261105_official_export_v017": {
+    "full_archive_path": "/Users/yongho/ROUTABL-TechAssets/20_ORIGINALS/ChatGPT-Account-Exports/2026-11-05/00_ORIGINAL/baf409011133e16d57eab39aec045f1394676d50a269d023b6008db51848fd63-2026-11-05-03-30-27-86cdce8a39af493493da6b91bf952559.zip",
+    "full_archive_bytes": 1589174843,
+    "full_archive_sha256": "06efc5c5c787d59b7d1bd62566974563416b29792bb17ac318335475884c5553",
+    "full_archive_in_asset_files": false,
+    "full_archive_private": "P3",
+    "original_120_json_path": "/Users/yongho/ROUTABL-TechAssets/20_ORIGINALS/ChatGPT-Account-Exports/2026-11-05/10_CHAT_120/120_ORIGINAL_CONVERSATION_RECORD.json",
+    "original_120_sha256": "9ca232fb569d7bf265ef858e8a846ee0b02eccebdeee2a4912e1861b2ce128a1",
+    "readable_120_md_path": "/Users/yongho/ROUTABL-TechAssets/20_ORIGINALS/ChatGPT-Account-Exports/2026-11-05/10_CHAT_120/120_READABLE_CHAT_USER_ASSISTANT.md",
+    "readable_120_sha256": "ad985341ec4f1afc3e54e5047d25efca1e5fbe3ef3b0ac32a49c72c018962faf",
+    "conversation_id": "6ae898f1-a73c-83ec-ba41-3decfb9617d5",
+    "nodes": 731,
+    "readable_user": 74,
+    "readable_assistant": 166,
+    "referenced_images_found_in_zip": "12/12",
+    "library_binary_coverage": "NOT_VERIFIED",
+    "offsite_encrypted_backup": "NOT_VERIFIED",
+    "raw_sensitive_files_excluded_from_asset_files": true,
+    "added_metadata_asset_ids": [
+      "ASSET-120-EXPORT-20261105-ORIGINAL_EXPORT_RECEIPT",
+      "ASSET-120-EXPORT-20261105-ORIGINAL_ARCHIVE_POLICY",
+      "ASSET-120-EXPORT-20261105-CONVERSATION_EXTRACT_RECEIPT",
+      "ASSET-120-EXPORT-20261105-PDF_COMPARISON",
+      "ASSET-120-EXPORT-20261105-LIBRARY_COMPARISON",
+      "ASSET-120-EXPORT-20261105-LARGE_EXPORT_BACKUP_GATE"
+    ],
+    "previous_manifest_sha256": "7b47fc552ce2edd3a44f0a7f93b52deb8309dfc89229c80a9c7592ddbc8ba96b"
   }
 }
