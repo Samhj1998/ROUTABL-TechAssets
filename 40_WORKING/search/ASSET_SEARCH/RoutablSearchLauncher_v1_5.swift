@@ -5,9 +5,9 @@ import Foundation
 // or changes source code, backups, GitHub, or Firebase.
 private let store = FileManager.default.homeDirectoryForCurrentUser
     .appendingPathComponent("Library/Application Support/ROUTABL-AssetSearch")
-private let service = store.appendingPathComponent("routabl_search_v1_4_service.py")
-private let index = store.appendingPathComponent("assets_v1_4.sqlite")
-private let base = "http://127.0.0.1:8768"
+private let service = store.appendingPathComponent("routabl_search_v1_5_service.py")
+private let index = store.appendingPathComponent("assets_v1_5.sqlite")
+private let base = "http://127.0.0.1:8769"
 
 private func serviceReady() -> Bool {
     let probe = Process()
@@ -23,7 +23,7 @@ private func serviceReady() -> Bool {
         let bytes = output.fileHandleForReading.readDataToEndOfFile()
         let str = String(data: bytes, encoding: .utf8) ?? ""
         return probe.terminationStatus == 0 &&
-               str.contains("ROUTABL_ASSET_SEARCH_V1_4")
+               str.contains("ROUTABL_ASSET_SEARCH_V1_5")
     } catch {
         return false
     }
@@ -90,6 +90,6 @@ if ready, let page = URL(string: base + "/") {
         exit(4)
     }
 } else {
-    showError("검색 서버 준비 상태를 확인하지 못했습니다. 8768 포트 상태를 점검하세요.")
+    showError("검색 서버 준비 상태를 확인하지 못했습니다. 8769 포트 상태를 점검하세요.")
     exit(5)
 }
