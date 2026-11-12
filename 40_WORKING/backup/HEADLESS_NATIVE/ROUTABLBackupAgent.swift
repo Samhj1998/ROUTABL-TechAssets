@@ -14,7 +14,7 @@ let approval = home.appendingPathComponent("Library/Application Support/ROUTABL-
 let python = URL(fileURLWithPath:"/usr/bin/python3")
 let supervisor = home.appendingPathComponent("ROUTABL-TechAssets/00_GUIDE/ROUTABL_BackupHeadlessSupervisor_v0_2.py")
 let expectedSupervisorSHA256 = "49a1533b22a166715bd606c3c151f89d24752c653c5c119f5107267af640f878"
-let statusURL = log.appendingPathComponent("last_native_launchagent_v03.json")
+let statusURL = log.appendingPathComponent("last_native_launchagent_v04.json")
 
 struct RunResult {
     let outcome:String
@@ -71,7 +71,7 @@ struct Event: Codable {
 func writeStatus(_ state:String,_ phase:String,backupAttempted:Bool = false,
                  networkAccess:Bool = false,child:RunResult? = nil) {
     let iso=ISO8601DateFormatter().string(from:Date())
-    let data=Event(kind:"ROUTABL_NATIVE_LAUNCHAGENT_V03",at:iso,state:state,
+    let data=Event(kind:"ROUTABL_NATIVE_LAUNCHAGENT_V04",at:iso,state:state,
                    phase:phase,backupAttempted:backupAttempted,
                    networkVolumeAccessAttempted:networkAccess,
                    permissionsModified:false,launchAgentRegistrationChanged:false,
@@ -86,7 +86,7 @@ func writeStatus(_ state:String,_ phase:String,backupAttempted:Bool = false,
         guard fm.fileExists(atPath:log.path,isDirectory:&directory) && directory.boolValue else {
             throw NSError(domain:NSPOSIXErrorDomain,code:Int(ENOENT))
         }
-        let temporary=log.appendingPathComponent(".last_native_v03_\(getpid()).json.partial")
+        let temporary=log.appendingPathComponent(".last_native_v04_\(getpid()).json.partial")
         if fm.fileExists(atPath:temporary.path) {
             throw NSError(domain:NSPOSIXErrorDomain,code:Int(EEXIST))
         }
@@ -127,8 +127,40 @@ if cmd != "--scheduled" {
 
 // No network, no volume checks, no Python subprocess before this condition.
 if !FileManager.default.fileExists(atPath:approval.path) {
-    writeStatus("DISARMED_NO_APPROVAL","local_policy")
-    exit(0)
+    // A separate, explicitly user-consented *metadata-only* diagnostic.
+    // This never reads file contents and can never initiate backup.
+    let consent=home.appendingPathComponent(
+      "Library/Application Support/ROUTABL-AssetBackup/diagnostic_consent_v01.json")
+    var permit=false
+    if let attrs=try? FileManager.default.attributesOfItem(atPath:consent.path),
+       attrs[.ownerAccountID] as? Int == 501,
+       let perms=attrs[.posixPermissions] as? Int, perms & 0o077 == 0,
+       let data=try? Data(contentsOf:consent),
+       let obj=try? JSONSerialization.jsonObject(with:data) as? [String:Any],
+       obj["version"] as? Int == 1,
+       obj["owner_uid"] as? Int == 501,
+       obj["enabled"] as? Bool == true,
+       obj["scope"] as? String == "TCC_METADATA_READ_ONLY",
+       obj["backup_enabled"] as? Bool == false {
+        permit=true
+    }
+    if !permit {
+        writeStatus("DISARMED_NO_APPROVAL","local_policy")
+        exit(0)
+    }
+    let helper=URL(fileURLWithPath:CommandLine.arguments[0])
+        .deletingLastPathComponent().appendingPathComponent("ROUTABLVolumePermissionProbe")
+    writeStatus("PERMISSION_DIAGNOSTIC_REQUESTED","probe_only")
+    let result=runTimed(helper,[],deadline:20)
+    if result.exitCode==0 {
+        writeStatus("PASS_PERMISSION_METADATA_ONLY","probe_only",
+                    networkAccess:true,child:result)
+        exit(0)
+    }
+    writeStatus(result.exitCode==124 ? "PROBE_TIMEOUT_NO_RETRY" :
+        "PROBE_DENIED_OR_STORAGE_ERROR","probe_only",
+        networkAccess:true,child:result)
+    exit(13)
 }
 guard let supervisorData=try? Data(contentsOf:supervisor),
       SHA256.hash(data:supervisorData).map({String(format:"%02x",$0)}).joined()==expectedSupervisorSHA256 else {

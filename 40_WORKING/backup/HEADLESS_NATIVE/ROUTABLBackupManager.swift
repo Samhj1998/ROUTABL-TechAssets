@@ -21,7 +21,7 @@ final class Manager: NSObject, NSApplicationDelegate {
         window=NSWindow(contentRect:size,
                         styleMask:[.titled,.closable,.miniaturizable],
                         backing:.buffered,defer:false)
-        window.title="라우터블 백업 권한·안전관리 v0.3"
+        window.title="라우터블 백업 권한·안전관리 v0.4"
         window.center()
         window.isReleasedWhenClosed=false
         let panel=NSView(frame:size)
@@ -38,8 +38,8 @@ final class Manager: NSObject, NSApplicationDelegate {
         panel.addSubview(status)
 
         let explanation=NSTextField(wrappingLabelWithString:
-            "권한 승인 전까지 자동 백업은 시작되지 않습니다. 미승인 상태에서는 NAS 접근 자체를 시도하지 않습니다. " +
-            "최초 SSD·NAS 접근은 사용자 승인이 필요할 수 있습니다. 기존 v0.2 예약은 비활성화했습니다.")
+            "자동 백업 승인은 계속 꺼져 있습니다. NAS 접근 권한은 별도의 읽기 전용 시험으로만 확인합니다. " +
+            "시험 동의 후 macOS가 네트워크 볼륨 권한을 요청할 수 있습니다. 실제 백업은 시험 중에도 실행되지 않습니다.")
         explanation.font=NSFont.systemFont(ofSize:13)
         explanation.textColor = .secondaryLabelColor
         explanation.frame=NSRect(x:30,y:417,width:740,height:61)
@@ -60,13 +60,24 @@ final class Manager: NSObject, NSApplicationDelegate {
             offset += width+4
         }
 
+        let consent=NSButton(title:"NAS·SSD 접근 시험 동의 (백업 없음)",
+                 target:self,action:#selector(consentDiagnostic))
+        consent.bezelStyle = .rounded
+        consent.frame=NSRect(x:30,y:317,width:340,height:35)
+        panel.addSubview(consent)
+        let revoke=NSButton(title:"접근 시험 동의 취소",
+                 target:self,action:#selector(revokeDiagnostic))
+        revoke.bezelStyle = .rounded
+        revoke.frame=NSRect(x:386,y:317,width:195,height:35)
+        panel.addSubview(revoke)
+
         let note=NSTextField(labelWithString:"상태·오류만 표시합니다. 백업 원본과 암호·복구키는 열람하거나 기록하지 않습니다.")
         note.font=NSFont.systemFont(ofSize:12)
         note.textColor = .secondaryLabelColor
-        note.frame=NSRect(x:30,y:325,width:735,height:27)
+        note.frame=NSRect(x:30,y:282,width:735,height:27)
         panel.addSubview(note)
 
-        let scroll=NSScrollView(frame:NSRect(x:30,y:28,width:740,height:282))
+        let scroll=NSScrollView(frame:NSRect(x:30,y:28,width:740,height:244))
         scroll.hasVerticalScroller=true
         scroll.borderType = .bezelBorder
         report=NSTextView(frame:scroll.bounds)
@@ -86,6 +97,54 @@ final class Manager: NSObject, NSApplicationDelegate {
         report.string="현재: \(state)\n\n" +
             "로컬 로컬 안전 진단은 NAS·SSD 접근을 시도하지 않습니다.\n" +
             "승인 파일이 없으면 등록돼도 NAS에 접근하지 않고 종료합니다.\n"
+    }
+    private func diagnosticConsentURL() -> URL {
+        URL(fileURLWithPath:
+            "/Users/yongho/Library/Application Support/ROUTABL-AssetBackup/diagnostic_consent_v01.json")
+    }
+    @objc func consentDiagnostic() {
+        let alert=NSAlert()
+        alert.messageText="NAS·SSD 읽기 전용 접근 시험을 승인하시겠습니까?"
+        alert.informativeText="에이전트가 네트워크 볼륨과 외장 SSD 폴더 이름을 확인하기만 합니다. 백업, 복호화, 파일 복사는 하지 않습니다. macOS의 별도 접근 권한 요청은 사용자 본인이 직접 판단해야 합니다."
+        alert.alertStyle = .informational
+        alert.addButton(withTitle:"접근 시험만 동의")
+        alert.addButton(withTitle:"취소")
+        guard alert.runModal() == .alertFirstButtonReturn else {return}
+        let p=diagnosticConsentURL()
+        do {
+            if FileManager.default.fileExists(atPath:p.path) {
+                report.string="이미 진단 동의 파일이 존재합니다. 먼저 취소 후 다시 진행해 주세요."
+                return
+            }
+            let parent=p.deletingLastPathComponent()
+            try FileManager.default.createDirectory(at:parent,withIntermediateDirectories:true,
+                attributes:[.posixPermissions:448])
+            let obj:[String:Any]=[
+                "version":1,"owner_uid":501,"enabled":true,
+                "scope":"TCC_METADATA_READ_ONLY","backup_enabled":false
+            ]
+            let bytes=try JSONSerialization.data(withJSONObject:obj,options:[.sortedKeys])
+            guard FileManager.default.createFile(atPath:p.path,contents:bytes,
+                attributes:[.posixPermissions:384]) else {
+                throw NSError(domain:NSPOSIXErrorDomain,code:13)
+            }
+            report.string="읽기 전용 접근 시험 동의가 저장됐습니다. 실제 백업 승인은 없습니다. 백그라운드 단발 시험에서 OS 권한 창이 나올 수 있습니다."
+            status.stringValue="TCC 접근 시험만 승인됨 · 실제 백업은 비활성화"
+        } catch {
+            report.string="진단 동의 생성 실패. 파일 접근 상태를 확인하십시오."
+        }
+    }
+    @objc func revokeDiagnostic() {
+        let p=diagnosticConsentURL()
+        do {
+            if FileManager.default.fileExists(atPath:p.path) {
+                try FileManager.default.removeItem(at:p)
+            }
+            report.string="읽기 전용 진단 동의를 취소했습니다. 실제 자동 백업은 변함없이 비활성화 상태입니다."
+            status.stringValue="진단 동의 취소됨 · 자동 백업 비활성화"
+        } catch {
+            report.string="진단 동의 취소 실패. 추가 확인 필요."
+        }
     }
     @objc func checkStatus() {updateRegistrationStatus()}
     @objc func showSettings() {SMAppService.openSystemSettingsLoginItems()}

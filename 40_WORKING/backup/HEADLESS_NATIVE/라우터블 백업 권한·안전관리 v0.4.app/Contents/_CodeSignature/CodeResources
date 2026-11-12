@@ -17,10 +17,19 @@
 		<dict>
 			<key>cdhash</key>
 			<data>
-			DyToEJbBNhORoE7TYHhpao+BuZo=
+			VHsUWI8M4yxRpOHzFl4cKzIiM/E=
 			</data>
 			<key>requirement</key>
-			<string>cdhash H"0f24e81096c1361391a04ed36078696a8f81b99a"</string>
+			<string>cdhash H"547b14588f0ce32c51a4e1f3165e1c2b322233f1"</string>
+		</dict>
+		<key>MacOS/ROUTABLVolumePermissionProbe</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			pqABZgDRDTbQzqZOV9dw/cWN+/g=
+			</data>
+			<key>requirement</key>
+			<string>cdhash H"a6a0016600d10d36d0cea64e57d770fdc58dfbf8"</string>
 		</dict>
 	</dict>
 	<key>rules</key>
