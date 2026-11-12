@@ -1,0 +1,154 @@
+{
+ "checked_at": "2026-11-12 23:01:46",
+ "log_dir_exists": true,
+ "logs": [
+  {
+   "name": "last_manual_mac_nas_cas_v01.json",
+   "modified": "2026-11-12 23:01",
+   "bytes": 804,
+   "fields": {
+    "status": "SUCCESS_LOCAL_TO_NAS_ENCRYPTED_CAS",
+    "manifest_name": "asset_manifest.json"
+   }
+  },
+  {
+   "name": "last_selective_v21_result.json",
+   "modified": "2026-11-12 22:58",
+   "bytes": 681,
+   "fields": {
+    "status": "SUCCESS",
+    "snapshot_name": "ASSET_V21_20261112_225825_KST_9870",
+    "manifest_name": "asset_manifest.json"
+   }
+  },
+  {
+   "name": "last_native_backup_supervisor_v01.json",
+   "modified": "2026-11-12 04:30",
+   "bytes": 317,
+   "fields": {
+    "phase": "child",
+    "returncode": 2
+   }
+  },
+  {
+   "name": "last_native_launchagent_v04.json",
+   "modified": "2026-11-12 04:30",
+   "bytes": 348,
+   "fields": {
+    "phase": "postbackup"
+   }
+  },
+  {
+   "name": "last_native_backup_supervisor_v02.json",
+   "modified": "2026-11-12 04:30",
+   "bytes": 536,
+   "fields": {
+    "phase": "postflight"
+   }
+  },
+  {
+   "name": "native_backup_supervisor_v01.lock",
+   "modified": "2026-11-05 04:30",
+   "bytes": 0
+  },
+  {
+   "name": "native_backup_supervisor_v02.lock",
+   "modified": "2026-11-04 08:40",
+   "bytes": 0
+  },
+  {
+   "name": "last_native_launchagent_v03.json",
+   "modified": "2026-11-04 02:33",
+   "bytes": 292,
+   "fields": {
+    "phase": "local_policy"
+   }
+  },
+  {
+   "name": "nas_cas_restore_ASSET_V21_20261104_021823_KST_29291.json",
+   "modified": "2026-11-04 02:26",
+   "bytes": 682,
+   "fields": {
+    "status": "PASS_CAS_CIPHERTEXT_FULL_RESTORE"
+   }
+  },
+  {
+   "name": "nas_cas_restore_ASSET_V21_20261104_000342_KST_26699.json",
+   "modified": "2026-11-04 00:10",
+   "bytes": 682,
+   "fields": {
+    "status": "PASS_CAS_CIPHERTEXT_FULL_RESTORE"
+   }
+  },
+  {
+   "name": "manual_mac_to_nas_cas_v01.lock",
+   "modified": "2026-11-03 23:55",
+   "bytes": 0
+  },
+  {
+   "name": "last_nas_cas_restore_qa_result.json",
+   "modified": "2026-11-03 23:45",
+   "bytes": 682,
+   "fields": {
+    "status": "PASS_CAS_CIPHERTEXT_FULL_RESTORE"
+   }
+  },
+  {
+   "name": "v21.launchd.oneoff.stderr.log",
+   "modified": "2026-11-03 21:46",
+   "bytes": 366,
+   "tail": [
+    "{\"result\": \"FAILED_SAFE\", \"failure_type\": \"PermissionError\"}",
+    "{\"result\": \"FAILED_SAFE\", \"failure_type\": \"PermissionError\"}",
+    "{\"result\": \"FAILED_SAFE\", \"failure_type\": \"PermissionError\"}",
+    "{\"result\": \"FAILED_SAFE\", \"failure_type\": \"PermissionError\"}",
+    "{\"result\": \"FAILED_SAFE\", \"failure_type\": \"PermissionError\"}"
+   ]
+  },
+  {
+   "name": "v21.launchd.oneoff.stdout.log",
+   "modified": "2026-11-03 21:45",
+   "bytes": 0,
+   "tail": []
+  },
+  {
+   "name": "last_selective_nas_v21_result.json",
+   "modified": "2026-11-03 21:42",
+   "bytes": 781,
+   "fields": {
+    "status": "SUCCESS"
+   }
+  }
+ ],
+ "v22_plan_returncode": 0,
+ "v22_plan": {
+  "status": "DRY_RUN_ONLY",
+  "source_manifest": "asset_manifest.json",
+  "engine": "SelectiveSecureBackup v2.2 (2026-11-12 draft)",
+  "registry_assets_approved": 193,
+  "project_source_files": 1506,
+  "managed_extra_files": 131,
+  "total_files": 1830,
+  "total_source_bytes": 545824204,
+  "registry_drift_asset_ids": [
+   "ASSET-BACKUP-V21-LOCAL-ENGINE",
+   "ANALYTICS-APP-01-READONLY-BUILD-GUARD",
+   "ANALYTICS-APP-01-LOCAL-CACHE",
+   "CUSTOMER-REG-APP-01-HANDOFF-STAGE5",
+   "SERVER-ADDR-SEARCH-ADMIN-DONG",
+   "CUSTOMER-DONG-NORMALIZE-TOOL",
+   "ASSET-SEARCH-V18-ENGINE"
+  ],
+  "registry_missing_asset_ids": [],
+  "registry_rejected_asset_ids": [
+   "ASSET-120-EXPORT-AES256-V2-ACCEPTANCE-20261106",
+   "ASSET-120-CHATGPT-V04-REPAIR-ASSET-MANIFEST",
+   "CUSTOMER-REG-APP-01-CAPTURE-PARSER"
+  ],
+  "registry_same_path_superseded": 4
+ },
+ "agent_com.routabl.assetbackup.native.v042": {
+  "loaded": false,
+  "lines": []
+ }
+}
