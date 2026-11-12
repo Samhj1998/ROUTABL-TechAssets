@@ -1,6 +1,6 @@
 {
-  "schema_version": "0.2",
-  "captured_at_kst": "2026-11-03T00:23:41.981005+09:00",
+  "schema_version": "0.3",
+  "captured_at_kst": "2026-11-03T00:26:09.652588+09:00",
   "scope": "SELECTED_BASELINE_ONLY_NOT_FULL_INVENTORY",
   "registry_mode": "metadata-only;no_secret_material;no_source_copy",
   "existing_index_baseline": {
@@ -112,11 +112,13 @@
       "observation": "NAS_RECEIPT_FILE_SHA256_MATCH",
       "execution_validation": "NOT_APPLICABLE",
       "write_or_execution_approval_class": "C",
-      "copy_in_managed_repository": "NO",
+      "copy_in_managed_repository": "YES_SHA256_VERIFIED",
       "original_file_unchanged": true,
       "sealed": true,
       "archive_crc_test": "PASS",
-      "archive_members": 19
+      "archive_members": 19,
+      "managed_local_copy_path": "/Users/yongho/ROUTABL-TechAssets/20_ORIGINALS/NAS-Imported/ROUTABL-97-1-V4.1/ROUTABL_97-1_v4.1_FINAL.zip",
+      "copy_validation": "FILE_HASH_MATCH_NAS_SOURCE;NOT_OFFLINE_RESTORE_TEST"
     },
     {
       "asset_id": "ROUTABL-97-1-V4.1-PDF",
@@ -127,9 +129,24 @@
       "observation": "NAS_RECEIPT_FILE_SHA256_MATCH",
       "execution_validation": "NOT_APPLICABLE",
       "write_or_execution_approval_class": "C",
-      "copy_in_managed_repository": "NO",
+      "copy_in_managed_repository": "YES_SHA256_VERIFIED",
       "original_file_unchanged": true,
-      "sealed": true
+      "sealed": true,
+      "managed_local_copy_path": "/Users/yongho/ROUTABL-TechAssets/20_ORIGINALS/NAS-Imported/ROUTABL-97-1-V4.1/01_라우터블개발백서_최종내부기준판_v4.1.pdf",
+      "copy_validation": "FILE_HASH_MATCH_NAS_SOURCE;NOT_OFFLINE_RESTORE_TEST"
+    },
+    {
+      "asset_id": "ROUTABL-97-1-V4.1-NAS-RECEIPT",
+      "title": "97-1 NAS seal receipt",
+      "observed_original_path": "/Volumes/Dev_Assets/Routabl/97-1_최종내부기준판_v4.1_20261102/NAS_BACKUP_RECEIPT_v4.1.json",
+      "managed_local_copy_path": "/Users/yongho/ROUTABL-TechAssets/20_ORIGINALS/NAS-Imported/ROUTABL-97-1-V4.1/NAS_BACKUP_RECEIPT_v4.1.json",
+      "sha256": "f11fbec5ec3af2b611bfceb6255771cdfb2290481738ef841500e45ff3a3b79f",
+      "bytes": 850,
+      "observation": "NAS_SOURCE_TO_MAC_COPIED_AND_HASH_VERIFIED",
+      "execution_validation": "NOT_APPLICABLE",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "YES_SHA256_VERIFIED",
+      "original_file_unchanged": true
     }
   ],
   "unresolved": [
@@ -148,9 +165,13 @@
     {
       "asset_id": "ROUTABL-97-1-V4.1",
       "issue": "NAS integrity checked, no independent restoration of sealed archive performed"
+    },
+    {
+      "asset_id": "ASSET-SECURITY-01",
+      "issue": "External SSD2TB unencrypted; full content backup requires encryption plan and explicit approval"
     }
   ],
-  "supersedes": "asset_manifest_v0.1.json (preserved; not overwritten)",
+  "supersedes": "asset_manifest_v0.2.json (preserved)",
   "library_crosswalk": [
     {
       "asset_id": "TA-CASE-20261102-01",
@@ -170,5 +191,11 @@
       "library_file_id": "libfile_72a4f0a4043c819192d8967951f680a1",
       "evidence": "LIBRARY_SEARCH_FOUND;NAS_AND_LIBRARY_BYTES_NOT_COMPARED"
     }
-  ]
+  ],
+  "local_copy_receipt": "/Users/yongho/ROUTABL-TechAssets/20_ORIGINALS/NAS-Imported/ROUTABL-97-1-V4.1/LOCAL_IMPORT_RECEIPT_v0.1.json",
+  "storage_security": {
+    "ssd2tb_encrypted": false,
+    "evidence": "macOS diskutil info /Volumes/SSD2TB Encrypted: No, FileVault: No",
+    "policy": "metadata-only backup permitted; do not replicate raw whitepaper/secret-bearing sources before encryption plan"
+  }
 }
