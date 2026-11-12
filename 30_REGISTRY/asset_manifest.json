@@ -1,7 +1,7 @@
 {
-  "schema_version": "0.23",
-  "captured_at_kst": "2026-11-06T18:14:37+09:00",
-  "scope": "OFFICIAL_CHATGPT_PROJECT_ID_V03_RECONCILIATION_164_LINKED_7_IDS",
+  "schema_version": "0.24",
+  "captured_at_kst": "2026-11-06T20:28:14+09:00",
+  "scope": "CHATGPT_20261105_V04_MARKDOWN_AND_20261106_USER_RESTORED_19_PLUS_2",
   "registry_mode": "local-only security classification and search metadata",
   "existing_index_baseline": {
     "sqlite_integrity": "ok",
@@ -2069,6 +2069,210 @@
       "original_file_unchanged": true,
       "provenance_status": "DIRECT_EXPORT_FIELD_AND_PRIOR_PROJECT_URL_CROSSCHECK",
       "registry_added_in": "v0.23"
+    },
+    {
+      "asset_id": "ASSET-120-CHATGPT-V04-MD-V04-BUILDER",
+      "title": "ChatGPT 아카이브 Markdown 복원·사용자 21건 대조표 생성기",
+      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_OFFICIAL_CHATGPT_EXPORT_20261105_v01/build_chatgpt_v04_markdown_restore_overlay_20261106.py",
+      "bytes": 13679,
+      "sha256": "76443d8ada24f2f3a309c9f14ab581605cf599f8b501ac8a0ca3a14dfc85b215",
+      "mtime_utc": "2026-11-06T11:25:57.456765+00:00",
+      "source_system": "CHATGPT_OFFICIAL_EXPORT_V04_MARKDOWN_USER_RESTORE_OVERLAY",
+      "source_chat_number": "120-1",
+      "observation": "11/05 immutable export, 11/06 user-reported restored 19 project-ID chats and moved 2 previously null-ID chats; Markdown rendered in new offline GUI.",
+      "execution_validation": "V04_15_OF_15_BROWSER_TEST_PASS_SOURCE_EXPORT_UNCHANGED_USER_VISUAL_PENDING",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "REFERENCED_ONLY_PRIVATE_GUI_LOCAL",
+      "original_file_unchanged": true,
+      "provenance_status": "LOCAL_EXPORT_AND_USER_ATTESTATION_SEPARATE",
+      "registry_added_in": "v0.24"
+    },
+    {
+      "asset_id": "ASSET-120-CHATGPT-V04-MD-V04-MARKDOWN-RENDER",
+      "title": "327개 대화 원문을 안전한 Markdown HTML로 정적 변환하는 실행 코드",
+      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_OFFICIAL_CHATGPT_EXPORT_20261105_v01/render_chatgpt_markdown_v04.js",
+      "bytes": 5338,
+      "sha256": "cfd6ee80efc2d5a80701627da60a1e515141bb9e4d64cb13ea1158100adb2a4c",
+      "mtime_utc": "2026-11-06T11:22:06.362957+00:00",
+      "source_system": "CHATGPT_OFFICIAL_EXPORT_V04_MARKDOWN_USER_RESTORE_OVERLAY",
+      "source_chat_number": "120-1",
+      "observation": "11/05 immutable export, 11/06 user-reported restored 19 project-ID chats and moved 2 previously null-ID chats; Markdown rendered in new offline GUI.",
+      "execution_validation": "V04_15_OF_15_BROWSER_TEST_PASS_SOURCE_EXPORT_UNCHANGED_USER_VISUAL_PENDING",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "REFERENCED_ONLY_PRIVATE_GUI_LOCAL",
+      "original_file_unchanged": true,
+      "provenance_status": "LOCAL_EXPORT_AND_USER_ATTESTATION_SEPARATE",
+      "registry_added_in": "v0.24"
+    },
+    {
+      "asset_id": "ASSET-120-CHATGPT-V04-MD-V04-BROWSER-TEST",
+      "title": "v0.4 GUI 15개 사용성 자동검증 브라우저 코드",
+      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_OFFICIAL_CHATGPT_EXPORT_20261105_v01/browser_acceptance_chatgpt_v04.js",
+      "bytes": 6033,
+      "sha256": "97edb0616de1587574514a53234d92c2a791004aa36d9b04a2e1ac3135359198",
+      "mtime_utc": "2026-11-06T11:24:48.792164+00:00",
+      "source_system": "CHATGPT_OFFICIAL_EXPORT_V04_MARKDOWN_USER_RESTORE_OVERLAY",
+      "source_chat_number": "120-1",
+      "observation": "11/05 immutable export, 11/06 user-reported restored 19 project-ID chats and moved 2 previously null-ID chats; Markdown rendered in new offline GUI.",
+      "execution_validation": "V04_15_OF_15_BROWSER_TEST_PASS_SOURCE_EXPORT_UNCHANGED_USER_VISUAL_PENDING",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "REFERENCED_ONLY_PRIVATE_GUI_LOCAL",
+      "original_file_unchanged": true,
+      "provenance_status": "LOCAL_EXPORT_AND_USER_ATTESTATION_SEPARATE",
+      "registry_added_in": "v0.24"
+    },
+    {
+      "asset_id": "ASSET-120-CHATGPT-V04-MD-V04-RESTORE-LEDGER",
+      "title": "2026-11-06 사용자가 보고한 라우터블 19+2 채팅 복원·이동 대조표",
+      "observed_original_path": "/Users/yongho/ROUTABL-ChatGPT-Archive/2026-11-05/13_GUI_MARKDOWN_V04/restoration-ledger.json",
+      "bytes": 172649,
+      "sha256": "70821aa7b27d880a42cbb26f168a528d2e39c483287714f49478ec56a3a01b3f",
+      "mtime_utc": "2026-11-06T11:20:08.706254+00:00",
+      "source_system": "CHATGPT_OFFICIAL_EXPORT_V04_MARKDOWN_USER_RESTORE_OVERLAY",
+      "source_chat_number": "120-1",
+      "observation": "11/05 immutable export, 11/06 user-reported restored 19 project-ID chats and moved 2 previously null-ID chats; Markdown rendered in new offline GUI.",
+      "execution_validation": "V04_15_OF_15_BROWSER_TEST_PASS_SOURCE_EXPORT_UNCHANGED_USER_VISUAL_PENDING",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "REFERENCED_ONLY_PRIVATE_GUI_LOCAL",
+      "original_file_unchanged": true,
+      "provenance_status": "LOCAL_EXPORT_AND_USER_ATTESTATION_SEPARATE",
+      "registry_added_in": "v0.24"
+    },
+    {
+      "asset_id": "ASSET-120-CHATGPT-V04-MD-V04-PROJECT-DATA",
+      "title": "라우터블 표시 121건의 원본 ID와 사용자 확인 소속 분리 데이터",
+      "observed_original_path": "/Users/yongho/ROUTABL-ChatGPT-Archive/2026-11-05/13_GUI_MARKDOWN_V04/project-id-data.js",
+      "bytes": 133879,
+      "sha256": "436b20ba8ea6f058f7e98086ffeed33a40ebf937753be21e31043deaa28a8296",
+      "mtime_utc": "2026-11-06T11:20:08.715471+00:00",
+      "source_system": "CHATGPT_OFFICIAL_EXPORT_V04_MARKDOWN_USER_RESTORE_OVERLAY",
+      "source_chat_number": "120-1",
+      "observation": "11/05 immutable export, 11/06 user-reported restored 19 project-ID chats and moved 2 previously null-ID chats; Markdown rendered in new offline GUI.",
+      "execution_validation": "V04_15_OF_15_BROWSER_TEST_PASS_SOURCE_EXPORT_UNCHANGED_USER_VISUAL_PENDING",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "REFERENCED_ONLY_PRIVATE_GUI_LOCAL",
+      "original_file_unchanged": true,
+      "provenance_status": "LOCAL_EXPORT_AND_USER_ATTESTATION_SEPARATE",
+      "registry_added_in": "v0.24"
+    },
+    {
+      "asset_id": "ASSET-120-CHATGPT-V04-MD-V04-ENTRY",
+      "title": "라우터블 v0.4 Markdown 아카이브 GUI 시작 화면",
+      "observed_original_path": "/Users/yongho/ROUTABL-ChatGPT-Archive/2026-11-05/13_GUI_MARKDOWN_V04/index.html",
+      "bytes": 6262,
+      "sha256": "44e1a322e269732482331d7d3ed899b345230643c1731311d5118695aeff4b05",
+      "mtime_utc": "2026-11-06T11:25:57.455043+00:00",
+      "source_system": "CHATGPT_OFFICIAL_EXPORT_V04_MARKDOWN_USER_RESTORE_OVERLAY",
+      "source_chat_number": "120-1",
+      "observation": "11/05 immutable export, 11/06 user-reported restored 19 project-ID chats and moved 2 previously null-ID chats; Markdown rendered in new offline GUI.",
+      "execution_validation": "V04_15_OF_15_BROWSER_TEST_PASS_SOURCE_EXPORT_UNCHANGED_USER_VISUAL_PENDING",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "REFERENCED_ONLY_PRIVATE_GUI_LOCAL",
+      "original_file_unchanged": true,
+      "provenance_status": "LOCAL_EXPORT_AND_USER_ATTESTATION_SEPARATE",
+      "registry_added_in": "v0.24"
+    },
+    {
+      "asset_id": "ASSET-120-CHATGPT-V04-MD-V04-APP",
+      "title": "라우터블 v0.4 프로젝트·보관 시점·21건 복원 상태 탐색 JavaScript",
+      "observed_original_path": "/Users/yongho/ROUTABL-ChatGPT-Archive/2026-11-05/13_GUI_MARKDOWN_V04/app.js",
+      "bytes": 10447,
+      "sha256": "a863f48e25cb4f847a589126822f01768eb5080f731d6bc6dd5d130e6ff839a6",
+      "mtime_utc": "2026-11-06T11:20:08.717894+00:00",
+      "source_system": "CHATGPT_OFFICIAL_EXPORT_V04_MARKDOWN_USER_RESTORE_OVERLAY",
+      "source_chat_number": "120-1",
+      "observation": "11/05 immutable export, 11/06 user-reported restored 19 project-ID chats and moved 2 previously null-ID chats; Markdown rendered in new offline GUI.",
+      "execution_validation": "V04_15_OF_15_BROWSER_TEST_PASS_SOURCE_EXPORT_UNCHANGED_USER_VISUAL_PENDING",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "REFERENCED_ONLY_PRIVATE_GUI_LOCAL",
+      "original_file_unchanged": true,
+      "provenance_status": "LOCAL_EXPORT_AND_USER_ATTESTATION_SEPARATE",
+      "registry_added_in": "v0.24"
+    },
+    {
+      "asset_id": "ASSET-120-CHATGPT-V04-MD-V04-STYLE",
+      "title": "라우터블 v0.4 Markdown 표·코드·제목 등 서식용 CSS",
+      "observed_original_path": "/Users/yongho/ROUTABL-ChatGPT-Archive/2026-11-05/13_GUI_MARKDOWN_V04/v04-style.css",
+      "bytes": 3990,
+      "sha256": "d8069f2d20102a383ca756ac51a17171f8561348a29818bf4700dbefb170c488",
+      "mtime_utc": "2026-11-06T11:23:04.612113+00:00",
+      "source_system": "CHATGPT_OFFICIAL_EXPORT_V04_MARKDOWN_USER_RESTORE_OVERLAY",
+      "source_chat_number": "120-1",
+      "observation": "11/05 immutable export, 11/06 user-reported restored 19 project-ID chats and moved 2 previously null-ID chats; Markdown rendered in new offline GUI.",
+      "execution_validation": "V04_15_OF_15_BROWSER_TEST_PASS_SOURCE_EXPORT_UNCHANGED_USER_VISUAL_PENDING",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "REFERENCED_ONLY_PRIVATE_GUI_LOCAL",
+      "original_file_unchanged": true,
+      "provenance_status": "LOCAL_EXPORT_AND_USER_ATTESTATION_SEPARATE",
+      "registry_added_in": "v0.24"
+    },
+    {
+      "asset_id": "ASSET-120-CHATGPT-V04-MD-V04-OVERLAY-RECEIPT",
+      "title": "원본 보존·21건 사용자 반영·ID 유지 사전 검증 영수증",
+      "observed_original_path": "/Users/yongho/ROUTABL-ChatGPT-Archive/2026-11-05/20_AUDIT/v04_restoration_overlay_preflight_20261106.json",
+      "bytes": 944,
+      "sha256": "3352c6d8833185bb867e849ea775eaf30b95e81599679331c8c0ca861aa002ca",
+      "mtime_utc": "2026-11-06T11:20:08.743532+00:00",
+      "source_system": "CHATGPT_OFFICIAL_EXPORT_V04_MARKDOWN_USER_RESTORE_OVERLAY",
+      "source_chat_number": "120-1",
+      "observation": "11/05 immutable export, 11/06 user-reported restored 19 project-ID chats and moved 2 previously null-ID chats; Markdown rendered in new offline GUI.",
+      "execution_validation": "V04_15_OF_15_BROWSER_TEST_PASS_SOURCE_EXPORT_UNCHANGED_USER_VISUAL_PENDING",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "REFERENCED_ONLY_PRIVATE_GUI_LOCAL",
+      "original_file_unchanged": true,
+      "provenance_status": "LOCAL_EXPORT_AND_USER_ATTESTATION_SEPARATE",
+      "registry_added_in": "v0.24"
+    },
+    {
+      "asset_id": "ASSET-120-CHATGPT-V04-MD-V04-MARKDOWN-RECEIPT",
+      "title": "327개 채팅 HTML Markdown 변환 결과 영수증",
+      "observed_original_path": "/Users/yongho/ROUTABL-ChatGPT-Archive/2026-11-05/20_AUDIT/v04_markdown_render_receipt_20261106.json",
+      "bytes": 981,
+      "sha256": "73389914234ebd7c72b3085eaee7e2cc77b215e1e9fd9cbb2fc03524bf4f09fb",
+      "mtime_utc": "2026-11-06T11:22:19.730215+00:00",
+      "source_system": "CHATGPT_OFFICIAL_EXPORT_V04_MARKDOWN_USER_RESTORE_OVERLAY",
+      "source_chat_number": "120-1",
+      "observation": "11/05 immutable export, 11/06 user-reported restored 19 project-ID chats and moved 2 previously null-ID chats; Markdown rendered in new offline GUI.",
+      "execution_validation": "V04_15_OF_15_BROWSER_TEST_PASS_SOURCE_EXPORT_UNCHANGED_USER_VISUAL_PENDING",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "REFERENCED_ONLY_PRIVATE_GUI_LOCAL",
+      "original_file_unchanged": true,
+      "provenance_status": "LOCAL_EXPORT_AND_USER_ATTESTATION_SEPARATE",
+      "registry_added_in": "v0.24"
+    },
+    {
+      "asset_id": "ASSET-120-CHATGPT-V04-MD-V04-BROWSER-RECEIPT",
+      "title": "v0.4 사용자·라우터블·표 복원 브라우저 검증 15/15 영수증",
+      "observed_original_path": "/Users/yongho/ROUTABL-ChatGPT-Archive/2026-11-05/20_AUDIT/v04_browser_acceptance_20261106.json",
+      "bytes": 3831,
+      "sha256": "2dd8bed063e4c390b93b8f42838ca4f18cc7eb7a1bef66ec098f64866cdd3c16",
+      "mtime_utc": "2026-11-06T11:25:06.564050+00:00",
+      "source_system": "CHATGPT_OFFICIAL_EXPORT_V04_MARKDOWN_USER_RESTORE_OVERLAY",
+      "source_chat_number": "120-1",
+      "observation": "11/05 immutable export, 11/06 user-reported restored 19 project-ID chats and moved 2 previously null-ID chats; Markdown rendered in new offline GUI.",
+      "execution_validation": "V04_15_OF_15_BROWSER_TEST_PASS_SOURCE_EXPORT_UNCHANGED_USER_VISUAL_PENDING",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "REFERENCED_ONLY_PRIVATE_GUI_LOCAL",
+      "original_file_unchanged": true,
+      "provenance_status": "LOCAL_EXPORT_AND_USER_ATTESTATION_SEPARATE",
+      "registry_added_in": "v0.24"
+    },
+    {
+      "asset_id": "ASSET-120-CHATGPT-V04-MD-V04-REPORT",
+      "title": "v0.4 Markdown·라우터블 19+2 복원 이력 수용검사 보고서",
+      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_OFFICIAL_CHATGPT_EXPORT_20261105_v01/CHATGPT_GUI_V04_MARKDOWN_AND_RESTORE_20261106_v0.1.md",
+      "bytes": 5463,
+      "sha256": "e769e01cb90df3c9dbbe8bf2c9426522fe886c183bbb8c1341e373cda3d83fbd",
+      "mtime_utc": "2026-11-06T11:27:11.765398+00:00",
+      "source_system": "CHATGPT_OFFICIAL_EXPORT_V04_MARKDOWN_USER_RESTORE_OVERLAY",
+      "source_chat_number": "120-1",
+      "observation": "11/05 immutable export, 11/06 user-reported restored 19 project-ID chats and moved 2 previously null-ID chats; Markdown rendered in new offline GUI.",
+      "execution_validation": "V04_15_OF_15_BROWSER_TEST_PASS_SOURCE_EXPORT_UNCHANGED_USER_VISUAL_PENDING",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "REFERENCED_ONLY_PRIVATE_GUI_LOCAL",
+      "original_file_unchanged": true,
+      "provenance_status": "LOCAL_EXPORT_AND_USER_ATTESTATION_SEPARATE",
+      "registry_added_in": "v0.24"
     }
   ],
   "unresolved": [
@@ -2266,7 +2470,7 @@
       "issue": "Actual Android app UI display not field-tested; original failed chat tool trace not archived."
     }
   ],
-  "supersedes": "asset_manifest_v0.22.json (immutable previous preserved)",
+  "supersedes": "asset_manifest_v0.23.json (immutable previous preserved)",
   "library_crosswalk": [
     {
       "asset_id": "TA-CASE-20261102-01",
@@ -3206,6 +3410,78 @@
       "grade": "P3",
       "policy": "private_local_FileVault_no_plaintext_remote_storage",
       "classification_scope": "CHATGPT_EXPORT_PROJECT_ID_RECONCILIATION"
+    },
+    {
+      "asset_id": "ASSET-120-CHATGPT-V04-MD-V04-BUILDER",
+      "grade": "P3",
+      "policy": "private_local_FileVault_no_plaintext_remote_storage",
+      "classification_scope": "CHATGPT_EXPORT_OFFLINE_GUI_MARKDOWN_AND_USER_RESTORE_ATTESTATION"
+    },
+    {
+      "asset_id": "ASSET-120-CHATGPT-V04-MD-V04-MARKDOWN-RENDER",
+      "grade": "P3",
+      "policy": "private_local_FileVault_no_plaintext_remote_storage",
+      "classification_scope": "CHATGPT_EXPORT_OFFLINE_GUI_MARKDOWN_AND_USER_RESTORE_ATTESTATION"
+    },
+    {
+      "asset_id": "ASSET-120-CHATGPT-V04-MD-V04-BROWSER-TEST",
+      "grade": "P3",
+      "policy": "private_local_FileVault_no_plaintext_remote_storage",
+      "classification_scope": "CHATGPT_EXPORT_OFFLINE_GUI_MARKDOWN_AND_USER_RESTORE_ATTESTATION"
+    },
+    {
+      "asset_id": "ASSET-120-CHATGPT-V04-MD-V04-RESTORE-LEDGER",
+      "grade": "P3",
+      "policy": "private_local_FileVault_no_plaintext_remote_storage",
+      "classification_scope": "CHATGPT_EXPORT_OFFLINE_GUI_MARKDOWN_AND_USER_RESTORE_ATTESTATION"
+    },
+    {
+      "asset_id": "ASSET-120-CHATGPT-V04-MD-V04-PROJECT-DATA",
+      "grade": "P3",
+      "policy": "private_local_FileVault_no_plaintext_remote_storage",
+      "classification_scope": "CHATGPT_EXPORT_OFFLINE_GUI_MARKDOWN_AND_USER_RESTORE_ATTESTATION"
+    },
+    {
+      "asset_id": "ASSET-120-CHATGPT-V04-MD-V04-ENTRY",
+      "grade": "P3",
+      "policy": "private_local_FileVault_no_plaintext_remote_storage",
+      "classification_scope": "CHATGPT_EXPORT_OFFLINE_GUI_MARKDOWN_AND_USER_RESTORE_ATTESTATION"
+    },
+    {
+      "asset_id": "ASSET-120-CHATGPT-V04-MD-V04-APP",
+      "grade": "P3",
+      "policy": "private_local_FileVault_no_plaintext_remote_storage",
+      "classification_scope": "CHATGPT_EXPORT_OFFLINE_GUI_MARKDOWN_AND_USER_RESTORE_ATTESTATION"
+    },
+    {
+      "asset_id": "ASSET-120-CHATGPT-V04-MD-V04-STYLE",
+      "grade": "P3",
+      "policy": "private_local_FileVault_no_plaintext_remote_storage",
+      "classification_scope": "CHATGPT_EXPORT_OFFLINE_GUI_MARKDOWN_AND_USER_RESTORE_ATTESTATION"
+    },
+    {
+      "asset_id": "ASSET-120-CHATGPT-V04-MD-V04-OVERLAY-RECEIPT",
+      "grade": "P3",
+      "policy": "private_local_FileVault_no_plaintext_remote_storage",
+      "classification_scope": "CHATGPT_EXPORT_OFFLINE_GUI_MARKDOWN_AND_USER_RESTORE_ATTESTATION"
+    },
+    {
+      "asset_id": "ASSET-120-CHATGPT-V04-MD-V04-MARKDOWN-RECEIPT",
+      "grade": "P3",
+      "policy": "private_local_FileVault_no_plaintext_remote_storage",
+      "classification_scope": "CHATGPT_EXPORT_OFFLINE_GUI_MARKDOWN_AND_USER_RESTORE_ATTESTATION"
+    },
+    {
+      "asset_id": "ASSET-120-CHATGPT-V04-MD-V04-BROWSER-RECEIPT",
+      "grade": "P3",
+      "policy": "private_local_FileVault_no_plaintext_remote_storage",
+      "classification_scope": "CHATGPT_EXPORT_OFFLINE_GUI_MARKDOWN_AND_USER_RESTORE_ATTESTATION"
+    },
+    {
+      "asset_id": "ASSET-120-CHATGPT-V04-MD-V04-REPORT",
+      "grade": "P3",
+      "policy": "private_local_FileVault_no_plaintext_remote_storage",
+      "classification_scope": "CHATGPT_EXPORT_OFFLINE_GUI_MARKDOWN_AND_USER_RESTORE_ATTESTATION"
     }
   ],
   "search_v1_3": {
@@ -3653,6 +3929,11 @@
       "id": "B-17",
       "source": "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_OFFICIAL_CHATGPT_EXPORT_20261105_v01/CHATGPT_V03_REAL_PROJECT_ID_COMPARISON_20261106_v0.1.md",
       "status": "OPEN_REAL_ACCOUNT_LIVE_NAME_VERIFICATION_5_PROJECTS_AND_USER_GUI_ACCEPTANCE"
+    },
+    {
+      "id": "B-18",
+      "source": "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_OFFICIAL_CHATGPT_EXPORT_20261105_v01/CHATGPT_GUI_V04_MARKDOWN_AND_RESTORE_20261106_v0.1.md",
+      "status": "OPEN_SAFARI_USER_MARKDOWN_REVIEW_AND_20261106_RESTORATION_ACCOUNT_LIVE_READONLY_CONFIRMATION"
     }
   ],
   "addressbook_registration_reuse_v016": {
@@ -3842,6 +4123,46 @@
       "ASSET-120-CHATGPT-V03-ID-GUI-STYLE",
       "ASSET-120-CHATGPT-V03-ID-V03-EXTRACTION-RECEIPT",
       "ASSET-120-CHATGPT-V03-ID-V03-ACCEPTANCE"
+    ]
+  },
+  "chatgpt_export_v04_markdown_restore_overlay_v024": {
+    "snapshot_export_date": "2026-11-05",
+    "user_attestation_date": "2026-11-06",
+    "chat_count": 327,
+    "source_routabl_project_id_chats": 119,
+    "user_confirmed_restored_with_existing_routabl_id": 19,
+    "user_confirmed_added_to_routabl_from_null_source_id": 2,
+    "effective_routabl_gui_chats": 121,
+    "effective_unclassified_gui_chats": 161,
+    "unchanged_original_project_id_present": 164,
+    "unchanged_original_project_id_absent": 163,
+    "original_is_archived_for_restored_21": true,
+    "live_platform_state_independently_verified": false,
+    "project_membership_extra2_evidence": "USER_STATEMENT_ONLY_20261106",
+    "md_message_count": 12920,
+    "md_tables_rendered": 1496,
+    "md_codeblocks_rendered": 2815,
+    "browser_acceptance": "15_OF_15_PASS",
+    "private_gui": "/Users/yongho/ROUTABL-ChatGPT-Archive/2026-11-05/13_GUI_MARKDOWN_V04/index.html",
+    "restoration_ledger": "/Users/yongho/ROUTABL-ChatGPT-Archive/2026-11-05/13_GUI_MARKDOWN_V04/restoration-ledger.json",
+    "markdown_render_receipt": "/Users/yongho/ROUTABL-ChatGPT-Archive/2026-11-05/20_AUDIT/v04_markdown_render_receipt_20261106.json",
+    "previous_manifest_sha256": "d1c3437f32e66f6c42076b2c9d328714007aabe1bf611f24c15639dfa8c3e49d",
+    "previous_gui_v03_unchanged": true,
+    "source_zip_unchanged": true,
+    "user_safari_visual_approval": "PENDING",
+    "asset_ids": [
+      "ASSET-120-CHATGPT-V04-MD-V04-BUILDER",
+      "ASSET-120-CHATGPT-V04-MD-V04-MARKDOWN-RENDER",
+      "ASSET-120-CHATGPT-V04-MD-V04-BROWSER-TEST",
+      "ASSET-120-CHATGPT-V04-MD-V04-RESTORE-LEDGER",
+      "ASSET-120-CHATGPT-V04-MD-V04-PROJECT-DATA",
+      "ASSET-120-CHATGPT-V04-MD-V04-ENTRY",
+      "ASSET-120-CHATGPT-V04-MD-V04-APP",
+      "ASSET-120-CHATGPT-V04-MD-V04-STYLE",
+      "ASSET-120-CHATGPT-V04-MD-V04-OVERLAY-RECEIPT",
+      "ASSET-120-CHATGPT-V04-MD-V04-MARKDOWN-RECEIPT",
+      "ASSET-120-CHATGPT-V04-MD-V04-BROWSER-RECEIPT",
+      "ASSET-120-CHATGPT-V04-MD-V04-REPORT"
     ]
   }
 }
