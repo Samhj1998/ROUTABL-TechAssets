@@ -1,6 +1,6 @@
 {
-  "schema_version": "0.35",
-  "captured_at_kst": "2026-11-12T23:19:35+09:00",
+  "schema_version": "0.36",
+  "captured_at_kst": "2026-11-13T02:35:32+09:00",
   "scope": "TI01_3TIER_IMPORTANCE_RECOVERY_GOVERNANCE_ABOVE_VI01",
   "registry_mode": "local-only security classification and search metadata",
   "existing_index_baseline": {
@@ -2573,7 +2573,7 @@
       "mtime_utc": "2026-11-10T17:31:58.392618+00:00",
       "source_system": "CLAUDE_SESSION_20261111_ANALYTICS_APP_BUILD",
       "source_chat_number": "200",
-      "observation": "Independent analytics app (read-only Firestore). Local git 544b2ae, GitHub not registered. Driver app untouched.",
+      "observation": "Independent analytics app (read-only Firestore). Local git 544b2ae, GitHub not registered. Driver app untouched. | 2026-11-13: get(Source.SERVER) 방식은 PERF-02-ANALYTICS-APPLIED-READER(listenAll)로 대체.",
       "execution_validation": "DEVICE_LOGIN_AND_LOAD_PASS_USER_OBSERVED",
       "write_or_execution_approval_class": "B",
       "copy_in_managed_repository": "NO_REFERENCED_ONLY_ANALYTICS_APP_REPOSITORY",
@@ -2583,7 +2583,8 @@
         "ANALYSIS-APP-FUTURE",
         "AUTH-01"
       ],
-      "registry_added_in": "v0.28"
+      "registry_added_in": "v0.28",
+      "superseded_by": "PERF-02-ANALYTICS-APPLIED-READER"
     },
     {
       "asset_id": "ANALYTICS-APP-01-LOCAL-CACHE",
@@ -2594,8 +2595,8 @@
       "mtime_utc": "2026-11-10T17:31:58.391520+00:00",
       "source_system": "CLAUDE_SESSION_20261111_ANALYTICS_APP_BUILD",
       "source_chat_number": "200",
-      "observation": "Independent analytics app (read-only Firestore). Local git 544b2ae, GitHub not registered. Driver app untouched.",
-      "execution_validation": "DEVICE_USE_PASS_USER_OBSERVED__READ_COUNT_NOT_MEASURED",
+      "observation": "Independent analytics app (read-only Firestore). Local git 544b2ae, GitHub not registered. Driver app untouched. | 2026-11-13 비권장: 새로고침 때만 서버를 읽어 11/11 데이터 누락 발생. PERF-02로 교체(분석앱 416a390). 코드에서 사용 중단.",
+      "execution_validation": "SUPERSEDED_BY_PERF-02__DO_NOT_REUSE",
       "write_or_execution_approval_class": "B",
       "copy_in_managed_repository": "NO_REFERENCED_ONLY_ANALYTICS_APP_REPOSITORY",
       "original_file_unchanged": true,
@@ -2604,7 +2605,9 @@
         "ANALYSIS-APP-FUTURE",
         "PERF-01"
       ],
-      "registry_added_in": "v0.28"
+      "registry_added_in": "v0.28",
+      "supersedes_asset_id": null,
+      "superseded_by": "PERF-02-DRIVER-DISPATCH-REPOSITORY"
     },
     {
       "asset_id": "ANALYTICS-APP-01-DAILY-STATS",
@@ -3312,6 +3315,206 @@
       "previous_paths": [
         "/Users/yongho/ROUTABL-TechAssets/00_GUIDE/ASSET_SEARCH_V1_7_QUICKSTART_20261112.md"
       ]
+    },
+    {
+      "asset_id": "PERF-02-DRIVER-DISPATCH-REPOSITORY",
+      "title": "[표준] 배차 데이터 받기: 실시간 리스너 1개를 모든 화면이 공유 + Firestore 폰 캐시, 화면이 모두 떠나면 1초 뒤 해제 (기사앱 원본)",
+      "observed_original_path": "/Users/yongho/StudioProjects/DISPATCH-One-Android/app/src/main/java/com/routivel/driver/DriverDispatchRepository.kt",
+      "bytes": 4540,
+      "sha256": "9ebb1ebc8e003033c4543a80ee9d6ebf5a6167f62c390ef1b14042ee72a4d138",
+      "mtime_utc": "2026-10-22T16:38:17.733112+00:00",
+      "source_system": "CLAUDE_SESSION_20261113_ANALYTICS_PERF02",
+      "source_chat_number": "200",
+      "observation": "git DISPATCH-One-Android 10a7322",
+      "execution_validation": "FIELD_PROVEN_DRIVER_APP_100_UPDATES",
+      "write_or_execution_approval_class": "B",
+      "copy_in_managed_repository": "NO_REFERENCED_ONLY_APP_REPOSITORY",
+      "original_file_unchanged": true,
+      "provenance_status": "DIRECT_FILE_BYTES_SHA256_VERIFIED",
+      "parent_asset_ids": [
+        "PERF-01"
+      ],
+      "registry_added_in": "v0.36",
+      "grade": "P1"
+    },
+    {
+      "asset_id": "PERF-02-LATEST-SCREEN-WORK",
+      "title": "[표준] 화면 뒤 계산·최신 요청만 반영 LatestScreenWork (기사앱 원본)",
+      "observed_original_path": "/Users/yongho/StudioProjects/DISPATCH-One-Android/app/src/main/java/com/routivel/driver/LatestScreenWork.kt",
+      "bytes": 1637,
+      "sha256": "f2aa744aeb98c8d2633ff1c685d2e4c4a09ec1d52b10e9cd149ab2608a6b3955",
+      "mtime_utc": "2026-10-18T10:04:41.071957+00:00",
+      "source_system": "CLAUDE_SESSION_20261113_ANALYTICS_PERF02",
+      "source_chat_number": "200",
+      "observation": "git DISPATCH-One-Android 10a7322",
+      "execution_validation": "FIELD_PROVEN_DRIVER_APP_100_UPDATES",
+      "write_or_execution_approval_class": "B",
+      "copy_in_managed_repository": "NO_REFERENCED_ONLY_APP_REPOSITORY",
+      "original_file_unchanged": true,
+      "provenance_status": "DIRECT_FILE_BYTES_SHA256_VERIFIED",
+      "parent_asset_ids": [
+        "PERF-01"
+      ],
+      "registry_added_in": "v0.36",
+      "grade": "P1"
+    },
+    {
+      "asset_id": "PERF-02-SCREEN-WORKERS",
+      "title": "[표준] 계산 스레드·UI 실행기 ScreenWorkers (기사앱 원본)",
+      "observed_original_path": "/Users/yongho/StudioProjects/DISPATCH-One-Android/app/src/main/java/com/routivel/driver/ScreenWorkers.kt",
+      "bytes": 359,
+      "sha256": "586fe799d90877385878ee2afb249df8e512bb36ffdd15ad46293ee8102d1df3",
+      "mtime_utc": "2026-10-18T10:04:41.072529+00:00",
+      "source_system": "CLAUDE_SESSION_20261113_ANALYTICS_PERF02",
+      "source_chat_number": "200",
+      "observation": "git DISPATCH-One-Android 10a7322",
+      "execution_validation": "FIELD_PROVEN_DRIVER_APP_100_UPDATES",
+      "write_or_execution_approval_class": "B",
+      "copy_in_managed_repository": "NO_REFERENCED_ONLY_APP_REPOSITORY",
+      "original_file_unchanged": true,
+      "provenance_status": "DIRECT_FILE_BYTES_SHA256_VERIFIED",
+      "parent_asset_ids": [
+        "PERF-01"
+      ],
+      "registry_added_in": "v0.36",
+      "grade": "P1"
+    },
+    {
+      "asset_id": "PERF-02-ANALYTICS-APPLIED-REPOSITORY",
+      "title": "PERF-02 파생앱 적용 예: 분석앱 AnalyticsRepository (리스너 공유·화면 뒤 Insights 1회 계산)",
+      "observed_original_path": "/Users/yongho/StudioProjects/ROUTABL-Analytics-Android/app/src/main/java/com/routivel/analytics/data/AnalyticsRepository.kt",
+      "bytes": 5673,
+      "sha256": "757daa20e428410ea0d2e8720f4af46c1b9d68fb958d4674297be430d3a2deb8",
+      "mtime_utc": "2026-11-12T16:11:43.712819+00:00",
+      "source_system": "CLAUDE_SESSION_20261113_ANALYTICS_PERF02",
+      "source_chat_number": "200",
+      "observation": "git ROUTABL-Analytics-Android cfa0e27",
+      "execution_validation": "DEVICE_USE_PASS_USER_OBSERVED_AUTO_UPDATE_2_TEST_ORDERS",
+      "write_or_execution_approval_class": "B",
+      "copy_in_managed_repository": "NO_REFERENCED_ONLY_APP_REPOSITORY",
+      "original_file_unchanged": true,
+      "provenance_status": "DIRECT_FILE_BYTES_SHA256_VERIFIED",
+      "parent_asset_ids": [
+        "PERF-01"
+      ],
+      "registry_added_in": "v0.36",
+      "grade": "P2"
+    },
+    {
+      "asset_id": "PERF-02-ANALYTICS-APPLIED-READER",
+      "title": "PERF-02 파생앱 적용 예: 분석앱 FirestoreReader.listenAll (읽기 전용, MetadataChanges.INCLUDE)",
+      "observed_original_path": "/Users/yongho/StudioProjects/ROUTABL-Analytics-Android/app/src/main/java/com/routivel/analytics/data/FirestoreReader.kt",
+      "bytes": 7189,
+      "sha256": "1b5f5365dae298ec4f0673c10cdae33c65bf68e46d17af600302f821f1738fd3",
+      "mtime_utc": "2026-11-12T17:12:14.667937+00:00",
+      "source_system": "CLAUDE_SESSION_20261113_ANALYTICS_PERF02",
+      "source_chat_number": "200",
+      "observation": "git ROUTABL-Analytics-Android cfa0e27",
+      "execution_validation": "DEVICE_USE_PASS_USER_OBSERVED_AUTO_UPDATE_2_TEST_ORDERS",
+      "write_or_execution_approval_class": "B",
+      "copy_in_managed_repository": "NO_REFERENCED_ONLY_APP_REPOSITORY",
+      "original_file_unchanged": true,
+      "provenance_status": "DIRECT_FILE_BYTES_SHA256_VERIFIED",
+      "parent_asset_ids": [
+        "PERF-01"
+      ],
+      "registry_added_in": "v0.36",
+      "grade": "P2"
+    },
+    {
+      "asset_id": "UX-SWIPE-01-DRIVER",
+      "title": "[표준] 좌우 스와이프 화면 이동 SwipeNavigationUtils (72dp, 가로≥세로×1.35, 입력칸 제외)",
+      "observed_original_path": "/Users/yongho/StudioProjects/DISPATCH-One-Android/app/src/main/java/com/routivel/driver/SwipeNavigationUtils.kt",
+      "bytes": 6858,
+      "sha256": "e7536b194dee95a95f34ca386cd7e2d31ad5f9792ac82258bcb915d5d5a024c1",
+      "mtime_utc": "2026-10-21T10:55:52.798491+00:00",
+      "source_system": "CLAUDE_SESSION_20261113_ANALYTICS_PERF02",
+      "source_chat_number": "200",
+      "observation": "git DISPATCH-One-Android 10a7322",
+      "execution_validation": "FIELD_PROVEN_DRIVER_APP",
+      "write_or_execution_approval_class": "B",
+      "copy_in_managed_repository": "NO_REFERENCED_ONLY_APP_REPOSITORY",
+      "original_file_unchanged": true,
+      "provenance_status": "DIRECT_FILE_BYTES_SHA256_VERIFIED",
+      "parent_asset_ids": [],
+      "registry_added_in": "v0.36",
+      "grade": "P2"
+    },
+    {
+      "asset_id": "UX-SWIPE-01-FRAGMENT-TABS",
+      "title": "UX-SWIPE-01 Fragment 탭용 이식본 SwipeTabs (취소 신호 보강)",
+      "observed_original_path": "/Users/yongho/StudioProjects/ROUTABL-Analytics-Android/app/src/main/java/com/routivel/analytics/ui/SwipeTabs.kt",
+      "bytes": 2308,
+      "sha256": "7d267826baf7aad5693007e30460c3d69046a49a6790f95e44d0bb9b055ada51",
+      "mtime_utc": "2026-11-12T16:17:40.758373+00:00",
+      "source_system": "CLAUDE_SESSION_20261113_ANALYTICS_PERF02",
+      "source_chat_number": "200",
+      "observation": "git ROUTABL-Analytics-Android cfa0e27",
+      "execution_validation": "DEVICE_USE_PASS_USER_OBSERVED",
+      "write_or_execution_approval_class": "B",
+      "copy_in_managed_repository": "NO_REFERENCED_ONLY_APP_REPOSITORY",
+      "original_file_unchanged": true,
+      "provenance_status": "DIRECT_FILE_BYTES_SHA256_VERIFIED",
+      "parent_asset_ids": [],
+      "registry_added_in": "v0.36",
+      "grade": "P2"
+    },
+    {
+      "asset_id": "DATA-02-INPUT-LOCATION",
+      "title": "배차 입력 순간 위치=대기 위치(입력 시각·좌표·가장 가까운 주소록 동) + 관제 위치 공유 항상/필요시(기기별)",
+      "observed_original_path": "/Users/yongho/StudioProjects/DISPATCH-One-Android/app/src/main/java/com/routivel/driver/DeviceLocationSettings.kt",
+      "bytes": 4153,
+      "sha256": "6d8e7a371fd450fb1f45e03e762a1698d6df3d6af7c210a51910329180f7a389",
+      "mtime_utc": "2026-11-12T17:11:06.019881+00:00",
+      "source_system": "CLAUDE_SESSION_20261113_ANALYTICS_PERF02",
+      "source_chat_number": "200",
+      "observation": "git DISPATCH-One-Android 10a7322",
+      "execution_validation": "INSTALLED_DRIVER_1.0.70_SENIOR_1.0.22__FIELD_TEST_PENDING",
+      "write_or_execution_approval_class": "B",
+      "copy_in_managed_repository": "NO_REFERENCED_ONLY_APP_REPOSITORY",
+      "original_file_unchanged": true,
+      "provenance_status": "DIRECT_FILE_BYTES_SHA256_VERIFIED",
+      "parent_asset_ids": [],
+      "registry_added_in": "v0.36",
+      "grade": "P2"
+    },
+    {
+      "asset_id": "ANALYTICS-APP-01-WAIT-PLACE",
+      "title": "분석앱 대기 장소 판정 WaitPlace (늦은 입력: 출발지 300m 또는 입력→픽업 3분)",
+      "observed_original_path": "/Users/yongho/StudioProjects/ROUTABL-Analytics-Android/app/src/main/java/com/routivel/analytics/data/WaitPlace.kt",
+      "bytes": 2464,
+      "sha256": "a8201df1fa84809dd033da9e2536ca1028de849ea5ebe9f5e3570734a4847845",
+      "mtime_utc": "2026-11-12T17:12:14.668582+00:00",
+      "source_system": "CLAUDE_SESSION_20261113_ANALYTICS_PERF02",
+      "source_chat_number": "200",
+      "observation": "git ROUTABL-Analytics-Android cfa0e27",
+      "execution_validation": "INSTALLED__FIELD_TEST_PENDING",
+      "write_or_execution_approval_class": "B",
+      "copy_in_managed_repository": "NO_REFERENCED_ONLY_APP_REPOSITORY",
+      "original_file_unchanged": true,
+      "provenance_status": "DIRECT_FILE_BYTES_SHA256_VERIFIED",
+      "parent_asset_ids": [],
+      "registry_added_in": "v0.36",
+      "grade": "P2"
+    },
+    {
+      "asset_id": "ANALYTICS-APP-01-DAY-REPORT",
+      "title": "분석앱 당일 리포트(퇴근 전 실시간)·하루 배차목록(대기·적요)",
+      "observed_original_path": "/Users/yongho/StudioProjects/ROUTABL-Analytics-Android/app/src/main/java/com/routivel/analytics/ui/DayDispatchActivity.kt",
+      "bytes": 5732,
+      "sha256": "7c7c47bc3dfa0822834bab06a83d69327013d6406cee4e8f4873581d852edeb8",
+      "mtime_utc": "2026-11-12T16:58:15.748766+00:00",
+      "source_system": "CLAUDE_SESSION_20261113_ANALYTICS_PERF02",
+      "source_chat_number": "200",
+      "observation": "git ROUTABL-Analytics-Android cfa0e27",
+      "execution_validation": "DEVICE_USE_PASS_USER_OBSERVED",
+      "write_or_execution_approval_class": "B",
+      "copy_in_managed_repository": "NO_REFERENCED_ONLY_APP_REPOSITORY",
+      "original_file_unchanged": true,
+      "provenance_status": "DIRECT_FILE_BYTES_SHA256_VERIFIED",
+      "parent_asset_ids": [],
+      "registry_added_in": "v0.36",
+      "grade": "P2"
     }
   ],
   "unresolved": [
@@ -5366,9 +5569,9 @@
     "asset_id": "ASSET-120-GOVERNANCE-TI01-3TIER-ORIGINAL-PROTECTION-20261106"
   },
   "previous_registry": {
-    "path": "asset_manifest_v0.31.json",
-    "bytes": 274163,
-    "sha256": "56b4ad0730ea377796e7632de7faa41c6b175098cd09272e319fde460b9edd6e"
+    "path": "asset_manifest_v0.35.json",
+    "bytes": 293116,
+    "sha256": "2aa27bf3838dc0a02f4a66df5a18c4847b50a3d80112e0af8e72203fa7659c40"
   },
   "analytics_app_v028": {
     "status": "IMPLEMENTED_ANALYSIS-APP-FUTURE_AS_INDEPENDENT_READ_ONLY_APP",
@@ -5614,5 +5817,37 @@
     "action": "00_GUIDE: 문서 19개 → docs/principles·guides·history, 상태 보고서 6개 → docs/history/STATUS_20261103.md + 이름표 status-20261103-v0.2~0.7, 참조 없는 옛 스크립트 6개 → 이름표 guide-before-p4",
     "kept_in_place": "자동 백업 체인 6개, RUN_*.command와 대상 스크립트, 백업 앱이 부르는 감독 스크립트 v0_1·v0_2, 진단·점검 도구, plist",
     "registry_paths_updated": 14
+  },
+  "perf02_core_reuse_v036": {
+    "incident": "분석앱(11/11)이 기사앱 PERF-01을 원칙만 재사용(JSON 캐시·새로고침 때만 서버 읽기) → 11/11 배차 누락. 원인: 기사앱 데이터 수신 코드(DriverDispatchRepository)가 기술자산 미등록, PERF-01 정의가 LatestScreenWork·ScreenWorkers만 포함, shared/ 복사 범위 밖(app/ 안, Firebase 의존)",
+    "fix": "PERF-02(데이터 받기·화면 뒤 계산) 코드째 등록, ANALYTICS-APP-01-LOCAL-CACHE 비권장 표시, 분석앱을 PERF-02로 교체(416a390) 후 실기기 자동 갱신 확인",
+    "rule": "파생 앱(고객앱·시니어앱·분석앱·고객등록앱·네비앱)은 Firebase 배차 데이터를 PERF-02 코드 그대로 받는다. 원칙만 재사용하거나 새로 짜지 않는다. 바꿔야 하면 이유를 기록하고 사용자 확인.",
+    "derived_app_checklist": [
+      "데이터 받기: PERF-02-DRIVER-DISPATCH-REPOSITORY 방식인가",
+      "화면 계산: LatestScreenWork·ScreenWorkers로 화면 뒤에서 하는가",
+      "검색: SEARCH-01(shared/KoreanSearch) 그대로인가",
+      "정산 규칙: shared/SettlementRules 그대로인가",
+      "화면 이동: UX-SWIPE-01 기준인가",
+      "안 쓴 항목은 이유를 인계 메모에 적었는가"
+    ],
+    "usage_note": "리스너는 30분 넘게 끊기면 재연결 시 전체 재조회 비용. 가끔 여는 앱은 변경분 조회(CustomerDirectory changedAt 방식) 검토",
+    "wait_place_rule": "대기 장소 = 다음 배차 입력 순간 위치의 동(waitDong). 오더 수신 즉시 등록이 규칙. 늦은 입력은 위치 미확정(사용자 확정 2026-11-13)",
+    "repos": {
+      "DISPATCH-One-Android": "10a7322",
+      "ROUTABL-Analytics-Android": "cfa0e27",
+      "ROUTABL-Senior-Driver": "2a22b64"
+    },
+    "added_asset_ids": [
+      "PERF-02-DRIVER-DISPATCH-REPOSITORY",
+      "PERF-02-LATEST-SCREEN-WORK",
+      "PERF-02-SCREEN-WORKERS",
+      "PERF-02-ANALYTICS-APPLIED-REPOSITORY",
+      "PERF-02-ANALYTICS-APPLIED-READER",
+      "UX-SWIPE-01-DRIVER",
+      "UX-SWIPE-01-FRAGMENT-TABS",
+      "DATA-02-INPUT-LOCATION",
+      "ANALYTICS-APP-01-WAIT-PLACE",
+      "ANALYTICS-APP-01-DAY-REPORT"
+    ]
   }
 }
