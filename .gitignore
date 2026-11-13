@@ -34,3 +34,9 @@ __pycache__/
 
 # P2: 옛 등록부 사본 보관함 (내용은 git 이름표 registry-v0.N에 그대로 있음)
 30_REGISTRY/_archive_versions/
+
+# 2026-11-14 공개 전환: 실제 거래 화면·대화 원문은 공개본 제외(디스크·NAS에는 보관)
+**/CUSTOMER_REG_APP_PREP_*/samples/*.jpg
+**/CUSTOMER_REG_APP_PREP_*/sources/chatgpt_cases_*
+# 원본 전체 이력 보관본(git bundle) — NAS로만 복사
+_history_archive/
