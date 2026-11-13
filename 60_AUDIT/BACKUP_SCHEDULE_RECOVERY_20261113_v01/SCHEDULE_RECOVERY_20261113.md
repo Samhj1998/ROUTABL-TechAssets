@@ -20,3 +20,11 @@
 - 실제 백업 실행: 11-14 04:30 결과로 판정(감독자 상태 파일·로컬 스냅샷·NAS CAS).
 - 해제 원인 재발 방지: 매일 점검 시 `launchctl print … native.v042` 포함 권장. v02 앱 종료·v0.4/v0.4.1 비활성 확인.
 - 교훈(자산 후보): 'UI 스위치 켜짐'은 '예약 등록'을 보장하지 않음. 백업 상태 점검은 예약 존재 + 마지막 실행 기록을 함께 본다.
+
+## 11-14 04:30 결과 (07:02 KST 확인, 읽기 전용)
+- 예약 실행: **PASS** — 04:30:31 실행기 시작(`last_native_launchagent_v04.json`, launchAgentRegistrationChanged=false).
+- 백업: **FAIL** — 실행기 `BACKUP_FAILED_NO_RETRY`, childExitCode 7, 25.4초. 감독자 v0.2 `FAILED_ONE_ATTEMPT_NO_RETRY`, phase=child, returncode 2.
+- 로컬·NAS 결과 파일 갱신 없음(마지막 성공은 11-12 22:58 수동 그대로).
+- **원인 특정 불가:** 감독자가 하위 작업(MacToNasOneShot_v0_1)의 출력을 `stdout/stderr=DEVNULL`로 버리고, OneShot은 예외 시 오류 종류 이름만 남긴 채 exit 2로 끝남 → 실패 사유(예: STORAGE_OFFLINE, LOCAL_BACKUP_RECEIPT_NOT_SUCCESS 등)가 어디에도 기록되지 않음.
+- 25초 만에 종료 → 저장장치 확인 또는 로컬 백업 초기 단계에서 실패했을 가능성이 높음(추정).
+- 사용자 지시(11-13 21:41)에 따라 재제작 설계안 작성: `40_WORKING/backup/BACKUP_V3_REDESIGN/DESIGN_v0.1.md`.
