@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.36",
+  "schema_version": "0.37",
   "captured_at_kst": "2026-11-13T02:35:32+09:00",
   "scope": "TI01_3TIER_IMPORTANCE_RECOVERY_GOVERNANCE_ABOVE_VI01",
   "registry_mode": "local-only security classification and search metadata",
@@ -5162,97 +5162,153 @@
     {
       "id": "B-01",
       "source": "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_INTEGRATION_20261104_v01/OPEN_ISSUES_FOR_OWNER_v0.1.md",
-      "status": "PARTIAL_OFFICIAL_CHAT_RECORD_ACQUIRED_BACKEND_TRACE_UNVERIFIED"
+      "status": "PARTIAL_OFFICIAL_CHAT_RECORD_ACQUIRED_BACKEND_TRACE_UNVERIFIED",
+      "v1_triage": "MOVED_TO_CHAT_ARCHIVE_PROJECT",
+      "v1_triage_note": "ChatGPT 대화 아카이브·웹 뷰어 프로젝트로 이관"
     },
     {
       "id": "B-02",
       "source": "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_INTEGRATION_20261104_v01/OPEN_ISSUES_FOR_OWNER_v0.1.md",
-      "status": "OPEN_OR_PENDING"
+      "status": "OPEN_OR_PENDING",
+      "v1_triage": "SUPERSEDED_BY_BACKUP_V3",
+      "v1_triage_note": "백업 v3 3일 연속 ok 시 닫음"
     },
     {
       "id": "B-03",
       "source": "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_INTEGRATION_20261104_v01/OPEN_ISSUES_FOR_OWNER_v0.1.md",
-      "status": "OPEN_OR_PENDING"
+      "status": "OPEN_OR_PENDING",
+      "v1_triage": "SUPERSEDED_BY_BACKUP_V3",
+      "v1_triage_note": "백업 v3 3일 연속 ok 시 닫음"
     },
     {
       "id": "B-04",
       "source": "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_INTEGRATION_20261104_v01/OPEN_ISSUES_FOR_OWNER_v0.1.md",
-      "status": "OPEN_OR_PENDING"
+      "status": "OPEN_OR_PENDING",
+      "v1_triage": "SUPERSEDED_BY_BACKUP_V3",
+      "v1_triage_note": "백업 v3 3일 연속 ok 시 닫음"
     },
     {
       "id": "B-05",
       "source": "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_INTEGRATION_20261104_v01/OPEN_ISSUES_FOR_OWNER_v0.1.md",
-      "status": "OPEN_OR_PENDING"
+      "status": "OPEN_OR_PENDING",
+      "v1_triage": "SUPERSEDED_BY_BACKUP_V3",
+      "v1_triage_note": "백업 v3 3일 연속 ok 시 닫음"
     },
     {
       "id": "B-06",
       "source": "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_INTEGRATION_20261104_v01/OPEN_ISSUES_FOR_OWNER_v0.1.md",
-      "status": "OPEN_OR_PENDING"
+      "status": "OPEN_OR_PENDING",
+      "v1_triage": "V1_REQUIRED",
+      "v1_triage_note": "V1-3 재발견: 검색 색인 갱신 후 재발견 시험"
     },
     {
       "id": "B-07",
       "source": "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_INTEGRATION_20261104_v01/OPEN_ISSUES_FOR_OWNER_v0.1.md",
-      "status": "PARTIAL_LIBRARY_BINARY_SHA_UNVERIFIED"
+      "status": "PARTIAL_LIBRARY_BINARY_SHA_UNVERIFIED",
+      "v1_triage": "MOVED_TO_CHAT_ARCHIVE_PROJECT",
+      "v1_triage_note": "ChatGPT 대화 아카이브·웹 뷰어 프로젝트로 이관"
     },
     {
       "id": "B-08",
       "source": "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_INTEGRATION_20261104_v01/OPEN_ISSUES_FOR_OWNER_v0.1.md",
-      "status": "OPEN_OR_PENDING"
+      "status": "OPEN_OR_PENDING",
+      "v1_triage": "CLOSED_OUT_OF_SCOPE",
+      "v1_triage_note": "GitHub 공개 저장소가 외부 보관 역할 대신"
     },
     {
       "id": "B-09",
       "source": "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_INTEGRATION_20261104_v01/OPEN_ISSUES_FOR_OWNER_v0.1.md",
-      "status": "OPEN_OR_PENDING"
+      "status": "OPEN_OR_PENDING",
+      "v1_triage": "SUPERSEDED_BY_BACKUP_V3",
+      "v1_triage_note": "백업 v3 3일 연속 ok 시 닫음"
     },
     {
       "id": "B-10",
       "source": "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_INTEGRATION_20261104_v01/OPEN_ISSUES_FOR_OWNER_v0.1.md",
-      "status": "OPEN_OR_PENDING"
+      "status": "OPEN_OR_PENDING",
+      "v1_triage": "SUPERSEDED_BY_BACKUP_V3",
+      "v1_triage_note": "백업 v3 3일 연속 ok 시 닫음"
     },
     {
       "id": "B-11",
       "source": "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_OFFICIAL_CHATGPT_EXPORT_20261105_v01/LARGE_EXPORT_ENCRYPTED_BACKUP_GATE_v0.1.md",
-      "status": "RESOLVED_20261105_SSD_NAS_AES256_READONLY_RESTORE_PASS_WITH_KEY_ESCROW_PENDING"
+      "status": "RESOLVED_20261105_SSD_NAS_AES256_READONLY_RESTORE_PASS_WITH_KEY_ESCROW_PENDING",
+      "v1_triage": "SUPERSEDED_BY_BACKUP_V3",
+      "v1_triage_note": "백업 v3 3일 연속 ok 시 닫음"
     },
     {
       "id": "B-12",
       "source": "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_OFFICIAL_CHATGPT_EXPORT_20261105_v01/LIBRARY_AND_ATTACHMENTS_CROSSWALK_v0.1.md",
-      "status": "OPEN_FULL_LIBRARY_BINARY_CROSSWALK"
+      "status": "OPEN_FULL_LIBRARY_BINARY_CROSSWALK",
+      "v1_triage": "MOVED_TO_CHAT_ARCHIVE_PROJECT",
+      "v1_triage_note": "ChatGPT 대화 아카이브·웹 뷰어 프로젝트로 이관"
     },
     {
       "id": "B-13",
       "source": "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_OFFICIAL_CHATGPT_EXPORT_20261105_v01/AES256_OFFSITE_BACKUP_RESTORE_ACCEPTANCE_v0.1.md",
-      "status": "OPEN_KEY_ESCROW_INDEPENDENT_DISASTER_RECOVERY_TEST"
+      "status": "OPEN_KEY_ESCROW_INDEPENDENT_DISASTER_RECOVERY_TEST",
+      "v1_triage": "SUPERSEDED_BY_BACKUP_V3",
+      "v1_triage_note": "백업 v3 3일 연속 ok 시 닫음"
     },
     {
       "id": "B-14",
       "source": "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_OFFICIAL_CHATGPT_EXPORT_20261105_v01/AES256_V2_PASSWORD_NEWLINE_FIX_AND_RESTORE_20261106_v0.1.md",
-      "status": "PARTIAL_MACSTUDIO_FINDER_AES256_V2_MOUNT_PASS_OTHER_MAC_RESTORE_PENDING"
+      "status": "PARTIAL_MACSTUDIO_FINDER_AES256_V2_MOUNT_PASS_OTHER_MAC_RESTORE_PENDING",
+      "v1_triage": "SUPERSEDED_BY_BACKUP_V3",
+      "v1_triage_note": "백업 v3 3일 연속 ok 시 닫음"
     },
     {
       "id": "B-15",
       "source": "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_OFFICIAL_CHATGPT_EXPORT_20261105_v01/CHATGPT_EXPORT_GUI_READABLE_ARCHIVE_ACCEPTANCE_20261106_v0.1.md",
-      "status": "OPEN_USER_SAFARI_READABILITY_AND_97_ATTACHMENT_REFERENCES_REVIEW"
+      "status": "OPEN_USER_SAFARI_READABILITY_AND_97_ATTACHMENT_REFERENCES_REVIEW",
+      "v1_triage": "MOVED_TO_CHAT_ARCHIVE_PROJECT",
+      "v1_triage_note": "ChatGPT 대화 아카이브·웹 뷰어 프로젝트로 이관"
     },
     {
       "id": "B-16",
       "source": "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_OFFICIAL_CHATGPT_EXPORT_20261105_v01/CHATGPT_ARCHIVE_PROJECT_GROUPS_GUI_V02_ACCEPTANCE_20261106_v0.1.md",
-      "status": "OPEN_USER_GUI_REVIEW_AND_PROJECT_MEMBERSHIP_CONFIRMATION"
+      "status": "OPEN_USER_GUI_REVIEW_AND_PROJECT_MEMBERSHIP_CONFIRMATION",
+      "v1_triage": "MOVED_TO_CHAT_ARCHIVE_PROJECT",
+      "v1_triage_note": "ChatGPT 대화 아카이브·웹 뷰어 프로젝트로 이관"
     },
     {
       "id": "B-17",
       "source": "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_OFFICIAL_CHATGPT_EXPORT_20261105_v01/CHATGPT_V03_REAL_PROJECT_ID_COMPARISON_20261106_v0.1.md",
-      "status": "OPEN_REAL_ACCOUNT_LIVE_NAME_VERIFICATION_5_PROJECTS_AND_USER_GUI_ACCEPTANCE"
+      "status": "OPEN_REAL_ACCOUNT_LIVE_NAME_VERIFICATION_5_PROJECTS_AND_USER_GUI_ACCEPTANCE",
+      "v1_triage": "MOVED_TO_CHAT_ARCHIVE_PROJECT",
+      "v1_triage_note": "ChatGPT 대화 아카이브·웹 뷰어 프로젝트로 이관"
     },
     {
       "id": "B-18",
       "source": "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_OFFICIAL_CHATGPT_EXPORT_20261105_v01/CHATGPT_GUI_V04_MARKDOWN_AND_RESTORE_20261106_v0.1.md",
-      "status": "OPEN_SAFARI_USER_MARKDOWN_REVIEW_AND_20261106_RESTORATION_ACCOUNT_LIVE_READONLY_CONFIRMATION"
+      "status": "OPEN_SAFARI_USER_MARKDOWN_REVIEW_AND_20261106_RESTORATION_ACCOUNT_LIVE_READONLY_CONFIRMATION",
+      "v1_triage": "MOVED_TO_CHAT_ARCHIVE_PROJECT",
+      "v1_triage_note": "ChatGPT 대화 아카이브·웹 뷰어 프로젝트로 이관"
     },
     {
       "id": "B-19",
       "source": "/Users/yongho/ROUTABL-TechAssets/60_AUDIT/120_OFFICIAL_CHATGPT_EXPORT_20261105_v01/GUI_V04_MISSING_CSS_AND_INDEPENDENCE_FIX_20261106_v0.1.md",
-      "status": "OPEN_USER_SAFARI_VISUAL_INSPECTION_AND_OPTIONAL_PREVIOUS_VERSION_LINKS_IF_DELETING"
+      "status": "OPEN_USER_SAFARI_VISUAL_INSPECTION_AND_OPTIONAL_PREVIOUS_VERSION_LINKS_IF_DELETING",
+      "v1_triage": "MOVED_TO_CHAT_ARCHIVE_PROJECT",
+      "v1_triage_note": "ChatGPT 대화 아카이브·웹 뷰어 프로젝트로 이관"
+    },
+    {
+      "id": "N-01",
+      "status": "OPEN",
+      "v1_triage": "V1_REQUIRED",
+      "v1_triage_note": "백업 v3 설치·3일 연속 runs.log ok"
+    },
+    {
+      "id": "N-02",
+      "status": "OPEN",
+      "v1_triage": "V1_REQUIRED",
+      "v1_triage_note": "GitHub·NAS git clone 복원 시험 + NAS 파일 표본 SHA 일치"
+    },
+    {
+      "id": "N-03",
+      "status": "OPEN",
+      "v1_triage": "V1_REQUIRED",
+      "v1_triage_note": "launchd 예약 실행에서 NAS 접근 성공"
     }
   ],
   "addressbook_registration_reuse_v016": {
@@ -5848,6 +5904,17 @@
       "DATA-02-INPUT-LOCATION",
       "ANALYTICS-APP-01-WAIT-PLACE",
       "ANALYTICS-APP-01-DAY-REPORT"
+    ]
+  },
+  "v1_triage_v037": {
+    "decided_at_kst": "2026-11-14T09:2x+09:00",
+    "decided_by": "사용자 승인",
+    "basis": "60_AUDIT/CLEANUP_DIAGNOSIS_20261114/OPEN_ISSUES_V1_TRIAGE.md",
+    "v1_required_remaining": [
+      "B-06",
+      "N-01",
+      "N-02",
+      "N-03"
     ]
   }
 }
