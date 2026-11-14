@@ -19,7 +19,7 @@
 | D1 | `20_ORIGINALS/ChatGPT-Account-Exports/.../NAS_INDEPENDENT_RECOVERY_*.sparseimage` 2개 | 3.2GB | 옆 파일과 **바이트 동일**(SHA 일치) — 복원 시험 결과물 | 없음 |
 | D2 | 같은 폴더 `30_ENCRYPTED_LOCAL/` 암호화 v1 | 1.6GB | v2(비밀번호 줄바꿈 수정판)가 대체 | v2 열림 1회 확인 |
 | D3 | 같은 폴더 암호화 v2 자체 | 1.6GB | 원본 zip(1.5GB)과 같은 내용의 암호화본. 비공개 층은 NAS 보관으로 충분 | NAS에 원본 zip 사본 확인 후 (선택) |
-| D4 | `40_WORKING/ai_loop/*/assets_v1_5.sqlite` 3개 + 벤치마크 `private/*.sqlite` | 약 370MB | 같은 DB 사본(SHA 동일 2~4중), 끝난 시험 | 없음 |
+| D4 | 벤치마크 `operating.sqlite` 사본 1개 + 합성 시험 DB 사본 3개 | 약 96MB | SHA 동일 사본, 끝난 시험. (정정: ai_loop의 `assets_v1_5.sqlite` 3개는 크기만 같고 내용이 달라 사본 아님 → 2단계 요약 정리 때 판단) | 없음 |
 | D5 | `40_WORKING/backup/NAS_INDEPENDENT_RESTORE_20261103…` | 59MB | 11-03 복원 시험 잔여 이미지 | 없음 |
 | D6 | `40_WORKING/backup/RESTORE_TEST_20261103_v1` | 4.7MB | 백서 PDF 사본(원본과 SHA 동일) | 없음 |
 | D7 | `30_REGISTRY/_archive_versions` | 7.4MB | 등록부·조회DB 옛 판(git 이름표에 전부 있음) | **백업 v3 설치 후**(옛 백업이 v0.32 사본을 읽음) |
@@ -46,3 +46,8 @@
 1. 즉시 가능(조건 없음): D1·D4·D5·D6·D9 → 약 3.6GB
 2. 백업 v3 설치·3일 성공 후: D7·D8 + 백업 관련 git 정리
 3. 사용자 확인 후: D2·D3(ChatGPT 내보내기 암호화본), ai_loop·121_W 요약 정리
+
+## 5. 1단계 실행 결과 (2026-11-14 09:3x, 사용자 승인)
+- 삭제 18건, **3.37GB** 확보(8.3GB → 5.2GB). 각 사본은 삭제 직전 남길 원본과 SHA 일치를 다시 확인. 영수증: `CLEANUP_STAGE1_RECEIPT.tsv`
+- SHA가 달라 건너뜀 2건(ai_loop `assets_v1_5.sqlite`) — 사본이 아니었음(진단 정정).
+- 남긴 기록: 복원 시험 결과 JSON 2개(git 추적)는 유지, 큰 잔여 이미지만 삭제.
