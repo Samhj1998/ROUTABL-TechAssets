@@ -39,3 +39,10 @@ cp ~/ROUTABL-TechAssets/40_WORKING/backup/BACKUP_V3_REDESIGN/com.routabl.backup.
 
 ## 전환 (3일 연속 ok 후, 승인)
 v0.4.2 예약 해제·옛 관리자 앱 정리 → 대청소 진단 D7·D8 진행.
+
+## 실제 설치·검증 (2026-11-14 12:26~12:31 KST, Desktop Commander로 Claude가 실행)
+- 커밋 훅 설치, 첫 `daily` 실행: **ok, 135초** — push-nas·tags-nas·push-origin·tags-origin·fsck·rsync-files 모두 ok. NAS `TechAssets-files` 5.1GB.
+- 예약 등록: `com.routabl.backup.v3` (매일 03:30), launchctl 조회 정상.
+- **복원 시험(N-02) PASS:** GitHub·NAS 각각 새 폴더로 clone → 최신 커밋 3곳 동일(44a98a7), 이름표 58개 동일, fsck 이상 없음. NAS 파일 표본 5개(대화 원문·백서 PDF·조회 DB·고객 캡처·이력 bundle) SHA 5/5 일치.
+- 남은 것: N-01(3일 연속 ok, 11-15~17 예약 실행), N-03(예약 실행에서 NAS 권한 — 11-15 03:30 첫 결과로 판정).
+- 기존 v0.4.2(04:30)는 3일 연속 성공 후 승인받아 해제.
