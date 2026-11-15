@@ -1,6 +1,6 @@
 {
   "case_id": "20_live_guard_and_timed_denominator",
-  "spec_version": "1.1.0",
+  "spec_version": "1.2.0",
   "preprocessing": {
     "inputCount": 3,
     "excludedIds": [],

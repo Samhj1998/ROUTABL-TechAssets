@@ -1,0 +1,1001 @@
+{
+  "case_id": "50_period_single",
+  "spec_version": "1.2.0",
+  "preprocessing": {
+    "inputCount": 0,
+    "excludedIds": [],
+    "retainedCount": 0
+  },
+  "convertedDispatches": [],
+  "convertedSummaries": [],
+  "quality": {
+    "documents": 0,
+    "included": 0,
+    "deleted": 0,
+    "notCompleted": 0,
+    "unknownDate": 0,
+    "unknownFare": 0,
+    "firstDate": null,
+    "lastDate": null
+  },
+  "daily": [],
+  "monthTotal": {
+    "date": "2026-11",
+    "count": 0,
+    "billing": 0,
+    "takSong": 0,
+    "outsourcing": 0,
+    "expense": 0,
+    "net": 0
+  },
+  "monthStats": {
+    "count": 0,
+    "billing": 0,
+    "expense": 0,
+    "net": 0,
+    "workDays": 0,
+    "timedDays": 0,
+    "hours": 0.0,
+    "billingOnTimedDays": 0,
+    "perHour": null,
+    "avgFare": null,
+    "countPerDay": null,
+    "hoursPerDay": null,
+    "perWorkDay": null,
+    "kmDays": 0,
+    "km": 0.0,
+    "billingOnKmDays": 0,
+    "perKm": null,
+    "kmPerDay": null
+  },
+  "periodStats": {
+    "count": 0,
+    "billing": 0,
+    "expense": 0,
+    "net": 0,
+    "workDays": 0,
+    "timedDays": 0,
+    "hours": 0.0,
+    "billingOnTimedDays": 0,
+    "perHour": null,
+    "avgFare": null,
+    "countPerDay": null,
+    "hoursPerDay": null,
+    "perWorkDay": null,
+    "kmDays": 0,
+    "km": 0.0,
+    "billingOnKmDays": 0,
+    "perKm": null,
+    "kmPerDay": null
+  },
+  "workDays": [],
+  "floorReport": {
+    "floor": 180000,
+    "knownDays": 0,
+    "unknownBilling": 0,
+    "lowDates": [],
+    "lowPercent": null,
+    "averageEnd": null,
+    "averagePartner": null,
+    "days": []
+  },
+  "customers": [],
+  "flow": {
+    "pairs": 0,
+    "linkBase": 0,
+    "linked": 0,
+    "timedBase": 0,
+    "overlapped": 0,
+    "waits": 0,
+    "waitMinutes": 0,
+    "averageWait": 0,
+    "locatedWaits": 0,
+    "lateInputs": 0,
+    "spots": []
+  },
+  "dayDetails": [
+    {
+      "total": {
+        "date": "2026-11-10",
+        "count": 0,
+        "billing": 0,
+        "takSong": 0,
+        "outsourcing": 0,
+        "expense": 0,
+        "net": 0
+      },
+      "recordIds": [],
+      "start": "",
+      "end": "",
+      "workHours": null,
+      "liveHours": null,
+      "displayHours": null,
+      "displayPerHour": null,
+      "hourly": [],
+      "peak": null,
+      "customers": [],
+      "flow": {
+        "pairs": 0,
+        "linkBase": 0,
+        "linked": 0,
+        "timedBase": 0,
+        "overlapped": 0,
+        "waits": 0,
+        "waitMinutes": 0,
+        "averageWait": 0,
+        "locatedWaits": 0,
+        "lateInputs": 0,
+        "spots": []
+      },
+      "sameWeekdayAverage": null
+    },
+    {
+      "total": {
+        "date": "2026-11-10",
+        "count": 0,
+        "billing": 0,
+        "takSong": 0,
+        "outsourcing": 0,
+        "expense": 0,
+        "net": 0
+      },
+      "recordIds": [],
+      "start": "",
+      "end": "",
+      "workHours": null,
+      "liveHours": null,
+      "displayHours": null,
+      "displayPerHour": null,
+      "hourly": [],
+      "peak": null,
+      "customers": [],
+      "flow": {
+        "pairs": 0,
+        "linkBase": 0,
+        "linked": 0,
+        "timedBase": 0,
+        "overlapped": 0,
+        "waits": 0,
+        "waitMinutes": 0,
+        "averageWait": 0,
+        "locatedWaits": 0,
+        "lateInputs": 0,
+        "spots": []
+      },
+      "sameWeekdayAverage": null
+    }
+  ],
+  "calendar": {
+    "gridStart": "2026-11-01",
+    "gridEnd": "2026-12-05",
+    "weeks": [
+      {
+        "keys": [
+          "2026-11-01",
+          "2026-11-02",
+          "2026-11-03",
+          "2026-11-04",
+          "2026-11-05",
+          "2026-11-06",
+          "2026-11-07"
+        ],
+        "count": 0,
+        "billing": 0
+      },
+      {
+        "keys": [
+          "2026-11-08",
+          "2026-11-09",
+          "2026-11-10",
+          "2026-11-11",
+          "2026-11-12",
+          "2026-11-13",
+          "2026-11-14"
+        ],
+        "count": 0,
+        "billing": 0
+      },
+      {
+        "keys": [
+          "2026-11-15",
+          "2026-11-16",
+          "2026-11-17",
+          "2026-11-18",
+          "2026-11-19",
+          "2026-11-20",
+          "2026-11-21"
+        ],
+        "count": 0,
+        "billing": 0
+      },
+      {
+        "keys": [
+          "2026-11-22",
+          "2026-11-23",
+          "2026-11-24",
+          "2026-11-25",
+          "2026-11-26",
+          "2026-11-27",
+          "2026-11-28"
+        ],
+        "count": 0,
+        "billing": 0
+      },
+      {
+        "keys": [
+          "2026-11-29",
+          "2026-11-30",
+          "2026-12-01",
+          "2026-12-02",
+          "2026-12-03",
+          "2026-12-04",
+          "2026-12-05"
+        ],
+        "count": 0,
+        "billing": 0
+      }
+    ]
+  },
+  "extended": {
+    "periods": {
+      "presets": {
+        "THIS_MONTH": {
+          "start": "2026-11-01",
+          "end": "2026-11-15",
+          "days": 15
+        },
+        "LAST_MONTH": {
+          "start": "2026-10-01",
+          "end": "2026-10-31",
+          "days": 31
+        },
+        "LAST_3_MONTHS": {
+          "start": "2026-09-01",
+          "end": "2026-11-15",
+          "days": 76
+        },
+        "CUSTOM": {
+          "start": "2026-11-10",
+          "end": "2026-11-10",
+          "days": 1
+        }
+      },
+      "previous": {
+        "start": "2026-11-09",
+        "end": "2026-11-09",
+        "days": 1
+      }
+    },
+    "summary": {
+      "billing": {
+        "current": 0,
+        "previous": 0,
+        "percent": null
+      },
+      "count": {
+        "current": 0,
+        "previous": 0,
+        "delta": 0,
+        "text": "변동 없음"
+      },
+      "perHour": {
+        "current": null,
+        "previous": null,
+        "percent": null
+      },
+      "perKm": {
+        "current": null,
+        "previous": null,
+        "percent": null
+      },
+      "avgFare": {
+        "current": null,
+        "previous": null,
+        "percent": null
+      },
+      "countPerDay": {
+        "current": null,
+        "previous": null,
+        "percent": null
+      },
+      "hoursPerDay": {
+        "current": null,
+        "previous": null,
+        "percent": null
+      },
+      "kmPerDay": {
+        "current": null,
+        "previous": null,
+        "percent": null
+      },
+      "monthly": [
+        {
+          "month": "2026-06",
+          "billing": 0
+        },
+        {
+          "month": "2026-07",
+          "billing": 0
+        },
+        {
+          "month": "2026-08",
+          "billing": 0
+        },
+        {
+          "month": "2026-09",
+          "billing": 0
+        },
+        {
+          "month": "2026-10",
+          "billing": 0
+        },
+        {
+          "month": "2026-11",
+          "billing": 0
+        }
+      ]
+    },
+    "customerGroups": [
+      {
+        "group": "requester",
+        "customerCount": 0,
+        "knownTotal": 0,
+        "topSharePercent": null,
+        "parts": [],
+        "rows": []
+      },
+      {
+        "group": "dept",
+        "customerCount": 0,
+        "knownTotal": 0,
+        "topSharePercent": null,
+        "parts": [],
+        "rows": []
+      },
+      {
+        "group": "dest",
+        "customerCount": 0,
+        "knownTotal": 0,
+        "topSharePercent": null,
+        "parts": [],
+        "rows": []
+      }
+    ],
+    "time": {
+      "counts": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "rowTotals": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "visibleDays": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "fromHour": 8,
+      "toHour": 19,
+      "top": [],
+      "weekdayAverages": [
+        {
+          "weekday": 2,
+          "billing": null,
+          "workDays": 0
+        },
+        {
+          "weekday": 3,
+          "billing": null,
+          "workDays": 0
+        },
+        {
+          "weekday": 4,
+          "billing": null,
+          "workDays": 0
+        },
+        {
+          "weekday": 5,
+          "billing": null,
+          "workDays": 0
+        },
+        {
+          "weekday": 6,
+          "billing": null,
+          "workDays": 0
+        },
+        {
+          "weekday": 7,
+          "billing": null,
+          "workDays": 0
+        },
+        {
+          "weekday": 1,
+          "billing": null,
+          "workDays": 0
+        }
+      ]
+    },
+    "routes": [],
+    "flowDisplay": {
+      "linkedPercent": null,
+      "overlappedPercent": null,
+      "missingCompletionPairs": 0,
+      "locationState": "no_waits",
+      "topSpots": [],
+      "longestSpot": null
+    },
+    "dayDetails": [
+      {
+        "date": "2026-11-10",
+        "sleepHours": null,
+        "sleepText": "수면 기록 없음",
+        "sameWeekdayPercent": null,
+        "flow": {
+          "linkedPercent": null,
+          "overlappedPercent": null,
+          "missingCompletionPairs": 0,
+          "locationState": "no_waits",
+          "topSpots": [],
+          "longestSpot": null
+        },
+        "timeline": []
+      },
+      {
+        "date": "2026-11-10",
+        "sleepHours": null,
+        "sleepText": "수면 기록 없음",
+        "sameWeekdayPercent": null,
+        "flow": {
+          "linkedPercent": null,
+          "overlappedPercent": null,
+          "missingCompletionPairs": 0,
+          "locationState": "no_waits",
+          "topSpots": [],
+          "longestSpot": null
+        },
+        "timeline": []
+      }
+    ],
+    "sleep": {
+      "cache": [],
+      "byWakeDate": {},
+      "unrecordedWorkDays": 0,
+      "groups": [
+        {
+          "band": "SHORT",
+          "days": 0,
+          "average": null,
+          "lowPercent": null
+        },
+        {
+          "band": "CAUTION",
+          "days": 0,
+          "average": null,
+          "lowPercent": null
+        },
+        {
+          "band": "ENOUGH",
+          "days": 0,
+          "average": null,
+          "lowPercent": null
+        }
+      ],
+      "days": [],
+      "lowDays": [],
+      "banner": {
+        "visible": false,
+        "band": null
+      },
+      "trend": {
+        "floor": 180000,
+        "spanDays": 0,
+        "points": []
+      }
+    },
+    "qualityDisplay": {
+      "summaryRecordCount": 0
+    },
+    "exports": [
+      {
+        "name": "일자별 매출",
+        "fileName": "일자별매출",
+        "header": [
+          "날짜",
+          "요일",
+          "완료 건수",
+          "청구매출",
+          "탁송비",
+          "대리비",
+          "비용 합계",
+          "실질매출",
+          "출근",
+          "퇴근",
+          "근무시간",
+          "주행거리(km)",
+          "시간당 매출",
+          "km당 매출",
+          "톨비"
+        ],
+        "rows": [
+          [
+            "2026-11-10",
+            "화",
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        ]
+      },
+      {
+        "name": "고객별 매출",
+        "fileName": "고객별매출",
+        "header": [
+          "순위",
+          "의뢰지",
+          "건수",
+          "청구매출",
+          "비중(%)"
+        ],
+        "rows": []
+      },
+      {
+        "name": "요일x시간대",
+        "fileName": "요일x시간대",
+        "header": [
+          "요일",
+          "00시",
+          "01시",
+          "02시",
+          "03시",
+          "04시",
+          "05시",
+          "06시",
+          "07시",
+          "08시",
+          "09시",
+          "10시",
+          "11시",
+          "12시",
+          "13시",
+          "14시",
+          "15시",
+          "16시",
+          "17시",
+          "18시",
+          "19시",
+          "20시",
+          "21시",
+          "22시",
+          "23시",
+          "합계"
+        ],
+        "rows": [
+          [
+            "월",
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            "화",
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            "수",
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            "목",
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            "금",
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            "토",
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            "일",
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "name": "배차 원본",
+        "fileName": "배차원본",
+        "header": [
+          "날짜",
+          "배차시간",
+          "의뢰지",
+          "출발지",
+          "출발 동",
+          "도착지",
+          "도착 동",
+          "차량",
+          "결제",
+          "구분",
+          "총요금",
+          "탁송비",
+          "대리비",
+          "수행",
+          "상태",
+          "삭제",
+          "매출 포함",
+          "픽업 시각",
+          "완료 시각",
+          "문서 ID"
+        ],
+        "rows": []
+      }
+    ],
+    "percentProbes": [],
+    "causeProbes": []
+  }
+}

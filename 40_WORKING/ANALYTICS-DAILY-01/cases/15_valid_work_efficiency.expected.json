@@ -1,6 +1,6 @@
 {
   "case_id": "15_valid_work_efficiency",
-  "spec_version": "1.1.0",
+  "spec_version": "1.2.0",
   "preprocessing": {
     "inputCount": 2,
     "excludedIds": [],

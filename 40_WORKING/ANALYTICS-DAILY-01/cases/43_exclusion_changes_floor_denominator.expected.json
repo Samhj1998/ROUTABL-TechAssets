@@ -1,6 +1,6 @@
 {
   "case_id": "43_exclusion_changes_floor_denominator",
-  "spec_version": "1.1.0",
+  "spec_version": "1.2.0",
   "preprocessing": {
     "inputCount": 3,
     "excludedIds": [

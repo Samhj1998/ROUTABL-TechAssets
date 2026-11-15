@@ -1,6 +1,6 @@
 {
   "case_id": "07_unknown_date_timestamp_types",
-  "spec_version": "1.1.0",
+  "spec_version": "1.2.0",
   "preprocessing": {
     "inputCount": 8,
     "excludedIds": [],

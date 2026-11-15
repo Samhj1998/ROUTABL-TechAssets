@@ -1,6 +1,6 @@
 {
   "case_id": "41_flow_spot_sort_and_average",
-  "spec_version": "1.1.0",
+  "spec_version": "1.2.0",
   "preprocessing": {
     "inputCount": 12,
     "excludedIds": [],

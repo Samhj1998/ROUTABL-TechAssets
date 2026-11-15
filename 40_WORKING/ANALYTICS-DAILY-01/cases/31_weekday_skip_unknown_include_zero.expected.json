@@ -1,6 +1,6 @@
 {
   "case_id": "31_weekday_skip_unknown_include_zero",
-  "spec_version": "1.1.0",
+  "spec_version": "1.2.0",
   "preprocessing": {
     "inputCount": 6,
     "excludedIds": [],

@@ -1,6 +1,6 @@
 {
   "case_id": "45_major_customer_names",
-  "spec_version": "1.1.0",
+  "spec_version": "1.2.0",
   "preprocessing": {
     "inputCount": 4,
     "excludedIds": [],

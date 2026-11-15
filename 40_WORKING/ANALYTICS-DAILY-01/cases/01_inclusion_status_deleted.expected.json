@@ -1,6 +1,6 @@
 {
   "case_id": "01_inclusion_status_deleted",
-  "spec_version": "1.1.0",
+  "spec_version": "1.2.0",
   "preprocessing": {
     "inputCount": 11,
     "excludedIds": [],

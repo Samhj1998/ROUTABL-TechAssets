@@ -1,6 +1,6 @@
 {
   "case_id": "44_exclusion_exact_match_and_flow",
-  "spec_version": "1.1.0",
+  "spec_version": "1.2.0",
   "preprocessing": {
     "inputCount": 6,
     "excludedIds": [

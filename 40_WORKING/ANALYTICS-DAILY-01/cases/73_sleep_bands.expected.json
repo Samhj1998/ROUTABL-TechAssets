@@ -1,0 +1,1796 @@
+{
+  "case_id": "73_sleep_bands",
+  "spec_version": "1.2.0",
+  "preprocessing": {
+    "inputCount": 4,
+    "excludedIds": [],
+    "retainedCount": 4
+  },
+  "convertedDispatches": [
+    {
+      "id": "synthetic-9",
+      "dispatchTime": "2026-11-09 09:00",
+      "recordedAtMillis": null,
+      "requester": "합성가",
+      "status": "completed",
+      "isDeleted": false,
+      "totalFare": 100000,
+      "takSongCost": 0,
+      "outsourcingCost": 0,
+      "included": true,
+      "dateKey": "2026-11-09",
+      "hour": 9,
+      "flowMinute": 540,
+      "waitPlace": {
+        "recorded": false,
+        "late": false,
+        "dong": null
+      }
+    },
+    {
+      "id": "synthetic-10",
+      "dispatchTime": "2026-11-10 09:00",
+      "recordedAtMillis": null,
+      "requester": "합성가",
+      "status": "completed",
+      "isDeleted": false,
+      "totalFare": 180000,
+      "takSongCost": 0,
+      "outsourcingCost": 0,
+      "included": true,
+      "dateKey": "2026-11-10",
+      "hour": 9,
+      "flowMinute": 540,
+      "waitPlace": {
+        "recorded": false,
+        "late": false,
+        "dong": null
+      }
+    },
+    {
+      "id": "synthetic-11",
+      "dispatchTime": "2026-11-11 09:00",
+      "recordedAtMillis": null,
+      "requester": "합성가",
+      "status": "completed",
+      "isDeleted": false,
+      "totalFare": 180001,
+      "takSongCost": 0,
+      "outsourcingCost": 0,
+      "included": true,
+      "dateKey": "2026-11-11",
+      "hour": 9,
+      "flowMinute": 540,
+      "waitPlace": {
+        "recorded": false,
+        "late": false,
+        "dong": null
+      }
+    },
+    {
+      "id": "synthetic-12",
+      "dispatchTime": "2026-11-12 09:00",
+      "recordedAtMillis": null,
+      "requester": "합성가",
+      "status": "completed",
+      "isDeleted": false,
+      "totalFare": 0,
+      "takSongCost": 0,
+      "outsourcingCost": 0,
+      "included": true,
+      "dateKey": "2026-11-12",
+      "hour": 9,
+      "flowMinute": 540,
+      "waitPlace": {
+        "recorded": false,
+        "late": false,
+        "dong": null
+      }
+    }
+  ],
+  "convertedSummaries": [],
+  "quality": {
+    "documents": 4,
+    "included": 4,
+    "deleted": 0,
+    "notCompleted": 0,
+    "unknownDate": 0,
+    "unknownFare": 0,
+    "firstDate": "2026-11-09",
+    "lastDate": "2026-11-12"
+  },
+  "daily": [
+    {
+      "date": "2026-11-09",
+      "count": 1,
+      "billing": 100000,
+      "takSong": 0,
+      "outsourcing": 0,
+      "expense": 0,
+      "net": 100000
+    },
+    {
+      "date": "2026-11-10",
+      "count": 1,
+      "billing": 180000,
+      "takSong": 0,
+      "outsourcing": 0,
+      "expense": 0,
+      "net": 180000
+    },
+    {
+      "date": "2026-11-11",
+      "count": 1,
+      "billing": 180001,
+      "takSong": 0,
+      "outsourcing": 0,
+      "expense": 0,
+      "net": 180001
+    },
+    {
+      "date": "2026-11-12",
+      "count": 1,
+      "billing": 0,
+      "takSong": 0,
+      "outsourcing": 0,
+      "expense": 0,
+      "net": 0
+    }
+  ],
+  "monthTotal": {
+    "date": "2026-11",
+    "count": 4,
+    "billing": 460001,
+    "takSong": 0,
+    "outsourcing": 0,
+    "expense": 0,
+    "net": 460001
+  },
+  "monthStats": {
+    "count": 4,
+    "billing": 460001,
+    "expense": 0,
+    "net": 460001,
+    "workDays": 4,
+    "timedDays": 0,
+    "hours": 0.0,
+    "billingOnTimedDays": 0,
+    "perHour": null,
+    "avgFare": 115000,
+    "countPerDay": 1.0,
+    "hoursPerDay": null,
+    "perWorkDay": 115000,
+    "kmDays": 0,
+    "km": 0.0,
+    "billingOnKmDays": 0,
+    "perKm": null,
+    "kmPerDay": null
+  },
+  "periodStats": {
+    "count": 4,
+    "billing": 460001,
+    "expense": 0,
+    "net": 460001,
+    "workDays": 4,
+    "timedDays": 0,
+    "hours": 0.0,
+    "billingOnTimedDays": 0,
+    "perHour": null,
+    "avgFare": 115000,
+    "countPerDay": 1.0,
+    "hoursPerDay": null,
+    "perWorkDay": 115000,
+    "kmDays": 0,
+    "km": 0.0,
+    "billingOnKmDays": 0,
+    "perKm": null,
+    "kmPerDay": null
+  },
+  "workDays": [
+    {
+      "date": "2026-11-12",
+      "start": "",
+      "end": "",
+      "hours": null,
+      "billing": 0,
+      "perHour": null,
+      "perKm": null
+    },
+    {
+      "date": "2026-11-11",
+      "start": "",
+      "end": "",
+      "hours": null,
+      "billing": 180001,
+      "perHour": null,
+      "perKm": null
+    },
+    {
+      "date": "2026-11-10",
+      "start": "",
+      "end": "",
+      "hours": null,
+      "billing": 180000,
+      "perHour": null,
+      "perKm": null
+    },
+    {
+      "date": "2026-11-09",
+      "start": "",
+      "end": "",
+      "hours": null,
+      "billing": 100000,
+      "perHour": null,
+      "perKm": null
+    }
+  ],
+  "floorReport": {
+    "floor": 180000,
+    "knownDays": 4,
+    "unknownBilling": 0,
+    "lowDates": [
+      "2026-11-12",
+      "2026-11-10",
+      "2026-11-09"
+    ],
+    "lowPercent": 75.0,
+    "averageEnd": null,
+    "averagePartner": 0.0,
+    "days": [
+      {
+        "date": "2026-11-12",
+        "billing": 0,
+        "end": "",
+        "endMinute": null,
+        "partnerBilling": 0
+      },
+      {
+        "date": "2026-11-11",
+        "billing": 180001,
+        "end": "",
+        "endMinute": null,
+        "partnerBilling": 0
+      },
+      {
+        "date": "2026-11-10",
+        "billing": 180000,
+        "end": "",
+        "endMinute": null,
+        "partnerBilling": 0
+      },
+      {
+        "date": "2026-11-09",
+        "billing": 100000,
+        "end": "",
+        "endMinute": null,
+        "partnerBilling": 0
+      }
+    ]
+  },
+  "customers": [
+    {
+      "name": "합성가",
+      "count": 4,
+      "amount": 460001
+    }
+  ],
+  "flow": {
+    "pairs": 0,
+    "linkBase": 0,
+    "linked": 0,
+    "timedBase": 0,
+    "overlapped": 0,
+    "waits": 0,
+    "waitMinutes": 0,
+    "averageWait": 0,
+    "locatedWaits": 0,
+    "lateInputs": 0,
+    "spots": []
+  },
+  "dayDetails": [
+    {
+      "total": {
+        "date": "2026-11-10",
+        "count": 1,
+        "billing": 180000,
+        "takSong": 0,
+        "outsourcing": 0,
+        "expense": 0,
+        "net": 180000
+      },
+      "recordIds": [
+        "synthetic-10"
+      ],
+      "start": "",
+      "end": "",
+      "workHours": null,
+      "liveHours": null,
+      "displayHours": null,
+      "displayPerHour": null,
+      "hourly": [
+        {
+          "hour": 9,
+          "count": 1,
+          "billing": 180000
+        }
+      ],
+      "peak": {
+        "hour": 9,
+        "count": 1,
+        "billing": 180000
+      },
+      "customers": [
+        {
+          "name": "합성가",
+          "count": 1,
+          "amount": 180000
+        }
+      ],
+      "flow": {
+        "pairs": 0,
+        "linkBase": 0,
+        "linked": 0,
+        "timedBase": 0,
+        "overlapped": 0,
+        "waits": 0,
+        "waitMinutes": 0,
+        "averageWait": 0,
+        "locatedWaits": 0,
+        "lateInputs": 0,
+        "spots": []
+      },
+      "sameWeekdayAverage": null
+    }
+  ],
+  "calendar": {
+    "gridStart": "2026-11-01",
+    "gridEnd": "2026-12-05",
+    "weeks": [
+      {
+        "keys": [
+          "2026-11-01",
+          "2026-11-02",
+          "2026-11-03",
+          "2026-11-04",
+          "2026-11-05",
+          "2026-11-06",
+          "2026-11-07"
+        ],
+        "count": 0,
+        "billing": 0
+      },
+      {
+        "keys": [
+          "2026-11-08",
+          "2026-11-09",
+          "2026-11-10",
+          "2026-11-11",
+          "2026-11-12",
+          "2026-11-13",
+          "2026-11-14"
+        ],
+        "count": 4,
+        "billing": 460001
+      },
+      {
+        "keys": [
+          "2026-11-15",
+          "2026-11-16",
+          "2026-11-17",
+          "2026-11-18",
+          "2026-11-19",
+          "2026-11-20",
+          "2026-11-21"
+        ],
+        "count": 0,
+        "billing": 0
+      },
+      {
+        "keys": [
+          "2026-11-22",
+          "2026-11-23",
+          "2026-11-24",
+          "2026-11-25",
+          "2026-11-26",
+          "2026-11-27",
+          "2026-11-28"
+        ],
+        "count": 0,
+        "billing": 0
+      },
+      {
+        "keys": [
+          "2026-11-29",
+          "2026-11-30",
+          "2026-12-01",
+          "2026-12-02",
+          "2026-12-03",
+          "2026-12-04",
+          "2026-12-05"
+        ],
+        "count": 0,
+        "billing": 0
+      }
+    ]
+  },
+  "extended": {
+    "periods": {
+      "presets": {
+        "THIS_MONTH": {
+          "start": "2026-11-01",
+          "end": "2026-11-15",
+          "days": 15
+        },
+        "LAST_MONTH": {
+          "start": "2026-10-01",
+          "end": "2026-10-31",
+          "days": 31
+        },
+        "LAST_3_MONTHS": {
+          "start": "2026-09-01",
+          "end": "2026-11-15",
+          "days": 76
+        },
+        "CUSTOM": {
+          "start": "2026-11-15",
+          "end": "2026-11-15",
+          "days": 1
+        }
+      },
+      "previous": {
+        "start": "2026-10-01",
+        "end": "2026-10-15",
+        "days": 15
+      }
+    },
+    "summary": {
+      "billing": {
+        "current": 460001,
+        "previous": 0,
+        "percent": null
+      },
+      "count": {
+        "current": 4,
+        "previous": 0,
+        "delta": 4,
+        "text": "▲ 4건"
+      },
+      "perHour": {
+        "current": null,
+        "previous": null,
+        "percent": null
+      },
+      "perKm": {
+        "current": null,
+        "previous": null,
+        "percent": null
+      },
+      "avgFare": {
+        "current": 115000,
+        "previous": null,
+        "percent": null
+      },
+      "countPerDay": {
+        "current": 1.0,
+        "previous": null,
+        "percent": null
+      },
+      "hoursPerDay": {
+        "current": null,
+        "previous": null,
+        "percent": null
+      },
+      "kmPerDay": {
+        "current": null,
+        "previous": null,
+        "percent": null
+      },
+      "monthly": [
+        {
+          "month": "2026-06",
+          "billing": 0
+        },
+        {
+          "month": "2026-07",
+          "billing": 0
+        },
+        {
+          "month": "2026-08",
+          "billing": 0
+        },
+        {
+          "month": "2026-09",
+          "billing": 0
+        },
+        {
+          "month": "2026-10",
+          "billing": 0
+        },
+        {
+          "month": "2026-11",
+          "billing": 460001
+        }
+      ]
+    },
+    "customerGroups": [
+      {
+        "group": "requester",
+        "customerCount": 1,
+        "knownTotal": 460001,
+        "topSharePercent": 100,
+        "parts": [
+          {
+            "name": "합성가",
+            "amount": 460001,
+            "percent": 100
+          }
+        ],
+        "rows": [
+          {
+            "rank": 1,
+            "name": "합성가",
+            "count": 4,
+            "amount": 460001,
+            "sharePercent": 100,
+            "previousAmount": null,
+            "new": true,
+            "percent": null,
+            "detail": {
+              "monthly": [
+                {
+                  "month": "2026-06",
+                  "billing": 0
+                },
+                {
+                  "month": "2026-07",
+                  "billing": 0
+                },
+                {
+                  "month": "2026-08",
+                  "billing": 0
+                },
+                {
+                  "month": "2026-09",
+                  "billing": 0
+                },
+                {
+                  "month": "2026-10",
+                  "billing": 0
+                },
+                {
+                  "month": "2026-11",
+                  "billing": 460001
+                }
+              ],
+              "routes": [
+                {
+                  "name": "합성출발 → 합성도착",
+                  "count": 4
+                }
+              ],
+              "payments": [
+                {
+                  "name": "(미입력)",
+                  "count": 4
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "group": "dept",
+        "customerCount": 1,
+        "knownTotal": 460001,
+        "topSharePercent": 100,
+        "parts": [
+          {
+            "name": "합성출발",
+            "amount": 460001,
+            "percent": 100
+          }
+        ],
+        "rows": [
+          {
+            "rank": 1,
+            "name": "합성출발",
+            "count": 4,
+            "amount": 460001,
+            "sharePercent": 100,
+            "previousAmount": null,
+            "new": true,
+            "percent": null,
+            "detail": {
+              "monthly": [
+                {
+                  "month": "2026-06",
+                  "billing": 0
+                },
+                {
+                  "month": "2026-07",
+                  "billing": 0
+                },
+                {
+                  "month": "2026-08",
+                  "billing": 0
+                },
+                {
+                  "month": "2026-09",
+                  "billing": 0
+                },
+                {
+                  "month": "2026-10",
+                  "billing": 0
+                },
+                {
+                  "month": "2026-11",
+                  "billing": 460001
+                }
+              ],
+              "routes": [
+                {
+                  "name": "합성출발 → 합성도착",
+                  "count": 4
+                }
+              ],
+              "payments": [
+                {
+                  "name": "(미입력)",
+                  "count": 4
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "group": "dest",
+        "customerCount": 1,
+        "knownTotal": 460001,
+        "topSharePercent": 100,
+        "parts": [
+          {
+            "name": "합성도착",
+            "amount": 460001,
+            "percent": 100
+          }
+        ],
+        "rows": [
+          {
+            "rank": 1,
+            "name": "합성도착",
+            "count": 4,
+            "amount": 460001,
+            "sharePercent": 100,
+            "previousAmount": null,
+            "new": true,
+            "percent": null,
+            "detail": {
+              "monthly": [
+                {
+                  "month": "2026-06",
+                  "billing": 0
+                },
+                {
+                  "month": "2026-07",
+                  "billing": 0
+                },
+                {
+                  "month": "2026-08",
+                  "billing": 0
+                },
+                {
+                  "month": "2026-09",
+                  "billing": 0
+                },
+                {
+                  "month": "2026-10",
+                  "billing": 0
+                },
+                {
+                  "month": "2026-11",
+                  "billing": 460001
+                }
+              ],
+              "routes": [
+                {
+                  "name": "합성출발 → 합성도착",
+                  "count": 4
+                }
+              ],
+              "payments": [
+                {
+                  "name": "(미입력)",
+                  "count": 4
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "time": {
+      "counts": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "rowTotals": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      "visibleDays": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "fromHour": 8,
+      "toHour": 19,
+      "top": [
+        {
+          "weekday": 2,
+          "hour": 9,
+          "count": 1
+        },
+        {
+          "weekday": 3,
+          "hour": 9,
+          "count": 1
+        },
+        {
+          "weekday": 4,
+          "hour": 9,
+          "count": 1
+        }
+      ],
+      "weekdayAverages": [
+        {
+          "weekday": 2,
+          "billing": 100000,
+          "workDays": 1
+        },
+        {
+          "weekday": 3,
+          "billing": 180000,
+          "workDays": 1
+        },
+        {
+          "weekday": 4,
+          "billing": 180001,
+          "workDays": 1
+        },
+        {
+          "weekday": 5,
+          "billing": 0,
+          "workDays": 1
+        },
+        {
+          "weekday": 6,
+          "billing": null,
+          "workDays": 0
+        },
+        {
+          "weekday": 7,
+          "billing": null,
+          "workDays": 0
+        },
+        {
+          "weekday": 1,
+          "billing": null,
+          "workDays": 0
+        }
+      ]
+    },
+    "routes": [
+      {
+        "route": "합성출발 → 합성도착",
+        "count": 4,
+        "averageFare": 115000,
+        "mainCar": "-"
+      }
+    ],
+    "flowDisplay": {
+      "linkedPercent": null,
+      "overlappedPercent": null,
+      "missingCompletionPairs": 0,
+      "locationState": "no_waits",
+      "topSpots": [],
+      "longestSpot": null
+    },
+    "dayDetails": [
+      {
+        "date": "2026-11-10",
+        "sleepHours": 4.0,
+        "sleepText": "수면 4.0시간",
+        "sameWeekdayPercent": null,
+        "flow": {
+          "linkedPercent": null,
+          "overlappedPercent": null,
+          "missingCompletionPairs": 0,
+          "locationState": "no_waits",
+          "topSpots": [],
+          "longestSpot": null
+        },
+        "timeline": [
+          {
+            "kind": "ride",
+            "id": "synthetic-10",
+            "dispatchTime": "2026-11-10 09:00",
+            "dept": "합성출발",
+            "deptDong": "",
+            "dest": "합성도착",
+            "destDong": "",
+            "totalFare": 180000,
+            "requester": "합성가",
+            "payment": "",
+            "car": "",
+            "note": ""
+          }
+        ]
+      }
+    ],
+    "sleep": {
+      "cache": [
+        {
+          "id": "synthetic-sleep-a",
+          "startMillis": 1794164403600,
+          "endMillis": 1794178800000
+        },
+        {
+          "id": "synthetic-sleep-b",
+          "startMillis": 1794250800000,
+          "endMillis": 1794265200000
+        },
+        {
+          "id": "synthetic-sleep-c",
+          "startMillis": 1794330000000,
+          "endMillis": 1794351600000
+        },
+        {
+          "id": "synthetic-sleep-d",
+          "startMillis": 1794416403600,
+          "endMillis": 1794438000000
+        }
+      ],
+      "byWakeDate": {
+        "2026-11-09": 3.999,
+        "2026-11-10": 4.0,
+        "2026-11-11": 6.0,
+        "2026-11-12": 5.999
+      },
+      "unrecordedWorkDays": 0,
+      "groups": [
+        {
+          "band": "SHORT",
+          "days": 1,
+          "average": 100000.0,
+          "lowPercent": 100.0
+        },
+        {
+          "band": "CAUTION",
+          "days": 2,
+          "average": 90000.0,
+          "lowPercent": 100.0
+        },
+        {
+          "band": "ENOUGH",
+          "days": 1,
+          "average": 180001.0,
+          "lowPercent": 0.0
+        }
+      ],
+      "days": [
+        {
+          "date": "2026-11-12",
+          "hours": 5.999,
+          "billing": 0
+        },
+        {
+          "date": "2026-11-11",
+          "hours": 6.0,
+          "billing": 180001
+        },
+        {
+          "date": "2026-11-10",
+          "hours": 4.0,
+          "billing": 180000
+        },
+        {
+          "date": "2026-11-09",
+          "hours": 3.999,
+          "billing": 100000
+        }
+      ],
+      "lowDays": [
+        {
+          "date": "2026-11-12",
+          "cause": "기타"
+        },
+        {
+          "date": "2026-11-10",
+          "cause": "기타"
+        },
+        {
+          "date": "2026-11-09",
+          "cause": "기타"
+        }
+      ],
+      "banner": {
+        "visible": false,
+        "band": null
+      },
+      "trend": {
+        "floor": 180000,
+        "spanDays": 4,
+        "points": [
+          {
+            "date": "2026-11-09",
+            "offsetDays": 0,
+            "billing": 100000,
+            "hours": 3.999,
+            "connectPrevious": false
+          },
+          {
+            "date": "2026-11-10",
+            "offsetDays": 1,
+            "billing": 180000,
+            "hours": 4.0,
+            "connectPrevious": true
+          },
+          {
+            "date": "2026-11-11",
+            "offsetDays": 2,
+            "billing": 180001,
+            "hours": 6.0,
+            "connectPrevious": true
+          },
+          {
+            "date": "2026-11-12",
+            "offsetDays": 3,
+            "billing": 0,
+            "hours": 5.999,
+            "connectPrevious": true
+          }
+        ]
+      }
+    },
+    "qualityDisplay": {
+      "summaryRecordCount": 0
+    },
+    "exports": [
+      {
+        "name": "일자별 매출",
+        "fileName": "일자별매출",
+        "header": [
+          "날짜",
+          "요일",
+          "완료 건수",
+          "청구매출",
+          "탁송비",
+          "대리비",
+          "비용 합계",
+          "실질매출",
+          "출근",
+          "퇴근",
+          "근무시간",
+          "주행거리(km)",
+          "시간당 매출",
+          "km당 매출",
+          "톨비"
+        ],
+        "rows": [
+          [
+            "2026-11-01",
+            "일",
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            "2026-11-02",
+            "월",
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            "2026-11-03",
+            "화",
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            "2026-11-04",
+            "수",
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            "2026-11-05",
+            "목",
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            "2026-11-06",
+            "금",
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            "2026-11-07",
+            "토",
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            "2026-11-08",
+            "일",
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            "2026-11-09",
+            "월",
+            1,
+            100000,
+            0,
+            0,
+            0,
+            100000,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            "2026-11-10",
+            "화",
+            1,
+            180000,
+            0,
+            0,
+            0,
+            180000,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            "2026-11-11",
+            "수",
+            1,
+            180001,
+            0,
+            0,
+            0,
+            180001,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            "2026-11-12",
+            "목",
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            "2026-11-13",
+            "금",
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            "2026-11-14",
+            "토",
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            "2026-11-15",
+            "일",
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        ]
+      },
+      {
+        "name": "고객별 매출",
+        "fileName": "고객별매출",
+        "header": [
+          "순위",
+          "의뢰지",
+          "건수",
+          "청구매출",
+          "비중(%)"
+        ],
+        "rows": [
+          [
+            1,
+            "합성가",
+            4,
+            460001,
+            100.0
+          ]
+        ]
+      },
+      {
+        "name": "요일x시간대",
+        "fileName": "요일x시간대",
+        "header": [
+          "요일",
+          "00시",
+          "01시",
+          "02시",
+          "03시",
+          "04시",
+          "05시",
+          "06시",
+          "07시",
+          "08시",
+          "09시",
+          "10시",
+          "11시",
+          "12시",
+          "13시",
+          "14시",
+          "15시",
+          "16시",
+          "17시",
+          "18시",
+          "19시",
+          "20시",
+          "21시",
+          "22시",
+          "23시",
+          "합계"
+        ],
+        "rows": [
+          [
+            "월",
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            "화",
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            "수",
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            "목",
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            "금",
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            "토",
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            "일",
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "name": "배차 원본",
+        "fileName": "배차원본",
+        "header": [
+          "날짜",
+          "배차시간",
+          "의뢰지",
+          "출발지",
+          "출발 동",
+          "도착지",
+          "도착 동",
+          "차량",
+          "결제",
+          "구분",
+          "총요금",
+          "탁송비",
+          "대리비",
+          "수행",
+          "상태",
+          "삭제",
+          "매출 포함",
+          "픽업 시각",
+          "완료 시각",
+          "문서 ID"
+        ],
+        "rows": [
+          [
+            "2026-11-09",
+            "2026-11-09 09:00",
+            "합성가",
+            "합성출발",
+            "",
+            "합성도착",
+            "",
+            "",
+            "",
+            "",
+            100000,
+            0,
+            0,
+            "",
+            "완료",
+            "",
+            "Y",
+            null,
+            null,
+            "synthetic-9"
+          ],
+          [
+            "2026-11-10",
+            "2026-11-10 09:00",
+            "합성가",
+            "합성출발",
+            "",
+            "합성도착",
+            "",
+            "",
+            "",
+            "",
+            180000,
+            0,
+            0,
+            "",
+            "완료",
+            "",
+            "Y",
+            null,
+            null,
+            "synthetic-10"
+          ],
+          [
+            "2026-11-11",
+            "2026-11-11 09:00",
+            "합성가",
+            "합성출발",
+            "",
+            "합성도착",
+            "",
+            "",
+            "",
+            "",
+            180001,
+            0,
+            0,
+            "",
+            "완료",
+            "",
+            "Y",
+            null,
+            null,
+            "synthetic-11"
+          ],
+          [
+            "2026-11-12",
+            "2026-11-12 09:00",
+            "합성가",
+            "합성출발",
+            "",
+            "합성도착",
+            "",
+            "",
+            "",
+            "",
+            0,
+            0,
+            0,
+            "",
+            "완료",
+            "",
+            "Y",
+            null,
+            null,
+            "synthetic-12"
+          ]
+        ]
+      }
+    ],
+    "percentProbes": [],
+    "causeProbes": []
+  }
+}
