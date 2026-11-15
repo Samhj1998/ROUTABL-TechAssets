@@ -1,0 +1,43 @@
+{
+  "case_id": "58_ranking_zero",
+  "spec_version": "1.2.0",
+  "category": "customer_ranking",
+  "description": "3개 키 합계0·null·빈 이름 상세 불일치",
+  "request": {
+    "start": "2026-11-01",
+    "end": "2026-11-15",
+    "month": "2026-11",
+    "dayKeys": [
+      "2026-11-10"
+    ],
+    "today": "2026-11-15",
+    "nowMinute": 720,
+    "nowMillis": 1794711600000,
+    "extended": true
+  },
+  "documents": [
+    {
+      "id": "synthetic-zero",
+      "data": {
+        "dispatchTime": "2026-11-10 09:00",
+        "totalFare": 0,
+        "status": "completed",
+        "requester": " ",
+        "dept": "",
+        "dest": " "
+      }
+    },
+    {
+      "id": "synthetic-null",
+      "data": {
+        "dispatchTime": "2026-11-10 09:00",
+        "totalFare": null,
+        "status": "completed",
+        "requester": "합성불명",
+        "dept": "합성불명",
+        "dest": "합성불명"
+      }
+    }
+  ],
+  "dailySummaries": []
+}

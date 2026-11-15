@@ -1,0 +1,147 @@
+{
+  "case_id": "75_sleep_causes",
+  "spec_version": "1.2.0",
+  "category": "sleep_cause",
+  "description": "원인 두 분기·평균 퇴근 엄격<·파트너 평균0.6 엄격<·null은 기타",
+  "request": {
+    "start": "2026-11-01",
+    "end": "2026-11-15",
+    "month": "2026-11",
+    "dayKeys": [
+      "2026-11-10"
+    ],
+    "today": "2026-11-15",
+    "nowMinute": 720,
+    "nowMillis": 1794711600000,
+    "extended": true,
+    "sleep": {
+      "current": [
+        {
+          "id": "synthetic-sleep-a",
+          "startMillis": 1794168000000,
+          "endMillis": 1794178800000
+        },
+        {
+          "id": "synthetic-sleep-b",
+          "startMillis": 1794250800000,
+          "endMillis": 1794265200000
+        }
+      ]
+    },
+    "causeProbes": [
+      {
+        "hours": 3.999,
+        "endMinute": 899,
+        "averageEnd": 900,
+        "partner": 0,
+        "averagePartner": 100
+      },
+      {
+        "hours": 3.999,
+        "endMinute": 900,
+        "averageEnd": 900,
+        "partner": 0,
+        "averagePartner": 100
+      },
+      {
+        "hours": 4,
+        "endMinute": 899,
+        "averageEnd": 900,
+        "partner": 59,
+        "averagePartner": 100
+      },
+      {
+        "hours": 4,
+        "endMinute": 899,
+        "averageEnd": 900,
+        "partner": 60,
+        "averagePartner": 100
+      },
+      {
+        "hours": 6,
+        "endMinute": null,
+        "averageEnd": 900,
+        "partner": 59,
+        "averagePartner": 100
+      },
+      {
+        "hours": null,
+        "endMinute": 899,
+        "averageEnd": 900,
+        "partner": 0,
+        "averagePartner": 100
+      },
+      {
+        "hours": 3,
+        "endMinute": 899,
+        "averageEnd": 900,
+        "partner": null,
+        "averagePartner": 100
+      }
+    ]
+  },
+  "documents": [
+    {
+      "id": "synthetic-a",
+      "data": {
+        "dispatchTime": "2026-11-09 09:00",
+        "totalFare": 100000,
+        "status": "completed",
+        "requester": "합성영우",
+        "dept": "합성출발",
+        "dest": "합성도착"
+      }
+    },
+    {
+      "id": "synthetic-b",
+      "data": {
+        "dispatchTime": "2026-11-10 09:00",
+        "totalFare": 10000,
+        "status": "completed",
+        "requester": "합성영우",
+        "dept": "합성출발",
+        "dest": "합성도착"
+      }
+    },
+    {
+      "id": "synthetic-c",
+      "data": {
+        "dispatchTime": "2026-11-11 09:00",
+        "totalFare": 180000,
+        "status": "completed",
+        "requester": "합성영우",
+        "dept": "합성출발",
+        "dest": "합성도착"
+      }
+    }
+  ],
+  "dailySummaries": [
+    {
+      "id": "synthetic-summary-2026-11-09",
+      "data": {
+        "workDate": "2026-11-09",
+        "startTime": "08:00",
+        "endTime": "12:00",
+        "distanceKm": 100
+      }
+    },
+    {
+      "id": "synthetic-summary-2026-11-10",
+      "data": {
+        "workDate": "2026-11-10",
+        "startTime": "08:00",
+        "endTime": "18:00",
+        "distanceKm": 100
+      }
+    },
+    {
+      "id": "synthetic-summary-2026-11-11",
+      "data": {
+        "workDate": "2026-11-11",
+        "startTime": "08:00",
+        "endTime": "18:00",
+        "distanceKm": 100
+      }
+    }
+  ]
+}

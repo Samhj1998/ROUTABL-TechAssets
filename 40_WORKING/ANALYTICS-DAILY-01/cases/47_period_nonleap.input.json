@@ -1,0 +1,23 @@
+{
+  "case_id": "47_period_nonleap",
+  "spec_version": "1.2.0",
+  "category": "period_presets",
+  "description": "월초 특례/직전 동일 길이·윤년·연도·포함 경계 및 4개 프리셋",
+  "request": {
+    "start": "2026-03-01",
+    "end": "2026-03-31",
+    "month": "2026-03",
+    "dayKeys": [
+      "2026-03-01",
+      "2026-03-31"
+    ],
+    "today": "2026-03-31",
+    "nowMinute": 720,
+    "nowMillis": 1774926000000,
+    "extended": true,
+    "customStart": "2026-03-01",
+    "customEnd": "2026-03-31"
+  },
+  "documents": [],
+  "dailySummaries": []
+}

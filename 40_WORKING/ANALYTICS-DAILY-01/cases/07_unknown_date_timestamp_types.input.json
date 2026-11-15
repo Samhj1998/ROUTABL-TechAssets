@@ -1,6 +1,6 @@
 {
   "case_id": "07_unknown_date_timestamp_types",
-  "spec_version": "1.1.0",
+  "spec_version": "1.2.0",
   "category": "inclusion_date_amount",
   "description": "연도 없는 날짜 timestamp 누락/문자열/숫자 무효, Date/Timestamp 태그만 연도 보완",
   "request": {

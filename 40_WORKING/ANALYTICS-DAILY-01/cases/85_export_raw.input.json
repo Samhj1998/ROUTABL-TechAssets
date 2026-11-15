@@ -1,0 +1,203 @@
+{
+  "case_id": "85_export_raw",
+  "spec_version": "1.2.0",
+  "category": "export_projection",
+  "description": "20열·완료전/삭제 포함·상태 변환·서울 픽업완료·원문문자열 정렬",
+  "request": {
+    "start": "2026-11-10",
+    "end": "2026-11-10",
+    "month": "2026-11",
+    "dayKeys": [
+      "2026-11-10"
+    ],
+    "today": "2026-11-15",
+    "nowMinute": 720,
+    "nowMillis": 1794711600000,
+    "extended": true
+  },
+  "documents": [
+    {
+      "id": "synthetic-0",
+      "data": {
+        "dispatchTime": "2026-11-10 9:00",
+        "totalFare": 10,
+        "status": "completed",
+        "requester": "합성가",
+        "dept": "합성출발",
+        "dest": "합성도착",
+        "isDeleted": false,
+        "pickupTime": {
+          "$timestamp": "2026-11-10T00:00:00Z"
+        },
+        "completeTime": {
+          "$timestamp": "2026-11-10T15:00:00Z"
+        },
+        "type": "합성구분",
+        "executionType": "합성수행"
+      }
+    },
+    {
+      "id": "synthetic-1",
+      "data": {
+        "dispatchTime": "2026-11-10 10:00",
+        "totalFare": 10,
+        "status": "picked_up",
+        "requester": "합성가",
+        "dept": "합성출발",
+        "dest": "합성도착",
+        "isDeleted": false,
+        "pickupTime": {
+          "$timestamp": "2026-11-10T00:00:00Z"
+        },
+        "completeTime": {
+          "$timestamp": "2026-11-10T15:00:00Z"
+        },
+        "type": "합성구분",
+        "executionType": "합성수행"
+      }
+    },
+    {
+      "id": "synthetic-2",
+      "data": {
+        "dispatchTime": "2026-11-10 08:00",
+        "totalFare": 10,
+        "status": "received",
+        "requester": "합성가",
+        "dept": "합성출발",
+        "dest": "합성도착",
+        "isDeleted": false,
+        "pickupTime": {
+          "$timestamp": "2026-11-10T00:00:00Z"
+        },
+        "completeTime": {
+          "$timestamp": "2026-11-10T15:00:00Z"
+        },
+        "type": "합성구분",
+        "executionType": "합성수행"
+      }
+    },
+    {
+      "id": "synthetic-3",
+      "data": {
+        "dispatchTime": "2026-11-10 07:00",
+        "totalFare": 10,
+        "status": "cancelled",
+        "requester": "합성가",
+        "dept": "합성출발",
+        "dest": "합성도착",
+        "isDeleted": false,
+        "pickupTime": {
+          "$timestamp": "2026-11-10T00:00:00Z"
+        },
+        "completeTime": {
+          "$timestamp": "2026-11-10T15:00:00Z"
+        },
+        "type": "합성구분",
+        "executionType": "합성수행"
+      }
+    },
+    {
+      "id": "synthetic-4",
+      "data": {
+        "dispatchTime": "2026-11-10 06:00",
+        "totalFare": 10,
+        "status": "canceled",
+        "requester": "합성가",
+        "dept": "합성출발",
+        "dest": "합성도착",
+        "isDeleted": false,
+        "pickupTime": {
+          "$timestamp": "2026-11-10T00:00:00Z"
+        },
+        "completeTime": {
+          "$timestamp": "2026-11-10T15:00:00Z"
+        },
+        "type": "합성구분",
+        "executionType": "합성수행"
+      }
+    },
+    {
+      "id": "synthetic-5",
+      "data": {
+        "dispatchTime": "2026-11-10 05:00",
+        "totalFare": 10,
+        "status": "completed",
+        "requester": "합성가",
+        "dept": "합성출발",
+        "dest": "합성도착",
+        "isDeleted": true,
+        "pickupTime": {
+          "$timestamp": "2026-11-10T00:00:00Z"
+        },
+        "completeTime": {
+          "$timestamp": "2026-11-10T15:00:00Z"
+        },
+        "type": "합성구분",
+        "executionType": "합성수행"
+      }
+    },
+    {
+      "id": "synthetic-6",
+      "data": {
+        "dispatchTime": "2026-11-10 04:00",
+        "totalFare": 10,
+        "status": "",
+        "requester": "합성가",
+        "dept": "합성출발",
+        "dest": "합성도착",
+        "isDeleted": false,
+        "pickupTime": {
+          "$timestamp": "2026-11-10T00:00:00Z"
+        },
+        "completeTime": {
+          "$timestamp": "2026-11-10T15:00:00Z"
+        },
+        "type": "합성구분",
+        "executionType": "합성수행"
+      }
+    },
+    {
+      "id": "synthetic-7",
+      "data": {
+        "dispatchTime": "2026-11-10 03:00",
+        "totalFare": 10,
+        "status": "custom",
+        "requester": "합성가",
+        "dept": "합성출발",
+        "dest": "합성도착",
+        "isDeleted": false,
+        "pickupTime": {
+          "$timestamp": "2026-11-10T00:00:00Z"
+        },
+        "completeTime": {
+          "$timestamp": "2026-11-10T15:00:00Z"
+        },
+        "type": "합성구분",
+        "executionType": "합성수행"
+      }
+    },
+    {
+      "id": "synthetic-bad",
+      "data": {
+        "dispatchTime": "날짜불명",
+        "totalFare": 10,
+        "status": "completed",
+        "requester": "합성가",
+        "dept": "합성출발",
+        "dest": "합성도착"
+      }
+    },
+    {
+      "id": "synthetic-outside",
+      "data": {
+        "dispatchTime": "2026-10-31 09:00",
+        "totalFare": 10,
+        "status": "completed",
+        "requester": "합성가",
+        "dept": "합성출발",
+        "dest": "합성도착"
+      }
+    }
+  ],
+  "dailySummaries": []
+}

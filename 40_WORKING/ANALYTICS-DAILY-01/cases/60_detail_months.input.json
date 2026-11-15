@@ -1,0 +1,87 @@
+{
+  "case_id": "60_detail_months",
+  "spec_version": "1.2.0",
+  "category": "customer_detail",
+  "description": "3키 선택고객 trim 완전일치 6개월·기간 외 월전체·다른 고객 제외",
+  "request": {
+    "start": "2026-11-01",
+    "end": "2026-11-15",
+    "month": "2026-11",
+    "dayKeys": [
+      "2026-11-10"
+    ],
+    "today": "2026-11-15",
+    "nowMinute": 720,
+    "nowMillis": 1794711600000,
+    "extended": true
+  },
+  "documents": [
+    {
+      "id": "synthetic-a",
+      "data": {
+        "dispatchTime": "2026-11-10 09:00",
+        "totalFare": 10,
+        "status": "completed",
+        "requester": "합성가",
+        "dept": "합성출발",
+        "dest": "합성도착"
+      }
+    },
+    {
+      "id": "synthetic-b",
+      "data": {
+        "dispatchTime": "2026-06-01 09:00",
+        "totalFare": 20,
+        "status": "completed",
+        "requester": "합성가",
+        "dept": "합성출발",
+        "dest": "합성도착"
+      }
+    },
+    {
+      "id": "synthetic-c",
+      "data": {
+        "dispatchTime": "2026-07-01 09:00",
+        "totalFare": null,
+        "status": "completed",
+        "requester": "합성가",
+        "dept": "합성출발",
+        "dest": "합성도착"
+      }
+    },
+    {
+      "id": "synthetic-d",
+      "data": {
+        "dispatchTime": "2026-11-29 09:00",
+        "totalFare": 30,
+        "status": "completed",
+        "requester": "합성가",
+        "dept": "합성출발",
+        "dest": "합성도착"
+      }
+    },
+    {
+      "id": "synthetic-e",
+      "data": {
+        "dispatchTime": "2026-05-31 09:00",
+        "totalFare": 90,
+        "status": "completed",
+        "requester": "합성가",
+        "dept": "합성출발",
+        "dest": "합성도착"
+      }
+    },
+    {
+      "id": "synthetic-f",
+      "data": {
+        "dispatchTime": "2026-11-10 09:00",
+        "totalFare": 99,
+        "status": "completed",
+        "requester": "합성가추가",
+        "dept": "합성출발추가",
+        "dest": "합성도착추가"
+      }
+    }
+  ],
+  "dailySummaries": []
+}

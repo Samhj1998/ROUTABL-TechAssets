@@ -1,6 +1,6 @@
 {
   "case_id": "34_flow_seconds_overlap",
-  "spec_version": "1.1.0",
+  "spec_version": "1.2.0",
   "category": "flow_wait_place",
   "description": "-60초 겹침, -59초는 0 방향 절삭으로 비겹침, 19분59초는 비대기, 20분은 대기",
   "request": {

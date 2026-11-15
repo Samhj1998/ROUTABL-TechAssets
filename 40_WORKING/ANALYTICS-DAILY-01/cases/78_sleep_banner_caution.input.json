@@ -1,0 +1,29 @@
+{
+  "case_id": "78_sleep_banner_caution",
+  "spec_version": "1.2.0",
+  "category": "sleep_banner",
+  "description": "평일/주말·수면4/6h 배너 조건(색상/클릭 제외)",
+  "request": {
+    "start": "2026-11-01",
+    "end": "2026-11-15",
+    "month": "2026-11",
+    "dayKeys": [
+      "2026-11-10"
+    ],
+    "today": "2026-11-10",
+    "nowMinute": 720,
+    "nowMillis": 1794279600000,
+    "extended": true,
+    "sleep": {
+      "current": [
+        {
+          "id": "synthetic-sleep-caution",
+          "startMillis": 1794250800000,
+          "endMillis": 1794265200000
+        }
+      ]
+    }
+  },
+  "documents": [],
+  "dailySummaries": []
+}

@@ -1,0 +1,109 @@
+{
+  "case_id": "63_time_boundaries",
+  "spec_version": "1.2.0",
+  "category": "time_analysis",
+  "description": "7×24·0/4/5/22/23시·일요일 포함·상위3 동률",
+  "request": {
+    "start": "2026-11-01",
+    "end": "2026-11-15",
+    "month": "2026-11",
+    "dayKeys": [
+      "2026-11-10"
+    ],
+    "today": "2026-11-15",
+    "nowMinute": 720,
+    "nowMillis": 1794711600000,
+    "extended": true
+  },
+  "documents": [
+    {
+      "id": "synthetic-0",
+      "data": {
+        "dispatchTime": "2026-11-09 00:00",
+        "totalFare": 10,
+        "status": "completed",
+        "requester": "합성가",
+        "dept": "합성출발",
+        "dest": "합성도착"
+      }
+    },
+    {
+      "id": "synthetic-1",
+      "data": {
+        "dispatchTime": "2026-11-09 04:00",
+        "totalFare": 10,
+        "status": "completed",
+        "requester": "합성가",
+        "dept": "합성출발",
+        "dest": "합성도착"
+      }
+    },
+    {
+      "id": "synthetic-2",
+      "data": {
+        "dispatchTime": "2026-11-09 05:00",
+        "totalFare": 10,
+        "status": "completed",
+        "requester": "합성가",
+        "dept": "합성출발",
+        "dest": "합성도착"
+      }
+    },
+    {
+      "id": "synthetic-3",
+      "data": {
+        "dispatchTime": "2026-11-09 22:00",
+        "totalFare": 10,
+        "status": "completed",
+        "requester": "합성가",
+        "dept": "합성출발",
+        "dest": "합성도착"
+      }
+    },
+    {
+      "id": "synthetic-4",
+      "data": {
+        "dispatchTime": "2026-11-09 23:00",
+        "totalFare": 10,
+        "status": "completed",
+        "requester": "합성가",
+        "dept": "합성출발",
+        "dest": "합성도착"
+      }
+    },
+    {
+      "id": "synthetic-5",
+      "data": {
+        "dispatchTime": "2026-11-10 08:00",
+        "totalFare": 10,
+        "status": "completed",
+        "requester": "합성가",
+        "dept": "합성출발",
+        "dest": "합성도착"
+      }
+    },
+    {
+      "id": "synthetic-6",
+      "data": {
+        "dispatchTime": "2026-11-15 05:00",
+        "totalFare": 10,
+        "status": "completed",
+        "requester": "합성가",
+        "dept": "합성출발",
+        "dest": "합성도착"
+      }
+    },
+    {
+      "id": "synthetic-7",
+      "data": {
+        "dispatchTime": "2026-11-15 23:00",
+        "totalFare": 10,
+        "status": "completed",
+        "requester": "합성가",
+        "dept": "합성출발",
+        "dest": "합성도착"
+      }
+    }
+  ],
+  "dailySummaries": []
+}

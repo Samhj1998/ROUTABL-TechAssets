@@ -3544,7 +3544,7 @@
       "title": "하루 분석 공통 계산 규칙 및 Kotlin 실행 기반 합성 시험사례 v1.0.0",
       "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/40_WORKING/ANALYTICS-DAILY-01/spec.json",
       "managed_local_copy_path": "/Users/yongho/ROUTABL-TechAssets/40_WORKING/ANALYTICS-DAILY-01/spec.json",
-      "version": "1.1.0",
+      "version": "1.2.0",
       "bytes": 18081,
       "sha256": "de5f3820e73c33845328c229aa735d06c637c25f312a873307cb565c0933d7b8",
       "observation": "VERSIONED_DAILY_ANALYTICS_SPEC_AND_32_SYNTHETIC_FIXTURES_FROM_READ_ONLY_KOTLIN_ORIGINALS",

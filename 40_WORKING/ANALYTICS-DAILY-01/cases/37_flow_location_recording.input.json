@@ -1,6 +1,6 @@
 {
   "case_id": "37_flow_location_recording",
-  "spec_version": "1.1.0",
+  "spec_version": "1.2.0",
   "category": "flow_wait_place",
   "description": "입력 좌표 양쪽 필요; 누락·한쪽·0·문자열은 위치 미확정, 대기 자체는 유지; 앞 도착/다음 출발 동으로 대체 안 함",
   "request": {

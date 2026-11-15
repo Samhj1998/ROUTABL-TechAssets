@@ -1,6 +1,6 @@
 {
   "case_id": "38_flow_quick_pickup",
-  "spec_version": "1.1.0",
+  "spec_version": "1.2.0",
   "category": "flow_wait_place",
   "description": "입력→픽업 0/3분은 late, 3분+1ms/음수는 시간 조건 false. 위치 기록 없으면 late=true여도 lateInputs 제외",
   "request": {

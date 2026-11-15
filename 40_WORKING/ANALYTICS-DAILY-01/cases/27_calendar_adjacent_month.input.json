@@ -1,6 +1,6 @@
 {
   "case_id": "27_calendar_adjacent_month",
-  "spec_version": "1.1.0",
+  "spec_version": "1.2.0",
   "category": "calendar_boundary",
   "description": "월합계와 인접월 포함 주합계 분리·인접월 null이 주합계에 전파",
   "request": {

@@ -1,6 +1,6 @@
 {
   "case_id": "29_calendar_four_weeks_weekends",
-  "spec_version": "1.1.0",
+  "spec_version": "1.2.0",
   "category": "calendar_boundary",
   "description": "일요일 시작 토요일 끝 28일 월은 4주; 완료 주말 포함·밖 경계 제외",
   "request": {

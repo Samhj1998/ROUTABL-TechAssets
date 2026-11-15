@@ -1,0 +1,65 @@
+{
+  "case_id": "59_ranking_tie",
+  "spec_version": "1.2.0",
+  "category": "customer_ranking",
+  "description": "금액 동률 건수 우선·그 다음 첫 날짜/그룹 등장순·이전null 신규 아님",
+  "request": {
+    "start": "2026-11-01",
+    "end": "2026-11-15",
+    "month": "2026-11",
+    "dayKeys": [
+      "2026-11-10"
+    ],
+    "today": "2026-11-15",
+    "nowMinute": 720,
+    "nowMillis": 1794711600000,
+    "extended": true
+  },
+  "documents": [
+    {
+      "id": "synthetic-z",
+      "data": {
+        "dispatchTime": "2026-11-11 09:00",
+        "totalFare": 10,
+        "status": "completed",
+        "requester": "합성나",
+        "dept": "합성출발",
+        "dest": "합성도착"
+      }
+    },
+    {
+      "id": "synthetic-a",
+      "data": {
+        "dispatchTime": "2026-11-10 09:00",
+        "totalFare": 5,
+        "status": "completed",
+        "requester": "합성가",
+        "dept": "합성출발",
+        "dest": "합성도착"
+      }
+    },
+    {
+      "id": "synthetic-b",
+      "data": {
+        "dispatchTime": "2026-11-10 10:00",
+        "totalFare": 5,
+        "status": "completed",
+        "requester": "합성가",
+        "dept": "합성출발",
+        "dest": "합성도착"
+      }
+    },
+    {
+      "id": "synthetic-old",
+      "data": {
+        "dispatchTime": "2026-10-11 09:00",
+        "totalFare": null,
+        "status": "completed",
+        "requester": "합성나",
+        "dept": "합성출발",
+        "dest": "합성도착"
+      }
+    }
+  ],
+  "dailySummaries": []
+}

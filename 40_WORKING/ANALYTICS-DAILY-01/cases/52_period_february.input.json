@@ -1,0 +1,23 @@
+{
+  "case_id": "52_period_february",
+  "spec_version": "1.2.0",
+  "category": "period_presets",
+  "description": "월초 특례/직전 동일 길이·윤년·연도·포함 경계 및 4개 프리셋",
+  "request": {
+    "start": "2024-02-01",
+    "end": "2024-02-29",
+    "month": "2024-02",
+    "dayKeys": [
+      "2024-02-01",
+      "2024-02-29"
+    ],
+    "today": "2024-02-29",
+    "nowMinute": 720,
+    "nowMillis": 1709175600000,
+    "extended": true,
+    "customStart": "2024-02-01",
+    "customEnd": "2024-02-29"
+  },
+  "documents": [],
+  "dailySummaries": []
+}

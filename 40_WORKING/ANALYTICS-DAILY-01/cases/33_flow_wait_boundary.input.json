@@ -1,6 +1,6 @@
 {
   "case_id": "33_flow_wait_boundary",
-  "spec_version": "1.1.0",
+  "spec_version": "1.2.0",
   "category": "flow_wait_place",
   "description": "19/20/21/0분 경계: 대기와 같은 동 연결은 독립, 20분부터 대기",
   "request": {

@@ -1,6 +1,6 @@
 {
   "case_id": "28_calendar_year_boundary",
-  "spec_version": "1.1.0",
+  "spec_version": "1.2.0",
   "category": "calendar_boundary",
   "description": "이전 연도 12월과 다음달 포함 주합계·선택월 밖 값 월합계 제외",
   "request": {

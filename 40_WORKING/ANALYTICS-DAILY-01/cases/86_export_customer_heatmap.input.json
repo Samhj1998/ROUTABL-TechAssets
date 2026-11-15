@@ -1,0 +1,65 @@
+{
+  "case_id": "86_export_customer_heatmap",
+  "spec_version": "1.2.0",
+  "category": "export_projection",
+  "description": "고객 비중 소수1자리·null/0·7×24 행합계·일요일 순서",
+  "request": {
+    "start": "2026-11-01",
+    "end": "2026-11-15",
+    "month": "2026-11",
+    "dayKeys": [
+      "2026-11-10"
+    ],
+    "today": "2026-11-15",
+    "nowMinute": 720,
+    "nowMillis": 1794711600000,
+    "extended": true
+  },
+  "documents": [
+    {
+      "id": "synthetic-a",
+      "data": {
+        "dispatchTime": "2026-11-09 00:00",
+        "totalFare": 1,
+        "status": "completed",
+        "requester": "합성가",
+        "dept": "합성출발",
+        "dest": "합성도착"
+      }
+    },
+    {
+      "id": "synthetic-b",
+      "data": {
+        "dispatchTime": "2026-11-15 23:00",
+        "totalFare": 2,
+        "status": "completed",
+        "requester": "합성나",
+        "dept": "합성출발",
+        "dest": "합성도착"
+      }
+    },
+    {
+      "id": "synthetic-c",
+      "data": {
+        "dispatchTime": "2026-11-10 09:00",
+        "totalFare": null,
+        "status": "completed",
+        "requester": "",
+        "dept": "합성출발",
+        "dest": "합성도착"
+      }
+    },
+    {
+      "id": "synthetic-d",
+      "data": {
+        "dispatchTime": "2026-11-10 09:00",
+        "totalFare": 0,
+        "status": "completed",
+        "requester": "합성영",
+        "dept": "합성출발",
+        "dest": "합성도착"
+      }
+    }
+  ],
+  "dailySummaries": []
+}

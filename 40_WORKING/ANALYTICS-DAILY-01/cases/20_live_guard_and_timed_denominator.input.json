@@ -1,6 +1,6 @@
 {
   "case_id": "20_live_guard_and_timed_denominator",
-  "spec_version": "1.1.0",
+  "spec_version": "1.2.0",
   "category": "work_time_efficiency",
   "description": "현재=출근이면 live null; billing null 시간효율 제외·정상시간은 보존; 양수거리만 사용",
   "request": {

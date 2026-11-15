@@ -1,6 +1,6 @@
 {
   "case_id": "30_weekday_eight_week_window",
-  "spec_version": "1.1.0",
+  "spec_version": "1.2.0",
   "category": "same_weekday",
   "description": "정확히 과거8주, -56일 포함 -63일/당일/미래/다른요일 제외",
   "request": {

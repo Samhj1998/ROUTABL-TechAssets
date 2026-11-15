@@ -200,7 +200,8 @@ private fun runCase(name: String, version: String, request: Map<String, Any?>,
         },
         "calendar" to calendar(ins, month)
     )
-    println(name + "\t" + json(result))
+    val output = if (request["extended"] == true) result + ("extended" to extended(AnalyticsData("synthetic-rider", 0L, records, days), range, request)) else result
+    println(name + "\t" + json(output))
 }
 '''
 
@@ -288,7 +289,7 @@ def main():
     env["JAVA_OPTS"] = "-Djava.io.tmpdir=" + str(BUILD) + " -Djansi.mode=strip -Djansi.passthrough=true"
     compiled = BUILD / "fixtures.jar"
     originals = [str(source_root / s["path"]) for s in spec["sources"] if s["role"] == "compiled_original"]
-    subprocess.run([compiler, *originals, str(bridge), "-include-runtime", "-d", str(compiled)],
+    subprocess.run([compiler, *originals, str(ROOT / "tools" / "Extended.kt"), str(bridge), "-include-runtime", "-d", str(compiled)],
                    check=True, cwd=BUILD, env=env)
     result = subprocess.run(["java", "-Djava.io.tmpdir=" + str(BUILD), "-Duser.timezone=Asia/Seoul",
                              "-jar", str(compiled)], check=True, capture_output=True, text=True, cwd=BUILD, env=env)

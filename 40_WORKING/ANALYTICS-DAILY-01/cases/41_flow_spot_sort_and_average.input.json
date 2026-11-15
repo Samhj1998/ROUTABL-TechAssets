@@ -1,6 +1,6 @@
 {
   "case_id": "41_flow_spot_sort_and_average",
-  "spec_version": "1.1.0",
+  "spec_version": "1.2.0",
   "category": "flow_wait_place",
   "description": "spots 건수→총분 내림차순, 완전 동률 최초 등장순(날짜 역순 입력); 평균 정수 절삭과 기간/일별 집계",
   "request": {

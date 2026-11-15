@@ -1,0 +1,57 @@
+{
+  "case_id": "67_route_ties",
+  "spec_version": "1.2.0",
+  "category": "route_analysis",
+  "description": "routeStats 횟수 동률 문자열 오름차순·빈/공백 차량 -",
+  "request": {
+    "start": "2026-11-01",
+    "end": "2026-11-15",
+    "month": "2026-11",
+    "dayKeys": [
+      "2026-11-10"
+    ],
+    "today": "2026-11-15",
+    "nowMinute": 720,
+    "nowMillis": 1794711600000,
+    "extended": true
+  },
+  "documents": [
+    {
+      "id": "synthetic-z",
+      "data": {
+        "dispatchTime": "2026-11-10 09:00",
+        "totalFare": null,
+        "status": "completed",
+        "requester": "합성가",
+        "dept": "합성나",
+        "dest": "합성도착",
+        "car": " "
+      }
+    },
+    {
+      "id": "synthetic-a",
+      "data": {
+        "dispatchTime": "2026-11-10 09:00",
+        "totalFare": 0,
+        "status": "completed",
+        "requester": "합성가",
+        "dept": "합성가",
+        "dest": "합성도착",
+        "car": ""
+      }
+    },
+    {
+      "id": "synthetic-blank",
+      "data": {
+        "dispatchTime": "2026-11-10 09:00",
+        "totalFare": null,
+        "status": "completed",
+        "requester": "합성가",
+        "dept": "",
+        "dest": "",
+        "car": ""
+      }
+    }
+  ],
+  "dailySummaries": []
+}

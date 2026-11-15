@@ -1,6 +1,6 @@
 {
   "case_id": "11_floor_above",
-  "spec_version": "1.1.0",
+  "spec_version": "1.2.0",
   "category": "floor_denominator",
   "description": "180001원은 초과; net이 18만원 이하여도 billing으로 판단",
   "request": {

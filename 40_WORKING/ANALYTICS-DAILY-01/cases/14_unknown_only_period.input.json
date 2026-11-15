@@ -1,6 +1,6 @@
 {
   "case_id": "14_unknown_only_period",
-  "spec_version": "1.1.0",
+  "spec_version": "1.2.0",
   "category": "floor_denominator",
   "description": "근무일 모두 billing null이면 known 분모0, 출퇴근은 있어도 기간 시간효율 제외",
   "request": {

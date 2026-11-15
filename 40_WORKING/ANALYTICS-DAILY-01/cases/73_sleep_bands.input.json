@@ -1,0 +1,89 @@
+{
+  "case_id": "73_sleep_bands",
+  "spec_version": "1.2.0",
+  "category": "sleep_groups",
+  "description": "4h 미만/4/6h 경계·180000 포함·그룹별 평균과 저매출 비율",
+  "request": {
+    "start": "2026-11-01",
+    "end": "2026-11-15",
+    "month": "2026-11",
+    "dayKeys": [
+      "2026-11-10"
+    ],
+    "today": "2026-11-15",
+    "nowMinute": 720,
+    "nowMillis": 1794711600000,
+    "extended": true,
+    "sleep": {
+      "current": [
+        {
+          "id": "synthetic-sleep-a",
+          "startMillis": 1794164403600,
+          "endMillis": 1794178800000
+        },
+        {
+          "id": "synthetic-sleep-b",
+          "startMillis": 1794250800000,
+          "endMillis": 1794265200000
+        },
+        {
+          "id": "synthetic-sleep-c",
+          "startMillis": 1794330000000,
+          "endMillis": 1794351600000
+        },
+        {
+          "id": "synthetic-sleep-d",
+          "startMillis": 1794416403600,
+          "endMillis": 1794438000000
+        }
+      ]
+    }
+  },
+  "documents": [
+    {
+      "id": "synthetic-9",
+      "data": {
+        "dispatchTime": "2026-11-09 09:00",
+        "totalFare": 100000,
+        "status": "completed",
+        "requester": "합성가",
+        "dept": "합성출발",
+        "dest": "합성도착"
+      }
+    },
+    {
+      "id": "synthetic-10",
+      "data": {
+        "dispatchTime": "2026-11-10 09:00",
+        "totalFare": 180000,
+        "status": "completed",
+        "requester": "합성가",
+        "dept": "합성출발",
+        "dest": "합성도착"
+      }
+    },
+    {
+      "id": "synthetic-11",
+      "data": {
+        "dispatchTime": "2026-11-11 09:00",
+        "totalFare": 180001,
+        "status": "completed",
+        "requester": "합성가",
+        "dept": "합성출발",
+        "dest": "합성도착"
+      }
+    },
+    {
+      "id": "synthetic-12",
+      "data": {
+        "dispatchTime": "2026-11-12 09:00",
+        "totalFare": 0,
+        "status": "completed",
+        "requester": "합성가",
+        "dept": "합성출발",
+        "dest": "합성도착"
+      }
+    }
+  ],
+  "dailySummaries": []
+}

@@ -1,0 +1,73 @@
+{
+  "case_id": "74_sleep_missing",
+  "spec_version": "1.2.0",
+  "category": "sleep_groups",
+  "description": "미기록 근무일·매출불명 제외·수면만 있는 날 제외·빈 그룹",
+  "request": {
+    "start": "2026-11-01",
+    "end": "2026-11-15",
+    "month": "2026-11",
+    "dayKeys": [
+      "2026-11-10"
+    ],
+    "today": "2026-11-15",
+    "nowMinute": 720,
+    "nowMillis": 1794711600000,
+    "extended": true,
+    "sleep": {
+      "current": [
+        {
+          "id": "synthetic-sleep-a",
+          "startMillis": 1794254400000,
+          "endMillis": 1794265200000
+        },
+        {
+          "id": "synthetic-sleep-b",
+          "startMillis": 1794330000000,
+          "endMillis": 1794351600000
+        },
+        {
+          "id": "synthetic-sleep-only",
+          "startMillis": 1794510000000,
+          "endMillis": 1794524400000
+        }
+      ]
+    }
+  },
+  "documents": [
+    {
+      "id": "synthetic-a",
+      "data": {
+        "dispatchTime": "2026-11-10 09:00",
+        "totalFare": null,
+        "status": "completed",
+        "requester": "합성가",
+        "dept": "합성출발",
+        "dest": "합성도착"
+      }
+    },
+    {
+      "id": "synthetic-b",
+      "data": {
+        "dispatchTime": "2026-11-11 09:00",
+        "totalFare": 0,
+        "status": "completed",
+        "requester": "합성가",
+        "dept": "합성출발",
+        "dest": "합성도착"
+      }
+    },
+    {
+      "id": "synthetic-c",
+      "data": {
+        "dispatchTime": "2026-11-12 09:00",
+        "totalFare": 180000,
+        "status": "completed",
+        "requester": "합성가",
+        "dept": "합성출발",
+        "dest": "합성도착"
+      }
+    }
+  ],
+  "dailySummaries": []
+}

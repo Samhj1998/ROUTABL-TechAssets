@@ -1,0 +1,113 @@
+{
+  "case_id": "54_summary_compare",
+  "spec_version": "1.2.0",
+  "category": "summary_comparison",
+  "description": "KPI·비교표·출퇴근/거리 유효일·월 전체 6개월(선택 종료일 이후 포함)",
+  "request": {
+    "start": "2026-11-01",
+    "end": "2026-11-15",
+    "month": "2026-11",
+    "dayKeys": [
+      "2026-11-10"
+    ],
+    "today": "2026-11-15",
+    "nowMinute": 720,
+    "nowMillis": 1794711600000,
+    "extended": true,
+    "percentProbes": [
+      {
+        "current": 201,
+        "previous": 200
+      },
+      {
+        "current": 199,
+        "previous": 200
+      },
+      {
+        "current": 0,
+        "previous": 0
+      },
+      {
+        "current": null,
+        "previous": 1
+      }
+    ]
+  },
+  "documents": [
+    {
+      "id": "synthetic-current",
+      "data": {
+        "dispatchTime": "2026-11-10 09:00",
+        "totalFare": 201,
+        "status": "completed",
+        "requester": "합성가",
+        "dept": "합성출발",
+        "dest": "합성도착"
+      }
+    },
+    {
+      "id": "synthetic-old",
+      "data": {
+        "dispatchTime": "2026-10-10 09:00",
+        "totalFare": 200,
+        "status": "completed",
+        "requester": "합성가",
+        "dept": "합성출발",
+        "dest": "합성도착"
+      }
+    },
+    {
+      "id": "synthetic-future",
+      "data": {
+        "dispatchTime": "2026-11-29 09:00",
+        "totalFare": 10,
+        "status": "completed",
+        "requester": "합성가",
+        "dept": "합성출발",
+        "dest": "합성도착"
+      }
+    },
+    {
+      "id": "synthetic-oldest",
+      "data": {
+        "dispatchTime": "2026-06-01 09:00",
+        "totalFare": 1,
+        "status": "completed",
+        "requester": "합성가",
+        "dept": "합성출발",
+        "dest": "합성도착"
+      }
+    },
+    {
+      "id": "synthetic-outside",
+      "data": {
+        "dispatchTime": "2026-05-31 09:00",
+        "totalFare": 7,
+        "status": "completed",
+        "requester": "합성가",
+        "dept": "합성출발",
+        "dest": "합성도착"
+      }
+    }
+  ],
+  "dailySummaries": [
+    {
+      "id": "synthetic-summary-2026-11-10",
+      "data": {
+        "workDate": "2026-11-10",
+        "startTime": "08:00",
+        "endTime": "18:00",
+        "distanceKm": 3
+      }
+    },
+    {
+      "id": "synthetic-summary-2026-10-10",
+      "data": {
+        "workDate": "2026-10-10",
+        "startTime": "08:00",
+        "endTime": "13:00",
+        "distanceKm": 4
+      }
+    }
+  ]
+}

@@ -1,0 +1,216 @@
+{
+  "case_id": "69_flow_spots",
+  "spec_version": "1.2.0",
+  "category": "route_analysis",
+  "description": "대기동 상위8·최장동 동률·날짜간 연결 금지",
+  "request": {
+    "start": "2026-11-01",
+    "end": "2026-11-15",
+    "month": "2026-11",
+    "dayKeys": [
+      "2026-11-10"
+    ],
+    "today": "2026-11-15",
+    "nowMinute": 720,
+    "nowMillis": 1794711600000,
+    "extended": true
+  },
+  "documents": [
+    {
+      "id": "synthetic-first",
+      "data": {
+        "dispatchTime": "2026-11-10 00:00",
+        "totalFare": 1,
+        "status": "completed",
+        "requester": "합성가",
+        "dept": "합성출발",
+        "dest": "합성도착",
+        "completeTime": {
+          "$timestamp": "2026-11-09T15:10:00Z"
+        }
+      }
+    },
+    {
+      "id": "synthetic-1",
+      "data": {
+        "dispatchTime": "2026-11-10 01:00",
+        "totalFare": 1,
+        "status": "completed",
+        "requester": "합성가",
+        "dept": "합성출발",
+        "dest": "합성도착",
+        "completeTime": {
+          "$timestamp": "2026-11-09T16:10:00Z"
+        },
+        "inputLat": 37.5,
+        "inputLng": 127.0,
+        "waitDong": "합성동01"
+      }
+    },
+    {
+      "id": "synthetic-2",
+      "data": {
+        "dispatchTime": "2026-11-10 02:00",
+        "totalFare": 1,
+        "status": "completed",
+        "requester": "합성가",
+        "dept": "합성출발",
+        "dest": "합성도착",
+        "completeTime": {
+          "$timestamp": "2026-11-09T17:10:00Z"
+        },
+        "inputLat": 37.5,
+        "inputLng": 127.0,
+        "waitDong": "합성동02"
+      }
+    },
+    {
+      "id": "synthetic-3",
+      "data": {
+        "dispatchTime": "2026-11-10 03:00",
+        "totalFare": 1,
+        "status": "completed",
+        "requester": "합성가",
+        "dept": "합성출발",
+        "dest": "합성도착",
+        "completeTime": {
+          "$timestamp": "2026-11-09T18:10:00Z"
+        },
+        "inputLat": 37.5,
+        "inputLng": 127.0,
+        "waitDong": "합성동03"
+      }
+    },
+    {
+      "id": "synthetic-4",
+      "data": {
+        "dispatchTime": "2026-11-10 04:00",
+        "totalFare": 1,
+        "status": "completed",
+        "requester": "합성가",
+        "dept": "합성출발",
+        "dest": "합성도착",
+        "completeTime": {
+          "$timestamp": "2026-11-09T19:10:00Z"
+        },
+        "inputLat": 37.5,
+        "inputLng": 127.0,
+        "waitDong": "합성동04"
+      }
+    },
+    {
+      "id": "synthetic-5",
+      "data": {
+        "dispatchTime": "2026-11-10 05:00",
+        "totalFare": 1,
+        "status": "completed",
+        "requester": "합성가",
+        "dept": "합성출발",
+        "dest": "합성도착",
+        "completeTime": {
+          "$timestamp": "2026-11-09T20:10:00Z"
+        },
+        "inputLat": 37.5,
+        "inputLng": 127.0,
+        "waitDong": "합성동05"
+      }
+    },
+    {
+      "id": "synthetic-6",
+      "data": {
+        "dispatchTime": "2026-11-10 06:00",
+        "totalFare": 1,
+        "status": "completed",
+        "requester": "합성가",
+        "dept": "합성출발",
+        "dest": "합성도착",
+        "completeTime": {
+          "$timestamp": "2026-11-09T21:10:00Z"
+        },
+        "inputLat": 37.5,
+        "inputLng": 127.0,
+        "waitDong": "합성동06"
+      }
+    },
+    {
+      "id": "synthetic-7",
+      "data": {
+        "dispatchTime": "2026-11-10 07:00",
+        "totalFare": 1,
+        "status": "completed",
+        "requester": "합성가",
+        "dept": "합성출발",
+        "dest": "합성도착",
+        "completeTime": {
+          "$timestamp": "2026-11-09T22:10:00Z"
+        },
+        "inputLat": 37.5,
+        "inputLng": 127.0,
+        "waitDong": "합성동07"
+      }
+    },
+    {
+      "id": "synthetic-8",
+      "data": {
+        "dispatchTime": "2026-11-10 08:00",
+        "totalFare": 1,
+        "status": "completed",
+        "requester": "합성가",
+        "dept": "합성출발",
+        "dest": "합성도착",
+        "completeTime": {
+          "$timestamp": "2026-11-09T23:10:00Z"
+        },
+        "inputLat": 37.5,
+        "inputLng": 127.0,
+        "waitDong": "합성동08"
+      }
+    },
+    {
+      "id": "synthetic-9",
+      "data": {
+        "dispatchTime": "2026-11-10 09:00",
+        "totalFare": 1,
+        "status": "completed",
+        "requester": "합성가",
+        "dept": "합성출발",
+        "dest": "합성도착",
+        "completeTime": {
+          "$timestamp": "2026-11-10T00:10:00Z"
+        },
+        "inputLat": 37.5,
+        "inputLng": 127.0,
+        "waitDong": "합성동09"
+      }
+    },
+    {
+      "id": "synthetic-10",
+      "data": {
+        "dispatchTime": "2026-11-10 10:00",
+        "totalFare": 1,
+        "status": "completed",
+        "requester": "합성가",
+        "dept": "합성출발",
+        "dest": "합성도착",
+        "completeTime": {
+          "$timestamp": "2026-11-10T01:10:00Z"
+        },
+        "inputLat": 37.5,
+        "inputLng": 127.0,
+        "waitDong": "합성동10"
+      }
+    },
+    {
+      "id": "synthetic-next",
+      "data": {
+        "dispatchTime": "2026-11-11 01:00",
+        "totalFare": 1,
+        "status": "completed",
+        "requester": "합성가",
+        "dept": "합성출발",
+        "dest": "합성도착"
+      }
+    }
+  ],
+  "dailySummaries": []
+}

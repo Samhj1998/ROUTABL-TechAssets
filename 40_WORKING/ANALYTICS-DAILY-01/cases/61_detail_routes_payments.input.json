@@ -1,0 +1,117 @@
+{
+  "case_id": "61_detail_routes_payments",
+  "spec_version": "1.2.0",
+  "category": "customer_detail",
+  "description": "상위5 구간 안정 동률·결제 trim/월정산→신용·미입력",
+  "request": {
+    "start": "2026-11-01",
+    "end": "2026-11-15",
+    "month": "2026-11",
+    "dayKeys": [
+      "2026-11-10"
+    ],
+    "today": "2026-11-15",
+    "nowMinute": 720,
+    "nowMillis": 1794711600000,
+    "extended": true
+  },
+  "documents": [
+    {
+      "id": "synthetic-0",
+      "data": {
+        "dispatchTime": "2026-11-10 09:00",
+        "totalFare": 0,
+        "status": "completed",
+        "requester": "합성가",
+        "dept": "합성출발0",
+        "dest": "합성도착",
+        "payment": " 월정산 "
+      }
+    },
+    {
+      "id": "synthetic-1",
+      "data": {
+        "dispatchTime": "2026-11-10 09:00",
+        "totalFare": 1,
+        "status": "completed",
+        "requester": "합성가",
+        "dept": "합성출발1",
+        "dest": "합성도착",
+        "payment": "신용"
+      }
+    },
+    {
+      "id": "synthetic-2",
+      "data": {
+        "dispatchTime": "2026-11-10 09:00",
+        "totalFare": 2,
+        "status": "completed",
+        "requester": "합성가",
+        "dept": "합성출발2",
+        "dest": "합성도착",
+        "payment": "현금"
+      }
+    },
+    {
+      "id": "synthetic-3",
+      "data": {
+        "dispatchTime": "2026-11-10 09:00",
+        "totalFare": 3,
+        "status": "completed",
+        "requester": "합성가",
+        "dept": "합성출발3",
+        "dest": "합성도착",
+        "payment": ""
+      }
+    },
+    {
+      "id": "synthetic-4",
+      "data": {
+        "dispatchTime": "2026-11-10 09:00",
+        "totalFare": 4,
+        "status": "completed",
+        "requester": "합성가",
+        "dept": "합성출발4",
+        "dest": "합성도착",
+        "payment": "  "
+      }
+    },
+    {
+      "id": "synthetic-5",
+      "data": {
+        "dispatchTime": "2026-11-10 09:00",
+        "totalFare": 5,
+        "status": "completed",
+        "requester": "합성가",
+        "dept": "합성출발5",
+        "dest": "합성도착",
+        "payment": "카드"
+      }
+    },
+    {
+      "id": "synthetic-6",
+      "data": {
+        "dispatchTime": "2026-11-10 09:00",
+        "totalFare": 6,
+        "status": "completed",
+        "requester": "합성가",
+        "dept": "합성출발6",
+        "dest": "합성도착",
+        "payment": "기타"
+      }
+    },
+    {
+      "id": "synthetic-repeat",
+      "data": {
+        "dispatchTime": "2026-11-10 09:00",
+        "totalFare": 1,
+        "status": "completed",
+        "requester": "합성가",
+        "dept": "합성출발6",
+        "dest": "합성도착",
+        "payment": "월정산"
+      }
+    }
+  ],
+  "dailySummaries": []
+}

@@ -1,0 +1,87 @@
+{
+  "case_id": "81_timeline_sort",
+  "spec_version": "1.2.0",
+  "category": "timeline",
+  "description": "동일 배차시간 완료시각 순·완료누락 후미·시각없는 배차 맨끝·전체 표시 필드",
+  "request": {
+    "start": "2026-11-01",
+    "end": "2026-11-15",
+    "month": "2026-11",
+    "dayKeys": [
+      "2026-11-10"
+    ],
+    "today": "2026-11-15",
+    "nowMinute": 720,
+    "nowMillis": 1794711600000,
+    "extended": true
+  },
+  "documents": [
+    {
+      "id": "synthetic-untimed",
+      "data": {
+        "dispatchTime": "2026-11-10",
+        "totalFare": 1,
+        "status": "completed",
+        "requester": "합성가",
+        "dept": "합성출발",
+        "dest": "합성도착",
+        "note": "합성 메모"
+      }
+    },
+    {
+      "id": "synthetic-missing",
+      "data": {
+        "dispatchTime": "2026-11-10 09:00",
+        "totalFare": 1,
+        "status": "completed",
+        "requester": "합성가",
+        "dept": "합성출발",
+        "dest": "합성도착"
+      }
+    },
+    {
+      "id": "synthetic-later",
+      "data": {
+        "dispatchTime": "2026-11-10 09:00",
+        "totalFare": 1,
+        "status": "completed",
+        "requester": "합성가",
+        "dept": "합성출발",
+        "dest": "합성도착",
+        "completeTime": {
+          "$timestamp": "2026-11-10T00:30:00Z"
+        }
+      }
+    },
+    {
+      "id": "synthetic-earlier",
+      "data": {
+        "dispatchTime": "2026-11-10 09:00",
+        "totalFare": 1,
+        "status": "completed",
+        "requester": "합성가",
+        "dept": "합성출발",
+        "dest": "합성도착",
+        "completeTime": {
+          "$timestamp": "2026-11-10T00:10:00Z"
+        }
+      }
+    },
+    {
+      "id": "synthetic-next",
+      "data": {
+        "dispatchTime": "2026-11-10 10:00",
+        "totalFare": 1,
+        "status": "completed",
+        "requester": "합성가",
+        "dept": "합성출발",
+        "dest": "합성도착",
+        "payment": "월정산",
+        "car": "합성차",
+        "deptDong": "합성출발동",
+        "destDong": "합성도착동"
+      }
+    }
+  ],
+  "dailySummaries": []
+}

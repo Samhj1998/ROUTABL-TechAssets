@@ -1,0 +1,43 @@
+{
+  "case_id": "62_detail_blank",
+  "spec_version": "1.2.0",
+  "category": "customer_detail",
+  "description": "빈 그룹 표시명과 원본 빈 키 불일치·문자열 동일 표시명 고객 혼재",
+  "request": {
+    "start": "2026-11-01",
+    "end": "2026-11-15",
+    "month": "2026-11",
+    "dayKeys": [
+      "2026-11-10"
+    ],
+    "today": "2026-11-15",
+    "nowMinute": 720,
+    "nowMillis": 1794711600000,
+    "extended": true
+  },
+  "documents": [
+    {
+      "id": "synthetic-empty",
+      "data": {
+        "dispatchTime": "2026-11-10 09:00",
+        "totalFare": 10,
+        "status": "completed",
+        "requester": "",
+        "dept": "",
+        "dest": ""
+      }
+    },
+    {
+      "id": "synthetic-named",
+      "data": {
+        "dispatchTime": "2026-11-10 09:00",
+        "totalFare": 20,
+        "status": "completed",
+        "requester": "(이름 없음)",
+        "dept": "(이름 없음)",
+        "dest": "(이름 없음)"
+      }
+    }
+  ],
+  "dailySummaries": []
+}

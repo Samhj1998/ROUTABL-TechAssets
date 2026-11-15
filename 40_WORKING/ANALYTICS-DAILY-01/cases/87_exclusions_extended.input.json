@@ -1,0 +1,43 @@
+{
+  "case_id": "87_exclusions_extended",
+  "spec_version": "1.2.0",
+  "category": "export_projection",
+  "description": "기존 제외 정책이 확장 계산·내보내기 raw까지 선적용",
+  "request": {
+    "start": "2026-10-09",
+    "end": "2026-10-09",
+    "month": "2026-10",
+    "dayKeys": [
+      "2026-10-09"
+    ],
+    "today": "2026-11-15",
+    "nowMinute": 720,
+    "nowMillis": 1794711600000,
+    "extended": true
+  },
+  "documents": [
+    {
+      "id": "synthetic-excluded",
+      "data": {
+        "dispatchTime": "2026-10-09 09:00",
+        "totalFare": 84,
+        "status": "completed",
+        "requester": "합성가",
+        "dept": "합성출발",
+        "dest": "합성도착"
+      }
+    },
+    {
+      "id": "synthetic-kept",
+      "data": {
+        "dispatchTime": "2026-10-09 10:00",
+        "totalFare": 85,
+        "status": "completed",
+        "requester": "합성가",
+        "dept": "합성출발",
+        "dest": "합성도착"
+      }
+    }
+  ],
+  "dailySummaries": []
+}

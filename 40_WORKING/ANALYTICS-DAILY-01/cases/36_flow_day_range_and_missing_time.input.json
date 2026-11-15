@@ -1,6 +1,6 @@
 {
   "case_id": "36_flow_day_range_and_missing_time",
-  "spec_version": "1.1.0",
+  "spec_version": "1.2.0",
   "category": "flow_wait_place",
   "description": "시각 불명·취소·삭제는 쌍 제외; 날짜 간 연결 안 함; 기간 외 자료는 기간 flow에서 제외하나 지정 dayFlow에서는 계산",
   "request": {

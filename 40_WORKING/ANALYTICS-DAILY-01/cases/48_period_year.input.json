@@ -1,0 +1,23 @@
+{
+  "case_id": "48_period_year",
+  "spec_version": "1.2.0",
+  "category": "period_presets",
+  "description": "월초 특례/직전 동일 길이·윤년·연도·포함 경계 및 4개 프리셋",
+  "request": {
+    "start": "2026-01-01",
+    "end": "2026-01-01",
+    "month": "2026-01",
+    "dayKeys": [
+      "2026-01-01",
+      "2026-01-01"
+    ],
+    "today": "2026-01-01",
+    "nowMinute": 720,
+    "nowMillis": 1767236400000,
+    "extended": true,
+    "customStart": "2026-01-01",
+    "customEnd": "2026-01-01"
+  },
+  "documents": [],
+  "dailySummaries": []
+}

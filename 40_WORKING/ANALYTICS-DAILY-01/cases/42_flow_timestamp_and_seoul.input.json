@@ -1,6 +1,6 @@
 {
   "case_id": "42_flow_timestamp_and_seoul",
-  "spec_version": "1.1.0",
+  "spec_version": "1.2.0",
   "category": "flow_wait_place",
   "description": "UTC Timestamp/Date를 서울 자정 기준으로 계산; 완료 전날 시각도 차이 그대로; 문자열 completeTime은 null",
   "request": {

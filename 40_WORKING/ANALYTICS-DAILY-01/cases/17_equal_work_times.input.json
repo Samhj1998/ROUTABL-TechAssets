@@ -1,6 +1,6 @@
 {
   "case_id": "17_equal_work_times",
-  "spec_version": "1.1.0",
+  "spec_version": "1.2.0",
   "category": "work_time_efficiency",
   "description": "동일 출퇴근은 0시간 아닌 null",
   "request": {

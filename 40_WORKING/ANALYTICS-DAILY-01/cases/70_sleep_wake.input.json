@@ -1,0 +1,84 @@
+{
+  "case_id": "70_sleep_wake",
+  "spec_version": "1.2.0",
+  "category": "sleep_sessions",
+  "description": "서울 기상일·자정 경계·다회/겹침 합산·끝<=현재·무효 길이",
+  "request": {
+    "start": "2026-11-01",
+    "end": "2026-11-15",
+    "month": "2026-11",
+    "dayKeys": [
+      "2026-11-09",
+      "2026-11-10",
+      "2026-11-15"
+    ],
+    "today": "2026-11-15",
+    "nowMinute": 720,
+    "nowMillis": 1794711600000,
+    "extended": true,
+    "sleep": {
+      "current": [
+        {
+          "id": "synthetic-sleep-a",
+          "startMillis": 1794225600000,
+          "endMillis": 1794236400000
+        },
+        {
+          "id": "synthetic-sleep-b",
+          "startMillis": 1794258000000,
+          "endMillis": 1794265200000
+        },
+        {
+          "id": "synthetic-sleep-overlap",
+          "startMillis": 1794258000000,
+          "endMillis": 1794265200000
+        },
+        {
+          "id": "synthetic-sleep-zero",
+          "startMillis": 1794351600000,
+          "endMillis": 1794351600000
+        },
+        {
+          "id": "synthetic-sleep-negative",
+          "startMillis": 1794355200000,
+          "endMillis": 1794351600000
+        },
+        {
+          "id": "synthetic-sleep-future",
+          "startMillis": 1794708060000,
+          "endMillis": 1794711660000
+        },
+        {
+          "id": "synthetic-sleep-now",
+          "startMillis": 1794708000000,
+          "endMillis": 1794711600000
+        }
+      ]
+    }
+  },
+  "documents": [
+    {
+      "id": "synthetic-a",
+      "data": {
+        "dispatchTime": "2026-11-09 09:00",
+        "totalFare": 100000,
+        "status": "completed",
+        "requester": "합성가",
+        "dept": "합성출발",
+        "dest": "합성도착"
+      }
+    },
+    {
+      "id": "synthetic-b",
+      "data": {
+        "dispatchTime": "2026-11-10 09:00",
+        "totalFare": 180000,
+        "status": "completed",
+        "requester": "합성가",
+        "dept": "합성출발",
+        "dest": "합성도착"
+      }
+    }
+  ],
+  "dailySummaries": []
+}

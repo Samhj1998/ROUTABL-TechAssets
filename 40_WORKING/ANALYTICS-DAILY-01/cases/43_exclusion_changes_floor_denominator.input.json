@@ -1,6 +1,6 @@
 {
   "case_id": "43_exclusion_changes_floor_denominator",
-  "spec_version": "1.1.0",
+  "spec_version": "1.2.0",
   "category": "exclusions",
   "description": "10-09의 유일한 84원 시험 배차 제외로 해당 근무일/knownDays가 사라짐; summary는 남아도 분모 복원 안 함; 비교일은 18만 이하/초과 각 1일",
   "request": {

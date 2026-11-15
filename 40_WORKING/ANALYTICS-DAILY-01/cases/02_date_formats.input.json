@@ -1,6 +1,6 @@
 {
   "case_id": "02_date_formats",
-  "spec_version": "1.1.0",
+  "spec_version": "1.2.0",
   "category": "inclusion_date_amount",
   "description": "2/4자리 연도·점/대시·날짜만·윤일·잘못된 날짜/시각",
   "request": {

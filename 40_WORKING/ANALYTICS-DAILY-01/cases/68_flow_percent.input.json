@@ -1,0 +1,77 @@
+{
+  "case_id": "68_flow_percent",
+  "spec_version": "1.2.0",
+  "category": "route_analysis",
+  "description": "연결/겹침 비율 반올림·분모와 완료누락·20분 대기",
+  "request": {
+    "start": "2026-11-01",
+    "end": "2026-11-15",
+    "month": "2026-11",
+    "dayKeys": [
+      "2026-11-10"
+    ],
+    "today": "2026-11-15",
+    "nowMinute": 720,
+    "nowMillis": 1794711600000,
+    "extended": true
+  },
+  "documents": [
+    {
+      "id": "synthetic-a",
+      "data": {
+        "dispatchTime": "2026-11-10 09:00",
+        "totalFare": 10,
+        "status": "completed",
+        "requester": "합성가",
+        "dept": "합성출발",
+        "dest": "합성도착",
+        "destDong": "합성동",
+        "completeTime": {
+          "$timestamp": "2026-11-10T01:01:00Z"
+        }
+      }
+    },
+    {
+      "id": "synthetic-b",
+      "data": {
+        "dispatchTime": "2026-11-10 10:00",
+        "totalFare": 10,
+        "status": "completed",
+        "requester": "합성가",
+        "dept": "합성출발",
+        "dest": "합성도착",
+        "deptDong": "합성동",
+        "destDong": "합성동",
+        "completeTime": {
+          "$timestamp": "2026-11-10T01:40:00Z"
+        }
+      }
+    },
+    {
+      "id": "synthetic-c",
+      "data": {
+        "dispatchTime": "2026-11-10 11:00",
+        "totalFare": 10,
+        "status": "completed",
+        "requester": "합성가",
+        "dept": "합성출발",
+        "dest": "합성도착",
+        "deptDong": "다른동",
+        "destDong": "합성동"
+      }
+    },
+    {
+      "id": "synthetic-d",
+      "data": {
+        "dispatchTime": "2026-11-10 12:00",
+        "totalFare": 10,
+        "status": "completed",
+        "requester": "합성가",
+        "dept": "합성출발",
+        "dest": "합성도착",
+        "deptDong": "다른동"
+      }
+    }
+  ],
+  "dailySummaries": []
+}

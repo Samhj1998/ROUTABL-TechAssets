@@ -1,6 +1,6 @@
 {
   "case_id": "12_denominator_workdays",
-  "spec_version": "1.1.0",
+  "spec_version": "1.2.0",
   "category": "floor_denominator",
   "description": "0원·완료 주말 포함, 무배차/summary만/취소 제외, unknown은 known 분모 제외",
   "request": {

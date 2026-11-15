@@ -1,0 +1,86 @@
+{
+  "case_id": "82_timeline_wait",
+  "spec_version": "1.2.0",
+  "category": "timeline",
+  "description": "20분 경계 대기 삽입·정상/미기록/늦은 입력 장소",
+  "request": {
+    "start": "2026-11-01",
+    "end": "2026-11-15",
+    "month": "2026-11",
+    "dayKeys": [
+      "2026-11-10"
+    ],
+    "today": "2026-11-15",
+    "nowMinute": 720,
+    "nowMillis": 1794711600000,
+    "extended": true
+  },
+  "documents": [
+    {
+      "id": "synthetic-a",
+      "data": {
+        "dispatchTime": "2026-11-10 09:00",
+        "totalFare": 1,
+        "status": "completed",
+        "requester": "합성가",
+        "dept": "합성출발",
+        "dest": "합성도착",
+        "completeTime": {
+          "$timestamp": "2026-11-10T00:40:00Z"
+        }
+      }
+    },
+    {
+      "id": "synthetic-b",
+      "data": {
+        "dispatchTime": "2026-11-10 10:00",
+        "totalFare": 1,
+        "status": "completed",
+        "requester": "합성가",
+        "dept": "합성출발",
+        "dest": "합성도착",
+        "completeTime": {
+          "$timestamp": "2026-11-10T01:40:00Z"
+        },
+        "inputLat": 37.5,
+        "inputLng": 127.0,
+        "waitDong": "합성대기동"
+      }
+    },
+    {
+      "id": "synthetic-c",
+      "data": {
+        "dispatchTime": "2026-11-10 11:00",
+        "totalFare": 1,
+        "status": "completed",
+        "requester": "합성가",
+        "dept": "합성출발",
+        "dest": "합성도착",
+        "completeTime": {
+          "$timestamp": "2026-11-10T02:40:00Z"
+        }
+      }
+    },
+    {
+      "id": "synthetic-d",
+      "data": {
+        "dispatchTime": "2026-11-10 12:00",
+        "totalFare": 1,
+        "status": "completed",
+        "requester": "합성가",
+        "dept": "합성출발",
+        "dest": "합성도착",
+        "inputLat": 37.5,
+        "inputLng": 127.0,
+        "inputAt": {
+          "$timestamp": "2026-11-10T02:58:00Z"
+        },
+        "pickupTime": {
+          "$timestamp": "2026-11-10T03:00:00Z"
+        },
+        "waitDong": "합성제외동"
+      }
+    }
+  ],
+  "dailySummaries": []
+}

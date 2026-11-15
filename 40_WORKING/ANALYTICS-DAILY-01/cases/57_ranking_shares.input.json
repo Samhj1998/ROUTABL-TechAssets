@@ -1,0 +1,98 @@
+{
+  "case_id": "57_ranking_shares",
+  "spec_version": "1.2.0",
+  "category": "customer_ranking",
+  "description": "3개 키 trim·상위3/나머지·신규/기존·null·동률 안정 순서",
+  "request": {
+    "start": "2026-11-01",
+    "end": "2026-11-15",
+    "month": "2026-11",
+    "dayKeys": [
+      "2026-11-10"
+    ],
+    "today": "2026-11-15",
+    "nowMinute": 720,
+    "nowMillis": 1794711600000,
+    "extended": true
+  },
+  "documents": [
+    {
+      "id": "synthetic-0",
+      "data": {
+        "dispatchTime": "2026-11-10 09:00",
+        "totalFare": 100,
+        "status": "completed",
+        "requester": " 합성나 ",
+        "dept": " 합성나 ",
+        "dest": " 합성나 "
+      }
+    },
+    {
+      "id": "synthetic-1",
+      "data": {
+        "dispatchTime": "2026-11-10 09:00",
+        "totalFare": 100,
+        "status": "completed",
+        "requester": "합성가",
+        "dept": "합성가",
+        "dest": "합성가"
+      }
+    },
+    {
+      "id": "synthetic-2",
+      "data": {
+        "dispatchTime": "2026-11-10 09:00",
+        "totalFare": 50,
+        "status": "completed",
+        "requester": "합성다",
+        "dept": "합성다",
+        "dest": "합성다"
+      }
+    },
+    {
+      "id": "synthetic-3",
+      "data": {
+        "dispatchTime": "2026-11-10 09:00",
+        "totalFare": 50,
+        "status": "completed",
+        "requester": "합성라",
+        "dept": "합성라",
+        "dest": "합성라"
+      }
+    },
+    {
+      "id": "synthetic-4",
+      "data": {
+        "dispatchTime": "2026-11-10 09:00",
+        "totalFare": null,
+        "status": "completed",
+        "requester": "",
+        "dept": "",
+        "dest": ""
+      }
+    },
+    {
+      "id": "synthetic-5",
+      "data": {
+        "dispatchTime": "2026-11-10 09:00",
+        "totalFare": 0,
+        "status": "completed",
+        "requester": "합성영",
+        "dept": "합성영",
+        "dest": "합성영"
+      }
+    },
+    {
+      "id": "synthetic-old",
+      "data": {
+        "dispatchTime": "2026-10-10 09:00",
+        "totalFare": 80,
+        "status": "completed",
+        "requester": "합성가",
+        "dept": "합성가",
+        "dest": "합성가"
+      }
+    }
+  ],
+  "dailySummaries": []
+}

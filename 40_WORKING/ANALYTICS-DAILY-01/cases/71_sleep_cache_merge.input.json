@@ -1,0 +1,61 @@
+{
+  "case_id": "71_sleep_cache_merge",
+  "spec_version": "1.2.0",
+  "category": "sleep_cache",
+  "description": "ID 중복 마지막 우선·upsert/합성 삭제 이벤트·없는ID 삭제 무시",
+  "request": {
+    "start": "2026-11-01",
+    "end": "2026-11-15",
+    "month": "2026-11",
+    "dayKeys": [
+      "2026-11-10"
+    ],
+    "today": "2026-11-15",
+    "nowMinute": 720,
+    "nowMillis": 1794711600000,
+    "extended": true,
+    "sleep": {
+      "current": [
+        {
+          "id": "synthetic-sleep-same",
+          "startMillis": 1794258000000,
+          "endMillis": 1794265200000
+        },
+        {
+          "id": "synthetic-sleep-same",
+          "startMillis": 1794254400000,
+          "endMillis": 1794265200000
+        },
+        {
+          "id": "synthetic-sleep-gone",
+          "startMillis": 1794261600000,
+          "endMillis": 1794265200000
+        }
+      ],
+      "changes": [
+        {
+          "id": "synthetic-sleep-same",
+          "startMillis": 1794250800000,
+          "endMillis": 1794265200000,
+          "op": "upsert"
+        },
+        {
+          "op": "delete",
+          "id": "synthetic-sleep-gone"
+        },
+        {
+          "op": "delete",
+          "id": "synthetic-sleep-missing"
+        },
+        {
+          "id": "synthetic-sleep-new",
+          "startMillis": 1794348000000,
+          "endMillis": 1794351600000,
+          "op": "upsert"
+        }
+      ]
+    }
+  },
+  "documents": [],
+  "dailySummaries": []
+}

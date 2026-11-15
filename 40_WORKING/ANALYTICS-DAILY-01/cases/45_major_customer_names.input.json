@@ -1,6 +1,6 @@
 {
   "case_id": "45_major_customer_names",
-  "spec_version": "1.1.0",
+  "spec_version": "1.2.0",
   "category": "major_customer_names",
   "description": "고객 목록 이름 그대로 requester.trim() 완전 일치. 영우티엔에프+세원텍스 합은 원본 영우/세원 포함 합과 같고 빠른발은 별도",
   "request": {

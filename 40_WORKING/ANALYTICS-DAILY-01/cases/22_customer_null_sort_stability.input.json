@@ -1,6 +1,6 @@
 {
   "case_id": "22_customer_null_sort_stability",
-  "spec_version": "1.1.0",
+  "spec_version": "1.2.0",
   "category": "customer_partner_hourly",
   "description": "고객별 null 전파·금액→건수→첫 등장 안정순; 날짜 그룹 flatten 순서",
   "request": {

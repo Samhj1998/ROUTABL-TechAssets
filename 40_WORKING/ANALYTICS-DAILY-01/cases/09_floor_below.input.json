@@ -1,6 +1,6 @@
 {
   "case_id": "09_floor_below",
-  "spec_version": "1.1.0",
+  "spec_version": "1.2.0",
   "category": "floor_denominator",
   "description": "179999원은 이하 기준 포함; 비용으로 기준 변경 안 함",
   "request": {

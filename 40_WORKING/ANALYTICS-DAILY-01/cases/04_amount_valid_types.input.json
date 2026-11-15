@@ -1,6 +1,6 @@
 {
   "case_id": "04_amount_valid_types",
-  "spec_version": "1.1.0",
+  "spec_version": "1.2.0",
   "category": "inclusion_date_amount",
   "description": "금액 정수/정수 Double/쉼표 문자열/0/안전정수 경계·구성금액 검증 없음",
   "request": {

@@ -1,6 +1,6 @@
 {
   "case_id": "35_flow_sort_and_missing_completion",
-  "spec_version": "1.1.0",
+  "spec_version": "1.2.0",
   "category": "flow_wait_place",
   "description": "입력 역순·배차분 동률은 완료시각 오름차순(null 마지막), 완전 동률은 입력순; 완료 없으면 timedBase 제외, 빈 동은 linkBase 제외",
   "request": {

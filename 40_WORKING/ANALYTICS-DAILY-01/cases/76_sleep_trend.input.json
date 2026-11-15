@@ -1,0 +1,102 @@
+{
+  "case_id": "76_sleep_trend",
+  "spec_version": "1.2.0",
+  "category": "sleep_trend",
+  "description": "날짜 간격·연속 수면 선·미기록/무근무일에서 단절·청구 null 유지",
+  "request": {
+    "start": "2026-11-01",
+    "end": "2026-11-15",
+    "month": "2026-11",
+    "dayKeys": [
+      "2026-11-09",
+      "2026-11-10",
+      "2026-11-11"
+    ],
+    "today": "2026-11-15",
+    "nowMinute": 720,
+    "nowMillis": 1794711600000,
+    "extended": true,
+    "sleep": {
+      "current": [
+        {
+          "id": "synthetic-sleep-9",
+          "startMillis": 1794160800000,
+          "endMillis": 1794178800000
+        },
+        {
+          "id": "synthetic-sleep-10",
+          "startMillis": 1794247200000,
+          "endMillis": 1794265200000
+        },
+        {
+          "id": "synthetic-sleep-12",
+          "startMillis": 1794420000000,
+          "endMillis": 1794438000000
+        },
+        {
+          "id": "synthetic-sleep-14",
+          "startMillis": 1794592800000,
+          "endMillis": 1794610800000
+        }
+      ]
+    }
+  },
+  "documents": [
+    {
+      "id": "synthetic-9",
+      "data": {
+        "dispatchTime": "2026-11-09 09:00",
+        "totalFare": 100000,
+        "status": "completed",
+        "requester": "합성가",
+        "dept": "합성출발",
+        "dest": "합성도착"
+      }
+    },
+    {
+      "id": "synthetic-10",
+      "data": {
+        "dispatchTime": "2026-11-10 09:00",
+        "totalFare": null,
+        "status": "completed",
+        "requester": "합성가",
+        "dept": "합성출발",
+        "dest": "합성도착"
+      }
+    },
+    {
+      "id": "synthetic-11",
+      "data": {
+        "dispatchTime": "2026-11-11 09:00",
+        "totalFare": 100000,
+        "status": "completed",
+        "requester": "합성가",
+        "dept": "합성출발",
+        "dest": "합성도착"
+      }
+    },
+    {
+      "id": "synthetic-12",
+      "data": {
+        "dispatchTime": "2026-11-12 09:00",
+        "totalFare": 100000,
+        "status": "completed",
+        "requester": "합성가",
+        "dept": "합성출발",
+        "dest": "합성도착"
+      }
+    },
+    {
+      "id": "synthetic-14",
+      "data": {
+        "dispatchTime": "2026-11-14 09:00",
+        "totalFare": 100000,
+        "status": "completed",
+        "requester": "합성가",
+        "dept": "합성출발",
+        "dest": "합성도착"
+      }
+    }
+  ],
+  "dailySummaries": []
+}

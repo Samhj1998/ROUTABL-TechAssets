@@ -1,0 +1,47 @@
+{
+  "case_id": "72_sleep_cache_recent",
+  "spec_version": "1.2.0",
+  "category": "sleep_cache",
+  "description": "토큰 만료 후 최근 대체 계산·시작 경계 이전 보존·최근 누락 제거",
+  "request": {
+    "start": "2026-11-01",
+    "end": "2026-11-15",
+    "month": "2026-11",
+    "dayKeys": [
+      "2026-11-10"
+    ],
+    "today": "2026-11-15",
+    "nowMinute": 720,
+    "nowMillis": 1794711600000,
+    "extended": true,
+    "sleep": {
+      "current": [
+        {
+          "id": "synthetic-sleep-old",
+          "startMillis": 1790802000000,
+          "endMillis": 1790809200000
+        },
+        {
+          "id": "synthetic-sleep-boundary",
+          "startMillis": 1793458800000,
+          "endMillis": 1793458800000
+        },
+        {
+          "id": "synthetic-sleep-removed",
+          "startMillis": 1794258000000,
+          "endMillis": 1794265200000
+        }
+      ],
+      "recent": [
+        {
+          "id": "synthetic-sleep-new",
+          "startMillis": 1794340800000,
+          "endMillis": 1794351600000
+        }
+      ],
+      "replaceStartMillis": 1793458800000
+    }
+  },
+  "documents": [],
+  "dailySummaries": []
+}

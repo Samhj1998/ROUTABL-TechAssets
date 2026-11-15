@@ -1,6 +1,6 @@
 {
   "case_id": "31_weekday_skip_unknown_include_zero",
-  "spec_version": "1.1.0",
+  "spec_version": "1.2.0",
   "category": "same_weekday",
   "description": "같은요일 무배차·미확인 건너뜀·확정0원 포함·정수 절삭",
   "request": {

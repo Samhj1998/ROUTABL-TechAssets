@@ -1,6 +1,6 @@
 {
   "case_id": "23_partner_substring",
-  "spec_version": "1.1.0",
+  "spec_version": "1.2.0",
   "category": "customer_partner_hourly",
   "description": "영우/세원 포함 매칭·둘 포함해도 한번·중간 공백/빠른발 미포함",
   "request": {

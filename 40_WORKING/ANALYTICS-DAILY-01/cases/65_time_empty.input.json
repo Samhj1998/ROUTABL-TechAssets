@@ -1,0 +1,82 @@
+{
+  "case_id": "65_time_empty",
+  "spec_version": "1.2.0",
+  "category": "time_analysis",
+  "description": "빈 히트맵·요일 월~토 기본·근무효율 최신순/유효 시간 거리",
+  "request": {
+    "start": "2026-11-01",
+    "end": "2026-11-15",
+    "month": "2026-11",
+    "dayKeys": [
+      "2026-11-10"
+    ],
+    "today": "2026-11-15",
+    "nowMinute": 720,
+    "nowMillis": 1794711600000,
+    "extended": true
+  },
+  "documents": [
+    {
+      "id": "synthetic-a",
+      "data": {
+        "dispatchTime": "2026-11-10",
+        "totalFare": 0,
+        "status": "completed",
+        "requester": "합성가",
+        "dept": "합성출발",
+        "dest": "합성도착"
+      }
+    },
+    {
+      "id": "synthetic-b",
+      "data": {
+        "dispatchTime": "2026-11-11",
+        "totalFare": 20,
+        "status": "completed",
+        "requester": "합성가",
+        "dept": "합성출발",
+        "dest": "합성도착"
+      }
+    },
+    {
+      "id": "synthetic-c",
+      "data": {
+        "dispatchTime": "2026-11-12",
+        "totalFare": null,
+        "status": "completed",
+        "requester": "합성가",
+        "dept": "합성출발",
+        "dest": "합성도착"
+      }
+    }
+  ],
+  "dailySummaries": [
+    {
+      "id": "synthetic-summary-2026-11-10",
+      "data": {
+        "workDate": "2026-11-10",
+        "startTime": "08:00",
+        "endTime": "18:00",
+        "distanceKm": 0
+      }
+    },
+    {
+      "id": "synthetic-summary-2026-11-11",
+      "data": {
+        "workDate": "2026-11-11",
+        "startTime": "08:00",
+        "endTime": "10:30",
+        "distanceKm": 3
+      }
+    },
+    {
+      "id": "synthetic-summary-2026-11-12",
+      "data": {
+        "workDate": "2026-11-12",
+        "startTime": "08:00",
+        "endTime": "18:00",
+        "distanceKm": 100
+      }
+    }
+  ]
+}

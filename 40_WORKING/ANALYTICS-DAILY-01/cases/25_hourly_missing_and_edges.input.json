@@ -1,6 +1,6 @@
 {
   "case_id": "25_hourly_missing_and_edges",
-  "spec_version": "1.1.0",
+  "spec_version": "1.2.0",
   "category": "customer_partner_hourly",
   "description": "시간 불명은 일매출에 남고 시간대 제외·00/23시·금액null·취소 제외",
   "request": {

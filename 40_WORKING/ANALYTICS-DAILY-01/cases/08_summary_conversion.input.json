@@ -1,6 +1,6 @@
 {
   "case_id": "08_summary_conversion",
-  "spec_version": "1.1.0",
+  "spec_version": "1.2.0",
   "category": "inclusion_date_amount",
   "description": "summary ID fallback·workDate 우선·형식 검사만·중복 마지막 우선·문자열/숫자 변환",
   "request": {

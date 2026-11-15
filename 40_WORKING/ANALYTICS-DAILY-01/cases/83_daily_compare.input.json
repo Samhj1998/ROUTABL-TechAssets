@@ -1,0 +1,67 @@
+{
+  "case_id": "83_daily_compare",
+  "spec_version": "1.2.0",
+  "category": "timeline",
+  "description": "과거8주 같은요일 대비 증감 표시·0/무배차 숨김",
+  "request": {
+    "start": "2026-11-01",
+    "end": "2026-11-15",
+    "month": "2026-11",
+    "dayKeys": [
+      "2026-11-10",
+      "2026-11-11",
+      "2026-11-12"
+    ],
+    "today": "2026-11-15",
+    "nowMinute": 720,
+    "nowMillis": 1794711600000,
+    "extended": true
+  },
+  "documents": [
+    {
+      "id": "synthetic-before",
+      "data": {
+        "dispatchTime": "2026-11-03 09:00",
+        "totalFare": 200,
+        "status": "completed",
+        "requester": "합성가",
+        "dept": "합성출발",
+        "dest": "합성도착"
+      }
+    },
+    {
+      "id": "synthetic-now",
+      "data": {
+        "dispatchTime": "2026-11-10 09:00",
+        "totalFare": 201,
+        "status": "completed",
+        "requester": "합성가",
+        "dept": "합성출발",
+        "dest": "합성도착"
+      }
+    },
+    {
+      "id": "synthetic-zero",
+      "data": {
+        "dispatchTime": "2026-11-04 09:00",
+        "totalFare": 0,
+        "status": "completed",
+        "requester": "합성가",
+        "dept": "합성출발",
+        "dest": "합성도착"
+      }
+    },
+    {
+      "id": "synthetic-today",
+      "data": {
+        "dispatchTime": "2026-11-11 09:00",
+        "totalFare": 100,
+        "status": "completed",
+        "requester": "합성가",
+        "dept": "합성출발",
+        "dest": "합성도착"
+      }
+    }
+  ],
+  "dailySummaries": []
+}

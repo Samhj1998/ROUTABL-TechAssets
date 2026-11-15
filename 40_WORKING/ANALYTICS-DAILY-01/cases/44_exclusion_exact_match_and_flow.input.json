@@ -1,6 +1,6 @@
 {
   "case_id": "44_exclusion_exact_match_and_flow",
-  "spec_version": "1.1.0",
+  "spec_version": "1.2.0",
   "category": "exclusions",
   "description": "정규화된 날짜+금액만 제외: 동일 날짜 다른 금액·다른 날짜 84원·금액 null 유지. 제외 배차를 흐름 사이에서 먼저 빼고 달력/요일도 필터 후 계산",
   "request": {
