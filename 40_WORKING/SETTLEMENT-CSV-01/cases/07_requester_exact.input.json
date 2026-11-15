@@ -1,0 +1,114 @@
+{
+  "case_id": "07_requester_exact",
+  "spec_version": "1.0.0",
+  "description": "requester 공백도 불일치; 청구처 ID/이름과 billed 필드는 필터 아님",
+  "request": {
+    "targetMonthKey": "2026-10",
+    "targetCustomer": "가상고객-A"
+  },
+  "documents": [
+    {
+      "id": "synthetic-valid",
+      "data": {
+        "status": "completed",
+        "isDeleted": false,
+        "dispatchTime": "2026-10-07 9:05",
+        "timestamp": "2026-10-07T00:00:00Z",
+        "requester": "가상고객-A",
+        "reqPhone": "010-0000-0000",
+        "dept": "가상출발-A",
+        "dest": "가상도착-B",
+        "deptDong": "가상출발동",
+        "destDong": "가상도착동",
+        "car": "가상차량",
+        "payment": "월정산",
+        "baseFare": 20000,
+        "extraFare": 3000,
+        "takSong": 2000,
+        "roundTrip": "0",
+        "type": "가상운송",
+        "totalFare": 25000,
+        "note": "합성 시험용",
+        "rider": "가상기사-001",
+        "billed": false,
+        "customerBillingCompanyId": "synthetic-other",
+        "customerBillingCompanyName": "가상다른청구처"
+      }
+    },
+    {
+      "id": "synthetic-space",
+      "data": {
+        "status": "completed",
+        "isDeleted": false,
+        "dispatchTime": "2026-10-07 9:05",
+        "timestamp": "2026-10-07T00:00:00Z",
+        "requester": "가상고객-A ",
+        "reqPhone": "010-0000-0000",
+        "dept": "가상출발-A",
+        "dest": "가상도착-B",
+        "deptDong": "가상출발동",
+        "destDong": "가상도착동",
+        "car": "가상차량",
+        "payment": "월정산",
+        "baseFare": 20000,
+        "extraFare": 3000,
+        "takSong": 2000,
+        "roundTrip": "0",
+        "type": "가상운송",
+        "totalFare": null,
+        "note": "합성 시험용",
+        "rider": "가상기사-001"
+      }
+    },
+    {
+      "id": "synthetic-other",
+      "data": {
+        "status": "completed",
+        "isDeleted": false,
+        "dispatchTime": "2026-10-07 9:05",
+        "timestamp": "2026-10-07T00:00:00Z",
+        "requester": "가상고객-B",
+        "reqPhone": "010-0000-0000",
+        "dept": "가상출발-A",
+        "dest": "가상도착-B",
+        "deptDong": "가상출발동",
+        "destDong": "가상도착동",
+        "car": "가상차량",
+        "payment": "월정산",
+        "baseFare": 20000,
+        "extraFare": 3000,
+        "takSong": 2000,
+        "roundTrip": "0",
+        "type": "가상운송",
+        "totalFare": 25000,
+        "note": "합성 시험용",
+        "rider": "가상기사-001"
+      }
+    },
+    {
+      "id": "synthetic-null",
+      "data": {
+        "status": "completed",
+        "isDeleted": false,
+        "dispatchTime": "2026-10-07 9:05",
+        "timestamp": "2026-10-07T00:00:00Z",
+        "requester": null,
+        "reqPhone": "010-0000-0000",
+        "dept": "가상출발-A",
+        "dest": "가상도착-B",
+        "deptDong": "가상출발동",
+        "destDong": "가상도착동",
+        "car": "가상차량",
+        "payment": "월정산",
+        "baseFare": 20000,
+        "extraFare": 3000,
+        "takSong": 2000,
+        "roundTrip": "0",
+        "type": "가상운송",
+        "totalFare": 25000,
+        "note": "합성 시험용",
+        "rider": "가상기사-001"
+      }
+    }
+  ]
+}

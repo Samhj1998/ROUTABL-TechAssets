@@ -1,0 +1,36 @@
+{
+  "case_id": "14_vat_floor_below",
+  "spec_version": "1.0.0",
+  "description": "합계 9에서 VAT 0",
+  "request": {
+    "targetMonthKey": "2026-10",
+    "targetCustomer": "가상고객-A"
+  },
+  "documents": [
+    {
+      "id": "synthetic-001",
+      "data": {
+        "status": "completed",
+        "isDeleted": false,
+        "dispatchTime": "2026-10-07 9:05",
+        "timestamp": "2026-10-07T00:00:00Z",
+        "requester": "가상고객-A",
+        "reqPhone": "010-0000-0000",
+        "dept": "가상출발-A",
+        "dest": "가상도착-B",
+        "deptDong": "가상출발동",
+        "destDong": "가상도착동",
+        "car": "가상차량",
+        "payment": "월정산",
+        "baseFare": 9,
+        "extraFare": 0,
+        "takSong": 0,
+        "roundTrip": "0",
+        "type": "가상운송",
+        "totalFare": 9,
+        "note": "합성 시험용",
+        "rider": "가상기사-001"
+      }
+    }
+  ]
+}

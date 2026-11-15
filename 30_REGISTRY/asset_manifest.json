@@ -3515,6 +3515,29 @@
       "parent_asset_ids": [],
       "registry_added_in": "v0.36",
       "grade": "P2"
+    },
+    {
+      "asset_id": "SETTLEMENT-CSV-01-SPEC",
+      "title": "정산 CSV 공통 규칙 및 Kotlin 실행 기반 합성 시험사례 v1.0.0",
+      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/40_WORKING/SETTLEMENT-CSV-01/spec.json",
+      "managed_local_copy_path": "/Users/yongho/ROUTABL-TechAssets/40_WORKING/SETTLEMENT-CSV-01/spec.json",
+      "version": "1.0.0",
+      "bytes": 16190,
+      "sha256": "5c863aef619e27425f73629ee8baeffd67c89b61e102a2c1255676e851a46187",
+      "observation": "VERSIONED_SPEC_AND_SYNTHETIC_FIXTURES_FROM_READ_ONLY_KOTLIN_ORIGINALS",
+      "execution_validation": "KOTLIN_ORIGINALS_34_CASES_EXECUTED_BYTE_DIFF_0",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "YES",
+      "original_file_unchanged": true,
+      "basis_kotlin_paths": [
+        "~/StudioProjects/DISPATCH-One-Android/shared/kotlin/com/routivel/shared/SettlementRules.kt:10-73",
+        "~/StudioProjects/DISPATCH-One-Android/shared/kotlin/com/routivel/shared/SettlementCsv.kt:9-78",
+        "~/StudioProjects/DISPATCH-One-Android/shared/test/com/routivel/shared/SettlementRulesTest.kt:12-81",
+        "~/StudioProjects/DISPATCH-One-Android/app/src/main/java/com/routivel/driver/DispatchExportController.kt:281-313",
+        "~/StudioProjects/DISPATCH-One-Android/app/src/main/java/com/routivel/driver/DriverSettlement.kt:13-18"
+      ],
+      "case_directory": "40_WORKING/SETTLEMENT-CSV-01/cases",
+      "generator_path": "40_WORKING/SETTLEMENT-CSV-01/tools/generate.py"
     }
   ],
   "unresolved": [

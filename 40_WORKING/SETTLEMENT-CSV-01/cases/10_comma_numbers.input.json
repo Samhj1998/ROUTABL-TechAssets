@@ -1,0 +1,36 @@
+{
+  "case_id": "10_comma_numbers",
+  "spec_version": "1.0.0",
+  "description": "금액 trim·쉼표 제거, 쉼표 위치 무검사, 왕복 수치 서식",
+  "request": {
+    "targetMonthKey": "2026-10",
+    "targetCustomer": "가상고객-A"
+  },
+  "documents": [
+    {
+      "id": "synthetic-001",
+      "data": {
+        "status": "completed",
+        "isDeleted": false,
+        "dispatchTime": "2026-10-07 9:05",
+        "timestamp": "2026-10-07T00:00:00Z",
+        "requester": "가상고객-A",
+        "reqPhone": "010-0000-0000",
+        "dept": "가상출발-A",
+        "dest": "가상도착-B",
+        "deptDong": "가상출발동",
+        "destDong": "가상도착동",
+        "car": "가상차량",
+        "payment": "월정산",
+        "baseFare": " 20,000 ",
+        "extraFare": "3,0,0,0",
+        "takSong": "2,000",
+        "roundTrip": "1,234",
+        "type": "가상운송",
+        "totalFare": "25,000",
+        "note": "합성 시험용",
+        "rider": "가상기사-001"
+      }
+    }
+  ]
+}

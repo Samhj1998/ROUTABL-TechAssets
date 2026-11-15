@@ -1,0 +1,36 @@
+{
+  "case_id": "03_seoul_january",
+  "spec_version": "1.0.0",
+  "description": "UTC 12월 31일이 서울 1월 1일이면 MM.dd 연도는 2027",
+  "request": {
+    "targetMonthKey": "2027-01",
+    "targetCustomer": "가상고객-A"
+  },
+  "documents": [
+    {
+      "id": "synthetic-001",
+      "data": {
+        "status": "completed",
+        "isDeleted": false,
+        "dispatchTime": "01.01 9:05",
+        "timestamp": "2026-12-31T16:00:00Z",
+        "requester": "가상고객-A",
+        "reqPhone": "010-0000-0000",
+        "dept": "가상출발-A",
+        "dest": "가상도착-B",
+        "deptDong": "가상출발동",
+        "destDong": "가상도착동",
+        "car": "가상차량",
+        "payment": "월정산",
+        "baseFare": 20000,
+        "extraFare": 3000,
+        "takSong": 2000,
+        "roundTrip": "0",
+        "type": "가상운송",
+        "totalFare": 25000,
+        "note": "합성 시험용",
+        "rider": "가상기사-001"
+      }
+    }
+  ]
+}

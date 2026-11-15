@@ -1,0 +1,289 @@
+{
+  "asset_id": "SETTLEMENT-CSV-01-SPEC",
+  "version": "1.0.0",
+  "purpose": "기사앱 Kotlin과 Mac 분석 웹앱 JS의 정산 CSV 바이트 일치 계약",
+  "authority": "해석이 모호하거나 명세와 충돌하면 아래 해시의 Kotlin 코드가 정답이다. 규칙 변경 시 version을 올리고 해시와 사례를 재생성한다.",
+  "source_root": "~/StudioProjects/DISPATCH-One-Android",
+  "sources": [
+    {
+      "path": "shared/kotlin/com/routivel/shared/SettlementRules.kt",
+      "lines": "10-73",
+      "sha256": "74d8c77316080a2c63aac942f5599aedad2921a3729bab67de9817666a199cf3"
+    },
+    {
+      "path": "shared/kotlin/com/routivel/shared/SettlementCsv.kt",
+      "lines": "9-78",
+      "sha256": "49a6e39cf5bdf348f77d51dd821174a51b622823ad770ce4b92ddcaef80b9c4c"
+    },
+    {
+      "path": "shared/test/com/routivel/shared/SettlementRulesTest.kt",
+      "lines": "12-81",
+      "sha256": "78fc811cfa70134b6eb247c1cb1fe4da8bd1836aa61d232c0e6d12818e59d312"
+    },
+    {
+      "path": "app/src/main/java/com/routivel/driver/DispatchExportController.kt",
+      "lines": "281-313",
+      "sha256": "66f69e14d35e9eb2b7bb52b05d7fa51030edd181fb5e4f516db1d6e09f141d1e"
+    },
+    {
+      "path": "app/src/main/java/com/routivel/driver/DriverSettlement.kt",
+      "lines": "13-18",
+      "sha256": "1d8d055bc2b9489dc43c073fcaab0ce6a63a3ad523d0c84b892574877ed05385"
+    }
+  ],
+  "columns": [
+    {
+      "order": 1,
+      "name": "접수시간",
+      "source_field": "dispatchTime",
+      "render": "normalized_date_time_excel_text"
+    },
+    {
+      "order": 2,
+      "name": "고객명",
+      "source_field": "requester",
+      "render": "source_to_string_or_empty"
+    },
+    {
+      "order": 3,
+      "name": "전화번호",
+      "source_field": "reqPhone",
+      "render": "source_to_string_or_empty"
+    },
+    {
+      "order": 4,
+      "name": "출발지",
+      "source_field": "dept",
+      "render": "source_to_string_or_empty"
+    },
+    {
+      "order": 5,
+      "name": "도착지",
+      "source_field": "dest",
+      "render": "source_to_string_or_empty"
+    },
+    {
+      "order": 6,
+      "name": "출발동",
+      "source_field": "deptDong",
+      "render": "source_to_string_or_empty"
+    },
+    {
+      "order": 7,
+      "name": "도착동",
+      "source_field": "destDong",
+      "render": "source_to_string_or_empty"
+    },
+    {
+      "order": 8,
+      "name": "차량",
+      "source_field": "car",
+      "render": "source_to_string_or_empty"
+    },
+    {
+      "order": 9,
+      "name": "지급",
+      "source_field": "payment",
+      "render": "trim_and_monthly_to_credit"
+    },
+    {
+      "order": 10,
+      "name": "기본",
+      "source_field": "baseFare",
+      "render": "amount_grouped_integer"
+    },
+    {
+      "order": 11,
+      "name": "추가",
+      "source_field": "extraFare",
+      "render": "amount_grouped_integer"
+    },
+    {
+      "order": 12,
+      "name": "탁송",
+      "source_field": "takSong",
+      "render": "amount_grouped_integer"
+    },
+    {
+      "order": 13,
+      "name": "왕복",
+      "source_field": "roundTrip",
+      "render": "amount_if_parseable_else_original_text"
+    },
+    {
+      "order": 14,
+      "name": "형태",
+      "source_field": "type",
+      "render": "source_to_string_or_empty"
+    },
+    {
+      "order": 15,
+      "name": "요금",
+      "source_field": "totalFare",
+      "render": "amount_grouped_integer"
+    },
+    {
+      "order": 16,
+      "name": "적요",
+      "source_field": "note",
+      "render": "source_to_string_or_empty"
+    },
+    {
+      "order": 17,
+      "name": "라이더",
+      "source_field": "rider",
+      "render": "source_to_string_or_empty"
+    }
+  ],
+  "input_contract": {
+    "shape": {
+      "case_id": "파일명 stem",
+      "spec_version": "1.0.0",
+      "description": "합성 사례 설명",
+      "request": {
+        "targetMonthKey": "YYYY-MM 또는 ALL",
+        "targetCustomer": "requester 완전 일치 문자열 또는 전체 고객사",
+        "selectedColumns": "선택 사항: [[열 이름, 원본 필드], ...]; 생략 시 17열"
+      },
+      "documents": "[{id: 합성 문서 ID, data: 원본 필드 객체}, ...]"
+    },
+    "timestamp": "사례의 ISO-8601 UTC 문자열을 Instant.parse → Date로 변환한다. 운영에서는 Firestore Timestamp.toDate()에 해당한다. 문자열은 시험 전달 형식이며 운영 문자열 timestamp를 허용한다는 뜻이 아니다.",
+    "field_types": "사례 필드는 JSON 스칼라만 사용한다. 정수는 JVM Long, 소수/지수는 Double, 문자열·Boolean·null은 그대로 전달한다. 운영 Firestore 값의 toString() 결과가 CSV 문자 필드 원본이다.",
+    "query_scope": "documents는 이미 riderUid 조회 범위에 속한 서버 확정 문서이다. 실제 호출은 includeAllRiders=false면 riderUid == requestUid, true면 전체 dispatches; 권한 확인과 pending writes 거부는 앱 호출부 책임이다.",
+    "not_in_scope": [
+      "Firebase 조회·권한 구현",
+      "UI 알림·파일명·공유",
+      "JS 앱 구현"
+    ],
+    "privacy": "이름·주소·문서ID는 합성 라벨만, 전화번호는 010-0000-0000만 사용한다."
+  },
+  "inclusion": {
+    "source": "DriverSettlement.kt:13-18; DispatchExportController.kt:294-309; SettlementRules.kt:15-16",
+    "ordered_steps": [
+      "status가 문자열이면 Kotlin trim() 후 completed와 대소문자 구분 일치해야 한다. 누락/비문자열은 빈 문자열로 제외한다.",
+      "isDeleted가 Boolean true인 문서는 제외한다. 누락/null/false 및 문자열 true는 Boolean true가 아니다.",
+      "dispatchTime을 정규화한다. null/비문자열/유효하지 않은 날짜는 제외하며 timestamp 날짜 자체로 대체하지 않는다.",
+      "targetMonthKey == ALL이면 월 필터 생략. 아니면 정규화 날짜 앞 7자와 완전 일치해야 한다.",
+      "targetCustomer == 전체 고객사이면 거래처 필터 생략. 아니면 원본 requester 문자열과 trim 없이 완전 일치해야 한다.",
+      "남은 모든 행을 금액 검증한다. 한 행이라도 실패하면 전체 CSV 출력을 거부한다."
+    ],
+    "billed": "공유 includes의 billed 기본값은 true이며 기사 호출부는 billed 인자를 전달하지 않는다. data.billed, customerBillingCompanyId/Name 등으로 필터하지 않는다.",
+    "payment": "결제 방식 포함 조건은 없다. 현금·신용·월정산 등 모두 같은 완료/날짜/requester 조건을 사용한다.",
+    "empty_result": "E_NO_ROWS; 머리글이나 합계만 있는 CSV도 내지 않는다."
+  },
+  "date_normalization": {
+    "timezone": "Asia/Seoul",
+    "source": "SettlementRules.kt:45-63",
+    "trim": "Kotlin String.trim()으로 앞뒤 공백을 제거한다. JS에서도 Kotlin의 공백 판정과 동일하게 처리한다.",
+    "missing_year_pattern": "\\d{1,2}[.-]\\d{1,2}(?:\\s+\\d{1,2}:\\d{2})?",
+    "full_pattern": "(\\d{2}|\\d{4})[.-](\\d{1,2})[.-](\\d{1,2})(?:\\s+(\\d{1,2}):(\\d{2}))?",
+    "pattern_semantics": "Java/Kotlin Regex matchEntire. 여기의 \\d는 ASCII 숫자, \\s는 Java 기본 정규식 공백이다. 각 구분자는 점 또는 하이픈이며 혼합도 허용한다.",
+    "missing_year": "연도 없는 월·일 패턴이면 timestamp를 서울 시간으로 변환한 연도 4자리와 점을 앞에 붙인다. timestamp 없으면 제외. 선택 월·현재 시각·가장 가까운 연도로 보정하지 않는다. 예: 서울 2027-01-01에 기록된 12.31은 2027-12-31이다.",
+    "two_digit_year": "00..99는 2000..2099로 변환한다.",
+    "valid_range": "연도 2000..2099, 실제 달력의 월/일(윤년 검증), 시 0..23, 분 0..59. lenient=false. 시간 생략 가능.",
+    "date_output": "yyyy-MM-dd",
+    "time_pattern": "(?:^|\\s)(\\d{1,2}):(\\d{2})$",
+    "time_output": "원본 dispatchTime의 trim 후 끝에서 time 패턴을 찾는다. 범위 유효 시 HH:mm, 미일치면 빈 문자열. CSV 입력 row.time도 다시 같은 함수로 정규화한다.",
+    "csv_validation": "SettlementCsv.create는 각 row.date의 dateKey(row.date,null) == row.date를 요구한다. 데이터행 날짜 셀은 yyyy-MM-dd 또는 yyyy-MM-dd HH:mm이다."
+  },
+  "sorting": {
+    "keys": [
+      "normalized date ascending",
+      "normalized time ascending",
+      "document id ascending"
+    ],
+    "comparison": "Kotlin String compareTo의 UTF-16 코드 단위 사전순; locale 정렬 금지. 빈 시각은 같은 날짜의 유효 시각보다 앞선다. 모든 키가 같으면 입력 순서를 보존한다."
+  },
+  "amounts": {
+    "source": "SettlementRules.kt:22-37,67-73; DispatchExportController.kt:303-304",
+    "max_input_integer": "9007199254740991",
+    "min_input_integer": 0,
+    "sum_max_integer": "9223372036854775807",
+    "accepted": "Byte/Short/Int/Long 또는 유한·0 이상·정수인 Number, 또는 trim 후 모든 쉼표를 제거했을 때 [0-9]+인 문자열. 0..MAX_SAFE_AMOUNT 범위를 넘어가면 무효. 문자열은 Long 파싱도 성공해야 한다.",
+    "comma_behavior": "쉼표 위치는 검사하지 않는다. 1,2,3도 123이다. 내부 공백, 원화 기호, 부호 있는 문자열, 문자열 소수는 무효다.",
+    "invalid": "null/누락, 음수, 소수, Boolean, 비숫자, NaN/Infinity, 범위 초과는 알 수 없는 금액(null)이다. 0으로 바꾸지 않는다.",
+    "only_zero_default": "takSong 필드가 누락되거나 null인 경우에만 0. 빈 문자열이나 잘못된 문자열이면 무효. baseFare/extraFare/totalFare는 누락 시 거부한다.",
+    "validation_order": [
+      "totalFare/baseFare/extraFare/takSong 중 null 또는 음수이면 E_AMOUNT_INVALID",
+      "baseFare + extraFare + takSong != totalFare이면 E_FARE_MISMATCH"
+    ],
+    "roundTrip": "왕복은 요금 구성요소가 아니다. 문자열화한 값을 amount()로 파싱 가능하면 천 단위 표시, 실패하면 원문을 이스케이프해 출력한다.",
+    "format": "Locale.KOREAN의 %,d: 쉼표 천 단위, 소수점·통화기호 없음, 0은 0. null의 공유 format 결과는 금액 확인 필요이나 CSV는 검증에서 먼저 거부한다.",
+    "sum": "null·음수·Long 오버플로면 합계 null. 빈 목록 합은 0이나 CSV의 빈 행 목록은 거부한다. JS는 합산 시 BigInt 등으로 Long 범위까지 정밀도를 보존한다."
+  },
+  "summary": {
+    "scope": "필터를 통과한 모든 행 합계. ALL 기간도 그룹별로 나누지 않고 하나로 합산한다.",
+    "rows": [
+      {
+        "label": "합계",
+        "totalFare": "sum(totalFare)",
+        "baseFare": "sum(baseFare)",
+        "extraFare": "sum(extraFare)",
+        "takSong": "sum(takSong)"
+      },
+      {
+        "label": "VAT",
+        "totalFare": "floor(sum(totalFare) / 10)"
+      },
+      {
+        "label": "총요금",
+        "totalFare": "sum(totalFare) + floor(sum(totalFare) / 10)"
+      }
+    ],
+    "vat": "행마다 버림 후 더하지 않는다. 전체 요금 합계를 10L로 정수 나눗셈한다. 음수는 이미 거부되므로 floor와 같다.",
+    "label_priority": [
+      "roundTrip",
+      "type",
+      "note",
+      "requester",
+      "dispatchTime"
+    ],
+    "label_placement": "선택 열 안에 있는 첫 우선순위 필드에 라벨을 쓴다. 기본 17열은 왕복 칸. 해당 필드가 없으면 라벨 없이 3행을 그대로 쓴다.",
+    "other_cells": "합계행은 기본·추가·탁송·요금만 숫자. VAT/총요금은 요금만 숫자. 라벨 외 나머지는 빈 문자열. 선택하지 않은 금액/라벨 칸을 추가하지 않는다.",
+    "overflow": "요금 합계 또는 합계+VAT가 Long 범위를 넘으면 전체 출력 거부."
+  },
+  "payment": {
+    "source": "SettlementRules.kt:13",
+    "rule": "Kotlin trim() 후 월정산과 완전 일치할 때만 신용으로 치환한다. 신용은 신용, 현금/기타는 trim한 원문, 누락/null은 빈 문자열."
+  },
+  "column_selection": {
+    "default": "columns의 17개 순서",
+    "valid": "원본 (이름, 필드) 쌍으로 구성된 비어 있지 않은 중복 없는 목록. 선택 순서를 그대로 출력한다. 알 수 없는 쌍/변경한 이름/중복은 E_COLUMNS_INVALID, 빈 목록은 E_COLUMNS_EMPTY.",
+    "validation": "금액이나 날짜 열을 숨겨도 모든 행의 날짜·금액 및 합계 검증은 수행한다."
+  },
+  "encoding": {
+    "charset": "UTF-8",
+    "bom": "U+FEFF 한 번 (EF BB BF), 첫 머리글 앞",
+    "delimiter": ",",
+    "record_separator": "LF (U+000A)",
+    "trailing_newline": true,
+    "quoting": "머리글·빈 칸·데이터·합계의 모든 셀을 큰따옴표로 감싼다. 내부 큰따옴표는 두 번 쓴다. 쉼표와 원본 줄바꿈은 따옴표 안에 보존한다.",
+    "embedded_newlines": "레코드 종결은 LF다. 셀 원본에 LF/CR이 있으면 Kotlin은 그대로 보존한다. 전역 CR 제거/CRLF 변환을 하지 않는다.",
+    "formula_guard": "일반 셀은 Kotlin trimStart() 후 첫 문자가 =,+,-,@ 중 하나이거나, 원문 첫 문자가 TAB 또는 CR이면 원문 전체 앞에 작은따옴표 U+0027을 하나 붙인다. 공백을 제거하지 않은 뒤 큰따옴표 이스케이프를 적용한다.",
+    "validated_excel_date": "오직 데이터행 dispatchTime 셀만 정규화 날짜/시각으로 =\"yyyy-MM-dd HH:mm\" 또는 =\"yyyy-MM-dd\" 문자열 수식을 새로 만든다. CSV 바이트 셀은 \"=\"\"2026-10-07 09:05\"\"\" 형태. 20\\d{2}-\\d{2}-\\d{2}(?: \\d{2}:\\d{2})? 전체 일치 검증을 거치며 일반 수식 방어의 작은따옴표를 붙이지 않는다.",
+    "untrusted_date": "원본 dispatchTime 수식은 직접 출력하지 않는다. 원본 날짜가 유효하지 않으면 포함 단계에서 제외한다. 다른 필드의 날짜처럼 생긴 수식도 일반 수식 방어 대상이다.",
+    "summary_date_column": "요약 라벨이 dispatchTime에 배치되어도 날짜 수식을 사용하지 않고 일반 셀로 출력한다."
+  },
+  "errors": {
+    "contract": "Kotlin은 오류 코드 없이 IllegalArgumentException을 던진다. 다음 코드는 tools/generate.py가 실제 예외를 변환한 공통 시험 계약이다. CSV 대신 {\"error\":{\"code\":\"...\"}} JSON을 기대한다. 예외 메시지의 원본 필드 내용은 저장하지 않는다.",
+    "codes": {
+      "E_NO_ROWS": "포함된 배차 없음",
+      "E_COLUMNS_EMPTY": "선택 열 없음",
+      "E_COLUMNS_INVALID": "허용되지 않은 열 쌍 또는 중복",
+      "E_DATE_INVALID": "CSV에 전달된 정규화 날짜가 유효하지 않음",
+      "E_AMOUNT_INVALID": "필수 금액 누락·잘못된 값",
+      "E_FARE_MISMATCH": "기본+추가+탁송과 요금 불일치",
+      "E_TOTAL_OVERFLOW": "요금 합계 Long 오버플로",
+      "E_GRAND_TOTAL_OVERFLOW": "합계+VAT Long 오버플로"
+    },
+    "precedence": "필터 → 빈 행 → 빈 열 → 열 유효성 → 입력 순서의 각 행 날짜·금액 → 요금/구성요소 합계 → 합계+VAT. 잘못된 원본 날짜는 필터에서 제외되므로 원본 문서 사례에서 E_DATE_INVALID가 나오지는 않는다."
+  },
+  "conformance": {
+    "expected_csv": "cases/<case_id>.expected.csv: BOM과 마지막 LF를 포함해 바이트 일치",
+    "expected_error": "cases/<case_id>.expected.error.json: error.code 일치, CSV 없음",
+    "generation": "tools/generate.py가 JSON을 타입 보존 Kotlin 입력으로 바꾼 후 해시 고정된 SettlementRules.kt + SettlementCsv.kt 원본을 컴파일·실행한다. 날짜/금액/CSV를 Python으로 계산하지 않는다.",
+    "adapter": "기사 호출부의 포함·월·requester 필터와 필드 매핑만 도구에 재현한다. 네트워크/Android 의존 없이 공유 규칙 함수를 호출한다.",
+    "release_gate": "Kotlin과 JS 양쪽 구현 모두 전체 사례를 통과해야 한다. 이 기술자산 작업은 JS 구현/실행을 포함하지 않는다.",
+    "regeneration": "규칙 변경 시 version 상승, source sha256 갱신, 입력 spec_version 갱신, --write 후 --check. 기대값 수작업 편집 금지."
+  }
+}
