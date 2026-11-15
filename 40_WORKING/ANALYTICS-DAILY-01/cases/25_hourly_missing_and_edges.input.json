@@ -1,0 +1,82 @@
+{
+  "case_id": "25_hourly_missing_and_edges",
+  "spec_version": "1.0.0",
+  "category": "customer_partner_hourly",
+  "description": "시간 불명은 일매출에 남고 시간대 제외·00/23시·금액null·취소 제외",
+  "request": {
+    "start": "2026-11-01",
+    "end": "2026-11-30",
+    "month": "2026-11",
+    "dayKeys": [
+      "2026-11-10"
+    ],
+    "today": "2026-11-15",
+    "nowMinute": 720
+  },
+  "documents": [
+    {
+      "id": "synthetic-001",
+      "data": {
+        "dispatchTime": "2026-11-10",
+        "totalFare": 100,
+        "status": "completed",
+        "requester": "합성거래처A"
+      }
+    },
+    {
+      "id": "synthetic-002",
+      "data": {
+        "dispatchTime": "2026-11-10 00:00",
+        "totalFare": 200,
+        "status": "completed",
+        "requester": "합성거래처A"
+      }
+    },
+    {
+      "id": "synthetic-003",
+      "data": {
+        "dispatchTime": "2026-11-10 0:59",
+        "totalFare": 300,
+        "status": "completed",
+        "requester": "합성거래처A"
+      }
+    },
+    {
+      "id": "synthetic-004",
+      "data": {
+        "dispatchTime": "2026-11-10 23:59",
+        "totalFare": null,
+        "status": "completed",
+        "requester": "합성거래처A"
+      }
+    },
+    {
+      "id": "synthetic-005",
+      "data": {
+        "dispatchTime": "2026-11-10 23:01",
+        "totalFare": 400,
+        "status": "completed",
+        "requester": "합성거래처A"
+      }
+    },
+    {
+      "id": "synthetic-006",
+      "data": {
+        "dispatchTime": "2026-11-10 09:00",
+        "totalFare": 999,
+        "status": "cancelled",
+        "requester": "합성거래처A"
+      }
+    },
+    {
+      "id": "synthetic-007",
+      "data": {
+        "dispatchTime": "09:00",
+        "totalFare": 500,
+        "status": "completed",
+        "requester": "합성거래처A"
+      }
+    }
+  ],
+  "dailySummaries": []
+}

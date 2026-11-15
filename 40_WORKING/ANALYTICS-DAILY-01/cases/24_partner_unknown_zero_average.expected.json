@@ -1,0 +1,520 @@
+{
+  "case_id": "24_partner_unknown_zero_average",
+  "spec_version": "1.0.0",
+  "convertedDispatches": [
+    {
+      "id": "synthetic-001",
+      "dispatchTime": "2026-11-10 09:00",
+      "recordedAtMillis": null,
+      "requester": "합성영우A",
+      "status": "completed",
+      "isDeleted": false,
+      "totalFare": null,
+      "takSongCost": 0,
+      "outsourcingCost": 0,
+      "included": true,
+      "dateKey": "2026-11-10",
+      "hour": 9
+    },
+    {
+      "id": "synthetic-002",
+      "dispatchTime": "2026-11-11 09:00",
+      "recordedAtMillis": null,
+      "requester": "합성일반",
+      "status": "completed",
+      "isDeleted": false,
+      "totalFare": 100,
+      "takSongCost": 0,
+      "outsourcingCost": 0,
+      "included": true,
+      "dateKey": "2026-11-11",
+      "hour": 9
+    },
+    {
+      "id": "synthetic-003",
+      "dispatchTime": "2026-11-12 09:00",
+      "recordedAtMillis": null,
+      "requester": "합성세원B",
+      "status": "completed",
+      "isDeleted": false,
+      "totalFare": 300,
+      "takSongCost": 0,
+      "outsourcingCost": 0,
+      "included": true,
+      "dateKey": "2026-11-12",
+      "hour": 9
+    },
+    {
+      "id": "synthetic-004",
+      "dispatchTime": "2026-11-12 10:00",
+      "recordedAtMillis": null,
+      "requester": "합성일반",
+      "status": "completed",
+      "isDeleted": false,
+      "totalFare": null,
+      "takSongCost": 0,
+      "outsourcingCost": 0,
+      "included": true,
+      "dateKey": "2026-11-12",
+      "hour": 10
+    },
+    {
+      "id": "synthetic-005",
+      "dispatchTime": "2026-11-13 09:00",
+      "recordedAtMillis": null,
+      "requester": "합성영우C",
+      "status": "completed",
+      "isDeleted": false,
+      "totalFare": 0,
+      "takSongCost": 0,
+      "outsourcingCost": 0,
+      "included": true,
+      "dateKey": "2026-11-13",
+      "hour": 9
+    }
+  ],
+  "convertedSummaries": [],
+  "quality": {
+    "documents": 5,
+    "included": 5,
+    "deleted": 0,
+    "notCompleted": 0,
+    "unknownDate": 0,
+    "unknownFare": 2,
+    "firstDate": "2026-11-10",
+    "lastDate": "2026-11-13"
+  },
+  "daily": [
+    {
+      "date": "2026-11-10",
+      "count": 1,
+      "billing": null,
+      "takSong": 0,
+      "outsourcing": 0,
+      "expense": 0,
+      "net": null
+    },
+    {
+      "date": "2026-11-11",
+      "count": 1,
+      "billing": 100,
+      "takSong": 0,
+      "outsourcing": 0,
+      "expense": 0,
+      "net": 100
+    },
+    {
+      "date": "2026-11-12",
+      "count": 2,
+      "billing": null,
+      "takSong": 0,
+      "outsourcing": 0,
+      "expense": 0,
+      "net": null
+    },
+    {
+      "date": "2026-11-13",
+      "count": 1,
+      "billing": 0,
+      "takSong": 0,
+      "outsourcing": 0,
+      "expense": 0,
+      "net": 0
+    }
+  ],
+  "monthTotal": {
+    "date": "2026-11",
+    "count": 5,
+    "billing": null,
+    "takSong": 0,
+    "outsourcing": 0,
+    "expense": 0,
+    "net": null
+  },
+  "monthStats": {
+    "count": 5,
+    "billing": null,
+    "expense": 0,
+    "net": null,
+    "workDays": 4,
+    "timedDays": 0,
+    "hours": 0.0,
+    "billingOnTimedDays": 0,
+    "perHour": null,
+    "avgFare": null,
+    "countPerDay": 1.25,
+    "hoursPerDay": null,
+    "perWorkDay": null,
+    "kmDays": 0,
+    "km": 0.0,
+    "billingOnKmDays": 0,
+    "perKm": null,
+    "kmPerDay": null
+  },
+  "periodStats": {
+    "count": 5,
+    "billing": null,
+    "expense": 0,
+    "net": null,
+    "workDays": 4,
+    "timedDays": 0,
+    "hours": 0.0,
+    "billingOnTimedDays": 0,
+    "perHour": null,
+    "avgFare": null,
+    "countPerDay": 1.25,
+    "hoursPerDay": null,
+    "perWorkDay": null,
+    "kmDays": 0,
+    "km": 0.0,
+    "billingOnKmDays": 0,
+    "perKm": null,
+    "kmPerDay": null
+  },
+  "workDays": [
+    {
+      "date": "2026-11-13",
+      "start": "",
+      "end": "",
+      "hours": null,
+      "billing": 0,
+      "perHour": null,
+      "perKm": null
+    },
+    {
+      "date": "2026-11-12",
+      "start": "",
+      "end": "",
+      "hours": null,
+      "billing": null,
+      "perHour": null,
+      "perKm": null
+    },
+    {
+      "date": "2026-11-11",
+      "start": "",
+      "end": "",
+      "hours": null,
+      "billing": 100,
+      "perHour": null,
+      "perKm": null
+    },
+    {
+      "date": "2026-11-10",
+      "start": "",
+      "end": "",
+      "hours": null,
+      "billing": null,
+      "perHour": null,
+      "perKm": null
+    }
+  ],
+  "floorReport": {
+    "floor": 180000,
+    "knownDays": 2,
+    "unknownBilling": 2,
+    "lowDates": [
+      "2026-11-13",
+      "2026-11-11"
+    ],
+    "lowPercent": 100.0,
+    "averageEnd": null,
+    "averagePartner": 100.0,
+    "days": [
+      {
+        "date": "2026-11-13",
+        "billing": 0,
+        "end": "",
+        "endMinute": null,
+        "partnerBilling": 0
+      },
+      {
+        "date": "2026-11-12",
+        "billing": null,
+        "end": "",
+        "endMinute": null,
+        "partnerBilling": 300
+      },
+      {
+        "date": "2026-11-11",
+        "billing": 100,
+        "end": "",
+        "endMinute": null,
+        "partnerBilling": 0
+      },
+      {
+        "date": "2026-11-10",
+        "billing": null,
+        "end": "",
+        "endMinute": null,
+        "partnerBilling": null
+      }
+    ]
+  },
+  "customers": [
+    {
+      "name": "합성세원B",
+      "count": 1,
+      "amount": 300
+    },
+    {
+      "name": "합성영우C",
+      "count": 1,
+      "amount": 0
+    },
+    {
+      "name": "합성일반",
+      "count": 2,
+      "amount": null
+    },
+    {
+      "name": "합성영우A",
+      "count": 1,
+      "amount": null
+    }
+  ],
+  "dayDetails": [
+    {
+      "total": {
+        "date": "2026-11-10",
+        "count": 1,
+        "billing": null,
+        "takSong": 0,
+        "outsourcing": 0,
+        "expense": 0,
+        "net": null
+      },
+      "recordIds": [
+        "synthetic-001"
+      ],
+      "start": "",
+      "end": "",
+      "workHours": null,
+      "liveHours": null,
+      "displayHours": null,
+      "displayPerHour": null,
+      "hourly": [
+        {
+          "hour": 9,
+          "count": 1,
+          "billing": null
+        }
+      ],
+      "peak": {
+        "hour": 9,
+        "count": 1,
+        "billing": null
+      },
+      "customers": [
+        {
+          "name": "합성영우A",
+          "count": 1,
+          "amount": null
+        }
+      ],
+      "sameWeekdayAverage": null
+    },
+    {
+      "total": {
+        "date": "2026-11-11",
+        "count": 1,
+        "billing": 100,
+        "takSong": 0,
+        "outsourcing": 0,
+        "expense": 0,
+        "net": 100
+      },
+      "recordIds": [
+        "synthetic-002"
+      ],
+      "start": "",
+      "end": "",
+      "workHours": null,
+      "liveHours": null,
+      "displayHours": null,
+      "displayPerHour": null,
+      "hourly": [
+        {
+          "hour": 9,
+          "count": 1,
+          "billing": 100
+        }
+      ],
+      "peak": {
+        "hour": 9,
+        "count": 1,
+        "billing": 100
+      },
+      "customers": [
+        {
+          "name": "합성일반",
+          "count": 1,
+          "amount": 100
+        }
+      ],
+      "sameWeekdayAverage": null
+    },
+    {
+      "total": {
+        "date": "2026-11-12",
+        "count": 2,
+        "billing": null,
+        "takSong": 0,
+        "outsourcing": 0,
+        "expense": 0,
+        "net": null
+      },
+      "recordIds": [
+        "synthetic-003",
+        "synthetic-004"
+      ],
+      "start": "",
+      "end": "",
+      "workHours": null,
+      "liveHours": null,
+      "displayHours": null,
+      "displayPerHour": null,
+      "hourly": [
+        {
+          "hour": 9,
+          "count": 1,
+          "billing": 300
+        },
+        {
+          "hour": 10,
+          "count": 1,
+          "billing": null
+        }
+      ],
+      "peak": {
+        "hour": 9,
+        "count": 1,
+        "billing": 300
+      },
+      "customers": [
+        {
+          "name": "합성세원B",
+          "count": 1,
+          "amount": 300
+        },
+        {
+          "name": "합성일반",
+          "count": 1,
+          "amount": null
+        }
+      ],
+      "sameWeekdayAverage": null
+    },
+    {
+      "total": {
+        "date": "2026-11-13",
+        "count": 1,
+        "billing": 0,
+        "takSong": 0,
+        "outsourcing": 0,
+        "expense": 0,
+        "net": 0
+      },
+      "recordIds": [
+        "synthetic-005"
+      ],
+      "start": "",
+      "end": "",
+      "workHours": null,
+      "liveHours": null,
+      "displayHours": null,
+      "displayPerHour": null,
+      "hourly": [
+        {
+          "hour": 9,
+          "count": 1,
+          "billing": 0
+        }
+      ],
+      "peak": {
+        "hour": 9,
+        "count": 1,
+        "billing": 0
+      },
+      "customers": [
+        {
+          "name": "합성영우C",
+          "count": 1,
+          "amount": 0
+        }
+      ],
+      "sameWeekdayAverage": null
+    }
+  ],
+  "calendar": {
+    "gridStart": "2026-11-01",
+    "gridEnd": "2026-12-05",
+    "weeks": [
+      {
+        "keys": [
+          "2026-11-01",
+          "2026-11-02",
+          "2026-11-03",
+          "2026-11-04",
+          "2026-11-05",
+          "2026-11-06",
+          "2026-11-07"
+        ],
+        "count": 0,
+        "billing": 0
+      },
+      {
+        "keys": [
+          "2026-11-08",
+          "2026-11-09",
+          "2026-11-10",
+          "2026-11-11",
+          "2026-11-12",
+          "2026-11-13",
+          "2026-11-14"
+        ],
+        "count": 5,
+        "billing": null
+      },
+      {
+        "keys": [
+          "2026-11-15",
+          "2026-11-16",
+          "2026-11-17",
+          "2026-11-18",
+          "2026-11-19",
+          "2026-11-20",
+          "2026-11-21"
+        ],
+        "count": 0,
+        "billing": 0
+      },
+      {
+        "keys": [
+          "2026-11-22",
+          "2026-11-23",
+          "2026-11-24",
+          "2026-11-25",
+          "2026-11-26",
+          "2026-11-27",
+          "2026-11-28"
+        ],
+        "count": 0,
+        "billing": 0
+      },
+      {
+        "keys": [
+          "2026-11-29",
+          "2026-11-30",
+          "2026-12-01",
+          "2026-12-02",
+          "2026-12-03",
+          "2026-12-04",
+          "2026-12-05"
+        ],
+        "count": 0,
+        "billing": 0
+      }
+    ]
+  }
+}

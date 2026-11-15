@@ -1,0 +1,67 @@
+{
+  "case_id": "24_partner_unknown_zero_average",
+  "spec_version": "1.0.0",
+  "category": "customer_partner_hourly",
+  "description": "매칭없음0·매칭금액null·확정 평균에0 포함; 전체 billing null과 파트너 null 독립",
+  "request": {
+    "start": "2026-11-01",
+    "end": "2026-11-30",
+    "month": "2026-11",
+    "dayKeys": [
+      "2026-11-10",
+      "2026-11-11",
+      "2026-11-12",
+      "2026-11-13"
+    ],
+    "today": "2026-11-15",
+    "nowMinute": 720
+  },
+  "documents": [
+    {
+      "id": "synthetic-001",
+      "data": {
+        "dispatchTime": "2026-11-10 09:00",
+        "totalFare": null,
+        "status": "completed",
+        "requester": "합성영우A"
+      }
+    },
+    {
+      "id": "synthetic-002",
+      "data": {
+        "dispatchTime": "2026-11-11 09:00",
+        "totalFare": 100,
+        "status": "completed",
+        "requester": "합성일반"
+      }
+    },
+    {
+      "id": "synthetic-003",
+      "data": {
+        "dispatchTime": "2026-11-12 09:00",
+        "totalFare": 300,
+        "status": "completed",
+        "requester": "합성세원B"
+      }
+    },
+    {
+      "id": "synthetic-004",
+      "data": {
+        "dispatchTime": "2026-11-12 10:00",
+        "totalFare": null,
+        "status": "completed",
+        "requester": "합성일반"
+      }
+    },
+    {
+      "id": "synthetic-005",
+      "data": {
+        "dispatchTime": "2026-11-13 09:00",
+        "totalFare": 0,
+        "status": "completed",
+        "requester": "합성영우C"
+      }
+    }
+  ],
+  "dailySummaries": []
+}

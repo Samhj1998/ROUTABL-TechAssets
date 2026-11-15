@@ -1,0 +1,47 @@
+{
+  "case_id": "32_weekday_no_known_history",
+  "spec_version": "1.0.0",
+  "category": "same_weekday",
+  "description": "당일만/과거null/기간밖 과거는 평균 분모 없고 null",
+  "request": {
+    "start": "2026-11-01",
+    "end": "2026-11-30",
+    "month": "2026-11",
+    "dayKeys": [
+      "2026-11-10",
+      "2026-11-11"
+    ],
+    "today": "2026-11-15",
+    "nowMinute": 720
+  },
+  "documents": [
+    {
+      "id": "synthetic-001",
+      "data": {
+        "dispatchTime": "2026-11-10 09:00",
+        "totalFare": 100,
+        "status": "completed",
+        "requester": "합성거래처A"
+      }
+    },
+    {
+      "id": "synthetic-002",
+      "data": {
+        "dispatchTime": "2026-11-03 09:00",
+        "totalFare": null,
+        "status": "completed",
+        "requester": "합성거래처A"
+      }
+    },
+    {
+      "id": "synthetic-003",
+      "data": {
+        "dispatchTime": "2026-09-08 09:00",
+        "totalFare": 1000,
+        "status": "completed",
+        "requester": "합성거래처A"
+      }
+    }
+  ],
+  "dailySummaries": []
+}

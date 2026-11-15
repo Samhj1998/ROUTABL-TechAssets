@@ -1,0 +1,102 @@
+{
+  "case_id": "07_unknown_date_timestamp_types",
+  "spec_version": "1.0.0",
+  "category": "inclusion_date_amount",
+  "description": "연도 없는 날짜 timestamp 누락/문자열/숫자 무효, Date/Timestamp 태그만 연도 보완",
+  "request": {
+    "start": "2026-11-01",
+    "end": "2026-11-30",
+    "month": "2026-11",
+    "dayKeys": [
+      "2026-11-10"
+    ],
+    "today": "2026-11-15",
+    "nowMinute": 720
+  },
+  "documents": [
+    {
+      "id": "synthetic-001",
+      "data": {
+        "dispatchTime": "11.10 09:00",
+        "totalFare": 100000,
+        "status": "completed",
+        "requester": "합성거래처A"
+      }
+    },
+    {
+      "id": "synthetic-002",
+      "data": {
+        "dispatchTime": "11.10 09:00",
+        "totalFare": 100000,
+        "status": "completed",
+        "requester": "합성거래처A",
+        "timestamp": "2026-11-10T00:00:00Z"
+      }
+    },
+    {
+      "id": "synthetic-003",
+      "data": {
+        "dispatchTime": "11.10 09:00",
+        "totalFare": 100000,
+        "status": "completed",
+        "requester": "합성거래처A",
+        "timestamp": 1794268800000
+      }
+    },
+    {
+      "id": "synthetic-004",
+      "data": {
+        "dispatchTime": "11.10",
+        "totalFare": 100000,
+        "status": "completed",
+        "requester": "합성거래처A",
+        "timestamp": {
+          "$date": "2026-11-10T00:00:00Z"
+        }
+      }
+    },
+    {
+      "id": "synthetic-005",
+      "data": {
+        "dispatchTime": "11-10 09:00",
+        "totalFare": 100000,
+        "status": "completed",
+        "requester": "합성거래처A",
+        "timestamp": {
+          "$timestamp": "2026-11-10T00:00:00Z"
+        }
+      }
+    },
+    {
+      "id": "synthetic-006",
+      "data": {
+        "dispatchTime": "",
+        "totalFare": null,
+        "status": "completed",
+        "requester": "합성거래처A",
+        "timestamp": {
+          "$date": "2026-11-10T00:00:00Z"
+        }
+      }
+    },
+    {
+      "id": "synthetic-007",
+      "data": {
+        "dispatchTime": null,
+        "totalFare": 100000,
+        "status": "completed",
+        "requester": "합성거래처A"
+      }
+    },
+    {
+      "id": "synthetic-008",
+      "data": {
+        "dispatchTime": 123,
+        "totalFare": 100000,
+        "status": "completed",
+        "requester": "합성거래처A"
+      }
+    }
+  ],
+  "dailySummaries": []
+}

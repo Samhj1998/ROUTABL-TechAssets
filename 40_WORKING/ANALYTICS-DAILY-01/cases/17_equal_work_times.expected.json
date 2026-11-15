@@ -1,0 +1,250 @@
+{
+  "case_id": "17_equal_work_times",
+  "spec_version": "1.0.0",
+  "convertedDispatches": [
+    {
+      "id": "synthetic-001",
+      "dispatchTime": "2026-11-10 09:00",
+      "recordedAtMillis": null,
+      "requester": "합성거래처A",
+      "status": "completed",
+      "isDeleted": false,
+      "totalFare": 100000,
+      "takSongCost": 0,
+      "outsourcingCost": 0,
+      "included": true,
+      "dateKey": "2026-11-10",
+      "hour": 9
+    }
+  ],
+  "convertedSummaries": [
+    {
+      "workDate": "2026-11-10",
+      "startTime": "09:00",
+      "endTime": "9:00",
+      "distanceKm": null,
+      "toll": null
+    }
+  ],
+  "quality": {
+    "documents": 1,
+    "included": 1,
+    "deleted": 0,
+    "notCompleted": 0,
+    "unknownDate": 0,
+    "unknownFare": 0,
+    "firstDate": "2026-11-10",
+    "lastDate": "2026-11-10"
+  },
+  "daily": [
+    {
+      "date": "2026-11-10",
+      "count": 1,
+      "billing": 100000,
+      "takSong": 0,
+      "outsourcing": 0,
+      "expense": 0,
+      "net": 100000
+    }
+  ],
+  "monthTotal": {
+    "date": "2026-11",
+    "count": 1,
+    "billing": 100000,
+    "takSong": 0,
+    "outsourcing": 0,
+    "expense": 0,
+    "net": 100000
+  },
+  "monthStats": {
+    "count": 1,
+    "billing": 100000,
+    "expense": 0,
+    "net": 100000,
+    "workDays": 1,
+    "timedDays": 0,
+    "hours": 0.0,
+    "billingOnTimedDays": 0,
+    "perHour": null,
+    "avgFare": 100000,
+    "countPerDay": 1.0,
+    "hoursPerDay": null,
+    "perWorkDay": 100000,
+    "kmDays": 0,
+    "km": 0.0,
+    "billingOnKmDays": 0,
+    "perKm": null,
+    "kmPerDay": null
+  },
+  "periodStats": {
+    "count": 1,
+    "billing": 100000,
+    "expense": 0,
+    "net": 100000,
+    "workDays": 1,
+    "timedDays": 0,
+    "hours": 0.0,
+    "billingOnTimedDays": 0,
+    "perHour": null,
+    "avgFare": 100000,
+    "countPerDay": 1.0,
+    "hoursPerDay": null,
+    "perWorkDay": 100000,
+    "kmDays": 0,
+    "km": 0.0,
+    "billingOnKmDays": 0,
+    "perKm": null,
+    "kmPerDay": null
+  },
+  "workDays": [
+    {
+      "date": "2026-11-10",
+      "start": "09:00",
+      "end": "9:00",
+      "hours": null,
+      "billing": 100000,
+      "perHour": null,
+      "perKm": null
+    }
+  ],
+  "floorReport": {
+    "floor": 180000,
+    "knownDays": 1,
+    "unknownBilling": 0,
+    "lowDates": [
+      "2026-11-10"
+    ],
+    "lowPercent": 100.0,
+    "averageEnd": null,
+    "averagePartner": 0.0,
+    "days": [
+      {
+        "date": "2026-11-10",
+        "billing": 100000,
+        "end": "9:00",
+        "endMinute": null,
+        "partnerBilling": 0
+      }
+    ]
+  },
+  "customers": [
+    {
+      "name": "합성거래처A",
+      "count": 1,
+      "amount": 100000
+    }
+  ],
+  "dayDetails": [
+    {
+      "total": {
+        "date": "2026-11-10",
+        "count": 1,
+        "billing": 100000,
+        "takSong": 0,
+        "outsourcing": 0,
+        "expense": 0,
+        "net": 100000
+      },
+      "recordIds": [
+        "synthetic-001"
+      ],
+      "start": "09:00",
+      "end": "9:00",
+      "workHours": null,
+      "liveHours": null,
+      "displayHours": null,
+      "displayPerHour": null,
+      "hourly": [
+        {
+          "hour": 9,
+          "count": 1,
+          "billing": 100000
+        }
+      ],
+      "peak": {
+        "hour": 9,
+        "count": 1,
+        "billing": 100000
+      },
+      "customers": [
+        {
+          "name": "합성거래처A",
+          "count": 1,
+          "amount": 100000
+        }
+      ],
+      "sameWeekdayAverage": null
+    }
+  ],
+  "calendar": {
+    "gridStart": "2026-11-01",
+    "gridEnd": "2026-12-05",
+    "weeks": [
+      {
+        "keys": [
+          "2026-11-01",
+          "2026-11-02",
+          "2026-11-03",
+          "2026-11-04",
+          "2026-11-05",
+          "2026-11-06",
+          "2026-11-07"
+        ],
+        "count": 0,
+        "billing": 0
+      },
+      {
+        "keys": [
+          "2026-11-08",
+          "2026-11-09",
+          "2026-11-10",
+          "2026-11-11",
+          "2026-11-12",
+          "2026-11-13",
+          "2026-11-14"
+        ],
+        "count": 1,
+        "billing": 100000
+      },
+      {
+        "keys": [
+          "2026-11-15",
+          "2026-11-16",
+          "2026-11-17",
+          "2026-11-18",
+          "2026-11-19",
+          "2026-11-20",
+          "2026-11-21"
+        ],
+        "count": 0,
+        "billing": 0
+      },
+      {
+        "keys": [
+          "2026-11-22",
+          "2026-11-23",
+          "2026-11-24",
+          "2026-11-25",
+          "2026-11-26",
+          "2026-11-27",
+          "2026-11-28"
+        ],
+        "count": 0,
+        "billing": 0
+      },
+      {
+        "keys": [
+          "2026-11-29",
+          "2026-11-30",
+          "2026-12-01",
+          "2026-12-02",
+          "2026-12-03",
+          "2026-12-04",
+          "2026-12-05"
+        ],
+        "count": 0,
+        "billing": 0
+      }
+    ]
+  }
+}

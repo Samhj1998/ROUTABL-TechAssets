@@ -1,0 +1,55 @@
+{
+  "case_id": "14_unknown_only_period",
+  "spec_version": "1.0.0",
+  "category": "floor_denominator",
+  "description": "근무일 모두 billing null이면 known 분모0, 출퇴근은 있어도 기간 시간효율 제외",
+  "request": {
+    "start": "2026-11-01",
+    "end": "2026-11-30",
+    "month": "2026-11",
+    "dayKeys": [
+      "2026-11-10",
+      "2026-11-11"
+    ],
+    "today": "2026-11-15",
+    "nowMinute": 720
+  },
+  "documents": [
+    {
+      "id": "synthetic-001",
+      "data": {
+        "dispatchTime": "2026-11-10 09:00",
+        "totalFare": null,
+        "status": "completed",
+        "requester": "합성거래처A"
+      }
+    },
+    {
+      "id": "synthetic-002",
+      "data": {
+        "dispatchTime": "2026-11-11 09:00",
+        "totalFare": null,
+        "status": "completed",
+        "requester": "합성거래처A"
+      }
+    }
+  ],
+  "dailySummaries": [
+    {
+      "id": "synthetic_2026-11-10",
+      "data": {
+        "workDate": "2026-11-10",
+        "startTime": "09:00",
+        "endTime": "18:00"
+      }
+    },
+    {
+      "id": "synthetic_2026-11-11",
+      "data": {
+        "workDate": "2026-11-11",
+        "startTime": "09:00",
+        "endTime": "18:00"
+      }
+    }
+  ]
+}

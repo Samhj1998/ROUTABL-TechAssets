@@ -1,0 +1,62 @@
+{
+  "case_id": "06_null_cost_propagation",
+  "spec_version": "1.0.0",
+  "category": "inclusion_date_amount",
+  "description": "billing null 전파·비용 Number.toLong(음수 포함)·문자열 비용0·일/월/기간 독립",
+  "request": {
+    "start": "2026-11-01",
+    "end": "2026-11-30",
+    "month": "2026-11",
+    "dayKeys": [
+      "2026-11-10",
+      "2026-11-11",
+      "2026-11-12"
+    ],
+    "today": "2026-11-15",
+    "nowMinute": 720
+  },
+  "documents": [
+    {
+      "id": "synthetic-001",
+      "data": {
+        "dispatchTime": "2026-11-10 09:00",
+        "totalFare": 100001,
+        "status": "completed",
+        "requester": "합성거래처A",
+        "takSongCost": 12.9,
+        "outsourcingCost": -3.9
+      }
+    },
+    {
+      "id": "synthetic-002",
+      "data": {
+        "dispatchTime": "2026-11-10 09:00",
+        "totalFare": null,
+        "status": "completed",
+        "requester": "합성거래처A",
+        "takSongCost": "5",
+        "outsourcingCost": true
+      }
+    },
+    {
+      "id": "synthetic-003",
+      "data": {
+        "dispatchTime": "2026-11-11 10:00",
+        "totalFare": 200001,
+        "status": "completed",
+        "requester": "합성거래처A",
+        "takSongCost": 250001
+      }
+    },
+    {
+      "id": "synthetic-004",
+      "data": {
+        "dispatchTime": "2026-12-01 10:00",
+        "totalFare": 50,
+        "status": "completed",
+        "requester": "합성거래처A"
+      }
+    }
+  ],
+  "dailySummaries": []
+}

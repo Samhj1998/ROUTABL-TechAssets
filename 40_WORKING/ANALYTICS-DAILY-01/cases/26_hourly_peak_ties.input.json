@@ -1,0 +1,112 @@
+{
+  "case_id": "26_hourly_peak_ties",
+  "spec_version": "1.0.0",
+  "category": "customer_partner_hourly",
+  "description": "건수 우선, 건수 동률 매출 우선, 완전/null·0 동률은 이른 시; invalid end는 live 차단",
+  "request": {
+    "start": "2026-11-01",
+    "end": "2026-11-30",
+    "month": "2026-11",
+    "dayKeys": [
+      "2026-11-10",
+      "2026-11-11",
+      "2026-11-12",
+      "2026-11-15"
+    ],
+    "today": "2026-11-15",
+    "nowMinute": 720
+  },
+  "documents": [
+    {
+      "id": "synthetic-001",
+      "data": {
+        "dispatchTime": "2026-11-10 09:00",
+        "totalFare": 1,
+        "status": "completed",
+        "requester": "합성거래처A"
+      }
+    },
+    {
+      "id": "synthetic-002",
+      "data": {
+        "dispatchTime": "2026-11-10 09:30",
+        "totalFare": 1,
+        "status": "completed",
+        "requester": "합성거래처A"
+      }
+    },
+    {
+      "id": "synthetic-003",
+      "data": {
+        "dispatchTime": "2026-11-10 10:00",
+        "totalFare": 1000,
+        "status": "completed",
+        "requester": "합성거래처A"
+      }
+    },
+    {
+      "id": "synthetic-004",
+      "data": {
+        "dispatchTime": "2026-11-11 11:00",
+        "totalFare": 20,
+        "status": "completed",
+        "requester": "합성거래처A"
+      }
+    },
+    {
+      "id": "synthetic-005",
+      "data": {
+        "dispatchTime": "2026-11-11 10:00",
+        "totalFare": 10,
+        "status": "completed",
+        "requester": "합성거래처A"
+      }
+    },
+    {
+      "id": "synthetic-006",
+      "data": {
+        "dispatchTime": "2026-11-12 12:00",
+        "totalFare": 20,
+        "status": "completed",
+        "requester": "합성거래처A"
+      }
+    },
+    {
+      "id": "synthetic-007",
+      "data": {
+        "dispatchTime": "2026-11-12 11:00",
+        "totalFare": 20,
+        "status": "completed",
+        "requester": "합성거래처A"
+      }
+    },
+    {
+      "id": "synthetic-008",
+      "data": {
+        "dispatchTime": "2026-11-15 08:00",
+        "totalFare": null,
+        "status": "completed",
+        "requester": "합성거래처A"
+      }
+    },
+    {
+      "id": "synthetic-009",
+      "data": {
+        "dispatchTime": "2026-11-15 09:00",
+        "totalFare": 0,
+        "status": "completed",
+        "requester": "합성거래처A"
+      }
+    }
+  ],
+  "dailySummaries": [
+    {
+      "id": "synthetic_2026-11-15",
+      "data": {
+        "workDate": "2026-11-15",
+        "startTime": "09:00",
+        "endTime": "invalid"
+      }
+    }
+  ]
+}

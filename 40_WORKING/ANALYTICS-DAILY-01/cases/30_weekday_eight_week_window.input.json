@@ -1,0 +1,127 @@
+{
+  "case_id": "30_weekday_eight_week_window",
+  "spec_version": "1.0.0",
+  "category": "same_weekday",
+  "description": "정확히 과거8주, -56일 포함 -63일/당일/미래/다른요일 제외",
+  "request": {
+    "start": "2026-11-01",
+    "end": "2026-11-30",
+    "month": "2026-11",
+    "dayKeys": [
+      "2026-11-10"
+    ],
+    "today": "2026-11-15",
+    "nowMinute": 720
+  },
+  "documents": [
+    {
+      "id": "synthetic-001",
+      "data": {
+        "dispatchTime": "2026-11-03 09:00",
+        "totalFare": 1000,
+        "status": "completed",
+        "requester": "합성거래처A"
+      }
+    },
+    {
+      "id": "synthetic-002",
+      "data": {
+        "dispatchTime": "2026-10-27 09:00",
+        "totalFare": 2000,
+        "status": "completed",
+        "requester": "합성거래처A"
+      }
+    },
+    {
+      "id": "synthetic-003",
+      "data": {
+        "dispatchTime": "2026-10-20 09:00",
+        "totalFare": 3000,
+        "status": "completed",
+        "requester": "합성거래처A"
+      }
+    },
+    {
+      "id": "synthetic-004",
+      "data": {
+        "dispatchTime": "2026-10-13 09:00",
+        "totalFare": 4000,
+        "status": "completed",
+        "requester": "합성거래처A"
+      }
+    },
+    {
+      "id": "synthetic-005",
+      "data": {
+        "dispatchTime": "2026-10-06 09:00",
+        "totalFare": 5000,
+        "status": "completed",
+        "requester": "합성거래처A"
+      }
+    },
+    {
+      "id": "synthetic-006",
+      "data": {
+        "dispatchTime": "2026-09-29 09:00",
+        "totalFare": 6000,
+        "status": "completed",
+        "requester": "합성거래처A"
+      }
+    },
+    {
+      "id": "synthetic-007",
+      "data": {
+        "dispatchTime": "2026-09-22 09:00",
+        "totalFare": 7000,
+        "status": "completed",
+        "requester": "합성거래처A"
+      }
+    },
+    {
+      "id": "synthetic-008",
+      "data": {
+        "dispatchTime": "2026-09-15 09:00",
+        "totalFare": 8000,
+        "status": "completed",
+        "requester": "합성거래처A"
+      }
+    },
+    {
+      "id": "synthetic-009",
+      "data": {
+        "dispatchTime": "2026-09-08 09:00",
+        "totalFare": 9000,
+        "status": "completed",
+        "requester": "합성거래처A"
+      }
+    },
+    {
+      "id": "synthetic-010",
+      "data": {
+        "dispatchTime": "2026-11-10 09:00",
+        "totalFare": 999999,
+        "status": "completed",
+        "requester": "합성거래처A"
+      }
+    },
+    {
+      "id": "synthetic-011",
+      "data": {
+        "dispatchTime": "2026-11-17 09:00",
+        "totalFare": 888888,
+        "status": "completed",
+        "requester": "합성거래처A"
+      }
+    },
+    {
+      "id": "synthetic-012",
+      "data": {
+        "dispatchTime": "2026-11-02 09:00",
+        "totalFare": 777777,
+        "status": "completed",
+        "requester": "합성거래처A"
+      }
+    }
+  ],
+  "dailySummaries": []
+}

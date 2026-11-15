@@ -1,0 +1,435 @@
+{
+  "case_id": "29_calendar_four_weeks_weekends",
+  "spec_version": "1.0.0",
+  "convertedDispatches": [
+    {
+      "id": "synthetic-001",
+      "dispatchTime": "2026-01-31 09:00",
+      "recordedAtMillis": null,
+      "requester": "합성거래처A",
+      "status": "completed",
+      "isDeleted": false,
+      "totalFare": 100,
+      "takSongCost": 0,
+      "outsourcingCost": 0,
+      "included": true,
+      "dateKey": "2026-01-31",
+      "hour": 9
+    },
+    {
+      "id": "synthetic-002",
+      "dispatchTime": "2026-02-01 09:00",
+      "recordedAtMillis": null,
+      "requester": "합성거래처A",
+      "status": "completed",
+      "isDeleted": false,
+      "totalFare": 200,
+      "takSongCost": 0,
+      "outsourcingCost": 0,
+      "included": true,
+      "dateKey": "2026-02-01",
+      "hour": 9
+    },
+    {
+      "id": "synthetic-003",
+      "dispatchTime": "2026-02-07 09:00",
+      "recordedAtMillis": null,
+      "requester": "합성거래처A",
+      "status": "completed",
+      "isDeleted": false,
+      "totalFare": 300,
+      "takSongCost": 0,
+      "outsourcingCost": 0,
+      "included": true,
+      "dateKey": "2026-02-07",
+      "hour": 9
+    },
+    {
+      "id": "synthetic-004",
+      "dispatchTime": "2026-02-28 09:00",
+      "recordedAtMillis": null,
+      "requester": "합성거래처A",
+      "status": "completed",
+      "isDeleted": false,
+      "totalFare": 400,
+      "takSongCost": 0,
+      "outsourcingCost": 0,
+      "included": true,
+      "dateKey": "2026-02-28",
+      "hour": 9
+    },
+    {
+      "id": "synthetic-005",
+      "dispatchTime": "2026-03-01 09:00",
+      "recordedAtMillis": null,
+      "requester": "합성거래처A",
+      "status": "completed",
+      "isDeleted": false,
+      "totalFare": 500,
+      "takSongCost": 0,
+      "outsourcingCost": 0,
+      "included": true,
+      "dateKey": "2026-03-01",
+      "hour": 9
+    }
+  ],
+  "convertedSummaries": [],
+  "quality": {
+    "documents": 5,
+    "included": 5,
+    "deleted": 0,
+    "notCompleted": 0,
+    "unknownDate": 0,
+    "unknownFare": 0,
+    "firstDate": "2026-01-31",
+    "lastDate": "2026-03-01"
+  },
+  "daily": [
+    {
+      "date": "2026-01-31",
+      "count": 1,
+      "billing": 100,
+      "takSong": 0,
+      "outsourcing": 0,
+      "expense": 0,
+      "net": 100
+    },
+    {
+      "date": "2026-02-01",
+      "count": 1,
+      "billing": 200,
+      "takSong": 0,
+      "outsourcing": 0,
+      "expense": 0,
+      "net": 200
+    },
+    {
+      "date": "2026-02-07",
+      "count": 1,
+      "billing": 300,
+      "takSong": 0,
+      "outsourcing": 0,
+      "expense": 0,
+      "net": 300
+    },
+    {
+      "date": "2026-02-28",
+      "count": 1,
+      "billing": 400,
+      "takSong": 0,
+      "outsourcing": 0,
+      "expense": 0,
+      "net": 400
+    },
+    {
+      "date": "2026-03-01",
+      "count": 1,
+      "billing": 500,
+      "takSong": 0,
+      "outsourcing": 0,
+      "expense": 0,
+      "net": 500
+    }
+  ],
+  "monthTotal": {
+    "date": "2026-02",
+    "count": 3,
+    "billing": 900,
+    "takSong": 0,
+    "outsourcing": 0,
+    "expense": 0,
+    "net": 900
+  },
+  "monthStats": {
+    "count": 3,
+    "billing": 900,
+    "expense": 0,
+    "net": 900,
+    "workDays": 3,
+    "timedDays": 0,
+    "hours": 0.0,
+    "billingOnTimedDays": 0,
+    "perHour": null,
+    "avgFare": 300,
+    "countPerDay": 1.0,
+    "hoursPerDay": null,
+    "perWorkDay": 300,
+    "kmDays": 0,
+    "km": 0.0,
+    "billingOnKmDays": 0,
+    "perKm": null,
+    "kmPerDay": null
+  },
+  "periodStats": {
+    "count": 3,
+    "billing": 900,
+    "expense": 0,
+    "net": 900,
+    "workDays": 3,
+    "timedDays": 0,
+    "hours": 0.0,
+    "billingOnTimedDays": 0,
+    "perHour": null,
+    "avgFare": 300,
+    "countPerDay": 1.0,
+    "hoursPerDay": null,
+    "perWorkDay": 300,
+    "kmDays": 0,
+    "km": 0.0,
+    "billingOnKmDays": 0,
+    "perKm": null,
+    "kmPerDay": null
+  },
+  "workDays": [
+    {
+      "date": "2026-02-28",
+      "start": "",
+      "end": "",
+      "hours": null,
+      "billing": 400,
+      "perHour": null,
+      "perKm": null
+    },
+    {
+      "date": "2026-02-07",
+      "start": "",
+      "end": "",
+      "hours": null,
+      "billing": 300,
+      "perHour": null,
+      "perKm": null
+    },
+    {
+      "date": "2026-02-01",
+      "start": "",
+      "end": "",
+      "hours": null,
+      "billing": 200,
+      "perHour": null,
+      "perKm": null
+    }
+  ],
+  "floorReport": {
+    "floor": 180000,
+    "knownDays": 3,
+    "unknownBilling": 0,
+    "lowDates": [
+      "2026-02-28",
+      "2026-02-07",
+      "2026-02-01"
+    ],
+    "lowPercent": 100.0,
+    "averageEnd": null,
+    "averagePartner": 0.0,
+    "days": [
+      {
+        "date": "2026-02-28",
+        "billing": 400,
+        "end": "",
+        "endMinute": null,
+        "partnerBilling": 0
+      },
+      {
+        "date": "2026-02-07",
+        "billing": 300,
+        "end": "",
+        "endMinute": null,
+        "partnerBilling": 0
+      },
+      {
+        "date": "2026-02-01",
+        "billing": 200,
+        "end": "",
+        "endMinute": null,
+        "partnerBilling": 0
+      }
+    ]
+  },
+  "customers": [
+    {
+      "name": "합성거래처A",
+      "count": 3,
+      "amount": 900
+    }
+  ],
+  "dayDetails": [
+    {
+      "total": {
+        "date": "2026-02-01",
+        "count": 1,
+        "billing": 200,
+        "takSong": 0,
+        "outsourcing": 0,
+        "expense": 0,
+        "net": 200
+      },
+      "recordIds": [
+        "synthetic-002"
+      ],
+      "start": "",
+      "end": "",
+      "workHours": null,
+      "liveHours": null,
+      "displayHours": null,
+      "displayPerHour": null,
+      "hourly": [
+        {
+          "hour": 9,
+          "count": 1,
+          "billing": 200
+        }
+      ],
+      "peak": {
+        "hour": 9,
+        "count": 1,
+        "billing": 200
+      },
+      "customers": [
+        {
+          "name": "합성거래처A",
+          "count": 1,
+          "amount": 200
+        }
+      ],
+      "sameWeekdayAverage": null
+    },
+    {
+      "total": {
+        "date": "2026-02-07",
+        "count": 1,
+        "billing": 300,
+        "takSong": 0,
+        "outsourcing": 0,
+        "expense": 0,
+        "net": 300
+      },
+      "recordIds": [
+        "synthetic-003"
+      ],
+      "start": "",
+      "end": "",
+      "workHours": null,
+      "liveHours": null,
+      "displayHours": null,
+      "displayPerHour": null,
+      "hourly": [
+        {
+          "hour": 9,
+          "count": 1,
+          "billing": 300
+        }
+      ],
+      "peak": {
+        "hour": 9,
+        "count": 1,
+        "billing": 300
+      },
+      "customers": [
+        {
+          "name": "합성거래처A",
+          "count": 1,
+          "amount": 300
+        }
+      ],
+      "sameWeekdayAverage": 100
+    },
+    {
+      "total": {
+        "date": "2026-02-28",
+        "count": 1,
+        "billing": 400,
+        "takSong": 0,
+        "outsourcing": 0,
+        "expense": 0,
+        "net": 400
+      },
+      "recordIds": [
+        "synthetic-004"
+      ],
+      "start": "",
+      "end": "",
+      "workHours": null,
+      "liveHours": null,
+      "displayHours": null,
+      "displayPerHour": null,
+      "hourly": [
+        {
+          "hour": 9,
+          "count": 1,
+          "billing": 400
+        }
+      ],
+      "peak": {
+        "hour": 9,
+        "count": 1,
+        "billing": 400
+      },
+      "customers": [
+        {
+          "name": "합성거래처A",
+          "count": 1,
+          "amount": 400
+        }
+      ],
+      "sameWeekdayAverage": 200
+    }
+  ],
+  "calendar": {
+    "gridStart": "2026-02-01",
+    "gridEnd": "2026-02-28",
+    "weeks": [
+      {
+        "keys": [
+          "2026-02-01",
+          "2026-02-02",
+          "2026-02-03",
+          "2026-02-04",
+          "2026-02-05",
+          "2026-02-06",
+          "2026-02-07"
+        ],
+        "count": 2,
+        "billing": 500
+      },
+      {
+        "keys": [
+          "2026-02-08",
+          "2026-02-09",
+          "2026-02-10",
+          "2026-02-11",
+          "2026-02-12",
+          "2026-02-13",
+          "2026-02-14"
+        ],
+        "count": 0,
+        "billing": 0
+      },
+      {
+        "keys": [
+          "2026-02-15",
+          "2026-02-16",
+          "2026-02-17",
+          "2026-02-18",
+          "2026-02-19",
+          "2026-02-20",
+          "2026-02-21"
+        ],
+        "count": 0,
+        "billing": 0
+      },
+      {
+        "keys": [
+          "2026-02-22",
+          "2026-02-23",
+          "2026-02-24",
+          "2026-02-25",
+          "2026-02-26",
+          "2026-02-27",
+          "2026-02-28"
+        ],
+        "count": 1,
+        "billing": 400
+      }
+    ]
+  }
+}

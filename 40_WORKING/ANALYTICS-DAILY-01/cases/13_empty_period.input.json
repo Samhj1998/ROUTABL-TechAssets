@@ -1,0 +1,27 @@
+{
+  "case_id": "13_empty_period",
+  "spec_version": "1.0.0",
+  "category": "floor_denominator",
+  "description": "완전 빈 입력·기간·월·무배차 날짜·분모0",
+  "request": {
+    "start": "2026-11-01",
+    "end": "2026-11-30",
+    "month": "2026-11",
+    "dayKeys": [
+      "2026-11-10"
+    ],
+    "today": "2026-11-15",
+    "nowMinute": 720
+  },
+  "documents": [],
+  "dailySummaries": [
+    {
+      "id": "synthetic_2026-11-10",
+      "data": {
+        "workDate": "2026-11-10",
+        "startTime": "09:00",
+        "endTime": "18:00"
+      }
+    }
+  ]
+}

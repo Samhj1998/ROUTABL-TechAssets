@@ -1,0 +1,74 @@
+{
+  "case_id": "28_calendar_year_boundary",
+  "spec_version": "1.0.0",
+  "category": "calendar_boundary",
+  "description": "이전 연도 12월과 다음달 포함 주합계·선택월 밖 값 월합계 제외",
+  "request": {
+    "start": "2027-01-01",
+    "end": "2027-01-31",
+    "month": "2027-01",
+    "dayKeys": [
+      "2027-01-01",
+      "2027-01-31"
+    ],
+    "today": "2027-01-15",
+    "nowMinute": 720
+  },
+  "documents": [
+    {
+      "id": "synthetic-001",
+      "data": {
+        "dispatchTime": "2026-12-27 09:00",
+        "totalFare": 100,
+        "status": "completed",
+        "requester": "합성거래처A"
+      }
+    },
+    {
+      "id": "synthetic-002",
+      "data": {
+        "dispatchTime": "2026-12-31 09:00",
+        "totalFare": 200,
+        "status": "completed",
+        "requester": "합성거래처A"
+      }
+    },
+    {
+      "id": "synthetic-003",
+      "data": {
+        "dispatchTime": "2027-01-01 09:00",
+        "totalFare": 300,
+        "status": "completed",
+        "requester": "합성거래처A"
+      }
+    },
+    {
+      "id": "synthetic-004",
+      "data": {
+        "dispatchTime": "2027-01-02 09:00",
+        "totalFare": 400,
+        "status": "completed",
+        "requester": "합성거래처A"
+      }
+    },
+    {
+      "id": "synthetic-005",
+      "data": {
+        "dispatchTime": "2027-01-31 09:00",
+        "totalFare": 500,
+        "status": "completed",
+        "requester": "합성거래처A"
+      }
+    },
+    {
+      "id": "synthetic-006",
+      "data": {
+        "dispatchTime": "2027-02-06 09:00",
+        "totalFare": 600,
+        "status": "completed",
+        "requester": "합성거래처A"
+      }
+    }
+  ],
+  "dailySummaries": []
+}

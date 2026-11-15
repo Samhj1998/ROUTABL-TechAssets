@@ -1,0 +1,87 @@
+{
+  "case_id": "08_summary_conversion",
+  "spec_version": "1.0.0",
+  "category": "inclusion_date_amount",
+  "description": "summary ID fallback·workDate 우선·형식 검사만·중복 마지막 우선·문자열/숫자 변환",
+  "request": {
+    "start": "2026-11-01",
+    "end": "2026-11-30",
+    "month": "2026-11",
+    "dayKeys": [
+      "2026-11-10",
+      "2026-11-11"
+    ],
+    "today": "2026-11-15",
+    "nowMinute": 720
+  },
+  "documents": [
+    {
+      "id": "synthetic-001",
+      "data": {
+        "dispatchTime": "2026-11-10 09:00",
+        "totalFare": 100000,
+        "status": "completed",
+        "requester": "합성거래처A"
+      }
+    },
+    {
+      "id": "synthetic-002",
+      "data": {
+        "dispatchTime": "2026-11-11 09:00",
+        "totalFare": 100000,
+        "status": "completed",
+        "requester": "합성거래처A"
+      }
+    }
+  ],
+  "dailySummaries": [
+    {
+      "id": "synthetic_2026-11-10",
+      "data": {
+        "startTime": "08:00",
+        "endTime": "17:00",
+        "distanceKm": 10,
+        "toll": 12.9
+      }
+    },
+    {
+      "id": "synthetic_2026-11-10",
+      "data": {
+        "workDate": "   ",
+        "startTime": 900,
+        "endTime": false,
+        "distanceKm": "50",
+        "toll": "12"
+      }
+    },
+    {
+      "id": "synthetic_2026-11-10",
+      "data": {
+        "workDate": "2026-11-11",
+        "startTime": "09:00",
+        "endTime": "18:00",
+        "distanceKm": 15.5
+      }
+    },
+    {
+      "id": "synthetic_invalid",
+      "data": {}
+    },
+    {
+      "id": "synthetic_ 2026-11-10 ",
+      "data": {
+        "workDate": " 2026-11-10 ",
+        "startTime": "09:00",
+        "endTime": "18:00"
+      }
+    },
+    {
+      "id": "synthetic_2026-99-99",
+      "data": {
+        "workDate": "2026-99-99",
+        "startTime": "09:00",
+        "endTime": "18:00"
+      }
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "case_id": "03_seoul_year_midnight",
+  "spec_version": "1.0.0",
+  "category": "inclusion_date_amount",
+  "description": "timestamp는 서울 연도 보완만; UTC 새해 직전 서울 자정, 배차 자정/저장·완료시각 독립",
+  "request": {
+    "start": "2025-12-31",
+    "end": "2026-01-02",
+    "month": "2026-01",
+    "dayKeys": [
+      "2025-12-31",
+      "2026-01-01",
+      "2026-01-02"
+    ],
+    "today": "2026-11-15",
+    "nowMinute": 720
+  },
+  "documents": [
+    {
+      "id": "synthetic-001",
+      "data": {
+        "dispatchTime": "01.01 00:00",
+        "totalFare": 100000,
+        "status": "completed",
+        "requester": "합성거래처A",
+        "timestamp": {
+          "$timestamp": "2025-12-31T15:00:00Z"
+        }
+      }
+    },
+    {
+      "id": "synthetic-002",
+      "data": {
+        "dispatchTime": "12-31 23:59",
+        "totalFare": 100000,
+        "status": "completed",
+        "requester": "합성거래처A",
+        "timestamp": {
+          "$date": "2025-12-31T14:59:59Z"
+        }
+      }
+    },
+    {
+      "id": "synthetic-003",
+      "data": {
+        "dispatchTime": "2026-01-01 00:00",
+        "totalFare": 100000,
+        "status": "completed",
+        "requester": "합성거래처A",
+        "timestamp": {
+          "$timestamp": "2026-11-14T15:00:00Z"
+        },
+        "completeTime": {
+          "$date": "2026-01-02T16:00:00Z"
+        }
+      }
+    },
+    {
+      "id": "synthetic-004",
+      "data": {
+        "dispatchTime": "2025-12-31 23:59",
+        "totalFare": 100000,
+        "status": "completed",
+        "requester": "합성거래처A",
+        "timestamp": {
+          "$date": "2026-01-01T03:00:00Z"
+        }
+      }
+    }
+  ],
+  "dailySummaries": []
+}

@@ -3538,6 +3538,34 @@
       ],
       "case_directory": "40_WORKING/SETTLEMENT-CSV-01/cases",
       "generator_path": "40_WORKING/SETTLEMENT-CSV-01/tools/generate.py"
+    },
+    {
+      "asset_id": "ANALYTICS-DAILY-01-SPEC",
+      "title": "하루 분석 공통 계산 규칙 및 Kotlin 실행 기반 합성 시험사례 v1.0.0",
+      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/40_WORKING/ANALYTICS-DAILY-01/spec.json",
+      "managed_local_copy_path": "/Users/yongho/ROUTABL-TechAssets/40_WORKING/ANALYTICS-DAILY-01/spec.json",
+      "version": "1.0.0",
+      "bytes": 18081,
+      "sha256": "de5f3820e73c33845328c229aa735d06c637c25f312a873307cb565c0933d7b8",
+      "observation": "VERSIONED_DAILY_ANALYTICS_SPEC_AND_32_SYNTHETIC_FIXTURES_FROM_READ_ONLY_KOTLIN_ORIGINALS",
+      "execution_validation": "KOTLIN_ORIGINALS_32_CASES_EXECUTED_BYTE_DIFF_0",
+      "write_or_execution_approval_class": "C",
+      "copy_in_managed_repository": "YES",
+      "original_file_unchanged": true,
+      "basis_kotlin_paths": [
+        "~/StudioProjects/ROUTABL-Analytics-Android/app/src/main/java/com/routivel/analytics/data/Models.kt",
+        "~/StudioProjects/ROUTABL-Analytics-Android/app/src/main/java/com/routivel/analytics/data/Dates.kt",
+        "~/StudioProjects/ROUTABL-Analytics-Android/app/src/main/java/com/routivel/analytics/data/DailyStats.kt",
+        "~/StudioProjects/ROUTABL-Analytics-Android/app/src/main/java/com/routivel/analytics/data/Insights.kt",
+        "~/StudioProjects/ROUTABL-Analytics-Android/app/src/main/java/com/routivel/analytics/data/Flow.kt",
+        "~/StudioProjects/ROUTABL-Analytics-Android/app/src/main/java/com/routivel/analytics/data/WaitPlace.kt",
+        "~/StudioProjects/ROUTABL-Analytics-Android/app/src/main/java/com/routivel/analytics/data/SleepAnalysis.kt",
+        "~/StudioProjects/ROUTABL-Analytics-Android/shared/kotlin/com/routivel/shared/SettlementRules.kt",
+        "~/StudioProjects/ROUTABL-Analytics-Android/app/src/main/java/com/routivel/analytics/data/FirestoreReader.kt",
+        "~/StudioProjects/ROUTABL-Analytics-Android/app/src/main/java/com/routivel/analytics/ui/CalendarFragment.kt"
+      ],
+      "case_directory": "40_WORKING/ANALYTICS-DAILY-01/cases",
+      "generator_path": "40_WORKING/ANALYTICS-DAILY-01/tools/generate.py"
     }
   ],
   "unresolved": [

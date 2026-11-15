@@ -1,0 +1,66 @@
+{
+  "case_id": "15_valid_work_efficiency",
+  "spec_version": "1.0.0",
+  "category": "work_time_efficiency",
+  "description": "H:mm/HH:mm trim·분 단위 소수시간·원 절삭·summary만 있는 날 제외·공백 퇴근 평균 차이",
+  "request": {
+    "start": "2026-11-01",
+    "end": "2026-11-30",
+    "month": "2026-11",
+    "dayKeys": [
+      "2026-11-10",
+      "2026-11-11",
+      "2026-11-12"
+    ],
+    "today": "2026-11-15",
+    "nowMinute": 720
+  },
+  "documents": [
+    {
+      "id": "synthetic-001",
+      "data": {
+        "dispatchTime": "2026-11-10 09:00",
+        "totalFare": 100001,
+        "status": "completed",
+        "requester": "합성거래처A"
+      }
+    },
+    {
+      "id": "synthetic-002",
+      "data": {
+        "dispatchTime": "2026-11-11 09:00",
+        "totalFare": 180001,
+        "status": "completed",
+        "requester": "합성거래처A"
+      }
+    }
+  ],
+  "dailySummaries": [
+    {
+      "id": "synthetic_2026-11-10",
+      "data": {
+        "workDate": "2026-11-10",
+        "startTime": " 8:10 ",
+        "endTime": " 17:05 ",
+        "distanceKm": 3
+      }
+    },
+    {
+      "id": "synthetic_2026-11-11",
+      "data": {
+        "workDate": "2026-11-11",
+        "startTime": "9:00",
+        "endTime": "10:30",
+        "distanceKm": 0
+      }
+    },
+    {
+      "id": "synthetic_2026-11-12",
+      "data": {
+        "workDate": "2026-11-12",
+        "startTime": "09:00",
+        "endTime": "18:00"
+      }
+    }
+  ]
+}

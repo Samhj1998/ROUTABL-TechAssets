@@ -1,0 +1,29 @@
+{
+  "case_id": "11_floor_above",
+  "spec_version": "1.0.0",
+  "category": "floor_denominator",
+  "description": "180001원은 초과; net이 18만원 이하여도 billing으로 판단",
+  "request": {
+    "start": "2026-11-01",
+    "end": "2026-11-30",
+    "month": "2026-11",
+    "dayKeys": [
+      "2026-11-10"
+    ],
+    "today": "2026-11-15",
+    "nowMinute": 720
+  },
+  "documents": [
+    {
+      "id": "synthetic-001",
+      "data": {
+        "dispatchTime": "2026-11-10 09:00",
+        "totalFare": 180001,
+        "status": "completed",
+        "requester": "합성거래처A",
+        "takSongCost": 50000
+      }
+    }
+  ],
+  "dailySummaries": []
+}

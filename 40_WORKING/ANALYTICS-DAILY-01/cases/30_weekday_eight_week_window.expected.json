@@ -1,0 +1,543 @@
+{
+  "case_id": "30_weekday_eight_week_window",
+  "spec_version": "1.0.0",
+  "convertedDispatches": [
+    {
+      "id": "synthetic-001",
+      "dispatchTime": "2026-11-03 09:00",
+      "recordedAtMillis": null,
+      "requester": "합성거래처A",
+      "status": "completed",
+      "isDeleted": false,
+      "totalFare": 1000,
+      "takSongCost": 0,
+      "outsourcingCost": 0,
+      "included": true,
+      "dateKey": "2026-11-03",
+      "hour": 9
+    },
+    {
+      "id": "synthetic-002",
+      "dispatchTime": "2026-10-27 09:00",
+      "recordedAtMillis": null,
+      "requester": "합성거래처A",
+      "status": "completed",
+      "isDeleted": false,
+      "totalFare": 2000,
+      "takSongCost": 0,
+      "outsourcingCost": 0,
+      "included": true,
+      "dateKey": "2026-10-27",
+      "hour": 9
+    },
+    {
+      "id": "synthetic-003",
+      "dispatchTime": "2026-10-20 09:00",
+      "recordedAtMillis": null,
+      "requester": "합성거래처A",
+      "status": "completed",
+      "isDeleted": false,
+      "totalFare": 3000,
+      "takSongCost": 0,
+      "outsourcingCost": 0,
+      "included": true,
+      "dateKey": "2026-10-20",
+      "hour": 9
+    },
+    {
+      "id": "synthetic-004",
+      "dispatchTime": "2026-10-13 09:00",
+      "recordedAtMillis": null,
+      "requester": "합성거래처A",
+      "status": "completed",
+      "isDeleted": false,
+      "totalFare": 4000,
+      "takSongCost": 0,
+      "outsourcingCost": 0,
+      "included": true,
+      "dateKey": "2026-10-13",
+      "hour": 9
+    },
+    {
+      "id": "synthetic-005",
+      "dispatchTime": "2026-10-06 09:00",
+      "recordedAtMillis": null,
+      "requester": "합성거래처A",
+      "status": "completed",
+      "isDeleted": false,
+      "totalFare": 5000,
+      "takSongCost": 0,
+      "outsourcingCost": 0,
+      "included": true,
+      "dateKey": "2026-10-06",
+      "hour": 9
+    },
+    {
+      "id": "synthetic-006",
+      "dispatchTime": "2026-09-29 09:00",
+      "recordedAtMillis": null,
+      "requester": "합성거래처A",
+      "status": "completed",
+      "isDeleted": false,
+      "totalFare": 6000,
+      "takSongCost": 0,
+      "outsourcingCost": 0,
+      "included": true,
+      "dateKey": "2026-09-29",
+      "hour": 9
+    },
+    {
+      "id": "synthetic-007",
+      "dispatchTime": "2026-09-22 09:00",
+      "recordedAtMillis": null,
+      "requester": "합성거래처A",
+      "status": "completed",
+      "isDeleted": false,
+      "totalFare": 7000,
+      "takSongCost": 0,
+      "outsourcingCost": 0,
+      "included": true,
+      "dateKey": "2026-09-22",
+      "hour": 9
+    },
+    {
+      "id": "synthetic-008",
+      "dispatchTime": "2026-09-15 09:00",
+      "recordedAtMillis": null,
+      "requester": "합성거래처A",
+      "status": "completed",
+      "isDeleted": false,
+      "totalFare": 8000,
+      "takSongCost": 0,
+      "outsourcingCost": 0,
+      "included": true,
+      "dateKey": "2026-09-15",
+      "hour": 9
+    },
+    {
+      "id": "synthetic-009",
+      "dispatchTime": "2026-09-08 09:00",
+      "recordedAtMillis": null,
+      "requester": "합성거래처A",
+      "status": "completed",
+      "isDeleted": false,
+      "totalFare": 9000,
+      "takSongCost": 0,
+      "outsourcingCost": 0,
+      "included": true,
+      "dateKey": "2026-09-08",
+      "hour": 9
+    },
+    {
+      "id": "synthetic-010",
+      "dispatchTime": "2026-11-10 09:00",
+      "recordedAtMillis": null,
+      "requester": "합성거래처A",
+      "status": "completed",
+      "isDeleted": false,
+      "totalFare": 999999,
+      "takSongCost": 0,
+      "outsourcingCost": 0,
+      "included": true,
+      "dateKey": "2026-11-10",
+      "hour": 9
+    },
+    {
+      "id": "synthetic-011",
+      "dispatchTime": "2026-11-17 09:00",
+      "recordedAtMillis": null,
+      "requester": "합성거래처A",
+      "status": "completed",
+      "isDeleted": false,
+      "totalFare": 888888,
+      "takSongCost": 0,
+      "outsourcingCost": 0,
+      "included": true,
+      "dateKey": "2026-11-17",
+      "hour": 9
+    },
+    {
+      "id": "synthetic-012",
+      "dispatchTime": "2026-11-02 09:00",
+      "recordedAtMillis": null,
+      "requester": "합성거래처A",
+      "status": "completed",
+      "isDeleted": false,
+      "totalFare": 777777,
+      "takSongCost": 0,
+      "outsourcingCost": 0,
+      "included": true,
+      "dateKey": "2026-11-02",
+      "hour": 9
+    }
+  ],
+  "convertedSummaries": [],
+  "quality": {
+    "documents": 12,
+    "included": 12,
+    "deleted": 0,
+    "notCompleted": 0,
+    "unknownDate": 0,
+    "unknownFare": 0,
+    "firstDate": "2026-09-08",
+    "lastDate": "2026-11-17"
+  },
+  "daily": [
+    {
+      "date": "2026-09-08",
+      "count": 1,
+      "billing": 9000,
+      "takSong": 0,
+      "outsourcing": 0,
+      "expense": 0,
+      "net": 9000
+    },
+    {
+      "date": "2026-09-15",
+      "count": 1,
+      "billing": 8000,
+      "takSong": 0,
+      "outsourcing": 0,
+      "expense": 0,
+      "net": 8000
+    },
+    {
+      "date": "2026-09-22",
+      "count": 1,
+      "billing": 7000,
+      "takSong": 0,
+      "outsourcing": 0,
+      "expense": 0,
+      "net": 7000
+    },
+    {
+      "date": "2026-09-29",
+      "count": 1,
+      "billing": 6000,
+      "takSong": 0,
+      "outsourcing": 0,
+      "expense": 0,
+      "net": 6000
+    },
+    {
+      "date": "2026-10-06",
+      "count": 1,
+      "billing": 5000,
+      "takSong": 0,
+      "outsourcing": 0,
+      "expense": 0,
+      "net": 5000
+    },
+    {
+      "date": "2026-10-13",
+      "count": 1,
+      "billing": 4000,
+      "takSong": 0,
+      "outsourcing": 0,
+      "expense": 0,
+      "net": 4000
+    },
+    {
+      "date": "2026-10-20",
+      "count": 1,
+      "billing": 3000,
+      "takSong": 0,
+      "outsourcing": 0,
+      "expense": 0,
+      "net": 3000
+    },
+    {
+      "date": "2026-10-27",
+      "count": 1,
+      "billing": 2000,
+      "takSong": 0,
+      "outsourcing": 0,
+      "expense": 0,
+      "net": 2000
+    },
+    {
+      "date": "2026-11-02",
+      "count": 1,
+      "billing": 777777,
+      "takSong": 0,
+      "outsourcing": 0,
+      "expense": 0,
+      "net": 777777
+    },
+    {
+      "date": "2026-11-03",
+      "count": 1,
+      "billing": 1000,
+      "takSong": 0,
+      "outsourcing": 0,
+      "expense": 0,
+      "net": 1000
+    },
+    {
+      "date": "2026-11-10",
+      "count": 1,
+      "billing": 999999,
+      "takSong": 0,
+      "outsourcing": 0,
+      "expense": 0,
+      "net": 999999
+    },
+    {
+      "date": "2026-11-17",
+      "count": 1,
+      "billing": 888888,
+      "takSong": 0,
+      "outsourcing": 0,
+      "expense": 0,
+      "net": 888888
+    }
+  ],
+  "monthTotal": {
+    "date": "2026-11",
+    "count": 4,
+    "billing": 2667664,
+    "takSong": 0,
+    "outsourcing": 0,
+    "expense": 0,
+    "net": 2667664
+  },
+  "monthStats": {
+    "count": 4,
+    "billing": 2667664,
+    "expense": 0,
+    "net": 2667664,
+    "workDays": 4,
+    "timedDays": 0,
+    "hours": 0.0,
+    "billingOnTimedDays": 0,
+    "perHour": null,
+    "avgFare": 666916,
+    "countPerDay": 1.0,
+    "hoursPerDay": null,
+    "perWorkDay": 666916,
+    "kmDays": 0,
+    "km": 0.0,
+    "billingOnKmDays": 0,
+    "perKm": null,
+    "kmPerDay": null
+  },
+  "periodStats": {
+    "count": 4,
+    "billing": 2667664,
+    "expense": 0,
+    "net": 2667664,
+    "workDays": 4,
+    "timedDays": 0,
+    "hours": 0.0,
+    "billingOnTimedDays": 0,
+    "perHour": null,
+    "avgFare": 666916,
+    "countPerDay": 1.0,
+    "hoursPerDay": null,
+    "perWorkDay": 666916,
+    "kmDays": 0,
+    "km": 0.0,
+    "billingOnKmDays": 0,
+    "perKm": null,
+    "kmPerDay": null
+  },
+  "workDays": [
+    {
+      "date": "2026-11-17",
+      "start": "",
+      "end": "",
+      "hours": null,
+      "billing": 888888,
+      "perHour": null,
+      "perKm": null
+    },
+    {
+      "date": "2026-11-10",
+      "start": "",
+      "end": "",
+      "hours": null,
+      "billing": 999999,
+      "perHour": null,
+      "perKm": null
+    },
+    {
+      "date": "2026-11-03",
+      "start": "",
+      "end": "",
+      "hours": null,
+      "billing": 1000,
+      "perHour": null,
+      "perKm": null
+    },
+    {
+      "date": "2026-11-02",
+      "start": "",
+      "end": "",
+      "hours": null,
+      "billing": 777777,
+      "perHour": null,
+      "perKm": null
+    }
+  ],
+  "floorReport": {
+    "floor": 180000,
+    "knownDays": 4,
+    "unknownBilling": 0,
+    "lowDates": [
+      "2026-11-03"
+    ],
+    "lowPercent": 25.0,
+    "averageEnd": null,
+    "averagePartner": 0.0,
+    "days": [
+      {
+        "date": "2026-11-17",
+        "billing": 888888,
+        "end": "",
+        "endMinute": null,
+        "partnerBilling": 0
+      },
+      {
+        "date": "2026-11-10",
+        "billing": 999999,
+        "end": "",
+        "endMinute": null,
+        "partnerBilling": 0
+      },
+      {
+        "date": "2026-11-03",
+        "billing": 1000,
+        "end": "",
+        "endMinute": null,
+        "partnerBilling": 0
+      },
+      {
+        "date": "2026-11-02",
+        "billing": 777777,
+        "end": "",
+        "endMinute": null,
+        "partnerBilling": 0
+      }
+    ]
+  },
+  "customers": [
+    {
+      "name": "합성거래처A",
+      "count": 4,
+      "amount": 2667664
+    }
+  ],
+  "dayDetails": [
+    {
+      "total": {
+        "date": "2026-11-10",
+        "count": 1,
+        "billing": 999999,
+        "takSong": 0,
+        "outsourcing": 0,
+        "expense": 0,
+        "net": 999999
+      },
+      "recordIds": [
+        "synthetic-010"
+      ],
+      "start": "",
+      "end": "",
+      "workHours": null,
+      "liveHours": null,
+      "displayHours": null,
+      "displayPerHour": null,
+      "hourly": [
+        {
+          "hour": 9,
+          "count": 1,
+          "billing": 999999
+        }
+      ],
+      "peak": {
+        "hour": 9,
+        "count": 1,
+        "billing": 999999
+      },
+      "customers": [
+        {
+          "name": "합성거래처A",
+          "count": 1,
+          "amount": 999999
+        }
+      ],
+      "sameWeekdayAverage": 4500
+    }
+  ],
+  "calendar": {
+    "gridStart": "2026-11-01",
+    "gridEnd": "2026-12-05",
+    "weeks": [
+      {
+        "keys": [
+          "2026-11-01",
+          "2026-11-02",
+          "2026-11-03",
+          "2026-11-04",
+          "2026-11-05",
+          "2026-11-06",
+          "2026-11-07"
+        ],
+        "count": 2,
+        "billing": 778777
+      },
+      {
+        "keys": [
+          "2026-11-08",
+          "2026-11-09",
+          "2026-11-10",
+          "2026-11-11",
+          "2026-11-12",
+          "2026-11-13",
+          "2026-11-14"
+        ],
+        "count": 1,
+        "billing": 999999
+      },
+      {
+        "keys": [
+          "2026-11-15",
+          "2026-11-16",
+          "2026-11-17",
+          "2026-11-18",
+          "2026-11-19",
+          "2026-11-20",
+          "2026-11-21"
+        ],
+        "count": 1,
+        "billing": 888888
+      },
+      {
+        "keys": [
+          "2026-11-22",
+          "2026-11-23",
+          "2026-11-24",
+          "2026-11-25",
+          "2026-11-26",
+          "2026-11-27",
+          "2026-11-28"
+        ],
+        "count": 0,
+        "billing": 0
+      },
+      {
+        "keys": [
+          "2026-11-29",
+          "2026-11-30",
+          "2026-12-01",
+          "2026-12-02",
+          "2026-12-03",
+          "2026-12-04",
+          "2026-12-05"
+        ],
+        "count": 0,
+        "billing": 0
+      }
+    ]
+  }
+}

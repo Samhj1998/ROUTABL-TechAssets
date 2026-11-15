@@ -1,0 +1,55 @@
+{
+  "case_id": "18_reversed_overnight",
+  "spec_version": "1.0.0",
+  "category": "work_time_efficiency",
+  "description": "역전 및 자정 넘김은 null",
+  "request": {
+    "start": "2026-11-01",
+    "end": "2026-11-30",
+    "month": "2026-11",
+    "dayKeys": [
+      "2026-11-10",
+      "2026-11-11"
+    ],
+    "today": "2026-11-15",
+    "nowMinute": 720
+  },
+  "documents": [
+    {
+      "id": "synthetic-001",
+      "data": {
+        "dispatchTime": "2026-11-10 09:00",
+        "totalFare": 100000,
+        "status": "completed",
+        "requester": "합성거래처A"
+      }
+    },
+    {
+      "id": "synthetic-002",
+      "data": {
+        "dispatchTime": "2026-11-11 23:00",
+        "totalFare": 100000,
+        "status": "completed",
+        "requester": "합성거래처A"
+      }
+    }
+  ],
+  "dailySummaries": [
+    {
+      "id": "synthetic_2026-11-10",
+      "data": {
+        "workDate": "2026-11-10",
+        "startTime": "18:00",
+        "endTime": "09:00"
+      }
+    },
+    {
+      "id": "synthetic_2026-11-11",
+      "data": {
+        "workDate": "2026-11-11",
+        "startTime": "23:00",
+        "endTime": "01:00"
+      }
+    }
+  ]
+}
