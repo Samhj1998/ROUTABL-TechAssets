@@ -1,0 +1,104 @@
+{
+  "case_id": "36_flow_day_range_and_missing_time",
+  "spec_version": "1.1.0",
+  "category": "flow_wait_place",
+  "description": "시각 불명·취소·삭제는 쌍 제외; 날짜 간 연결 안 함; 기간 외 자료는 기간 flow에서 제외하나 지정 dayFlow에서는 계산",
+  "request": {
+    "start": "2026-11-10",
+    "end": "2026-11-11",
+    "month": "2026-11",
+    "dayKeys": [
+      "2026-11-10",
+      "2026-11-11",
+      "2026-11-12"
+    ],
+    "today": "2026-11-15",
+    "nowMinute": 720
+  },
+  "documents": [
+    {
+      "id": "synthetic-cross-a",
+      "data": {
+        "dispatchTime": "2026-11-10 23:30",
+        "totalFare": 10000,
+        "status": "completed",
+        "requester": "합성거래처A",
+        "completeTime": {
+          "$timestamp": "2026-11-10T14:40:00Z"
+        },
+        "destDong": "합성동A"
+      }
+    },
+    {
+      "id": "synthetic-cross-b",
+      "data": {
+        "dispatchTime": "2026-11-11 00:10",
+        "totalFare": 10000,
+        "status": "completed",
+        "requester": "합성거래처A",
+        "deptDong": "합성동A"
+      }
+    },
+    {
+      "id": "synthetic-no-time",
+      "data": {
+        "dispatchTime": "2026-11-11",
+        "totalFare": 10000,
+        "status": "completed",
+        "requester": "합성거래처A"
+      }
+    },
+    {
+      "id": "synthetic-cancelled",
+      "data": {
+        "dispatchTime": "2026-11-11 01:00",
+        "totalFare": 10000,
+        "status": "cancelled",
+        "requester": "합성거래처A"
+      }
+    },
+    {
+      "id": "synthetic-deleted",
+      "data": {
+        "dispatchTime": "2026-11-11 02:00",
+        "totalFare": 10000,
+        "status": "completed",
+        "requester": "합성거래처A",
+        "isDeleted": true
+      }
+    },
+    {
+      "id": "synthetic-bad-time",
+      "data": {
+        "dispatchTime": "2026-11-11 25:00",
+        "totalFare": 10000,
+        "status": "completed",
+        "requester": "합성거래처A"
+      }
+    },
+    {
+      "id": "synthetic-2026-11-12-a",
+      "data": {
+        "dispatchTime": "2026-11-12 09:00",
+        "totalFare": 10000,
+        "status": "completed",
+        "requester": "합성거래처A",
+        "destDong": " 합성연결동 ",
+        "completeTime": {
+          "$timestamp": "2026-11-12T00:40:00Z"
+        }
+      }
+    },
+    {
+      "id": "synthetic-2026-11-12-b",
+      "data": {
+        "dispatchTime": "2026-11-12 10:00",
+        "totalFare": 10000,
+        "status": "completed",
+        "requester": "합성거래처A",
+        "deptDong": "합성연결동"
+      }
+    }
+  ],
+  "dailySummaries": []
+}

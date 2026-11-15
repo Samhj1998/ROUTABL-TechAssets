@@ -1,0 +1,89 @@
+{
+  "case_id": "44_exclusion_exact_match_and_flow",
+  "spec_version": "1.1.0",
+  "category": "exclusions",
+  "description": "정규화된 날짜+금액만 제외: 동일 날짜 다른 금액·다른 날짜 84원·금액 null 유지. 제외 배차를 흐름 사이에서 먼저 빼고 달력/요일도 필터 후 계산",
+  "request": {
+    "start": "2026-10-01",
+    "end": "2026-10-31",
+    "month": "2026-10",
+    "dayKeys": [
+      "2026-10-09",
+      "2026-10-10",
+      "2026-10-16"
+    ],
+    "today": "2026-11-15",
+    "nowMinute": 720
+  },
+  "documents": [
+    {
+      "id": "synthetic-real-before",
+      "data": {
+        "dispatchTime": "2026-10-09 09:00",
+        "totalFare": 180000,
+        "status": "completed",
+        "requester": "합성거래처A",
+        "completeTime": {
+          "$timestamp": "2026-10-09T00:10:00Z"
+        },
+        "destDong": "합성동A"
+      }
+    },
+    {
+      "id": "synthetic-excluded-middle",
+      "data": {
+        "dispatchTime": "26.10.9 09:40",
+        "totalFare": " 84 ",
+        "status": "completed",
+        "requester": "영우티엔에프",
+        "completeTime": {
+          "$timestamp": "2026-10-09T00:50:00Z"
+        }
+      }
+    },
+    {
+      "id": "synthetic-real-after",
+      "data": {
+        "dispatchTime": "2026-10-09 10:00",
+        "totalFare": 85,
+        "status": "completed",
+        "requester": "합성거래처A",
+        "deptDong": "합성동A",
+        "inputLat": 1.0,
+        "inputLng": 1.0,
+        "waitDong": "합성대기동"
+      }
+    },
+    {
+      "id": "synthetic-same-amount-other-day",
+      "data": {
+        "dispatchTime": "2026-10-10 09:00",
+        "totalFare": 84,
+        "status": "completed",
+        "requester": "합성거래처A"
+      }
+    },
+    {
+      "id": "synthetic-unknown-fare",
+      "data": {
+        "dispatchTime": "2026-10-09",
+        "totalFare": null,
+        "status": "completed",
+        "requester": "합성거래처A"
+      }
+    },
+    {
+      "id": "synthetic-timestamp-not-dispatch-date",
+      "data": {
+        "dispatchTime": "2026-10-08 09:00",
+        "totalFare": 84,
+        "status": "completed",
+        "requester": "합성거래처A",
+        "timestamp": {
+          "$timestamp": "2026-10-09T00:00:00Z"
+        }
+      }
+    }
+  ],
+  "dailySummaries": []
+}

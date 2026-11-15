@@ -1,6 +1,11 @@
 {
   "case_id": "25_hourly_missing_and_edges",
-  "spec_version": "1.0.0",
+  "spec_version": "1.1.0",
+  "preprocessing": {
+    "inputCount": 7,
+    "excludedIds": [],
+    "retainedCount": 7
+  },
   "convertedDispatches": [
     {
       "id": "synthetic-001",
@@ -14,7 +19,13 @@
       "outsourcingCost": 0,
       "included": true,
       "dateKey": "2026-11-10",
-      "hour": null
+      "hour": null,
+      "flowMinute": null,
+      "waitPlace": {
+        "recorded": false,
+        "late": false,
+        "dong": null
+      }
     },
     {
       "id": "synthetic-002",
@@ -28,7 +39,13 @@
       "outsourcingCost": 0,
       "included": true,
       "dateKey": "2026-11-10",
-      "hour": 0
+      "hour": 0,
+      "flowMinute": 0,
+      "waitPlace": {
+        "recorded": false,
+        "late": false,
+        "dong": null
+      }
     },
     {
       "id": "synthetic-003",
@@ -42,7 +59,13 @@
       "outsourcingCost": 0,
       "included": true,
       "dateKey": "2026-11-10",
-      "hour": 0
+      "hour": 0,
+      "flowMinute": 59,
+      "waitPlace": {
+        "recorded": false,
+        "late": false,
+        "dong": null
+      }
     },
     {
       "id": "synthetic-004",
@@ -56,7 +79,13 @@
       "outsourcingCost": 0,
       "included": true,
       "dateKey": "2026-11-10",
-      "hour": 23
+      "hour": 23,
+      "flowMinute": 1439,
+      "waitPlace": {
+        "recorded": false,
+        "late": false,
+        "dong": null
+      }
     },
     {
       "id": "synthetic-005",
@@ -70,7 +99,13 @@
       "outsourcingCost": 0,
       "included": true,
       "dateKey": "2026-11-10",
-      "hour": 23
+      "hour": 23,
+      "flowMinute": 1381,
+      "waitPlace": {
+        "recorded": false,
+        "late": false,
+        "dong": null
+      }
     },
     {
       "id": "synthetic-006",
@@ -84,7 +119,13 @@
       "outsourcingCost": 0,
       "included": false,
       "dateKey": "2026-11-10",
-      "hour": 9
+      "hour": 9,
+      "flowMinute": 540,
+      "waitPlace": {
+        "recorded": false,
+        "late": false,
+        "dong": null
+      }
     },
     {
       "id": "synthetic-007",
@@ -98,7 +139,13 @@
       "outsourcingCost": 0,
       "included": true,
       "dateKey": null,
-      "hour": 9
+      "hour": 9,
+      "flowMinute": 540,
+      "waitPlace": {
+        "recorded": false,
+        "late": false,
+        "dong": null
+      }
     }
   ],
   "convertedSummaries": [],
@@ -208,6 +255,19 @@
       "amount": null
     }
   ],
+  "flow": {
+    "pairs": 3,
+    "linkBase": 0,
+    "linked": 0,
+    "timedBase": 0,
+    "overlapped": 0,
+    "waits": 0,
+    "waitMinutes": 0,
+    "averageWait": 0,
+    "locatedWaits": 0,
+    "lateInputs": 0,
+    "spots": []
+  },
   "dayDetails": [
     {
       "total": {
@@ -256,6 +316,19 @@
           "amount": null
         }
       ],
+      "flow": {
+        "pairs": 3,
+        "linkBase": 0,
+        "linked": 0,
+        "timedBase": 0,
+        "overlapped": 0,
+        "waits": 0,
+        "waitMinutes": 0,
+        "averageWait": 0,
+        "locatedWaits": 0,
+        "lateInputs": 0,
+        "spots": []
+      },
       "sameWeekdayAverage": null
     }
   ],

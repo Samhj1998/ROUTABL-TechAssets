@@ -1,6 +1,11 @@
 {
   "case_id": "31_weekday_skip_unknown_include_zero",
-  "spec_version": "1.0.0",
+  "spec_version": "1.1.0",
+  "preprocessing": {
+    "inputCount": 6,
+    "excludedIds": [],
+    "retainedCount": 6
+  },
   "convertedDispatches": [
     {
       "id": "synthetic-001",
@@ -14,7 +19,13 @@
       "outsourcingCost": 0,
       "included": true,
       "dateKey": "2026-11-03",
-      "hour": 9
+      "hour": 9,
+      "flowMinute": 540,
+      "waitPlace": {
+        "recorded": false,
+        "late": false,
+        "dong": null
+      }
     },
     {
       "id": "synthetic-002",
@@ -28,7 +39,13 @@
       "outsourcingCost": 0,
       "included": true,
       "dateKey": "2026-10-27",
-      "hour": 9
+      "hour": 9,
+      "flowMinute": 540,
+      "waitPlace": {
+        "recorded": false,
+        "late": false,
+        "dong": null
+      }
     },
     {
       "id": "synthetic-003",
@@ -42,7 +59,13 @@
       "outsourcingCost": 0,
       "included": true,
       "dateKey": "2026-10-20",
-      "hour": 9
+      "hour": 9,
+      "flowMinute": 540,
+      "waitPlace": {
+        "recorded": false,
+        "late": false,
+        "dong": null
+      }
     },
     {
       "id": "synthetic-004",
@@ -56,7 +79,13 @@
       "outsourcingCost": 0,
       "included": false,
       "dateKey": "2026-10-13",
-      "hour": 9
+      "hour": 9,
+      "flowMinute": 540,
+      "waitPlace": {
+        "recorded": false,
+        "late": false,
+        "dong": null
+      }
     },
     {
       "id": "synthetic-005",
@@ -70,7 +99,13 @@
       "outsourcingCost": 0,
       "included": false,
       "dateKey": "2026-10-06",
-      "hour": 9
+      "hour": 9,
+      "flowMinute": 540,
+      "waitPlace": {
+        "recorded": false,
+        "late": false,
+        "dong": null
+      }
     },
     {
       "id": "synthetic-006",
@@ -84,7 +119,13 @@
       "outsourcingCost": 0,
       "included": true,
       "dateKey": "2026-11-10",
-      "hour": 9
+      "hour": 9,
+      "flowMinute": 540,
+      "waitPlace": {
+        "recorded": false,
+        "late": false,
+        "dong": null
+      }
     }
   ],
   "convertedSummaries": [],
@@ -240,6 +281,19 @@
       "amount": 180000
     }
   ],
+  "flow": {
+    "pairs": 0,
+    "linkBase": 0,
+    "linked": 0,
+    "timedBase": 0,
+    "overlapped": 0,
+    "waits": 0,
+    "waitMinutes": 0,
+    "averageWait": 0,
+    "locatedWaits": 0,
+    "lateInputs": 0,
+    "spots": []
+  },
   "dayDetails": [
     {
       "total": {
@@ -279,6 +333,19 @@
           "amount": 180000
         }
       ],
+      "flow": {
+        "pairs": 0,
+        "linkBase": 0,
+        "linked": 0,
+        "timedBase": 0,
+        "overlapped": 0,
+        "waits": 0,
+        "waitMinutes": 0,
+        "averageWait": 0,
+        "locatedWaits": 0,
+        "lateInputs": 0,
+        "spots": []
+      },
       "sameWeekdayAverage": 50
     }
   ],

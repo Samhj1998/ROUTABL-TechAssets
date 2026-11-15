@@ -1,0 +1,375 @@
+{
+  "case_id": "45_major_customer_names",
+  "spec_version": "1.1.0",
+  "preprocessing": {
+    "inputCount": 4,
+    "excludedIds": [],
+    "retainedCount": 4
+  },
+  "convertedDispatches": [
+    {
+      "id": "synthetic-major-youngwoo-a",
+      "dispatchTime": "2026-11-10 09:00",
+      "recordedAtMillis": null,
+      "requester": "영우티엔에프",
+      "status": "completed",
+      "isDeleted": false,
+      "totalFare": 100000,
+      "takSongCost": 0,
+      "outsourcingCost": 0,
+      "included": true,
+      "dateKey": "2026-11-10",
+      "hour": 9,
+      "flowMinute": 540,
+      "waitPlace": {
+        "recorded": false,
+        "late": false,
+        "dong": null
+      }
+    },
+    {
+      "id": "synthetic-major-youngwoo-b",
+      "dispatchTime": "2026-11-10 10:00",
+      "recordedAtMillis": null,
+      "requester": " 영우티엔에프 ",
+      "status": "completed",
+      "isDeleted": false,
+      "totalFare": 20000,
+      "takSongCost": 0,
+      "outsourcingCost": 0,
+      "included": true,
+      "dateKey": "2026-11-10",
+      "hour": 10,
+      "flowMinute": 600,
+      "waitPlace": {
+        "recorded": false,
+        "late": false,
+        "dong": null
+      }
+    },
+    {
+      "id": "synthetic-major-sewon",
+      "dispatchTime": "2026-11-10 11:00",
+      "recordedAtMillis": null,
+      "requester": "세원텍스",
+      "status": "completed",
+      "isDeleted": false,
+      "totalFare": 60000,
+      "takSongCost": 0,
+      "outsourcingCost": 0,
+      "included": true,
+      "dateKey": "2026-11-10",
+      "hour": 11,
+      "flowMinute": 660,
+      "waitPlace": {
+        "recorded": false,
+        "late": false,
+        "dong": null
+      }
+    },
+    {
+      "id": "synthetic-major-fast",
+      "dispatchTime": "2026-11-10 12:00",
+      "recordedAtMillis": null,
+      "requester": "빠른발",
+      "status": "completed",
+      "isDeleted": false,
+      "totalFare": 40000,
+      "takSongCost": 0,
+      "outsourcingCost": 0,
+      "included": true,
+      "dateKey": "2026-11-10",
+      "hour": 12,
+      "flowMinute": 720,
+      "waitPlace": {
+        "recorded": false,
+        "late": false,
+        "dong": null
+      }
+    }
+  ],
+  "convertedSummaries": [],
+  "quality": {
+    "documents": 4,
+    "included": 4,
+    "deleted": 0,
+    "notCompleted": 0,
+    "unknownDate": 0,
+    "unknownFare": 0,
+    "firstDate": "2026-11-10",
+    "lastDate": "2026-11-10"
+  },
+  "daily": [
+    {
+      "date": "2026-11-10",
+      "count": 4,
+      "billing": 220000,
+      "takSong": 0,
+      "outsourcing": 0,
+      "expense": 0,
+      "net": 220000
+    }
+  ],
+  "monthTotal": {
+    "date": "2026-11",
+    "count": 4,
+    "billing": 220000,
+    "takSong": 0,
+    "outsourcing": 0,
+    "expense": 0,
+    "net": 220000
+  },
+  "monthStats": {
+    "count": 4,
+    "billing": 220000,
+    "expense": 0,
+    "net": 220000,
+    "workDays": 1,
+    "timedDays": 0,
+    "hours": 0.0,
+    "billingOnTimedDays": 0,
+    "perHour": null,
+    "avgFare": 55000,
+    "countPerDay": 4.0,
+    "hoursPerDay": null,
+    "perWorkDay": 220000,
+    "kmDays": 0,
+    "km": 0.0,
+    "billingOnKmDays": 0,
+    "perKm": null,
+    "kmPerDay": null
+  },
+  "periodStats": {
+    "count": 4,
+    "billing": 220000,
+    "expense": 0,
+    "net": 220000,
+    "workDays": 1,
+    "timedDays": 0,
+    "hours": 0.0,
+    "billingOnTimedDays": 0,
+    "perHour": null,
+    "avgFare": 55000,
+    "countPerDay": 4.0,
+    "hoursPerDay": null,
+    "perWorkDay": 220000,
+    "kmDays": 0,
+    "km": 0.0,
+    "billingOnKmDays": 0,
+    "perKm": null,
+    "kmPerDay": null
+  },
+  "workDays": [
+    {
+      "date": "2026-11-10",
+      "start": "",
+      "end": "",
+      "hours": null,
+      "billing": 220000,
+      "perHour": null,
+      "perKm": null
+    }
+  ],
+  "floorReport": {
+    "floor": 180000,
+    "knownDays": 1,
+    "unknownBilling": 0,
+    "lowDates": [],
+    "lowPercent": 0.0,
+    "averageEnd": null,
+    "averagePartner": 180000.0,
+    "days": [
+      {
+        "date": "2026-11-10",
+        "billing": 220000,
+        "end": "",
+        "endMinute": null,
+        "partnerBilling": 180000
+      }
+    ]
+  },
+  "customers": [
+    {
+      "name": "영우티엔에프",
+      "count": 2,
+      "amount": 120000
+    },
+    {
+      "name": "세원텍스",
+      "count": 1,
+      "amount": 60000
+    },
+    {
+      "name": "빠른발",
+      "count": 1,
+      "amount": 40000
+    }
+  ],
+  "flow": {
+    "pairs": 3,
+    "linkBase": 0,
+    "linked": 0,
+    "timedBase": 0,
+    "overlapped": 0,
+    "waits": 0,
+    "waitMinutes": 0,
+    "averageWait": 0,
+    "locatedWaits": 0,
+    "lateInputs": 0,
+    "spots": []
+  },
+  "dayDetails": [
+    {
+      "total": {
+        "date": "2026-11-10",
+        "count": 4,
+        "billing": 220000,
+        "takSong": 0,
+        "outsourcing": 0,
+        "expense": 0,
+        "net": 220000
+      },
+      "recordIds": [
+        "synthetic-major-youngwoo-a",
+        "synthetic-major-youngwoo-b",
+        "synthetic-major-sewon",
+        "synthetic-major-fast"
+      ],
+      "start": "",
+      "end": "",
+      "workHours": null,
+      "liveHours": null,
+      "displayHours": null,
+      "displayPerHour": null,
+      "hourly": [
+        {
+          "hour": 9,
+          "count": 1,
+          "billing": 100000
+        },
+        {
+          "hour": 10,
+          "count": 1,
+          "billing": 20000
+        },
+        {
+          "hour": 11,
+          "count": 1,
+          "billing": 60000
+        },
+        {
+          "hour": 12,
+          "count": 1,
+          "billing": 40000
+        }
+      ],
+      "peak": {
+        "hour": 9,
+        "count": 1,
+        "billing": 100000
+      },
+      "customers": [
+        {
+          "name": "영우티엔에프",
+          "count": 2,
+          "amount": 120000
+        },
+        {
+          "name": "세원텍스",
+          "count": 1,
+          "amount": 60000
+        },
+        {
+          "name": "빠른발",
+          "count": 1,
+          "amount": 40000
+        }
+      ],
+      "flow": {
+        "pairs": 3,
+        "linkBase": 0,
+        "linked": 0,
+        "timedBase": 0,
+        "overlapped": 0,
+        "waits": 0,
+        "waitMinutes": 0,
+        "averageWait": 0,
+        "locatedWaits": 0,
+        "lateInputs": 0,
+        "spots": []
+      },
+      "sameWeekdayAverage": null
+    }
+  ],
+  "calendar": {
+    "gridStart": "2026-11-01",
+    "gridEnd": "2026-12-05",
+    "weeks": [
+      {
+        "keys": [
+          "2026-11-01",
+          "2026-11-02",
+          "2026-11-03",
+          "2026-11-04",
+          "2026-11-05",
+          "2026-11-06",
+          "2026-11-07"
+        ],
+        "count": 0,
+        "billing": 0
+      },
+      {
+        "keys": [
+          "2026-11-08",
+          "2026-11-09",
+          "2026-11-10",
+          "2026-11-11",
+          "2026-11-12",
+          "2026-11-13",
+          "2026-11-14"
+        ],
+        "count": 4,
+        "billing": 220000
+      },
+      {
+        "keys": [
+          "2026-11-15",
+          "2026-11-16",
+          "2026-11-17",
+          "2026-11-18",
+          "2026-11-19",
+          "2026-11-20",
+          "2026-11-21"
+        ],
+        "count": 0,
+        "billing": 0
+      },
+      {
+        "keys": [
+          "2026-11-22",
+          "2026-11-23",
+          "2026-11-24",
+          "2026-11-25",
+          "2026-11-26",
+          "2026-11-27",
+          "2026-11-28"
+        ],
+        "count": 0,
+        "billing": 0
+      },
+      {
+        "keys": [
+          "2026-11-29",
+          "2026-11-30",
+          "2026-12-01",
+          "2026-12-02",
+          "2026-12-03",
+          "2026-12-04",
+          "2026-12-05"
+        ],
+        "count": 0,
+        "billing": 0
+      }
+    ]
+  }
+}

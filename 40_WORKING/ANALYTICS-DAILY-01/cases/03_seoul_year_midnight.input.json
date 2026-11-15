@@ -1,6 +1,6 @@
 {
   "case_id": "03_seoul_year_midnight",
-  "spec_version": "1.0.0",
+  "spec_version": "1.1.0",
   "category": "inclusion_date_amount",
   "description": "timestamp는 서울 연도 보완만; UTC 새해 직전 서울 자정, 배차 자정/저장·완료시각 독립",
   "request": {

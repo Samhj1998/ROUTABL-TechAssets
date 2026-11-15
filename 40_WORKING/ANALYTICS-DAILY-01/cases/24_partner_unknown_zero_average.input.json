@@ -1,6 +1,6 @@
 {
   "case_id": "24_partner_unknown_zero_average",
-  "spec_version": "1.0.0",
+  "spec_version": "1.1.0",
   "category": "customer_partner_hourly",
   "description": "매칭없음0·매칭금액null·확정 평균에0 포함; 전체 billing null과 파트너 null 독립",
   "request": {

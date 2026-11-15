@@ -1,6 +1,6 @@
 {
   "case_id": "13_empty_period",
-  "spec_version": "1.0.0",
+  "spec_version": "1.1.0",
   "category": "floor_denominator",
   "description": "완전 빈 입력·기간·월·무배차 날짜·분모0",
   "request": {

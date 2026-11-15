@@ -1,6 +1,6 @@
 {
   "case_id": "26_hourly_peak_ties",
-  "spec_version": "1.0.0",
+  "spec_version": "1.1.0",
   "category": "customer_partner_hourly",
   "description": "건수 우선, 건수 동률 매출 우선, 완전/null·0 동률은 이른 시; invalid end는 live 차단",
   "request": {

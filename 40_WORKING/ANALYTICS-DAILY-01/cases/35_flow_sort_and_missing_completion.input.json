@@ -1,0 +1,81 @@
+{
+  "case_id": "35_flow_sort_and_missing_completion",
+  "spec_version": "1.1.0",
+  "category": "flow_wait_place",
+  "description": "입력 역순·배차분 동률은 완료시각 오름차순(null 마지막), 완전 동률은 입력순; 완료 없으면 timedBase 제외, 빈 동은 linkBase 제외",
+  "request": {
+    "start": "2026-11-01",
+    "end": "2026-11-30",
+    "month": "2026-11",
+    "dayKeys": [
+      "2026-11-10"
+    ],
+    "today": "2026-11-15",
+    "nowMinute": 720
+  },
+  "documents": [
+    {
+      "id": "synthetic-sort-last",
+      "data": {
+        "dispatchTime": "2026-11-10 10:00",
+        "totalFare": 10000,
+        "status": "completed",
+        "requester": "합성거래처A",
+        "deptDong": "다른합성동"
+      }
+    },
+    {
+      "id": "synthetic-sort-null",
+      "data": {
+        "dispatchTime": "2026-11-10 09:00",
+        "totalFare": 10000,
+        "status": "completed",
+        "requester": "합성거래처A",
+        "destDong": ""
+      }
+    },
+    {
+      "id": "synthetic-sort-later",
+      "data": {
+        "dispatchTime": "2026-11-10 09:00",
+        "totalFare": 10000,
+        "status": "completed",
+        "requester": "합성거래처A",
+        "completeTime": {
+          "$timestamp": "2026-11-10T00:20:00Z"
+        },
+        "destDong": "합성동B",
+        "deptDong": "합성동A"
+      }
+    },
+    {
+      "id": "synthetic-sort-tie-first",
+      "data": {
+        "dispatchTime": "2026-11-10 09:00",
+        "totalFare": 10000,
+        "status": "completed",
+        "requester": "합성거래처A",
+        "completeTime": {
+          "$timestamp": "2026-11-10T00:10:00Z"
+        },
+        "destDong": "합성동A",
+        "deptDong": "합성동A"
+      }
+    },
+    {
+      "id": "synthetic-sort-tie-second",
+      "data": {
+        "dispatchTime": "2026-11-10 09:00",
+        "totalFare": 10000,
+        "status": "completed",
+        "requester": "합성거래처A",
+        "completeTime": {
+          "$timestamp": "2026-11-10T00:10:00Z"
+        },
+        "destDong": "합성동A",
+        "deptDong": "합성동A"
+      }
+    }
+  ],
+  "dailySummaries": []
+}

@@ -5,6 +5,8 @@ No network, Gradle, Firebase, cleanup, or writes outside this asset. Expected
 values are never calculated in Python. Source hashes are checked before/after.
 """
 import argparse
+from collections import Counter
+from datetime import date
 import hashlib
 import json
 import os
@@ -93,6 +95,23 @@ private fun customers(rows: List<CustomerRow>) = rows.map {
 }
 private fun hour(h: Insights.HourStat) = mapOf("hour" to h.hour, "count" to h.count, "billing" to h.billing)
 
+private fun flow(f: FlowStats) = mapOf(
+    "pairs" to f.pairs, "linkBase" to f.linkBase, "linked" to f.linked,
+    "timedBase" to f.timedBase, "overlapped" to f.overlapped,
+    "waits" to f.waits, "waitMinutes" to f.waitMinutes, "averageWait" to f.averageWait,
+    "locatedWaits" to f.locatedWaits, "lateInputs" to f.lateInputs,
+    "spots" to f.spots.map { mapOf("dong" to it.dong, "count" to it.count,
+        "totalMinutes" to it.totalMinutes, "averageMinutes" to it.averageMinutes) }
+)
+
+// v1.1.0 shared preprocessing policy, NOT part of the Kotlin originals.
+// Conversion/date/amount semantics come from the unchanged source functions.
+private fun excluded(r: DispatchRecord, exclusions: List<Map<String, Any?>>): Boolean =
+    exclusions.any { e ->
+        DailyStats.dateKey(r) == e["dispatchDate"] && r.totalFare == e["totalFare"] &&
+            (!e.containsKey("documentId") || r.id == e["documentId"])
+    }
+
 // Minimal non-Android bridge of CalendarFragment.kt:133-146 (no UI layout).
 private fun calendar(ins: Insights, month: String): Map<String, Any?> {
     val first = Dates.firstDay(month)
@@ -111,8 +130,10 @@ private fun calendar(ins: Insights, month: String): Map<String, Any?> {
 
 private fun runCase(name: String, version: String, request: Map<String, Any?>,
     documents: List<Pair<String, Map<String, Any?>>>,
-    summaries: List<Pair<String, Map<String, Any?>>>) {
-    val records = documents.map { (id, d) -> toDispatch(id, d) }
+    summaries: List<Pair<String, Map<String, Any?>>>, exclusions: List<Map<String, Any?>>) {
+    val converted = documents.map { (id, d) -> toDispatch(id, d) }
+    val (removed, records) = converted.partition { excluded(it, exclusions) }
+    // All original analytics, including quality and flow, receive filtered input only.
     val days = summaries.mapNotNull { (id, d) -> toDay(id, d) }
     val ins = Insights(AnalyticsData("synthetic-rider", 0L, records, days))
     val range = DateRange(request["start"] as String, request["end"] as String)
@@ -125,11 +146,16 @@ private fun runCase(name: String, version: String, request: Map<String, Any?>,
     val q = DailyStats.quality(records)
     val result = mapOf(
         "case_id" to name, "spec_version" to version,
+        "preprocessing" to mapOf("inputCount" to converted.size,
+            "excludedIds" to removed.map { it.id }, "retainedCount" to records.size),
         "convertedDispatches" to records.map { r -> mapOf(
             "id" to r.id, "dispatchTime" to r.dispatchTime, "recordedAtMillis" to r.recordedAtMillis,
             "requester" to r.requester, "status" to r.status, "isDeleted" to r.isDeleted,
             "totalFare" to r.totalFare, "takSongCost" to r.takSongCost, "outsourcingCost" to r.outsourcingCost,
-            "included" to DailyStats.included(r), "dateKey" to DailyStats.dateKey(r), "hour" to ins.hourOf(r)
+            "included" to DailyStats.included(r), "dateKey" to DailyStats.dateKey(r), "hour" to ins.hourOf(r),
+            "flowMinute" to Flow.minuteOfDay(r),
+            "waitPlace" to mapOf("recorded" to WaitPlace.recorded(r),
+                "late" to WaitPlace.late(r), "dong" to WaitPlace.dong(r))
         ) },
         "convertedSummaries" to days.map { d -> mapOf(
             "workDate" to d.workDate, "startTime" to d.startTime, "endTime" to d.endTime,
@@ -153,6 +179,7 @@ private fun runCase(name: String, version: String, request: Map<String, Any?>,
             "days" to report.days.map { d -> mapOf("date" to d.date, "billing" to d.billing,
                 "end" to d.end, "endMinute" to d.endMinute, "partnerBilling" to d.partnerBilling) }),
         "customers" to customers(ins.customers(range)),
+        "flow" to flow(ins.flow(range)),
         "dayDetails" to probes.map { value ->
             val key = value as String
             val t = ins.day(key)
@@ -168,6 +195,7 @@ private fun runCase(name: String, version: String, request: Map<String, Any?>,
                 "displayPerHour" to if (hours != null && t.billing != null && t.count > 0) (t.billing / hours).toLong() else null,
                 "hourly" to hourly.map(::hour), "peak" to peak?.let(::hour),
                 "customers" to customers(ins.customers(DateRange(key, key))),
+                "flow" to flow(ins.dayFlow(key)),
                 "sameWeekdayAverage" to ins.sameWeekdayAverage(key))
         },
         "calendar" to calendar(ins, month)
@@ -198,6 +226,19 @@ def main():
     parser.add_argument("--kotlinc", default=os.environ.get("KOTLINC"))
     args = parser.parse_args()
     spec = json.loads((ROOT / "spec.json").read_text(encoding="utf-8"))
+    policy = json.loads((ROOT / "exclusions.json").read_text(encoding="utf-8"))
+    if policy["version"] != spec["version"]:
+        raise ValueError("Exclusions version mismatch")
+    exclusions = policy["exclusions"]
+    for entry in exclusions:
+        if not {"dispatchDate", "totalFare"} <= entry.keys() or entry.keys() - {"dispatchDate", "totalFare", "documentId"}:
+            raise ValueError("Exclusion requires date + amount and optional documentId only")
+        if date.fromisoformat(entry["dispatchDate"]).isoformat() != entry["dispatchDate"]:
+            raise ValueError("Exclusion date must be yyyy-MM-dd")
+        if type(entry["totalFare"]) is not int or not 0 <= entry["totalFare"] <= 9007199254740991:
+            raise ValueError("Exclusion amount must be a safe nonnegative integer")
+        if "documentId" in entry and (not isinstance(entry["documentId"], str) or not entry["documentId"]):
+            raise ValueError("Optional documentId must be a nonempty string")
     source_root = args.source_root.expanduser().resolve()
     verify_sources(spec, source_root)
     compiler = args.kotlinc or shutil.which("kotlinc")
@@ -207,8 +248,9 @@ def main():
     if not compiler:
         raise RuntimeError("Kotlin compiler unavailable; no expectations will be written")
     inputs = sorted((ROOT / "cases").glob("*.input.json"))
-    if len(inputs) != 32:
-        raise ValueError("Exactly 32 cases required for version 1.0.0")
+    planned = {group["category"]: group["count"] for group in spec["case_plan"]}
+    if len(inputs) != sum(planned.values()):
+        raise ValueError("Case count does not match spec.case_plan")
     # Extract actual conversion code, not a reimplementation. Firebase listener
     # code and all imports/dependencies of the Android reader are omitted.
     reader_path = next(s["path"] for s in spec["sources"] if s["path"].endswith("/FirestoreReader.kt"))
@@ -217,6 +259,8 @@ def main():
     code = KOTLIN.replace("__READER__", adapter)
     names = []
     calls = []
+    categories = Counter()
+    exclusions_code = "listOf<Map<String, Any?>>(" + ",".join(map(literal, exclusions)) + ")"
     for index, path in enumerate(inputs):
         case = json.loads(path.read_text(encoding="utf-8"))
         name = path.name.removesuffix(".input.json")
@@ -225,12 +269,16 @@ def main():
         if not 0 <= case["request"]["nowMinute"] < 1440:
             raise ValueError("nowMinute outside fixed Seoul day")
         names.append(name)
+        categories[case["category"]] += 1
         call = "runCase(" + ",".join([
             literal(name), literal(spec["version"]), literal(case["request"]),
-            documents_literal(case["documents"]), documents_literal(case["dailySummaries"])
+            documents_literal(case["documents"]), documents_literal(case["dailySummaries"]),
+            exclusions_code
         ]) + ")"
         code += "\nprivate fun case" + str(index) + "() { " + call + " }\n"
         calls.append("case" + str(index) + "()")
+    if dict(categories) != planned:
+        raise ValueError("Case categories do not match spec.case_plan")
     code += "\nfun main() { Locale.setDefault(Locale.ROOT); " + "; ".join(calls) + " }\n"
     BUILD.mkdir(parents=True, exist_ok=True)
     bridge = BUILD / "FixtureMain.kt"

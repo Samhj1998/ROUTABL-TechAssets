@@ -1,6 +1,11 @@
 {
   "case_id": "22_customer_null_sort_stability",
-  "spec_version": "1.0.0",
+  "spec_version": "1.1.0",
+  "preprocessing": {
+    "inputCount": 8,
+    "excludedIds": [],
+    "retainedCount": 8
+  },
   "convertedDispatches": [
     {
       "id": "synthetic-001",
@@ -14,7 +19,13 @@
       "outsourcingCost": 0,
       "included": true,
       "dateKey": "2026-11-11",
-      "hour": 9
+      "hour": 9,
+      "flowMinute": 540,
+      "waitPlace": {
+        "recorded": false,
+        "late": false,
+        "dong": null
+      }
     },
     {
       "id": "synthetic-002",
@@ -28,7 +39,13 @@
       "outsourcingCost": 0,
       "included": true,
       "dateKey": "2026-11-10",
-      "hour": 9
+      "hour": 9,
+      "flowMinute": 540,
+      "waitPlace": {
+        "recorded": false,
+        "late": false,
+        "dong": null
+      }
     },
     {
       "id": "synthetic-003",
@@ -42,7 +59,13 @@
       "outsourcingCost": 0,
       "included": true,
       "dateKey": "2026-11-11",
-      "hour": 10
+      "hour": 10,
+      "flowMinute": 600,
+      "waitPlace": {
+        "recorded": false,
+        "late": false,
+        "dong": null
+      }
     },
     {
       "id": "synthetic-004",
@@ -56,7 +79,13 @@
       "outsourcingCost": 0,
       "included": true,
       "dateKey": "2026-11-10",
-      "hour": 10
+      "hour": 10,
+      "flowMinute": 600,
+      "waitPlace": {
+        "recorded": false,
+        "late": false,
+        "dong": null
+      }
     },
     {
       "id": "synthetic-005",
@@ -70,7 +99,13 @@
       "outsourcingCost": 0,
       "included": true,
       "dateKey": "2026-11-10",
-      "hour": 11
+      "hour": 11,
+      "flowMinute": 660,
+      "waitPlace": {
+        "recorded": false,
+        "late": false,
+        "dong": null
+      }
     },
     {
       "id": "synthetic-006",
@@ -84,7 +119,13 @@
       "outsourcingCost": 0,
       "included": true,
       "dateKey": "2026-11-10",
-      "hour": 9
+      "hour": 9,
+      "flowMinute": 540,
+      "waitPlace": {
+        "recorded": false,
+        "late": false,
+        "dong": null
+      }
     },
     {
       "id": "synthetic-007",
@@ -98,7 +139,13 @@
       "outsourcingCost": 0,
       "included": true,
       "dateKey": "2026-11-10",
-      "hour": 9
+      "hour": 9,
+      "flowMinute": 540,
+      "waitPlace": {
+        "recorded": false,
+        "late": false,
+        "dong": null
+      }
     },
     {
       "id": "synthetic-008",
@@ -112,7 +159,13 @@
       "outsourcingCost": 0,
       "included": true,
       "dateKey": "2026-11-10",
-      "hour": 9
+      "hour": 9,
+      "flowMinute": 540,
+      "waitPlace": {
+        "recorded": false,
+        "late": false,
+        "dong": null
+      }
     }
   ],
   "convertedSummaries": [],
@@ -274,6 +327,19 @@
       "amount": null
     }
   ],
+  "flow": {
+    "pairs": 6,
+    "linkBase": 0,
+    "linked": 0,
+    "timedBase": 0,
+    "overlapped": 0,
+    "waits": 0,
+    "waitMinutes": 0,
+    "averageWait": 0,
+    "locatedWaits": 0,
+    "lateInputs": 0,
+    "spots": []
+  },
   "dayDetails": [
     {
       "total": {
@@ -343,6 +409,19 @@
           "amount": null
         }
       ],
+      "flow": {
+        "pairs": 5,
+        "linkBase": 0,
+        "linked": 0,
+        "timedBase": 0,
+        "overlapped": 0,
+        "waits": 0,
+        "waitMinutes": 0,
+        "averageWait": 0,
+        "locatedWaits": 0,
+        "lateInputs": 0,
+        "spots": []
+      },
       "sameWeekdayAverage": null
     },
     {
@@ -394,6 +473,19 @@
           "amount": 100
         }
       ],
+      "flow": {
+        "pairs": 1,
+        "linkBase": 0,
+        "linked": 0,
+        "timedBase": 0,
+        "overlapped": 0,
+        "waits": 0,
+        "waitMinutes": 0,
+        "averageWait": 0,
+        "locatedWaits": 0,
+        "lateInputs": 0,
+        "spots": []
+      },
       "sameWeekdayAverage": null
     }
   ],

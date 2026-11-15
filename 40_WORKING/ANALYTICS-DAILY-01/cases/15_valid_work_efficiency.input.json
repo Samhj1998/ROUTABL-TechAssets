@@ -1,6 +1,6 @@
 {
   "case_id": "15_valid_work_efficiency",
-  "spec_version": "1.0.0",
+  "spec_version": "1.1.0",
   "category": "work_time_efficiency",
   "description": "H:mm/HH:mm trim·분 단위 소수시간·원 절삭·summary만 있는 날 제외·공백 퇴근 평균 차이",
   "request": {

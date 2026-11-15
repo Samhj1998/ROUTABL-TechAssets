@@ -1,6 +1,6 @@
 {
   "case_id": "05_amount_unknown_types",
-  "spec_version": "1.0.0",
+  "spec_version": "1.1.0",
   "category": "inclusion_date_amount",
   "description": "누락/null/음수/분수/부호·소수 문자열/bool/객체/배열/안전정수 초과는 null",
   "request": {

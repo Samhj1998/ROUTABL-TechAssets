@@ -1,6 +1,6 @@
 {
   "case_id": "19_today_live_hours",
-  "spec_version": "1.0.0",
+  "spec_version": "1.1.0",
   "category": "work_time_efficiency",
   "description": "오늘만 출근~고정 현재 보조; 과거/미래 퇴근 누락은 null; 기간 효율에는 live 미반영",
   "request": {

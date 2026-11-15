@@ -1,6 +1,6 @@
 {
   "case_id": "06_null_cost_propagation",
-  "spec_version": "1.0.0",
+  "spec_version": "1.1.0",
   "category": "inclusion_date_amount",
   "description": "billing null 전파·비용 Number.toLong(음수 포함)·문자열 비용0·일/월/기간 독립",
   "request": {

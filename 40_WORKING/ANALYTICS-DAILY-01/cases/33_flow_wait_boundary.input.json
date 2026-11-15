@@ -1,0 +1,114 @@
+{
+  "case_id": "33_flow_wait_boundary",
+  "spec_version": "1.1.0",
+  "category": "flow_wait_place",
+  "description": "19/20/21/0분 경계: 대기와 같은 동 연결은 독립, 20분부터 대기",
+  "request": {
+    "start": "2026-11-01",
+    "end": "2026-11-30",
+    "month": "2026-11",
+    "dayKeys": [
+      "2026-11-01",
+      "2026-11-02",
+      "2026-11-03",
+      "2026-11-04"
+    ],
+    "today": "2026-11-15",
+    "nowMinute": 720
+  },
+  "documents": [
+    {
+      "id": "synthetic-2026-11-01-a",
+      "data": {
+        "dispatchTime": "2026-11-01 09:00",
+        "totalFare": 10000,
+        "status": "completed",
+        "requester": "합성거래처A",
+        "destDong": " 합성연결동 ",
+        "completeTime": {
+          "$timestamp": "2026-11-01T00:41:00Z"
+        }
+      }
+    },
+    {
+      "id": "synthetic-2026-11-01-b",
+      "data": {
+        "dispatchTime": "2026-11-01 10:00",
+        "totalFare": 10000,
+        "status": "completed",
+        "requester": "합성거래처A",
+        "deptDong": "합성연결동"
+      }
+    },
+    {
+      "id": "synthetic-2026-11-02-a",
+      "data": {
+        "dispatchTime": "2026-11-02 09:00",
+        "totalFare": 10000,
+        "status": "completed",
+        "requester": "합성거래처A",
+        "destDong": " 합성연결동 ",
+        "completeTime": {
+          "$timestamp": "2026-11-02T00:40:00Z"
+        }
+      }
+    },
+    {
+      "id": "synthetic-2026-11-02-b",
+      "data": {
+        "dispatchTime": "2026-11-02 10:00",
+        "totalFare": 10000,
+        "status": "completed",
+        "requester": "합성거래처A",
+        "deptDong": "합성연결동"
+      }
+    },
+    {
+      "id": "synthetic-2026-11-03-a",
+      "data": {
+        "dispatchTime": "2026-11-03 09:00",
+        "totalFare": 10000,
+        "status": "completed",
+        "requester": "합성거래처A",
+        "destDong": " 합성연결동 ",
+        "completeTime": {
+          "$timestamp": "2026-11-03T00:39:00Z"
+        }
+      }
+    },
+    {
+      "id": "synthetic-2026-11-03-b",
+      "data": {
+        "dispatchTime": "2026-11-03 10:00",
+        "totalFare": 10000,
+        "status": "completed",
+        "requester": "합성거래처A",
+        "deptDong": "합성연결동"
+      }
+    },
+    {
+      "id": "synthetic-2026-11-04-a",
+      "data": {
+        "dispatchTime": "2026-11-04 09:00",
+        "totalFare": 10000,
+        "status": "completed",
+        "requester": "합성거래처A",
+        "destDong": " 합성연결동 ",
+        "completeTime": {
+          "$timestamp": "2026-11-04T01:00:00Z"
+        }
+      }
+    },
+    {
+      "id": "synthetic-2026-11-04-b",
+      "data": {
+        "dispatchTime": "2026-11-04 10:00",
+        "totalFare": 10000,
+        "status": "completed",
+        "requester": "합성거래처A",
+        "deptDong": "합성연결동"
+      }
+    }
+  ],
+  "dailySummaries": []
+}

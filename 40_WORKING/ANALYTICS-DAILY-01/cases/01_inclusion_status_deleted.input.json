@@ -1,6 +1,6 @@
 {
   "case_id": "01_inclusion_status_deleted",
-  "spec_version": "1.0.0",
+  "spec_version": "1.1.0",
   "category": "inclusion_date_amount",
   "description": "완료 trim·대소문자·삭제 bool·시험표식/소액을 현행대로 포함",
   "request": {

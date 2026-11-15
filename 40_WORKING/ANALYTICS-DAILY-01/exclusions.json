@@ -1,0 +1,9 @@
+{
+  "version": "1.1.0",
+  "exclusions": [
+    {
+      "dispatchDate": "2026-10-09",
+      "totalFare": 84
+    }
+  ]
+}

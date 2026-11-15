@@ -1,8 +1,8 @@
 {
   "asset_id": "ANALYTICS-DAILY-01-SPEC",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "purpose": "Firebase 배차 원본 하나를 기준으로 갤럭시·Mac의 하루 분석 계산값을 공유한다. UI만 다르다.",
-  "authority": "이 해시의 현행 Kotlin을 실제 컴파일·실행한 결과가 정답이다. 모호함이나 문서와 충돌 시 Kotlin 실행값 우선. 변경 시 version·해시·입력 spec_version·기대값을 함께 갱신한다.",
+  "authority": "전처리 제외 정책은 2026-11-15 사용자 결정이다. 그 필터 후 입력을 이 해시의 현행 Kotlin에 실제 전달한 실행 결과가 계산 정답이다. 원본에 없는 전처리를 Kotlin 원본 규칙으로 간주하지 않는다. 변경 시 version·입력 spec_version·기대값을 함께 갱신하고 원본이 바뀔 때만 검토 후 해시를 갱신한다.",
   "basis": "~/Digitopia/작업지시/결과/20261115_Mac분석앱_2단계_사전조사_결과표.md §1·3·4 (분모·누락 주의는 §2·6)",
   "precedent": "40_WORKING/SETTLEMENT-CSV-01",
   "source_root": "~/StudioProjects/ROUTABL-Analytics-Android",
@@ -69,13 +69,14 @@
       "requester.trim별 매출",
       "영우/세원 포함 매칭 합산",
       "인접 월 포함 일~토 주 합계",
-      "과거 8주 같은 요일 평균"
+      "과거 8주 같은 요일 평균",
+      "시험 데이터 제외 전처리(갤럭시·Mac 공통)",
+      "Flow 대기·겹침·연결·WaitPlace 대기 위치 판정",
+      "고객 목록 이름 그대로의 주요 거래처 완전 일치"
     ],
     "excluded": [
-      "Flow 대기·연결·겹침·위치 결과 검증",
       "수면 입력·수면시간·수면그룹·원인 분류",
       "색상·레이아웃·문구 서식",
-      "새 시험 데이터 제외 정책",
       "Firebase 접속·수신·권한·쓰기·배포"
     ],
     "compatibility_projection": "DaySummary의 distanceKm/toll 변환과 Insights의 perKm 계열은 기존 효율 반환값의 부속 필드로 보존한다. 새로운 거리 정책은 없다."
@@ -83,7 +84,7 @@
   "input": {
     "envelope": {
       "case_id": "파일 stem과 같은 합성 ID",
-      "spec_version": "1.0.0",
+      "spec_version": "1.1.0",
       "category": "사례 그룹",
       "description": "검증 의도 (정답값을 수기로 제공하지 않음)",
       "request": "아래 고정 요청",
@@ -106,13 +107,14 @@
       "deleted": "isDeleted == true인 Boolean만 삭제. 문자열 \"true\"·숫자 1은 삭제 아님.",
       "fare": "totalFare = SettlementRules.amount. 정수 Number 또는 유한·정수값 Double, 또는 trim 후 모든 쉼표를 제거한 [0-9]+ 문자열. 0..9007199254740991만 인정. 부호/소수점 문자열·음수·분수·bool·null·누락·객체는 null. 쉼표 위치를 검증하지 않아 \"1,2\"도 12.",
       "cost": "takSongCost/outsourcingCost = (value as? Number)?.toLong() ?: 0L. 숫자 소수는 0 방향 절삭, 음수도 유지; 숫자 문자열·bool·누락·null은 0. totalFare 변환과 다름.",
-      "summary": "workDate는 String 값이 blank이면 id.takeLast(10) 사용, yyyy-MM-dd 정규식만 확인하며 달력 유효성은 검사하지 않음. workDate 앞뒤 공백은 trim하지 않음. 정규식 불일치면 문서 제외. 같은 날짜는 마지막 입력 우선(associateBy). startTime/endTime 문자열 그대로, distanceKm는 Number.toDouble만, toll은 Number.toLong만, 아니면 null."
+      "summary": "workDate는 String 값이 blank이면 id.takeLast(10) 사용, yyyy-MM-dd 정규식만 확인하며 달력 유효성은 검사하지 않음. workDate 앞뒤 공백은 trim하지 않음. 정규식 불일치면 문서 제외. 같은 날짜는 마지막 입력 우선(associateBy). startTime/endTime 문자열 그대로, distanceKm는 Number.toDouble만, toll은 Number.toLong만, 아니면 null.",
+      "flow": "pickupTime/completeTime/inputAt은 timestamp_transport에 따라 millis로 변환. deptDong/destDong은 text 그대로(연결 비교 때 trim), waitDong은 text 후 trim. inputLat/inputLng/deptLat/deptLng는 Number.toDouble() 중 유한·0 아님만 인정; 문자열/누락/0은 null. 좌표 범위 검사·보정은 새로 추가하지 않는다."
     }
   },
   "rules": {
     "inclusion": {
       "source": "DailyStats.included / SettlementRules.includes",
-      "rule": "status.trim()==\"completed\" && !isDeleted. 대소문자 구별. 취소·진행중·미입력 제외. 시험 표식·이름·소액·주말을 새로 제외하지 않는다. 포함되더라도 날짜 불명이면 일별 집계 제외."
+      "rule": "전처리에서 남은 입력 중 status.trim()==\"completed\" && !isDeleted. 대소문자 구별. 취소·진행중·미입력 제외. exclusions.json 외 시험 표식·이름·소액·주말 조건을 새로 만들지 않는다. 포함되더라도 날짜 불명이면 일별 집계 제외."
     },
     "date": {
       "source": "SettlementRules.dateKey/time, DailyStats.dateKey, Dates",
@@ -140,11 +142,18 @@
     },
     "customers": {
       "source": "Insights.customers",
-      "rule": "기간 또는 일의 포함 배차를 requester.trim()으로 그룹; 빈 이름은 \"(의뢰지 없음)\". 건수와 totalFare 합(그 그룹만 null 전파). amount 내림차순(null은 -1), 다음 count 내림차순. 완전 동률은 안정 정렬로 그룹 첫 등장 순서. recordsByDay는 입력 최초 날짜 등장 순서, 날짜 내 입력 순서이며 기간 flatten도 그 순서를 따름. 이름순 정렬을 추가하지 않는다."
+      "rule": "기간 또는 일의 포함 배차를 requester.trim()으로 그룹; 빈 이름은 \"(의뢰지 없음)\". 건수와 totalFare 합(그 그룹만 null 전파). amount 내림차순(null은 -1), 다음 count 내림차순. 완전 동률은 안정 정렬로 그룹 첫 등장 순서. recordsByDay는 입력 최초 날짜 등장 순서, 날짜 내 입력 순서이며 기간 flatten도 그 순서를 따름. 이름순 정렬을 추가하지 않는다.",
+      "key": "거래처 키 = requester.trim() 완전 일치. 고객 목록 이름을 그대로 사용하고 별칭·접두/접미 제거·부분 매칭·중간 공백 보정을 하지 않는다. 빈 키만 기존 표시명 (의뢰지 없음)으로 묶는다.",
+      "major_customers": [
+        "영우티엔에프",
+        "세원텍스",
+        "빠른발"
+      ]
     },
     "partner": {
       "source": "SleepAnalysis.report (수면 제외 투영)",
-      "rule": "requester.contains(\"영우\") || requester.contains(\"세원\") 그대로. 합성 접두·접미에도 매칭, 중간 공백·별칭 보정 없음, 둘 포함해도 1번. 빠른발은 별도 전용 필드 없음. 해당 일 매칭 0건이면 0L, 매칭 중 금액 null이면 null. 평균 averagePartner는 선택기간 모든 근무일 중 partnerBilling 확정일(0 포함)의 Double 평균; 해당 없음=null. averageEnd는 유효 출퇴근일의 endMinute 평균; SleepAnalysis.minute는 raw end.split(\":\") 후 toIntOrNull이므로 앞뒤 공백 있으면 workHours가 유효해도 endMinute=null일 수 있다. 이 현행 차이를 그대로 보존한다. 수면·cause는 정답 검증 대상 아님."
+      "rule": "requester.contains(\"영우\") || requester.contains(\"세원\") 그대로. 합성 접두·접미에도 매칭, 중간 공백·별칭 보정 없음, 둘 포함해도 1번. 빠른발은 별도 전용 필드 없음. 해당 일 매칭 0건이면 0L, 매칭 중 금액 null이면 null. 평균 averagePartner는 선택기간 모든 근무일 중 partnerBilling 확정일(0 포함)의 Double 평균; 해당 없음=null. averageEnd는 유효 출퇴근일의 endMinute 평균; SleepAnalysis.minute는 raw end.split(\":\") 후 toIntOrNull이므로 앞뒤 공백 있으면 workHours가 유효해도 endMinute=null일 수 있다. 이 현행 차이를 그대로 보존한다. 수면·cause는 정답 검증 대상 아님.",
+      "compatibility": "현행 영우/세원 합산은 포함 매칭을 보존한다. 주요 거래처별 집계는 requester.trim() 완전 일치로 구분한다. 위 세 이름만 있는 45_major_customer_names 사례에서 Kotlin customers의 영우티엔에프+세원텍스 합과 Kotlin report의 partnerBilling이 같음을 확인한다. 빠른발은 개별 집계에 포함되지만 영우/세원 합산에는 미포함. 기존 23 사례처럼 임의 접두/접미 이름에는 일반적으로 두 매칭 방식이 같지 않다."
     },
     "calendar": {
       "source": "CalendarFragment:133-146 minimal bridge, Dates, Insights.day",
@@ -153,6 +162,20 @@
     "same_weekday": {
       "source": "Insights.sameWeekdayAverage(key,8)",
       "rule": "key-7, -14, ..., -56일의 정확히 8개 날짜 중 count>0·billing 확정일의 평균. 당일·미래·다른 요일·-63일 제외. 무배차·null 건너뛰고 0원 포함. 해당 0일이면 null, 아니면 amounts.sum()/size Long 정수 나눗셈."
+    },
+    "flow": {
+      "source": "Flow.stats, Flow.minuteOfDay, FlowRules, Insights.flow/dayFlow; 사전조사 결과표 §3",
+      "pairs": "전처리 후 완료·미삭제·날짜 확정 레코드만. 범위 양끝 포함, 같은 날짜별로 시각 유효 배차를 배차분 오름차순→completeMillis 오름차순(null은 Long.MAX_VALUE)으로 안정 정렬한 인접 쌍. 시각 불명은 쌍에서 빠지고 날짜를 넘는 쌍은 없다. 완전 동률은 입력순 유지.",
+      "linked": "앞 destDong.trim와 다음 deptDong.trim가 모두 비어 있지 않으면 linkBase++, 완전 일치면 linked++. 완료시각 여부·대기/겹침 여부와 독립이며 대기와 연결이 동시에 참일 수 있다.",
+      "timing": "앞 completeMillis가 있을 때만 timedBase++. gap=(다음 배차의 해당 서울 날짜 자정+배차분 - 앞 completeMillis)/60000L (Long 나눗셈, 0 방향 절삭). gap<0이면 overlapped++, gap>=20이면 waits++ 및 waitMinutes+=gap. gap=0..19는 둘 다 아님. -59초는 0분이라 겹침 아님, -60초는 -1분이라 겹침. 19분59초는 19분. 완료시각의 날짜를 강제 보정하거나 자정 차이를 제거하지 않는다.",
+      "wait_place": "대기 쌍의 다음 배차 b에 WaitPlace를 적용. recorded(b)&&late(b)이면 lateInputs++, dong(b)!=null이면 locatedWaits++ 및 그 동의 count/totalMinutes 누적. 위치를 모르거나 늦은 입력이어도 waits/waitMinutes에서 빼지 않는다.",
+      "aggregate": "averageWait=waitMinutes/waits (0분모면 0), WaitSpot.averageMinutes=totalMinutes/count 정수 절삭. spots는 count 내림차순→totalMinutes 내림차순, 완전 동률은 동의 최초 등장 순서(날짜 그룹 첫 등장 순서 및 날짜 내 정렬 순서). 누락 위치는 별도 동으로 만들지 않는다. 통계 없음은 모든 수치 0·spots 빈 배열."
+    },
+    "wait_place": {
+      "source": "WaitPlace.recorded/late/dong (문구·timeline UI는 제외)",
+      "recorded": "변환 inputLat와 inputLng가 둘 다 non-null이면 true.",
+      "late": "inputAtMillis와 pickupMillis가 있고 pickup-input이 0..180000ms(양끝 포함)이면 true. 또는 입력 좌표·출발지 좌표 4개가 모두 있고 Haversine 거리<=300m이면 true. 지구 반지름 6371000m. 둘 중 하나만 참이면 늦은 입력. 음수 픽업 차이 또는 3분 초과는 시간 조건으로는 false. late() 자체는 recorded가 false여도 시간 조건으로 true일 수 있다.",
+      "dong": "!recorded 또는 late이면 null. 그 외 변환 waitDong이 blank면 null, 아니면 그대로 반환. 앞 도착 동·다음 출발 동으로 대기 위치를 추정/대체하지 않는다."
     }
   },
   "oracle": {
@@ -160,30 +183,33 @@
     "reader": "FirestoreReader.kt의 private fun toDispatch부터 클래스 마지막 } 직전까지 원문을 추출하여 브리지 최상위에 붙인다. toDay/text/whole/millis/coordinate 포함. Firebase Timestamp만 Date.toDate 래퍼로 모사하고 리스너 코드는 실행 안 함.",
     "ui_bridge": "CalendarFragment의 날짜 격자·주 합계·today live hours/perHour·peak 비교식만 최소 Kotlin 브리지. 원본 함수가 아닌 브리지임을 generator와 출력 계약에 구분한다. 9~18시 막대/문구/선택색은 제외.",
     "sleep_exclusion": "SleepAnalysis.report(ins, range, emptyMap()) 실행 결과에서 날짜·billing·endMinute·partnerBilling·평균·knownDays/lowDays/lowPercent/unknownBilling만 투영한다. 내부 빈 수면 그룹은 버리며 수면·cause 정답은 생성하지 않는다.",
-    "flow_exclusion": "Insights 컴파일 의존 Flow/WaitPlace는 포함하지만 flow/dayFlow/timeline을 호출하지 않는다.",
     "python_role": "JSON→타입 보존 Kotlin 리터럴 전달, 출력 JSON 파싱·indent=2/LF 직렬화·바이트 비교만. 계산 기대값은 작성하거나 Python으로 계산하지 않는다.",
     "clock": "today와 nowMinute는 각 input.request에서 전달, 런타임 Locale.ROOT·Asia/Seoul 고정; Date()·Dates.today() 호출 안 함.",
-    "failure": "컴파일러·JVM 없음, 해시 변화, 컴파일·실행 오류면 비정상 종료. 수기/대체 언어 정답 금지. --check는 기대값을 고치지 않고 불일치 시 실패. 빌드 파일은 tools/.build에만 남기며 삭제 없음."
+    "failure": "컴파일러·JVM 없음, 해시 변화, 컴파일·실행 오류면 비정상 종료. 수기/대체 언어 정답 금지. --check는 기대값을 고치지 않고 불일치 시 실패. 빌드 파일은 tools/.build에만 남기며 삭제 없음.",
+    "flow": "변경 없는 Insights.flow(range)/dayFlow(key), Flow.minuteOfDay, WaitPlace.recorded/late/dong을 직접 실행하고 FlowStats/WaitSpot getter까지 투영한다. timeline/표시 문구는 호출하지 않는다.",
+    "preprocessing": "exclusions.json을 Kotlin 브리지에 타입 보존 리터럴로 전달. 단건 변환 후 제외 조건을 적용하고 필터 후 records만 원본 분석 함수에 입력한다. 이 필터는 원본 함수가 아닌 v1.1.0 전처리다."
   },
   "output": {
     "file": "cases/<case_id>.expected.json (Kotlin JSON 결과를 Python이 UTF-8, 2칸 들여쓰기, 최종 LF로 정규 직렬화)",
     "fields": {
-      "convertedDispatches": "원본 입력순 정규화 주요 필드+included/dateKey/hour",
+      "convertedDispatches": "전처리 후 입력순 정규화 주요 필드+included/dateKey/hour/Flow.minuteOfDay 및 WaitPlace recorded/late/dong. 제외 문서는 없음.",
       "convertedSummaries": "유효 형식 summary 입력순(중복 포함), 실제 Insights.days는 마지막 우선",
       "quality": "DailyStats.quality: included는 날짜 불명 포함; unknownFare는 포함 레코드 전체(날짜 불명 포함)",
-      "daily": "모든 입력의 날짜 확정 집계, 날짜 오름차순(선택기간 외도 포함)",
+      "daily": "전처리 후 모든 입력의 날짜 확정 집계, 날짜 오름차순(선택기간 외도 포함)",
       "monthTotal/monthStats": "요청 month의 DailyStats.month / Insights.stats",
       "periodStats/workDays": "요청 start..end 기간 통계/근무일 최근순",
       "floorReport": "수면 제외한 저매출·퇴근·파트너 통계, days/lowDates 최근순",
       "customers": "요청 기간 고객 순위",
-      "dayDetails": "request.dayKeys 순서, total/recordIds/start/end/workHours/liveHours/displayHours/displayPerHour/hourly/peak/customers/sameWeekdayAverage",
-      "calendar": "월 격자의 gridStart/gridEnd, 주별 날짜 keys/count/billing"
+      "dayDetails": "request.dayKeys 순서, total/recordIds/start/end/workHours/liveHours/displayHours/displayPerHour/hourly/peak/customers/sameWeekdayAverage, flow=Insights.dayFlow(key)",
+      "calendar": "월 격자의 gridStart/gridEnd, 주별 날짜 keys/count/billing",
+      "preprocessing": "필터 추적 inputCount/excludedIds(입력순)/retainedCount. 제외 적용 전 계산 결과는 정답에 포함하지 않음.",
+      "flow": "요청 기간 Insights.flow의 pairs/linkBase/linked/timedBase/overlapped/waits/waitMinutes/averageWait/locatedWaits/lateInputs/spots(dong,count,totalMinutes,averageMinutes)"
     },
     "comparison": {
       "null_and_zero": "null·0·빈 배열·빈 문자열을 서로 구별. 누락 키를 null로 간주하지 않음. 출력 객체 키 순서는 의미 없으나 배열 순서는 계약.",
       "integer": "Long/Int 정확한 정수 일치. Long 나눗셈과 Double.toLong()은 0 방향 절삭(비음수에서는 내림). 반올림 금지. Float 비교 허용오차를 정수에 적용하지 않음.",
       "float": "Double 값 비교는 abs(actual-expected)<=1e-9 또는 <=1e-12*max(abs(actual),abs(expected)). null은 오차 비교 안 함; NaN/Infinity 출력 금지. generate.py --check는 같은 Kotlin 재생성 JSON의 정확한 바이트 비교(diff 0), 허용오차는 다른 앱 구현 비교에만 사용.",
-      "order": "daily 날짜 오름차순, workDays/floorReport days·lowDates 날짜 내림차순, hourly 시 오름차순, customers 위의 안정 순위, calendar 주/날짜 오름차순, convertedDispatches/convertedSummaries/dayDetails/recordIds는 해당 입력 순서."
+      "order": "daily 날짜 오름차순, workDays/floorReport days·lowDates 날짜 내림차순, hourly 시 오름차순, customers 위의 안정 순위, calendar 주/날짜 오름차순, convertedDispatches/convertedSummaries/dayDetails/recordIds는 해당 입력 순서. flow.spots는 규칙의 안정 순위, preprocessing.excludedIds는 입력순."
     }
   },
   "case_plan": [
@@ -210,6 +236,28 @@
     {
       "category": "same_weekday",
       "count": 3
+    },
+    {
+      "category": "flow_wait_place",
+      "count": 10
+    },
+    {
+      "category": "exclusions",
+      "count": 2
+    },
+    {
+      "category": "major_customer_names",
+      "count": 1
     }
-  ]
+  ],
+  "preprocessing": {
+    "stage": "원시 documents → FirestoreReader 원문 단건 변환 → exclusions.json 조건으로 제외 → 필터 후 records를 모든 Kotlin 분석에 전달. 완료/삭제 판정·품질·일/월/기간·근무일/저매출 분모·시간대·고객·흐름·달력/과거 8주 집계 모두보다 먼저 적용한다.",
+    "source": "Kotlin 원본에 없는 사용자 확정 전처리. 갤럭시·Mac이 같은 exclusions.json과 동일한 판정 순서를 사용한다. 원본 Kotlin·운영 데이터는 수정하지 않는다.",
+    "file": "exclusions.json: {version, exclusions:[{dispatchDate:\"yyyy-MM-dd\", totalFare:정수, documentId?:문자열}]}",
+    "match": "DailyStats.dateKey(변환 레코드)==dispatchDate AND 변환 totalFare==목록 totalFare. dispatchTime 날짜는 기존 서울 날짜 규칙(연도 누락 때 timestamp로 연도만 보완) 사용, 금액은 SettlementRules.amount 사용. documentId가 있으면 id 완전 일치도 AND. 목록 내 하나라도 일치하면 제외. 상태·삭제 여부와 무관하게 먼저 적용. 날짜/금액 null이면 불일치. ID 없으면 같은 날짜+금액인 모든 문서에 적용하고 날짜 전체·다른 소액·비슷한 이름은 제외하지 않는다.",
+    "current": "2026-10-09 + 84원 1개 조건, 문서 ID 미지정. 실제 문서 조회 없이 합성 사례만 사용.",
+    "summaries": "dailySummaries 자체는 삭제/제외하지 않는다. 배차가 모두 제외된 날은 근무일·knownDays에 들어가지 않는다. summary/출퇴근 단건 표시가 남더라도 매출·건수·효율 집계에 시험 배차가 재진입하지 않는다.",
+    "change_policy": "추가는 사용자 확인 후",
+    "oracle": "브리지에서 단건 변환·필터만 수행한 뒤 변경 없는 Kotlin 원본에 남은 입력을 전달. Python은 계산 정답을 만들지 않는다. preprocessing은 합계가 아닌 필터 추적 정보이며 excludedIds는 합성 ID만 사용한다."
+  }
 }

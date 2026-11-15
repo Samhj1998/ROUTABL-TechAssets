@@ -1,0 +1,567 @@
+{
+  "case_id": "36_flow_day_range_and_missing_time",
+  "spec_version": "1.1.0",
+  "preprocessing": {
+    "inputCount": 8,
+    "excludedIds": [],
+    "retainedCount": 8
+  },
+  "convertedDispatches": [
+    {
+      "id": "synthetic-cross-a",
+      "dispatchTime": "2026-11-10 23:30",
+      "recordedAtMillis": null,
+      "requester": "합성거래처A",
+      "status": "completed",
+      "isDeleted": false,
+      "totalFare": 10000,
+      "takSongCost": 0,
+      "outsourcingCost": 0,
+      "included": true,
+      "dateKey": "2026-11-10",
+      "hour": 23,
+      "flowMinute": 1410,
+      "waitPlace": {
+        "recorded": false,
+        "late": false,
+        "dong": null
+      }
+    },
+    {
+      "id": "synthetic-cross-b",
+      "dispatchTime": "2026-11-11 00:10",
+      "recordedAtMillis": null,
+      "requester": "합성거래처A",
+      "status": "completed",
+      "isDeleted": false,
+      "totalFare": 10000,
+      "takSongCost": 0,
+      "outsourcingCost": 0,
+      "included": true,
+      "dateKey": "2026-11-11",
+      "hour": 0,
+      "flowMinute": 10,
+      "waitPlace": {
+        "recorded": false,
+        "late": false,
+        "dong": null
+      }
+    },
+    {
+      "id": "synthetic-no-time",
+      "dispatchTime": "2026-11-11",
+      "recordedAtMillis": null,
+      "requester": "합성거래처A",
+      "status": "completed",
+      "isDeleted": false,
+      "totalFare": 10000,
+      "takSongCost": 0,
+      "outsourcingCost": 0,
+      "included": true,
+      "dateKey": "2026-11-11",
+      "hour": null,
+      "flowMinute": null,
+      "waitPlace": {
+        "recorded": false,
+        "late": false,
+        "dong": null
+      }
+    },
+    {
+      "id": "synthetic-cancelled",
+      "dispatchTime": "2026-11-11 01:00",
+      "recordedAtMillis": null,
+      "requester": "합성거래처A",
+      "status": "cancelled",
+      "isDeleted": false,
+      "totalFare": 10000,
+      "takSongCost": 0,
+      "outsourcingCost": 0,
+      "included": false,
+      "dateKey": "2026-11-11",
+      "hour": 1,
+      "flowMinute": 60,
+      "waitPlace": {
+        "recorded": false,
+        "late": false,
+        "dong": null
+      }
+    },
+    {
+      "id": "synthetic-deleted",
+      "dispatchTime": "2026-11-11 02:00",
+      "recordedAtMillis": null,
+      "requester": "합성거래처A",
+      "status": "completed",
+      "isDeleted": true,
+      "totalFare": 10000,
+      "takSongCost": 0,
+      "outsourcingCost": 0,
+      "included": false,
+      "dateKey": "2026-11-11",
+      "hour": 2,
+      "flowMinute": 120,
+      "waitPlace": {
+        "recorded": false,
+        "late": false,
+        "dong": null
+      }
+    },
+    {
+      "id": "synthetic-bad-time",
+      "dispatchTime": "2026-11-11 25:00",
+      "recordedAtMillis": null,
+      "requester": "합성거래처A",
+      "status": "completed",
+      "isDeleted": false,
+      "totalFare": 10000,
+      "takSongCost": 0,
+      "outsourcingCost": 0,
+      "included": true,
+      "dateKey": null,
+      "hour": null,
+      "flowMinute": null,
+      "waitPlace": {
+        "recorded": false,
+        "late": false,
+        "dong": null
+      }
+    },
+    {
+      "id": "synthetic-2026-11-12-a",
+      "dispatchTime": "2026-11-12 09:00",
+      "recordedAtMillis": null,
+      "requester": "합성거래처A",
+      "status": "completed",
+      "isDeleted": false,
+      "totalFare": 10000,
+      "takSongCost": 0,
+      "outsourcingCost": 0,
+      "included": true,
+      "dateKey": "2026-11-12",
+      "hour": 9,
+      "flowMinute": 540,
+      "waitPlace": {
+        "recorded": false,
+        "late": false,
+        "dong": null
+      }
+    },
+    {
+      "id": "synthetic-2026-11-12-b",
+      "dispatchTime": "2026-11-12 10:00",
+      "recordedAtMillis": null,
+      "requester": "합성거래처A",
+      "status": "completed",
+      "isDeleted": false,
+      "totalFare": 10000,
+      "takSongCost": 0,
+      "outsourcingCost": 0,
+      "included": true,
+      "dateKey": "2026-11-12",
+      "hour": 10,
+      "flowMinute": 600,
+      "waitPlace": {
+        "recorded": false,
+        "late": false,
+        "dong": null
+      }
+    }
+  ],
+  "convertedSummaries": [],
+  "quality": {
+    "documents": 8,
+    "included": 6,
+    "deleted": 1,
+    "notCompleted": 1,
+    "unknownDate": 1,
+    "unknownFare": 0,
+    "firstDate": "2026-11-10",
+    "lastDate": "2026-11-12"
+  },
+  "daily": [
+    {
+      "date": "2026-11-10",
+      "count": 1,
+      "billing": 10000,
+      "takSong": 0,
+      "outsourcing": 0,
+      "expense": 0,
+      "net": 10000
+    },
+    {
+      "date": "2026-11-11",
+      "count": 2,
+      "billing": 20000,
+      "takSong": 0,
+      "outsourcing": 0,
+      "expense": 0,
+      "net": 20000
+    },
+    {
+      "date": "2026-11-12",
+      "count": 2,
+      "billing": 20000,
+      "takSong": 0,
+      "outsourcing": 0,
+      "expense": 0,
+      "net": 20000
+    }
+  ],
+  "monthTotal": {
+    "date": "2026-11",
+    "count": 5,
+    "billing": 50000,
+    "takSong": 0,
+    "outsourcing": 0,
+    "expense": 0,
+    "net": 50000
+  },
+  "monthStats": {
+    "count": 5,
+    "billing": 50000,
+    "expense": 0,
+    "net": 50000,
+    "workDays": 3,
+    "timedDays": 0,
+    "hours": 0.0,
+    "billingOnTimedDays": 0,
+    "perHour": null,
+    "avgFare": 10000,
+    "countPerDay": 1.6666666666666667,
+    "hoursPerDay": null,
+    "perWorkDay": 16666,
+    "kmDays": 0,
+    "km": 0.0,
+    "billingOnKmDays": 0,
+    "perKm": null,
+    "kmPerDay": null
+  },
+  "periodStats": {
+    "count": 3,
+    "billing": 30000,
+    "expense": 0,
+    "net": 30000,
+    "workDays": 2,
+    "timedDays": 0,
+    "hours": 0.0,
+    "billingOnTimedDays": 0,
+    "perHour": null,
+    "avgFare": 10000,
+    "countPerDay": 1.5,
+    "hoursPerDay": null,
+    "perWorkDay": 15000,
+    "kmDays": 0,
+    "km": 0.0,
+    "billingOnKmDays": 0,
+    "perKm": null,
+    "kmPerDay": null
+  },
+  "workDays": [
+    {
+      "date": "2026-11-11",
+      "start": "",
+      "end": "",
+      "hours": null,
+      "billing": 20000,
+      "perHour": null,
+      "perKm": null
+    },
+    {
+      "date": "2026-11-10",
+      "start": "",
+      "end": "",
+      "hours": null,
+      "billing": 10000,
+      "perHour": null,
+      "perKm": null
+    }
+  ],
+  "floorReport": {
+    "floor": 180000,
+    "knownDays": 2,
+    "unknownBilling": 0,
+    "lowDates": [
+      "2026-11-11",
+      "2026-11-10"
+    ],
+    "lowPercent": 100.0,
+    "averageEnd": null,
+    "averagePartner": 0.0,
+    "days": [
+      {
+        "date": "2026-11-11",
+        "billing": 20000,
+        "end": "",
+        "endMinute": null,
+        "partnerBilling": 0
+      },
+      {
+        "date": "2026-11-10",
+        "billing": 10000,
+        "end": "",
+        "endMinute": null,
+        "partnerBilling": 0
+      }
+    ]
+  },
+  "customers": [
+    {
+      "name": "합성거래처A",
+      "count": 3,
+      "amount": 30000
+    }
+  ],
+  "flow": {
+    "pairs": 0,
+    "linkBase": 0,
+    "linked": 0,
+    "timedBase": 0,
+    "overlapped": 0,
+    "waits": 0,
+    "waitMinutes": 0,
+    "averageWait": 0,
+    "locatedWaits": 0,
+    "lateInputs": 0,
+    "spots": []
+  },
+  "dayDetails": [
+    {
+      "total": {
+        "date": "2026-11-10",
+        "count": 1,
+        "billing": 10000,
+        "takSong": 0,
+        "outsourcing": 0,
+        "expense": 0,
+        "net": 10000
+      },
+      "recordIds": [
+        "synthetic-cross-a"
+      ],
+      "start": "",
+      "end": "",
+      "workHours": null,
+      "liveHours": null,
+      "displayHours": null,
+      "displayPerHour": null,
+      "hourly": [
+        {
+          "hour": 23,
+          "count": 1,
+          "billing": 10000
+        }
+      ],
+      "peak": {
+        "hour": 23,
+        "count": 1,
+        "billing": 10000
+      },
+      "customers": [
+        {
+          "name": "합성거래처A",
+          "count": 1,
+          "amount": 10000
+        }
+      ],
+      "flow": {
+        "pairs": 0,
+        "linkBase": 0,
+        "linked": 0,
+        "timedBase": 0,
+        "overlapped": 0,
+        "waits": 0,
+        "waitMinutes": 0,
+        "averageWait": 0,
+        "locatedWaits": 0,
+        "lateInputs": 0,
+        "spots": []
+      },
+      "sameWeekdayAverage": null
+    },
+    {
+      "total": {
+        "date": "2026-11-11",
+        "count": 2,
+        "billing": 20000,
+        "takSong": 0,
+        "outsourcing": 0,
+        "expense": 0,
+        "net": 20000
+      },
+      "recordIds": [
+        "synthetic-cross-b",
+        "synthetic-no-time"
+      ],
+      "start": "",
+      "end": "",
+      "workHours": null,
+      "liveHours": null,
+      "displayHours": null,
+      "displayPerHour": null,
+      "hourly": [
+        {
+          "hour": 0,
+          "count": 1,
+          "billing": 10000
+        }
+      ],
+      "peak": {
+        "hour": 0,
+        "count": 1,
+        "billing": 10000
+      },
+      "customers": [
+        {
+          "name": "합성거래처A",
+          "count": 2,
+          "amount": 20000
+        }
+      ],
+      "flow": {
+        "pairs": 0,
+        "linkBase": 0,
+        "linked": 0,
+        "timedBase": 0,
+        "overlapped": 0,
+        "waits": 0,
+        "waitMinutes": 0,
+        "averageWait": 0,
+        "locatedWaits": 0,
+        "lateInputs": 0,
+        "spots": []
+      },
+      "sameWeekdayAverage": null
+    },
+    {
+      "total": {
+        "date": "2026-11-12",
+        "count": 2,
+        "billing": 20000,
+        "takSong": 0,
+        "outsourcing": 0,
+        "expense": 0,
+        "net": 20000
+      },
+      "recordIds": [
+        "synthetic-2026-11-12-a",
+        "synthetic-2026-11-12-b"
+      ],
+      "start": "",
+      "end": "",
+      "workHours": null,
+      "liveHours": null,
+      "displayHours": null,
+      "displayPerHour": null,
+      "hourly": [
+        {
+          "hour": 9,
+          "count": 1,
+          "billing": 10000
+        },
+        {
+          "hour": 10,
+          "count": 1,
+          "billing": 10000
+        }
+      ],
+      "peak": {
+        "hour": 9,
+        "count": 1,
+        "billing": 10000
+      },
+      "customers": [
+        {
+          "name": "합성거래처A",
+          "count": 2,
+          "amount": 20000
+        }
+      ],
+      "flow": {
+        "pairs": 1,
+        "linkBase": 1,
+        "linked": 1,
+        "timedBase": 1,
+        "overlapped": 0,
+        "waits": 1,
+        "waitMinutes": 20,
+        "averageWait": 20,
+        "locatedWaits": 0,
+        "lateInputs": 0,
+        "spots": []
+      },
+      "sameWeekdayAverage": null
+    }
+  ],
+  "calendar": {
+    "gridStart": "2026-11-01",
+    "gridEnd": "2026-12-05",
+    "weeks": [
+      {
+        "keys": [
+          "2026-11-01",
+          "2026-11-02",
+          "2026-11-03",
+          "2026-11-04",
+          "2026-11-05",
+          "2026-11-06",
+          "2026-11-07"
+        ],
+        "count": 0,
+        "billing": 0
+      },
+      {
+        "keys": [
+          "2026-11-08",
+          "2026-11-09",
+          "2026-11-10",
+          "2026-11-11",
+          "2026-11-12",
+          "2026-11-13",
+          "2026-11-14"
+        ],
+        "count": 5,
+        "billing": 50000
+      },
+      {
+        "keys": [
+          "2026-11-15",
+          "2026-11-16",
+          "2026-11-17",
+          "2026-11-18",
+          "2026-11-19",
+          "2026-11-20",
+          "2026-11-21"
+        ],
+        "count": 0,
+        "billing": 0
+      },
+      {
+        "keys": [
+          "2026-11-22",
+          "2026-11-23",
+          "2026-11-24",
+          "2026-11-25",
+          "2026-11-26",
+          "2026-11-27",
+          "2026-11-28"
+        ],
+        "count": 0,
+        "billing": 0
+      },
+      {
+        "keys": [
+          "2026-11-29",
+          "2026-11-30",
+          "2026-12-01",
+          "2026-12-02",
+          "2026-12-03",
+          "2026-12-04",
+          "2026-12-05"
+        ],
+        "count": 0,
+        "billing": 0
+      }
+    ]
+  }
+}

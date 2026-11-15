@@ -1,0 +1,55 @@
+{
+  "case_id": "45_major_customer_names",
+  "spec_version": "1.1.0",
+  "category": "major_customer_names",
+  "description": "고객 목록 이름 그대로 requester.trim() 완전 일치. 영우티엔에프+세원텍스 합은 원본 영우/세원 포함 합과 같고 빠른발은 별도",
+  "request": {
+    "start": "2026-11-01",
+    "end": "2026-11-30",
+    "month": "2026-11",
+    "dayKeys": [
+      "2026-11-10"
+    ],
+    "today": "2026-11-15",
+    "nowMinute": 720
+  },
+  "documents": [
+    {
+      "id": "synthetic-major-youngwoo-a",
+      "data": {
+        "dispatchTime": "2026-11-10 09:00",
+        "totalFare": 100000,
+        "status": "completed",
+        "requester": "영우티엔에프"
+      }
+    },
+    {
+      "id": "synthetic-major-youngwoo-b",
+      "data": {
+        "dispatchTime": "2026-11-10 10:00",
+        "totalFare": 20000,
+        "status": "completed",
+        "requester": " 영우티엔에프 "
+      }
+    },
+    {
+      "id": "synthetic-major-sewon",
+      "data": {
+        "dispatchTime": "2026-11-10 11:00",
+        "totalFare": 60000,
+        "status": "completed",
+        "requester": "세원텍스"
+      }
+    },
+    {
+      "id": "synthetic-major-fast",
+      "data": {
+        "dispatchTime": "2026-11-10 12:00",
+        "totalFare": 40000,
+        "status": "completed",
+        "requester": "빠른발"
+      }
+    }
+  ],
+  "dailySummaries": []
+}

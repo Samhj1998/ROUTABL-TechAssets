@@ -1,0 +1,58 @@
+{
+  "case_id": "43_exclusion_changes_floor_denominator",
+  "spec_version": "1.1.0",
+  "category": "exclusions",
+  "description": "10-09의 유일한 84원 시험 배차 제외로 해당 근무일/knownDays가 사라짐; summary는 남아도 분모 복원 안 함; 비교일은 18만 이하/초과 각 1일",
+  "request": {
+    "start": "2026-10-01",
+    "end": "2026-10-31",
+    "month": "2026-10",
+    "dayKeys": [
+      "2026-10-09",
+      "2026-10-10",
+      "2026-10-11",
+      "2026-10-16"
+    ],
+    "today": "2026-11-15",
+    "nowMinute": 720
+  },
+  "documents": [
+    {
+      "id": "synthetic-excluded-only",
+      "data": {
+        "dispatchTime": "2026-10-09 09:00",
+        "totalFare": 84,
+        "status": "completed",
+        "requester": "영우티엔에프"
+      }
+    },
+    {
+      "id": "synthetic-low-real",
+      "data": {
+        "dispatchTime": "2026-10-10 09:00",
+        "totalFare": 180000,
+        "status": "completed",
+        "requester": "합성거래처A"
+      }
+    },
+    {
+      "id": "synthetic-high-real",
+      "data": {
+        "dispatchTime": "2026-10-11 09:00",
+        "totalFare": 180001,
+        "status": "completed",
+        "requester": "합성거래처A"
+      }
+    }
+  ],
+  "dailySummaries": [
+    {
+      "id": "synthetic_2026-10-09",
+      "data": {
+        "workDate": "2026-10-09",
+        "startTime": "09:00",
+        "endTime": "18:00"
+      }
+    }
+  ]
+}

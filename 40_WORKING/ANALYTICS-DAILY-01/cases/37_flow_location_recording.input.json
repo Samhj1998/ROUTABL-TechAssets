@@ -1,0 +1,150 @@
+{
+  "case_id": "37_flow_location_recording",
+  "spec_version": "1.1.0",
+  "category": "flow_wait_place",
+  "description": "입력 좌표 양쪽 필요; 누락·한쪽·0·문자열은 위치 미확정, 대기 자체는 유지; 앞 도착/다음 출발 동으로 대체 안 함",
+  "request": {
+    "start": "2026-11-01",
+    "end": "2026-11-30",
+    "month": "2026-11",
+    "dayKeys": [
+      "2026-11-01",
+      "2026-11-02",
+      "2026-11-03",
+      "2026-11-04",
+      "2026-11-05"
+    ],
+    "today": "2026-11-15",
+    "nowMinute": 720
+  },
+  "documents": [
+    {
+      "id": "synthetic-2026-11-01-a",
+      "data": {
+        "dispatchTime": "2026-11-01 09:00",
+        "totalFare": 10000,
+        "status": "completed",
+        "requester": "합성거래처A",
+        "destDong": " 합성연결동 ",
+        "completeTime": {
+          "$timestamp": "2026-11-01T00:40:00Z"
+        }
+      }
+    },
+    {
+      "id": "synthetic-2026-11-01-b",
+      "data": {
+        "dispatchTime": "2026-11-01 10:00",
+        "totalFare": 10000,
+        "status": "completed",
+        "requester": "합성거래처A",
+        "deptDong": "합성연결동",
+        "inputLat": 1.0,
+        "inputLng": 1.0,
+        "waitDong": " 합성대기동 "
+      }
+    },
+    {
+      "id": "synthetic-2026-11-02-a",
+      "data": {
+        "dispatchTime": "2026-11-02 09:00",
+        "totalFare": 10000,
+        "status": "completed",
+        "requester": "합성거래처A",
+        "destDong": " 합성연결동 ",
+        "completeTime": {
+          "$timestamp": "2026-11-02T00:40:00Z"
+        }
+      }
+    },
+    {
+      "id": "synthetic-2026-11-02-b",
+      "data": {
+        "dispatchTime": "2026-11-02 10:00",
+        "totalFare": 10000,
+        "status": "completed",
+        "requester": "합성거래처A",
+        "deptDong": "합성연결동",
+        "waitDong": " 합성대기동 "
+      }
+    },
+    {
+      "id": "synthetic-2026-11-03-a",
+      "data": {
+        "dispatchTime": "2026-11-03 09:00",
+        "totalFare": 10000,
+        "status": "completed",
+        "requester": "합성거래처A",
+        "destDong": " 합성연결동 ",
+        "completeTime": {
+          "$timestamp": "2026-11-03T00:40:00Z"
+        }
+      }
+    },
+    {
+      "id": "synthetic-2026-11-03-b",
+      "data": {
+        "dispatchTime": "2026-11-03 10:00",
+        "totalFare": 10000,
+        "status": "completed",
+        "requester": "합성거래처A",
+        "deptDong": "합성연결동",
+        "inputLat": 1.0,
+        "waitDong": " 합성대기동 "
+      }
+    },
+    {
+      "id": "synthetic-2026-11-04-a",
+      "data": {
+        "dispatchTime": "2026-11-04 09:00",
+        "totalFare": 10000,
+        "status": "completed",
+        "requester": "합성거래처A",
+        "destDong": " 합성연결동 ",
+        "completeTime": {
+          "$timestamp": "2026-11-04T00:40:00Z"
+        }
+      }
+    },
+    {
+      "id": "synthetic-2026-11-04-b",
+      "data": {
+        "dispatchTime": "2026-11-04 10:00",
+        "totalFare": 10000,
+        "status": "completed",
+        "requester": "합성거래처A",
+        "deptDong": "합성연결동",
+        "inputLat": 0.0,
+        "inputLng": 1.0,
+        "waitDong": " 합성대기동 "
+      }
+    },
+    {
+      "id": "synthetic-2026-11-05-a",
+      "data": {
+        "dispatchTime": "2026-11-05 09:00",
+        "totalFare": 10000,
+        "status": "completed",
+        "requester": "합성거래처A",
+        "destDong": " 합성연결동 ",
+        "completeTime": {
+          "$timestamp": "2026-11-05T00:40:00Z"
+        }
+      }
+    },
+    {
+      "id": "synthetic-2026-11-05-b",
+      "data": {
+        "dispatchTime": "2026-11-05 10:00",
+        "totalFare": 10000,
+        "status": "completed",
+        "requester": "합성거래처A",
+        "deptDong": "합성연결동",
+        "inputLat": "1.0",
+        "inputLng": 1.0,
+        "waitDong": " 합성대기동 "
+      }
+    }
+  ],
+  "dailySummaries": []
+}

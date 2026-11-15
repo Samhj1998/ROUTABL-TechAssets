@@ -1,0 +1,85 @@
+{
+  "case_id": "42_flow_timestamp_and_seoul",
+  "spec_version": "1.1.0",
+  "category": "flow_wait_place",
+  "description": "UTC Timestamp/Date를 서울 자정 기준으로 계산; 완료 전날 시각도 차이 그대로; 문자열 completeTime은 null",
+  "request": {
+    "start": "2026-11-01",
+    "end": "2026-11-30",
+    "month": "2026-11",
+    "dayKeys": [
+      "2026-11-10",
+      "2026-11-11",
+      "2026-11-12"
+    ],
+    "today": "2026-11-15",
+    "nowMinute": 720
+  },
+  "documents": [
+    {
+      "id": "synthetic-utc-a",
+      "data": {
+        "dispatchTime": "2026-11-10 00:00",
+        "totalFare": 10000,
+        "status": "completed",
+        "requester": "합성거래처A",
+        "completeTime": {
+          "$date": "2026-11-09T15:10:00Z"
+        }
+      }
+    },
+    {
+      "id": "synthetic-utc-b",
+      "data": {
+        "dispatchTime": "2026-11-10 00:30",
+        "totalFare": 10000,
+        "status": "completed",
+        "requester": "합성거래처A",
+        "inputLat": 1.0,
+        "inputLng": 1.0,
+        "waitDong": "합성대기동"
+      }
+    },
+    {
+      "id": "synthetic-prior-a",
+      "data": {
+        "dispatchTime": "2026-11-11 00:00",
+        "totalFare": 10000,
+        "status": "completed",
+        "requester": "합성거래처A",
+        "completeTime": {
+          "$timestamp": "2026-11-10T14:50:00Z"
+        }
+      }
+    },
+    {
+      "id": "synthetic-prior-b",
+      "data": {
+        "dispatchTime": "2026-11-11 00:10",
+        "totalFare": 10000,
+        "status": "completed",
+        "requester": "합성거래처A"
+      }
+    },
+    {
+      "id": "synthetic-string-a",
+      "data": {
+        "dispatchTime": "2026-11-12 09:00",
+        "totalFare": 10000,
+        "status": "completed",
+        "requester": "합성거래처A",
+        "completeTime": "2026-11-12T00:10:00Z"
+      }
+    },
+    {
+      "id": "synthetic-string-b",
+      "data": {
+        "dispatchTime": "2026-11-12 10:00",
+        "totalFare": 10000,
+        "status": "completed",
+        "requester": "합성거래처A"
+      }
+    }
+  ],
+  "dailySummaries": []
+}
