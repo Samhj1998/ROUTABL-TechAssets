@@ -120,12 +120,12 @@
     {
       "path": "app/src/main/java/com/routivel/analytics/MainActivity.kt",
       "role": "minimal_ui_calculation_bridge",
-      "sha256": "65b89d9ed406283c8a845f09beb7b5495d8785dfc9389eebaf6615f1898c2cd6"
+      "sha256": "1ae34bbddd70ada899a06cb725d5b6df39fe6b0d7033b7e27ab7a0ddd1827adb"
     },
     {
       "path": "app/src/main/java/com/routivel/analytics/data/SleepReader.kt",
       "role": "minimal_ui_calculation_bridge",
-      "sha256": "d9ac73b30ee1468c57b1561cf178f3816734b21f481f4fa5e8c1bd311117b74f"
+      "sha256": "d1580ac7749c42c6521de4f4ea096da96e853ea4b3c75657dd0c4a9cc4e997b0"
     }
   ],
   "scope": {

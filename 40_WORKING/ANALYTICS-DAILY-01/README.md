@@ -22,3 +22,5 @@ FirestoreReader 변환부는 원문 추출, CalendarFragment 계산식은 최소
 로컬 kotlinc/Android Studio 번들 사용; `--kotlinc`·`--source-root`로 경로를 지정한다.
 해시 불일치 시 중단한다. 규칙 변경 시 version·입력 spec_version·기대값을 갱신하며 원본 변경이 있을 때만 검토 후 해시를 갱신한다.
 빌드 중간물은 tools/.build/에 보존·git 제외한다. 외부 저장소 쓰기·삭제·배포는 없다.
+
+수면 공유(계산 범위 밖, 기록용 2026-11-17): 폰 분석앱이 `users/{uid}/sleepDaily/{yyyy-MM-dd} = {hours, updatedAt}`로 깬 날짜별 합계만 올린다(앱 열 때 + 매일 11시 WorkManager, 백그라운드 읽기 권한 필요). Mac은 이를 그날 00:00:01(서울)에 끝난 세션으로 바꿔 같은 수면 규칙에 넣는다. 2026-11-17 SleepReader·MainActivity 해시 갱신: 올리기·예약만 바뀌고 계산 변화 없음(--check 87사례 diff 0).
