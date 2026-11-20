@@ -3572,9 +3572,9 @@
       "title": "SSD2TB(PM9A1 2TB) 상태·속도 리포트 및 smartctl 정기점검 절차",
       "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/40_WORKING/hardware/SSD2TB_HEALTH_REPORT.md",
       "managed_local_copy_path": "/Users/yongho/ROUTABL-TechAssets/40_WORKING/hardware/SSD2TB_HEALTH_REPORT.md",
-      "version": "1.1.0",
-      "bytes": 3566,
-      "sha256": "14e42be2e8d586b456b3676cb475ad20b4468e7f79a46a64414a28f9c700b5c1",
+      "version": "1.2.0",
+      "bytes": 4181,
+      "sha256": "2ab5c7a443d4f81cb69c4f53813f04de69ac0dc4a4f3bf3e519f03112efd91bd",
       "observation": "SMART_PASSED_TEMP44C_USED0PCT_ERRORS0_UNSAFE_SHUTDOWN781; OWC_1M2_80G_SEQ_READ6160_WRITE4903",
       "captured_at_kst": "2026-11-20T21:02:52+09:00",
       "copy_in_managed_repository": "YES"
