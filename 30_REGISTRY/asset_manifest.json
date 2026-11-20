@@ -3566,6 +3566,18 @@
       ],
       "case_directory": "40_WORKING/ANALYTICS-DAILY-01/cases",
       "generator_path": "40_WORKING/ANALYTICS-DAILY-01/tools/generate.py"
+    },
+    {
+      "asset_id": "HW-SSD2TB-HEALTH",
+      "title": "SSD2TB(PM9A1 2TB) 상태·속도 리포트 및 smartctl 정기점검 절차",
+      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/40_WORKING/hardware/SSD2TB_HEALTH_REPORT.md",
+      "managed_local_copy_path": "/Users/yongho/ROUTABL-TechAssets/40_WORKING/hardware/SSD2TB_HEALTH_REPORT.md",
+      "version": "1.0.0",
+      "bytes": 2995,
+      "sha256": "3f3bb5cbe4dd4f4f932f5567c8082fed333c9637392ffa635e7a12962ace0054",
+      "observation": "SMART_PASSED_TEMP44C_USED0PCT_ERRORS0_UNSAFE_SHUTDOWN781; OWC_1M2_80G_SEQ_READ6160_WRITE4903",
+      "captured_at_kst": "2026-11-20T21:02:52+09:00",
+      "copy_in_managed_repository": "YES"
     }
   ],
   "unresolved": [
