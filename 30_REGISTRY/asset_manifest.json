@@ -3578,6 +3578,42 @@
       "observation": "SMART_PASSED_TEMP44C_USED0PCT_ERRORS0_UNSAFE_SHUTDOWN781; OWC_1M2_80G_SEQ_READ6160_WRITE4903",
       "captured_at_kst": "2026-11-20T21:02:52+09:00",
       "copy_in_managed_repository": "YES"
+    },
+    {
+      "asset_id": "MAC-CLAUDE-RESTART-01",
+      "title": "Claude 앱 원격 재시작 — Mac 작업 경로(Claude 앱 우선·Remote 비상), 비상 재시작 절차, 감시 장치 안내",
+      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/40_WORKING/mac-remote/CLAUDE_APP_REMOTE_RESTART.md",
+      "managed_local_copy_path": "/Users/yongho/ROUTABL-TechAssets/40_WORKING/mac-remote/CLAUDE_APP_REMOTE_RESTART.md",
+      "version": "1.0.0",
+      "bytes": 1966,
+      "sha256": "ac0a333a4d7819cec1360c1c5e43591211fe63e695b04048202ff4efb79edea8",
+      "observation": "PROCEDURE_STANDARD; REMOTE_QUOTA_UNUSED_VIA_CLAUDE_APP_CONFIRMED_3960",
+      "captured_at_kst": "2026-11-21T04:11:29+09:00",
+      "copy_in_managed_repository": "YES"
+    },
+    {
+      "asset_id": "MAC-CLAUDE-WATCHDOG-01",
+      "title": "Claude 앱 감시 장치 스크립트 — 5분마다 꺼져 있으면 다시 켬, ~/.claude_watchdog_off로 일시정지",
+      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/40_WORKING/mac-remote/claude_watchdog.sh",
+      "managed_local_copy_path": "/Users/yongho/ROUTABL-TechAssets/40_WORKING/mac-remote/claude_watchdog.sh",
+      "version": "1.0.0",
+      "bytes": 573,
+      "sha256": "a2db1b40725889301fd80121cfac5e31b9de747591d0a8e350e6febc15d0d000",
+      "observation": "LAUNCHD_INSTALLED_20261121",
+      "captured_at_kst": "2026-11-21T04:11:29+09:00",
+      "copy_in_managed_repository": "YES"
+    },
+    {
+      "asset_id": "MAC-CLAUDE-WATCHDOG-01-PLIST",
+      "title": "Claude 앱 감시 장치 launchd 설정(com.digitopia.claude-watchdog, 300초 간격)",
+      "observed_original_path": "/Users/yongho/ROUTABL-TechAssets/40_WORKING/mac-remote/com.digitopia.claude-watchdog.plist",
+      "managed_local_copy_path": "/Users/yongho/ROUTABL-TechAssets/40_WORKING/mac-remote/com.digitopia.claude-watchdog.plist",
+      "version": "1.0.0",
+      "bytes": 508,
+      "sha256": "1b4ce61e4f01828b5f2227e3686e00952c1abe173427e6689b3101745d0ad08f",
+      "observation": "LAUNCHD_INSTALLED_20261121",
+      "captured_at_kst": "2026-11-21T04:11:29+09:00",
+      "copy_in_managed_repository": "YES"
     }
   ],
   "unresolved": [
